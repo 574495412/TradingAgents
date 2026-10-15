@@ -239,6 +239,10 @@ An interface will appear showing results as they load, letting you track the age
   <img src="assets/cli/cli_transaction.png" width="100%" style="display: inline-block; margin: 0 2%;">
 </p>
 
+## Codex 离线证据研究（本 fork）
+
+新增独立的 JSON 研究入口，可通过已经登录的 Codex CLI 使用单模型或原生多空研究员分析调用方提供的公开证据。支持时间边界检查、结构化因子、来源引用与完整调用记录；不调用行情工具或执行订单。安装、协议与限制见 [中文使用说明](docs/evidence-research.md)。
+
 ## TradingAgents Package
 
 ### Implementation Details
