@@ -85,3 +85,27 @@ Codex 在空目录、只读沙箱和临时会话中运行。禁用网页、shell
 
 官方接口依据：[Codex 非交互调用](https://learn.chatgpt.com/docs/non-interactive-mode)、
 [Codex 配置参考](https://learn.chatgpt.com/docs/config-file/config-reference)。
+
+## 策略证据审查与新假说
+
+`python -m tradingagents.research.strategy_review` 接收 `ta-factor-review-request.v1`，
+复用原生多空研究员审查调用方提供的公开统计，再返回有限数量的待冻结假说。
+每个假说包含因果可用输入、触发／失效规则、完整成本要求、检验设计与失败风险。
+原始提示词、辩论、结构化结果、用量和源码身份都保存在响应中。
+研究窗口以输入证据为准；模板角色的 BUY／HOLD／SELL 不作执行指令。
+此接口的 `production_eligible` 始终为 false，稳定性和运行资格由独立账户与前向验证决定。
+
+```json
+{
+  "schema_version": "ta-factor-review-request.v1",
+  "backend": "codex",
+  "model": null,
+  "timeout_seconds": 240,
+  "evidence": {
+    "window": "调用方声明的真实研究区间",
+    "funding_included": true,
+    "independent_oos": false,
+    "accounts": []
+  }
+}
+```
