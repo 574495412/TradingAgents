@@ -11,9 +11,23 @@ from tradingagents.research.quant.backtesting.signals import MINUTE, PROTOCOL
 class Account:
     """所有品种共享本金与容量；只有真实模拟平仓净盈利才产生单次续开资格。"""
 
-    def __init__(self, factor, hold_minutes, slippage_bps, funding, *, reentry=False):
+    def __init__(
+        self,
+        factor,
+        hold_minutes,
+        slippage_bps,
+        funding,
+        *,
+        reentry=False,
+        take_profit_fraction=PROTOCOL["take_profit_price_fraction"],
+    ):
         self.factor, self.hold, self.slip = factor, hold_minutes * MINUTE, slippage_bps / 10000
         self.reentry, self.funding, self.funding_cursor = reentry, funding, 0
+        if take_profit_fraction is not None and (
+            not math.isfinite(take_profit_fraction) or take_profit_fraction <= 0
+        ):
+            raise ValueError("止盈比例必须为正有限数，或明确关闭")
+        self.take_profit_fraction = take_profit_fraction
         self.cash = self.peak = PROTOCOL["initial_equity"]
         self.fee = PROTOCOL["fee_bps"] / 10000
         self.positions, self.pending, self.receipts, self.closes = {}, {}, {}, {}
@@ -213,8 +227,8 @@ class Account:
                 + p["funding"]
             )
             target = (
-                p["direction"] * (mark / p["entry_price"] - 1)
-                >= PROTOCOL["take_profit_price_fraction"]
+                self.take_profit_fraction is not None
+                and p["direction"] * (mark / p["entry_price"] - 1) >= self.take_profit_fraction
             )
             if symbol not in self.closes and (self.halted or (target and net > 0)):
                 self.closes[symbol] = {

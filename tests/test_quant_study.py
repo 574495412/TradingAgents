@@ -98,11 +98,14 @@ class Refuse(importlib.abc.MetaPathFinder):
         if name.split('.')[0] in {'cz', 'langchain', 'langchain_core', 'langgraph'}:
             raise AssertionError('量化核心不应加载交易项目或模型框架：' + name)
 sys.meta_path.insert(0, Refuse())
-from tradingagents.research.quant import incremental, study
+from tradingagents.research.quant import incremental, linear_family, response_study, study
 from tradingagents.dataflows.research import holdout, uniform_inputs
-from tradingagents.research.quant.backtesting import paper_live
+from tradingagents.research.quant.backtesting import forecast, paper_live
 assert len(incremental.MODELS) == 7
 assert study.evaluate.__module__ == 'tradingagents.research.quant.regression'
+assert len(response_study.MODELS) == 9
+assert len(forecast.TESTED_MODELS) == 4
+assert linear_family.evaluate.__module__ == 'tradingagents.research.quant.linear_family'
 """
     subprocess.run(
         [sys.executable, "-I", "-c", code, str(root)],

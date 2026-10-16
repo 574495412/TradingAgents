@@ -8,6 +8,7 @@
 | --- | --- |
 | `tradingagents/dataflows/research` | 公开数据采集、归档复用、来源合并、分钟与持仓时钟校验 |
 | `tradingagents/research/quant` | 因子回归、IC／Rank IC、训练冻结预测、控制项和逐因子剔除 |
+| `tradingagents/research/quant/factors` | 新研究因子公式，窗口和缺失规则独立于未来标签 |
 | `tradingagents/research/quant/reference` | 独立持有的历史策略特征研究副本、原始分钟读取与面板构建 |
 | `tradingagents/research/quant/backtesting` | 连续模拟账户、资金费、容量、退出、恢复与前向诊断 |
 | `tradingagents/research/quant/comparison` | 纯量化、固定规则、单模型与原生多空研究的八个基础／压力账户 |
@@ -41,6 +42,19 @@ python -m tradingagents.research.quant audit \
   --source results/research/my_regression \
   --output results/research/my_independent_audit
 
+# 固定三个价格响应候选，比较九模型和三个预测期限。
+tradingagents-quant response \
+  --source results/research/profit_factor_search_20261015/quant_regression_v093 \
+  --output results/research/my_response_study
+
+# 用冻结训练预测运行完整连续账户，保留全部成本版本。
+tradingagents-quant forecast \
+  --source results/research/my_response_study \
+  --market-panel data/research/dual_alpha_native_fusion_20261015/full_omofun_market_001 \
+  --funding-root results/research/profit_factor_search_20261015/public_v001 \
+  --output results/research/my_forecast_accounts \
+  --extra-slippage-bps 11
+
 python -m tradingagents.research.quant comparison --help
 python -m tradingagents.dataflows.research.uniform_inputs --help
 python -m tradingagents.research.quant.backtesting.paper_live --help
@@ -65,3 +79,11 @@ python -m tradingagents.research.quant.backtesting.paper_live --help
 本版包含现有五因子回归、七模型增量和连续扣费账户。通用因子表达式注册、滚动训练调度、实体／日期匿名化与完整 Alphalens 式分层换手报告仍需后续开发，不能称已经接入这些外部引擎。
 
 迁移不改变策略结论：既有五因子成本敏感性和模型验证尚未得到可晋级结果。已核验的基差候选短前缀也亏损，尚有库存、缺失估值和退出延迟；没有证明稳定盈利或生产资格。不得将 IC、探索性显著性、测试数量、迁移成功或模型调用次数等同于盈利。
+
+迁移后的价格响应研究、完整账户及追加压力结果见 [本轮研究验证](response_validation_20261016.md)。48个原账户完整重放后与追加压力运行中的对应账户一致；唯一两档盈利的组合，在单边滑点增加1bps后转负，尚不满足稳定性或接入要求。
+
+## 开发约定
+
+沿用仓库的 Python 包、pytest 和 Ruff 配置。数据采集放在 `dataflows/research`，研究公式放在 `quant/factors`，回归和研究编排放在 `quant`，账户与执行诊断放在 `quant/backtesting`；不在 CZ 新增研究引擎。新增代码注释、文档字符串和研究说明使用中文。
+
+每次研究先冻结公式、成员、时段、成本和评估方法，再计算结果。实验必须新建输出目录，保留失败与来源收据。源码、计划、测试和说明提交到 Git；原文、面板、账户账本及环境留在本地忽略目录。测试只能证明对应实现行为，盈利与上线结论须另有经济和前向证据。

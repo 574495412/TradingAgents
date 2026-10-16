@@ -41,6 +41,22 @@ def case_name(factor, hold, cost, reentry):
     return f"{factor}_{hold}m_{'reentry' if reentry else 'seed'}_{cost}bps"
 
 
+def funding_source_path(public, part):
+    """旧相对路径锚定显式资金费目录，不能因工作目录变化丢失已封存原文。"""
+    public = Path(public).resolve()
+    stored = Path(part["path"])
+    name = f"{part['start_ms']}-{part['end_ms']}.json"
+    canonical = public / "funding_raw" / name
+    if stored.name != name or not canonical.resolve().is_relative_to(public):
+        raise ValueError("资金费原文路径与声明区间不同")
+    if stored.is_absolute():
+        if stored.resolve() != canonical.resolve():
+            raise ValueError("资金费绝对路径越出显式来源目录")
+    elif ".." in stored.parts or stored.parts[-3:] != (public.name, "funding_raw", name):
+        raise ValueError("资金费相对路径不属于显式来源目录")
+    return canonical
+
+
 def load_funding(public):
     """使用已覆盖整段请求区间的原始资金费，不假定固定结算频率。"""
     manifest = read(public / "funding_manifest.json")
@@ -48,7 +64,7 @@ def load_funding(public):
         raise ValueError("资金费采集区间未覆盖")
     original, funding = {}, []
     for part in manifest["leaves"]:
-        path = Path(part["path"])
+        path = funding_source_path(public, part)
         if sha(path) != part["sha256"]:
             raise ValueError("原始资金费响应被修改")
         for row in read(path):
@@ -304,7 +320,7 @@ def run(
     output.mkdir(parents=True, exist_ok=False)
     manifest, capture = read(panel / "manifest.json"), read(public / "capture_plan.json")
     if (
-        capture["panel"] != str(panel)
+        Path(capture["panel"]).resolve() != panel
         or capture["manifest_sha256"] != sha(panel / "manifest.json")
         or capture["start"] != PROTOCOL["start"]
         or capture["end"] != PROTOCOL["end"]
