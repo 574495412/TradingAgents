@@ -9,6 +9,9 @@
     {"legacy_cz_path": "artifacts/tradingagents_lab_20261015", "owner_path": "results/research/tradingagents_lab_20261015"},
     {"legacy_cz_path": "artifacts/strategy_factor_audit_20261015", "owner_path": "results/research/strategy_factor_audit_20261015"},
     {"legacy_cz_path": "artifacts/damorne_15d_alignment_20261014", "owner_path": "data/research/damorne_15d_alignment_20261014"},
-    {"legacy_cz_path": "artifacts/dual_alpha_native_fusion_20261015", "owner_path": "data/research/dual_alpha_native_fusion_20261015"}
+    {"legacy_cz_path": "artifacts/dual_alpha_native_fusion_20261015", "owner_path": "data/research/dual_alpha_native_fusion_20261015"},
+    {"legacy_cz_path": "artifacts/dual_alpha_balanced_20261015", "owner_path": "results/research/dual_alpha_balanced_20261015"},
+    {"legacy_cz_path": "artifacts/dual_alpha_carry_20261015", "owner_path": "data/research/dual_alpha_carry_20261015"},
+    {"legacy_cz_path": "artifacts/dual_alpha_long_horizon_20261015", "owner_path": "data/research/dual_alpha_long_horizon_20261015"}
   ]
 }
