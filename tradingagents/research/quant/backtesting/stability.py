@@ -1,4 +1,8 @@
-"""固定前向经济验收口径；统计必要条件不代替原文审计或生产资格。"""
+"""保留旧三十日前向方案的可选复核，不作为当前历史量化验收的必要条件。
+
+用户于2026-10-16取消强制真实前向要求。当前历史滚动路线见
+historical_rolling_plan.md 及 forecast 的 historical_assessment；旧实验保持可重算。
+"""
 
 from __future__ import annotations
 

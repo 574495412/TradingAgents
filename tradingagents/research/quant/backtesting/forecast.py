@@ -1,4 +1,4 @@
-"""对固定训练预测执行成本门槛与连续账户检验，不按后段结果选择模型。"""
+"""对固定训练或历史滚动训练预测执行连续账户检验，不按后段结果选择模型。"""
 
 import argparse
 import importlib.metadata
@@ -15,7 +15,7 @@ from ..artifacts import read, save, sha, verify_receipts
 from ..factors.funding import NAMES as FUNDING_NAMES
 from ..factors.response import NAMES
 from .account import Account
-from .search import Audit, funding_source_path, load_funding, save_account
+from .search import Audit, funding_source_path, gate, load_funding, save_account
 from .signals import MINUTE, PROTOCOL, Signal
 
 TESTED_MODELS = ("legacy",) + tuple(f"add_{f}" for f in NAMES)
@@ -65,7 +65,94 @@ def cancel_incomplete_batch(account, market, stamp):
             )
 
 
-def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
+def block_metrics(account, boundaries, opportunities, states):
+    """在同一账本上披露分块权益及现金流，跨块交易不重复算完整活动。"""
+    points = {row["clock"]: row["equity"] for row in account.curve}
+    initial, last = PROTOCOL["initial_equity"], boundaries[-1]
+    batches = {}
+    for trade in account.trades:
+        batches.setdefault(trade["episode"], []).append(trade)
+    rows = []
+    for index, (begin, end) in enumerate(zip(boundaries[:-1], boundaries[1:], strict=True)):
+        closing_clock = end if end == last else end - MINUTE
+        opening = initial if index == 0 else points[begin - MINUTE]
+        closing = points[closing_clock]
+
+        def inside(clock, begin=begin, end=end):
+            return begin <= clock and (clock < end or clock == end == last)
+
+        def processed(clock):
+            return last if clock == last else clock + MINUTE
+
+        # 开盘阶段按前一根分钟的开盘记成交，但现金与库存落入当前曲线帧。
+        fills = [fill for fill in account.fills if inside(processed(fill["clock"]))]
+        rows.append(
+            {
+                "start_ms": begin,
+                "end_ms": end,
+                "opening_equity": opening,
+                "closing_equity": closing,
+                "equity_return": closing / opening - 1,
+                "pnl_over_initial": (closing - opening) / initial,
+                "fee_cash_outflow": sum(fill["fee"] for fill in fills),
+                "modelled_slippage_drag_cash": sum(
+                    fill["quantity"]
+                    * abs(
+                        fill["price"]
+                        - fill["price"]
+                        / (
+                            1
+                            + fill["direction"]
+                            * account.slip
+                            * (1 if fill["action"] == "OPEN" else -1)
+                        )
+                    )
+                    for fill in fills
+                ),
+                "funding_cash": sum(
+                    event["cash"]
+                    for event in account.funding_ledger
+                    if inside((event["time_ms"] // MINUTE + 1) * MINUTE)
+                ),
+                "opened_legs": sum(fill["action"] == "OPEN" for fill in fills),
+                "closed_legs": sum(fill["action"] == "CLOSE" for fill in fills),
+                "started_batches": sum(
+                    inside(processed(min(t["entry_ms"] for t in group)))
+                    for group in batches.values()
+                ),
+                "completed_batches": sum(
+                    inside(processed(max(t["exit_ms"] for t in group)))
+                    for group in batches.values()
+                ),
+                "opportunity_clocks": sum(inside(clock) for clock in opportunities),
+                "decline_reasons": dict(
+                    Counter(
+                        row["reason"] for row in account.declines if inside(processed(row["clock"]))
+                    )
+                ),
+                "opening_direction_counts": dict(
+                    Counter(str(fill["direction"]) for fill in fills if fill["action"] == "OPEN")
+                ),
+                "opening_symbol_counts": dict(
+                    Counter(fill["symbol"] for fill in fills if fill["action"] == "OPEN")
+                ),
+                "ending_account_state": states[closing_clock],
+                "cross_boundary_pnl_is_marked_in_equity": True,
+                "cashflow_recognition_clock": "account_curve_processing_minute",
+            }
+        )
+    return rows
+
+
+def run(
+    source,
+    market_panel,
+    funding_root,
+    output,
+    *,
+    extra_slippage_bps=None,
+    historical_rolling=False,
+):
     """账户规则先封存，逐分钟共用本金与容量，并同步执行独立财务重建。"""
     source, market_panel, funding_root, output = (
         Path(p).resolve() for p in (source, market_panel, funding_root, output)
@@ -85,6 +172,8 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
     family = parent.get("account_family", "market_response")
     if family not in {"market_response", "settled_funding"}:
         raise ValueError("账户家族不属于预先声明的研究计划")
+    if historical_rolling and family != "settled_funding":
+        raise ValueError("历史滚动协议只适用于已封存的资金费研究家族")
     tested_models = FUNDING_MODELS if family == "settled_funding" else TESTED_MODELS
     plan = "settled_funding_plan.md" if family == "settled_funding" else "forecast_account_plan.md"
     if family == "settled_funding":
@@ -119,14 +208,6 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
         source / "hourly_samples.parquet", columns=["symbol", "asset_class", "clock_ms", *features]
     )
     samples = samples[(samples.clock_ms >= first) & (samples.clock_ms < last)]
-    schedules = {}
-    for (asset, clock), frame in samples.groupby(["asset_class", "clock_ms"], sort=True):
-        for horizon in parent["horizons_minutes"]:
-            group = result["groups"][f"{asset}:{horizon}m"]
-            for model in tested_models:
-                schedules[asset, horizon, model, int(clock)] = decisions(
-                    frame, group["frozen_training_coefficients"][model], features
-                )
     cases, identities = {}, {}
     for asset in sorted(samples.asset_class.unique()):
         for horizon in parent["horizons_minutes"]:
@@ -142,6 +223,7 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
         Path(__file__).with_name("signals.py"),
         Path(sha.__code__.co_filename).resolve(),
         quant_root / "plans" / plan,
+        quant_root / "plans/historical_rolling_plan.md",
     ]
     # 保存完整包结构，让封存源码可在独立路径重新运行，不依赖当前工作区。
     package = quant_root.parents[1]
@@ -191,6 +273,9 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
             "case_slippage_bps": costs,
             "account_family": family,
             "case_models": tested_models,
+            "coefficient_mode": "historical_expanding" if historical_rolling else "fixed_training",
+            "real_time_forward_required": False,
+            "current_validation_plan": "historical_rolling_plan.md",
             "posthoc_adverse_cost_check": extra_slippage_bps is not None
             and family == "market_response",
             "source_layout": "complete_python_package",
@@ -219,6 +304,31 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
             "production_eligible": False,
         },
     )
+    for p in paths:
+        target = output / "source" / p.relative_to(package.parent)
+        shutil_copy(p, target)
+    training = None
+    if historical_rolling:
+        from ..rolling import REFITS, coefficients_at, fit_expanding
+
+        # 重训专用标签与交易特征分开读取；后面的决策只收到特征白名单。
+        training_samples = pd.read_parquet(source / "hourly_samples.parquet")
+        training = fit_expanding(training_samples, parent)
+        save(output / "rolling_training.json", training)
+        del training_samples
+    schedules = {}
+    for (asset, clock), frame in samples.groupby(["asset_class", "clock_ms"], sort=True):
+        for horizon in parent["horizons_minutes"]:
+            group = result["groups"][f"{asset}:{horizon}m"]
+            for model in tested_models:
+                coefficients = (
+                    coefficients_at(training, asset, horizon, model, int(clock))
+                    if historical_rolling
+                    else group["frozen_training_coefficients"][model]
+                )
+                schedules[asset, horizon, model, int(clock)] = decisions(
+                    frame, coefficients, features
+                )
     save(
         output / "decisions.json",
         [
@@ -226,14 +336,14 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
             for (a, h, m, t), value in schedules.items()
         ],
     )
-    for p in paths:
-        target = output / "source" / p.relative_to(package.parent)
-        shutil_copy(p, target)
     accounts = {
         key: Account(model, horizon, cost, funding, take_profit_fraction=None)
         for key, (_, horizon, model, cost) in cases.items()
     }
     audits = {key: Audit(account, funding) for key, account in accounts.items()}
+    boundaries = [*REFITS, last] if historical_rolling else []
+    block_ends = {value - MINUTE for value in boundaries[1:-1]} | {last}
+    block_states = {key: {} for key in accounts}
     invalid, opportunity_counts, previous, frames = {}, Counter(), None, 0
     for record in manifest["daily_files"]:
         if record["last_close_ms"] < first or record["first_close_ms"] > last:
@@ -287,6 +397,14 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
                         pulses = []
                     account.close_phase(clock, market, pulses, {}, final=clock == last)
                     audits[key].consume(clock, market, final=clock == last)
+                    if historical_rolling and clock in block_ends:
+                        block_states[key][clock] = {
+                            "halted": account.halted,
+                            "open_positions": len(account.positions),
+                            "pending_entries": len(account.pending),
+                            "running_peak_equity": account.peak,
+                            "running_maximum_drawdown": account.max_dd,
+                        }
                 except ValueError as error:
                     invalid[key] = {
                         "at": clock,
@@ -313,6 +431,16 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
             summaries[key]["batch_win_rate"] = (
                 sum(value > 0 for value in batches.values()) / len(batches) if batches else None
             )
+            if historical_rolling:
+                asset, horizon, model, _ = cases[key]
+                opportunities = [
+                    clock
+                    for (a, h, m, clock), selected in schedules.items()
+                    if (a, h, m) == (asset, horizon, model) and selected
+                ]
+                summaries[key]["historical_blocks"] = block_metrics(
+                    account, boundaries, opportunities, block_states[key]
+                )
         save_account(output / f"{key.replace(':', '_')}.json.gz", account)
     verify_receipts(source)
     if any(sha(p) != v for p, v in (frozen | identities).items()):
@@ -326,6 +454,18 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
         "invalid_accounts": invalid,
         "opportunity_clocks": dict(opportunity_counts),
         "financial_proofs": financial_proofs,
+        "historical_assessment": {
+            "validation_route": "historical_rolling" if historical_rolling else "fixed_training",
+            "real_time_forward_required": False,
+            "economic_conditions_by_account": {
+                key: gate(value) for key, value in summaries.items()
+            },
+            "financial_reconstruction_complete": not invalid
+            and len(financial_proofs) == len(cases),
+            "execution_constraints_proven": False,
+            "independent_unseen_history": False,
+            "production_eligible": False,
+        },
         "independent_oos": False,
         "orders_enabled": False,
         "stable_profitability_proven": False,
@@ -352,6 +492,9 @@ def main(argv=None):
     for name in ("source", "market-panel", "funding-root", "output"):
         parser.add_argument("--" + name, type=Path, required=True)
     parser.add_argument("--extra-slippage-bps", type=int, choices=[11])
+    parser.add_argument(
+        "--historical-rolling", action="store_true", help="按冻结时刻扩展训练并保持账户连续"
+    )
     args = parser.parse_args(argv)
     result = run(
         args.source,
@@ -359,6 +502,7 @@ def main(argv=None):
         args.funding_root,
         args.output,
         extra_slippage_bps=args.extra_slippage_bps,
+        historical_rolling=args.historical_rolling,
     )
     print(
         {
