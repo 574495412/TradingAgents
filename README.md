@@ -29,6 +29,8 @@
 
 # TradingAgents: Multi-Agents LLM Financial Trading Framework
 
+本 fork 的量化研究、数据与实验入口见 [量化研究说明](docs/research/README.md)。公开数据接入位于 `dataflows/research`，回归与模拟位于 `research/quant`，交易执行继续由 CZ-Agent 独立持有。
+
 ## News
 
 <!-- news:start -->

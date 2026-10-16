@@ -1,0 +1,14 @@
+{
+  "owner": "TradingAgents",
+  "scope": "本轮 DAmorne 与 Omofun 因子研究及其全部依赖研究目录",
+  "historical_file_bytes_rewritten": false,
+  "legacy_paths_are_aliases": true,
+  "git_tracks_raw_data": false,
+  "roots": [
+    {"legacy_cz_path": "artifacts/profit_factor_search_20261015", "owner_path": "results/research/profit_factor_search_20261015"},
+    {"legacy_cz_path": "artifacts/tradingagents_lab_20261015", "owner_path": "results/research/tradingagents_lab_20261015"},
+    {"legacy_cz_path": "artifacts/strategy_factor_audit_20261015", "owner_path": "results/research/strategy_factor_audit_20261015"},
+    {"legacy_cz_path": "artifacts/damorne_15d_alignment_20261014", "owner_path": "data/research/damorne_15d_alignment_20261014"},
+    {"legacy_cz_path": "artifacts/dual_alpha_native_fusion_20261015", "owner_path": "data/research/dual_alpha_native_fusion_20261015"}
+  ]
+}
