@@ -8,6 +8,10 @@ from pathlib import Path
 def main(argv=None):
     """按子命令延迟导入，纯量化重算不加载模型或 CZ-Agent。"""
     argv = list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0] == "funding":
+        from .funding_study import main as funding
+
+        return funding(argv[1:])
     if argv and argv[0] == "comparison":
         from .comparison.__main__ import main as comparison
 
@@ -29,6 +33,7 @@ def main(argv=None):
         command.add_argument("--output", type=Path, required=True)
     sub.add_parser("comparison", help="四组独立账户比较；使用 comparison --help 查看参数")
     sub.add_parser("forecast", help="固定训练预测的连续账户；使用 forecast --help 查看参数")
+    sub.add_parser("funding", help="已结算资金费增量回归；使用 funding --help 查看参数")
     args = parser.parse_args(argv)
     if args.command == "regression":
         from .study import run

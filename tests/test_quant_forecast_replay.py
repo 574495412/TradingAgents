@@ -2,12 +2,15 @@
 
 import numpy as np
 import pandas as pd
+import pytest
 
 from tradingagents.research.quant.artifacts import save, sha, verify_receipts
-from tradingagents.research.quant.backtesting.forecast import TESTED_MODELS, run
+from tradingagents.research.quant.backtesting.forecast import FUNDING_MODELS, TESTED_MODELS, run
 
 
-def test_all_declared_accounts_execute_and_seal_end_to_end_without_future_labels(tmp_path):
+@pytest.mark.parametrize("family", ["market_response", "settled_funding"])
+def test_all_declared_accounts_execute_and_seal_end_to_end_without_future_labels(tmp_path, family):
+    models = FUNDING_MODELS if family == "settled_funding" else TESTED_MODELS
     source, market, funding, output = (
         tmp_path / name for name in ("source", "market", "funding", "output")
     )
@@ -23,25 +26,23 @@ def test_all_declared_accounts_execute_and_seal_end_to_end_without_future_labels
             samples.append(
                 {"symbol": symbol, "asset_class": asset, "clock_ms": start_ms, "factor": number}
             )
-    save(
-        source / "protocol.json",
-        {
-            "phases": {
-                "retrospective_validation": {"start": first.isoformat(), "end": last.isoformat()}
-            },
-            "universe": contracts,
-            "features": ["factor"],
-            "horizons_minutes": [20, 60, 240],
-            "orders_enabled": False,
-            "leader_labels_read": False,
+    protocol = {
+        "phases": {
+            "retrospective_validation": {"start": first.isoformat(), "end": last.isoformat()}
         },
-    )
+        "account_family": family,
+        "universe": contracts,
+        "features": ["factor"],
+        "horizons_minutes": [20, 60, 240],
+        "orders_enabled": False,
+        "leader_labels_read": False,
+    }
     save(
         source / "result.json",
         {
             "groups": {
                 f"{asset}:{h}m": {
-                    "frozen_training_coefficients": {m: {"factor": 0.01} for m in TESTED_MODELS}
+                    "frozen_training_coefficients": {m: {"factor": 0.01} for m in models}
                 }
                 for asset in ("甲", "乙")
                 for h in (20, 60, 240)
@@ -50,7 +51,6 @@ def test_all_declared_accounts_execute_and_seal_end_to_end_without_future_labels
     )
     # 不提供任何未来标签列，回测仍必须能完整执行。
     pd.DataFrame(samples).to_parquet(source / "hourly_samples.parquet", index=False)
-    save(source / "receipts.json", {p.name: sha(p) for p in source.iterdir()})
     index = pd.MultiIndex.from_product(
         [pd.date_range(first, last, freq="min"), contracts], names=["bar_time", "symbol"]
     )
@@ -89,9 +89,22 @@ def test_all_declared_accounts_execute_and_seal_end_to_end_without_future_labels
         funding / "funding_manifest.json", {"api_time_range_coverage_verified": True, "leaves": []}
     )
     save(funding / "funding_events.json", [])
+    if family == "settled_funding":
+        protocol["input_identities"] = {
+            str(funding / name): sha(funding / name)
+            for name in ("capture_plan.json", "funding_manifest.json", "funding_events.json")
+        }
+    save(source / "protocol.json", protocol)
+    save(source / "receipts.json", {p.name: sha(p) for p in source.iterdir()})
     result = run(source, market, funding, output)
     verify_receipts(output)
-    assert result["cases"] == len(result["metrics"]) == len(result["financial_proofs"]) == 48
+    expected_cases = 72 if family == "settled_funding" else 48
+    assert (
+        result["cases"]
+        == len(result["metrics"])
+        == len(result["financial_proofs"])
+        == expected_cases
+    )
     assert not result["invalid_accounts"] and result["frames"] == 6
     for metrics in result["metrics"].values():
         assert metrics["closed_trades"] == 4 and metrics["complete_batches"] == 1

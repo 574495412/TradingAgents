@@ -202,16 +202,21 @@ def evaluate(samples, protocol):
                 "frozen_training_coefficients": betas,
                 "phases": phase_results,
             }
-    for result, q in zip(
-        tests, bh_adjust([r["p_asymptotic_two_sided"] for r in tests]), strict=True
-    ):
-        result["bh_q_all_declared_tests"] = q
+    p_values = [r["p_asymptotic_two_sided"] for r in tests]
+    count_unknown = protocol.get("bh_count_unknown_in_declared_family", False)
+    # 新设计把未知检验计入声明家族，计算时取保守占位1，输出仍保留未知。
+    adjusted = bh_adjust([1.0 if p is None else p for p in p_values] if count_unknown else p_values)
+    for result, p, q in zip(tests, p_values, adjusted, strict=True):
+        result["bh_q_all_declared_tests"] = q if p is not None else None
     return {
         "schema": "ta-fixed-linear-family-result.v1",
         "groups": groups,
         "hourly_records": records,
         "declared_tests": len(tests),
         "valid_p_value_tests": sum(r["p_asymptotic_two_sided"] is not None for r in tests),
+        "bh_adjustment_family_size": len(tests)
+        if count_unknown
+        else sum(p is not None for p in p_values),
         "independent_oos": False,
         "economic_account_evaluated": False,
         "orders_enabled": False,

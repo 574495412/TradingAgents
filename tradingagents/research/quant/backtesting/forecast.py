@@ -12,12 +12,14 @@ import numpy as np
 import pandas as pd
 
 from ..artifacts import read, save, sha, verify_receipts
+from ..factors.funding import NAMES as FUNDING_NAMES
 from ..factors.response import NAMES
 from .account import Account
 from .search import Audit, funding_source_path, load_funding, save_account
 from .signals import MINUTE, PROTOCOL, Signal
 
 TESTED_MODELS = ("legacy",) + tuple(f"add_{f}" for f in NAMES)
+FUNDING_MODELS = ("legacy",) + tuple(f"add_{f}" for f in FUNDING_NAMES) + ("expanded",)
 PREDICTED_RETURN_THRESHOLD = 0.0016
 
 
@@ -80,6 +82,17 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
     parent, result = read(source / "protocol.json"), read(source / "result.json")
     if any(parent[k] is not False for k in ("orders_enabled", "leader_labels_read")):
         raise ValueError("只允许公开量化研究结果")
+    family = parent.get("account_family", "market_response")
+    if family not in {"market_response", "settled_funding"}:
+        raise ValueError("账户家族不属于预先声明的研究计划")
+    tested_models = FUNDING_MODELS if family == "settled_funding" else TESTED_MODELS
+    plan = "settled_funding_plan.md" if family == "settled_funding" else "forecast_account_plan.md"
+    if family == "settled_funding":
+        costs = (3, 10, 11)
+        for name in ("capture_plan.json", "funding_manifest.json", "funding_events.json"):
+            path = funding_root / name
+            if parent.get("input_identities", {}).get(str(path)) != sha(path):
+                raise ValueError("现金结算来源与资金费因子冻结来源不同")
     bounds = parent["phases"]["retrospective_validation"]
     start, end = pd.Timestamp(bounds["start"]), pd.Timestamp(bounds["end"])
     first, last = int(start.value // 1_000_000), int(end.value // 1_000_000)
@@ -110,14 +123,14 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
     for (asset, clock), frame in samples.groupby(["asset_class", "clock_ms"], sort=True):
         for horizon in parent["horizons_minutes"]:
             group = result["groups"][f"{asset}:{horizon}m"]
-            for model in TESTED_MODELS:
+            for model in tested_models:
                 schedules[asset, horizon, model, int(clock)] = decisions(
                     frame, group["frozen_training_coefficients"][model], features
                 )
     cases, identities = {}, {}
     for asset in sorted(samples.asset_class.unique()):
         for horizon in parent["horizons_minutes"]:
-            for model in TESTED_MODELS:
+            for model in tested_models:
                 for cost in costs:
                     key = f"{asset}:{horizon}m:{model}:{cost}bps"
                     cases[key] = (asset, horizon, model, cost)
@@ -128,12 +141,12 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
         Path(Audit.consume.__code__.co_filename).resolve(),
         Path(__file__).with_name("signals.py"),
         Path(sha.__code__.co_filename).resolve(),
-        quant_root / "plans/forecast_account_plan.md",
+        quant_root / "plans" / plan,
     ]
     # 保存完整包结构，让封存源码可在独立路径重新运行，不依赖当前工作区。
     package = quant_root.parents[1]
     paths = sorted(set(paths) | set(package.rglob("*.py")))
-    if extra_slippage_bps is not None:
+    if extra_slippage_bps is not None and family == "market_response":
         paths.append(quant_root / "plans/forecast_adverse_plan.md")
     frozen = {str(p): sha(p) for p in paths}
     identities.update(
@@ -176,7 +189,10 @@ def run(source, market_panel, funding_root, output, *, extra_slippage_bps=None):
                 )
             },
             "case_slippage_bps": costs,
-            "posthoc_adverse_cost_check": extra_slippage_bps is not None,
+            "account_family": family,
+            "case_models": tested_models,
+            "posthoc_adverse_cost_check": extra_slippage_bps is not None
+            and family == "market_response",
             "source_layout": "complete_python_package",
             "predicted_return_threshold": PREDICTED_RETURN_THRESHOLD,
             "maximum_pairs": 2,

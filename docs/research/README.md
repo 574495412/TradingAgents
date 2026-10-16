@@ -47,6 +47,12 @@ tradingagents-quant response \
   --source results/research/profit_factor_search_20261015/quant_regression_v093 \
   --output results/research/my_response_study
 
+# 仅将已结算普通资金费加入原七特征；特殊股息留在现金会计。
+tradingagents-quant funding \
+  --source results/research/my_response_study \
+  --funding-root results/research/profit_factor_search_20261015/public_v001 \
+  --output results/research/my_funding_study
+
 # 用冻结训练预测运行完整连续账户，保留全部成本版本。
 tradingagents-quant forecast \
   --source results/research/my_response_study \
@@ -83,6 +89,8 @@ CZ中没有调用方的旧研究转发入口已清理。历史冻结包独立保
 迁移不改变策略结论：既有五因子成本敏感性和模型验证尚未得到可晋级结果。已核验的基差候选短前缀也亏损，尚有库存、缺失估值和退出延迟；没有证明稳定盈利或生产资格。不得将 IC、探索性显著性、测试数量、迁移成功或模型调用次数等同于盈利。
 
 迁移后的价格响应研究、完整账户及追加压力结果见 [本轮研究验证](response_validation_20261016.md)。48个原账户完整重放后与追加压力运行中的对应账户一致；唯一两档盈利的组合，在单边滑点增加1bps后转负，尚不满足稳定性或接入要求。
+
+后续 [已结算资金费研究](settled_funding_validation_20261016.md) 出现加密240分钟双因子历史经济候选，三档成本均盈利，但预测增量不可靠、压力胜率下界及独立前向证据不足。`forecast --source results/research/my_funding_study` 自动执行该家族预先声明的全部72账户及三档成本，其余市场与资金费参数同上；不以候选历史盈利替代上线条件。
 
 ## 开发约定
 

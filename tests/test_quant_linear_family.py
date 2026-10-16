@@ -101,3 +101,16 @@ def test_four_hour_labels_do_not_cross_the_predeclared_phase_boundary():
     boundary = int(pd.Timestamp("2026-10-06T00:00:00Z").value // 1_000_000)
     assert phase_at(boundary - 4 * 3_600_000, 240) == "excluded_boundary"
     assert phase_at(boundary - 5 * 3_600_000, 240) == "training"
+
+
+def test_unknown_p_values_remain_unknown_but_can_count_in_the_declared_family():
+    data, protocol = panel()
+    protocol["bh_count_unknown_in_declared_family"] = True
+    result = evaluate(data, protocol)
+    assert result["declared_tests"] == result["bh_adjustment_family_size"] == 270
+    assert result["valid_p_value_tests"] == 0
+    for group in result["groups"].values():
+        for phase in group["phases"].values():
+            for comparison in phase["comparisons"].values():
+                assert comparison["p_asymptotic_two_sided"] is None
+                assert comparison["bh_q_all_declared_tests"] is None
