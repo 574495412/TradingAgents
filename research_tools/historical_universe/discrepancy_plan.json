@@ -1,0 +1,21 @@
+{
+  "schema": "historical-source-discrepancy-investigation.v1",
+  "version": "20261026_v001",
+  "parent_daily": "data/research/historical_perpetual_daily_20261026_v002",
+  "parent_audit": "results/research/historical_perpetual_daily_20261026_v002_independent_audit.json",
+  "old_5m": "data/research/github_factor_market_20261025_v001",
+  "output": "data/research/historical_source_crosscheck_20261026_v001",
+  "origin": "https://data.binance.vision",
+  "scope": "Union of every contract-day with a reported1d-vs-old5m discrepancy and every essential-field inconsistency in the sealed daily release. Fetch the corresponding official5mDAILYarchive plusCHECKSUM. Preserve both parents and all differences; no return-based source choice.",
+  "checks": "Exact UTC day and288 unique5mbars where trading spans whole day; independent daily OHLC/base and quote volume aggregation. Compare source rows to old5mwhen present and to original1d. Partial/missing actual trading intervals are not forward-filled or treated as zero. Retain source auxiliary inconsistencies.",
+  "budget": {"maximum_contract_days":160,"maximum_http_requests":400,"workers":6,"maximum_bytes":52428800},
+  "api_reference_days": [
+    {"symbol":"BTCUSDT","date":"2023-08-16"},
+    {"symbol":"BTCUSDT","date":"2023-11-10"},
+    {"symbol":"BTCUSDT","date":"2025-01-29"},
+    {"symbol":"ARBUSDT","date":"2023-09-19"}
+  ],
+  "api_request_budget":4,
+  "historical_status_scope": "All268names in the frozen selection preview, including currentSETTLINGandmissing-current names. Current onboardDate/deliveryDate are claims to cross-check, not retrospective signals or permission to anticipate an announcement.",
+  "financial_accounts":0,"independent_oos":false,"profit_goal_met":false,"orders_enabled":false,"production_eligible":false
+}

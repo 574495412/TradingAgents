@@ -1,0 +1,10 @@
+{
+  "manifest": {
+    "summary.json": "c82104aa73af1f41b1644cd805de340e02070f0fe03eaccff890ef4010af4284",
+    "README.md": "756020b65cec1de4ed1cf852829315fc9fbdbbc442117764ad40cfb4d4742856",
+    "verification.json": "72c58497d0da5587bd93804a5d4fb851cf424df56190dd21fa83be4d943e0b31"
+  },
+  "evidence_inspection_complete": true,
+  "all_sources_concordant": false,
+  "financial_accounts": 0
+}

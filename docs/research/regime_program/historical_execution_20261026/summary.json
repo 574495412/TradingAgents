@@ -1,0 +1,222 @@
+{
+  "schema": "historical-execution-source-review.v1",
+  "evidence_inspection_complete": true,
+  "all_sources_concordant": false,
+  "crosschecked_contract_days": 143,
+  "api_reference_days": 4,
+  "api_disagreement_days": 3,
+  "api_checks": [
+    {
+      "symbol": "BTCUSDT",
+      "date": "2023-08-16",
+      "all_numeric_fields_agree": true,
+      "different5m_bars": 0,
+      "different_bar_times": [],
+      "max_errors_by_field": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0,
+        "volume": 0.0,
+        "quote_volume": 0.0,
+        "trades": 0.0,
+        "taker_base_volume": 0.0,
+        "taker_quote_volume": 0.0
+      },
+      "api_daily_quote_volume": 8152270842.20355,
+      "archive_daily_quote_volume": 8152270842.20355,
+      "zip_vs_api_same_daily_close": true,
+      "maximum_ohlc_error": 0.0,
+      "maximum_quote_volume_error": 0.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2023-11-10",
+      "all_numeric_fields_agree": false,
+      "different5m_bars": 1,
+      "different_bar_times": [
+        "2023-11-10T15:05:00+00:00"
+      ],
+      "max_errors_by_field": {
+        "open": 0.0,
+        "high": 50.0,
+        "low": 0.0,
+        "close": 27.19999999999709,
+        "volume": 1046.4409999999998,
+        "quote_volume": 38872673.0053,
+        "trades": 10559.0,
+        "taker_base_volume": 543.408,
+        "taker_quote_volume": 20187513.119
+      },
+      "api_daily_quote_volume": 11038023393.59647,
+      "archive_daily_quote_volume": 11076896066.60177,
+      "zip_vs_api_same_daily_close": true,
+      "maximum_ohlc_error": 50.0,
+      "maximum_quote_volume_error": 38872673.0053
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2025-01-29",
+      "all_numeric_fields_agree": false,
+      "different5m_bars": 4,
+      "different_bar_times": [
+        "2025-01-29T01:20:00+00:00",
+        "2025-01-29T01:25:00+00:00",
+        "2025-01-29T01:30:00+00:00",
+        "2025-01-29T02:40:00+00:00"
+      ],
+      "max_errors_by_field": {
+        "open": 142.70000000001164,
+        "high": 130.70000000001164,
+        "low": 270.1000000000058,
+        "close": 250.10000000000582,
+        "volume": 315.827,
+        "quote_volume": 32093531.0225,
+        "trades": 6542.0,
+        "taker_base_volume": 156.456,
+        "taker_quote_volume": 15898410.2376
+      },
+      "api_daily_quote_volume": 17464739221.2713,
+      "archive_daily_quote_volume": 17376587762.168503,
+      "zip_vs_api_same_daily_close": true,
+      "maximum_ohlc_error": 270.1000000000058,
+      "maximum_quote_volume_error": 32093531.0225
+    },
+    {
+      "symbol": "ARBUSDT",
+      "date": "2023-09-19",
+      "all_numeric_fields_agree": false,
+      "different5m_bars": 1,
+      "different_bar_times": [
+        "2023-09-19T16:00:00+00:00"
+      ],
+      "max_errors_by_field": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0,
+        "volume": 768649.5,
+        "quote_volume": 0.0,
+        "trades": 0.0,
+        "taker_base_volume": 0.0,
+        "taker_quote_volume": 0.0
+      },
+      "api_daily_quote_volume": 125481457.96736,
+      "archive_daily_quote_volume": 125481457.96736,
+      "zip_vs_api_same_daily_close": true,
+      "maximum_ohlc_error": 0.0,
+      "maximum_quote_volume_error": 0.0
+    }
+  ],
+  "notice_cases": 3,
+  "events": [
+    {
+      "symbol": "FTMUSDT",
+      "notice_code": "aec6fcbc84b749eeab6690e6bcac2f3d",
+      "entry_stop_at": "2025-01-06T08:30:00Z",
+      "settlement_at": "2025-01-06T09:00:00Z",
+      "archive_month": "2025-01",
+      "contract_type": "USD_M_PERPETUAL",
+      "source_url": "https://www.binance.com/en/support/announcement/detail/aec6fcbc84b749eeab6690e6bcac2f3d",
+      "publish_at_claimed": "2024-12-24T07:00:11.617000+00:00",
+      "available_at_assumed": "2024-12-24T07:05:11.617000+00:00",
+      "notice_sha256": "58054246e9b154a9fea99f7e770a18be72b786a434072782951509ccde59365a",
+      "notice_current_version": "1",
+      "notice_lastUpdateTime_field": 0,
+      "original_published_content_archived": false,
+      "terminal_settlement_price": null,
+      "terminal_settlement_fee": null,
+      "entry_cutoff_verified_in_current_official_notice": true,
+      "source_daily_open_labels_at_or_after_settlement": 602,
+      "source_daily_bar_windows_spanning_settlement": 1,
+      "funding_archive_records_in_month": 93,
+      "funding_archive_records_after_settlement": 76,
+      "funding_archive_records_exact_settlement": 0,
+      "last_funding_archive_timestamp": "2025-01-31T16:00:00+00:00",
+      "post_terminal_records_are_verified_cashflows": false
+    },
+    {
+      "symbol": "MATICUSDT",
+      "notice_code": "6a6de383727f4659a3050f7982e1620f",
+      "entry_stop_at": "2024-09-04T08:30:00Z",
+      "settlement_at": "2024-09-04T09:00:00Z",
+      "archive_month": "2024-09",
+      "contract_type": "USD_M_PERPETUAL",
+      "source_url": "https://www.binance.com/en/support/announcement/detail/6a6de383727f4659a3050f7982e1620f",
+      "publish_at_claimed": "2024-08-28T09:00:07.402000+00:00",
+      "available_at_assumed": "2024-08-28T09:05:07.402000+00:00",
+      "notice_sha256": "4bff7c0f747722ca540783768dddce43bb22393a985bc487a2457fe7a6005a60",
+      "notice_current_version": "1",
+      "notice_lastUpdateTime_field": 0,
+      "original_published_content_archived": false,
+      "terminal_settlement_price": null,
+      "terminal_settlement_fee": null,
+      "entry_cutoff_verified_in_current_official_notice": true,
+      "source_daily_open_labels_at_or_after_settlement": 7,
+      "source_daily_bar_windows_spanning_settlement": 1,
+      "funding_archive_records_in_month": 90,
+      "funding_archive_records_after_settlement": 79,
+      "funding_archive_records_exact_settlement": 0,
+      "last_funding_archive_timestamp": "2024-09-30T16:00:00+00:00",
+      "post_terminal_records_are_verified_cashflows": false
+    },
+    {
+      "symbol": "RNDRUSDT",
+      "notice_code": "d1f2ae8d99b24439a7a900caa9bb6b3b",
+      "entry_stop_at": "2024-07-16T08:30:00Z",
+      "settlement_at": "2024-07-16T09:00:00Z",
+      "archive_month": "2024-07",
+      "contract_type": "USD_M_PERPETUAL",
+      "source_url": "https://www.binance.com/en/support/announcement/detail/d1f2ae8d99b24439a7a900caa9bb6b3b",
+      "publish_at_claimed": "2024-07-10T06:30:03.071000+00:00",
+      "available_at_assumed": "2024-07-10T06:35:03.071000+00:00",
+      "notice_sha256": "a201859f4d67c22583eecc70482bf694dccbba593cdb194b0da605413a0b4d8f",
+      "notice_current_version": "1",
+      "notice_lastUpdateTime_field": 0,
+      "original_published_content_archived": false,
+      "terminal_settlement_price": null,
+      "terminal_settlement_fee": null,
+      "entry_cutoff_verified_in_current_official_notice": true,
+      "source_daily_open_labels_at_or_after_settlement": 14,
+      "source_daily_bar_windows_spanning_settlement": 1,
+      "funding_archive_records_in_month": 93,
+      "funding_archive_records_after_settlement": 46,
+      "funding_archive_records_exact_settlement": 0,
+      "last_funding_archive_timestamp": "2024-07-31T16:00:00+00:00",
+      "post_terminal_records_are_verified_cashflows": false
+    }
+  ],
+  "removed_postterminal_slots": 1,
+  "changed_preview_decisions": 1,
+  "preview_changes": [
+    {
+      "decision": "2024-09-09T00:00:00+00:00",
+      "removed": [
+        "MATICUSDT"
+      ],
+      "added": [
+        "NEARUSDT"
+      ]
+    }
+  ],
+  "historical_article_versions_certified": false,
+  "all_historical_status_certified": false,
+  "terminal_settlement_values_verified": false,
+  "automatic_source_replacement": false,
+  "original_datasets_modified": false,
+  "financial_accounts": 0,
+  "profit_goal_met": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "independent_oos": false,
+  "conflict_completion_sha256": "dff5ce76171d510f6b62246d83828fc417115db62d16b966059486337d852731",
+  "lifecycle_completion_sha256": "9872fdc5aa45b5537b05dfdffd61a01b24ef0ec088f130fb47788ee76412af7e",
+  "metrics": {
+    "net_return": null,
+    "win_rate": null,
+    "max_drawdown": null,
+    "sharpe": null,
+    "capacity_usdt": null
+  },
+  "next_action": "下一轮先对已发现的价格／量来源差异做固定版本敏感性核验，再补其余入选合约生命周期及执行输入；纯资金费与价格延续分开预登记，不依据收益选择数据版本。"
+}

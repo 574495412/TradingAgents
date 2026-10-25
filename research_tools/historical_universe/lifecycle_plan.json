@@ -1,0 +1,17 @@
+{
+  "schema": "historical-contract-lifecycle-study.v1",
+  "version": "20261026_v001",
+  "parent_daily": "data/research/historical_perpetual_daily_20261026_v002",
+  "source_directory": "data/research/historical_lifecycle_notices_20261026_v001",
+  "notice_endpoint": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query",
+  "notice_latency_minutes": 5,
+  "maximum_source_requests": 20,
+  "cases": [
+    {"symbol":"FTMUSDT","notice_code":"aec6fcbc84b749eeab6690e6bcac2f3d","entry_stop_at":"2025-01-06T08:30:00Z","settlement_at":"2025-01-06T09:00:00Z","archive_month":"2025-01"},
+    {"symbol":"MATICUSDT","notice_code":"6a6de383727f4659a3050f7982e1620f","entry_stop_at":"2024-09-04T08:30:00Z","settlement_at":"2024-09-04T09:00:00Z","archive_month":"2024-09"},
+    {"symbol":"RNDRUSDT","notice_code":"d1f2ae8d99b24439a7a900caa9bb6b3b","entry_stop_at":"2024-07-16T08:30:00Z","settlement_at":"2024-07-16T09:00:00Z","archive_month":"2024-07"}
+  ],
+  "policy": "VerifyUSD-Mcontract clauses separately from spot/COIN-M. Distinguish notice publish timestamp, assumed+5minavailability, new-position cutoff and terminal settlement. Current article captures do not certify original historical content versions. Current metadata is a cross-check only. Source rows at or after termination remain archived but cannot establish executable trades or payable funding. Terminal settlement price and fee remain null unless independently verified.",
+  "eligibility_preview": "Apply known hard cutoff at decision time only when notice claimed available. Do not backdate exclusions to periods before the notice. No relisting/rename stitching; new contracts require separate lifecycle identities. Before computing any future rolling feature also exclude whole-day bars spanning or following confirmed settlement.",
+  "new_financial_accounts":0,"profit_goal_met":false,"independent_oos":false,"orders_enabled":false,"production_eligible":false
+}

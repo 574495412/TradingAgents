@@ -1,0 +1,114 @@
+{
+  "schema": "pure-funding-source-sensitive-study.v1",
+  "version": "20261026_v001",
+  "purpose": "Separate a pure financing-spread hypothesis from MAX/price momentum, with frozen archive and currentAPI source variants. This existing40coin diagnostic runs independently of the not-yet-certified expanded universe and cannot complete that expanded-universe task or the total-account profit goal.",
+  "registration_basis": "MAX2026long-side gains include substantial actual funding; this is motivation for a new hypothesis, not proof. Fixed GitHub sources propose long-low/short-high accrued funding. No inherited source returns, spot proxy, future-membership filter, clipping or missing-held-return zero.",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "parent_actual_funding": "data/research/max_effect_actual_funding_20261026_v002",
+  "past_funding_supplement": {
+    "start": "2024-12-25T00:00:00Z",
+    "end_exclusive": "2025-01-01T00:00:00Z",
+    "symbols": "same40sealedcontracts",
+    "maximum_requests": 100,
+    "raw_timestamp_mark_rate_required": true,
+    "compare_legacy_nominal_calendar_and_rates": true
+  },
+  "source_variant": {
+    "archive": "unchanged sealed5mdata",
+    "api_revision": "replace only2025-01-29actual5mbars for all40contracts from officialBinanceconnector before targets or returns; all other bars unchanged",
+    "maximum_api_requests": 40,
+    "api_reference_diff_report": "docs/research/regime_program/historical_execution_20261026/README.md",
+    "selection_by_returns": false
+  },
+  "factor_root": "factors/",
+  "candidates": [
+    "funding7_raw",
+    "funding7_cost_floor",
+    "momentum28_control"
+  ],
+  "common_universe": "Use same prior28day quote mean>=50M,180observations,past60day validbeta eligibility as sealedMAX28 inputs for matched controls;BTCexcluded from ranking in all candidates;top30by known quote mean andminimum10eligible. Funding calendars must be complete; missing data never converted to zero.",
+  "signal": "Accrued actual settlement rates over[decision-7calendar days,decision), without assuming3events/day. Long4lowest7dayaccrual,short4highest;equal absolute unitweights0.125. Deterministic ties bysymbol; cash if all eligible accrued signals equal; disjoint sides required. No momentum term, beta hedge, z-score, leverage-up or performance selection.",
+  "cost_floor": "Same book, but cash unless forecast next7day funding receipt at unchanged recent7dayaccrual exceeds1.25times a full entry+exit at15bps/side. Compareunitgross financing spread to1.25*2*15/10000. This is a fixed conservative cost-coverage hypothesis, not a parameter grid or forecast guarantee.",
+  "calendar": "Monday00UTCand each cold initial clock; only completed known data; hold targetbook without daily resizing; all stops/actualfunding/partial fills remain active5m. Same frozen calendar_portfolio.py source as previousMAXstudy.",
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "windows": [
+    {
+      "id": "screen2025",
+      "start": "2025-01-01",
+      "end": "2026-01-01"
+    },
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "budget": {
+    "intended_base_new_accounts": 30,
+    "base_new_accounts_max": 36,
+    "archive_momentum_references_max": 6,
+    "cash_reference_rows": 6,
+    "conditional_capacity_accounts_max": 16,
+    "total_new_accounts_max": 52,
+    "intended_total_new_accounts_max_with_control_reuse": 46,
+    "capacity_capitals": [
+      100000,
+      1000000
+    ],
+    "parameter_grid": false
+  },
+  "control_reuse": "Reuse6sealedarchive momentum28control cases only after exact input identity and complete funding eligibility match. Reproduce archive control if identity differs, consuming the36base and52total hard upper bound; never report a mismatched or missing control as equal-risk incremental alpha.",
+  "capacity_followup": "Only purefunding variant whose continuous markedANDclosedPnL are positive at BOTHcosts and BOTHsourceversions, without risk halt, may run both capacities. Maximum2variants; followup is not admission.",
+  "qualification": "Usev002module acceptance inside preregistered opportunity set, not an individual20percent hurdle. Require source-version-sensitive financial audits, sufficientcycles/clusters and allocated-sleeve capacity. Price/carry attribution reconciles exact lifecycle cash and openPnL; MAX and ordinary momentum do not count as two mechanisms by name. Total account20/30percent targets remain unchanged.",
+  "source_uncertainty": "Two tested versions do not certify the whole historical feed. Expanded268name lifecycle and all terminal cash settlement remain separate unfinished requirements. No artificialMATIC/FTM/RNDRpostterminal funding credits.",
+  "required_evidence": [
+    "independent accrued-funding and ranking arithmetic",
+    "real prefix/future perturbation",
+    "no overlapping tied-signal legs",
+    "independent cash/funding/inventory/NAV and complete-lifecycle audit",
+    "actual new-interpreter JSON restoration",
+    "period/state/fee/carry/price/capacity breakdown",
+    "paired source-version sensitivity rather than best-source selection"
+  ],
+  "new_financial_accounts_computed": 0,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "references": [
+    {
+      "repository": "OctopusTakopi/funding-rate-alpha",
+      "commit": "cf9f87c01d3165bbc3bf34438baee289d248ffca",
+      "role": "raw funding carry hypothesis and negative controls; not inherited returns"
+    },
+    {
+      "repository": "bryanvine/alpha-research",
+      "commit": "17b8b5e1c79af194f733544517d82e3cf12c2259",
+      "role": "past7day funding ranking; exact perpetual execution replaces source spot proxy; no copied code"
+    },
+    {
+      "local_review": "docs/research/regime_program/historical_execution_20261026/README.md",
+      "role": "source-version and terminal lifecycle limitations remain explicit"
+    }
+  ]
+}

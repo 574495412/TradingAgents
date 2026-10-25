@@ -1,0 +1,12 @@
+{
+  "schema": "historical-source-crosscheck-recovery.v1",
+  "version": "20261026_v003",
+  "original_plan_sha256": "77cb023a176f047b5863f0b6d57ed04eefe95cf14701c41df1e4cb3cec42f6ea",
+  "additional_cache": "data/research/historical_source_crosscheck_20261026_v002",
+  "failed_source_snapshot_sha256": "e4670c248ed862865adcf01d4e897921540fb31f7ffb0998927640eb79743f0a",
+  "prior_HTTP_request_upper_bound": 400,
+  "total_HTTP_request_budget": 800,
+  "remaining_HTTP_request_budget": 400,
+  "reason": "v001TLSexception;v002budgetdouble-countedunstartedparentcases. Preserve both and reuse validated available files. Registration is before source comparisons and new strategy PnL.",
+  "financial_accounts": 0
+}

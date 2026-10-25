@@ -79,7 +79,8 @@
     "forward": "可选补充；沿用用户取消固定30/60天等待的要求，不设最低研发天数。缺少真实前向时如实披露，不冒充已验证实盘",
     "restart": "持仓、已结资金费、账户高水位、停机与未成交单恢复一致；跨年/切换不得重置",
     "leverage": "基准gross=0.8，无杠杆放大；任何新风险预算必须作为另一个预登记实验，不能借此达成本轮收益目标",
-    "complete_lifecycles_scope": "多策略总账户至少100个完整周期；单模块最低30个另按module_acceptance验收，失败对冲不填充匹配配对门槛。"
+    "complete_lifecycles_scope": "多策略总账户至少100个完整周期；单模块最低30个另按module_acceptance验收，失败对冲不填充匹配配对门槛。",
+    "source_revision_sensitivity": "已知来源冲突不得按最高收益选版；新正收益候选须在固定归档与API修订版本分别核验，数据一致性未通过不得冒充通过。当前正文不等于原始历史可用版本，终止后记录不等于实际成交/资金费现金。"
   },
   "regimes": [
     {
@@ -333,9 +334,11 @@
         "max_effect_accounts_20261026/verification.json",
         "historical_universe_20261026/README.md",
         "historical_universe_20261026/verification.json",
-        "historical_universe_20261026/source_review.json"
+        "historical_universe_20261026/source_review.json",
+        "historical_execution_20261026/README.md",
+        "historical_execution_20261026/verification.json"
       ],
-      "outcome": "保留MAX24账户和6次进程恢复；新增860历史候选合约、636990日线及366次过去信息资格预览，未新增收益账户。官方源异常及121合约日跨区间成交额差异保留；历史交易状态、最终结算和完整执行仍待认证。总组合收益与容量目标保持未完成。"
+      "outcome": "143合约日来源交叉核验完成，4个API参照日中3天不一致；3个官方生命周期案例修正1次候选预览，未伪造终止结算或资金费现金。保留旧结果，新增收益账户0；已预登记纯资金费与动量的双来源对照，待执行。总收益与容量目标未完成。"
     },
     {
       "id": "R07",
@@ -366,9 +369,11 @@
         "max_effect_accounts_20261026/verification.json",
         "historical_universe_20261026/README.md",
         "historical_universe_20261026/verification.json",
-        "historical_universe_20261026/source_review.json"
+        "historical_universe_20261026/source_review.json",
+        "historical_execution_20261026/README.md",
+        "historical_execution_20261026/verification.json"
       ],
-      "outcome": "保留MAX24账户和6次进程恢复；新增860历史候选合约、636990日线及366次过去信息资格预览，未新增收益账户。官方源异常及121合约日跨区间成交额差异保留；历史交易状态、最终结算和完整执行仍待认证。总组合收益与容量目标保持未完成。"
+      "outcome": "143合约日来源交叉核验完成，4个API参照日中3天不一致；3个官方生命周期案例修正1次候选预览，未伪造终止结算或资金费现金。保留旧结果，新增收益账户0；已预登记纯资金费与动量的双来源对照，待执行。总收益与容量目标未完成。"
     },
     {
       "id": "R08",
@@ -399,9 +404,11 @@
         "max_effect_accounts_20261026/verification.json",
         "historical_universe_20261026/README.md",
         "historical_universe_20261026/verification.json",
-        "historical_universe_20261026/source_review.json"
+        "historical_universe_20261026/source_review.json",
+        "historical_execution_20261026/README.md",
+        "historical_execution_20261026/verification.json"
       ],
-      "outcome": "保留MAX24账户和6次进程恢复；新增860历史候选合约、636990日线及366次过去信息资格预览，未新增收益账户。官方源异常及121合约日跨区间成交额差异保留；历史交易状态、最终结算和完整执行仍待认证。总组合收益与容量目标保持未完成。"
+      "outcome": "143合约日来源交叉核验完成，4个API参照日中3天不一致；3个官方生命周期案例修正1次候选预览，未伪造终止结算或资金费现金。保留旧结果，新增收益账户0；已预登记纯资金费与动量的双来源对照，待执行。总收益与容量目标未完成。"
     },
     {
       "id": "R09",
@@ -452,6 +459,17 @@
       "historical_trading_status_verified": false,
       "new_financial_accounts": 0,
       "independent_oos": false
+    },
+    "historical_execution": {
+      "source": "historical_execution_20261026/README.md",
+      "crosschecked_contract_days": 143,
+      "api_reference_days": 4,
+      "api_disagreement_days": 3,
+      "known_terminal_cases": 3,
+      "changed_preview_decisions": 1,
+      "all_sources_concordant": false,
+      "terminal_settlement_values_verified": false,
+      "financial_accounts": 0
     }
   },
   "representative_actual": "新版总账户尚未运行，实际栏保持未知。前版单策略/风险修正以及币对结果保存在各自历史报告，不能直接当作新版总组合实际值。",
@@ -510,15 +528,16 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "historical_universe_and_pure_carry_source_qualification",
-    "status": "daily_archive_and_past_membership_audited_execution_inputs_incomplete",
-    "report": "historical_universe_20261026/README.md",
+    "mechanism": "source_version_and_contract_lifecycle_qualification",
+    "status": "source_conflicts_preserved_known_terminal_preview_repaired_pure_funding_preregistered",
+    "report": "historical_execution_20261026/README.md",
     "new_financial_accounts": 0,
+    "source_agreement_passed": false,
+    "terminal_settlement_values_verified": false,
+    "next_registered_plan": "research_tools/funding_cross_section/plan.json",
     "previous_sealed_account_report": "max_effect_accounts_20261026/README.md",
     "previous_sealed_account_count": 24,
-    "profit_proven": false,
-    "historical_trading_status_verified": false,
-    "independent_mechanisms_proven": 0
+    "profit_proven": false
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
