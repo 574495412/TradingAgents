@@ -1,0 +1,27 @@
+{
+  "unit_tests": {
+    "TradingAgents_review_no_app_conftest": 3,
+    "Freqtrade_research": 11,
+    "CZ_cockpit": 28,
+    "total": 42
+  },
+  "account_audits": 226,
+  "browser": {
+    "title": "CZ · 因子与量化组合",
+    "url": "http://127.0.0.1:8793/research#factor-lab",
+    "errors": [],
+    "overflow": false,
+    "sections": 5,
+    "rollingPeriods": 10,
+    "capacityPerCost": 12,
+    "viewports": [
+      "1512x1100",
+      "390x844"
+    ],
+    "browser": "Browser plugin not available; bundled Playwright and installed Chrome",
+    "interaction": "comparison -> cost15 -> rolling model -> additional months -> cost8 -> mobile -> existing composition"
+  },
+  "build": "Vite production build passed; existing index chunk remains above500kB warning",
+  "scope": "historical research only; no deployment or orders",
+  "snapshots": "Registered experiment snapshots preserve exact executed source bytes. Subsequent source changes were import/format cleanup and publication/UI code, with model and causal-selection tests passing."
+}

@@ -1,0 +1,10 @@
+{
+  "publication": "/Users/chrise/GitHub/TradingAgents/results/research/factor_lab_comparison_20261025_v002",
+  "sha256": "a414bed022e688e88be7e5350802a23e84823484db65b5260aebda4ea6a389c4",
+  "sources": {
+    "/Users/chrise/GitHub/TradingAgents/results/research/factor_lab_review_20261025_v001": "aa96207aa04994507303d0680685322ab92a59b2a5a00d5f4fc65104aefe85f4",
+    "/Users/chrise/GitHub/TradingAgents/results/research/factor_lab_review_rolling_20261025_v001": "4f5fab0d1f775b900c68e083294a75adf4ebfdbeb6fcbad7cffe94accbed708a",
+    "/Users/chrise/GitHub/TradingAgents/results/research/factor_lab_review_capacity_20261025_v001": "4382562d809abcb14eb5a5bd82e0d152ba3d397f9c7e3a94e6fccfd5c4522eb9"
+  },
+  "audited_accounts": 226
+}

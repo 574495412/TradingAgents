@@ -52,3 +52,7 @@ CZ-Agent 的 `factors/stock`、`factors/crypto` 当前被生产适配器直接�
 Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧收据伪造新结构下的历史重跑。新组合回放只读取上游有时间戳的因子／预测分数，不重新实现因子。
 
 安装研究依赖：`pip install -e '.[factors]'`。完整因子工作台由 `research_tools/factor_lab` 编排；它不导入TradingAgents应用启动器或加载`.env`。
+
+## 事后组合研究
+
+`portfolio/recipes.py` 保存已有因子ID的组合配方与选择来源，不增加独立因子数。2026-10-25等权6因子方案属于已观察历史后的假设，未通过净收益筛选。64组对比、滚动训练及全部226账户的结果见 [比较报告](../docs/research/factor_lab_review_20261025/README.md)。

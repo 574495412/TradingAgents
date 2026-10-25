@@ -1,0 +1,29 @@
+{
+ "schema":"factor-lab-bounded-refinement.v1",
+ "parent":"/Users/chrise/GitHub/TradingAgents/results/research/factor_lab_20261025_v004",
+ "parent_audit":"/Users/chrise/GitHub/TradingAgents/results/research/factor_lab_20261025_audit_v003/audit.json",
+ "execution_source":"/Users/chrise/GitHub/freqtrade/research/crypto/factor_portfolio_refined.py",
+ "hypothesis_origin":"All seven original windows have been observed; new hypotheses are post-review research, not clean OOS claims",
+ "candidates":["full_budget40","full_hurdle40","full_trend40","full_neutral40","balanced6_neutral40"],
+ "risk_budget":0.4,
+ "costs_slippage_bps":[3,10],
+ "validation_windows":["2025Q1","2025Q2","2025Q3","2025Q4"],
+ "candidate_definitions":{
+  "full_budget40":"Unchanged full24h predictions, gross0.4; equal-budget baseline control",
+  "full_hurdle40":"Same full24h predictions; fixed confidence hurdle0.0032, twice old hurdle, no grid",
+  "full_trend40":"Same prediction, admit only direction agreeing with completed168bar momentum; no new threshold fitting",
+  "full_neutral40":"Cross-section center full24h predictions; equal long/short target dollars at gross0.4; report actual net exposure after fills",
+  "balanced6_neutral40":"Equal signed existing-factor basket in factors/portfolio/recipes.py; cross-section center; target neutrality; no coefficient fitting"
+ },
+ "single_factor_diagnostics":["mom_720","efficiency_168","price_signed_flow_24","log_quote","funding_last","amihud_168"],
+ "single_factor_scope":"2025validation windows, cost8bps, gross0.4, target-neutral; no selection based on these account results",
+ "additional_windows":[
+  {"id":"2026M02","start":"2026-02-01","end":"2026-03-01","phase":"additional_evaluation"},
+  {"id":"2026M05","start":"2026-05-01","end":"2026-05-29","phase":"additional_evaluation"},
+  {"id":"2026M08","start":"2026-08-01","end":"2026-08-29","phase":"additional_evaluation"}
+ ],
+ "selection":{"minimum_mean_return_each_cost":0,"minimum_positive_windows_each_cost":3,"maximum_window_drawdown":0.08,"minimum_complete_positions_each_cost":30,"minimum_complete_profit_factor_each_cost":1.1,"ranking":"highest minimum-cost-case mean return, then lower worst drawdown; else cash","selection_inputs":"2025four validation windows only; original2026 and new windows never replace selected candidate"},
+ "additional_evaluation_candidates":"selected candidate and equal-budget baseline; if cash selected, fixed full_neutral40 and baseline remain diagnostics, cash selection unchanged",
+ "capacity":"2025Q2: baseline and selected (or fixed neutral diagnostics) at1m/10mUSDT, both costs; complete accounts, not scaled PnL",
+ "parameter_search":false,"unreported_trials":false,"production_eligible":false,"orders_enabled":false
+}
