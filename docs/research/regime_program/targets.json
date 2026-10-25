@@ -176,6 +176,18 @@
       "name": "桥水All Weather",
       "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
       "use": "按环境风险结构分散，不等于精准预测后切换"
+    },
+    {
+      "name": "OctopusTakopi/funding-rate-alpha",
+      "url": "https://github.com/OctopusTakopi/funding-rate-alpha/tree/cf9f87c01d3165bbc3bf34438baee289d248ffca",
+      "local": "historical_universe_20261026/source_review.json",
+      "use": "静态审阅历史合约覆盖与截尾／未来成员／缺失持仓问题，不采纳收益声明"
+    },
+    {
+      "name": "bryanvine/alpha-research",
+      "url": "https://github.com/bryanvine/alpha-research/tree/17b8b5e1c79af194f733544517d82e3cf12c2259",
+      "local": "historical_universe_20261026/source_review.json",
+      "use": "纯资金费方向假设与价格代理、分位重叠反例；未引入源码或采纳盈利结论"
     }
   ],
   "workflow": [
@@ -318,9 +330,12 @@
         "spot_perpetual_feasibility_20261026/README.md",
         "spot_carry_accounts_20261026/README.md",
         "max_effect_accounts_20261026/README.md",
-        "max_effect_accounts_20261026/verification.json"
+        "max_effect_accounts_20261026/verification.json",
+        "historical_universe_20261026/README.md",
+        "historical_universe_20261026/verification.json",
+        "historical_universe_20261026/source_review.json"
       ],
-      "outcome": "MAX与同期限普通动量／BTC对冲24账户、708次输入独立复算及6次新进程恢复完成；2026冷启动MAX高成本+13.72%，连续账户−10.71%，不能拼接；两个MAX连续版本未取得组合准入。总账户收益与容量保持未完成。"
+      "outcome": "保留MAX24账户和6次进程恢复；新增860历史候选合约、636990日线及366次过去信息资格预览，未新增收益账户。官方源异常及121合约日跨区间成交额差异保留；历史交易状态、最终结算和完整执行仍待认证。总组合收益与容量目标保持未完成。"
     },
     {
       "id": "R07",
@@ -348,9 +363,12 @@
         "spot_perpetual_feasibility_20261026/README.md",
         "spot_carry_accounts_20261026/README.md",
         "max_effect_accounts_20261026/README.md",
-        "max_effect_accounts_20261026/verification.json"
+        "max_effect_accounts_20261026/verification.json",
+        "historical_universe_20261026/README.md",
+        "historical_universe_20261026/verification.json",
+        "historical_universe_20261026/source_review.json"
       ],
-      "outcome": "MAX与同期限普通动量／BTC对冲24账户、708次输入独立复算及6次新进程恢复完成；2026冷启动MAX高成本+13.72%，连续账户−10.71%，不能拼接；两个MAX连续版本未取得组合准入。总账户收益与容量保持未完成。"
+      "outcome": "保留MAX24账户和6次进程恢复；新增860历史候选合约、636990日线及366次过去信息资格预览，未新增收益账户。官方源异常及121合约日跨区间成交额差异保留；历史交易状态、最终结算和完整执行仍待认证。总组合收益与容量目标保持未完成。"
     },
     {
       "id": "R08",
@@ -378,9 +396,12 @@
         "spot_perpetual_feasibility_20261026/README.md",
         "spot_carry_accounts_20261026/README.md",
         "max_effect_accounts_20261026/README.md",
-        "max_effect_accounts_20261026/verification.json"
+        "max_effect_accounts_20261026/verification.json",
+        "historical_universe_20261026/README.md",
+        "historical_universe_20261026/verification.json",
+        "historical_universe_20261026/source_review.json"
       ],
-      "outcome": "MAX与同期限普通动量／BTC对冲24账户、708次输入独立复算及6次新进程恢复完成；2026冷启动MAX高成本+13.72%，连续账户−10.71%，不能拼接；两个MAX连续版本未取得组合准入。总账户收益与容量保持未完成。"
+      "outcome": "保留MAX24账户和6次进程恢复；新增860历史候选合约、636990日线及366次过去信息资格预览，未新增收益账户。官方源异常及121合约日跨区间成交额差异保留；历史交易状态、最终结算和完整执行仍待认证。总组合收益与容量目标保持未完成。"
     },
     {
       "id": "R09",
@@ -421,6 +442,16 @@
       "trend_up": 59,
       "volatility_breakout": 42,
       "trend_down": 27
+    },
+    "historical_universe": {
+      "source": "historical_universe_20261026/README.md",
+      "symbols": 860,
+      "daily_rows": 636990,
+      "monthly_archives": 21357,
+      "membership_arithmetic_passed": true,
+      "historical_trading_status_verified": false,
+      "new_financial_accounts": 0,
+      "independent_oos": false
     }
   },
   "representative_actual": "新版总账户尚未运行，实际栏保持未知。前版单策略/风险修正以及币对结果保存在各自历史报告，不能直接当作新版总组合实际值。",
@@ -479,14 +510,14 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "crypto_MAX_continuation_vs_matched_momentum",
-    "status": "24_accounts_audited_continuous_risk_and_net_edge_failed",
-    "report": "max_effect_accounts_20261026/README.md",
-    "account_returns_computed": true,
+    "mechanism": "historical_universe_and_pure_carry_source_qualification",
+    "status": "daily_archive_and_past_membership_audited_execution_inputs_incomplete",
+    "report": "historical_universe_20261026/README.md",
+    "new_financial_accounts": 0,
+    "previous_sealed_account_report": "max_effect_accounts_20261026/README.md",
+    "previous_sealed_account_count": 24,
     "profit_proven": false,
-    "new_financial_accounts": 24,
-    "cash_references": 6,
-    "actual_process_restarts": 6,
+    "historical_trading_status_verified": false,
     "independent_mechanisms_proven": 0
   },
   "acceptance_version": "module-allocation-portfolio.v2",

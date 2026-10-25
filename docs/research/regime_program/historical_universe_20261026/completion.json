@@ -1,0 +1,11 @@
+{
+  "manifest": {
+    "summary.json": "57db8a0228c15349fa9216496d4400f1c8b45b6491610665c241663c178882c1",
+    "max_component_attribution.json": "823c6d57c36cc8bdc68838eb67e1193671ae1ecef83630ca9056940f67477174",
+    "source_review.json": "d442d903ae8b5f70c26d8b7bb1d4520c0d6648c9c0087a6793a1277e6aade3d6",
+    "README.md": "50ee05e407eb778b5840ad1f58c9e93216dd1a42f8f1de47e56b97a22f92cf8c",
+    "verification.json": "2250dd9dde45e4acab4257257ed2e1e87b8bf1d64a5ff2ff1cafbb728dda9168"
+  },
+  "data_only": true,
+  "financial_accounts": 0
+}

@@ -1,0 +1,128 @@
+{
+  "schema": "historical-universe-data-review.v1",
+  "stage": "historical_data_qualification",
+  "description": "从官方归档枚举历史合约，保留不再出现在当前资料中的名称；候选资格仅看之前已完成的28日成交额与180个有效观测，不读取未来收益。当前资产类别只作标签，未用于历史筛选。",
+  "start": "2019-09-01",
+  "end_exclusive": "2026-09-01",
+  "symbols": 860,
+  "archives": 21357,
+  "daily_rows": 636990,
+  "preview_decisions": 366,
+  "selected_union": 268,
+  "selected_outside_old40": 228,
+  "selected_missing_current_metadata": 12,
+  "archive_symbols_missing_current_metadata": 31,
+  "quality_issues": [
+    {
+      "id": "quote_outside_OHLC_volume_bounds",
+      "label": "成交额超出高低价与总量可解释范围",
+      "count": 24
+    },
+    {
+      "id": "auxiliary_trade_or_taker_inconsistency",
+      "label": "主动成交或交易笔数字段冲突",
+      "count": 8
+    },
+    {
+      "id": "missing_interior_source_day",
+      "label": "首末观测之间缺失日期",
+      "count": 323
+    },
+    {
+      "id": "daily_vs5m_different_days",
+      "label": "与既有五分钟聚合不一致的合约日",
+      "count": 121
+    }
+  ],
+  "quality_note": "官方SHA256校验通过仍可能存在源字段冲突。原值、缺日与非完整日均保留；价格／流动性字段不合格的日期不用于候选资格，辅助字段单独标记，未补价格或截尾收益。异常计数可在同一行重叠，不应相加当作独立样本。",
+  "next_action": "补齐历史合约类型、实际可交易状态、停牌／退市最终结算、真实资金费及五分钟成交输入；解决日线与独立区间源差异后，再预登记纯资金费与价格延续对照。数据覆盖和选池算术通过不等于收益通过。",
+  "annual_preview": [
+    {
+      "year": "2019",
+      "decisions": 18,
+      "selection_slots": 0,
+      "unique_selected": 0,
+      "old40_coverage_of_selected_slots": null,
+      "selected_missing_current_metadata": 0,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2020",
+      "decisions": 52,
+      "selection_slots": 222,
+      "unique_selected": 15,
+      "old40_coverage_of_selected_slots": 0.8603603603603603,
+      "selected_missing_current_metadata": 1,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2021",
+      "decisions": 52,
+      "selection_slots": 1495,
+      "unique_selected": 74,
+      "old40_coverage_of_selected_slots": 0.6675585284280936,
+      "selected_missing_current_metadata": 6,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2022",
+      "decisions": 52,
+      "selection_slots": 1560,
+      "unique_selected": 94,
+      "old40_coverage_of_selected_slots": 0.6717948717948717,
+      "selected_missing_current_metadata": 7,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2023",
+      "decisions": 52,
+      "selection_slots": 1560,
+      "unique_selected": 97,
+      "old40_coverage_of_selected_slots": 0.5698717948717948,
+      "selected_missing_current_metadata": 4,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2024",
+      "decisions": 53,
+      "selection_slots": 1590,
+      "unique_selected": 87,
+      "old40_coverage_of_selected_slots": 0.4981132075471698,
+      "selected_missing_current_metadata": 3,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2025",
+      "decisions": 52,
+      "selection_slots": 1560,
+      "unique_selected": 105,
+      "old40_coverage_of_selected_slots": 0.49935897435897436,
+      "selected_missing_current_metadata": 2,
+      "selected_current_noncoin": 0
+    },
+    {
+      "year": "2026",
+      "decisions": 35,
+      "selection_slots": 1050,
+      "unique_selected": 107,
+      "old40_coverage_of_selected_slots": 0.42,
+      "selected_missing_current_metadata": 0,
+      "selected_current_noncoin": 5
+    }
+  ],
+  "financial_accounts": 0,
+  "financial_account_ready": false,
+  "historical_trading_status_verified": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "data_completion_sha256": "28d97e0806b30df136b3af9a0da16d50726a4a51283590d65a2f658edaea5f83",
+  "metrics": {
+    "net_return": null,
+    "win_rate": null,
+    "max_drawdown": null,
+    "sharpe": null,
+    "capacity_usdt": null
+  }
+}

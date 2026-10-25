@@ -1,0 +1,101 @@
+{
+  "schema": "historical-universe-source-review.v1",
+  "captured_source_catalog_sha256": "c8a4ab4945aeea449b6695387e2d6ca695a823cfdb89a680027a6202648c38b6",
+  "external_code_executed": false,
+  "new_financial_accounts": 0,
+  "sources": [
+    {
+      "repository": "OctopusTakopi/funding-rate-alpha",
+      "commit": "cf9f87c01d3165bbc3bf34438baee289d248ffca",
+      "license": "MIT",
+      "role": "archive-universe and funding research counterexamples; do not inherit its returns",
+      "findings": [
+        {
+          "file": "scripts/factors.py",
+          "lines": [
+            10,
+            14
+          ],
+          "issue": "panel_base filters membership on known future24h returns; such rows are not an ex-ante executable universe"
+        },
+        {
+          "file": "scripts/factors.py",
+          "lines": [
+            176,
+            204
+          ],
+          "issue": "swing_sim default clips future per-name daily returns to[-0.9,2.0]; account tails must retain actual prices"
+        },
+        {
+          "file": "scripts/factors.py",
+          "lines": [
+            239,
+            250
+          ],
+          "issue": "absent held names contribute zero with a fixed denominator, avoiding redistribution but not realizing unknown delisting settlement"
+        },
+        {
+          "file": "scripts/build_universe.py",
+          "lines": [
+            1,
+            44
+          ],
+          "issue": "union of annual top150 download names is not a proof that every trailing365day top150 name is covered; use complete archive enumeration"
+        },
+        {
+          "file": "scripts/factors.py",
+          "lines": [
+            140,
+            174
+          ],
+          "issue": "same-time return aggregation and turnover references are statistical approximations, not our next5m actual inventory/funding account"
+        }
+      ],
+      "adopt": "independent raw level carry-versus-price attribution and historical-contract coverage checks",
+      "do_not_adopt": "profit figures, clipped tails, forward-outcome membership, or missing held PnL=0"
+    },
+    {
+      "repository": "bryanvine/alpha-research",
+      "commit": "17b8b5e1c79af194f733544517d82e3cf12c2259",
+      "license": "no license declaration in inspected repository metadata; reference only",
+      "role": "pure funding candidate direction and audit counterexamples; no code copied into factors",
+      "findings": [
+        {
+          "file": "alpha_research/factors/carry.py",
+          "lines": [
+            39,
+            49
+          ],
+          "issue": "spot daily log returns proxy the perpetual price leg; no true perpetual basis, matching inventory or intraday execution"
+        },
+        {
+          "file": "alpha_research/factors/carry.py",
+          "lines": [
+            52,
+            79
+          ],
+          "issue": "default rebal=5 is every five observed crypto days, not a fixed UTCMonday schedule"
+        },
+        {
+          "file": "alpha_research/factors/carry.py",
+          "lines": [
+            63,
+            72
+          ],
+          "issue": "quantile threshold sets can overlap under tied rates; writing shorts after longs can overwrite them, so actual dollar neutrality needs an independent check"
+        },
+        {
+          "file": "alpha_research/factors/carry.py",
+          "lines": [
+            29,
+            37
+          ],
+          "issue": "MATIC postrename masked by fixed date; cannot transfer other renamed or delisted lifecycle handling automatically"
+        }
+      ],
+      "adopt": "hypothesis long low accrued funding and short high accrued funding, with complete rate calendars; still unqualified",
+      "do_not_adopt": "source Sharpe/OOS labels, spot proxy PnL, missing settlement zero, or unverified term-neutrality"
+    }
+  ],
+  "next_data_requirement": "official archive-observed history with no current-survivor filter; preserve quality flags, historical status and settlement remain unverified; no account qualification before matching executable inputs"
+}
