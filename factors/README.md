@@ -65,4 +65,6 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 
 ## GitHub来源复现
 
+协整币对形成期的共同数学定义集中在 `portfolio/cointegrated_pairs.py`，协议在 `research_tools/regime_program/pair_plan.json`。它只用形成时刻之前的观测价格、双向EG及多重校正、Johansen秩和成本空间筛选，不读取账户收益排序。股票可以复用按真实交易日排列的数学输入，当前半衰期天数、流动性门槛与交易规则只验证加密日历，不能直接声称股票账户有效。第三轮已完成形成期核验，收益／胜率／回撤／夏普／容量尚未计算；见[形成期报告](../docs/research/regime_program/pair_formation_20261026/README.md)。原74列面板不变。
+
 `common/github_formulas.py` 保存PST的3个日频规则、Qlib的2个具体价量公式及Sentinel组合映射；固定源码commit与研究状态登记在 `catalog.json.github_research_registry`。这是来源明确的数学适配，不能继承原股票／期货工作流的收益声明；5个公式和3个组合不等于8个独立盈利因子。13个仓库筛选、40币数据质量及46个完整账户见 [GitHub复现报告](../docs/research/github_factor_study_20261025/README.md)。

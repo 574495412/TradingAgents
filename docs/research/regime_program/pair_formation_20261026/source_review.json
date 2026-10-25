@@ -1,0 +1,82 @@
+{
+  "schema": "pairs-primary-source-review.v1",
+  "retrieved_at": "2026-10-25T17:39:09.344738+00:00",
+  "records": [
+    {
+      "repository": "stefan-jansen/machine-learning-for-trading",
+      "commit": "30db4f00946ce91fbc98fef18582b8cbc3fd8afd",
+      "license": "MIT",
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/30db4f00946ce91fbc98fef18582b8cbc3fd8afd/LICENSE",
+      "sha256": "0094a98ecda4424d88af9ab717659aaee3d721c2653ff638aaf8bafbc58ce8c3",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/stefan-jansen__machine-learning-for-trading/LICENSE"
+    },
+    {
+      "repository": "stefan-jansen/machine-learning-for-trading",
+      "commit": "30db4f00946ce91fbc98fef18582b8cbc3fd8afd",
+      "license": "MIT",
+      "file": "09_model_based_features/14_panel_features.py",
+      "url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/30db4f00946ce91fbc98fef18582b8cbc3fd8afd/09_model_based_features/14_panel_features.py",
+      "sha256": "71b6c59ce3eb809164bb0a9315330f96ea7b1b1ac6128f0c3205ebc13fccc28c",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/stefan-jansen__machine-learning-for-trading/09_model_based_features/14_panel_features.py"
+    },
+    {
+      "repository": "je-suis-tm/quant-trading",
+      "commit": "611b73f2c3f577ac5b28aaa19ac8c43d3236c7a5",
+      "license": "Apache-2.0",
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/je-suis-tm/quant-trading/611b73f2c3f577ac5b28aaa19ac8c43d3236c7a5/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/je-suis-tm__quant-trading/LICENSE"
+    },
+    {
+      "repository": "je-suis-tm/quant-trading",
+      "commit": "611b73f2c3f577ac5b28aaa19ac8c43d3236c7a5",
+      "license": "Apache-2.0",
+      "file": "Pair trading backtest.py",
+      "url": "https://raw.githubusercontent.com/je-suis-tm/quant-trading/611b73f2c3f577ac5b28aaa19ac8c43d3236c7a5/Pair%20trading%20backtest.py",
+      "sha256": "d3088cbee0bc494513075d8f79ec4a9e940e17f432b9e2a86977f639a1e9d471",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/je-suis-tm__quant-trading/Pair trading backtest.py"
+    },
+    {
+      "repository": "statsmodels/statsmodels",
+      "commit": "1107ea567121b80f90562d6c72085eed7e882113",
+      "license": "BSD-3-Clause",
+      "file": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/statsmodels/statsmodels/1107ea567121b80f90562d6c72085eed7e882113/LICENSE.txt",
+      "sha256": "1ca78e1dec9dcebc55f3b96a862317f23e76422c5fc943568d955aad1f6b5fad",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/statsmodels__statsmodels/LICENSE.txt"
+    },
+    {
+      "repository": "statsmodels/statsmodels",
+      "commit": "1107ea567121b80f90562d6c72085eed7e882113",
+      "license": "BSD-3-Clause",
+      "file": "statsmodels/tsa/stattools.py",
+      "url": "https://raw.githubusercontent.com/statsmodels/statsmodels/1107ea567121b80f90562d6c72085eed7e882113/statsmodels/tsa/stattools.py",
+      "sha256": "e6a9fa11f763ebf1792100f39b7fc99a58bb8e9964d233152f956c844e3859bd",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/statsmodels__statsmodels/statsmodels/tsa/stattools.py"
+    },
+    {
+      "repository": "statsmodels/statsmodels",
+      "commit": "1107ea567121b80f90562d6c72085eed7e882113",
+      "license": "BSD-3-Clause",
+      "file": "statsmodels/tsa/vector_ar/vecm.py",
+      "url": "https://raw.githubusercontent.com/statsmodels/statsmodels/1107ea567121b80f90562d6c72085eed7e882113/statsmodels/tsa/vector_ar/vecm.py",
+      "sha256": "4a4a6f17f6f0ee76a5a7b70d6e1142593e7916f644f3e82b30e841c08040e33d",
+      "local": "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/statsmodels__statsmodels/statsmodels/tsa/vector_ar/vecm.py"
+    }
+  ],
+  "downloaded_programs_executed": false,
+  "profit_proven": false,
+  "method_links": [
+    "https://arxiv.org/abs/2109.10662",
+    "https://arxiv.org/abs/2305.06961"
+  ],
+  "collection_note": "Documentation host timed out; preserve incomplete v001/v002. Versioned implementation and docstrings from statsmodels official GitHub replace unavailable HTML; paper links were reviewed via web, not archived full papers.",
+  "review": [
+    "Jansen shows Engle-Granger/Johansen, training-block half-life, forward-only hedge filtering and entry threshold2; ETF method example, not crypto profit evidence.",
+    "je-suis-tm uses full-sample price maxima to choose shares and an unadjusted residual ADF; do not import those sizing/test assumptions.",
+    "Use proper cointegration p-values, declared multiple-test correction, train-only coefficients, matched pair legs, actual funding and separate closed pair lifecycles.",
+    "ArXiv papers support the hypothesis and execution sensitivity; source claims and venues do not prove this Binance experiment profitable."
+  ]
+}

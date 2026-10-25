@@ -1,0 +1,343 @@
+{
+  "schema": "cointegrated-pair-formation-evidence.v1",
+  "profile": [
+    {
+      "file": "fixed_formation.json",
+      "fit_at": "2025-01-01T00:00:00+00:00",
+      "eligible_names": 30,
+      "pairs_tested": 435,
+      "directional_tests": 870,
+      "unknown_tests": 0,
+      "selected": [
+        "IOTAUSDT/SANDUSDT"
+      ],
+      "rejections": {
+        "cointegration_fdr": 434
+      }
+    },
+    {
+      "file": "rolling_20250101.json",
+      "fit_at": "2025-01-01T00:00:00+00:00",
+      "eligible_names": 30,
+      "pairs_tested": 435,
+      "directional_tests": 870,
+      "unknown_tests": 0,
+      "selected": [
+        "ALGOUSDT/SANDUSDT"
+      ],
+      "rejections": {
+        "cointegration_fdr": 433
+      }
+    },
+    {
+      "file": "rolling_20250201.json",
+      "fit_at": "2025-02-01T00:00:00+00:00",
+      "eligible_names": 27,
+      "pairs_tested": 351,
+      "directional_tests": 702,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 351
+      }
+    },
+    {
+      "file": "rolling_20250301.json",
+      "fit_at": "2025-03-01T00:00:00+00:00",
+      "eligible_names": 25,
+      "pairs_tested": 300,
+      "directional_tests": 600,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 300
+      }
+    },
+    {
+      "file": "rolling_20250401.json",
+      "fit_at": "2025-04-01T00:00:00+00:00",
+      "eligible_names": 21,
+      "pairs_tested": 210,
+      "directional_tests": 420,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 210
+      }
+    },
+    {
+      "file": "rolling_20250501.json",
+      "fit_at": "2025-05-01T00:00:00+00:00",
+      "eligible_names": 21,
+      "pairs_tested": 210,
+      "directional_tests": 420,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 210
+      }
+    },
+    {
+      "file": "rolling_20250601.json",
+      "fit_at": "2025-06-01T00:00:00+00:00",
+      "eligible_names": 23,
+      "pairs_tested": 253,
+      "directional_tests": 506,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 253
+      }
+    },
+    {
+      "file": "rolling_20250701.json",
+      "fit_at": "2025-07-01T00:00:00+00:00",
+      "eligible_names": 22,
+      "pairs_tested": 231,
+      "directional_tests": 462,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 231
+      }
+    },
+    {
+      "file": "rolling_20250801.json",
+      "fit_at": "2025-08-01T00:00:00+00:00",
+      "eligible_names": 22,
+      "pairs_tested": 231,
+      "directional_tests": 462,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 231
+      }
+    },
+    {
+      "file": "rolling_20250901.json",
+      "fit_at": "2025-09-01T00:00:00+00:00",
+      "eligible_names": 23,
+      "pairs_tested": 253,
+      "directional_tests": 506,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 253
+      }
+    },
+    {
+      "file": "rolling_20251001.json",
+      "fit_at": "2025-10-01T00:00:00+00:00",
+      "eligible_names": 20,
+      "pairs_tested": 190,
+      "directional_tests": 380,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 190
+      }
+    },
+    {
+      "file": "rolling_20251101.json",
+      "fit_at": "2025-11-01T00:00:00+00:00",
+      "eligible_names": 23,
+      "pairs_tested": 253,
+      "directional_tests": 506,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 253
+      }
+    },
+    {
+      "file": "rolling_20251201.json",
+      "fit_at": "2025-12-01T00:00:00+00:00",
+      "eligible_names": 19,
+      "pairs_tested": 171,
+      "directional_tests": 342,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 171
+      }
+    },
+    {
+      "file": "rolling_20260101.json",
+      "fit_at": "2026-01-01T00:00:00+00:00",
+      "eligible_names": 18,
+      "pairs_tested": 153,
+      "directional_tests": 306,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 153
+      }
+    },
+    {
+      "file": "rolling_20260201.json",
+      "fit_at": "2026-02-01T00:00:00+00:00",
+      "eligible_names": 20,
+      "pairs_tested": 190,
+      "directional_tests": 380,
+      "unknown_tests": 0,
+      "selected": [
+        "CRVUSDT/LINKUSDT"
+      ],
+      "rejections": {
+        "cointegration_fdr": 186
+      }
+    },
+    {
+      "file": "rolling_20260301.json",
+      "fit_at": "2026-03-01T00:00:00+00:00",
+      "eligible_names": 18,
+      "pairs_tested": 153,
+      "directional_tests": 306,
+      "unknown_tests": 0,
+      "selected": [
+        "FILUSDT/UNIUSDT"
+      ],
+      "rejections": {
+        "cointegration_fdr": 152
+      }
+    },
+    {
+      "file": "rolling_20260401.json",
+      "fit_at": "2026-04-01T00:00:00+00:00",
+      "eligible_names": 17,
+      "pairs_tested": 136,
+      "directional_tests": 272,
+      "unknown_tests": 0,
+      "selected": [
+        "BNBUSDT/BTCUSDT",
+        "FILUSDT/UNIUSDT"
+      ],
+      "rejections": {
+        "cointegration_fdr": 132
+      }
+    },
+    {
+      "file": "rolling_20260501.json",
+      "fit_at": "2026-05-01T00:00:00+00:00",
+      "eligible_names": 16,
+      "pairs_tested": 120,
+      "directional_tests": 240,
+      "unknown_tests": 0,
+      "selected": [
+        "ADAUSDT/FILUSDT",
+        "SOLUSDT/XRPUSDT"
+      ],
+      "rejections": {
+        "cointegration_fdr": 110
+      }
+    },
+    {
+      "file": "rolling_20260601.json",
+      "fit_at": "2026-06-01T00:00:00+00:00",
+      "eligible_names": 17,
+      "pairs_tested": 136,
+      "directional_tests": 272,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 136
+      }
+    },
+    {
+      "file": "rolling_20260701.json",
+      "fit_at": "2026-07-01T00:00:00+00:00",
+      "eligible_names": 17,
+      "pairs_tested": 136,
+      "directional_tests": 272,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 136
+      }
+    },
+    {
+      "file": "rolling_20260801.json",
+      "fit_at": "2026-08-01T00:00:00+00:00",
+      "eligible_names": 13,
+      "pairs_tested": 78,
+      "directional_tests": 156,
+      "unknown_tests": 0,
+      "selected": [],
+      "rejections": {
+        "cointegration_fdr": 78
+      }
+    }
+  ],
+  "formation_fits": 21,
+  "fixed_pairs": 1,
+  "rolling_months_with_pairs": 5,
+  "directional_tests": 9250,
+  "unknown_tests": 0,
+  "rejections": {
+    "cointegration_fdr": 4603
+  },
+  "causality_checks": [
+    {
+      "fit_at": "2025-01-01T00:00:00+00:00",
+      "prefix_equal": true,
+      "current_and_future_mutation_equal": true
+    },
+    {
+      "fit_at": "2025-10-01T00:00:00+00:00",
+      "prefix_equal": true,
+      "current_and_future_mutation_equal": true
+    },
+    {
+      "fit_at": "2026-08-01T00:00:00+00:00",
+      "prefix_equal": true,
+      "current_and_future_mutation_equal": true
+    }
+  ],
+  "independent_selected_reconstructions": 8,
+  "maximum_beta_error": 1.2212453270876722e-15,
+  "account_returns_computed": false,
+  "profit_proven": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "independent_oos": false,
+  "limitations": [
+    "Contemporarily chosen 40-name pool has survivor-selection bias.",
+    "Each month controls its declared directional family, not lifetime research false discoveries; BH dependence assumptions are not proved.",
+    "Daily formation and theoretical convergence do not demonstrate executable intraday returns or stable future relationships.",
+    "No order-book history; subsequent capacity analysis is a volume proxy."
+  ],
+  "elapsed_seconds": 8.002110125002218,
+  "stage": "formation_only",
+  "title": "第三轮：协整币对价差回归",
+  "net_return": null,
+  "net_win_rate": null,
+  "max_drawdown": null,
+  "sharpe": null,
+  "capacity_usdt": null,
+  "audit": {
+    "schema": "independent-pair-formation-audit.v1",
+    "passed": true,
+    "formation_root": "/Users/chrise/GitHub/TradingAgents/results/research/pair_formation_20261026_v001",
+    "completion_sha256": "f803f2d7a7387d0c3469b3726ef9532489d9d7899b863abd035e633f90b31b8d",
+    "auditor_sha256": "1da62a29f8441b75edff238811374c3df32702e76ec9bcdae91e8fff8e287994",
+    "counts": {
+      "pair_reconstructions": 4625,
+      "johansen_reconstructions": 22,
+      "directional_tests": 9250,
+      "formation_fits": 21
+    },
+    "maximum_pvalue_error": 0.0,
+    "maximum_qvalue_error": 0.0,
+    "maximum_johansen_trace_error": 6.572520305780927e-13,
+    "maximum_eigenvalue_imaginary": 0.0,
+    "recomputed_warning_counts": {
+      "Casting complex values to real discards the imaginary part": 88
+    },
+    "warning_interpretation": "All Johansen eigenvalue imaginary components independently checked; symmetric generalized eigenproblem reconstructs trace/rank. Zero-imaginary complex dtype casts are recorded, not assumed harmless.",
+    "account_returns_computed": false,
+    "profit_verified": false,
+    "orders_enabled": false
+  },
+  "source_records": 7,
+  "next_action": "固定两套形成期，不追加参数网格；下一步实施双腿独立成交、未对冲库存退出和配对生命周期账本，再按两档成本完成连续账户与容量检验。"
+}

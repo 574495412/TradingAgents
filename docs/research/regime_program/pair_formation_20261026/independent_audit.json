@@ -1,0 +1,24 @@
+{
+  "schema": "independent-pair-formation-audit.v1",
+  "passed": true,
+  "formation_root": "/Users/chrise/GitHub/TradingAgents/results/research/pair_formation_20261026_v001",
+  "completion_sha256": "f803f2d7a7387d0c3469b3726ef9532489d9d7899b863abd035e633f90b31b8d",
+  "auditor_sha256": "1da62a29f8441b75edff238811374c3df32702e76ec9bcdae91e8fff8e287994",
+  "counts": {
+    "pair_reconstructions": 4625,
+    "johansen_reconstructions": 22,
+    "directional_tests": 9250,
+    "formation_fits": 21
+  },
+  "maximum_pvalue_error": 0.0,
+  "maximum_qvalue_error": 0.0,
+  "maximum_johansen_trace_error": 6.572520305780927e-13,
+  "maximum_eigenvalue_imaginary": 0.0,
+  "recomputed_warning_counts": {
+    "Casting complex values to real discards the imaginary part": 88
+  },
+  "warning_interpretation": "All Johansen eigenvalue imaginary components independently checked; symmetric generalized eigenproblem reconstructs trace/rank. Zero-imaginary complex dtype casts are recorded, not assumed harmless.",
+  "account_returns_computed": false,
+  "profit_verified": false,
+  "orders_enabled": false
+}

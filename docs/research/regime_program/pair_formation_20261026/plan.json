@@ -1,0 +1,123 @@
+{
+  "schema": "cointegrated-pair-research.v1",
+  "version": "20261026_v001",
+  "source_pack": "data/research/pair_sources_20261026_v003",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "states": "results/research/regime_states_20261025_v002",
+  "hypothesis": "Training-only cointegrated log-price residuals may revert after costs. Distinct economic hypothesis from prior directional trends; no promise of profit.",
+  "formation": {
+    "fixed_start": "2024-01-01",
+    "fixed_end": "2025-01-01",
+    "rolling_days": 180,
+    "minimum_daily_rows": 120,
+    "maximum_names": 30,
+    "minimum_daily_quote": 50000000,
+    "turnover_days": 28,
+    "eg_maxlag": 1,
+    "eg_autolag": null,
+    "eg_trend": "c",
+    "multiple_testing": "BH at5percent across both directions of all declared pairs within each formation; report cumulative tests across formations. Unknown failed tests remain unknown and nonadmissible.",
+    "fdr": 0.05,
+    "johansen_det_order": 0,
+    "johansen_lag_diff": 1,
+    "johansen_rank": 1,
+    "beta_min": 0.25,
+    "beta_max": 4,
+    "minimum_price_correlation": 0.7,
+    "minimum_residual_sigma": 1e-06,
+    "minimum_two_sigma_edge_unit_gross": 0.006,
+    "economic_gate_definition": "2*training residual sigma/(1+beta) must exceed twice the stress roundtrip cost per unit gross. Registered before formation statistics; no return ranking.",
+    "minimum_half_life_days": 0.125,
+    "maximum_half_life_days": 7,
+    "maximum_pairs": 5,
+    "matching": "Greedy ascending worst two-direction q, then half-life, then lexical pair; disjoint symbols. No realised future-return ranking."
+  },
+  "signal": {
+    "decision_hours": 4,
+    "z_entry": 2,
+    "z_exit": 0.5,
+    "z_stop": 4,
+    "maximum_hold_hours": 168,
+    "rearm_hours": 24,
+    "rearm_requires_abs_z_below": 0.5,
+    "cost_hurdle": "Estimated convergence return per unit gross abs(z)*training_sigma/(1+beta) must exceed max(2*stress_roundtrip_cost, stress_roundtrip_cost+nonnegative7dayfundingcost using last5complete daily observations). Both cost cases share the stress15bps gate; no future funding projection.",
+    "stress_fee_bps": 5,
+    "stress_slippage_bps": 10
+  },
+  "candidates": [
+    "pairs_fixed",
+    "pairs_rolling",
+    "cash"
+  ],
+  "candidate_names": {
+    "pairs_fixed": "币对·2024固定形成期",
+    "pairs_rolling": "币对·180日月度形成期",
+    "cash": "现金"
+  },
+  "execution": "Two perpetual legs submitted from prior close and completed-hour volume. Independent next5m fills; any unequal fill fraction triggers next-interval close of filled inventory, never free atomic cancellation. Partial exits persist and symbols remain owned until both legs flat. One pair campaign, including failed one-leg attempts, counts as one lifecycle; never count both legs as independent wins. Funding at actual events, entry/exit fees and adverse slippage, marked openPnL and exit reserve included.",
+  "model_ownership": "Rolling refits use only closed past days; a new formation/model ID requires old pair campaign to close before reuse of either symbol. Fixed model coefficients/mu/sigma never recenter on future data. No highwater or account halt reset.",
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_pairs": 5,
+    "max_positions": 10,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "screen": {
+    "id": "screen2025",
+    "start": "2025-01-01",
+    "end": "2026-01-01"
+  },
+  "diagnostics": [
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "admission": {
+    "minimum_cagr": 0.2,
+    "maximum_drawdown": 0.15,
+    "minimum_sharpe": 1,
+    "minimum_complete_lifecycles": 100,
+    "minimum_closed_profit_factor": 1.15
+  },
+  "budget": "At most6screen+12diagnostic+8capacity=26accounts. Both formation variants are preregistered; no parameter grid or forced relaxation if no eligible pairs. Gate formation before building account interpretations.",
+  "statistical_scope": "Both-direction EG on log daily prices, rank1 Johansen confirmation, OLS beta and residual statistics; exploratory BH assumes dependence conditions and does not erase historical search. Data40contemporary names has survivorship bias; no new independentOOS.",
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "registered_at": "2026-10-25T17:44:32.621532+00:00",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/prepare_pairs.py": "ab7e41776f0f78110c893c66feb9106d88c2ec830222d813e236bd697666579a",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/pair_plan.json": "9e42e5d4cf9bebc9f384db3fd9e29aba7fb408bfd37074b9f4afeff5d13b8704",
+    "/Users/chrise/GitHub/TradingAgents/factors/portfolio/cointegrated_pairs.py": "bf75c1bbdd4c067ad96aac117927bc1398f80114dbfae98a277ceb797a87107f",
+    "/Users/chrise/GitHub/TradingAgents/factors/common/github_formulas.py": "61366c2282ddcd83e0c90bb71616dbe4268394d93061744e9864c3df6b13ba12",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/io.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/github_factor_study/run.py": "eef625d8907602f529fe1c9fcc4ec1e15062c357a8edd9c0bd9a63335136ec01",
+    "/Users/chrise/GitHub/TradingAgents/data/research/github_factor_market_20261025_v001/completion.json": "ed02f4e90f371bd6bc848464710cf8d63b135c0e68682ef0943056a24c6f7cbf",
+    "/Users/chrise/GitHub/TradingAgents/data/research/pair_sources_20261026_v003/source_review.json": "6c4eb04bd89edba079df42040a4068ba2904cf1d188d6055b03705e9cdd00685"
+  },
+  "runtime_versions": {
+    "statsmodels": "0.14.5",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3"
+  }
+}

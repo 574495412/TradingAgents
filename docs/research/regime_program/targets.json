@@ -287,9 +287,12 @@
       "evidence": [
         "sizing_20261026/README.md",
         "sizing_20261026/summary.json",
-        "sizing_20261026/control_reproduction.json"
+        "sizing_20261026/control_reproduction.json",
+        "pair_formation_20261026/README.md",
+        "pair_formation_20261026/summary.json",
+        "pair_formation_20261026/independent_audit.json"
       ],
-      "outcome": "两轮有限研究均未达经济目标；当前56账户完整核算，部分对照重复"
+      "outcome": "前两轮成本/容量未达标；第三轮协整币对只完成形成期与数值核验，双腿账户与收益仍待验证。"
     },
     {
       "id": "R08",
@@ -303,9 +306,12 @@
       "evidence": [
         "sizing_20261026/README.md",
         "sizing_20261026/summary.json",
-        "sizing_20261026/control_reproduction.json"
+        "sizing_20261026/control_reproduction.json",
+        "pair_formation_20261026/README.md",
+        "pair_formation_20261026/summary.json",
+        "pair_formation_20261026/independent_audit.json"
       ],
-      "outcome": "两轮有限研究均未达经济目标；当前56账户完整核算，部分对照重复"
+      "outcome": "前两轮成本/容量未达标；第三轮协整币对只完成形成期与数值核验，双腿账户与收益仍待验证。"
     }
   ],
   "production_eligible": false,
@@ -339,7 +345,7 @@
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "sizing_20261026/summary.json",
-    "next_action": "本轮风险参数修正未产生合格收益源；停止追加同组参数网格，先检索独立经济机制，再预登记新假说",
+    "next_action": "第三轮协整币对形成期已核验，收益尚未计算；实施双腿独立成交、失败对冲退出与配对生命周期审计，再做最多26个两成本/容量账户；不追加同一形成期参数网格。",
     "rounds": [
       {
         "name": "regime",
@@ -353,5 +359,12 @@
         "repeated_controls": true
       }
     ]
+  },
+  "current_research_stage": {
+    "mechanism": "cointegrated_pairs",
+    "status": "formation_only",
+    "report": "pair_formation_20261026/README.md",
+    "account_returns_computed": false,
+    "profit_proven": false
   }
 }

@@ -1,0 +1,14 @@
+{
+  "manifest": {
+    "README.md": "3819776cf69ac04cab01b38a56aa6096d29061967870302a9eccd4ad4c26f203",
+    "formation_completion.json": "f803f2d7a7387d0c3469b3726ef9532489d9d7899b863abd035e633f90b31b8d",
+    "independent_audit.json": "2cad93e86cdbed9c28e982edfd9cfb695bf27cae3e6fb558cf97dad55c9c401d",
+    "plan.json": "c102911e896603e057664b22d373b3fcd7c5a5221a5e033c020e6670a2673d6e",
+    "source_review.json": "6c4eb04bd89edba079df42040a4068ba2904cf1d188d6055b03705e9cdd00685",
+    "summary.json": "1c36425496d8acb5fabaa45aeed1f19f21a7c6321b6d94ca474f0bdc3301aabe"
+  },
+  "source_formation_completion_sha256": "f803f2d7a7387d0c3469b3726ef9532489d9d7899b863abd035e633f90b31b8d",
+  "audit_passed": true,
+  "account_returns_computed": false,
+  "profit_verified": false
+}
