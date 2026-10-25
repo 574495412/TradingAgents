@@ -1,0 +1,264 @@
+{
+  "assessments": [
+    {
+      "candidate": "trend",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.029212927751704365,
+      "maximum_drawdown": 0.15411100180833825
+    },
+    {
+      "candidate": "relative_momentum",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.11238601270236992,
+      "maximum_drawdown": 0.15074616319400191
+    },
+    {
+      "candidate": "carry_momentum",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.10173416492186593,
+      "maximum_drawdown": 0.15034593045318734
+    },
+    {
+      "candidate": "mean_reversion",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.15216453977729338,
+      "maximum_drawdown": 0.1582926106937279
+    },
+    {
+      "candidate": "breakout",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.14269695581975617,
+      "maximum_drawdown": 0.153401965903315
+    },
+    {
+      "candidate": "cash",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip10:cagr",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl"
+      ],
+      "minimum_two_cost_return": 0.0,
+      "maximum_drawdown": 0.0
+    },
+    {
+      "candidate": "equal_mix",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.13236274540756587,
+      "maximum_drawdown": 0.1503306512343252
+    },
+    {
+      "candidate": "rule_router",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.1404731907747333,
+      "maximum_drawdown": 0.15430118851771424
+    },
+    {
+      "candidate": "event_router",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.1374269321630669,
+      "maximum_drawdown": 0.15205553000640581
+    },
+    {
+      "candidate": "hmm_router",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.13902978999407756,
+      "maximum_drawdown": 0.15069504178127902
+    },
+    {
+      "candidate": "linear_router",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.13792725690262664,
+      "maximum_drawdown": 0.15206178720058394
+    },
+    {
+      "candidate": "mlp_router",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.13792725690262664,
+      "maximum_drawdown": 0.15206178720058394
+    }
+  ],
+  "research_followups": [
+    "trend",
+    "carry_momentum",
+    "relative_momentum"
+  ],
+  "best_static": "trend",
+  "admitted_candidates": [],
+  "followup_cohort": [
+    "trend",
+    "carry_momentum",
+    "relative_momentum",
+    "cash",
+    "equal_mix"
+  ],
+  "later_returns_used": false,
+  "production_eligible": false
+}

@@ -24,7 +24,7 @@
       "format": "percent",
       "scope": "1万USDT、8与15bps/边均通过、连续账户至少365日",
       "definition": "(期末含退出准备权益/期初本金)^(365/自然日)-1；禁止短窗均值年化",
-      "actual": null,
+      "actual": -0.017641165795266756,
       "status": "not_met"
     },
     {
@@ -36,8 +36,8 @@
       "format": "percent",
       "scope": "两档成本、全部主要连续账户",
       "definition": "完整5分钟含浮亏净值相对历史高点的最大跌幅；延迟超限仍判失败",
-      "actual": null,
-      "status": "not_evaluated"
+      "actual": 0.15411100180833825,
+      "status": "not_met"
     },
     {
       "id": "sharpe",
@@ -48,7 +48,7 @@
       "format": "number",
       "scope": "两档成本、至少365日连续账户",
       "definition": "UTC日净值收益均值/样本标准差×sqrt(365)，无风险0；股票另用252",
-      "actual": null,
+      "actual": -0.07023597507528265,
       "status": "not_met"
     }
   ],
@@ -211,50 +211,56 @@
       "id": "R03",
       "title": "统一五类收益策略及现金接口",
       "owner": "TradingAgents + Freqtrade",
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [
         "R01"
       ],
       "done_when": "趋势、相对动量、资金费组合、震荡回归、波动突破有版本、适用状态、失效条件和独立账户；不因数量不足伪造有效收益源",
       "evidence": [
-        "preparation_20261026/inputs_summary.json",
-        "preparation_20261026/independent_audit.json"
-      ]
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
     },
     {
       "id": "R04",
       "title": "核实事件时点并实现风险覆盖层",
       "owner": "TradingAgents",
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [
         "R02"
       ],
       "done_when": "至少完成已有FOMC公开时点回放；预告/发布时间/首次可用分开，缺失事件覆盖显式标注；有无事件覆盖层同账户比较",
       "evidence": [
-        "preparation_20261026/inputs_summary.json",
-        "preparation_20261026/independent_audit.json"
-      ]
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
     },
     {
       "id": "R05",
       "title": "HMM与固定小型神经网络对照",
       "owner": "TradingAgents",
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [
         "R02",
         "R03"
       ],
       "done_when": "HMM与MLP分别对照规则/线性；过去拟合、成熟标签、相同信息与执行预算、无随机时间切分；预测改善与账户改善分别验收",
       "evidence": [
-        "preparation_20261026/inputs_summary.json",
-        "preparation_20261026/independent_audit.json"
-      ]
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
     },
     {
       "id": "R06",
       "title": "冻结选择并回放共享账户多策略组合",
       "owner": "Freqtrade + TradingAgents",
-      "status": "planned",
+      "status": "done",
       "depends_on": [
         "R02",
         "R03",
@@ -262,29 +268,42 @@
         "R05"
       ],
       "done_when": "切换真实扣费、共享容量与总风险、库存和停机连续；与现金、冻结最佳静态、等权比较，所有失败案保留",
-      "evidence": []
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
     },
     {
       "id": "R07",
       "title": "收益、分行情稳定性与容量独立验收",
       "owner": "TradingAgents",
-      "status": "planned",
+      "status": "in_progress",
       "depends_on": [
         "R06"
       ],
       "done_when": "60账户预算内完成逐账审计、分期/分状态/成本/容量表，逐项标达标/失败/未知；未达收益目标不算本任务完成",
-      "evidence": []
+      "evidence": [
+        "accounts_20261026/summary.json",
+        "accounts_20261026/accounts.csv"
+      ],
+      "outcome": "本轮56账户已审计，盈利目标与策略准入仍失败"
     },
     {
       "id": "R08",
       "title": "现有界面持续显示证据与交接资格",
       "owner": "CZ-Agent",
-      "status": "planned",
+      "status": "in_progress",
       "depends_on": [
         "R07"
       ],
       "done_when": "展示目标/实际/状态和可追溯证据；通过者提供独立接入清单，生产动作仍需明确授权；没有通过者保留现金与待办",
-      "evidence": []
+      "evidence": [
+        "accounts_20261026/summary.json",
+        "accounts_20261026/accounts.csv"
+      ],
+      "outcome": "本轮56账户已审计，盈利目标与策略准入仍失败"
     }
   ],
   "production_eligible": false,
@@ -310,5 +329,14 @@
       "volatility_breakout": 42,
       "trend_down": 27
     }
+  },
+  "representative_actual": "2025筛选事前冻结的最佳静态趋势策略；1万USDT、跨年608日、两成本取保守值，不是全市场最优收益。",
+  "account_evidence": {
+    "date": "2026-10-26",
+    "accounts": 56,
+    "audit_passed": true,
+    "profit_goal_met": false,
+    "source": "accounts_20261026/summary.json",
+    "next_action": "先研究2025停机与2026冷启动趋势盈利的连续路径失效；新假说单独预登记，不重置高水位、不拼接冷启动赢家、不降门槛"
   }
 }

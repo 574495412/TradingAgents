@@ -1,0 +1,84 @@
+{
+  "schema": "multi-regime-continuous-accounts.v1",
+  "version": "20261026_v001",
+  "inputs": "results/research/regime_inputs_20261026_v001",
+  "input_audit": "results/research/regime_inputs_20261026_v001_independent_audit_v002.json",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "states": "results/research/regime_states_20261025_v002",
+  "engine": "/Users/chrise/GitHub/freqtrade/research/crypto/regime_portfolio.py",
+  "candidates": [
+    "trend",
+    "relative_momentum",
+    "carry_momentum",
+    "mean_reversion",
+    "breakout",
+    "cash",
+    "equal_mix",
+    "rule_router",
+    "event_router",
+    "hmm_router",
+    "linear_router",
+    "mlp_router"
+  ],
+  "static_families": [
+    "trend",
+    "relative_momentum",
+    "carry_momentum",
+    "mean_reversion",
+    "breakout"
+  ],
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "screen": {
+    "id": "screen2025",
+    "start": "2025-01-01",
+    "end": "2026-01-01"
+  },
+  "diagnostics": [
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
+  "admission": {
+    "minimum_cagr": 0.2,
+    "maximum_drawdown": 0.15,
+    "minimum_sharpe": 1,
+    "minimum_complete_lifecycles": 100,
+    "minimum_closed_profit_factor": 1.15,
+    "closed_pnl_positive": true
+  },
+  "selection": "Freeze3non-control research followups by highest minimum2025two-cost netreturn, then lower worst drawdown, then name. Separately freeze strongest of5static families by same ranking. Followup cohort = union of3research candidates plus cash,beststatic,equal_mix; duplicate roles reuse the same account rather than count independent evidence twice.",
+  "budget": "At most24screen+24diagnostic+12capacity=60accounts. If frozen followup/control roles overlap, fewer unique accounts; no repeated accounts for reporting count.",
+  "execution": "At daily strategy decisions or hourly change in covered FOMC risk flag, request delta to fixed unit-gross target*0.8*risk_scale. Request sizes use preceding close and trailing completed-hour volume. Exits persist at1percent actual5mvolume; entryTTLoneinterval. Confirmed exits settle before entry fills. Entry fills additionally bounded by actual gross/equity after all costs and pending exit inventory. Targets can resize existing same-side campaigns; maintain weighted cost basis, cumulative lifecyclePnL and never loosen stops. No free fills or instant flips: same-symbol reversal closes first and waits until next declared rebalance to reopen.",
+  "restart": "Serialize original config, universe,cash,positions,pending exits,sequence,highwater,halt,previous marks,risk scale,cumulative capacity. Resume only at matching boundary/config/universe/marks. Hold state across years and regime/model switches.",
+  "changes_vs_previous": "Earlier frozen engine could only shrink and closed positions before later allocating replacement risk; this version can add size within existing campaigns and condition new-symbol fills on confirmed exit risk release. All candidates/controls use the same version. It is still a5mvolume proxy, not native Freqtrade/real-exchange fills; actual order book/min-notional/queue depth not verified.",
+  "state_reporting": "Attribute each5min NAV change to the pre-known state and event flag at interval start. Report contribution(initial-capital units), active time, within-state complete lifecycle counts and winrate by entry state, plus rolling90day/year diagnostics. Do not concatenate disjoint state slices into a tradable NAV or annualize state contributions.",
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}

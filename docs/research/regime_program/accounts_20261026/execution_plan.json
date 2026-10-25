@@ -1,0 +1,99 @@
+{
+  "schema": "multi-regime-continuous-accounts.v1",
+  "version": "20261026_v001",
+  "inputs": "results/research/regime_inputs_20261026_v001",
+  "input_audit": "results/research/regime_inputs_20261026_v001_independent_audit_v002.json",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "states": "results/research/regime_states_20261025_v002",
+  "engine": "/Users/chrise/GitHub/freqtrade/research/crypto/regime_portfolio.py",
+  "candidates": [
+    "trend",
+    "relative_momentum",
+    "carry_momentum",
+    "mean_reversion",
+    "breakout",
+    "cash",
+    "equal_mix",
+    "rule_router",
+    "event_router",
+    "hmm_router",
+    "linear_router",
+    "mlp_router"
+  ],
+  "static_families": [
+    "trend",
+    "relative_momentum",
+    "carry_momentum",
+    "mean_reversion",
+    "breakout"
+  ],
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "screen": {
+    "id": "screen2025",
+    "start": "2025-01-01",
+    "end": "2026-01-01"
+  },
+  "diagnostics": [
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
+  "admission": {
+    "minimum_cagr": 0.2,
+    "maximum_drawdown": 0.15,
+    "minimum_sharpe": 1,
+    "minimum_complete_lifecycles": 100,
+    "minimum_closed_profit_factor": 1.15,
+    "closed_pnl_positive": true
+  },
+  "selection": "Freeze3non-control research followups by highest minimum2025two-cost netreturn, then lower worst drawdown, then name. Separately freeze strongest of5static families by same ranking. Followup cohort = union of3research candidates plus cash,beststatic,equal_mix; duplicate roles reuse the same account rather than count independent evidence twice.",
+  "budget": "At most24screen+24diagnostic+12capacity=60accounts. If frozen followup/control roles overlap, fewer unique accounts; no repeated accounts for reporting count.",
+  "execution": "At daily strategy decisions or hourly change in covered FOMC risk flag, request delta to fixed unit-gross target*0.8*risk_scale. Request sizes use preceding close and trailing completed-hour volume. Exits persist at1percent actual5mvolume; entryTTLoneinterval. Confirmed exits settle before entry fills. Entry fills additionally bounded by actual gross/equity after all costs and pending exit inventory. Targets can resize existing same-side campaigns; maintain weighted cost basis, cumulative lifecyclePnL and never loosen stops. No free fills or instant flips: same-symbol reversal closes first and waits until next declared rebalance to reopen.",
+  "restart": "Serialize original config, universe,cash,positions,pending exits,sequence,highwater,halt,previous marks,risk scale,cumulative capacity. Resume only at matching boundary/config/universe/marks. Hold state across years and regime/model switches.",
+  "changes_vs_previous": "Earlier frozen engine could only shrink and closed positions before later allocating replacement risk; this version can add size within existing campaigns and condition new-symbol fills on confirmed exit risk release. All candidates/controls use the same version. It is still a5mvolume proxy, not native Freqtrade/real-exchange fills; actual order book/min-notional/queue depth not verified.",
+  "state_reporting": "Attribute each5min NAV change to the pre-known state and event flag at interval start. Report contribution(initial-capital units), active time, within-state complete lifecycle counts and winrate by entry state, plus rolling90day/year diagnostics. Do not concatenate disjoint state slices into a tradable NAV or annualize state contributions.",
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "registered_at": "2026-10-25T16:26:46.800585+00:00",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/run.py": "c74ace7c2f97589919d61f2c3a6b17f6c673be214963bbf741c92da0e5d655bc",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/execution_plan.json": "e2f0feadabadbb22768e16b9aa942657c4d88965f68f072cd281b5cb28e01bb6",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/regime_portfolio.py": "f0fb65b16615ed7de3f80a798881bba7a0243db4c662ea0e0f59b5009f4d78f2",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/account_audit.py": "d90f363014c18d5bc6c44bcfb0a5e93d376c39992700ff8969b75d254a43b59a",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/storage.py": "079e453884cda2f5f8868fbff7310bd94facf3156d7055c30b3e3b12eac994ba",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/io.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/metrics.py": "5f47747b99bdb6376a2c8ad8b8fb181501037052ed14b1c77b0ee74822236df0",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/study.py": "a7aabf7ddd8c0231207efe802c9d495eb84ac6bf181bd822fb8c41616782d42d",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/github_factor_study/run.py": "eef625d8907602f529fe1c9fcc4ec1e15062c357a8edd9c0bd9a63335136ec01",
+    "/Users/chrise/GitHub/TradingAgents/results/research/regime_inputs_20261026_v001/completion.json": "cb9a6f49f3b850debef010372d441335f347206de8d66acd8b5ccd1b4bc65a3d",
+    "/Users/chrise/GitHub/TradingAgents/data/research/github_factor_market_20261025_v001/completion.json": "ed02f4e90f371bd6bc848464710cf8d63b135c0e68682ef0943056a24c6f7cbf",
+    "/Users/chrise/GitHub/TradingAgents/results/research/regime_inputs_20261026_v001_independent_audit_v002.json": "2c8ab8c4aef4faf69e547badff8cf9f77eb7167e4c253d7b6544dbed0f3688db"
+  }
+}

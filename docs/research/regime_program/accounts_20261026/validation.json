@@ -1,0 +1,33 @@
+{
+  "url": "http://127.0.0.1:8793/research#factor-lab",
+  "title": "CZ · 因子与量化组合",
+  "viewports": [
+    "1512x1100",
+    "390x844"
+  ],
+  "browser": "Browser plugin not available; bundled Playwright and installed Chrome",
+  "checks": {
+    "page_identity": true,
+    "nonblank": true,
+    "no_framework_overlay": true,
+    "console_clean": true,
+    "screenshot": true,
+    "interaction": true
+  },
+  "errors": [],
+  "overflow": false,
+  "interaction": "screen12 -> cold2026five -> cost8/15 -> continuousloss -> years2/90day7 -> coveredFOMC2 -> capacity6 -> objectivesDD15.41/two open -> old GitHub -> mobile",
+  "research_tests": 35,
+  "crypto_execution_tests": 15,
+  "service_tests": 32,
+  "build_passed": true,
+  "financial_accounts": 56,
+  "maximum_nav_error": 5.471520125865936e-09,
+  "profit_goal_met": false,
+  "scopes": {
+    "restart_actual": "one full2025event strategy,15bps,July1boundary; exact curve/ledger/request/final state match",
+    "restart_units": "normal and halted/pending state, funding boundary, config mismatch",
+    "browser": "Browser plugin not available; bundled Playwright with installed Chrome",
+    "not_verified": "real exchange/orderbook fills, new untouched OOS, production performance"
+  }
+}
