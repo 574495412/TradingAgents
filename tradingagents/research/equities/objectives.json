@@ -1,0 +1,197 @@
+{
+  "schema": "equity-research-objectives.v1",
+  "version": "20261026_external_first_v001",
+  "title": "港美股外部策略优先 · 高收益研发",
+  "program_status": "active",
+  "profit_goal_status": "not_met",
+  "objective": "优先检索并复现外部股票策略，结合已有加密因子的可迁移数学和完整账户工程，分环境验证收益模块、配置增量及总账户；挑战扣费年化50%、最大回撤不超过15%。",
+  "user_confirmation": {
+    "date_shanghai": "2026-10-26",
+    "challenge_cagr": 0.5,
+    "max_drawdown": 0.15,
+    "basis": "用户明确确认；可行性尚未证明，不是基金行业基准或盈利承诺"
+  },
+  "scope": "US/HK原币股票账户分别验收。加密是参考与独立原生验证分支；没有已验证FX和共同资本账户时不拼接USD/HKD/USDT收益。",
+  "targets": [
+    {
+      "id": "net_cagr",
+      "label": "含退出准备扣费年化",
+      "base": 0.2,
+      "intermediate": 0.3,
+      "challenge": 0.5,
+      "actual": null,
+      "status": "not_met",
+      "definition": "(期末扣可执行退出准备权益/期初本金)^(365.25/实际自然日)-1；禁止短窗平均年化"
+    },
+    {
+      "id": "max_drawdown",
+      "label": "最大回撤",
+      "limit": 0.15,
+      "actual": null,
+      "status": "not_certified",
+      "definition": "连续高水位含浮亏和退出成本；收盘、日低价包络、精确盘中分列。日线包络不能认证15%盘中上限"
+    },
+    {
+      "id": "sharpe",
+      "label": "净值夏普",
+      "base": 1,
+      "actual": null,
+      "status": "not_evaluated",
+      "definition": "股票252、加密365；零无风险假设单列，不跨币种硬合并"
+    }
+  ],
+  "levels": [
+    {
+      "id": "module",
+      "criterion": "事前登记机制/适用域/禁用域/周期/失效，检验同机会集扣费优势与尾部；至少30完整周期和4入场月簇只为最低研究计数；相关性仍须检验。不要求各模块全年50%"
+    },
+    {
+      "id": "allocation",
+      "criterion": "同模块集的静态、风险分配、有限调权和移除消融，在统一本金/库存/净额成交下扣切换成本并匹配实际风险；风控按减损/收益代价验收"
+    },
+    {
+      "id": "total",
+      "criterion": "至少两个有独立经济证据的机制、100完整周期、PF>=1.15及闭合PnL正；两成本/目标资金/连续恢复均通过，独立样本与真实风险完整时才判挑战达标"
+    }
+  ],
+  "budget": {
+    "strategy_families_max": 6,
+    "versions_per_family_max": 2,
+    "new_accounts_max": 24,
+    "first_screen_accounts": 8,
+    "followup_accounts_max": 8,
+    "capacity_accounts_max": 8,
+    "existing_accounts_reused_not_new": true,
+    "stopping": "无成本优势且无新可定位失效机制则停止同组搜索；样本不足记未知。不改阈值刷参数、抬杠杆或拼赢家"
+  },
+  "capital_and_risk": {
+    "US": {
+      "base_currency": "USD",
+      "base": 10000,
+      "capacity_reference": 100000
+    },
+    "HK": {
+      "base_currency": "HKD",
+      "base": 100000,
+      "capacity_reference": 1000000
+    },
+    "initial_scope": "沿用旧ETF现金基线，先验证每侧最低费和整数整手；10倍资金仅容量代理，须盘口/竞价/历史规则进一步认证",
+    "gross_limit": 0.8,
+    "short_enabled": false,
+    "leverage_enabled": false,
+    "orders_enabled": false
+  },
+  "priority_queue": [
+    {
+      "id": "faber10m",
+      "name": "Faber月末10月趋势",
+      "priority": 0,
+      "status": "diagnostic_complete_insufficient"
+    },
+    {
+      "id": "tsmom_relative",
+      "name": "AQR/PST趋势与横截面动量",
+      "priority": 1,
+      "status": "broader_pit_universe_required"
+    },
+    {
+      "id": "quality_value",
+      "name": "AQR质量/价值 + ARK公司论点",
+      "priority": 1,
+      "status": "blocked_pit_fundamentals"
+    },
+    {
+      "id": "earnings_event",
+      "name": "盈余/公告后漂移与事件风险层",
+      "priority": 2,
+      "status": "blocked_pit_events"
+    },
+    {
+      "id": "crypto_carry_momentum",
+      "name": "Sentinel资金费/动量及NFI多规则",
+      "priority": 1,
+      "status": "existing_economic_gate_not_passed"
+    },
+    {
+      "id": "pairs_reversion",
+      "name": "关系回归/币对和股票配对",
+      "priority": 2,
+      "status": "equity_short_borrow_and_sample_gated"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "E00",
+      "title": "登记50%/15%挑战与分层验收",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "用户确认、原阶段目标保留、实际栏不造数"
+    },
+    {
+      "id": "E01",
+      "title": "官方基金与外部策略来源核查",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "固定来源、版本/许可、适用域和复现边界；作者声明不当本地收益"
+    },
+    {
+      "id": "E02",
+      "title": "首次8账户外部规则移植和风险消融",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "冻结后运行真实数据、独立财务复算、实际JSON恢复、完整分期及失败记录"
+    },
+    {
+      "id": "E03",
+      "title": "PIT股票池与权威企业行动/结算",
+      "status": "data_required",
+      "owner": "TradingAgents",
+      "done_when": "成员/退市/停牌、除息付款与历史整手、实际账户限制可审核"
+    },
+    {
+      "id": "E04",
+      "title": "价值质量与ARK主题论点模块",
+      "status": "data_required",
+      "owner": "TradingAgents",
+      "done_when": "PIT财报/历史假设和使用权证据齐全后另行预登记；不补人造收益"
+    },
+    {
+      "id": "E05",
+      "title": "同风险配置、容量与独立样本验收",
+      "status": "waiting_module_evidence",
+      "owner": "TradingAgents",
+      "done_when": "不同机制合格后冻结组合及比较，全部硬约束通过"
+    },
+    {
+      "id": "E06",
+      "title": "现有CZ界面显示目标与来源优先级",
+      "status": "done",
+      "owner": "CZ-Agent",
+      "done_when": "50%/15%、未达标、来源与任务可见，股票加密指标不混合"
+    }
+  ],
+  "evidence": {
+    "prior_crypto_admitted_candidates": [],
+    "prior_crypto_status": "本轮读取的TradingAgents GitHub/因子研究包与Freqtrade current_status未见通过该研发验收的新增候选；不评价独立CZ生产策略或其收益。新条件域账户在读取时尚未计算",
+    "prior_equity_selection": {
+      "US": "cash",
+      "HK": "cash"
+    },
+    "stock_baseline_cagr": {
+      "US": 0.05686160936989215,
+      "HK": 0.013666139583487835
+    },
+    "baseline_scope": "旧56账户中静态、基础原币资金、15bps滑点、2023-2026诊断，非挑战账户实际栏",
+    "external_run": "results/research/equities_external_20261026_v001",
+    "external_account_count": 8,
+    "external_audit_passed": true,
+    "external_restart_passed": true,
+    "first_execution_profit_goal_status": "not_met"
+  },
+  "source_catalog": "docs/research/equities_external_first_20261026/sources.json",
+  "execution_plan": "tradingagents/research/equities/external_plan.json",
+  "report": "docs/research/equities_external_first_20261026/README.md",
+  "production_eligible": false,
+  "broker_verified": false,
+  "independent_forward_oos": false
+}

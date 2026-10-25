@@ -1,0 +1,270 @@
+{
+  "schema": "equity-external-source-catalog.v1",
+  "date_shanghai": "2026-10-26",
+  "selection_basis": "官方原始来源、可审阅公式、数据可用性与可复现性；不按宣传收益或stars选赢家",
+  "funds": [
+    {
+      "id": "ark",
+      "name": "ARK / Cathie Wood",
+      "kind": "active_thematic_company_valuation",
+      "priority": "P1_data_gated",
+      "url": "https://www.ark-invest.com/investment-process",
+      "use": "公司论点、收入/估值模型、失效纪律；不是纯量化择时基金",
+      "boundary": "公开Monte Carlo预测不是账户收益；TSLA模型README商业使用受限，仅研究方法，不复制/运行模型；需PIT财报、历史假设版本和退出纪律"
+    },
+    {
+      "id": "ahl",
+      "name": "Man AHL",
+      "kind": "systematic_multistrategy",
+      "priority": "P0_method",
+      "url": "https://www.man.com/ahl",
+      "use": "趋势、回归、基本面，多市场、净额成交与独立风控",
+      "boundary": "公开方法不是完整私有策略；三ETF不等于全球多资产"
+    },
+    {
+      "id": "aqr",
+      "name": "AQR",
+      "kind": "systematic_styles",
+      "priority": "P0_method",
+      "url": "https://www.aqr.com/insights/research/journal-article/understanding-style-premia",
+      "use": "动量、价值、质量/防御等不同机制；先静态分散再验调权",
+      "boundary": "论文长短组合不能继承到本地现金股票账户；质量/价值需要PIT公司资料"
+    },
+    {
+      "id": "two_sigma",
+      "name": "Two Sigma",
+      "kind": "systematic_research_process",
+      "priority": "P1_process",
+      "url": "https://www.twosigma.com/businesses/investment-management/",
+      "use": "数据、预测、组合、执行分工；共同考虑成本与风险",
+      "boundary": "公开流程不披露可直接复制的完整alpha或收益保证"
+    },
+    {
+      "id": "bridgewater",
+      "name": "Bridgewater",
+      "kind": "macro_risk_allocation",
+      "priority": "P1_data_gated",
+      "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
+      "use": "按增长/通胀环境平衡风险暴露",
+      "boundary": "需要债券/商品等互补资产和时点数据；不把股票或BTC牛熊当宏观四象限"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "faber10m",
+      "name": "Faber月末10月趋势",
+      "priority": 0,
+      "kind": "published_rule",
+      "url": "https://mebfaber.com/wp-content/uploads/2016/05/SSRN-id962461.pdf",
+      "status": "first_bounded_replication",
+      "mechanism": "长期价格/总回报趋势，低频决策降低换手",
+      "domain": "月末总回报水平高于过去10个月均值；否则现金",
+      "failure": "反复穿越、跳空、集中权益beta；股票ETF不是原多资产组合",
+      "data": "旧ETF原始OHLCV、真实除息事件、完整交易日历",
+      "variants": [
+        "faber10m",
+        "faber10m_vol12"
+      ],
+      "source_review": "已通过web工具阅读作者PDF第20/21页；直接下载403单独保留，不伪造PDF哈希",
+      "deviations": [
+        "原文同收盘成交、无税费/滑点；本地次一真实开盘并扣费",
+        "原文总回报指数和国库券现金收益；本地公开事件构造因果总回报，现金利息0",
+        "信号月末；既有现金引擎每天按净目标和5%权益交易带调仓，非原文逐笔等同复现",
+        "vol12为预登记本地风险覆盖消融，非作者原策略"
+      ]
+    },
+    {
+      "id": "tsmom_relative",
+      "name": "AQR/PST趋势与横截面动量",
+      "priority": 1,
+      "kind": "published_rule_and_existing_adapter",
+      "url": "https://www.aqr.com/insights/research/journal-article/time-series-momentum",
+      "status": "broader_pit_universe_required",
+      "mechanism": "趋势延续与相对强弱分开检验；非同一个alpha换名字",
+      "data": "PIT成员、退市/停牌与实际交易成本；股票不启用未经验证的短仓",
+      "failure": "共同beta、排名反转、成交稀疏",
+      "reuse": [
+        "pst-group/pysystemtrade",
+        "factors/common/session_momentum.py",
+        "factors/common/regime_books.py"
+      ]
+    },
+    {
+      "id": "quality_value",
+      "name": "AQR质量/价值 + ARK公司论点",
+      "priority": 1,
+      "kind": "fundamental_equity",
+      "url": "https://www.aqr.com/insights/research/working-paper/quality-minus-junk",
+      "status": "blocked_pit_fundamentals",
+      "mechanism": "盈利质量、估值与公司失效条件；区分风格溢价与主题集中风险",
+      "data": "真实财报公布/可用时点、修订、原币估值、历史股数和行业；ARK假设须有当时版本",
+      "failure": "价值陷阱、事后数据修订、主题拥挤；缺数据不造价格代理"
+    },
+    {
+      "id": "earnings_event",
+      "name": "盈余/公告后漂移与事件风险层",
+      "priority": 2,
+      "kind": "event_equity",
+      "url": "https://www.sec.gov/edgar/search/",
+      "status": "blocked_pit_events",
+      "mechanism": "信息消化延迟与风险减损分开；SEC仅作原始披露来源，尚未完成策略论文筛选",
+      "data": "真实公告发布时间、可用延迟、实际盈余/当时预期和停牌/开盘",
+      "failure": "公告后跳空、延迟和预期数据缺失；新闻未知不能当无事件"
+    },
+    {
+      "id": "crypto_carry_momentum",
+      "name": "Sentinel资金费/动量及NFI多规则",
+      "priority": 1,
+      "kind": "crypto_reference_not_stock_strategy",
+      "url": "https://github.com/adensvaz/sentinel-hyperliquid",
+      "status": "existing_economic_gate_not_passed",
+      "mechanism": "复用排名、持仓缓冲、净额化与账户审计；永续资金费不移植成股票收益",
+      "data": "原生加密账户、实际费率事件、双腿及容量证据；由Freqtrade责任域执行",
+      "failure": "历史gross2与本地0.8不一致、成本侵蚀、容量失败；NFI为完整策略不是单因子"
+    },
+    {
+      "id": "pairs_reversion",
+      "name": "关系回归/币对和股票配对",
+      "priority": 2,
+      "kind": "relative_value",
+      "url": "https://github.com/pst-group/pysystemtrade",
+      "status": "equity_short_borrow_and_sample_gated",
+      "mechanism": "只复用形成期冻结、关系失效和双腿审计；不改写旧失败",
+      "data": "股票借券可得性/费用、企业行动、匹配双腿和足够完整周期",
+      "failure": "关系破裂、不对称成交、样本不足；未验证借券时不启用股票短腿"
+    }
+  ],
+  "existing_pinned_projects": [
+    {
+      "repository": "pst-group/pysystemtrade",
+      "url": "https://github.com/pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "license_label": "GPL-3.0",
+      "review": "已查EWMAC、加速、突破和波动率实现；独立数学适配，未执行或混入上游交易系统。",
+      "limitation": "商业日历改为UTC自然日，共同风险和账户执行不同；仅复现公式，不声称复现Carver整体系统。",
+      "evidence_status": "source_claim_not_local_profit"
+    },
+    {
+      "repository": "microsoft/qlib",
+      "url": "https://github.com/microsoft/qlib",
+      "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "license_label": "MIT",
+      "review": "已查源码和基准配置；原工程已接入相同commit的分钟Alpha158，本轮仅另查日频CORR20/RESI20，不算新发现158个盈利因子。",
+      "limitation": "股票费用、涨跌停、学习器和币种市场不同；两个价量因子移植不继承整个模型收益。",
+      "evidence_status": "source_claim_not_local_profit"
+    },
+    {
+      "repository": "adensvaz/sentinel-hyperliquid",
+      "url": "https://github.com/adensvaz/sentinel-hyperliquid",
+      "commit": "ca647c099755ae9770f92205d5fc413e8e7c6c95",
+      "license_label": "MIT (read LICENSE; GitHub API NOASSERTION)",
+      "review": "已查策略、历史回测脚本、当前配置、MIT许可；本轮实际移植4个版本／规则。",
+      "limitation": "当前carry配置自述203笔运行账本PF0.975、21日版本近乎无优势；README、历史脚本和当前14日带缓冲版本不是同一配置。Hyperliquid与Binance也不能混称。",
+      "evidence_status": "source_claim_not_local_profit"
+    },
+    {
+      "repository": "iterativv/NostalgiaForInfinity",
+      "url": "https://github.com/iterativv/NostalgiaForInfinity",
+      "commit": "c14780eaba3258fb2ea22c9e94831ca124fda806",
+      "license_label": "GPL-3.0",
+      "review": "已查当前版本和回测文档，并核对现有Freqtrade旧版研究记录。",
+      "limitation": "完整策略含加减仓及多类入场，不是单因子；旧分期样本不足、版本不同，不能拿3倍收益与无杠杆新因子比较。",
+      "evidence_status": "source_claim_not_local_profit"
+    },
+    {
+      "repository": "je-suis-tm/quant-trading",
+      "url": "https://github.com/je-suis-tm/quant-trading",
+      "commit": "611b73f2c3f577ac5b28aaa19ac8c43d3236c7a5",
+      "license_label": "Apache-2.0",
+      "review": "README初筛，教学策略合集；没有把合集当成盈利证明。",
+      "limitation": "缺少同一币池、同一账户和完整成本的统一验证结果；本轮未运行。",
+      "evidence_status": "source_claim_not_local_profit"
+    }
+  ],
+  "new_source_capture": {
+    "records": [
+      {
+        "id": "faber_taa",
+        "url": "https://mebfaber.com/wp-content/uploads/2016/05/SSRN-id962461.pdf",
+        "http_status": 403,
+        "retrieved_at_utc": "2026-10-25T19:05:49.099775+00:00"
+      },
+      {
+        "id": "ark_process",
+        "url": "https://www.ark-invest.com/investment-process",
+        "http_status": 403,
+        "retrieved_at_utc": "2026-10-25T19:05:49.255380+00:00"
+      },
+      {
+        "id": "ark_faq",
+        "url": "https://www.ark-invest.com/faq",
+        "http_status": 403,
+        "retrieved_at_utc": "2026-10-25T19:05:57.581206+00:00"
+      },
+      {
+        "id": "ahl_methods",
+        "url": "https://www.man.com/ahl",
+        "http_status": 200,
+        "retrieved_at_utc": "2026-10-25T19:06:08.637127+00:00",
+        "file": "ahl_methods.html",
+        "sha256": "8f5bdda2f883716040677999e79aab25a60442f3b6f6a2f045e7cd58bef3c9cd",
+        "bytes": 151376
+      },
+      {
+        "id": "aqr_tsmom",
+        "url": "https://www.aqr.com/insights/research/journal-article/time-series-momentum",
+        "http_status": 200,
+        "retrieved_at_utc": "2026-10-25T19:06:11.110563+00:00",
+        "file": "aqr_tsmom.html",
+        "sha256": "9761cc6d27a71d74c7bfde4fe5742d1df04b6f4632d10cdedc127f0c412c1299",
+        "bytes": 71369
+      },
+      {
+        "id": "aqr_qmj",
+        "url": "https://www.aqr.com/insights/research/working-paper/quality-minus-junk",
+        "http_status": 200,
+        "retrieved_at_utc": "2026-10-25T19:06:12.959161+00:00",
+        "file": "aqr_qmj.html",
+        "sha256": "e3cb3a03f35a1302c1a6f8bb18437a9ec62d37ed50ffbc6fd0e019b75540d3b7",
+        "bytes": 74112
+      },
+      {
+        "id": "two_sigma",
+        "url": "https://www.twosigma.com/businesses/investment-management/",
+        "http_status": 403,
+        "retrieved_at_utc": "2026-10-25T19:06:20.818882+00:00"
+      },
+      {
+        "id": "bridgewater",
+        "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
+        "http_status": 200,
+        "retrieved_at_utc": "2026-10-25T19:06:21.718342+00:00",
+        "file": "bridgewater.html",
+        "sha256": "31cd2aefa033fe53d6b3edad6776bbdc39b96c0c3797de983c3ca4469109a382",
+        "bytes": 107383
+      },
+      {
+        "id": "crypto_factors",
+        "url": "https://economics.yale.edu/sites/default/files/2022-10/LiuTsyvinskiWu2019%20COMMON%20RISK%20FACTORS.pdf",
+        "http_status": 200,
+        "retrieved_at_utc": "2026-10-25T19:06:22.462174+00:00",
+        "file": "crypto_factors.pdf",
+        "sha256": "3e5a8465395f800e6728eba62ed6696b4ffb94e1bc2824e98213d6231bb913e7",
+        "bytes": 548709
+      },
+      {
+        "id": "ark_model",
+        "repository": "ARKInvest/ARK-Invest-Tesla-Valuation-Model",
+        "url": "https://github.com/ARKInvest/ARK-Invest-Tesla-Valuation-Model/blob/648381537eefc0a64518729bcff2ac4e24b0dd1a/README.md",
+        "commit": "648381537eefc0a64518729bcff2ac4e24b0dd1a",
+        "file": "ark_model_README.md",
+        "sha256": "0eac141aef859fc6f0e3c4dd378b709fbac6b0319f199bb1cd7c96f42f618e73",
+        "bytes": 25077,
+        "license_status": "README restricts commercial use without written permission; method review only; no model copied or executed"
+      }
+    ],
+    "third_party_code_executed": false
+  },
+  "author_profit_claim_is_local_profit": false,
+  "third_party_code_executed": false
+}

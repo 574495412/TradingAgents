@@ -1,0 +1,83 @@
+{
+  "schema": "equity-external-first-plan.v1",
+  "version": "20261026_v001",
+  "data_start": "2018-01-01",
+  "data_end": "2026-10-01",
+  "window": [
+    "2023-01-01",
+    "2026-10-01"
+  ],
+  "candidates": [
+    "faber10m",
+    "faber10m_vol12"
+  ],
+  "markets": {
+    "US": {
+      "currency": "USD",
+      "capitals": [
+        10000
+      ],
+      "initial_cash": 10000,
+      "minimum_fee": 1,
+      "commission_bps": 1,
+      "dividend_haircut": 0.3,
+      "symbols": [
+        {
+          "symbol": "SPY.US",
+          "lot_size": 1,
+          "instrument": "ETF"
+        },
+        {
+          "symbol": "QQQ.US",
+          "lot_size": 1,
+          "instrument": "ETF"
+        }
+      ]
+    },
+    "HK": {
+      "currency": "HKD",
+      "capitals": [
+        100000
+      ],
+      "initial_cash": 100000,
+      "minimum_fee": 15,
+      "commission_bps": 3,
+      "dividend_haircut": 0,
+      "symbols": [
+        {
+          "symbol": "2800.HK",
+          "lot_size": 500,
+          "instrument": "ETF"
+        }
+      ]
+    }
+  },
+  "slippage_bps": [
+    5,
+    15
+  ],
+  "accounts": 8,
+  "cost_model": "原v002分项费用+5/15bps不利滑点；原币无借贷整手",
+  "history_role": "2023-2026已看历史，仅探索诊断；无独立样本外",
+  "source_catalog": "docs/research/equities_external_first_20261026/sources.json",
+  "source_pack": "data/research/equity_external_sources_20261026_v001",
+  "selection": "全部保留；不凭这8账户反选赢家或改变旧cash选择",
+  "independent_forward_oos": false,
+  "production_eligible": false,
+  "deviations": [
+    "原文同收盘成交、无税费/滑点；本地次一真实开盘并扣费",
+    "原文总回报指数和国库券现金收益；本地公开事件构造因果总回报，现金利息0",
+    "信号月末；既有现金引擎每天按净目标和5%权益交易带调仓，非原文逐笔等同复现",
+    "vol12为预登记本地风险覆盖消融，非作者原策略"
+  ],
+  "limitations": [
+    "Only SPY/QQQ/2800 retrospectively selected ETFs. Not market-wide stocks; historical constituents, delistings and survivorship coverage missing.",
+    "Public Yahoo events and US prices, Tencent HK prices. Longbridge authentication, historical lot changes and corporate-action completeness remain unverified. Splits reject rather than invent adjustment.",
+    "Dividend ex-date receivables are never spendable; actual payment date, collection fees and investor tax treatment unknown. US 30% haircut is a scenario.",
+    "Three exchange-session sale-cash lock is a conservative research buffer, not a certified bank settlement calendar or broker buying-power rule.",
+    "Commission/minimum fees are fixed research scenarios; statutory components use dated official rules with conservative per-order rounding. Broker pass-through/charge-date mapping unverified.",
+    "Prior20 daily volume cap and 5/15bps slippage are capacity proxies, not opening-auction liquidity or orderbook proof; Tencent volume units not independently certified.",
+    "Daily low equity envelope plus exit reserve is not synchronized intraday maximum drawdown. Stocks use 252-session zero-risk-free Sharpe; cash interest not modeled.",
+    "Fundamental value/quality, issuer events and macro routing require point-in-time data; no synthetic proxies or returns supplied. FX, short, borrow and leverage disabled."
+  ]
+}

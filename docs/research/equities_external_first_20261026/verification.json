@@ -1,0 +1,2309 @@
+{
+  "schema": "equity-external-review.v1",
+  "date_shanghai": "2026-10-26",
+  "user_confirmed_challenge": {
+    "cagr": 0.5,
+    "max_drawdown": 0.15
+  },
+  "profit_goal_status": "not_met",
+  "qualified_total_account_actual": null,
+  "registration_sha256": "bafcfa0ca427c74adbc33954f5d836f5ed769b942a5d8655390d677143b6f878",
+  "protocol_sha256": "f896933b35361de64778a65519149bea6dfa6345dffaec7565afa68fa261e605",
+  "source_catalog_sha256": "a234846ff4721b416e9cc7f1d58eca2ed2e79ab0429833139b6af2359254e377",
+  "source_hashes_match": true,
+  "account_count": 8,
+  "audit": {
+    "passed": true,
+    "accounts": 8,
+    "curve_points": 7432,
+    "fills": 439,
+    "maximum_balance_error_native": 3.6e-11
+  },
+  "restart": {
+    "passed": true,
+    "accounts": 8,
+    "method": "actual JSON checkpoint read in a new Python interpreter"
+  },
+  "period_reconciliation_passed": true,
+  "records": [
+    {
+      "name": "US_faber10m_10000_5bps",
+      "market": "US",
+      "policy": "faber10m",
+      "capital": 10000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": 0.5338869178805543,
+        "net_pnl": 5338.869178805544,
+        "ending_equity": 15338.869178805544,
+        "annualized_return": 0.12101282209935338,
+        "sharpe_zero_rf_252": 1.086761816905051,
+        "max_drawdown": 0.10267206560535047,
+        "close_max_drawdown": 0.09210959684659359,
+        "win_rate": 1.0,
+        "win_rate_wilson95": [
+          0.5655085052479191,
+          1.0000000000000002
+        ],
+        "closed_trades": 5,
+        "entry_month_clusters": 3,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 4443.784536343384,
+        "open_cycle_pnl": 895.0846424621595,
+        "unrealized_mark_pnl": 847.464390380861,
+        "mean_closed_pnl": 888.7569072686769,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": 149.93044175109935,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 7.888285095214844,
+        "net_return_after_exit_reserve": 0.5330980893710331,
+        "fees": 14.43,
+        "fee_components": {
+          "commission": 14.0,
+          "sec31": 0.36,
+          "taf": 0.07
+        },
+        "slippage": 29.519149856564354,
+        "turnover_initial_capital": 5.904135447291565,
+        "requested_shares": 115,
+        "filled_shares": 115,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.6894738330813318,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.17756344133819746,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.039042595593262286,
+            "sessions": 62
+          },
+          "regime_cash_domain": {
+            "net_return": 0.0012161466888827022,
+            "sessions": 83
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.532023752266948,
+            "sessions": 856
+          },
+          "90d_01": {
+            "net_return": 0.09145784118797762,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.024010812577864638,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.06678665890113278,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.06788916227036323,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.18531299808362145,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": 0.04694488971026711,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.02121267477441413,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.044322837376118196,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.045702649375864324,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.07384972695893333,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": -0.004361679209876401,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.09216594239331499,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.009523295398325304,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.0027689649256588122,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.023369505029617432,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.034756297714557904,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.010825966160901812,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.01327541534445742,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "US_faber10m_10000_15bps",
+      "market": "US",
+      "policy": "faber10m",
+      "capital": 10000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": 0.5280909215213012,
+        "net_pnl": 5280.909215213012,
+        "ending_equity": 15280.909215213012,
+        "annualized_return": 0.11965751809281677,
+        "sharpe_zero_rf_252": 1.076682289307537,
+        "max_drawdown": 0.10348927914444139,
+        "close_max_drawdown": 0.09221187758956151,
+        "win_rate": 1.0,
+        "win_rate_wilson95": [
+          0.5655085052479191,
+          1.0000000000000002
+        ],
+        "closed_trades": 5,
+        "entry_month_clusters": 3,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 4396.611596432496,
+        "open_cycle_pnl": 884.2976187805161,
+        "unrealized_mark_pnl": 837.0623605957007,
+        "mean_closed_pnl": 879.3223192864992,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": 142.51075171814,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 19.14485528564453,
+        "net_return_after_exit_reserve": 0.5261764359927368,
+        "fees": 14.43,
+        "fee_components": {
+          "commission": 14.0,
+          "sec31": 0.36,
+          "taf": 0.07
+        },
+        "slippage": 88.5590695037859,
+        "turnover_initial_capital": 5.904854232859803,
+        "requested_shares": 115,
+        "filled_shares": 115,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.6903080852662741,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.17595393034271156,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.03829517359619139,
+            "sessions": 62
+          },
+          "regime_cash_domain": {
+            "net_return": -0.0003135132241038896,
+            "sessions": 83
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.5285701484768184,
+            "sessions": 856
+          },
+          "90d_01": {
+            "net_return": 0.09152367757443702,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.02402664760226092,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.06605238918213074,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.06798182901221295,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.18556663328166834,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": 0.04700488924787405,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.02123856920135081,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.04437581728617013,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.04575495738993118,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.07249815671033333,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": -0.005859683121484993,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.09241553226212273,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.00954690321771312,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.002775764153143623,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.021965806492707518,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.033338753014911626,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.010845307010154848,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.013326439567508563,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "US_faber10m_vol12_10000_5bps",
+      "market": "US",
+      "policy": "faber10m_vol12",
+      "capital": 10000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": 0.48909529200073276,
+        "net_pnl": 4890.952920007328,
+        "ending_equity": 14890.952920007328,
+        "annualized_return": 0.11216152751376929,
+        "sharpe_zero_rf_252": 1.1458959928074464,
+        "max_drawdown": 0.08757695276623623,
+        "close_max_drawdown": 0.08444935315389279,
+        "win_rate": 1.0,
+        "win_rate_wilson95": [
+          0.5655085052479191,
+          1.0000000000000002
+        ],
+        "closed_trades": 5,
+        "entry_month_clusters": 3,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 4006.9443212951683,
+        "open_cycle_pnl": 884.0085987121602,
+        "unrealized_mark_pnl": 498.6478930284138,
+        "mean_closed_pnl": 801.3888642590337,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": 136.71695511169537,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 7.888285095214844,
+        "net_return_after_exit_reserve": 0.48830646349121154,
+        "fees": 57.13,
+        "fee_components": {
+          "commission": 56.0,
+          "sec31": 0.84,
+          "taf": 0.2900000000000001
+        },
+        "slippage": 44.39480987548262,
+        "turnover_initial_capital": 8.879285440075684,
+        "requested_shares": 165,
+        "filled_shares": 165,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.6151122279903775,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.1701023935449224,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.03301095879730176,
+            "sessions": 62
+          },
+          "regime_cash_domain": {
+            "net_return": 0.0018941072701703643,
+            "sessions": 83
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.4862801180236733,
+            "sessions": 856
+          },
+          "90d_01": {
+            "net_return": 0.08801242914557394,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.02326881309603357,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.06896133933853443,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.07012641001051989,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.16622171334608038,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": 0.044343720783482476,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.007606694434687533,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.04084309169041145,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.04706312161645154,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.05961169281017198,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": 0.0006870443074868948,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.07830962424489929,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.008312201901449434,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.0023240567186928462,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.029842374583669118,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.03176639273330517,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.0039058475661382097,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.013680199418835803,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "US_faber10m_vol12_10000_15bps",
+      "market": "US",
+      "policy": "faber10m_vol12",
+      "capital": 10000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": 0.48063974484497063,
+        "net_pnl": 4806.397448449707,
+        "ending_equity": 14806.397448449707,
+        "annualized_return": 0.11026558118476948,
+        "sharpe_zero_rf_252": 1.1284853628246698,
+        "max_drawdown": 0.08783302353449474,
+        "close_max_drawdown": 0.0841515507903462,
+        "win_rate": 1.0,
+        "win_rate_wilson95": [
+          0.5655085052479191,
+          1.0000000000000002
+        ],
+        "closed_trades": 5,
+        "entry_month_clusters": 3,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 3955.226823431396,
+        "open_cycle_pnl": 851.1706250183106,
+        "unrealized_mark_pnl": 452.42312495959413,
+        "mean_closed_pnl": 791.0453646862792,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": 129.2871650421148,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 18.015200256347658,
+        "net_return_after_exit_reserve": 0.4788382248193359,
+        "fees": 56.13,
+        "fee_components": {
+          "commission": 55.0,
+          "sec31": 0.84,
+          "taf": 0.2900000000000001
+        },
+        "slippage": 132.07015447998225,
+        "turnover_initial_capital": 8.805536076782225,
+        "requested_shares": 164,
+        "filled_shares": 164,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.615857022536878,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.16833294354492012,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.03231418980010936,
+            "sessions": 62
+          },
+          "regime_cash_domain": {
+            "net_return": 0.0008074396268218376,
+            "sessions": 83
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.47944518217916743,
+            "sessions": 856
+          },
+          "90d_01": {
+            "net_return": 0.08793135531350127,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.023286253761551134,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.06816857344878602,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.07015726674828526,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.1653969304852223,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": 0.04440940557161577,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.0071566202022355085,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.04057942276626325,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.04713030817473873,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.058846997272224755,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": -0.00036996018550838894,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.07856413208336899,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.00833724892547738,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.002331001857993842,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.027012432666182917,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.02990713920138388,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.0052375205114623125,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.01411000381350247,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "HK_faber10m_100000_5bps",
+      "market": "HK",
+      "policy": "faber10m",
+      "capital": 100000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": 0.24520900000000045,
+        "net_pnl": 24520.900000000038,
+        "ending_equity": 124520.90000000004,
+        "annualized_return": 0.06019323004685573,
+        "sharpe_zero_rf_252": 0.4729383596402331,
+        "max_drawdown": 0.18630143178021896,
+        "close_max_drawdown": 0.18276302889656804,
+        "win_rate": 0.25,
+        "win_rate_wilson95": [
+          0.045586062644636216,
+          0.6993639475573634
+        ],
+        "closed_trades": 4,
+        "entry_month_clusters": 4,
+        "profit_factor": 4.155814402613247,
+        "realized_closed_net_pnl": 28596.570000000036,
+        "open_cycle_pnl": -4075.6699999999983,
+        "unrealized_mark_pnl": -4075.6699999999837,
+        "mean_closed_pnl": 7149.142500000009,
+        "mean_closed_pnl_month_cluster95": [
+          -4096.732499999991,
+          27335.700000000015
+        ],
+        "worst_closed_cycle": -4561.90499999997,
+        "closed_payoff_ratio": 12.467443207839743,
+        "exit_reserve": 81.935,
+        "net_return_after_exit_reserve": 0.24438965000000046,
+        "fees": 529.77,
+        "fee_components": {
+          "commission": 408.19,
+          "sfc": 24.269999999999996,
+          "afrc": 1.3599999999999999,
+          "exchange": 50.78,
+          "settlement": 45.169999999999995,
+          "stamp": 0.0
+        },
+        "slippage": 449.32999999996605,
+        "turnover_initial_capital": 8.986944349999998,
+        "requested_shares": 40500,
+        "filled_shares": 40500,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.5615002117806407,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.05429989999999907,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": 0.03545455000000053,
+            "sessions": 61
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.2185424556534048,
+            "sessions": 675
+          },
+          "90d_01": {
+            "net_return": -0.07829759403732384,
+            "sessions": 59
+          },
+          "regime_cash_domain": {
+            "net_return": 0.021883968197311532,
+            "sessions": 244
+          },
+          "90d_02": {
+            "net_return": -0.009095791360881678,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": 0.0,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": 0.0,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.13669735257509297,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.02426593800719634,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.021473219797812693,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.07148063506899494,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.15506876790506685,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.23763998932812047,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": 0.004573015874570929,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.10702852960408471,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": -0.027761586431754637,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": 0.01631380756867018,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.06405649654495738,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.04434058410331854,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": -0.027338754058525816,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.004477102419314316,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "HK_faber10m_100000_15bps",
+      "market": "HK",
+      "policy": "faber10m",
+      "capital": 100000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": 0.23122547500000024,
+        "net_pnl": 23122.547500000015,
+        "ending_equity": 123122.54750000002,
+        "annualized_return": 0.05679211136755469,
+        "sharpe_zero_rf_252": 0.45243702639082667,
+        "max_drawdown": 0.18874779592626612,
+        "close_max_drawdown": 0.18446668648004605,
+        "win_rate": 0.25,
+        "win_rate_wilson95": [
+          0.045586062644636216,
+          0.6993639475573634
+        ],
+        "closed_trades": 4,
+        "entry_month_clusters": 4,
+        "profit_factor": 3.834702653041241,
+        "realized_closed_net_pnl": 27290.66750000001,
+        "open_cycle_pnl": -4168.119999999995,
+        "unrealized_mark_pnl": -4168.119999999995,
+        "mean_closed_pnl": 6822.666875000003,
+        "mean_closed_pnl_month_cluster95": [
+          -4245.5975000000035,
+          26754.933750000015
+        ],
+        "worst_closed_cycle": -4756.88499999998,
+        "closed_payoff_ratio": 11.504107959123724,
+        "exit_reserve": 170.305,
+        "net_return_after_exit_reserve": 0.2295224250000003,
+        "fees": 696.1799999999998,
+        "fee_components": {
+          "commission": 558.21,
+          "sfc": 27.750000000000007,
+          "afrc": 1.56,
+          "exchange": 58.079999999999984,
+          "settlement": 50.579999999999984,
+          "stamp": 0.0
+        },
+        "slippage": 1541.272499999989,
+        "turnover_initial_capital": 10.276181025000001,
+        "requested_shares": 45500,
+        "filled_shares": 45500,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.5605312740949272,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.058930374999999424,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": 0.03424334999999945,
+            "sessions": 61
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.20836462469303885,
+            "sessions": 675
+          },
+          "90d_01": {
+            "net_return": -0.07910343344242865,
+            "sessions": 59
+          },
+          "regime_cash_domain": {
+            "net_return": 0.0189188344641964,
+            "sessions": 244
+          },
+          "90d_02": {
+            "net_return": -0.011928972503682633,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": 0.0,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": 0.0,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.13371662059542255,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.02362673218785516,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.0215923524247712,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.06910067256355346,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.1562579787864109,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.23668348937210837,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": 0.004603346579530543,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.10435508155786222,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": -0.02712865628484229,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": 0.016450557933808563,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.06684720611804396,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.046244212912556204,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": -0.028345518731764607,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.004527720453041617,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "HK_faber10m_vol12_100000_5bps",
+      "market": "HK",
+      "policy": "faber10m_vol12",
+      "capital": 100000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": 0.13755142500000095,
+        "net_pnl": 13755.142500000104,
+        "ending_equity": 113755.1425000001,
+        "annualized_return": 0.03485447031394129,
+        "sharpe_zero_rf_252": 0.3955139104595497,
+        "max_drawdown": 0.14288962507045788,
+        "close_max_drawdown": 0.1396333527352911,
+        "win_rate": 0.5,
+        "win_rate_wilson95": [
+          0.15003570882017148,
+          0.8499642911798285
+        ],
+        "closed_trades": 4,
+        "entry_month_clusters": 4,
+        "profit_factor": 3.0802063716892127,
+        "realized_closed_net_pnl": 17715.42750000004,
+        "open_cycle_pnl": -3960.284999999938,
+        "unrealized_mark_pnl": -3647.4914285714185,
+        "mean_closed_pnl": 4428.85687500001,
+        "mean_closed_pnl_month_cluster95": [
+          -4258.093750000004,
+          18901.363125000025
+        ],
+        "worst_closed_cycle": -5661.38749999999,
+        "closed_payoff_ratio": 3.0802063716892127,
+        "exit_reserve": 81.935,
+        "net_return_after_exit_reserve": 0.13673207500000095,
+        "fees": 2258.69,
+        "fee_components": {
+          "commission": 1896.57,
+          "sfc": 50.850000000000016,
+          "afrc": 2.7800000000000016,
+          "exchange": 106.32999999999998,
+          "settlement": 202.1600000000001,
+          "stamp": 0.0
+        },
+        "slippage": 941.167499999908,
+        "turnover_initial_capital": 18.823718475,
+        "requested_shares": 85500,
+        "filled_shares": 85500,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.40616421791708307,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.055831899999998824,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": 0.0037714750000001906,
+            "sessions": 61
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.1221759059545342,
+            "sessions": 675
+          },
+          "90d_01": {
+            "net_return": -0.06015846385752266,
+            "sessions": 59
+          },
+          "regime_cash_domain": {
+            "net_return": 0.013701523053458287,
+            "sessions": 244
+          },
+          "90d_02": {
+            "net_return": 0.0008289023754728397,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": 0.0,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": 0.0,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.11836348315517298,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.009098750529699107,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.020775771329755166,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.07444238394580327,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.10616130262210866,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.12483976994063917,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": -0.03581993057142929,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.09635852599962047,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": -0.030769100452160636,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": 0.02795087403715768,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.04225901058293757,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.03304094048224915,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": -0.028885636081983024,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.004898738590121132,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "name": "HK_faber10m_vol12_100000_15bps",
+      "market": "HK",
+      "policy": "faber10m_vol12",
+      "capital": 100000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": 0.12195237499999978,
+        "net_pnl": 12195.237499999988,
+        "ending_equity": 112195.23749999999,
+        "annualized_return": 0.030821505001687344,
+        "sharpe_zero_rf_252": 0.35842371485553354,
+        "max_drawdown": 0.14583485192166867,
+        "close_max_drawdown": 0.14281959302083103,
+        "win_rate": 0.25,
+        "win_rate_wilson95": [
+          0.045586062644636216,
+          0.6993639475573634
+        ],
+        "closed_trades": 4,
+        "entry_month_clusters": 4,
+        "profit_factor": 2.733160140584885,
+        "realized_closed_net_pnl": 16329.947500000002,
+        "open_cycle_pnl": -4134.710000000014,
+        "unrealized_mark_pnl": -3765.218571428588,
+        "mean_closed_pnl": 4082.4868750000005,
+        "mean_closed_pnl_month_cluster95": [
+          -4585.652500000007,
+          18561.534375000032
+        ],
+        "worst_closed_cycle": -5965.2225000000035,
+        "closed_payoff_ratio": 8.199480421754656,
+        "exit_reserve": 170.305,
+        "net_return_after_exit_reserve": 0.12024932499999985,
+        "fees": 2221.02,
+        "fee_components": {
+          "commission": 1866.54,
+          "sfc": 50.58999999999999,
+          "afrc": 2.7900000000000014,
+          "exchange": 105.74999999999996,
+          "settlement": 195.3500000000001,
+          "stamp": 0.0
+        },
+        "slippage": 2808.7424999999935,
+        "turnover_initial_capital": 18.726051374999997,
+        "requested_shares": 84500,
+        "filled_shares": 84500,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.40693682607453757,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.06412164999999947,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": 0.0018942250000002492,
+            "sessions": 61
+          },
+          "regime_trend_enabled": {
+            "net_return": 0.10917607060391088,
+            "sessions": 675
+          },
+          "90d_01": {
+            "net_return": -0.061430087592330596,
+            "sessions": 59
+          },
+          "regime_cash_domain": {
+            "net_return": 0.01151873425211325,
+            "sessions": 244
+          },
+          "90d_02": {
+            "net_return": -0.004752948982093108,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": 0.0,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": 0.0,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.12441550229257992,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.01292587866788475,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.02343721155633438,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.07344229752978038,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.10542500009782096,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.1201878855557792,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": -0.037454841396049265,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.09420889528379495,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": -0.03056676244887757,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": 0.025634868171217517,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.04821835476414027,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.03507571451076785,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": -0.030729060545651943,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.004966509870550473,
+            "sessions": 13
+          }
+        }
+      }
+    }
+  ],
+  "reused_baselines": [
+    {
+      "path": "results/research/equities_layered_20261026_v001/US_static_10000_5bps/result.json",
+      "sha256": "eb1df1339911f55105533137bb72a10bf1fc10bd641d165189e7b0fa2a6ff561",
+      "market": "US",
+      "policy": "static",
+      "slippage_bps": 5,
+      "capital": 10000,
+      "metrics": {
+        "net_return": 0.28006131950714286,
+        "net_pnl": 2800.613195071428,
+        "ending_equity": 12800.613195071428,
+        "annualized_return": 0.06813852397100706,
+        "sharpe_zero_rf_252": 1.1609863198890293,
+        "max_drawdown": 0.060373749938328225,
+        "close_max_drawdown": 0.055385664316051186,
+        "win_rate": 0.7391304347826086,
+        "win_rate_wilson95": [
+          0.5352960945624944,
+          0.8745155411075104
+        ],
+        "closed_trades": 23,
+        "entry_month_clusters": 12,
+        "profit_factor": 8.29045197825677,
+        "realized_closed_net_pnl": 2555.86378899843,
+        "open_cycle_pnl": 244.74940607299777,
+        "unrealized_mark_pnl": 80.44900536061323,
+        "mean_closed_pnl": 111.12451256514915,
+        "mean_closed_pnl_month_cluster95": [
+          26.760931324248176,
+          216.62150974121914
+        ],
+        "worst_closed_cycle": -146.85676760864226,
+        "closed_payoff_ratio": 2.9260418746788606,
+        "exit_reserve": 4.373600036621093,
+        "net_return_after_exit_reserve": 0.2796239595034806,
+        "fees": 201.23999999999998,
+        "fee_components": {
+          "commission": 197.0,
+          "sec31": 3.2299999999999995,
+          "taf": 1.0100000000000007
+        },
+        "slippage": 217.69880937192272,
+        "turnover_initial_capital": 43.5398308353531,
+        "requested_shares": 849,
+        "filled_shares": 844,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.3172482681369353,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.07613303011688566,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.011238575627746883,
+            "sessions": 62
+          },
+          "regime_down": {
+            "net_return": 0.01746814301868893,
+            "sessions": 82
+          },
+          "regime_up": {
+            "net_return": 0.2580849123289235,
+            "sessions": 857
+          },
+          "90d_01": {
+            "net_return": 0.05141320518888581,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.002246918699898459,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.01577468837092799,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.03848937746911618,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.08664089999055746,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": -0.0010321137247161216,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.007611706083891168,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.03759856227376579,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.019248802901279838,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.05948015991752231,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": 0.009093501611255439,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.04634508670660464,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.006320443140317211,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.022764738249702487,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.03320366264995389,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.029301694615006646,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.007135234089362008,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.005534738468026434,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/US_buy_hold_10000_5bps/result.json",
+      "sha256": "162a508bdbe1db5a6601ac8382ab94ad38550d1893e2a343b01b9e5a4d30448b",
+      "market": "US",
+      "policy": "buy_hold",
+      "slippage_bps": 5,
+      "capital": 10000,
+      "metrics": {
+        "net_return": 0.9760087329122926,
+        "net_pnl": 9760.087329122925,
+        "ending_equity": 19760.087329122925,
+        "annualized_return": 0.19954502836350518,
+        "sharpe_zero_rf_252": 1.45945131806748,
+        "max_drawdown": 0.1763537435367588,
+        "close_max_drawdown": 0.15725126212382035,
+        "win_rate": null,
+        "win_rate_wilson95": null,
+        "closed_trades": 0,
+        "entry_month_clusters": 0,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 0.0,
+        "open_cycle_pnl": 9760.087329122925,
+        "unrealized_mark_pnl": 8959.787621363324,
+        "mean_closed_pnl": null,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": null,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 10.231885131835938,
+        "net_return_after_exit_reserve": 0.9749855443991091,
+        "fees": 4.06,
+        "fee_components": {
+          "commission": 4.0,
+          "sec31": 0.04,
+          "taf": 0.02
+        },
+        "slippage": 4.739974929809193,
+        "turnover_initial_capital": 0.948308333454895,
+        "requested_shares": 29,
+        "filled_shares": 29,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.7699571965058348,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.2879095130654903,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.10135539491607548,
+            "sessions": 62
+          },
+          "regime_down": {
+            "net_return": 0.21293801778518828,
+            "sessions": 82
+          },
+          "regime_up": {
+            "net_return": 0.6291094053762607,
+            "sessions": 857
+          },
+          "90d_01": {
+            "net_return": 0.08946453757182193,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.023918205697289863,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.10281439004639803,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.07100236854432351,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.1919581151830887,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": 0.04951873182865252,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.023340382615262945,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.04175699617804152,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.04325152725756465,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.14101490387834392,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": 0.0558303073667914,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.09195856623436893,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.009696974149988824,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.0026606770036425864,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.1281093442302026,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.13921777251516643,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.010468867016863781,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.014175614453005414,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/US_static_10000_15bps/result.json",
+      "sha256": "5ee1e11fbb817283df1086d10b9bf2d69765a674c78f38f7431a322d554f65d3",
+      "market": "US",
+      "policy": "static",
+      "slippage_bps": 15,
+      "capital": 10000,
+      "metrics": {
+        "net_return": 0.23070523195129233,
+        "net_pnl": 2307.0523195129244,
+        "ending_equity": 12307.052319512924,
+        "annualized_return": 0.05686160936989215,
+        "sharpe_zero_rf_252": 0.990057258401689,
+        "max_drawdown": 0.0612715461453055,
+        "close_max_drawdown": 0.05547628881007871,
+        "win_rate": 0.6956521739130435,
+        "win_rate_wilson95": [
+          0.49133870939427393,
+          0.8439617197902755
+        ],
+        "closed_trades": 23,
+        "entry_month_clusters": 12,
+        "profit_factor": 6.268540635235497,
+        "realized_closed_net_pnl": 2106.702695269767,
+        "open_cycle_pnl": 200.34962424315745,
+        "unrealized_mark_pnl": 74.86441455125714,
+        "mean_closed_pnl": 91.59576935955509,
+        "mean_closed_pnl_month_cluster95": [
+          16.747904733841015,
+          185.87126581827818
+        ],
+        "worst_closed_cycle": -155.17030770873998,
+        "closed_payoff_ratio": 2.74248652791553,
+        "exit_reserve": 8.880800109863282,
+        "net_return_after_exit_reserve": 0.22981715194030605,
+        "fees": 198.13,
+        "fee_components": {
+          "commission": 194.0,
+          "sec31": 3.1499999999999986,
+          "taf": 0.9800000000000006
+        },
+        "slippage": 631.2535031433123,
+        "turnover_initial_capital": 42.0837859826233,
+        "requested_shares": 826,
+        "filled_shares": 820,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.31767879812177663,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.0667356401358048,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.009467025643005167,
+            "sessions": 62
+          },
+          "regime_down": {
+            "net_return": 0.01635343414086665,
+            "sessions": 82
+          },
+          "regime_up": {
+            "net_return": 0.21090281255517995,
+            "sessions": 857
+          },
+          "90d_01": {
+            "net_return": 0.049359114407006466,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.005842512875593897,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.014313064904033057,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.03715794603104028,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.07380644316321439,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": -0.003882019816312754,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.0034931916793068396,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.03478831347239053,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.021447159607400734,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.049327067098317245,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": 0.008163919781853268,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.04530966071969811,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.0017842603672528767,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.015374671584028832,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.023906642626323027,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.02920526097724796,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.010269699268294241,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.005099713302665343,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/US_buy_hold_10000_15bps/result.json",
+      "sha256": "676edd44bc0ef25f37b51c49048fbd03ae366c6c1f822a0a73af92d78218715f",
+      "market": "US",
+      "policy": "buy_hold",
+      "slippage_bps": 15,
+      "capital": 10000,
+      "metrics": {
+        "net_return": 0.9741341330953979,
+        "net_pnl": 9741.34133095398,
+        "ending_equity": 19741.34133095398,
+        "annualized_return": 0.19898431677000317,
+        "sharpe_zero_rf_252": 1.4560045368261274,
+        "max_drawdown": 0.17717137069513011,
+        "close_max_drawdown": 0.15743651720955998,
+        "win_rate": null,
+        "win_rate_wilson95": null,
+        "closed_trades": 0,
+        "entry_month_clusters": 0,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 0.0,
+        "open_cycle_pnl": 9741.34133095398,
+        "unrealized_mark_pnl": 8952.98877147929,
+        "mean_closed_pnl": null,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": null,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 25.99565539550781,
+        "net_return_after_exit_reserve": 0.9715345675558471,
+        "fees": 4.06,
+        "fee_components": {
+          "commission": 4.0,
+          "sec31": 0.04,
+          "taf": 0.02
+        },
+        "slippage": 14.206004837037085,
+        "turnover_initial_capital": 0.9480084236099244,
+        "requested_shares": 29,
+        "filled_shares": 29,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.7706205830054362,
+        "halted_sessions": 0,
+        "sessions": 939,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.2870608240792849,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.10050670592987054,
+            "sessions": 62
+          },
+          "regime_down": {
+            "net_return": 0.21219783685764582,
+            "sessions": 82
+          },
+          "regime_up": {
+            "net_return": 0.6285577098643369,
+            "sessions": 857
+          },
+          "90d_01": {
+            "net_return": 0.08953353085217564,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.02393513518704926,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.10288894740199761,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": 0.07104905357458646,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.1912875966835934,
+            "sessions": 252
+          },
+          "90d_05": {
+            "net_return": 0.04954913122504134,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.02264697889975742,
+            "sessions": 62
+          },
+          "90d_07": {
+            "net_return": 0.04180975027426537,
+            "sessions": 63
+          },
+          "90d_08": {
+            "net_return": -0.04330397659026519,
+            "sessions": 60
+          },
+          "2025": {
+            "net_return": 0.1411873120691669,
+            "sessions": 250
+          },
+          "90d_09": {
+            "net_return": 0.05590107498348318,
+            "sessions": 62
+          },
+          "90d_10": {
+            "net_return": 0.09206895719439556,
+            "sessions": 62
+          },
+          "90d_11": {
+            "net_return": 0.009707633420762196,
+            "sessions": 63
+          },
+          "90d_12": {
+            "net_return": 0.002663573598619795,
+            "sessions": 60
+          },
+          "2026": {
+            "net_return": 0.12824659562055474,
+            "sessions": 187
+          },
+          "90d_13": {
+            "net_return": 0.13936893188072697,
+            "sessions": 62
+          },
+          "90d_14": {
+            "net_return": -0.010478843459041376,
+            "sessions": 61
+          },
+          "90d_15": {
+            "net_return": 0.014189266344107887,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/HK_static_100000_5bps/result.json",
+      "sha256": "0faf016ea822a7a850f287e0eca75d16591763e5fdd3a1d90c81f982d8f13f43",
+      "market": "HK",
+      "policy": "static",
+      "slippage_bps": 5,
+      "capital": 100000,
+      "metrics": {
+        "net_return": 0.08604137500000109,
+        "net_pnl": 8604.137500000099,
+        "ending_equity": 108604.1375000001,
+        "annualized_return": 0.022310771545235086,
+        "sharpe_zero_rf_252": 0.3385947370807431,
+        "max_drawdown": 0.10499313707702163,
+        "close_max_drawdown": 0.10329148504021057,
+        "win_rate": 0.42857142857142855,
+        "win_rate_wilson95": [
+          0.21380509930400526,
+          0.6740973309713064
+        ],
+        "closed_trades": 14,
+        "entry_month_clusters": 14,
+        "profit_factor": 1.7146413799733866,
+        "realized_closed_net_pnl": 8604.137500000099,
+        "open_cycle_pnl": 0.0,
+        "unrealized_mark_pnl": 7.275957614183426e-12,
+        "mean_closed_pnl": 614.5812500000071,
+        "mean_closed_pnl_month_cluster95": [
+          -1079.7118973214228,
+          2483.8108750000074
+        ],
+        "worst_closed_cycle": -4190.787500000006,
+        "closed_payoff_ratio": 2.286188506631182,
+        "exit_reserve": 0,
+        "net_return_after_exit_reserve": 0.08604137500000109,
+        "fees": 1481.0900000000001,
+        "fee_components": {
+          "commission": 1119.52,
+          "sfc": 69.37999999999998,
+          "afrc": 3.9100000000000015,
+          "exchange": 145.17,
+          "settlement": 143.11,
+          "stamp": 0.0
+        },
+        "slippage": 1284.7724999998588,
+        "turnover_initial_capital": 25.695405724999997,
+        "requested_shares": 121000,
+        "filled_shares": 121000,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.21072594714171095,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.05152642499999882,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": -0.005644399999999106,
+            "sessions": 61
+          },
+          "regime_down": {
+            "net_return": 0.010906002919861102,
+            "sessions": 311
+          },
+          "regime_up": {
+            "net_return": 0.07432478574973533,
+            "sessions": 608
+          },
+          "90d_01": {
+            "net_return": -0.0039967090244174,
+            "sessions": 59
+          },
+          "90d_02": {
+            "net_return": -0.042314882816111066,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": 0.0,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": 0.002569602426719886,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.13270949588658887,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.038327360419278866,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.04140266737954601,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.04484296951805988,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.04298977416496097,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.0680161850239871,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": -0.03684490175248434,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.052543675149208324,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": 0.010093159483051783,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": -0.012381626876782237,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.053490974245106404,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.02425395677093589,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": -0.013654647076372206,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.004205330081322178,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/HK_buy_hold_100000_5bps/result.json",
+      "sha256": "795d4d4c5d58eec4caa4a900692433186a9f955f6065a61a410d7538fb36e6fc",
+      "market": "HK",
+      "policy": "buy_hold",
+      "slippage_bps": 5,
+      "capital": 100000,
+      "metrics": {
+        "net_return": 0.3182803000000003,
+        "net_pnl": 31828.030000000028,
+        "ending_equity": 131828.03000000003,
+        "annualized_return": 0.0764641999124418,
+        "sharpe_zero_rf_252": 0.5185653864110097,
+        "max_drawdown": 0.2505043543738855,
+        "close_max_drawdown": 0.2435429039877861,
+        "win_rate": null,
+        "win_rate_wilson95": null,
+        "closed_trades": 0,
+        "entry_month_clusters": 0,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 0.0,
+        "open_cycle_pnl": 31828.030000000028,
+        "unrealized_mark_pnl": 17047.979335937533,
+        "mean_closed_pnl": null,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": null,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 93.65,
+        "net_return_after_exit_reserve": 0.3173438000000004,
+        "fees": 137.53,
+        "fee_components": {
+          "commission": 113.69,
+          "sfc": 4.010000000000001,
+          "afrc": 0.23999999999999994,
+          "exchange": 8.419999999999998,
+          "settlement": 11.17,
+          "stamp": 0.0
+        },
+        "slippage": 74.43999999998674,
+        "turnover_initial_capital": 1.4891925999999998,
+        "requested_shares": 7000,
+        "filled_shares": 7000,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.7657326866813048,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.07414544999999984,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": 0.03545455000000053,
+            "sessions": 61
+          },
+          "regime_down": {
+            "net_return": 0.21165073120733413,
+            "sessions": 311
+          },
+          "regime_up": {
+            "net_return": 0.08800355254720049,
+            "sessions": 608
+          },
+          "90d_01": {
+            "net_return": -0.04751536414611357,
+            "sessions": 59
+          },
+          "90d_02": {
+            "net_return": -0.03285155946809015,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": -0.027677175728732295,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": -0.026308566818718848,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.16590078862819202,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.08681646086606865,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.02119303435905362,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.062259632545444976,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.15441628460611811,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.23495732173253403,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": 0.0045563478040904215,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.10561658724701628,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": -0.02811188021753419,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": 0.01628123972293727,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.011102106902337705,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.02284391457770285,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": 0.005464977351083977,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.00483135440302096,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/HK_static_100000_15bps/result.json",
+      "sha256": "61eb99ad659fd0a38fc9b95b38cffe4c5ffc7bd06ffad97144c69d087e2f0a8f",
+      "market": "HK",
+      "policy": "static",
+      "slippage_bps": 15,
+      "capital": 100000,
+      "metrics": {
+        "net_return": 0.052085125000000065,
+        "net_pnl": 5208.512500000012,
+        "ending_equity": 105208.51250000001,
+        "annualized_return": 0.013666139583487835,
+        "sharpe_zero_rf_252": 0.22161213738778207,
+        "max_drawdown": 0.11012565399217833,
+        "close_max_drawdown": 0.10807360139333855,
+        "win_rate": 0.42857142857142855,
+        "win_rate_wilson95": [
+          0.21380509930400526,
+          0.6740973309713064
+        ],
+        "closed_trades": 14,
+        "entry_month_clusters": 14,
+        "profit_factor": 1.3759184348810451,
+        "realized_closed_net_pnl": 5208.512499999975,
+        "open_cycle_pnl": 3.637978807091713e-11,
+        "unrealized_mark_pnl": 0.0,
+        "mean_closed_pnl": 372.03660714285536,
+        "mean_closed_pnl_month_cluster95": [
+          -1283.7011785714315,
+          2187.4017544642797
+        ],
+        "worst_closed_cycle": -4205.752500000002,
+        "closed_payoff_ratio": 1.834557913174727,
+        "exit_reserve": 0,
+        "net_return_after_exit_reserve": 0.052085125000000065,
+        "fees": 1383.1999999999998,
+        "fee_components": {
+          "commission": 1041.49,
+          "sfc": 66.56,
+          "afrc": 3.7600000000000016,
+          "exchange": 139.32999999999998,
+          "settlement": 132.06000000000003,
+          "stamp": 0.0
+        },
+        "slippage": 3698.287500000014,
+        "turnover_initial_capital": 24.655133375000005,
+        "requested_shares": 116000,
+        "filled_shares": 116000,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.21273260478810785,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.05735542500000024,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": -0.008130700000000268,
+            "sessions": 61
+          },
+          "regime_down": {
+            "net_return": 0.00886323770020292,
+            "sessions": 311
+          },
+          "regime_up": {
+            "net_return": 0.04284216699016841,
+            "sessions": 608
+          },
+          "90d_01": {
+            "net_return": -0.007225952048319106,
+            "sessions": 59
+          },
+          "90d_02": {
+            "net_return": -0.042710912264734446,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": 0.0,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": 0.002235731320046952,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.1248265285990735,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.03699584359208674,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.03956797256028244,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.041083975197572675,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.03861991987496993,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.053099295218987264,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": -0.044013598868079096,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.05236080603229443,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": 0.007850916217397197,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": -0.014161033394346045,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.057789292655155644,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.02567035218739988,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": -0.014446412793257868,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.0046956683428035495,
+            "sessions": 13
+          }
+        }
+      }
+    },
+    {
+      "path": "results/research/equities_layered_20261026_v001/HK_buy_hold_100000_15bps/result.json",
+      "sha256": "f91fc6702be0b8df81ec8133cc9b08e76f03bab1c0fa6508105a30c8e17636e8",
+      "market": "HK",
+      "policy": "buy_hold",
+      "slippage_bps": 15,
+      "capital": 100000,
+      "metrics": {
+        "net_return": 0.31749234999999976,
+        "net_pnl": 31749.234999999986,
+        "ending_equity": 131749.235,
+        "annualized_return": 0.07607126141013154,
+        "sharpe_zero_rf_252": 0.5173363316815871,
+        "max_drawdown": 0.2515318233837287,
+        "close_max_drawdown": 0.24402193571085495,
+        "win_rate": null,
+        "win_rate_wilson95": null,
+        "closed_trades": 0,
+        "entry_month_clusters": 0,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 0.0,
+        "open_cycle_pnl": 31749.234999999986,
+        "unrealized_mark_pnl": 17034.18197265624,
+        "mean_closed_pnl": null,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": null,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 194.64000000000001,
+        "net_return_after_exit_reserve": 0.31554594999999974,
+        "fees": 137.55,
+        "fee_components": {
+          "commission": 113.71000000000001,
+          "sfc": 4.010000000000001,
+          "afrc": 0.23999999999999994,
+          "exchange": 8.429999999999998,
+          "settlement": 11.16,
+          "stamp": 0.0
+        },
+        "slippage": 223.2150000000015,
+        "turnover_initial_capital": 1.4892767500000001,
+        "requested_shares": 7000,
+        "filled_shares": 7000,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.7663907619200353,
+        "halted_sessions": 0,
+        "sessions": 919,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": -0.07535664999999925,
+            "sessions": 243
+          },
+          "90d_00": {
+            "net_return": 0.03424334999999945,
+            "sessions": 61
+          },
+          "regime_down": {
+            "net_return": 0.21090627800614525,
+            "sessions": 311
+          },
+          "regime_up": {
+            "net_return": 0.08802173539752434,
+            "sessions": 608
+          },
+          "90d_01": {
+            "net_return": -0.04757100927939206,
+            "sessions": 59
+          },
+          "90d_02": {
+            "net_return": -0.03289195343534912,
+            "sessions": 62
+          },
+          "90d_03": {
+            "net_return": -0.027712364758543218,
+            "sessions": 60
+          },
+          "90d_04": {
+            "net_return": -0.026342969155999874,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": 0.16611810380726655,
+            "sessions": 246
+          },
+          "90d_05": {
+            "net_return": 0.08693305772005777,
+            "sessions": 58
+          },
+          "90d_06": {
+            "net_return": 0.021219220716978127,
+            "sessions": 61
+          },
+          "90d_07": {
+            "net_return": 0.062334962816545936,
+            "sessions": 62
+          },
+          "90d_08": {
+            "net_return": 0.15459215575517127,
+            "sessions": 59
+          },
+          "2025": {
+            "net_return": 0.2356137879264486,
+            "sessions": 246
+          },
+          "90d_09": {
+            "net_return": 0.004560842390847419,
+            "sessions": 60
+          },
+          "90d_10": {
+            "net_return": 0.1057202991933115,
+            "sessions": 63
+          },
+          "90d_11": {
+            "net_return": -0.027826509547448475,
+            "sessions": 61
+          },
+          "90d_12": {
+            "net_return": 0.016290915322047406,
+            "sessions": 58
+          },
+          "2026": {
+            "net_return": -0.011108672957552135,
+            "sessions": 184
+          },
+          "90d_13": {
+            "net_return": -0.022857272621994218,
+            "sessions": 59
+          },
+          "90d_14": {
+            "net_return": 0.005468247764940148,
+            "sessions": 62
+          },
+          "90d_15": {
+            "net_return": -0.004834229913028731,
+            "sessions": 13
+          }
+        }
+      }
+    }
+  ],
+  "production_eligible": false,
+  "independent_forward_oos": false,
+  "broker_verified": false,
+  "old_crypto_evidence": {
+    "source": "docs/research/github_factor_study_20261025/summary.json",
+    "sha256": "baa038ad2a02e7c8270923b2928b2a70bbbc9b370a09ea03365cc0a2281e49f0",
+    "admitted_candidates": []
+  },
+  "old_equity_cash_selection_sha256": "da0c095fa5b9d2db540cf9c51a29199b56958856611ea78d98c5e66803e95c4d"
+}
