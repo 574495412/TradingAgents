@@ -1,0 +1,26 @@
+{
+  "schema": "spot-perpetual-independent-data-audit.v1",
+  "passed": true,
+  "completion_sha256": "ac22b236d2def51da8582e1578e7c8a2200828b8ce95645ec871b384bbb80c4b",
+  "audit_source_sha256": "883e07dc76b639141df62f22afa807cc36ff635997dc2c10282589fe2c28ffe0",
+  "archives": 42,
+  "symbols": [
+    {
+      "symbol": "BTCUSDT",
+      "spot_rows": 184032,
+      "spot_values": 1104192,
+      "exact_funding_events": 1917,
+      "passed": true
+    },
+    {
+      "symbol": "ETHUSDT",
+      "spot_rows": 184032,
+      "spot_values": 1104192,
+      "exact_funding_events": 1917,
+      "passed": true
+    }
+  ],
+  "maximum_spot_relative_error": 0.0,
+  "actual_financial_accounts": 0,
+  "profit_proven": false
+}

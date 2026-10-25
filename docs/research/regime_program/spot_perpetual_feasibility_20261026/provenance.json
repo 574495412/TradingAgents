@@ -1,0 +1,15 @@
+{
+  "data_completion_sha256": "ac22b236d2def51da8582e1578e7c8a2200828b8ce95645ec871b384bbb80c4b",
+  "independent_audit_sha256": "d6a5f380edbb39c0b332d394ceb66ac32f6713d5903aa72f3a356524b524cf89",
+  "pre_registration_commit": "36b328a",
+  "official_repository_commit": "d571690eb66760763b0bd6e27e8cd35603c7e244",
+  "source_scope": "42 official spot archives plus6 public funding connector requests;2 fixed pilot symbols; no strategy account",
+  "source_files": {
+    "TERMS_AND_CONDITIONS.md": "99c4921dbe023cd68c1a447775707d621453cc78aec6ac0bfe2e6c06a5114ee0",
+    "README.md": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad"
+  },
+  "commands": [
+    "python -m research_tools.carry_feasibility.prepare --output data/research/spot_perpetual_feasibility_20261026_v001",
+    "python -m research_tools.carry_feasibility.audit --data data/research/spot_perpetual_feasibility_20261026_v001 --output data/research/spot_perpetual_feasibility_20261026_v001_independent_audit.json"
+  ]
+}

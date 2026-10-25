@@ -314,7 +314,8 @@
         "module_domains_20261026/README.md",
         "domain_accounts_20261026/README.md",
         "domain_accounts_20261026/summary.json",
-        "domain_accounts_20261026/selection.json"
+        "domain_accounts_20261026/selection.json",
+        "spot_perpetual_feasibility_20261026/README.md"
       ],
       "outcome": "v002条件适用域10账户完成审计与真实恢复；无两成本净收益/闭合PnL同时为正者，没有后续/总组合准入。历史证据保留，收益目标仍未完成。"
     },
@@ -340,7 +341,8 @@
         "module_domains_20261026/README.md",
         "domain_accounts_20261026/README.md",
         "domain_accounts_20261026/summary.json",
-        "domain_accounts_20261026/selection.json"
+        "domain_accounts_20261026/selection.json",
+        "spot_perpetual_feasibility_20261026/README.md"
       ],
       "outcome": "v002条件适用域10账户完成审计与真实恢复；无两成本净收益/闭合PnL同时为正者，没有后续/总组合准入。历史证据保留，收益目标仍未完成。"
     },
@@ -366,7 +368,8 @@
         "module_domains_20261026/README.md",
         "domain_accounts_20261026/README.md",
         "domain_accounts_20261026/summary.json",
-        "domain_accounts_20261026/selection.json"
+        "domain_accounts_20261026/selection.json",
+        "spot_perpetual_feasibility_20261026/README.md"
       ],
       "outcome": "v002条件适用域10账户完成审计与真实恢复；无两成本净收益/闭合PnL同时为正者，没有后续/总组合准入。历史证据保留，收益目标仍未完成。"
     },
@@ -418,7 +421,7 @@
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "domain_accounts_20261026/summary.json",
-    "next_action": "本轮5个固定适用域没有双成本净优势，停止重复调这组BTC状态过滤。下一步核查低换手、费用可覆盖的结构性资金费/基差及真实现货对冲数据；先做可行性和证据检查，不改写旧结果。",
+    "next_action": "条件域10账户无双成本净优势，停止同组BTC状态过滤搜索。已核验BTC/ETH现货42归档和3834条真实资金费/标记价；固定40%空头的2025资金费率算术约贡献2%NAV，未含成本/基差，不能承担20%收益目标。下一步补齐逐时保证金风险所需标记价序列，登记真正现货＋永续双市场账户和风险状态，再研究其组合分散价值及预登记流动性池扩展。",
     "rounds": [
       {
         "name": "regime",
@@ -449,11 +452,14 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "conditional_domain_screen",
-    "status": "completed_no_frozen_followups",
-    "report": "domain_accounts_20261026/README.md",
-    "account_returns_computed": true,
-    "profit_proven": false
+    "mechanism": "spot_perpetual_structural_carry",
+    "status": "pilot_data_and_cost_arithmetic_audited_not_backtested",
+    "report": "spot_perpetual_feasibility_20261026/README.md",
+    "account_returns_computed": false,
+    "data_audit_passed": true,
+    "profit_proven": false,
+    "symbols": 2,
+    "new_financial_accounts": 0
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",

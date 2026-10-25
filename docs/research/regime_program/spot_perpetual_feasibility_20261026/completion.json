@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "summary.json": "5701f839b8db09c3fcd01331c9559d5ad9b2b49495cb8f9741a1f5382fd9a08d",
+    "provenance.json": "e33cab69c3250c237b5a9c36573298bca1f7f7e2db38c2f9248b88d113390dfc",
+    "README.md": "5f9b6274892615c588ab22db6d30b24f414275d78b5c70192d8a751422ffcd0a",
+    "independent_audit.json": "d6a5f380edbb39c0b332d394ceb66ac32f6713d5903aa72f3a356524b524cf89",
+    "data_plan.json": "4b253f8383318af4a355f0ced15acaace0a6ef9f52d6f0117c094437af7ff4ef"
+  },
+  "data_audit_passed": true,
+  "financial_accounts": 0,
+  "profit_proven": false
+}
