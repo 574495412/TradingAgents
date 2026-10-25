@@ -1,0 +1,37 @@
+{
+  "url": "http://127.0.0.1:8793/research#factor-lab",
+  "title": "CZ · 因子与量化组合",
+  "viewports": [
+    "1512x1100",
+    "390x844"
+  ],
+  "browser": "Browser plugin not available; bundled Playwright and installed Chrome",
+  "checks": {
+    "page_identity": true,
+    "nonblank": true,
+    "no_framework_overlay": true,
+    "console_clean": true,
+    "screenshot": true,
+    "interaction": true
+  },
+  "errors": [],
+  "overflow": false,
+  "interaction": "Program targets3 -> tasks9 -> open filter -> GitHub existing -> program reload -> mobile",
+  "scope": "R00目标协议和界面验证；不验证策略实现或盈利",
+  "unit_tests": {
+    "passed": 31,
+    "command": "python3 -m unittest discover -s web/cockpit/scripts -p 'test_*.py' -q"
+  },
+  "build": {
+    "passed": true,
+    "existing_warning": "main bundle >500kB"
+  },
+  "protocol_checks": [
+    "依赖无未知任务",
+    "证据路径有效",
+    "60账户预算一致",
+    "实际值为空",
+    "生产/订单/独立OOS均false",
+    "三项目协议入口一致"
+  ]
+}

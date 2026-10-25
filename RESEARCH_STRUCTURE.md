@@ -1,5 +1,7 @@
 # 三项目统一量化结构
 
+最新持续研发目标：[多行情、多策略任务协议](docs/research/regime_program/README.md)，唯一目标配置为 `docs/research/regime_program/targets.json`。先网络检索／固定版本复现，再针对失效机制自研；目标制定、策略实现、收益达标分开记录。旧实验计划与失败结论不更改。
+
 ```text
 TradingAgents/                         # 研发与验证
 ├── factors/                          # 统一因子源码、跨市场适配、公式/时序/来源登记
