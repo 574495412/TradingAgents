@@ -1,3 +1,6 @@
 
 # Historical source references retain their original bytes and recorded SHA256.
 factors/legacy/** whitespace=-trailing-space,-blank-at-eof
+
+# Keep the sealed CSV's standard CRLF bytes; do not normalize its receipt hash.
+docs/research/regime_program/pair_accounts_20261026/accounts.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
