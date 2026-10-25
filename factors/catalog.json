@@ -1098,7 +1098,10 @@
     "sizing_protocol": "research_tools/regime_program/sizing_plan.json",
     "pair_formation_source": "factors/portfolio/cointegrated_pairs.py",
     "pair_protocol": "research_tools/regime_program/pair_plan.json",
-    "pair_status": "formation_only_financial_metrics_not_computed",
-    "pair_report": "../docs/research/regime_program/pair_formation_20261026/README.md"
+    "pair_status": "account_audited_net_edge_or_sample_capacity_not_proven",
+    "pair_report": "../docs/research/regime_program/pair_accounts_20261026/README.md",
+    "module_domain_cards": "factors/portfolio/module_domains.json",
+    "module_domain_protocol": "research_tools/regime_program/domain_plan.json",
+    "acceptance_version": "module-allocation-portfolio.v2"
   }
 }
