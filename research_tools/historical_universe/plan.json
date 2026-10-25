@@ -1,0 +1,31 @@
+{
+  "schema": "historical-perpetual-universe-acquisition.v1",
+  "version": "20261026_v001",
+  "purpose": "Remove the fixed present-day40coin restriction before further strategy qualification; collect official archive-observed daily history including no-longer-current contracts. Data acquisition and eligibility only, no return selection or new alpha claim.",
+  "market": "Binance USD-M perpetual candidates whose archive directory matches uppercase alphanumeric USDT suffix; dated contracts excluded",
+  "start": "2019-09-01",
+  "end_exclusive": "2026-09-01",
+  "daily_interval": "1d",
+  "listing_endpoint": "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision",
+  "download_origin": "https://data.binance.vision",
+  "prefix": "data/futures/um/monthly/klines/",
+  "raw_directory": "data/research/historical_perpetual_daily_20261026_v001",
+  "manifest_directory": "data/research/historical_perpetual_catalog_20261026_v001",
+  "source_directory": "data/research/historical_universe_sources_20261026_v001",
+  "current_metadata_policy": "Binance connector exchangeInfo is a capture-time snapshot only. Its absent symbols must not be discarded. Known current non-COIN underlying types are labelled separately; unknown historical asset types remain explicit. Current metadata is not historical status or delisting certification.",
+  "catalog_policy": "Enumerate root with delimiter and every NextMarker until IsTruncated=false. Enumerate each matching contract1d directory the same way; select only actual YYYY-MM archives whose calendar lies in the frozen interval. Pair every ZIP with its published CHECKSUM. Never construct an assumed missing month as zero data.",
+  "ingestion_policy": "Download exact catalog keys, require official SHA256, archive CRC and one expected CSV basename. Parse numeric UTC timestamps explicitly; enforce actual UTC1d starts and month bounds. Preserve missing interior days, listing-boundary partial candles, zero volume, malformed OHLC, duplicate timestamps and absent adjacent months as explicit quality issues rather than impute or forward-fill them.",
+  "eligibility_preview": {"minimum_observed_days":180,"lookback_completed_days":28,"minimum_mean_daily_quote_volume":50000000,"maximum_names":30,"decision_weekday_utc":0},
+  "eligibility_policy": "Use only completed prior daily observations and full consecutive28day quote history at each decision. Do not require survival to the evaluation end. No synthetic prices after final archive bar; full intraday executions, historical contract status, final settlement and fees must be obtained and verified separately before accounts. The preview does not prove exact live tradability.",
+  "budget": {"maximum_root_prefixes":1500,"maximum_usdt_symbols":1200,"maximum_catalog_requests":2600,"maximum_archive_files":30000,"maximum_download_http_requests":65000,"workers":6,"retry_attempts":3,"maximum_download_bytes":1073741824},
+  "research_sources": [
+    {"repository":"OctopusTakopi/funding-rate-alpha","commit":"cf9f87c01d3165bbc3bf34438baee289d248ffca","role":"inspect dynamic archive universe and tail-clipping limitations; source claim not independently verified"},
+    {"repository":"bryanvine/alpha-research","commit":"17b8b5e1c79af194f733544517d82e3cf12c2259","role":"inspect weekly pure funding carry and positive/negative evidence; spot-proxy results and missing public raw data cannot substitute for our accounts"}
+  ],
+  "external_code_execution":false,
+  "new_financial_accounts":0,
+  "independent_oos":false,
+  "profit_goal_met":false,
+  "orders_enabled":false,
+  "production_eligible":false
+}
