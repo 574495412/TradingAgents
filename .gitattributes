@@ -1,0 +1,3 @@
+
+# Historical source references retain their original bytes and recorded SHA256.
+factors/legacy/** whitespace=-trailing-space,-blank-at-eof

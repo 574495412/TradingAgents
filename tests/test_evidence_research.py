@@ -137,8 +137,12 @@ def test_codex_tool_activity_fails_closed(monkeypatch):
 
 def test_codex_empty_answer_is_failure(monkeypatch):
     monkeypatch.setattr(codex, "run_process", lambda *args: "")
+    llm = codex.CodexLLM()
     with pytest.raises(RuntimeError, match="final answer"):
-        codex.CodexLLM().invoke("示例")
+        llm.invoke("示例")
+    assert llm.calls == []
+    assert llm.attempts[0]["status"] == "FAILED"
+    assert llm.attempts[0]["prompt"] == "示例"
 
 
 def test_strict_schema_recurses():

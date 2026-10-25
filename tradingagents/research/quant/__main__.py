@@ -8,10 +8,42 @@ from pathlib import Path
 def main(argv=None):
     """按子命令延迟导入，纯量化重算不加载模型或 CZ-Agent。"""
     argv = list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0] == "hedged-carry":
+        from .hedged_carry_study import main as hedged_carry
+
+        return hedged_carry(argv[1:])
+    if argv and argv[0] == "position-tilt":
+        from .position_tilt_study import main as position_tilt
+
+        return position_tilt(argv[1:])
+    if argv and argv[0] == "open-interest-flow":
+        from .open_interest_flow_study import main as open_interest_flow
+
+        return open_interest_flow(argv[1:])
     if argv and argv[0] == "funding":
         from .funding_study import main as funding
 
         return funding(argv[1:])
+    if argv and argv[0] == "extended-funding":
+        from .extended_funding_study import main as extended_funding
+
+        return extended_funding(argv[1:])
+    if argv and argv[0] == "settlement":
+        from .settlement_study import main as settlement
+
+        return settlement(argv[1:])
+    if argv and argv[0] == "settlement-accounts":
+        from .backtesting.settlement import main as settlement_accounts
+
+        return settlement_accounts(argv[1:])
+    if argv and argv[0] == "alpha158":
+        from .alpha158_study import main as alpha158
+
+        return alpha158(argv[1:])
+    if argv and argv[0] == "alpha158-accounts":
+        from .backtesting.alpha158 import main as alpha158_accounts
+
+        return alpha158_accounts(argv[1:])
     if argv and argv[0] == "comparison":
         from .comparison.__main__ import main as comparison
 
@@ -34,6 +66,24 @@ def main(argv=None):
     sub.add_parser("comparison", help="四组独立账户比较；使用 comparison --help 查看参数")
     sub.add_parser("forecast", help="固定或历史滚动训练的连续账户；使用 forecast --help 查看参数")
     sub.add_parser("funding", help="已结算资金费增量回归；使用 funding --help 查看参数")
+    sub.add_parser(
+        "extended-funding", help="固定四小时资金费两月续检；使用 extended-funding --help 查看参数"
+    )
+    sub.add_parser("settlement", help="原生选中H01回归；使用 settlement --help 查看参数")
+    sub.add_parser(
+        "settlement-accounts",
+        help="H01的48条连续成本账户；使用 settlement-accounts --help 查看参数",
+    )
+    sub.add_parser("alpha158", help="固定158项增量岭回归；使用 alpha158 --help 查看参数")
+    sub.add_parser("position-tilt", help="原生H02固定岭回归；使用 position-tilt --help 查看参数")
+    sub.add_parser("hedged-carry", help="原生H04两腿净现金回归；使用 hedged-carry --help 查看参数")
+    sub.add_parser(
+        "open-interest-flow", help="原生H03交互增量；使用 open-interest-flow --help 查看参数"
+    )
+    sub.add_parser(
+        "alpha158-accounts",
+        help="固定158项的24条连续成本账户；使用 alpha158-accounts --help 查看参数",
+    )
     args = parser.parse_args(argv)
     if args.command == "regression":
         from .study import run

@@ -134,6 +134,7 @@ def save_account(path, account):
     data = {
         "factor": account.factor,
         "hold_ms": account.hold,
+        "timed_exit_at_close": account.timed_exit_at_close,
         "slippage_fraction": account.slip,
         "reentry": account.reentry,
         "trades": account.trades,
@@ -162,7 +163,21 @@ class Audit:
         while True:
             fill = fills[self.fill_cursor] if self.fill_cursor < len(fills) else None
             fund = source[self.funding_cursor] if self.funding_cursor < len(source) else None
-            fill_ready = fill and (fill["clock"] < clock or (final and fill["clock"] == clock))
+            # 完整账本可能已包含下一分钟的同钟开盘成交，不能提前消费它。
+            close_at_clock = (
+                fill
+                and fill["clock"] == clock
+                and fill["action"] == "CLOSE"
+                and (
+                    final
+                    or (
+                        self.account.timed_exit_at_close
+                        and len(self.closed) < len(self.account.trades)
+                        and self.account.trades[len(self.closed)]["reason"] == "time_close"
+                    )
+                )
+            )
+            fill_ready = fill and (fill["clock"] < clock or close_at_clock)
             fund_ready = fund and fund["time_ms"] < clock
             if not fill_ready and not fund_ready:
                 break
@@ -186,6 +201,30 @@ class Audit:
             symbol, direction, quantity = fill["symbol"], fill["direction"], fill["quantity"]
             if fill["clock"] not in (clock - MINUTE, clock):
                 raise ValueError("成交不能匹配真实分钟开盘或预定期末")
+            if fill["action"] not in {"OPEN", "CLOSE"}:
+                raise ValueError("成交动作只能是开仓或平仓")
+            trade = None
+            if fill["action"] == "CLOSE":
+                if len(self.closed) >= len(self.account.trades):
+                    raise ValueError("平仓缺少逐笔结果")
+                trade = self.account.trades[len(self.closed)]
+                if trade["reason"] == "time_close":
+                    inventory = self.inventory.get(symbol)
+                    if (
+                        not self.account.timed_exit_at_close
+                        or final
+                        or fill["clock"] != clock
+                        or inventory is None
+                        or clock != inventory["entry_ms"] + self.account.hold
+                    ):
+                        raise ValueError("收盘到期退出必须匹配独立重建的入场时钟及固定持有期限")
+            if fill["clock"] == clock and (
+                fill["action"] != "CLOSE"
+                or (
+                    trade["reason"] != "scheduled_end" if final else trade["reason"] != "time_close"
+                )
+            ):
+                raise ValueError("当前收盘时钟只允许固定到期或预定期末平仓")
             raw = market[symbol][1 if fill["clock"] == clock else 0]
             price = raw * (
                 1 + direction * self.account.slip * (1 if fill["action"] == "OPEN" else -1)
@@ -223,6 +262,7 @@ class Audit:
                 self.cash -= fee
                 self.inventory[symbol] = {
                     "cycle_id": fill["cycle_id"],
+                    "entry_ms": fill["clock"],
                     "quantity": quantity,
                     "direction": direction,
                     "price": price,
@@ -238,13 +278,20 @@ class Audit:
                     raise ValueError("实际成交超过共享容量或一倍净值")
             else:
                 p = self.inventory.pop(symbol)
-                if quantity != p["quantity"] or p["cycle_id"] != fill["cycle_id"]:
+                if (
+                    quantity != p["quantity"]
+                    or p["cycle_id"] != fill["cycle_id"]
+                    or direction != p["direction"]
+                ):
                     raise ValueError("平仓不属于真实库存")
                 gross = direction * quantity * (price - p["price"])
                 net = gross - p["entry_fee"] - fee + p["funding"]
                 self.cash += gross - fee
-                trade = self.account.trades[len(self.closed)]
-                if trade["cycle_id"] != p["cycle_id"]:
+                if (
+                    trade["cycle_id"] != p["cycle_id"]
+                    or trade["entry_ms"] != p["entry_ms"]
+                    or trade["exit_ms"] != fill["clock"]
+                ):
                     raise ValueError("逐笔结果与真实平仓顺序不同")
                 if not math.isclose(net, trade["net_pnl"], abs_tol=1e-7):
                     raise ValueError("逐笔净收益漏计成本或资金费")

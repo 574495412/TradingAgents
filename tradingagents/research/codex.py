@@ -101,6 +101,25 @@ def run_process(command, prompt, timeout, cwd):
     return stdout
 
 
+def prompt_text(prompt):
+    """保留原生交易员的消息角色与正文，不接受工具调用或任意对象隐式转文本。"""
+    if isinstance(prompt, str):
+        return prompt
+    if not isinstance(prompt, list) or not prompt:
+        raise TypeError("研究推理只接受文本或非空的纯文本消息列表")
+    for message in prompt:
+        if (
+            not isinstance(message, dict)
+            or set(message) != {"role", "content"}
+            or message["role"] not in {"system", "user", "assistant"}
+            or not isinstance(message["content"], str)
+        ):
+            raise TypeError("研究消息必须只含已声明角色和纯文本正文")
+    return "以下为按顺序提供的消息，请保留其角色和内容语义：\n" + json.dumps(
+        prompt, ensure_ascii=False, allow_nan=False
+    )
+
+
 class CodexLLM:
     def __init__(self, model=None, timeout_seconds=180, executable="codex"):
         if model is None:
@@ -109,6 +128,7 @@ class CodexLLM:
                 model = tomllib.loads(config.read_text()).get("model")
         self.model, self.timeout, self.executable = model, timeout_seconds, executable
         self.calls = []
+        self.attempts = []
 
     def with_structured_output(self, schema):
         return SimpleNamespace(invoke=lambda prompt: self._call(prompt, schema))
@@ -117,8 +137,31 @@ class CodexLLM:
         return SimpleNamespace(content=self._call(prompt))
 
     def _call(self, prompt, schema=None):
-        if not isinstance(prompt, str):
-            raise TypeError("evidence inference accepts text prompts only")
+        normalized = prompt_text(prompt)
+        attempt = {
+            "requested_model": self.model,
+            "prompt": normalized,
+            "prompt_sha256": digest(normalized),
+            "schema_sha256": digest(schema.model_json_schema()) if schema else None,
+            "started_ms": time.time_ns() // 1_000_000,
+            "status": "RUNNING",
+        }
+        self.attempts.append(attempt)
+        started = time.monotonic()
+        try:
+            result = self._perform_call(prompt, schema)
+        except BaseException as error:
+            attempt.update(status="FAILED", error_type=type(error).__name__)
+            raise
+        else:
+            attempt.update(status="COMPLETED", successful_call_index=len(self.calls) - 1)
+            return result
+        finally:
+            attempt["elapsed_seconds"] = time.monotonic() - started
+
+    def _perform_call(self, prompt, schema=None):
+        input_format = "messages" if isinstance(prompt, list) else "text"
+        prompt = prompt_text(prompt)
         if len(prompt.encode()) > 256_000:
             raise ValueError("research prompt too large")
         started = time.monotonic()
@@ -208,10 +251,13 @@ class CodexLLM:
             text = output.read_text().strip()
             if not text:
                 raise RuntimeError("empty Codex answer")
+            self.attempts[-1]["answer"] = text
         result = schema.model_validate_json(text) if schema else text
         self.calls.append(
             {
                 "prompt": prompt,
+                "requested_model": self.model,
+                "input_format": input_format,
                 "prompt_sha256": digest(prompt),
                 "answer": text,
                 "schema_sha256": digest(schema.model_json_schema()) if schema else None,

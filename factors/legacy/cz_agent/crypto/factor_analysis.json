@@ -1,0 +1,101 @@
+{
+  "updated_at": "2026-03-24T17:09:28.722192",
+  "enabled_factors_count": 3,
+  "total_factors_count": 3,
+  "backtest_days": 30,
+  "current_factor_issues": {
+    "聚合策略(2因子)": {
+      "name_cn": "聚合策略(2因子)",
+      "category": "聚合策略",
+      "performance": {
+        "30d": {
+          "return": 42.36,
+          "trades": 23,
+          "win_rate": 91.3,
+          "drawdown": 9.2,
+          "per_trade": 1.84
+        }
+      },
+      "stability": {
+        "sharpe_ratio": 23.28,
+        "signal_std": 0.07,
+        "consistency": "⭐ 非常稳定"
+      },
+      "issues": [
+        "暂无明显问题"
+      ],
+      "needs_complement": [
+        "继续优化现有因子"
+      ]
+    },
+    "ema_trend_pullback_adx": {
+      "name_cn": "Ema Trend Pullback Adx",
+      "category": "趋势强度",
+      "performance": {
+        "30d": {
+          "return": 29.87,
+          "trades": 24,
+          "win_rate": 87.5,
+          "drawdown": 16.1,
+          "per_trade": 1.24
+        }
+      },
+      "stability": {
+        "sharpe_ratio": 18.73,
+        "signal_std": 0.03,
+        "consistency": "⭐ 非常稳定"
+      },
+      "issues": [
+        "暂无明显问题"
+      ],
+      "needs_complement": [
+        "继续优化现有因子"
+      ]
+    },
+    "ema_shrink_pullback_4h": {
+      "name_cn": "Ema Shrink Pullback 4H",
+      "category": "趋势强度",
+      "performance": {
+        "30d": {
+          "return": 0.21,
+          "trades": 3,
+          "win_rate": 66.7,
+          "drawdown": 7.6,
+          "per_trade": 0.07
+        }
+      },
+      "stability": {
+        "sharpe_ratio": 0.35,
+        "signal_std": 0.02,
+        "consistency": "❌ 不稳定"
+      },
+      "issues": [
+        "交易次数过少(3笔)",
+        "夏普比率低(0.35)"
+      ],
+      "needs_complement": [
+        "高稳定性因子(夏普>1.0)"
+      ]
+    }
+  },
+  "cz_generation_target": {
+    "objective": "生成与现有因子互补、稳定性更高的新因子",
+    "priority_directions": [
+      {
+        "direction": "高稳定性因子",
+        "reason": "现有因子稳定性不足，需要更稳定的信号源",
+        "suggested_indicators": [
+          "长周期均线",
+          "多时间框架确认",
+          "成交量加权"
+        ]
+      }
+    ],
+    "constraints": [
+      "信号强度必须能达到系统阈值以上",
+      "必须与现有因子低相关（相关系数<0.5）",
+      "优先考虑稳定性（夏普比率>1.0）",
+      "追求合理收益（单笔盈利>3%）"
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schema": "factor-lab-registered.v1",
+  "engineering_revision": "v004: canonical cross-asset factor library, exclude non-economic float budget dust, and use correct forecast semantics for controls and short-horizon factor baskets; fixed windows and search budget unchanged",
+  "direction": "multi-family factor research, official macro/news, predictive ablation, interactive HTML portfolio composition",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "BNBUSDT",
+    "XRPUSDT",
+    "DOGEUSDT"
+  ],
+  "source_run": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/trend_mainline_20261025_v001",
+  "news_source": "/Users/chrise/GitHub/TradingAgents/data/research/factor_lab_news_20261025_v002",
+  "execution_source": "/Users/chrise/GitHub/freqtrade/research/crypto/factor_portfolio.py",
+  "training_start": "2024-01-01",
+  "training_end": "2025-01-01",
+  "horizons_hours": [
+    1,
+    4,
+    24
+  ],
+  "model_families": [
+    "price_baseline",
+    "technical",
+    "macro_news",
+    "full"
+  ],
+  "ridge_penalty": 100,
+  "normalization": "training-only per-feature median and sample std; train median missing-value imputation; z clipped +/-5",
+  "test_windows": [
+    {
+      "id": "2025Q1",
+      "start": "2025-01-01",
+      "end": "2025-01-29",
+      "phase": "validation"
+    },
+    {
+      "id": "2025Q2",
+      "start": "2025-04-01",
+      "end": "2025-04-29",
+      "phase": "validation"
+    },
+    {
+      "id": "2025Q3",
+      "start": "2025-07-01",
+      "end": "2025-07-29",
+      "phase": "validation"
+    },
+    {
+      "id": "2025Q4",
+      "start": "2025-10-01",
+      "end": "2025-10-29",
+      "phase": "validation"
+    },
+    {
+      "id": "2026Q1",
+      "start": "2026-01-01",
+      "end": "2026-01-29",
+      "phase": "holdout"
+    },
+    {
+      "id": "2026Q2",
+      "start": "2026-04-01",
+      "end": "2026-04-29",
+      "phase": "holdout"
+    },
+    {
+      "id": "2026Q3",
+      "start": "2026-07-01",
+      "end": "2026-07-29",
+      "phase": "holdout"
+    }
+  ],
+  "window_rule": "first28days of every available quarter after training; fixed calendar coverage, no selection by candidate performance; classify actual BTC return/volatility descriptively afterward",
+  "factor_selection": "training24h absolute RankIC; fixed greedy correlation<0.85; at most8; equal absolute weights, training sign only",
+  "primary_prediction_horizon": 24,
+  "default_account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 4,
+    "rebalance_hours": 24,
+    "threshold": 0.0016,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "cost_cases_slippage_bps": [
+    3,
+    10
+  ],
+  "capacity_capitals": [
+    10000,
+    1000000,
+    10000000
+  ],
+  "study_search_budget": {
+    "factor_columns_expected": 74,
+    "model_fits": 12,
+    "hyperparameter_search": false,
+    "prior_searches_reset": false
+  },
+  "limitations": [
+    "Previously available history; time-isolated representative diagnostics, not independent untouched out-of-sample proof",
+    "Fixed contemporary six-name pool has selection/survivorship bias",
+    "Official FOMC statement news only; no broad crypto-news or consensus-surprise coverage; BLS403 retained",
+    "Original official release time plus5min controls availability; current fetch hashes do not prove historical ingestion latency or absence of later edits",
+    "Factor count includes correlated horizons and interactions, not74 independent alpha sources",
+    "Short representative windows cannot establish annualized return persistence; CAGR/Sharpe/alpha are descriptive extrapolations",
+    "5m close plus adverse slippage and1percent observed turnover is a capacity model, not order-book or native matching certification",
+    "Historical contract precision/minimums and exact funding settlement-price evidence remain incomplete",
+    "Inspecting holdout factors or configuring portfolios against them consumes holdout for future selection"
+  ],
+  "production_eligible": false,
+  "orders_enabled": false,
+  "registered_at": "2026-10-25T06:00:27.745677+00:00",
+  "account_presets": [
+    "full",
+    "technical",
+    "training_factor8",
+    "long_only"
+  ],
+  "account_grid": "7 fixed28day windows x4presets x2costs=56base accounts; Q2_2025 full and training_factor8 x2larger capitals x2costs=8capacity cases",
+  "source_identities": {
+    "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/trend_mainline_20261025_v001/data/receipts.json": "2f38018967cfcb741278544c5e4b90c01afd35228707e14a2d16283eb2e34697",
+    "/Users/chrise/GitHub/TradingAgents/data/research/factor_lab_news_20261025_v002/events.json": "13787ca09e6bd45b590e839381cf676d152f90b0fdede5732c8d3ab1293a2a7f",
+    "/Users/chrise/GitHub/TradingAgents/data/research/factor_lab_news_20261025_v002/coverage.json": "22fb969fc67a4688f52200e6230c399c47f8788707e2579c8b49de3a3762f81a",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/factor_portfolio.py": "69bd387e7d857a74715f8697871529ee315d7dc194ed83b9b4771542a1f2afa1",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/__init__.py": "a398d0fabd5ccf924d7911af26cd552c9a1d4523770a923c458499327d723431",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/__main__.py": "522324606d1c253ecbecc131b2e6b67f6edd8246d1def12f7eb84ae6ecc88bde",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/compose.py": "5c8a36e74648d7ab19b4adc9ac0e77a9908c83277359738b7b545a8e033a9e92",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/features.py": "4ad27630f00ccf338a5795f7d1dbfea15f59ae89a5a30c413134d7826416542c",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/io.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/metrics.py": "5f47747b99bdb6376a2c8ad8b8fb181501037052ed14b1c77b0ee74822236df0",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/news.py": "0c409f07d516c2fd768a9029c657d74624a0361744738d016ae8da04da9b9c9f",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/study.py": "a7aabf7ddd8c0231207efe802c9d495eb84ac6bf181bd822fb8c41616782d42d",
+    "/Users/chrise/GitHub/TradingAgents/factors/__init__.py": "ce8d0f47a36a1deac2a91165032d2494e9826b662553708b84a1074b7c0248c3",
+    "/Users/chrise/GitHub/TradingAgents/factors/common/__init__.py": "60a1863cf98ed839a37d2f7a8b1cede9dc0a2e1930e0be055bf79dca1c2335d8",
+    "/Users/chrise/GitHub/TradingAgents/factors/common/panel.py": "a66930722becb2bb8d10dc2e1e61d162d064dd1a94a29b670bc56db73194dc92",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/__init__.py": "48444470c282d44b38ed691b0bf86ec162ef76d3ef995f236e386f87512dfd4e",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/__init__.py": "ccf136b6b7a40b7224de992aebaf1a3af305d65ce67bfe0978e91f6093b7edf3",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/alpha158.py": "8c20cdc337463b56a2b0f7539506d5f825b3eee5a12450be8817818e1551801b",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/funding.py": "6e1446baf43b95a1967407895da5f39ef55a6b77bc28a164554830473e755a10",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/hedged_carry.py": "e3e60061f0c784c0f6eac106e0431e5975e8578765bab7f2270aa7e4c8e19056",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/open_interest_flow.py": "8b9cd2deca524d68442cb31d8ae2e5bcf661008c09e294d03369bf0381285e62",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/position_tilt.py": "866863a606060ed9a345025a45a1ed424d7468c28d3de371764228dad42f54d4",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/response.py": "c4e5b393f0e9facb27eac9e872e683e0cd90adb029aabf9b6a2d32008f377b39",
+    "/Users/chrise/GitHub/TradingAgents/factors/crypto/quant/settlement.py": "46985a9a0566fc25aedf5228c047938d7bca0838e68f9bb07461db15f69e678a",
+    "/Users/chrise/GitHub/TradingAgents/factors/equity/__init__.py": "082173acae6883a7d78985de400165bc778877764144df5f7e1db22bd454c959",
+    "/Users/chrise/GitHub/TradingAgents/factors/macro/__init__.py": "60a1863cf98ed839a37d2f7a8b1cede9dc0a2e1930e0be055bf79dca1c2335d8",
+    "/Users/chrise/GitHub/TradingAgents/factors/macro/news.py": "d65fcd218a5592e266f9ae4cf48ca4930e21752de54fdb5fa1c73f316c984b52",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/__init__.py": "60a1863cf98ed839a37d2f7a8b1cede9dc0a2e1930e0be055bf79dca1c2335d8",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/aggressive_buy_share.py": "ed22b5ea9b7fd3bfa0bddd8369dc0decf2f17e0a7979176c9b8175343eb4b9bf",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/average_true_range.py": "78ada5637c90b2528b133e33783a254730b775f50f37c7a41c03bb3e2983ff61",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/close_location.py": "b85a077c56f4f4ec1e4c7cd27aebffb205445f7ba076638fe04179007797ce7f",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/cross_sectional_rank.py": "f3bc42ce83fd1da0c03cf30835af258b83224a8b06f91d3138d58c34ab310201",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/market_breadth.py": "dd646af01056e35369f44750202acdc92bafd864b89ad334bb01976400514646",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/market_return.py": "85a41794d6da8c1c8df34de3521cd333c129177e1e79885dbaae0a3b8bc34d17",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/momentum.py": "3e241a1d08db4eb32e7b8c14d50a9d4e923a88a0565b50acad1c10013ab3948d",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/order_flow_imbalance.py": "f8c244bcda0a773b6b3aa4373684d8610d5b2e4173ab76124e1cd90c683d3c5f",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/path_efficiency.py": "c040b5f40e66fd06ce4298c6967d381b992a8497e730e399ecd0a7a27dabbfed",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/quote_liquidity.py": "eb02cb59cb081cc19f3cdbc3955dbd75bc810a2b242bff502e1f15eb2a46dd66",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/range_distance.py": "fca46e1ab3c02b6630c15e9a0337475fde2d83f0a409954d8ccc6e178fabcf34",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/realized_volatility.py": "aad15c5ad2d232d935046936656f22c6378fee61911936f2e6c00afc6ce42928",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/relative_volume.py": "22b7d9d21ac7bdd0a6f6fe125463c82d841fd989412e231233b58867e31c56b6",
+    "/Users/chrise/GitHub/TradingAgents/factors/reference/residual_momentum.py": "cbdd9b016e519f8334cd7dc16d9af7aca44ff30b56ff13d8d10b34279397330e",
+    "/Users/chrise/GitHub/TradingAgents/factors/storage.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7"
+  }
+}

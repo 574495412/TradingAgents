@@ -1,0 +1,4 @@
+# Install in the independent TradingAgents research environment.
+longport>=4.3.7,<5
+exchange-calendars>=4.13.2,<5
+yfinance>=1.7.0

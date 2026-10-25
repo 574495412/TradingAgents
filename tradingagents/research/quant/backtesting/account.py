@@ -20,6 +20,7 @@ class Account:
         *,
         reentry=False,
         take_profit_fraction=PROTOCOL["take_profit_price_fraction"],
+        timed_exit_at_close=False,
     ):
         self.factor, self.hold, self.slip = factor, hold_minutes * MINUTE, slippage_bps / 10000
         self.reentry, self.funding, self.funding_cursor = reentry, funding, 0
@@ -28,6 +29,9 @@ class Account:
         ):
             raise ValueError("止盈比例必须为正有限数，或明确关闭")
         self.take_profit_fraction = take_profit_fraction
+        if type(timed_exit_at_close) is not bool:
+            raise ValueError("收盘到期退出选项必须为布尔值")
+        self.timed_exit_at_close = timed_exit_at_close
         self.cash = self.peak = PROTOCOL["initial_equity"]
         self.fee = PROTOCOL["fee_bps"] / 10000
         self.positions, self.pending, self.receipts, self.closes = {}, {}, {}, {}
@@ -129,7 +133,7 @@ class Account:
         for symbol, p in list(self.positions.items()):
             requested = self.closes.get(symbol)
             due = requested and requested["available_ms"] <= stamp
-            if due or stamp - p["entry_ms"] >= self.hold:
+            if due or (not self.timed_exit_at_close and stamp - p["entry_ms"] >= self.hold):
                 self.close(symbol, market[symbol][0], stamp, requested["reason"] if due else "time")
         due = sorted(
             ((s, p) for s, p in self.pending.items() if p["available_ms"] <= stamp),
@@ -207,12 +211,17 @@ class Account:
                 self.receipts.pop(symbol)
 
     def close_phase(self, clock, market, pulses, qualified, *, final=False):
+        # 收盘退出仅结算严格早于退出边界的资金费；边界同钟事件留给下一开盘。
         self.settle(clock, False)
         if final:
             for symbol in list(self.positions):
                 self.close(symbol, market[symbol][1], clock, "scheduled_end")
             self.pending.clear()
             self.receipts.clear()
+        elif self.timed_exit_at_close:
+            for symbol, p in list(self.positions.items()):
+                if clock - p["entry_ms"] >= self.hold:
+                    self.close(symbol, market[symbol][1], clock, "time_close")
         eq = self.equity(market, 1)
         self.peak = max(self.peak, eq)
         self.max_dd = max(self.max_dd, 1 - eq / self.peak)

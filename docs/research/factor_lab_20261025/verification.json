@@ -1,0 +1,92 @@
+{
+  "study": "factor_lab_20261025_v004",
+  "audit": {
+    "passed": true,
+    "accounts": 64,
+    "models": 12,
+    "prefixes": [
+      {
+        "cutoff": "2025-01-01",
+        "factors": 74,
+        "symbols": 6,
+        "passed": true
+      },
+      {
+        "cutoff": "2026-07-01",
+        "factors": 74,
+        "symbols": 6,
+        "passed": true
+      }
+    ],
+    "max_nav_error": 1.30385160446167e-08
+  },
+  "checks": {
+    "legacy_formula_and_factor_mainline_tests": 182,
+    "cockpit_backend_tests": 27,
+    "freqtrade_account_tests": 9
+  },
+  "browser": {
+    "title": "CZ · 因子与量化组合",
+    "url": "http://127.0.0.1:8793/research#factor-lab",
+    "errors": [],
+    "overflow": false,
+    "composed": {
+      "id": "6e2f0ab0d2bb4ffd9fd9ec8b42756a02",
+      "metrics": {
+        "net_return": -0.09150399825922928,
+        "net_pnl": -915.0399825922923,
+        "ending_equity": 9084.960017407708,
+        "cagr": -0.7137728667997931,
+        "calendar_days": 28,
+        "annual_volatility": 0.3279070416810418,
+        "sharpe": -3.6489481746030337,
+        "sortino": -4.384743125116991,
+        "calmar": -5.922817641466431,
+        "max_drawdown": 0.12051238278932896,
+        "recovery_days": 22.30902777777778,
+        "closed_trades": 48,
+        "win_rate": 0.3541666666666667,
+        "profit_factor": 0.5194343419805812,
+        "payoff_ratio": 0.9472038000822364,
+        "expectancy": -18.758461364420324,
+        "closed_net_pnl": -900.4061454921756,
+        "beta": 0.2504104950202687,
+        "alpha_annual": -1.4787520899329418,
+        "information_ratio": -5.1786341480719855,
+        "tracking_error": 0.4486917250860456,
+        "benchmark_return": 0.08263806415682073,
+        "var95_daily": 0.03511399857037478,
+        "cvar95_daily": 0.041720888325839645,
+        "fees": 90.70800766975663,
+        "funding_net": -6.685107193221054,
+        "slippage_cost": 54.42462881573713,
+        "turnover": 18.654974529278967,
+        "mean_gross_exposure": 0.4477435076275056,
+        "max_gross_exposure": 0.8263866365764871,
+        "open_pnl_with_exit_reserve": -13.786856023170913,
+        "sampled_return_frequency": "UTC daily,365; short representative windows, zero risk-free rate"
+      },
+      "prediction": {
+        "rows": 3888,
+        "mse": 0.003918089977822205,
+        "mae": 0.049261055911577985,
+        "zero_baseline_mse": 0.0019408513670075656,
+        "ic": 0.041923665357751494,
+        "rank_ic": 0.0095238095238095,
+        "ic_ir": 0.0820901769302829,
+        "direction_accuracy": 0.44161522633744854,
+        "auc": 0.45238867844915015,
+        "ic_clock_count": 648
+      },
+      "elapsed_seconds": 1.3941139580001618
+    },
+    "screenshots": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9"
+  },
+  "canonical_factor_root": "factors/",
+  "equity_factor_count": 69,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "browser_plugin": "not_available; bundled Playwright and installed Chrome used",
+  "ui_flow": "existing research page -> factor workbench -> equity applicability filter -> select RSI and weight1.5 -> real computation -> forecast/news/metrics -> cash control ->4h factor basket -> mobile viewport",
+  "screenshots_committed": false
+}

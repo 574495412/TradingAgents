@@ -1,0 +1,42 @@
+{
+  "schema":"factor-lab-registered.v1",
+  "engineering_revision":"v004: canonical cross-asset factor library, exclude non-economic float budget dust, and use correct forecast semantics for controls and short-horizon factor baskets; fixed windows and search budget unchanged",
+  "direction":"multi-family factor research, official macro/news, predictive ablation, interactive HTML portfolio composition",
+  "symbols":["BTCUSDT","ETHUSDT","SOLUSDT","BNBUSDT","XRPUSDT","DOGEUSDT"],
+  "source_run":"/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/trend_mainline_20261025_v001",
+  "news_source":"/Users/chrise/GitHub/TradingAgents/data/research/factor_lab_news_20261025_v002",
+  "execution_source":"/Users/chrise/GitHub/freqtrade/research/crypto/factor_portfolio.py",
+  "training_start":"2024-01-01","training_end":"2025-01-01",
+  "horizons_hours":[1,4,24],
+  "model_families":["price_baseline","technical","macro_news","full"],
+  "ridge_penalty":100,
+  "normalization":"training-only per-feature median and sample std; train median missing-value imputation; z clipped +/-5",
+  "test_windows":[
+    {"id":"2025Q1","start":"2025-01-01","end":"2025-01-29","phase":"validation"},
+    {"id":"2025Q2","start":"2025-04-01","end":"2025-04-29","phase":"validation"},
+    {"id":"2025Q3","start":"2025-07-01","end":"2025-07-29","phase":"validation"},
+    {"id":"2025Q4","start":"2025-10-01","end":"2025-10-29","phase":"validation"},
+    {"id":"2026Q1","start":"2026-01-01","end":"2026-01-29","phase":"holdout"},
+    {"id":"2026Q2","start":"2026-04-01","end":"2026-04-29","phase":"holdout"},
+    {"id":"2026Q3","start":"2026-07-01","end":"2026-07-29","phase":"holdout"}
+  ],
+  "window_rule":"first28days of every available quarter after training; fixed calendar coverage, no selection by candidate performance; classify actual BTC return/volatility descriptively afterward",
+  "factor_selection":"training24h absolute RankIC; fixed greedy correlation<0.85; at most8; equal absolute weights, training sign only",
+  "primary_prediction_horizon":24,
+  "default_account":{"capital":10000,"fee_bps":5,"slippage_bps":3,"participation":0.01,"gross":0.8,"max_positions":4,"rebalance_hours":24,"threshold":0.0016,"stop_loss":0.08,"drawdown_halt":0.15},
+  "cost_cases_slippage_bps":[3,10],
+  "capacity_capitals":[10000,1000000,10000000],
+  "study_search_budget":{"factor_columns_expected":74,"model_fits":12,"hyperparameter_search":false,"prior_searches_reset":false},
+  "limitations":[
+    "Previously available history; time-isolated representative diagnostics, not independent untouched out-of-sample proof",
+    "Fixed contemporary six-name pool has selection/survivorship bias",
+    "Official FOMC statement news only; no broad crypto-news or consensus-surprise coverage; BLS403 retained",
+    "Original official release time plus5min controls availability; current fetch hashes do not prove historical ingestion latency or absence of later edits",
+    "Factor count includes correlated horizons and interactions, not74 independent alpha sources",
+    "Short representative windows cannot establish annualized return persistence; CAGR/Sharpe/alpha are descriptive extrapolations",
+    "5m close plus adverse slippage and1percent observed turnover is a capacity model, not order-book or native matching certification",
+    "Historical contract precision/minimums and exact funding settlement-price evidence remain incomplete",
+    "Inspecting holdout factors or configuring portfolios against them consumes holdout for future selection"
+  ],
+  "production_eligible":false,"orders_enabled":false
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "ta-equity-plan.v1",
+  "version": "hkus_daily_v001",
+  "frozen_date": "2026-10-24",
+  "data_start": "2018-01-01",
+  "data_end": "2026-10-01",
+  "train": [
+    "2020-01-01",
+    "2023-01-01"
+  ],
+  "validation": [
+    "2023-01-01",
+    "2025-01-01"
+  ],
+  "holdout": [
+    "2025-01-01",
+    "2026-10-01"
+  ],
+  "continuous": [
+    "2023-01-01",
+    "2026-10-01"
+  ],
+  "independent_forward_oos": false,
+  "candidates": [
+    "trend_20_60",
+    "rsi2_recovery",
+    "legacy_ema_daily"
+  ],
+  "selection": "positive train return, >=20 closed trades, profit_factor>=1.1, risk_drawdown<=0.20 at all costs; maximize worst-cost return; else cash",
+  "markets": {
+    "US": {
+      "currency": "USD",
+      "initial_cash": 10000,
+      "minimum_fee": 1,
+      "dividend_haircut": 0.3,
+      "cost_bps": [
+        5,
+        10,
+        20
+      ],
+      "symbols": [
+        {
+          "symbol": "SPY.US",
+          "yahoo": "SPY",
+          "lot_size": 1
+        },
+        {
+          "symbol": "QQQ.US",
+          "yahoo": "QQQ",
+          "lot_size": 1
+        }
+      ]
+    },
+    "HK": {
+      "currency": "HKD",
+      "initial_cash": 100000,
+      "minimum_fee": 15,
+      "dividend_haircut": 0,
+      "cost_bps": [
+        10,
+        20,
+        40
+      ],
+      "symbols": [
+        {
+          "symbol": "2800.HK",
+          "yahoo": "2800.HK",
+          "lot_size": 500
+        }
+      ]
+    }
+  },
+  "assumptions": [
+    "Fixed retrospective ETF universe; not point-in-time market-wide stock selection.",
+    "Daily regular-session close decisions execute at next exchange-session open; half-days and US DST use captured calendars.",
+    "Long-only cash proxy, integer board lots, equal initial capital sleeves; no leverage, shorts, FX netting or crypto funding.",
+    "Fees are conservative all-in per-side cost proxies with minimum charges, not an exact Longbridge tariff or market-impact model.",
+    "Dividends use ex-date nonspendable receivables; payment dates absent. US 30% haircut is a frozen research assumption, not investor-specific tax advice.",
+    "Yahoo corporate actions and calendar library are captured research inputs, not broker-certified records. Split events cause rejection.",
+    "Daily low equity is a conservative envelope, not synchronized intraday drawdown. Close drawdown is reported separately.",
+    "Sale proceeds are reusable at next daily decision; actual settlement, account trading restrictions and order execution remain unverified.",
+    "Holdout is a retrospective separated period. No result grants production eligibility.",
+    "US prices and all dividends from Yahoo; HK raw OHLCV from Tencent public day feed. Yahoo HK zero-volume and missing-price rows are not used for fills. Sources remain unverified by Longbridge."
+  ],
+  "excluded_universe": {
+    "2828.HK": "Yahoo dividend/action history begins in 2024 and cannot support the frozen 2018 warmup / 2020 training. Excluded for source completeness before any account returns were calculated."
+  }
+}

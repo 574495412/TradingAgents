@@ -1,5 +1,6 @@
 import logging
 from collections import Counter
+from collections.abc import Callable, Mapping
 from typing import Any, TypedDict
 
 from langchain_core.messages import HumanMessage
@@ -107,7 +108,11 @@ class GraphSetup:
         self.max_tool_rounds = max_tool_rounds
 
     def setup_graph(
-        self, selected_analysts=("market", "social", "news", "fundamentals"), memory_node=None
+        self,
+        selected_analysts=("market", "social", "news", "fundamentals"),
+        memory_node=None,
+        *,
+        analyst_overrides: Mapping[str, Callable] | None = None,
     ):
         """Set up and compile the agent workflow graph.
 
@@ -119,8 +124,17 @@ class GraphSetup:
                 - "fundamentals": Fundamentals analyst
             memory_node: Node that settles past decisions and returns the run's
                 ``past_context``. It runs alongside the analysts.
+            analyst_overrides: 已选分析师的替代节点。节点须写入相应报告字段，
+                用于封存证据等自定义分析；替代节点不会创建原分析师或其工具图。
         """
         plan = build_analyst_execution_plan(selected_analysts)
+        overrides = dict(analyst_overrides or {})
+        selected_keys = {spec.key for spec in plan.specs}
+        for key, node in overrides.items():
+            if key not in selected_keys:
+                raise ValueError(f"替代分析师必须属于本次已选分析师：{key}")
+            if not callable(node):
+                raise TypeError(f"替代分析师节点必须可调用：{key}")
 
         analyst_factories = {
             "market": lambda: create_market_analyst(self.quick_thinking_llm),
@@ -142,8 +156,12 @@ class GraphSetup:
         workflow = StateGraph(AgentState)
 
         for spec in plan.specs:
-            workflow.add_node(spec.agent_node,
-                              _analyst_graph(spec, analyst_factories[spec.key](), self.max_tool_rounds))
+            if spec.key in overrides:
+                # 保留原流程的角色名称和下游连边，仅替换证据采集节点。
+                workflow.add_node(spec.agent_node, overrides[spec.key])
+            else:
+                workflow.add_node(spec.agent_node,
+                                  _analyst_graph(spec, analyst_factories[spec.key](), self.max_tool_rounds))
 
         workflow.add_node("Bull Researcher", bull_researcher_node)
         workflow.add_node("Bear Researcher", bear_researcher_node)

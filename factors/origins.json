@@ -1,0 +1,1371 @@
+{
+  "schema": "unified-factor-origins.v1",
+  "files": [
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/funding.py",
+      "canonical_path": "factors/crypto/quant/funding.py",
+      "sha256": "6e1446baf43b95a1967407895da5f39ef55a6b77bc28a164554830473e755a10",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/open_interest_flow.py",
+      "canonical_path": "factors/crypto/quant/open_interest_flow.py",
+      "sha256": "8b9cd2deca524d68442cb31d8ae2e5bcf661008c09e294d03369bf0381285e62",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/settlement.py",
+      "canonical_path": "factors/crypto/quant/settlement.py",
+      "sha256": "46985a9a0566fc25aedf5228c047938d7bca0838e68f9bb07461db15f69e678a",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/position_tilt.py",
+      "canonical_path": "factors/crypto/quant/position_tilt.py",
+      "sha256": "866863a606060ed9a345025a45a1ed424d7468c28d3de371764228dad42f54d4",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/response.py",
+      "canonical_path": "factors/crypto/quant/response.py",
+      "sha256": "c4e5b393f0e9facb27eac9e872e683e0cd90adb029aabf9b6a2d32008f377b39",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/hedged_carry.py",
+      "canonical_path": "factors/crypto/quant/hedged_carry.py",
+      "sha256": "e3e60061f0c784c0f6eac106e0431e5975e8578765bab7f2270aa7e4c8e19056",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/factors/alpha158.py",
+      "canonical_path": "factors/crypto/quant/alpha158.py",
+      "sha256": "8c20cdc337463b56a2b0f7539506d5f825b3eee5a12450be8817818e1551801b",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/relative_volume.py",
+      "canonical_path": "factors/reference/relative_volume.py",
+      "sha256": "22b7d9d21ac7bdd0a6f6fe125463c82d841fd989412e231233b58867e31c56b6",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/realized_volatility.py",
+      "canonical_path": "factors/reference/realized_volatility.py",
+      "sha256": "aad15c5ad2d232d935046936656f22c6378fee61911936f2e6c00afc6ce42928",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/close_location.py",
+      "canonical_path": "factors/reference/close_location.py",
+      "sha256": "b85a077c56f4f4ec1e4c7cd27aebffb205445f7ba076638fe04179007797ce7f",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/order_flow_imbalance.py",
+      "canonical_path": "factors/reference/order_flow_imbalance.py",
+      "sha256": "f8c244bcda0a773b6b3aa4373684d8610d5b2e4173ab76124e1cd90c683d3c5f",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/path_efficiency.py",
+      "canonical_path": "factors/reference/path_efficiency.py",
+      "sha256": "c040b5f40e66fd06ce4298c6967d381b992a8497e730e399ecd0a7a27dabbfed",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/cross_sectional_rank.py",
+      "canonical_path": "factors/reference/cross_sectional_rank.py",
+      "sha256": "f3bc42ce83fd1da0c03cf30835af258b83224a8b06f91d3138d58c34ab310201",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/residual_momentum.py",
+      "canonical_path": "factors/reference/residual_momentum.py",
+      "sha256": "cbdd9b016e519f8334cd7dc16d9af7aca44ff30b56ff13d8d10b34279397330e",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/aggressive_buy_share.py",
+      "canonical_path": "factors/reference/aggressive_buy_share.py",
+      "sha256": "ed22b5ea9b7fd3bfa0bddd8369dc0decf2f17e0a7979176c9b8175343eb4b9bf",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/range_distance.py",
+      "canonical_path": "factors/reference/range_distance.py",
+      "sha256": "fca46e1ab3c02b6630c15e9a0337475fde2d83f0a409954d8ccc6e178fabcf34",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/quote_liquidity.py",
+      "canonical_path": "factors/reference/quote_liquidity.py",
+      "sha256": "eb02cb59cb081cc19f3cdbc3955dbd75bc810a2b242bff502e1f15eb2a46dd66",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/market_breadth.py",
+      "canonical_path": "factors/reference/market_breadth.py",
+      "sha256": "dd646af01056e35369f44750202acdc92bafd864b89ad334bb01976400514646",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/average_true_range.py",
+      "canonical_path": "factors/reference/average_true_range.py",
+      "sha256": "78ada5637c90b2528b133e33783a254730b775f50f37c7a41c03bb3e2983ff61",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/market_return.py",
+      "canonical_path": "factors/reference/market_return.py",
+      "sha256": "85a41794d6da8c1c8df34de3521cd333c129177e1e79885dbaae0a3b8bc34d17",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "TradingAgents",
+      "origin_path": "tradingagents/research/quant/reference/factors/momentum.py",
+      "canonical_path": "factors/reference/momentum.py",
+      "sha256": "3e241a1d08db4eb32e7b8c14d50a9d4e923a88a0565b50acad1c10013ab3948d",
+      "role": "canonical_formula_with_legacy_import_bridge"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/__init__.py",
+      "sha256": "4508831210fc5724b632f81e5b79ee02bc4846301115b9a185eeaffb4ba45ad1",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/__init__.py",
+      "sha256": "f0b5a1c66412f101b67fdae24d80e2cf1fc3384e3a2104b403fbf2741528cbe4",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/__init__.py",
+      "sha256": "aa6e0ebfeb27fcd82c9604c6d0df44627fd27b1c5065065291a57971feec6fe5",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/_summary.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/_summary.py",
+      "sha256": "6be03cab3f4fe797b3abd135a5cdb5c0dbb5c9c948f586dab84f94cb8bae75ca",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/bollinger_chop_reversion_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/bollinger_chop_reversion_15m.py",
+      "sha256": "8f2b34bff44ea5bb1bc3242e13d9057f5d09d51931a63ab0ea16327bdfe3e019",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/bollinger_squeeze_breakout.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/bollinger_squeeze_breakout.py",
+      "sha256": "e2168cfa815897bcffa66864c00af395615d28440f51d663e3cd310b57f2bbc5",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/donchian_volatility_breakout_4h.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/donchian_volatility_breakout_4h.py",
+      "sha256": "38416c6d01ed739158bb24dac31adf686879d79c492322298e8fb2c47500e9d0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/ema_shrink_pullback_4h.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/ema_shrink_pullback_4h.py",
+      "sha256": "60b373db50f7c0a89d61d9bccd1bbaccb1c1ff2eec138e15d8306581e07d8d44",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/ema_trend_pullback_adx.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/ema_trend_pullback_adx.py",
+      "sha256": "3b2e68bfdba5ff71dd8bd37bf5d4b8f6cfbcc4c281a66b3f1b67886bdb399a17",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/ema_trend_strength.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/ema_trend_strength.py",
+      "sha256": "64c0ab07296f0f7856c31cbde6e72e084b846e4df9130d43fe64080b9b31f28b",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/eth_leader_tail_swing_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/eth_leader_tail_swing_15m.py",
+      "sha256": "76cc69d91eb6e44d8b8e0466be3508d68f8dc26a8360ec8160ed9c3f83e7dac4",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_alpha_ensemble.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_alpha_ensemble.py",
+      "sha256": "53e2b81da1e14ed5020ec659514caf4aee51d7edb2521cdd186edad2c82852a7",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_behavior_fingerprint.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_behavior_fingerprint.py",
+      "sha256": "b4520470f0fccce0bcbb8a587eef79ff4b0a822bdb86b9f4e7a148a3997c82cd",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_breakdown_roll.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_breakdown_roll.py",
+      "sha256": "f1e21a5ed30e66782927299a106b11b6a2ed1f82b8788af36c02db0c9858b764",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_breakout_acceptance.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_breakout_acceptance.py",
+      "sha256": "960208ae099cc34aabf8c24449bcf09a9adfcc95863856b548ca62f455a5cff4",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_capitulation_reclaim_quality.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_capitulation_reclaim_quality.py",
+      "sha256": "401c41d111c3c739ddfea44616e204553b58e02324c5f6f7cc797a495b08945f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_climax_reversal.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_climax_reversal.py",
+      "sha256": "6e5b5cfa9b2ae505c2dfef46d1a51a97470176540f12ad76c14ff3af46f0eb53",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_crash_divergence.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_crash_divergence.py",
+      "sha256": "12ab76e2193e7dfe1fe45b7f5fba5a2cabd1fcb3f4cab643723cb3d93255f75a",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_deep_reclaim_long.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_deep_reclaim_long.py",
+      "sha256": "6eef21dca0c415b76ec38e1b5654df2d4b1ef3f7c2e68002bc802eeee030b154",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_event_retest_reclaim.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_event_retest_reclaim.py",
+      "sha256": "05cf85d95cae64c83660da9cc9535bad268a48cc56392413ade531694ede21b3",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_funding_rate_squeeze.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_funding_rate_squeeze.py",
+      "sha256": "1d8ee7d979e6f5b96f588f00ec885f5e8b93c161fa448a86484654d79e1fae46",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_late_volume_trend_carry.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_late_volume_trend_carry.py",
+      "sha256": "381ebd364de780a4d18e415a0b83cce602468a7087fe8f4dcff482dca622f824",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_breakout_acceptance_long.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_breakout_acceptance_long.py",
+      "sha256": "f1ac6c03501648323e4e06be3b278a6e34f90dfe5d2c79e1a7cf14619b579af2",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_climax_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_climax_fade_short.py",
+      "sha256": "a95ccb2624482c634809532125e9256867778bef78594110b6cfa17160ff93a0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_crash_rebound_long.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_crash_rebound_long.py",
+      "sha256": "3357d7618f6cc22b2db3e5d9d7ce5db788c5f9c56c15808ad49a8546d057685e",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_crash_reclaim_long.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_crash_reclaim_long.py",
+      "sha256": "06750fca01fff0dfdfaf7c849317bf2c70786d8081d4abfdfa862e1fa53e8295",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_deep_reclaim_long.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_deep_reclaim_long.py",
+      "sha256": "49cd9c80342c6e361ca2b52de3c1553fabbffe56ad139ba5b6d8c74f014cfa24",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_downtrend_reentry_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_downtrend_reentry_short.py",
+      "sha256": "15291b3891e73709629905d2462a7c9464dde5204c058d23d50874ca9ef22f74",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_dynamic_risk_tier.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_dynamic_risk_tier.py",
+      "sha256": "aa7ab2446b70007c4364d13e29f5799397bb1a6a89a3c50de5d236e356f3675d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_entry_quality.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_entry_quality.py",
+      "sha256": "321dff7468cef080f3e9d288fe8d45d2deecf85c44fa6aef2140aafc1bd1315f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_exit_timing_score.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_exit_timing_score.py",
+      "sha256": "0f2f9cd89a91c347e0f149d75e7f0a70e483dd4522b4ffe2b9b476d33898dbff",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_failed_bounce_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_failed_bounce_short.py",
+      "sha256": "bf876b89e91482da9fb44b3facd117c867894c0c51005fb529e8dfcec0ad89b2",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_failed_rebound_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_failed_rebound_short.py",
+      "sha256": "59d138d6292fbd2a96400ed5f96a104180e0e542e8deadf38ee5e32c5843b0ee",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_high_contrib_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_high_contrib_fade_short.py",
+      "sha256": "ff328f1cd9c7bff491d40957923427a20acd0e2846e7ea53a01c778286582e76",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_high_conviction_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_high_conviction_short.py",
+      "sha256": "9290be776d70dbe46e1a85202133f5d3e05006cd51cb0dca8ff88c6a1980c0d9",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_high_win_pump_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_high_win_pump_fade_short.py",
+      "sha256": "aceae4887994d29fbb7073263a191ad4306b480add71668e9ce7a27d6b5e053f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_high_win_reversal_scalp.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_high_win_reversal_scalp.py",
+      "sha256": "04a5d031064d5525ba680a3600b9a3d96ec0493f49a2a49156ebaaf64fc22c69",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_high_win_volume_pullback_long.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_high_win_volume_pullback_long.py",
+      "sha256": "f8a8555ccb767cd9f8a6e46521195cbfdfc647d2876336a1a90bc87811478efb",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_longtail_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_longtail_short.py",
+      "sha256": "aecc5054c85839527e339658a1efaf42247141ef5a9b0d84c63f3713f3f4f3ed",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_meme_symbol_score.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_meme_symbol_score.py",
+      "sha256": "f9e7dcb5a802e84b2907e91b486a68af7845d33466209bb25655ba6b3da3d654",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_momentum_follow.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_momentum_follow.py",
+      "sha256": "f786765842f72478af80bacf30462a4acd9a3719e380ce44acaddb9f78152cac",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_no_chase_guard.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_no_chase_guard.py",
+      "sha256": "b63025c38e1d31ecb8c4b6028c504f65a6b5174b6ba9cfc4016f2c016e5508a0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_orderflow_rejection_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_orderflow_rejection_short.py",
+      "sha256": "1cd2bd07a3f83096d5314f61b8f93c3d37e9f62d99003b1eb66d33c192d90a49",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_parabolic_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_parabolic_fade_short.py",
+      "sha256": "bdf700d09068bd5e1e29221986b89d5956f16d87009bf15c7dd84e148566db0d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_public_open_structure_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_public_open_structure_short.py",
+      "sha256": "9ef2a79c3e7190acd935f48a2fbd755433200764fa91e1d08fd35785afe6f8e8",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_pullback_continuation_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_pullback_continuation_short.py",
+      "sha256": "25f76bf115d720dff78cd4dbc8c555b37bfe9d5c1bea4ae4c7e52652b27306ae",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_pump_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_pump_fade_short.py",
+      "sha256": "294a9997538d671c34da71fa23a0a90203eedd723b4096789e9c3db42cee8c5f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_quant_rejection_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_quant_rejection_short.py",
+      "sha256": "c799cb14bdba85f98c6f08c3c1aee28a2009447cbe9163b0ebd46dc6f216e28d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_range_scalp_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_range_scalp_short.py",
+      "sha256": "f4d48218a95200047a445c4de161de39c275b9498d253e4f22e62a032fa83b9b",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_rebound_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_rebound_fade_short.py",
+      "sha256": "b965291e1011fb63afab5b911bfbbc605e201307ae72305287053fc0f3c01930",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_short_exhaustion.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_short_exhaustion.py",
+      "sha256": "8316b860e4cdceb7aa08d713f5fab0d5c1efbaf49bab03f0a2a6577fed9bf1d0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_structured_rejection_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_structured_rejection_short.py",
+      "sha256": "ceec4bee24c34886bec3913705df38424f8f1255c14edfa6d8f61f53750375f4",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_symbol_fade_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_symbol_fade_short.py",
+      "sha256": "6e5d34435ef306b6a35a875eb59c4441858eda0c1bcd156fcaa8615a6ca5b0b2",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_leader_ultra_scalp.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_leader_ultra_scalp.py",
+      "sha256": "05b2db3bd3a769de6e2a2a6ba333d8198ed9ef5295567d255d5ce53508fa80de",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_liquidity_absorption.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_liquidity_absorption.py",
+      "sha256": "856dc6640354b6eb5d9067ec4634d75e1c5cdd2aa1b4e449605dc9e7470bb570",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_mainstream_route.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_mainstream_route.py",
+      "sha256": "c88ff7c2c1416840e189985bc7fd4c4b460fa16ab32340755aaa9cde9f5b0e40",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_micro_burst_scalp.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_micro_burst_scalp.py",
+      "sha256": "69fcb857588628710abe5541ec7478b79155cf76db2ebaf63671eddd736aba01",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_micro_pulse_absorption.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_micro_pulse_absorption.py",
+      "sha256": "5a162c926ea5d86eebb9a484b8e0c78bb6bc4546185ae061fd3857ebfa0eb01e",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_momentum_acceleration.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_momentum_acceleration.py",
+      "sha256": "7f2d92e7eb84f875e0d808d2e26abd46a95c6d7e2add1293902e1307e1be3e0d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_oi_surge_momentum.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_oi_surge_momentum.py",
+      "sha256": "07bb5b70b9a2ec0776d097d613dcfd7966c783c7832b3b617849b91dad59dd91",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_perp_flow_retest.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_perp_flow_retest.py",
+      "sha256": "7446ad83add0e170cdc5c80810b49efd5dc5b9418ec6e75b2e943f986fb2b7d7",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_post_squeeze_reclaim.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_post_squeeze_reclaim.py",
+      "sha256": "3a3021d8f2096391798823f0db9a0b0b0d4906d2fef27ba0949781ec94b05273",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_range_reversion.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_range_reversion.py",
+      "sha256": "cd937dd8032433f5ddb7ac2721a4237015d2c1a2ffbf3419e333e06df14e4bc5",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_rebound_short.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_rebound_short.py",
+      "sha256": "0a9a6fada77aa05ef67e69f6a8de8bb08ade1cee082d6c634736bbeb803fd3d0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_relative_strength_rotation.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_relative_strength_rotation.py",
+      "sha256": "0c86756b296b092ab771c2f75e3d4a9a468d17188648e409552434a3c39b6aa3",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_runner_quality.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_runner_quality.py",
+      "sha256": "0d76446a6559c60270a5ec7abb43594b84e7cf45ab0c1d3a9daef743dd2fd52f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_runner_quality_fast.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_runner_quality_fast.py",
+      "sha256": "e9c51696397fd960716ee76b2284933d9a26c6428a20934d51b96748bac8b7c6",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_short_cascade.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_short_cascade.py",
+      "sha256": "e297bcd056d400aa4d44fc915d6a33b02e311aa6d5b8c7d740d4864b4dc26006",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_short_inventory_handoff.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_short_inventory_handoff.py",
+      "sha256": "a8b784e9507b4e8fdb4d1aff3a056b95af38bcf6c8946ba89392a3964bc173fc",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_short_rebound_trap.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_short_rebound_trap.py",
+      "sha256": "c92ad1f883ecd17a135c83eb5e5dc02d926f15862b6d34a9bd00000c4392c122",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_shunde_meme_longtail_acceptance.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_shunde_meme_longtail_acceptance.py",
+      "sha256": "6bd7d77ca917627b20f2e60687368ea626ad3e40578d900a347599ee2a0f83ab",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_squeeze_breakout.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_squeeze_breakout.py",
+      "sha256": "c11dc13fb20a02229ea4b4b8a23ae39fc5fde53e7cee3b83a907255c6fc3b177",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_squeeze_fuel_reclaim.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_squeeze_fuel_reclaim.py",
+      "sha256": "05da57a49dc95045b927c771f20ee49cddd27537a335e2c37a3d3f0c4510152d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_staircase_bounce.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_staircase_bounce.py",
+      "sha256": "ee47ddd24680f4daefd7690abd65c68b79c852a366bf482e5b2b1a5d7107aa5e",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_trend_absorption.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_trend_absorption.py",
+      "sha256": "025ceba3ecccb251ee1bcf9fdd36253c848d42329cef23cd6da71795d818e59b",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_trend_pullback_continuation.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_trend_pullback_continuation.py",
+      "sha256": "b6311dfe70a6e36a3110c65476c0c8d1935b29a790b5f9aef5335e229730de29",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/factor_trend_roll.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/factor_trend_roll.py",
+      "sha256": "3de77e581d74d108830e6e1a80c01a315bc88ff81ecf2e2dcdfc5ccebc3b076c",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_breakout_retest_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_breakout_retest_15m.py",
+      "sha256": "f55fc2652e07b90e9c0266434605bba47a14cc810baee662ee4572ae5c24656a",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_high_reject_short_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_high_reject_short_15m.py",
+      "sha256": "7e97838184c35b545054576c698ff5d3063b41b953753d1a85f8a4b48218ab9e",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_imitation_factors.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_imitation_factors.py",
+      "sha256": "43c7e6802e611ba026f3832b26bf3cd2b1cab8560565e5d37230b0e25158b5c2",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_low_reclaim_long_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_low_reclaim_long_15m.py",
+      "sha256": "27e19f960ca709d20048d60ea05f8bbcc6be92714fee4aba7a7e7aee114cacb8",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_rebound_flip_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_rebound_flip_15m.py",
+      "sha256": "3c8520be7968fda8427cf774049a2eeaf04f1176a9cc173427b8cb157ef3ea8a",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_swing_pullback_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_swing_pullback_15m.py",
+      "sha256": "735edf8b85a9bc5a56d277e2bffeec4b8d21484c264d7449558ee0171f2eb264",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/leader_trend_continuation_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/leader_trend_continuation_15m.py",
+      "sha256": "1b9880cc723998b9ec535dbcd06ae36530dab8f85244e7164adca87a013a29c6",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/liulian_core_tail_swing_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/liulian_core_tail_swing_15m.py",
+      "sha256": "8764544af50c4d6baafa8ba0e72c64b43ff8c408ecf1a1c6ac2909be61156c3d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/multi_timeframe_momentum_volume_confirmation.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/multi_timeframe_momentum_volume_confirmation.py",
+      "sha256": "61dd5da87007307e17172e39ba2300cb7859f5431ad52305e61b0732f4c92b61",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/obv_divergence_signal.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/obv_divergence_signal.py",
+      "sha256": "492b1dc02ae16d5938a1b6708edd1bc10ea6bdad05d06840e5f036dd62528938",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/parabolic_sar_signal.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/parabolic_sar_signal.py",
+      "sha256": "fba03807e51758e259246880eb93a81d8a2f2b608c81fafd9a45bf4fc3c64212",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/position_event_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/position_event_factor.py",
+      "sha256": "6cfdc07548f5c2d00c826887dc7088b6f287bc267fd31e7f821ea8c5296bc59a",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/rbreaker_trend_breakout.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/rbreaker_trend_breakout.py",
+      "sha256": "5ed562871bb409f747a88eb025ceadc0dacbfa3f126ed7d99a69dfe023bf1052",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/squeeze_momentum_breakout_1h.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/squeeze_momentum_breakout_1h.py",
+      "sha256": "c3f6cfb6aea3c41bd947f2473765384e2609b592658beea1501ead04630d8cac",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/squeeze_momentum_breakout_1h_short_guard.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/squeeze_momentum_breakout_1h_short_guard.py",
+      "sha256": "9b753634870cfa686c79a3a8878668fbb7754de882cf9844d0f7b006a006788f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/tradfi_range_expansion_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/tradfi_range_expansion_15m.py",
+      "sha256": "efeaf42b68a2d9f23a08a3216b307f9b015d361f998164c6fa69e02f88b434a9",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/volume_climax_reversal_15m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/volume_climax_reversal_15m.py",
+      "sha256": "b355560faa3647a244b8726794f00e071751de49d4de8d2870261d35316b5cb1",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/__init__.py",
+      "sha256": "424b7dcf294415a28a8dde48cc4e2fc46a4d240bdf58c870ea6db995b6f77fe3",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/combo_event_strategy.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/combo_event_strategy.py",
+      "sha256": "6085b7d2001dff845840817ba1c90fef095e462adae34d8801cb20da1eeda5de",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/combo_event_v126_5m.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/combo_event_v126_5m.py",
+      "sha256": "742a8584e8cecb1d30a3b6726a7a89a2ad55b71fe506857907589afe913fd1ac",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/common.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/common.py",
+      "sha256": "b0acc4e9eb028c4bbc0a735c72626fcd5435466b40b7a2c9595d6af16a36f3a6",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/conditional_order.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/conditional_order.py",
+      "sha256": "b553e2c70779b4790514b47a36df449e01a776d1d941d57324feebf6b004f35d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/dynamic_non_eth_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/dynamic_non_eth_factor.py",
+      "sha256": "93020180346aba1f7ae6e8b061db8db3b10f68ddc8c974af5c290a0954e7e195",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/event_features.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/event_features.py",
+      "sha256": "99324a828539e69b5dde70c465d0cb65eae748fc5036c19aa33978ecb7b1096e",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/__init__.py",
+      "sha256": "ffd5a9481394104a8217931543d7cf1b12261c468adc58b26cb497ab874f6d8d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/absorption.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/absorption.py",
+      "sha256": "52aa73e9c314aad51ac444bdc7eb0fd4c48449cecdfa8208d61abc286f52a346",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/__init__.py",
+      "sha256": "3c9ab47e0ae54d9f2fd2fd9d0a5defc8e1ef8205a870214b20d77afbb0454edb",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/campaign.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/campaign.py",
+      "sha256": "bfe07a697780733d6f7b36e63314ba0844683666f795c4f54cafe9ffcba3bd5b",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/features.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/features.py",
+      "sha256": "86f586d96ca1af019f389657107b5576ecc224c71b1b957b278e6024bad7bc74",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/policy.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/policy.py",
+      "sha256": "35b2066189cba8e7150f679ee5945a4ae37b8bf5c6593550ac4fe369091834f2",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/scoring.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/scoring.py",
+      "sha256": "595eb93001ac56b50f51ecf5586aa4953296bfd2170c40e380f6e0e9d1e2a32d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/signals.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/signals.py",
+      "sha256": "067b00b38210d5e7110b6a6dc00f6adc3e95fb9c241c2d0b50101e16b995ec93",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/countertrend/volatility_normalized.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/countertrend/volatility_normalized.py",
+      "sha256": "815c7cea96a23e75a5575435c54ee217458b266cc0e3dbe70838ffc23c58dbcf",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/eligibility.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/eligibility.py",
+      "sha256": "b5722b9b6fa2b8b414660e86f1d8740ba5455bc4bece66a0d5604689a67aee23",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/exhaustion.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/exhaustion.py",
+      "sha256": "59223642b9e17f69152ae8888f6ab6015b560232cfc3a46851ffa365a4a07737",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/legacy_gate.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/legacy_gate.py",
+      "sha256": "3d01efcef5aa5fc982db36a1b0ed325fe4fa484f82b174e82466edbdf28758ee",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/lifecycle.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/lifecycle.py",
+      "sha256": "dc2bf4bb9423ede517c82747b2df48611c1b43628d167467001b9e04a1b557f0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/liquidity.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/liquidity.py",
+      "sha256": "2b144728bf23349e1a80a4d853cc79b79a26e9d2d44373160f44576fbdc57586",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/mechanisms.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/mechanisms.py",
+      "sha256": "58f922939c7e8c8c5299544d248fb37e8d3b974e7d12bfa1e24900803d5ac7b6",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/momentum.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/momentum.py",
+      "sha256": "55ec45675993ef48fe935cef1d8c8659978c185f35c3d953b7d278f37a60e3d1",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/normalization.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/normalization.py",
+      "sha256": "96da2f34d8941c85402acbc8f347357ffed3c81ecfb36ffc944302faad06d7f0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/policy.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/policy.py",
+      "sha256": "675347e4231feec550f4d876dd240db4ad877ceeb675095bdc8f6921cb0cda82",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/positioning.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/positioning.py",
+      "sha256": "9976baf0d300177d2f702bfeeb1b0a6d290dd156f26984b7dc246bb4a0745775",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/recovery.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/recovery.py",
+      "sha256": "96bb0c3fca2d7f79ee9182de703b4eb72a4eb7eb8bb5f34374ce1297bf425b71",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/__init__.py",
+      "sha256": "e1a58b2222f0af6994468f47dac467973aa805a54a2a561d2e049d1793d318d9",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/components.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/components.py",
+      "sha256": "95ee1ad637e0126cc3a30ea3d52dbe1b96800bff568432351bc8701ccada91da",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/context.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/context.py",
+      "sha256": "3c8ad89f0819e5acfb1e9391d276481bb413ec76542de516eed2b0970a886a5d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/inventory.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/inventory.py",
+      "sha256": "89bd155712b8439983233811107351210f72be64342f1c8e450e174f3bddd67f",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/market.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/market.py",
+      "sha256": "e6e6b706988052ebd78ca532801150f9d45a4609f58bdf7c42676f92234c4f29",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/point_recovery.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/point_recovery.py",
+      "sha256": "2e03205565afbfef39c4910e06432fd09760909e95840a22e8310542c69df122",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/policy.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/policy.py",
+      "sha256": "81774f2ffb95ad8d0f42d650eed7369c921f0e3babb416f5be144a682e901bb7",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/post_exit.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/post_exit.py",
+      "sha256": "0d746474da14f7f51bbdbf1844614b3f19dba6f4c3f4c8cc4dc2f1751f8e8dfc",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/relative_lag_reclaim.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/relative_lag_reclaim.py",
+      "sha256": "988ab7f1fc52d5c70279c8f1f9d038efe9d0017c0d52ec8bcab2c92f4ca66d01",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/rotation.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/rotation.py",
+      "sha256": "cb0955fa29ad522398056fca1285af7c104d6e634d72620920532a812f1bb743",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/scoring.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/scoring.py",
+      "sha256": "2f56829066d4e0242ef6aa05048ce77be8aeb5ad82afe25acedba992e3866d1c",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/state_machine.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/state_machine.py",
+      "sha256": "c206b88c76f36528428ab2cd88f6378dbdb91181a0db7cc3975c54e0a1b71451",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/reversal_lifecycle/unified.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/reversal_lifecycle/unified.py",
+      "sha256": "39ddea2c34740c248e249c0d670144231063d9aae7f57318f8d60d366a266a50",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/signals.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/signals.py",
+      "sha256": "d99623a6b9a9085dca05716b0250b789dd692d04d57238ddd05ee4f2d80e59db",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/structure.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/structure.py",
+      "sha256": "a53808308fec1fd8ff2671ebb3f455847338e57f2e4c5c7c52165c2bbad420fa",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/large_cap/types.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/large_cap/types.py",
+      "sha256": "ca4eb7ea4f2c2b746ad538d7e95b8423d54ffa3723f39e573c39a12bf82ce393",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/later_non_eth_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/later_non_eth_factor.py",
+      "sha256": "9eb479b034a9fd58cd3224e5912ad7a5331a572118eea4ce007bda7a42ef9a15",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/later_non_eth_live_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/later_non_eth_live_factor.py",
+      "sha256": "0e6c01335ba795cf07f4c88ea4b437fb03fe096ebc4cc52fd5171074667ad3d9",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/later_non_eth_sequential_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/later_non_eth_sequential_factor.py",
+      "sha256": "07e31e2d064411d7e1e3a3a26e6ecc74c180a0af7291778139367b48d8a4e8e7",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/later_non_eth_tradfi_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/later_non_eth_tradfi_factor.py",
+      "sha256": "9ce3ebdb6122091f35a2b0c9479f9a98bb9a4f49195085a5f4596af7caef5e7c",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/live_factor_catalog.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/live_factor_catalog.py",
+      "sha256": "684b4b22b8083a6588f8c8d18cad00a47afcc79f701a47b6801a5e1e9d65aaf5",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/market_features.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/market_features.py",
+      "sha256": "1943f74c157eb20b0682b196bdf8c85199bd244670b69f29ea5118061664a539",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/market_regime.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/market_regime.py",
+      "sha256": "a7603a5dc729b5bb1a08169583072c9c0b5493f53563eb684222a3cfe058abd5",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/non_eth_low_complexity_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/non_eth_low_complexity_factor.py",
+      "sha256": "ff28fb4e6301d7ccfcd6088adebfc72a9843fa53b3b268c6988e110052747dc5",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/positioning.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/positioning.py",
+      "sha256": "f87f6d0ef5ec04d4fdc14dd34e3e952c0e77543c52de7024cdece219a1b3ddff",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/quality_features.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/quality_features.py",
+      "sha256": "becff5535dd92202a9007dd5f2bcc1df2fe4bdf71b37e2d8a09fd56f73c4ed31",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/regime_signals.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/regime_signals.py",
+      "sha256": "62ed70f25496cafe35e71bd1c86c377f547b66548806e6f8210ec4f23def3302",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/research/__init__.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/research/__init__.py",
+      "sha256": "94e52a04b7bf815efa51d14b88c4f00ca9c1ad3255f918b91c34e3057d38f9f0",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/research/non_eth_group_event_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/research/non_eth_group_event_factor.py",
+      "sha256": "86caf8fc1a3aca8d9a4d6b5b8aae88b77882df2e6a0f35789139bcdb11a12a2c",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/research/non_eth_group_event_factor_v2_research.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/research/non_eth_group_event_factor_v2_research.py",
+      "sha256": "30b6f405c3f5436492d8a21380ced9e45c7722da703a5431b74f957cda164a66",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/research/non_eth_group_event_factor_v3_research.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/research/non_eth_group_event_factor_v3_research.py",
+      "sha256": "1366fa0cea6777a56405c55b3270582d85a46d2551aade561a47398e2c881214",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/research/non_eth_leader_regime_v2_market_factor_research.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/research/non_eth_leader_regime_v2_market_factor_research.py",
+      "sha256": "e4ffd4cbfe2b3edead372d66d1e0527c8bbd3975974516a9461371e62e764a00",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/research/non_eth_normalized_market_factor.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/research/non_eth_normalized_market_factor.py",
+      "sha256": "2ed680570dce803efb454d39d8589097f42b6ebb56830d30fb53fb5f0340a24a",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/risk_config.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/risk_config.py",
+      "sha256": "5650600e5d4eef2912acf375b64ca7ecffd8ba7b21b70c7a4c1b43aeb518c0ce",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/code/weijie/signal_templates.py",
+      "canonical_path": "factors/legacy/cz_agent/crypto/code/weijie/signal_templates.py",
+      "sha256": "6c5ffa98b6216712cfdcbf62334a72dd76f32d7d6b328d4dab11bd9059c293c7",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/factor_analysis.json",
+      "canonical_path": "factors/legacy/cz_agent/crypto/factor_analysis.json",
+      "sha256": "df37c95f3c118a660b555ea2c38bbc02337dbdd6ec77cd17188d0bc2432e7f71",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/factors.json",
+      "canonical_path": "factors/legacy/cz_agent/crypto/factors.json",
+      "sha256": "6b328fe9d2d695e8246ee02b68a9584c5897ef37615768d438dfd5536b15658b",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/crypto/factors_origin.json",
+      "canonical_path": "factors/legacy/cz_agent/crypto/factors_origin.json",
+      "sha256": "9f7ccf92f0d44dafddc4a8ee0caee535fc1db4ec80ad75a8ed0dd502fa334fd7",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/adaptive_channel_breakout.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/adaptive_channel_breakout.py",
+      "sha256": "1f26bcd33b902c99c6645e7fd317e7c9c07d9677fc45b4fbf26d8e2779b457ac",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/bollinger_squeeze_breakout.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/bollinger_squeeze_breakout.py",
+      "sha256": "d992e151d17bc0c0ce032fed0f0b78ea0e9674865f070848488e14398923259d",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/ema_shrink_pullback_hourly.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/ema_shrink_pullback_hourly.py",
+      "sha256": "e647dce3d679969a9a6231ad163950bff7cfb004b45e7c027919333b0f3b7d0b",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/ema_trend_pullback_daily.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/ema_trend_pullback_daily.py",
+      "sha256": "ece8cb2712e7f397cb96dac86f6f406767635d723e4e58799fec78c1ca3ed5ef",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/ema_trend_pullback_pulse.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/ema_trend_pullback_pulse.py",
+      "sha256": "6e8c36c45dd861dc8b8c9884efd5eb3c2f85ea920968cb91314e56d313bb3fc3",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/mean_reversion_zscore.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/mean_reversion_zscore.py",
+      "sha256": "73649ad183247e4056c508d6823c293ba78ffafca402482dc2cc6ccf755a3f42",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/momentum_volume_breakout.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/momentum_volume_breakout.py",
+      "sha256": "5cd5904dd09064b34210e6a66061dd3f9f7e2051eec35af3a2dead07d17bb345",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/multi_ma_trend_strength.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/multi_ma_trend_strength.py",
+      "sha256": "e40dfad85fe0225795b8cfb1d7d9568ff8723a5a1af0051e79085b49508e3bf1",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/rsi_divergence_reversal.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/rsi_divergence_reversal.py",
+      "sha256": "51bacc8f86e101379b24ce4b0c6c83518881dca49751d5ae923a11ba8f6cc2f4",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/code/vwap_deviation_momentum.py",
+      "canonical_path": "factors/legacy/cz_agent/stock/code/vwap_deviation_momentum.py",
+      "sha256": "2939c4b33b3c2555fbe275ccf0866f5c07782b97a961dbe2b2fe8ee8d441810e",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "CZ-Agent",
+      "origin_path": "factors/stock/factors.json",
+      "canonical_path": "factors/legacy/cz_agent/stock/factors.json",
+      "sha256": "4740e42406b6a93eabdf3c7b5c90932ac12079ddac50fcd94acc46ae749e3fa3",
+      "role": "research_reference_of_pinned_execution_factor_not_auto_promoted"
+    },
+    {
+      "origin_project": "Freqtrade",
+      "origin_path": "research/crypto/conditional_factors.py",
+      "canonical_path": "factors/legacy/freqtrade/conditional_factors.py",
+      "sha256": "923af614593172a4746430c7db92fea9d114eb70418e499e9e3795e889c4ec49",
+      "role": "historical_research_formula_reference"
+    },
+    {
+      "origin_project": "Freqtrade",
+      "origin_path": "research/crypto/interaction_features.py",
+      "canonical_path": "factors/legacy/freqtrade/interaction_features.py",
+      "sha256": "35c42b59a9ded8548da81b3904b8ac654f5a14788b5a8c4bb9953886e04d22ac",
+      "role": "historical_research_formula_reference"
+    },
+    {
+      "origin_project": "Freqtrade",
+      "origin_path": "research/crypto/microstructure_features.py",
+      "canonical_path": "factors/legacy/freqtrade/microstructure_features.py",
+      "sha256": "c188f315821e5ff10b9ceaed7883c2b69e05f6ebbbb3418e35d8659ee49881ec",
+      "role": "historical_research_formula_reference"
+    },
+    {
+      "origin_project": "Freqtrade",
+      "origin_path": "research/crypto/activity_absorption_features.py",
+      "canonical_path": "factors/legacy/freqtrade/activity_absorption_features.py",
+      "sha256": "bfb6f9adb95883dd74f31ad576a6575436c7124c23347d895ff4d8ec2c408fcc",
+      "role": "historical_research_formula_reference"
+    }
+  ],
+  "runtime_policy": "CZ pinned execution snapshots remain unchanged; new research definitions and reuse are owned here"
+}

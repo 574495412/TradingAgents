@@ -1,0 +1,3 @@
+# Isolated research dependencies; no exchange/private-account client.
+pandas>=2.2,<4
+scikit-learn>=1.4,<2
