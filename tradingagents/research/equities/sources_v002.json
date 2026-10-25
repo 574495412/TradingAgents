@@ -1,0 +1,156 @@
+{
+  "reviewed_date_shanghai": "2026-10-26",
+  "frameworks": [
+    {
+      "repository": "QuantConnect/Lean",
+      "commit": "f3d841e60dfd010ee5fc293ea893e56952484108",
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/QuantConnect/Lean/f3d841e60dfd010ee5fc293ea893e56952484108/LICENSE",
+          "sha256": "522cf0a716ce03f67d46f8fceb5bf78c5b84400ec5cd8d14bf9f02cddc1cb6ba",
+          "bytes": 10737
+        },
+        {
+          "path": "Common/Securities/DelayedSettlementModel.cs",
+          "url": "https://raw.githubusercontent.com/QuantConnect/Lean/f3d841e60dfd010ee5fc293ea893e56952484108/Common/Securities/DelayedSettlementModel.cs",
+          "sha256": "9ace6142826c7a568e2288eed7a7f1f2a29d8705a6ba09127b83aa867f01409c",
+          "bytes": 5472
+        },
+        {
+          "path": "Common/Orders/Fees/InteractiveBrokersFeeModel.cs",
+          "url": "https://raw.githubusercontent.com/QuantConnect/Lean/f3d841e60dfd010ee5fc293ea893e56952484108/Common/Orders/Fees/InteractiveBrokersFeeModel.cs",
+          "sha256": "ade97783ee67bc444a3c16ed63b48b47783e995babf88d15399e856d8b237b8b",
+          "bytes": 23031
+        }
+      ],
+      "license": "Apache-2.0",
+      "adopted": "Separated unsettled cash queue; instrument/broker fees. Reproduced architecture locally, not LEAN engine parity; no copied source or inherited returns."
+    },
+    {
+      "repository": "microsoft/qlib",
+      "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141
+        },
+        {
+          "path": "qlib/backtest/exchange.py",
+          "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/backtest/exchange.py",
+          "sha256": "4affc13ab45af464cfb5b55663b80b2fc3dadb4769045d34d0fd218f760d7e08",
+          "bytes": 44235
+        },
+        {
+          "path": "qlib/backtest/account.py",
+          "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/qlib/backtest/account.py",
+          "sha256": "0247a065ee00f0656320fcfe4db5e26e23cc10f57afeb1e063941cf4011bf10e",
+          "bytes": 17999
+        }
+      ],
+      "license": "MIT",
+      "adopted": "Trade units, explicit minimum cost/impact/volume gates and position-account update separation. Default China-oriented assumptions cannot be inherited for HK/US."
+    },
+    {
+      "repository": "stefan-jansen/zipline-reloaded",
+      "commit": "f131a72e2705c5bfbc23ae1be93d58a2d432e7fc",
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/stefan-jansen/zipline-reloaded/f131a72e2705c5bfbc23ae1be93d58a2d432e7fc/LICENSE",
+          "sha256": "e35c4578f7db4498e62e278978f6c42e0fce6f21f9993a060b08a33549cd3044",
+          "bytes": 11347
+        },
+        {
+          "path": "src/zipline/finance/commission.py",
+          "url": "https://raw.githubusercontent.com/stefan-jansen/zipline-reloaded/f131a72e2705c5bfbc23ae1be93d58a2d432e7fc/src/zipline/finance/commission.py",
+          "sha256": "7e2c21899e6b48798ba81f218e2caf3b14d1e1ab7dbf16647d233aeaaccf3e64",
+          "bytes": 13604
+        },
+        {
+          "path": "src/zipline/finance/slippage.py",
+          "url": "https://raw.githubusercontent.com/stefan-jansen/zipline-reloaded/f131a72e2705c5bfbc23ae1be93d58a2d432e7fc/src/zipline/finance/slippage.py",
+          "sha256": "575b5d6396b09e40253b4810145a36b6846eb69bede8af637dbe6fddbf03e70a",
+          "bytes": 21742
+        }
+      ],
+      "license": "Apache-2.0",
+      "adopted": "PerShare min_trade_cost and VolumeShareSlippage constraints. Local next-open adverse-cost proxy is not intrabar quadratic impact calibration."
+    }
+  ],
+  "official": [
+    {
+      "name": "ARK",
+      "url": "https://www.ark-invest.com/investment-process",
+      "use": "Company thesis, valuation and invalidation; active thematic equities are not universal quantitative timing."
+    },
+    {
+      "name": "Man AHL",
+      "url": "https://www.man.com/ahl",
+      "use": "Momentum, mean reversion, fundamentals with execution and risk; no public signal weights supplied."
+    },
+    {
+      "name": "AQR",
+      "url": "https://www.aqr.com/insights/research/journal-article/understanding-style-premia",
+      "use": "Value/momentum/carry/defensive diversification; public long-short style evidence is not ETF cash returns."
+    },
+    {
+      "name": "Two Sigma",
+      "url": "https://www.twosigma.com/businesses/investment-management/",
+      "use": "Data, modeling, portfolio construction and execution are distinct stages; no complete private strategy disclosed."
+    },
+    {
+      "name": "Bridgewater",
+      "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
+      "use": "Growth/inflation exposures can diversify; three equity ETFs cannot replicate multi-asset All Weather."
+    },
+    {
+      "name": "HKEX fees",
+      "url": "https://www.hkex.com.hk/Services/Rules-and-Forms-and-Fees/Fees/Securities-(Hong-Kong)/Trading/Transaction?sc_lang=en",
+      "use": "SFC .0027%, AFRC .00015%, trading .00565% per side; registered ETF stamp exemption."
+    },
+    {
+      "name": "IRD ETFs",
+      "url": "https://www.ird.gov.hk/eng/faq/ETFs.htm",
+      "use": "ETF stamp exemption; no blanket exemption for individual HK stocks."
+    },
+    {
+      "name": "HKEX settlement",
+      "url": "https://www.hkexgroup.com/-/media/HKEX-Group-Site/Ir/Key-Revenue-Analysis/1H-2025-Revenue-Analysis-for-Analysts-vF.pdf",
+      "use": "Settlement .002% min2 max100 before 2025-06-30; .0042% no min/max from that date."
+    },
+    {
+      "name": "SEC 2023",
+      "url": "https://www.sec.gov/newsroom/press-releases/2023-15",
+      "use": "22.90/million until Feb26 2023, 8 from Feb27."
+    },
+    {
+      "name": "SEC 2024",
+      "url": "https://www.sec.gov/newsroom/press-releases/2024-47",
+      "use": "27.80/million from May22 2024."
+    },
+    {
+      "name": "SEC 2025",
+      "url": "https://www.sec.gov/rules-regulations/fee-rate-advisories/2025-2",
+      "use": "0 from May14 2025."
+    },
+    {
+      "name": "SEC 2026",
+      "url": "https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-2",
+      "use": "20.60/million from Apr4 2026; use trade-date proxy, pass-through and charge date unverified."
+    },
+    {
+      "name": "FINRA historical filing",
+      "url": "https://www.finra.org/sites/default/files/2024-11/sr-finra-2024-019.pdf",
+      "use": "2024/25 equity .000166 max8.30; historical 2023 .000145 max7.27; proposed 2026 .000195 max9.79."
+    },
+    {
+      "name": "FINRA approved schedule",
+      "url": "https://www.sec.gov/files/rules/sro/finra/2026/34-106410.pdf",
+      "use": "2026 current .000195 max9.79; no use after Sep30; later TAF holiday not in study."
+    }
+  ],
+  "source_status": "Official public methods, not audited investment performance; captured files read, pinned commits and content hashes retained. No external framework strategy returns adopted."
+}

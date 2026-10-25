@@ -1,0 +1,50 @@
+{
+  "schema": "ta-equity-layered-plan.v2",
+  "version": "hkus_layered_20261026_v002",
+  "registered_date_shanghai": "2026-10-26",
+  "method_contract": "docs/research/regime_program/targets.json version 20261026_v002; equity-specific research only",
+  "data_start": "2018-01-01",
+  "data_end": "2026-10-01",
+  "window": ["2023-01-01", "2026-10-01"],
+  "independent_forward_oos": false,
+  "history_role": "Previously inspected 2023-2026 history; exploratory diagnosis, no reselection of the old cash decision",
+  "account_budget": 56,
+  "policies": ["static", "risk_scaled", "finite_state", "trend_only", "recovery_only", "buy_hold", "cash"],
+  "slippage_bps": [5, 15],
+  "gross_limit": 0.8,
+  "participation_prior20_volume": 0.001,
+  "sale_cash_lock_sessions": 3,
+  "rebalance": "Every session target net shares; no-trade band 5% of prior close equity except full exits; sells first, proceeds locked, no borrowing",
+  "risk_stop": {"close_drawdown": 0.15, "cooldown_sessions": 20, "restart": "After cooldown and close equity recovers within 10% of continuous peak; otherwise cash. Applies to finite_state only."},
+  "markets": {
+    "US": {"currency": "USD", "capitals": [10000, 100000], "initial_cash": 10000, "minimum_fee": 1, "commission_bps": 1, "dividend_haircut": 0.3, "symbols": [{"symbol": "SPY.US", "lot_size": 1, "instrument": "ETF"}, {"symbol": "QQQ.US", "lot_size": 1, "instrument": "ETF"}]},
+    "HK": {"currency": "HKD", "capitals": [100000, 1000000], "initial_cash": 100000, "minimum_fee": 15, "commission_bps": 3, "dividend_haircut": 0, "symbols": [{"symbol": "2800.HK", "lot_size": 500, "instrument": "ETF"}]}
+  },
+  "modules": [
+    {"id": "trend_20_60", "mechanism": "Slow reaction to persistent equity risk premium / price trends", "domain": "SMA20 > SMA60 on completed session", "disabled": "SMA20 <= SMA60 or fewer than 60 observations", "holding": "Sessions to months", "exit": "SMA20 <= SMA60; next actual open", "failure": "Whipsaw, overnight gaps, correlated equity beta; no assertion of independent alpha"},
+    {"id": "rsi2_recovery", "mechanism": "Short-lived selling pressure within an established upward market", "domain": "Close > SMA200 and RSI2 < 10 to enter; retain until exit", "disabled": "Close < SMA200 or insufficient warmup", "holding": "Sessions to weeks", "exit": "RSI2 > 60 or close < SMA200; next actual open", "failure": "Structural repricing, costs, dividends producing price-only oversold signals"},
+    {"id": "risk_overlay", "role": "risk_only", "domain": "finite_state policy", "failure": "Cash lock after a drawdown can prevent recovery; evaluate paired loss reduction and foregone return, never require standalone positive PnL"}
+  ],
+  "allocation": {
+    "static": "0.4 per module split equally by symbol, inactive sleeve stays cash",
+    "risk_scaled": "Same module budgets, symbol inverse trailing20 volatility; scale gross down to 12% annualized conservative sum-weighted vol, never up above 0.8",
+    "finite_state": "Same risk-scaled module set; benchmark close>SMA200 gives trend/recovery budgets .6/.2, otherwise .2/.6; cooldown overlay; all changes executed in shared account",
+    "ablations": "trend_only removes recovery from static and leaves its .4 cash; recovery_only removes trend likewise. cash=0; buy_hold=.8 equally divided and rebalanced with same execution. No best-policy selection."
+  },
+  "acceptance": {
+    "module": "Report full-cycle net expectation, PF, Wilson interval, entry month clusters and same-opportunity inactive cash comparator; >=30 cycles and >=4 entry months only a minimum diagnostic gate. Correlated ETF observations are not independent; promotion stays blocked without unviewed evidence.",
+    "allocation": "Pair static/risk_scaled/finite_state and removal ablations at identical capital and costs; report turnover and exposure, no same-risk superiority claim without matching realized risk. Not enough distinct mechanisms for formal multi-alpha admission.",
+    "total_account": "20% CAGR / 15% drawdown / Sharpe1 are unvalidated research references only. Daily low envelope cannot certify 15% intraday risk; no benchmark-implied promise or forced equity return target.",
+    "production_eligible": false
+  },
+  "limitations": [
+    "Only SPY/QQQ/2800 retrospectively selected ETFs. Not market-wide stocks; historical constituents, delistings and survivorship coverage missing.",
+    "Public Yahoo events and US prices, Tencent HK prices. Longbridge authentication, historical lot changes and corporate-action completeness remain unverified. Splits reject rather than invent adjustment.",
+    "Dividend ex-date receivables are never spendable; actual payment date, collection fees and investor tax treatment unknown. US 30% haircut is a scenario.",
+    "Three exchange-session sale-cash lock is a conservative research buffer, not a certified bank settlement calendar or broker buying-power rule.",
+    "Commission/minimum fees are fixed research scenarios; statutory components use dated official rules with conservative per-order rounding. Broker pass-through/charge-date mapping unverified.",
+    "Prior20 daily volume cap and 5/15bps slippage are capacity proxies, not opening-auction liquidity or orderbook proof; Tencent volume units not independently certified.",
+    "Daily low equity envelope plus exit reserve is not synchronized intraday maximum drawdown. Stocks use 252-session zero-risk-free Sharpe; cash interest not modeled.",
+    "Fundamental value/quality, issuer events and macro routing require point-in-time data; no synthetic proxies or returns supplied. FX, short, borrow and leverage disabled."
+  ]
+}
