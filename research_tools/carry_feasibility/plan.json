@@ -1,0 +1,31 @@
+{
+  "schema": "spot-perpetual-data-feasibility.v1",
+  "version": "20261026_v001",
+  "purpose": "Check real spot/perpetual/funding data and transparent cost arithmetic before registering a structural carry strategy. Not an executed portfolio or alpha selection.",
+  "symbols": ["BTCUSDT", "ETHUSDT"],
+  "symbol_selection": "Two core liquid markets fixed before new spot collection. A pilot only; no claim about all40coins, historical investability or optimal carry selection.",
+  "start": "2024-12-01T00:00:00Z",
+  "end_exclusive": "2026-09-01T00:00:00Z",
+  "interval": "5m",
+  "parent_perpetual_data": "data/research/github_factor_market_20261025_v001",
+  "source_repository": "https://github.com/binance/binance-public-data",
+  "source_commit": "d571690eb66760763b0bd6e27e8cd35603c7e244",
+  "spot_archive": "https://data.binance.vision/data/spot/monthly/klines/{symbol}/5m/{symbol}-5m-{month}.zip",
+  "spot_archive_checksums_required": true,
+  "spot_time_rule": "Pre2025archives use milliseconds;2025onwards microseconds. Raw API samples remain milliseconds. Validate each against exact UTC5m expected clock, never infer API units from archive rules.",
+  "funding_source": "Binance public read-only connector USD-M funding history;retain exact fundingTime, fundingRate and markPrice. No invented three-event daily schedule or settlement-time rounding.",
+  "funding_request_windows": [["2024-12-01", "2025-07-01"], ["2025-07-01", "2026-01-01"], ["2026-01-01", "2026-09-01"]],
+  "spot_fee_source": "https://www.binance.com/en/fee/trading",
+  "cost_scenarios": [
+    {"id": "base", "spot_commission_bps": 10, "perpetual_commission_bps": 5, "slippage_bps_each_leg_each_side": 3},
+    {"id": "stress", "spot_commission_bps": 10, "perpetual_commission_bps": 5, "slippage_bps_each_leg_each_side": 10}
+  ],
+  "fee_scope": "Spot10bps from current regular-user public schedule without BNB discount, not historical/user-specific account proof. Perp5bps is unchanged research stress assumption, not verified user commission. No staking/lending yield or rebates.",
+  "diagnostics": ["complete spot rows/gaps/duplicate/OHLC/volume checks", "asynchronous connector vs archive sample consistency", "spot and perpetual same-clock close basis distribution", "actual funding rates and settlement counts by calendar year", "simple break-even funding sum for one equal-notional spot-long/perp-short round trip", "funding-only fixed-exposure arithmetic explicitly excluding basis/collateral/execution"] ,
+  "illustrative_budget": {"gross_exposure": 0.8, "spot_leg_nav_fraction": 0.4, "perpetual_leg_nav_fraction": 0.4, "portfolio_target_annual_return": 0.2},
+  "account_required_before_profit_claim": ["separate spot cash/assets and futures collateral", "basis changes and fees on both legs", "causal funding availability and actual settlement mark", "asynchronous partial fills and emergency hedge unwind", "margin stress/liquidation, transfers and free cash", "full lifecycle plus independent audit and JSON recovery", "capacity and continuous account vs cash and fixed controls"],
+  "budget": {"spot_monthly_files": 42, "funding_pages": 6, "symbols": 2, "new_strategy_accounts": 0},
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}
