@@ -1,0 +1,11 @@
+{
+  "publication": "/Users/chrise/GitHub/TradingAgents/results/research/factor_discovery_publication_20261025_v001",
+  "sha256": "52dfb0208fb06f709ffc2f783f96e0a5e40d01ab9d5a688a0a46df5f27456100",
+  "studies": {
+    "/Users/chrise/GitHub/TradingAgents/results/research/factor_discovery_20261025_v001": "71cf85a08bc2a6a5df1682bea2d73e9d11a9e9d040c634e7443a3bcfd7f73962",
+    "/Users/chrise/GitHub/TradingAgents/results/research/factor_discovery_nonlinear_20261025_v001": "f1ce50cc1da0953501e521aff84041cbc341236015900156d9e04fdb2b76f40d"
+  },
+  "data_completion_sha256": "892662829570cb6af34936490036e6d9c7ea99eaefe969895c4a52c90fc851b1",
+  "source_archives": 228,
+  "market_rows": 1999296
+}

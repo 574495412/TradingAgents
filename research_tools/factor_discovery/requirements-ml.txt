@@ -1,0 +1,3 @@
+# Optional discovery-only dependency; not needed by the cockpit or frozen74 panel.
+scikit-learn==1.7.2
+threadpoolctl==3.6.0

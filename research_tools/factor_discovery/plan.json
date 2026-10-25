@@ -1,0 +1,50 @@
+{
+  "schema":"factor-discovery-protocol.v1",
+  "motivation":"User requests stronger full-cost return sources after original64 and bounded162 failed admission. No prior trials reset.",
+  "data":"/Users/chrise/GitHub/TradingAgents/data/research/factor_discovery_20261025_v001",
+  "engine":"/Users/chrise/GitHub/freqtrade/research/crypto/factor_portfolio_refined.py",
+  "symbols":["BTCUSDT","ETHUSDT","SOLUSDT","BNBUSDT","XRPUSDT","DOGEUSDT"],
+  "candidates":["slow_trend","flow_trend","breakout_acceptance","pullback_continuation","absorption_release","funding_trend","mechanism_ridge72","price_ridge72"],
+  "control":"price_ridge72",
+  "hypotheses":{
+    "slow_trend":"7/21/63day volatility-normalized time-series momentum consensus with fixed hysteresis",
+    "flow_trend":"slow trend confirmed by actual aggressor quote imbalance, not price-signed turnover",
+    "breakout_acceptance":"20day breakout with flow agreement; 7day EMA invalidation",
+    "pullback_continuation":"trend pullback, real buying/selling recovery, exit on rebound or trend invalidation",
+    "absorption_release":"unusually large aggressor imbalance relative to price response, followed by4hour release in trend direction",
+    "funding_trend":"trend only when last-known settled funding does not indicate expensive same-side crowding; no forecast future funding",
+    "mechanism_ridge72":"fixed penalty100 rolling180day centered Ridge on11price+6flow/funding features; 72hour matured labels; monthly refit",
+    "price_ridge72":"exact same fit/calendar/label/execution with11price features; flow ablation control"
+  },
+  "account":{"capital":10000,"fee_bps":5,"slippage_bps":3,"participation":0.01,"gross":0.8,"max_positions":4,"rebalance_hours":24,"threshold":0.0032,"stop_loss":0.08,"drawdown_halt":0.15},
+  "risk_comparison":"gross0.8 matches original64 rather than previous0.4 refinements; no leverage;15percent drawdown target scales with restored budget and is not comparable to8percent at0.4",
+  "common_signal_lease":"daily decisions; maximum7active daily scores then1day rearm gap for every candidate including price control; signal state is not actual fill state",
+  "screen_windows":[
+    {"id":"2025Q1","start":"2025-01-01","end":"2025-01-29"},
+    {"id":"2025Q2","start":"2025-04-01","end":"2025-04-29"},
+    {"id":"2025Q3","start":"2025-07-01","end":"2025-07-29"},
+    {"id":"2025Q4","start":"2025-10-01","end":"2025-10-29"}
+  ],
+  "costs_slippage_bps":[3,10],
+  "admission":{"minimum_mean_28day_return_each_cost":0.03,"minimum_positive_windows_each_cost":3,"maximum_observed_drawdown":0.15,"minimum_complete_trades_each_cost":30,"minimum_closed_profit_factor_each_cost":1.1,"minimum_median_daily_sharpe_each_cost":0.5},
+  "followup":"Exactly top2non-control candidates by minimum of two-cost mean window return, then lower worst drawdown, alphabetical tie. Follow even if rejected as diagnostics; do not call them admitted. Freeze selection before later periods. Always include price control.",
+  "continuous_windows":[
+    {"id":"continuous2025","start":"2025-01-01","end":"2026-01-01"},
+    {"id":"continuous2026","start":"2026-01-01","end":"2026-10-01"},
+    {"id":"extension2026M09","start":"2026-09-01","end":"2026-10-01"}
+  ],
+  "capacity":"fixed continuous2026 period, top2research candidates at100k and1mUSDT, both costs; do not pool different capital sizes; check actual fills rather than scale returns",
+  "budget":"8candidates x4screen windows x2cost=64;3followups x3continuous/extension periods x2cost=18;2followups x2capitals x2cost=8; total90accounts. No parameter grid, no leverage search, no hidden trials.",
+  "limitations":[
+    "2025 and Jan-Aug2026 history already observed; this is post-review discovery, not untouched OOS",
+    "September is newly loaded history; BTC funding response exposed mark prices before registration; do not call it fully blind OOS",
+    "Six contemporarily selected liquid contracts retain survivorship/selection bias",
+    "1percent actual5minute turnover and next-close slippage are execution proxies, not order-book queue/impact certification",
+    "Old funding uses hourly mark proxy; September uses connector markPrice and nominal5min bucket; exact boundary attribution remains incomplete",
+    "Some strategy rules and factors are correlated; count is not number of independent return sources",
+    "Continuous five-minute marked NAV includes open PnL separately; no forced end-of-period winning trades",
+    "Signal lease limits intent persistence; limited fills can delay actual closure beyond lease; account owns settlement"
+  ],
+  "references":["https://www.nber.org/papers/w24877","https://www.aqr.com/insights/research/journal-article/a-century-of-evidence-on-trend-following-investing","https://github.com/binance/binance-public-data"],
+  "production_eligible":false,"orders_enabled":false,"independent_oos":false
+}

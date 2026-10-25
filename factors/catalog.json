@@ -963,5 +963,86 @@
   "risk_periods": {
     "equity": 252,
     "crypto": 365
+  },
+  "discovery_registry": {
+    "source": "common/mechanisms.py",
+    "regime_source": "common/regime.py",
+    "registered_factors": [
+      {
+        "id": "trend_consensus",
+        "name": "多尺度波动归一趋势",
+        "definition": "mean tanh(log(close/lag_n)/(std168(log-return)*sqrt(n))), n168/504/1512; completed hourly bars",
+        "asset_classes": [
+          "crypto",
+          "equity"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "aggressor24",
+        "name": "真实主动买卖净额24期",
+        "definition": "sum24(2*taker_buy_quote_volume-quote_volume)/sum24(quote_volume)",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "aggressor72",
+        "name": "真实主动买卖净额72期",
+        "definition": "sum72(2*taker_buy_quote_volume-quote_volume)/sum72(quote_volume)",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "aggressor_surprise24",
+        "name": "主动成交异常",
+        "definition": "(aggressor24-prior168mean)/prior168sample_std; clipped +/-5",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "absorption24",
+        "name": "资金流与价格响应偏离",
+        "definition": "aggressor_surprise24-return_z24; positive flow without commensurate price response is only an absorption proxy",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "flow_trend_agreement",
+        "name": "主动资金流趋势确认",
+        "definition": "trend_consensus * clip(aggressor_surprise24,-3,3); interaction, not independent alpha",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      }
+    ],
+    "report": "../docs/research/factor_discovery_20261025/README.md",
+    "core74_panel_unchanged": true,
+    "production_eligible": false
   }
 }

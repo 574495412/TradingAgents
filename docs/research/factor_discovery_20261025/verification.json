@@ -1,0 +1,34 @@
+{
+  "tests": {
+    "TradingAgents_factor_library_and_causal_research": 16,
+    "Freqtrade_data_and_execution": 13,
+    "CZ_cockpit": 29,
+    "total": 58
+  },
+  "account_audits": 126,
+  "raw_feature_verification": "feature_verification.json",
+  "browser": {
+    "url": "http://127.0.0.1:8793/research#factor-lab",
+    "title": "CZ · 因子与量化组合",
+    "browser": "Browser plugin not available; bundled Playwright with installed Chrome",
+    "viewports": [
+      "1512x1100",
+      "390x844"
+    ],
+    "errors": [],
+    "overflow": false,
+    "checks": {
+      "page_identity": true,
+      "nonblank": true,
+      "framework_overlay_absent": true,
+      "console_clean": true,
+      "screenshots": true,
+      "interaction": true
+    },
+    "interaction": "screen10 -> stress cost -> continuous2026 loss and halt -> September cold-start gain without halt -> capacity8 -> original comparison -> compose",
+    "screenshots": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9"
+  },
+  "build": "Vite production build passed; existing index chunk remains above500kB warning",
+  "local_scope": "research only; no deployment or trading orders",
+  "source_note": "Executed scripts remain in registered source snapshots. Current mechanisms adds a stock-session adapter; every crypto feature equals the frozen study numerically. Formatting and registry/UI changes do not rewrite old result receipts."
+}

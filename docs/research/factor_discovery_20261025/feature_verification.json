@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "raw_flow_and_known_funding_checks": 126,
+  "maximum_raw_flow_error": 3.168038748002644e-16,
+  "models_with_matured_labels": 84,
+  "executed_python_snapshot_checks": 11,
+  "current_crypto_features_identical_to_frozen_study": true,
+  "equity_session_adapter_does_not_change_crypto_results": true
+}
