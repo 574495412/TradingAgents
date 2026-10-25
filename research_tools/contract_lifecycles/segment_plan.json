@@ -1,0 +1,29 @@
+{
+  "schema":"contract-segment-followup.v1",
+  "version":"20261026_v001",
+  "parent_cards":"research_tools/contract_lifecycles/event_cards.json",
+  "parent_capture":"data/research/contract_lifecycle_notices_20261026_v001",
+  "parent_scenario":"results/research/contract_lifecycle_timeline_20261026_v001",
+  "parent_daily":"data/research/historical_perpetual_daily_20261026_v002",
+  "scope":"Resolve10uncoveredprioritynames from existing official bodies and targeted official support details, plusAERGOreopening andBLZconflict. Generic futures clauses referring to named tokens require explicit paragraph and token binding; spot headline dates are not adopted. BUSD/COIN-M deadlines are not transferred. No performance-based selection.",
+  "target_details":[
+    {"code":"82f730b7ef444a38b323ab7a2e56b757","purpose":"AERGOUSDT2025-04-16launch"},
+    {"code":"2722e6da4f5141dd9b2fb07b5b1f3f75","purpose":"BTTUSD-Mclosure"},
+    {"code":"034eee2293964e26b915b1ec5c42972a","purpose":"TOMOUSD-Mclosure"},
+    {"code":"3ab5488a00e04d4fb338c77ea28326a8","purpose":"FRONTswapandUSD-Mscope"},
+    {"code":"209e18f8600f41c09f064d2909e17474","purpose":"ALPACAspecificUSD-Mcadenceandlastfunding"}
+  ],
+  "maximum_new_detail_requests":12,
+  "maximum_archive_requests":16,
+  "maximum_total_new_requests":28,
+  "archive_prefix_probes":["data/futures/um/daily/aggTrades/BLZUSDT/BLZUSDT-aggTrades-2022-08-25","data/futures/um/daily/aggTrades/BLZUSDT/BLZUSDT-aggTrades-2022-08-26","data/futures/um/daily/aggTrades/FTMUSDT/FTMUSDT-aggTrades-2025-01-07"],
+  "archive_policy":"List exact officialS3prefix before any ZIP fetch; only a small number of actually existing trade archives+checksum are permitted. Existence/nonexistence is evidence about that archive, not proof of global market activity or a relisting event. Do not assume kline/funding records are executed trades.",
+  "segment_policy":"A launch must be tied to its own contract episode and later terminal schedule. At that episode start reset feature age and lookbacks only; do not splice old-contract prices/funding or reset total-account highwater/inventory automatically. Require completed full daily bars after launch for180-observation eligibility. No short-window substitute.",
+  "availability_assumption_minutes":5,
+  "historical_original_versions_certified":false,
+  "terminal_cash_values_verified":false,
+  "new_financial_accounts":0,
+  "profit_goal_met":false,
+  "orders_enabled":false,
+  "production_eligible":false
+}

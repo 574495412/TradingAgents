@@ -538,22 +538,30 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "historical_contract_timeline_and_episode_qualification",
-    "status": "scenario_audited_historical_certification_incomplete",
-    "report": "contract_timeline_20261026/README.md",
-    "source_capture_requests": 202,
-    "card_count": 42,
-    "covered_priority_symbols": 38,
-    "unresolved_priority_symbols": 10,
-    "changed_preview_decisions": 25,
-    "removed_original_slots_in_conservative_scenario": 26,
+    "mechanism": "contract_segments_and_reported_trade_counterevidence",
+    "status": "all48_priority_end_clauses_covered_one_launch_source_conflict_unresolved",
+    "report": "contract_segments_20261026/README.md",
+    "supplement_source_requests": 12,
+    "card_count": 52,
+    "covered_priority_symbols": 48,
+    "unresolved_priority_end_clause_names": 0,
+    "explicit_launches": 1,
+    "unresolved_episode_starts": [
+      "BLZUSDT"
+    ],
+    "reported_trade_source_conflicts": [
+      "BLZUSDT"
+    ],
+    "source_agreement_passed": false,
     "new_financial_accounts": 0,
     "original_historical_content_certified": false,
     "all_contract_segments_certified": false,
     "terminal_settlement_values_verified": false,
+    "changed_preview_decisions": 27,
+    "removed_original_slots_in_conservative_scenario": 30,
     "previous_sealed_account_report": "funding_cross_section_20261026_v002/README.md",
     "previous_sealed_account_count": 30,
-    "next_action": "补10个名称的USD-M条款、BLZ/AERGO重新上线边界及OMG历史原始版本；预先冻结分段数据后补成交/资金费，保守情景移除不冒充已证实错误交易或收益改进。",
+    "next_action": "解决BLZ终止公告与聚合成交反证，补原始公告与其余合约分段；新episode重新累积观察期，旧仓结算和总账户风险连续保留。随后补扩展池真实资金费与五分钟执行，不把52条当前子句覆盖当作全历史认证或收益改善。",
     "profit_proven": false
   },
   "acceptance_version": "module-allocation-portfolio.v2",

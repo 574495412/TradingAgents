@@ -1,0 +1,10 @@
+{
+  "scenario_completion_sha256": "e2c432e83d566be6da5951a417015c1199569041e5043867714fc6c23fd4cd2c",
+  "trade_source_completion_sha256": "330a173b10117cd2816732e9c7a9587bb95c1c3c921ac66eafb512add3b7d1ba",
+  "publisher_sha256": "b75acb7be662cab4a4194a898539688fc1f10ee07a549616d8c9e243d62f2e26",
+  "independent_segment_audit_sha256": "cdd4e4cb62b3b0a6592e41c60b75c656da7719163e7433c88d94d630c603b678",
+  "reported_trade_audit_sha256": "0ad0046099222fa1170606ba14a3d53db0910fc57d790bb78c159c5e8019e154",
+  "scenario_audit_passed": true,
+  "historical_certification_passed": false,
+  "new_financial_accounts": 0
+}

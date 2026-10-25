@@ -1,0 +1,32 @@
+{
+  "schema": "independent-reported-trade-source-audit.v1",
+  "passed": true,
+  "checks": [
+    {
+      "prefix": "data/futures/um/daily/aggTrades/BLZUSDT/BLZUSDT-aggTrades-2022-08-25",
+      "archive_exists_at_exact_prefix": true,
+      "rows": 2487006,
+      "rows_at_or_after_notice_2022_08_25_09_utc": 1141466,
+      "all_aggregate_ids_contiguous": true,
+      "archive_sha256": "53d92a7524b5e8bdcdec7220356a9f891f434ef6fc3bb8ed600fc1acb3c55647"
+    },
+    {
+      "prefix": "data/futures/um/daily/aggTrades/BLZUSDT/BLZUSDT-aggTrades-2022-08-26",
+      "archive_exists_at_exact_prefix": true,
+      "rows": 824913,
+      "rows_at_or_after_notice_2022_08_25_09_utc": 824913,
+      "all_aggregate_ids_contiguous": true,
+      "archive_sha256": "7bcb61bd86f9fbf482e9a13a00025a82ea1f6065ae579df0fd2e0f4a1f4e2373"
+    },
+    {
+      "prefix": "data/futures/um/daily/aggTrades/FTMUSDT/FTMUSDT-aggTrades-2025-01-07",
+      "archive_exists_at_exact_prefix": false,
+      "does_not_prove_global_market_inactivity": true
+    }
+  ],
+  "source_completion_sha256": "330a173b10117cd2816732e9c7a9587bb95c1c3c921ac66eafb512add3b7d1ba",
+  "verifier_sha256": "769a8380b7d717755c9d966548f28edfc7ebf6281e1ec522e15afaeedede18e3",
+  "BLZ_relisting_or_notice_cancellation_certified": false,
+  "actual_client_execution_or_cash_certified": false,
+  "new_financial_accounts": 0
+}

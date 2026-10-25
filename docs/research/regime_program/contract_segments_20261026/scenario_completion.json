@@ -1,0 +1,11 @@
+{
+  "manifest": {
+    "summary.json": "c14009e1de3923fc29029dd64daf53c164af93c8125017d6bd5637f214a94b0c",
+    "registration.json": "a3fb44a8e14778bcd191e1f5cc692146cbf3d757cecdba34f2063ae1fefad058",
+    "source_bindings.json": "221b2ba9b813fd9f02675fcb1055b3fe8c24ae3961048ebb0675d26a07c415db",
+    "preview.json": "921180c4fdb5d0db267cd2eb2487f4f0852aa826953ccb1998aa0ae9d31685c7"
+  },
+  "scenario_recomputation_complete": true,
+  "historical_certification_passed": false,
+  "financial_accounts": 0
+}

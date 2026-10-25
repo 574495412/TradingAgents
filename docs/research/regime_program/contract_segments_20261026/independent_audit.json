@@ -1,0 +1,13 @@
+{
+  "schema": "independent-contract-segment-preview.v1",
+  "passed": true,
+  "decisions": 366,
+  "baseline_reproduced_without_restrictions": true,
+  "schedule_revisions_and_distinct_episodes_reproduced": true,
+  "explicit_launch_age_reset_reproduced": true,
+  "source_completion_sha256": "e2c432e83d566be6da5951a417015c1199569041e5043867714fc6c23fd4cd2c",
+  "verifier_sha256": "b71e6c774612af7b1d1b63ec7e53fbc0a51da3e9985a4e375bb39c3f055442ab",
+  "new_financial_accounts": 0,
+  "historical_tradability_certified": false,
+  "profit_goal_met": false
+}

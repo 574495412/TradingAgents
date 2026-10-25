@@ -1,0 +1,15 @@
+{
+  "manifest": {
+    "summary.json": "363427607b5c195d7919a0ca91548f6a7aa2e780c800f5919f78dbfb95a1c449",
+    "registry.json": "774e24f400d4d4918e1d244742cfd95671d1e2b94ff5b7a167a1b815163e2d86",
+    "scenario_completion.json": "e2c432e83d566be6da5951a417015c1199569041e5043867714fc6c23fd4cd2c",
+    "reported_trade_audit.json": "0ad0046099222fa1170606ba14a3d53db0910fc57d790bb78c159c5e8019e154",
+    "event_cards.json": "0ce30a41b93d93555b3d227f53840ae2500bbf9f2ac3c3018bebc1e92a708528",
+    "README.md": "1eff0bdb7315ba8a0922806957bcbd6f429fd69444a7c6f10c23bcb67a56b1a4",
+    "verification.json": "3e799acec9fb2b861db51c3de469b84835e326aa97e4428e5819af3723576c2f",
+    "independent_audit.json": "cdd4e4cb62b3b0a6592e41c60b75c656da7719163e7433c88d94d630c603b678"
+  },
+  "scenario_audit_passed": true,
+  "historical_certification_passed": false,
+  "financial_accounts": 0
+}
