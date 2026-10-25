@@ -1,0 +1,370 @@
+{
+  "schema": "multi-regime-research-program.v1",
+  "version": "20261025_v001",
+  "effective_date_shanghai": "2026-10-25",
+  "title": "多行情、多策略量化研发",
+  "program_status": "active",
+  "profit_goal_status": "not_met",
+  "objective": "先发现可复现的净收益源，再验证因果行情识别、事件风控和模型组合是否改善连续扣费收益。",
+  "target_basis": "研发者根据现有失败证据设定的阶段性门槛，不是市场收益预测；历史版Sentinel高成本2025为+12.93%，2026年1—8月为-7.76%，跨年608天为+4.96%，均不证明已达到本目标。",
+  "ownership": {
+    "TradingAgents": "目标、来源、统一因子、行情识别、训练编排与独立审计",
+    "Freqtrade": "加密连续账户、撮合、资金费和容量研究",
+    "CZ-Agent": "已有界面展示研究进度；生产策略独立"
+  },
+  "canonical_factor_root": "factors/",
+  "default_market": "流动性充足的加密USDT永续；跨资产因子复用，股票账户单独验收",
+  "targets": [
+    {
+      "id": "net_cagr",
+      "label": "连续扣费年化",
+      "base": 0.2,
+      "stretch": 0.3,
+      "operator": ">=",
+      "format": "percent",
+      "scope": "1万USDT、8与15bps/边均通过、连续账户至少365日",
+      "definition": "(期末含退出准备权益/期初本金)^(365/自然日)-1；禁止短窗均值年化",
+      "actual": -0.012433800676107887,
+      "status": "not_met"
+    },
+    {
+      "id": "max_drawdown",
+      "label": "最大观察回撤",
+      "base": 0.15,
+      "stretch": 0.15,
+      "operator": "<=",
+      "format": "percent",
+      "scope": "两档成本、全部主要连续账户",
+      "definition": "完整5分钟含浮亏净值相对历史高点的最大跌幅；延迟超限仍判失败",
+      "actual": 0.15218705734840432,
+      "status": "not_met"
+    },
+    {
+      "id": "sharpe",
+      "label": "日净值夏普",
+      "base": 1,
+      "stretch": 1.5,
+      "operator": ">=",
+      "format": "number",
+      "scope": "两档成本、至少365日连续账户",
+      "definition": "UTC日净值收益均值/样本标准差×sqrt(365)，无风险0；股票另用252",
+      "actual": -0.03425923986397443,
+      "status": "not_met"
+    }
+  ],
+  "gates": {
+    "complete_lifecycles": 100,
+    "closed_profit_factor": 1.15,
+    "closed_net_pnl_positive": true,
+    "sample_sufficiency": "组合至少100个完整生命周期；单收益源至少30个，另报告按币/月份聚类的不确定区间，不能将相关交易当独立样本",
+    "win_rate": "完整生命周期扣全部成本后盈利数/完整生命周期数；报告Wilson区间和盈亏比，不设统一50%门槛",
+    "attribution": "手续费、滑点、资金费、平仓PnL、开放PnL与退出准备分列；不以开放浮盈代替闭合收益",
+    "capacity": {
+      "capitals_usdt": [
+        10000,
+        100000,
+        1000000
+      ],
+      "minimum_target_usdt": 100000,
+      "at_target": "两档成本净收益>0、回撤<=15%；披露成交/请求、退出延迟、实际净敞口和低成交状态。100万仅探索，未通过不得宣称该容量",
+      "proxy_participation": 0.01,
+      "orderbook_verified": false
+    },
+    "strategy_diversity": "至少2个不同经济机制在适用环境下成本后有效；仅改参数不算独立收益源，现金不算alpha",
+    "allocation_increment": "与2025筛选冻结的最佳静态策略及等权组合在相同资金、数据、执行预算下比较；相对较强基准CAGR提高>=5个百分点且回撤不增加，或回撤相对下降>=20%且CAGR不下降。所有切换成本计入同一持续账户",
+    "stability": "完整报告各自然年、90日块、行情和事件分组；2025/2026均已查看，只能作历史诊断。样本不足标未知，不要求每个分组盈利",
+    "no_oracle": "状态、权重、标签、标准化和训练仅用决策时已知且已成熟资料；禁止未来行情标注用于交易、整段HMM平滑或拼接赢家账户",
+    "out_of_sample": "新的历史留出须先登记截止与来源访问记录；已看过的月份不得重新命名为独立样本外",
+    "forward": "可选补充；沿用用户取消固定30/60天等待的要求，不设最低研发天数。缺少真实前向时如实披露，不冒充已验证实盘",
+    "restart": "持仓、已结资金费、账户高水位、停机与未成交单恢复一致；跨年/切换不得重置",
+    "leverage": "基准gross=0.8，无杠杆放大；任何新风险预算必须作为另一个预登记实验，不能借此达成本轮收益目标"
+  },
+  "regimes": [
+    {
+      "id": "trend_up",
+      "label": "上涨趋势",
+      "strategy": "中低频多头趋势、横截面相对动量",
+      "risk": "波动缩放与单币上限",
+      "status": "planned"
+    },
+    {
+      "id": "trend_down",
+      "label": "下跌趋势",
+      "strategy": "双向趋势或已验证的相对多空组合",
+      "risk": "做空需真实资金费/成交；没有有效策略则现金",
+      "status": "planned"
+    },
+    {
+      "id": "range",
+      "label": "低趋势震荡",
+      "strategy": "价差／价格回归候选",
+      "risk": "须证明扣换手成本后有效；区间标签不能事后确定",
+      "status": "planned"
+    },
+    {
+      "id": "volatility_breakout",
+      "label": "波动扩张",
+      "strategy": "突破与加速候选",
+      "risk": "按波动率缩仓、显式滑点压力",
+      "status": "planned"
+    },
+    {
+      "id": "event_shock",
+      "label": "外部事件冲击",
+      "strategy": "降低风险、暂停或退出的覆盖层",
+      "risk": "公开时点+延迟可用；预告时点与实际发布时间分开存证，未知新闻不能当无事件",
+      "status": "planned"
+    },
+    {
+      "id": "liquidity_stress",
+      "label": "流动性不足／状态不确定",
+      "strategy": "减少敞口或现金",
+      "risk": "缺数据不补零；不能强行路由至盈利策略",
+      "status": "planned"
+    }
+  ],
+  "method_sources": [
+    {
+      "name": "已封存13个GitHub来源及22份代码/配置",
+      "url": "https://github.com/pst-group/pysystemtrade",
+      "local": "../github_factor_study_20261025/source_catalog.json",
+      "use": "复用固定commit来源，保留作者声明与本地收益差异"
+    },
+    {
+      "name": "hmmlearn API",
+      "url": "https://hmmlearn.readthedocs.io/en/stable/api.html",
+      "use": "HMM为统计基线，不是神经网络；只允许过去数据拟合和当时可用的过滤状态"
+    },
+    {
+      "name": "NeuralForecast temporal cross-validation",
+      "url": "https://nixtlaverse.nixtla.io/neuralforecast/docs/capabilities/cross_validation.html",
+      "use": "参考滚动时序验证；先固定小型MLP对照，只有增益成立才升级TCN/TFT，不继承框架收益"
+    }
+  ],
+  "workflow": [
+    "网络检索与固定源码/许可",
+    "经济机制与失效反证",
+    "数据可用时点核验",
+    "冻结参数、预算、拆分和选择规则",
+    "本地复现",
+    "针对可定位缺陷自研",
+    "连续账户与独立审计",
+    "同风险增量与容量验收",
+    "可选前向补证与独立生产交接"
+  ],
+  "budget": {
+    "source_repository_shortlist_max": 12,
+    "formula_versions_per_family_max": 2,
+    "neural_models_first_round_max": 1,
+    "neural_architecture": "单个小型MLP，HMM为单独统计对照",
+    "screen_accounts": 24,
+    "followup_accounts": 24,
+    "capacity_accounts": 12,
+    "total_accounts_max": 60,
+    "design": "12个方案/对照×2成本筛选2025；按2025两成本最低收益冻结3个研究后续+现金/最佳静态/等权3对照，在2026年1—8月和跨年608日各2成本；冻结后续3个在跨年各2资金×2成本",
+    "selection": "研究后续不等于准入；诊断结果不得反选筛选方案。具体12个版本与训练来源在计算标签前另行冻结，框架数量不足不得靠同策略参数变体凑满",
+    "stopping": "来源优先级和失败机制没有新增证据时不重复扩网格；因果/财务审计失败先修工程，经济门槛失败则如实淘汰"
+  },
+  "tasks": [
+    {
+      "id": "R00",
+      "title": "冻结研发目标与验收口径",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [],
+      "done_when": "目标JSON、中文协议、三项目入口一致，界面可查看目标与未完成项；完成不代表收益达标",
+      "evidence": [
+        "README.md",
+        "targets.json",
+        "validation.json"
+      ]
+    },
+    {
+      "id": "R01",
+      "title": "补充行情识别、震荡与模型公开来源",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R00"
+      ],
+      "done_when": "每一采用版本记录commit/许可证/具体公式/参数/收益口径；先复用已有13仓库，最多新增12个候选来源",
+      "evidence": [
+        "preparation_20261026/source_review.json",
+        "preparation_20261026/provenance.json"
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "实现因果行情分类与可用性检查",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R01"
+      ],
+      "done_when": "趋势方向、波动、流动性与不确定状态可逐时复算；前缀一致性通过；不以未来收益判定当时行情",
+      "evidence": [
+        "preparation_20261026/states_summary.json",
+        "preparation_20261026/independent_audit.json"
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "统一五类收益策略及现金接口",
+      "owner": "TradingAgents + Freqtrade",
+      "status": "done",
+      "depends_on": [
+        "R01"
+      ],
+      "done_when": "趋势、相对动量、资金费组合、震荡回归、波动突破有版本、适用状态、失效条件和独立账户；不因数量不足伪造有效收益源",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R04",
+      "title": "核实事件时点并实现风险覆盖层",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R02"
+      ],
+      "done_when": "至少完成已有FOMC公开时点回放；预告/发布时间/首次可用分开，缺失事件覆盖显式标注；有无事件覆盖层同账户比较",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R05",
+      "title": "HMM与固定小型神经网络对照",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R02",
+        "R03"
+      ],
+      "done_when": "HMM与MLP分别对照规则/线性；过去拟合、成熟标签、相同信息与执行预算、无随机时间切分；预测改善与账户改善分别验收",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R06",
+      "title": "冻结选择并回放共享账户多策略组合",
+      "owner": "Freqtrade + TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "done_when": "切换真实扣费、共享容量与总风险、库存和停机连续；与现金、冻结最佳静态、等权比较，所有失败案保留",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R07",
+      "title": "收益、分行情稳定性与容量独立验收",
+      "owner": "TradingAgents",
+      "status": "in_progress",
+      "depends_on": [
+        "R06"
+      ],
+      "done_when": "60账户预算内完成逐账审计、分期/分状态/成本/容量表，逐项标达标/失败/未知；未达收益目标不算本任务完成",
+      "evidence": [
+        "sizing_20261026/README.md",
+        "sizing_20261026/summary.json",
+        "sizing_20261026/control_reproduction.json",
+        "pair_formation_20261026/README.md",
+        "pair_formation_20261026/summary.json",
+        "pair_formation_20261026/independent_audit.json"
+      ],
+      "outcome": "前两轮成本/容量未达标；第三轮协整币对只完成形成期与数值核验，双腿账户与收益仍待验证。"
+    },
+    {
+      "id": "R08",
+      "title": "现有界面持续显示证据与交接资格",
+      "owner": "CZ-Agent",
+      "status": "in_progress",
+      "depends_on": [
+        "R07"
+      ],
+      "done_when": "展示目标/实际/状态和可追溯证据；通过者提供独立接入清单，生产动作仍需明确授权；没有通过者保留现金与待办",
+      "evidence": [
+        "sizing_20261026/README.md",
+        "sizing_20261026/summary.json",
+        "sizing_20261026/control_reproduction.json",
+        "pair_formation_20261026/README.md",
+        "pair_formation_20261026/summary.json",
+        "pair_formation_20261026/independent_audit.json"
+      ],
+      "outcome": "前两轮成本/容量未达标；第三轮协整币对只完成形成期与数值核验，双腿账户与收益仍待验证。"
+    }
+  ],
+  "production_eligible": false,
+  "orders_enabled": false,
+  "independent_oos": false,
+  "preparation_evidence": {
+    "date": "2026-10-26",
+    "title": "因果行情与策略输入已生成，账户收益尚未计算",
+    "source_records": 13,
+    "forecast_days": 608,
+    "monthly_fits": 20,
+    "hmm_forecast_days": 608,
+    "linear_forecast_days": 608,
+    "mlp_forecast_days": 608,
+    "independent_probability_max_error": 2.220446049250313e-16,
+    "prefix_cut_checks": 3,
+    "verified_official_releases": 22,
+    "warning_summary": "336个NumPy数组shape弃用警告，未出现优化未收敛警告；完整警告保留在拟合回执",
+    "profit_verified": false,
+    "states_2025": {
+      "range": 237,
+      "trend_up": 59,
+      "volatility_breakout": 42,
+      "trend_down": 27
+    }
+  },
+  "representative_actual": "第二轮在2025筛选后冻结的首选新配置：趋势保留信号幅度；1万USDT、跨年608日、两成本取保守值。没有按2026或跨年收益反选。",
+  "account_evidence": {
+    "date": "2026-10-26",
+    "accounts": 56,
+    "audit_passed": true,
+    "profit_goal_met": false,
+    "source": "sizing_20261026/summary.json",
+    "next_action": "第三轮协整币对形成期已核验，收益尚未计算；实施双腿独立成交、失败对冲退出与配对生命周期审计，再做最多26个两成本/容量账户；不追加同一形成期参数网格。",
+    "rounds": [
+      {
+        "name": "regime",
+        "accounts": 56,
+        "passed": false
+      },
+      {
+        "name": "forecast_sizing",
+        "accounts": 56,
+        "passed": false,
+        "repeated_controls": true
+      }
+    ]
+  },
+  "current_research_stage": {
+    "mechanism": "cointegrated_pairs",
+    "status": "formation_only",
+    "report": "pair_formation_20261026/README.md",
+    "account_returns_computed": false,
+    "profit_proven": false
+  }
+}

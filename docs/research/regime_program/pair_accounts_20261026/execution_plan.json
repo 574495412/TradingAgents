@@ -1,0 +1,63 @@
+{
+  "schema": "two-leg-pair-account-study.v1",
+  "formation_plan": "research_tools/regime_program/pair_plan.json",
+  "formation": "results/research/pair_formation_20261026_v001",
+  "formation_audit": "results/research/pair_formation_20261026_v001_independent_audit.json",
+  "inputs": "results/research/pair_inputs_20261026_v001",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "engine": "../freqtrade/research/crypto/pair_portfolio.py",
+  "parent_controls": "results/research/regime_accounts_20261026_v001",
+  "candidates": [
+    "pairs_fixed",
+    "pairs_rolling",
+    "cash"
+  ],
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15,
+    "max_pairs": 5,
+    "max_positions": 10,
+    "decision_hours": 4,
+    "maximum_hold_hours": 168,
+    "rearm_hours": 24,
+    "z_stop": 4,
+    "z_exit": 0.5
+  },
+  "pre_return_execution_clarifications": [
+    "Use the two preregistered formation profiles without selecting from later returns; evaluate all three candidates across all three windows.",
+    "A residual jumping across the mean also exits: sign(entry_z)*current_z<=0.5. This avoids missing the exit band when a four-hour observation overshoots it.",
+    "Failed hedges count as one cost-bearing attempted campaign, separately flagged. The100-lifecycle economic gate requires100closed hedge_matched campaigns; two legs never count as two wins.",
+    "Gross0.8 is an initial fill budget including entry costs and exit reserve. Marked gross drift is reported; no leverage or risk-budget increase. Any observed gross above equity fails admission.",
+    "Entry quantities use the prior close and prior completed-hour quote volume; submit both by a common available-volume fraction, then fill each independently at next5m adverse close. Remaining actual risk budget clips both equally after confirmed exits.",
+    "Unequal actual fill fractions queue real inventory for exit in the next interval; ownership of both symbols remains until flat. Pending exits persist through model change, risk halt and JSON restart.",
+    "Funding projection uses five complete past UTC daily sums from settled observations, excludes rebates as a gate benefit, and projects seven days. Actual funding uses observed event mark/rate, not that projection.",
+    "No forced terminal liquidation; open campaign settlement plus floating PnL and exit reserve reconciles NAV. Finite windows remain explicitly cold starts or continuous608days."
+  ],
+  "comparison": "Read the already frozen trend static control at matching capital/window/cost from the first regime study with sealed result hashes; do not reselect controls on later returns. These reused controls are not additional independent accounts.",
+  "budget_accounts_max": 26,
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "registered_at": "2026-10-25T18:12:33.601628+00:00",
+  "previous_incomplete_attempt": "/Users/chrise/GitHub/TradingAgents/results/research/pair_accounts_20261026_v001",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/run_pairs.py": "a18e0ec33a831cd7feb08455be1dbbd784054c48c0d3b761b54ab68d9b7998d1",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/pair_execution_plan.json": "4d35fde1823c3423df7146add355130dbf997f10b50a91e49b84ba4f6c8849e2",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/pair_plan.json": "9e42e5d4cf9bebc9f384db3fd9e29aba7fb408bfd37074b9f4afeff5d13b8704",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/pair_portfolio.py": "1d5c14a3f6a2bac766e8e7552a1a94d535d29b8517082ed5a9db8930fbe756fa",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/pair_account_audit.py": "c674a4d5872d7fa752b643e53c19f1eabb31a7e29857844107668df8fc128607",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/pair_storage.py": "315f4e6f60fe216bc243b4a28ae131fab9d2d03e36cfad549e4a2df2c76b4aa0",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/io.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/metrics.py": "5f47747b99bdb6376a2c8ad8b8fb181501037052ed14b1c77b0ee74822236df0",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/study.py": "a7aabf7ddd8c0231207efe802c9d495eb84ac6bf181bd822fb8c41616782d42d",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/github_factor_study/run.py": "eef625d8907602f529fe1c9fcc4ec1e15062c357a8edd9c0bd9a63335136ec01",
+    "/Users/chrise/GitHub/TradingAgents/results/research/pair_inputs_20261026_v001/completion.json": "7af1cadca1147c86089f2b1d3da17138ca1c0368fa0b440468a59a6b90785ee3",
+    "/Users/chrise/GitHub/TradingAgents/results/research/pair_inputs_20261026_v001_independent_audit.json": "ee8670c7286848830fd26e374cd8a1ad632522ecc115aa5385af648a7259f9bd",
+    "/Users/chrise/GitHub/TradingAgents/data/research/github_factor_market_20261025_v001/completion.json": "ed02f4e90f371bd6bc848464710cf8d63b135c0e68682ef0943056a24c6f7cbf"
+  }
+}

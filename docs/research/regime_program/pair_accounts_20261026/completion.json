@@ -1,0 +1,11 @@
+{
+  "manifest": {
+    "summary.json": "93307392f0af1d09e84071362d233864cfcecf689d1e9bf9cb4ab5786d7c2680",
+    "provenance.json": "d94dcbd9a960acffcaa3169f91b037e6ebb3c911fc3ca292e0533e9a785f884a",
+    "accounts.csv": "8ddecd144ae9deb482ef6d2ab799cac5d0f56a3fc9c554ade08d49fc00afab15",
+    "execution_plan.json": "be3df36705eeec07c21ba46c93e5c564fcceff5574c8fdd2ed816b8442a95ce0",
+    "README.md": "f6646e8caa2f2d14fd9c4f7e11e9862e5f6ecf077a1719ee37e503277084bb90"
+  },
+  "publication_completion_sha256": "8470808f008c1c0768f642f51c8458e950597bce78e2e36aa6988233036ed3bc",
+  "audit_passed": true
+}

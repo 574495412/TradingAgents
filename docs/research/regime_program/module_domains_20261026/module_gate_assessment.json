@@ -1,0 +1,29 @@
+{
+  "source_publication_summary_sha256": "93307392f0af1d09e84071362d233864cfcecf689d1e9bf9cb4ab5786d7c2680",
+  "source_raw_run_completion_sha256": "9f2c9cc31d9353f48b9df7d1c543d20f7b9e0e71f13275042a3bccd49f2fb6f5",
+  "assessor_sha256": "7ef329522a986b6ad68b28fb54e35fe33d8f82f6c86f9acce8aa0e19ed239ed3",
+  "new_domain_account_returns_computed": false,
+  "results": [
+    {
+      "candidate": "pairs_fixed",
+      "domain": "original preregistered formation conditions; new BTC low-trend restriction not applied",
+      "status": "no_net_edge_current_domain",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "nonpositive_marked_or_closed_pnl_after_costs"
+      ]
+    },
+    {
+      "candidate": "pairs_rolling",
+      "domain": "original preregistered formation conditions; new BTC low-trend restriction not applied",
+      "status": "evidence_insufficient",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "lifecycle_or_cluster_evidence_insufficient"
+      ],
+      "minimum_complete_lifecycles": 5
+    }
+  ]
+}

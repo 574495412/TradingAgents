@@ -1,0 +1,8 @@
+{
+  "reason": "User correction: strategy applicability differs from total-portfolio performance target",
+  "manifest": {
+    "targets.json": "b8a4bd014ca79883d8a36c4e6659a39531957f0a2c310f4a5d8af249243cbcfe",
+    "README.md": "ec3f0f8d2583577edbe03ad6765294cda272e2bce0d8c7f3e33aeb7a4f0d82d5",
+    "validation.json": "533896170e3965de03d0e7b37d1b9bded0e306d87174384a23b4be06b3f3063c"
+  }
+}

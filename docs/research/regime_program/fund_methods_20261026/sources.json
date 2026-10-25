@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-10-25T18:19:59.659981+00:00",
+  "retrieval": "official webpages read using web; no private portfolio holdings or performance data claimed",
+  "records": [
+    {
+      "title": "ARK投资流程",
+      "url": "https://www.ark-invest.com/investment-process",
+      "use": "主题/公司论点与失效纪律；主动主题研究不等于通用量化择时",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    },
+    {
+      "title": "ARK FAQ",
+      "url": "https://www.ark-invest.com/faq",
+      "use": "管理人明确risk-on/risk-off适用性，不能要求每种行情都盈利",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    },
+    {
+      "title": "Man AHL",
+      "url": "https://www.man.com/ahl",
+      "use": "多机制/多市场、效率和风险管理",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    },
+    {
+      "title": "AQR风格溢价",
+      "url": "https://www.aqr.com/insights/research/journal-article/understanding-style-premia",
+      "use": "价值/动量/Carry/防御组合",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    },
+    {
+      "title": "AQR择时与分散化",
+      "url": "https://www.aqr.com/insights/research/white-papers/tactical-tilts-and-foregone-diversification",
+      "use": "择时有分散化代价，不能默认全仓切换最好",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    },
+    {
+      "title": "Two Sigma投资管理",
+      "url": "https://www.twosigma.com/businesses/investment-management/",
+      "use": "预测、成本和风险共同决定组合；预测准确率不等于账户增量",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    },
+    {
+      "title": "桥水All Weather",
+      "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
+      "use": "按环境风险结构分散，不等于精准预测后切换",
+      "evidence_tier": "manager published methodology / expectations, not independent profit verification"
+    }
+  ]
+}

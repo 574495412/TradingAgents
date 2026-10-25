@@ -10,28 +10,41 @@
     "page_identity": true,
     "nonblank": true,
     "no_framework_overlay": true,
-    "console_clean": true,
+    "console_runtime_errors": true,
+    "no_unexpected_warnings": true,
     "screenshot": true,
     "interaction": true
   },
   "errors": [],
+  "warnings": [
+    {
+      "phase": "entry",
+      "message": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "phase": "entry",
+      "message": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    }
+  ],
   "overflow": false,
-  "interaction": "Program targets3 -> tasks9 -> open filter -> GitHub existing -> program reload -> mobile",
-  "scope": "R00目标协议和界面验证；不验证策略实现或盈利",
+  "interaction": "three-leveltargets -> totalactualsunknown -> audited26plus10references -> cost15/8 -> years2/90day7 -> coldmatched0 -> capacitynegative -> taskfilter10to3 -> oldexperimentpreserved -> mobilecontrols",
+  "scope": "v002三层目标与已审计币对账户展示，不验证总账户收益或实盘",
   "unit_tests": {
-    "passed": 31,
-    "command": "python3 -m unittest discover -s web/cockpit/scripts -p 'test_*.py' -q"
+    "owned_cockpit_service": 13,
+    "research_module_and_pair_audit": 11,
+    "two_leg_executor": 6
   },
   "build": {
     "passed": true,
-    "existing_warning": "main bundle >500kB"
+    "warning": "existing main bundle >500kB; shared stock task also editing frontend"
   },
   "protocol_checks": [
-    "依赖无未知任务",
-    "证据路径有效",
-    "60账户预算一致",
-    "实际值为空",
-    "生产/订单/独立OOS均false",
-    "三项目协议入口一致"
+    "三级目标与模块年化门槛分离",
+    "旧目标和失败记录归档",
+    "新总账户实际值为空",
+    "26新账户与10引用对照分别标注",
+    "4真实JSON恢复核验",
+    "策略卡/数据/源码在新适用域计算前登记",
+    "生产与独立OOS均未确认"
   ]
 }

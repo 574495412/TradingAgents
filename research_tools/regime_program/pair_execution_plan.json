@@ -1,0 +1,42 @@
+{
+  "schema": "two-leg-pair-account-study.v1",
+  "formation_plan": "research_tools/regime_program/pair_plan.json",
+  "formation": "results/research/pair_formation_20261026_v001",
+  "formation_audit": "results/research/pair_formation_20261026_v001_independent_audit.json",
+  "inputs": "results/research/pair_inputs_20261026_v001",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "engine": "../freqtrade/research/crypto/pair_portfolio.py",
+  "parent_controls": "results/research/regime_accounts_20261026_v001",
+  "candidates": ["pairs_fixed", "pairs_rolling", "cash"],
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15,
+    "max_pairs": 5,
+    "max_positions": 10,
+    "decision_hours": 4,
+    "maximum_hold_hours": 168,
+    "rearm_hours": 24,
+    "z_stop": 4,
+    "z_exit": 0.5
+  },
+  "pre_return_execution_clarifications": [
+    "Use the two preregistered formation profiles without selecting from later returns; evaluate all three candidates across all three windows.",
+    "A residual jumping across the mean also exits: sign(entry_z)*current_z<=0.5. This avoids missing the exit band when a four-hour observation overshoots it.",
+    "Failed hedges count as one cost-bearing attempted campaign, separately flagged. The100-lifecycle economic gate requires100closed hedge_matched campaigns; two legs never count as two wins.",
+    "Gross0.8 is an initial fill budget including entry costs and exit reserve. Marked gross drift is reported; no leverage or risk-budget increase. Any observed gross above equity fails admission.",
+    "Entry quantities use the prior close and prior completed-hour quote volume; submit both by a common available-volume fraction, then fill each independently at next5m adverse close. Remaining actual risk budget clips both equally after confirmed exits.",
+    "Unequal actual fill fractions queue real inventory for exit in the next interval; ownership of both symbols remains until flat. Pending exits persist through model change, risk halt and JSON restart.",
+    "Funding projection uses five complete past UTC daily sums from settled observations, excludes rebates as a gate benefit, and projects seven days. Actual funding uses observed event mark/rate, not that projection.",
+    "No forced terminal liquidation; open campaign settlement plus floating PnL and exit reserve reconciles NAV. Finite windows remain explicitly cold starts or continuous608days."
+  ],
+  "comparison": "Read the already frozen trend static control at matching capital/window/cost from the first regime study with sealed result hashes; do not reselect controls on later returns. These reused controls are not additional independent accounts.",
+  "budget_accounts_max": 26,
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}

@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "module_gate_assessment.json": "fcad4df5850b74cc92e45c0e8faff3525e8c02e52db9e5295400ef7e23cadc99",
+    "plan.json": "c949924162ef34d0dcfad09112c0ab115e2444038c12f8b727448308444017f0",
+    "registration.json": "f3b5ceadf8e5b7dfebc2ebc81a9f14226a50b2587b9117957831b9bb84e7d08b",
+    "cards.json": "b87c9ed2c6b2721c85bfb229ef016e45b8dd089059e4498d4329314d7caaf294",
+    "README.md": "5d8e0b508c773326d6c58eb24fd485ab3a385977df72d22889a0aafb88f9b09f",
+    "protocol.json": "16442d4a286ba8db6c0a22bc9c9f1e026d865a4efba3d964ed55addd1e07cb8e"
+  },
+  "new_domain_account_returns_computed": false,
+  "profit_verified": false
+}

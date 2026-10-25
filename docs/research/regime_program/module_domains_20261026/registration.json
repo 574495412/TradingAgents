@@ -1,0 +1,13 @@
+{
+  "registered_at": "2026-10-25T18:36:49.430914+00:00",
+  "before_new_domain_targets_and_accounts": true,
+  "history_already_viewed": true,
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/domain_plan.json": "c949924162ef34d0dcfad09112c0ab115e2444038c12f8b727448308444017f0",
+    "/Users/chrise/GitHub/TradingAgents/factors/portfolio/module_domains.json": "b87c9ed2c6b2721c85bfb229ef016e45b8dd089059e4498d4329314d7caaf294",
+    "/Users/chrise/GitHub/TradingAgents/docs/research/regime_program/targets.json": "16442d4a286ba8db6c0a22bc9c9f1e026d865a4efba3d964ed55addd1e07cb8e",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/module_gate.py": "7ef329522a986b6ad68b28fb54e35fe33d8f82f6c86f9acce8aa0e19ed239ed3",
+    "/Users/chrise/GitHub/TradingAgents/results/research/regime_inputs_20261026_v001/completion.json": "cb9a6f49f3b850debef010372d441335f347206de8d66acd8b5ccd1b4bc65a3d",
+    "/Users/chrise/GitHub/TradingAgents/results/research/regime_states_20261025_v002/completion.json": "bba262fc7b4a7eec35daa256581a98fd0bdfdd95548640aa57d2b1d182dcaef1"
+  }
+}
