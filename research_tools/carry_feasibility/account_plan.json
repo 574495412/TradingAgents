@@ -2,31 +2,89 @@
   "schema": "segregated-spot-perpetual-account-plan.v1",
   "version": "20261026_v001",
   "purpose": "Upgrade the preserved BTC/ETH hold baseline to actual5m marks, exact funding and independently filled segregated cash accounts; compare one cost-conditioned variant within the same funding mechanism. Hybrid diversification research, not a replacement for primary perpetual alpha or a claim of independent new factor discovery.",
-  "symbols": ["BTCUSDT", "ETHUSDT"],
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
   "spot_data": "data/research/spot_perpetual_feasibility_20261026_v001",
-  "mark_data": "data/research/spot_perpetual_marks_20261026_v001",
+  "mark_data": "data/research/spot_perpetual_marks_20261026_v003",
   "perpetual_data": "data/research/github_factor_market_20261025_v001",
   "factor": "factors/crypto/spot_perpetual_carry.py",
   "engine": "../freqtrade/research/crypto/spot_perpetual_account.py",
   "legacy_hold_plan": "../freqtrade/research/crypto/hedged_hold_plan.json",
   "legacy_hold_train": "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/train.json",
   "legacy_hold_scope": "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/scope_disposition.json",
-  "candidates": ["fixed_hold", "cost_guarded"],
-  "windows": [{"id":"screen2025","start":"2025-01-01","end":"2026-01-01"},{"id":"diagnostic2026","start":"2026-01-01","end":"2026-09-01"},{"id":"continuous2025_2026","start":"2025-01-01","end":"2026-09-01"}],
-  "costs_slippage_bps": [3,10],
-  "account": {"capital":10000,"spot_fee_bps":10,"perpetual_fee_bps":5,"entry_slippage_buffer_bps":10,"initial_futures_wallet_fraction":0.70,"asset_spot_fraction":0.25,"initial_gross_target":0.5,"gross_reduction_trigger":0.8,"gross_reduction_target":0.5,"participation":0.01,"drawdown_halt":0.15,"initial_margin_ratio":1.0,"maintenance_stress_ratio":0.05,"margin_exit_ratio":0.20,"rearm_hours":24},
+  "candidates": [
+    "fixed_hold",
+    "cost_guarded"
+  ],
+  "windows": [
+    {
+      "id": "screen2025",
+      "start": "2025-01-01",
+      "end": "2026-01-01"
+    },
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "account": {
+    "capital": 10000,
+    "spot_fee_bps": 10,
+    "perpetual_fee_bps": 5,
+    "entry_slippage_buffer_bps": 10,
+    "initial_futures_wallet_fraction": 0.7,
+    "asset_spot_fraction": 0.25,
+    "initial_gross_target": 0.5,
+    "gross_reduction_trigger": 0.8,
+    "gross_reduction_target": 0.5,
+    "participation": 0.01,
+    "drawdown_halt": 0.15,
+    "initial_margin_ratio": 1.0,
+    "maintenance_stress_ratio": 0.05,
+    "margin_exit_ratio": 0.2,
+    "rearm_hours": 24
+  },
   "baseline": "Same25percent aggregate spot /70percent futures wallet /5percent residual-cash initial allocation as old hold baseline, equally split fixed assets; preserve net base quantity except risk reductions. No increase from old0.5initial gross to chase return. Weekly Monday00:00UTC entry review, no periodic forced close and no upward rebalancing existing positions.",
-  "condition": {"lookback_days":28,"forecast_cost_recovery_days":60,"cost_coverage_buffer":1.25,"exit_negative_funding_days":7,"availability_delay_minutes":5,"entry":"past28day settled rate sum times60/28 exceeds1.25times stress four-leg roundtrip rate cost; uses only events available after5minutes; otherwise cash","exit":"on weekly review past7day settled rate sum negative; entry/exit thresholds frozen once, no search or fitted predictor"},
+  "condition": {
+    "lookback_days": 28,
+    "forecast_cost_recovery_days": 60,
+    "cost_coverage_buffer": 1.25,
+    "exit_negative_funding_days": 7,
+    "availability_delay_minutes": 5,
+    "entry": "past28day settled rate sum times60/28 exceeds1.25times stress four-leg roundtrip rate cost; uses only events available after5minutes; otherwise cash; exit condition must be inactive",
+    "exit": "on weekly review past7day settled rate sum negative; entry/exit thresholds frozen once, no search or fitted predictor"
+  },
   "execution": "Submit after observable decision; fill independently at next5m completed-bar trade close with side-specific slippage and each actual5m1percent quote-volume cap. Equal desired net base quantities; a partial or missing leg causes queued full unwind in subsequent intervals. Spot buy fee charged in base, spot sell fee in quote; no futures short-sale proceeds credited. No atomic hedge or imaginary spot mark cash transfer.",
   "funding": "Exact eventTime and actual markPrice; prior inventory receives or pays events in(start,end] before fills at the bar end. Newly entered inventory receives nothing at the same settlement instant. Preserve events and wallet source in ledger.",
   "risk": "Futures wallet cash is segregated from spot assets and free quote cash. Transfers only at initialisation or fully flat weekly review, with both wallets journalled; no intrahold assumption of instantaneous spot-gain collateral. Mark OHLC high plus non-positive in-bar funding gives conservative futures margin envelope; possible maintenance breach is a hard qualification failure, never interpreted as a verified exchange liquidation model. Margin<20percent,5m NAV drawdown15percent or conservative spot-low/perp-high stress envelope15percent halts new entries and requests delayed unwind. Gross drift>0.8 requests proportional reduction toward0.5. Intrabar envelopes are conservative nonsynchronous bounds, not exact tick drawdown.",
   "end_boundary": "At each registered terminal boundary, request whole-book unwind one interval before end. Retain any capacity-limited residual as marked inventory with exit reserve; do not invent liquidation fills. Continuation tests split the same unmodified full-account schedule, not concatenated cold windows.",
-  "capacity_capitals": [100000,1000000],
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
   "capacity_followup": "At most two continuous608day candidates with positive marked and closed PnL in both costs and no risk-path flags; this only selects finite capacity diagnostics, never admission or economic independence.",
-  "budgets": {"new_strategy_accounts":12,"new_capacity_accounts_max":8,"new_total_accounts_max":20,"cash_reference_rows":6},
+  "budgets": {
+    "new_strategy_accounts": 12,
+    "new_capacity_accounts_max": 8,
+    "new_total_accounts_max": 20,
+    "cash_reference_rows": 6
+  },
   "qualification": "v002module domain: both-cost net edge, sufficient completed campaigns/clusters and allocated-sleeve capacity; low turnover is not forced into30artificial cycles. Insufficient cycles remain unknown. The unchanged20percent/15percent/Sharpe1is only a future total multistrategy account target. Historical tiers, lots, order book and live liquidation are not verified by this model.",
   "parameter_grid": false,
   "independent_oos": false,
   "orders_enabled": false,
-  "production_eligible": false
+  "production_eligible": false,
+  "data_acquisition_amendment": "v001readtimeoutandv002trueJune29gapwerepreserved;v003revalidates42officialZIPsanduses576actualAPIbarsforthetwoJune29gaps.Candidate,costandriskrulesunchangedbeforeaccountPNL."
 }

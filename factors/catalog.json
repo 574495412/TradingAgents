@@ -1105,5 +1105,15 @@
     "acceptance_version": "module-allocation-portfolio.v2",
     "module_domain_status": "10audited_conditional_accounts_no_two_cost_net_edge",
     "module_domain_report": "../docs/research/regime_program/domain_accounts_20261026/README.md"
+  },
+  "structural_carry_research_registry": {
+    "module": "factors/crypto/spot_perpetual_carry.py",
+    "protocol": "research_tools/carry_feasibility/account_plan.json",
+    "mechanism": "existing_funding_family_cost_condition_diagnostic",
+    "market_scope": "hybrid_spot_perpetual_research_only",
+    "legacy_hold": "../freqtrade/research/crypto/hedged_hold_plan.json",
+    "changes": "segregated5mexecution_and_actual_marks; no new independent alpha claim",
+    "state": "preregistered_accounts_not_yet_evaluated",
+    "independent_alpha_proven": false
   }
 }
