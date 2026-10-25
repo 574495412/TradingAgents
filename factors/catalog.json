@@ -1102,6 +1102,8 @@
     "pair_report": "../docs/research/regime_program/pair_accounts_20261026/README.md",
     "module_domain_cards": "factors/portfolio/module_domains.json",
     "module_domain_protocol": "research_tools/regime_program/domain_plan.json",
-    "acceptance_version": "module-allocation-portfolio.v2"
+    "acceptance_version": "module-allocation-portfolio.v2",
+    "module_domain_status": "10audited_conditional_accounts_no_two_cost_net_edge",
+    "module_domain_report": "../docs/research/regime_program/domain_accounts_20261026/README.md"
   }
 }

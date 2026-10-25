@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "summary.json": "218195ba4b74d45de566a12d50a58aae6e2d2c940dd8bd41ccaccc1f60d92731",
+    "provenance.json": "5d2bd1fe671d352621c225385129607291c2e9e05b4284079effb93e2a05d0fc",
+    "accounts.csv": "28289b3094fbc7517e7ab8adf511b60ddcd4211dc84af5f6cdca747c2621d037",
+    "execution_plan.json": "5b75bee9ee7f837ac5cd8e30af78279ca65578f3ef3da42347a769f988b9f1c0",
+    "README.md": "f440b02e719910a71d1b76fff6b57bd771ddca5c8bdea7b87e8e4ec9ea1d4c9e",
+    "selection.json": "7e84106f59226cad0ec2c11c8f3a4894e1fc267bf71dd487824bf7a09a0ae6b7",
+    "input_validation.json": "fe47b0ebcadf66eb958e9e7c635438d0918db862c70e7186d487edaad420adbd"
+  },
+  "publication_completion_sha256": "8fb158689fe26abb3b3a8a05c0150e7ff99a947e763aa1922a174fe40a4c3de1"
+}

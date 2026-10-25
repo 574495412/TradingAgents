@@ -1,0 +1,60 @@
+{
+  "research_followups": [],
+  "assessments": [
+    {
+      "candidate": "trend_domain",
+      "phase": "screen2025",
+      "status": "no_net_edge_current_domain",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "nonpositive_marked_or_closed_pnl_after_costs"
+      ]
+    },
+    {
+      "candidate": "relative_domain",
+      "phase": "screen2025",
+      "status": "no_net_edge_current_domain",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "nonpositive_marked_or_closed_pnl_after_costs"
+      ]
+    },
+    {
+      "candidate": "carry_domain",
+      "phase": "screen2025",
+      "status": "cost_sensitive_current_domain",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "nonpositive_marked_or_closed_pnl_after_costs"
+      ]
+    },
+    {
+      "candidate": "price_reversion_domain",
+      "phase": "screen2025",
+      "status": "no_net_edge_current_domain",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "nonpositive_marked_or_closed_pnl_after_costs"
+      ]
+    },
+    {
+      "candidate": "breakout_domain",
+      "phase": "screen2025",
+      "status": "no_net_edge_current_domain",
+      "eligible_for_portfolio_test": false,
+      "production_eligible": false,
+      "reasons": [
+        "nonpositive_marked_or_closed_pnl_after_costs"
+      ]
+    }
+  ],
+  "admitted_candidates": [],
+  "later_returns_used": false,
+  "best_static": "trend",
+  "basis": "After two-cost2025screen, take at most3research followups by positive both-cost closed+marked PnL, then minimum both-cost complete-cycle count, then worst-cost expectancy, then lexical ID. Research followup is not admission. Modules with economic loss and no new failure explanation do not trigger parameter grids. Freeze list before later-account computation; never use2026ranking.",
+  "followup_is_admission": false
+}

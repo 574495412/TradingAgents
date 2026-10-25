@@ -311,9 +311,12 @@
         "accounts_20261026/selection.json",
         "pair_accounts_20261026/README.md",
         "pair_accounts_20261026/summary.json",
-        "module_domains_20261026/README.md"
+        "module_domains_20261026/README.md",
+        "domain_accounts_20261026/README.md",
+        "domain_accounts_20261026/summary.json",
+        "domain_accounts_20261026/selection.json"
       ],
-      "outcome": "v001实现和有限评估已完成；因用户纠正目标层级，v002总账户验证重新打开。"
+      "outcome": "v002条件适用域10账户完成审计与真实恢复；无两成本净收益/闭合PnL同时为正者，没有后续/总组合准入。历史证据保留，收益目标仍未完成。"
     },
     {
       "id": "R07",
@@ -334,9 +337,12 @@
         "fund_methods_20261026/README.md",
         "pair_accounts_20261026/README.md",
         "pair_accounts_20261026/summary.json",
-        "module_domains_20261026/README.md"
+        "module_domains_20261026/README.md",
+        "domain_accounts_20261026/README.md",
+        "domain_accounts_20261026/summary.json",
+        "domain_accounts_20261026/selection.json"
       ],
-      "outcome": "币对26账户财务与恢复核验完成；模块/组合/总账户改为分层验收。旧全年20%逐策略筛查保留历史，不作为新模块准入规则。"
+      "outcome": "v002条件适用域10账户完成审计与真实恢复；无两成本净收益/闭合PnL同时为正者，没有后续/总组合准入。历史证据保留，收益目标仍未完成。"
     },
     {
       "id": "R08",
@@ -357,9 +363,12 @@
         "fund_methods_20261026/README.md",
         "pair_accounts_20261026/README.md",
         "pair_accounts_20261026/summary.json",
-        "module_domains_20261026/README.md"
+        "module_domains_20261026/README.md",
+        "domain_accounts_20261026/README.md",
+        "domain_accounts_20261026/summary.json",
+        "domain_accounts_20261026/selection.json"
       ],
-      "outcome": "币对26账户财务与恢复核验完成；模块/组合/总账户改为分层验收。旧全年20%逐策略筛查保留历史，不作为新模块准入规则。"
+      "outcome": "v002条件适用域10账户完成审计与真实恢复；无两成本净收益/闭合PnL同时为正者，没有后续/总组合准入。历史证据保留，收益目标仍未完成。"
     },
     {
       "id": "R09",
@@ -405,11 +414,11 @@
   "representative_actual": "新版总账户尚未运行，实际栏保持未知。前版单策略/风险修正以及币对结果保存在各自历史报告，不能直接当作新版总组合实际值。",
   "account_evidence": {
     "date": "2026-10-26",
-    "accounts": 26,
+    "accounts": 10,
     "audit_passed": true,
     "profit_goal_met": false,
-    "source": "pair_accounts_20261026/summary.json",
-    "next_action": "先完成基金方法驱动的模块策略卡和适用域预登记；币对只有5个匹配周期、容量未过，保留证据不足；下一轮不使用全年的20%作为每个子策略门槛。",
+    "source": "domain_accounts_20261026/summary.json",
+    "next_action": "本轮5个固定适用域没有双成本净优势，停止重复调这组BTC状态过滤。下一步核查低换手、费用可覆盖的结构性资金费/基差及真实现货对冲数据；先做可行性和证据检查，不改写旧结果。",
     "rounds": [
       {
         "name": "regime",
@@ -428,14 +437,22 @@
         "passed": false,
         "sample_sufficiency": "2/5个匹配周期，不足以确认条件性优势",
         "legacy_gate": "v001全年单策略筛查保留，不追溯重判"
+      },
+      {
+        "name": "conditional_domains",
+        "accounts": 10,
+        "reused_references": 12,
+        "passed": false,
+        "research_followups": [],
+        "reason": "两成本净收益与闭合PnL不能同时为正；不是按全年20%淘汰"
       }
     ]
   },
   "current_research_stage": {
-    "mechanism": "multi_mechanism_conditional_research",
-    "status": "v002_module_domain_registration",
-    "report": "module_domains_20261026/README.md",
-    "account_returns_computed": false,
+    "mechanism": "conditional_domain_screen",
+    "status": "completed_no_frozen_followups",
+    "report": "domain_accounts_20261026/README.md",
+    "account_returns_computed": true,
     "profit_proven": false
   },
   "acceptance_version": "module-allocation-portfolio.v2",

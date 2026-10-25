@@ -1,0 +1,109 @@
+{
+  "schema": "conditional-module-research-plan.v1",
+  "version": "20261026_v001",
+  "protocol": "docs/research/regime_program/targets.json",
+  "registry": "factors/portfolio/module_domains.json",
+  "registry_snapshot": "docs/research/regime_program/module_domains_20261026/cards.json",
+  "protocol_snapshot": "docs/research/regime_program/module_domains_20261026/protocol.json",
+  "parent_inputs": "results/research/regime_inputs_20261026_v001",
+  "parent_accounts": "results/research/regime_accounts_20261026_v001",
+  "states": "results/research/regime_states_20261025_v002",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "engine": "../freqtrade/research/crypto/regime_portfolio.py",
+  "gate": "research_tools/regime_program/module_gate.py",
+  "screen_modules": [
+    "trend_domain",
+    "relative_domain",
+    "carry_domain",
+    "price_reversion_domain",
+    "breakout_domain"
+  ],
+  "screen": {
+    "id": "screen2025",
+    "start": "2025-01-01",
+    "end": "2026-01-01"
+  },
+  "diagnostics": [
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "gate_semantics": "Only assess the explicitly registered domain and intended sleeve. Never apply total-portfolio20percent annual return to each module. Positive but sparse modules remain unqualified research candidates; zero opportunities are unknown. Risk and financial integrity still required.",
+  "target_construction": "At each existing hourly decision row, copy the frozen family targets only when its already available daily state is in the card's allowed_states; otherwise request zero targets. Preserve clock/risk_scale, factor amplitude, previous normalization and net inventory until actual exits. No new forecast fitting, threshold optimization or target renormalization.",
+  "selection_before_later_diagnostics": "After two-cost2025screen, take at most3research followups by positive both-cost closed+marked PnL, then minimum both-cost complete-cycle count, then worst-cost expectancy, then lexical ID. Research followup is not admission. Modules with economic loss and no new failure explanation do not trigger parameter grids. Freeze list before later-account computation; never use2026ranking.",
+  "budgets": {
+    "new_domain_screen_max": 10,
+    "new_domain_diagnostics_max": 12,
+    "new_domain_capacity_max": 12,
+    "missing_frozen_family_controls_max": 12,
+    "total_new_accounts_max": 46,
+    "reference_controls_reused_not_new_samples": true
+  },
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
+  "capacity_scope": "Report tested sleeve capital/mean and peak utilization/hedge failures; a module need only support its intended allocation. Combined100kportfolio capacity must later be verified on shared orders, not inferred by adding individual capacities.",
+  "module_correlation": "Compare actual daily net PnL, downside and overlap at contemporaneous opportunity clocks. Different names or parameter values are not independent mechanisms.",
+  "portfolio_next": "Only after at least2mechanisms have sufficient module evidence, preregister static diversified, past-risk-scaled and bounded-state-tilt common-account allocations plus ablations. Otherwise continue research or remain cash; do not manufacture a multi-strategy result.",
+  "interpretation": "These cards are formulated after viewing prior history. Registration precedes only the next calculations; it does not restore untouched OOS. Broad BTC state is a coarse observable proxy, not proof each asset shares that regime.",
+  "parameter_grid": false,
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "registered_at": "2026-10-25T19:01:42.212651+00:00",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/run_domains.py": "632f163d429a0168476db85f7170179721e4ccad09be0f2dbc31d6e527291482",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/regime_portfolio.py": "f0fb65b16615ed7de3f80a798881bba7a0243db4c662ea0e0f59b5009f4d78f2",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/module_gate.py": "7ef329522a986b6ad68b28fb54e35fe33d8f82f6c86f9acce8aa0e19ed239ed3",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/account_audit.py": "d90f363014c18d5bc6c44bcfb0a5e93d376c39992700ff8969b75d254a43b59a",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/storage.py": "079e453884cda2f5f8868fbff7310bd94facf3156d7055c30b3e3b12eac994ba",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/regime_program/reporting.py": "7432d48f9469e1de9913e53b479a55a48fb3ff81e192e0fb1a9bb30ee7468ed9",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/metrics.py": "5f47747b99bdb6376a2c8ad8b8fb181501037052ed14b1c77b0ee74822236df0",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/io.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/factor_lab/study.py": "a7aabf7ddd8c0231207efe802c9d495eb84ac6bf181bd822fb8c41616782d42d",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/github_factor_study/run.py": "eef625d8907602f529fe1c9fcc4ec1e15062c357a8edd9c0bd9a63335136ec01",
+    "/Users/chrise/GitHub/TradingAgents/docs/research/regime_program/module_domains_20261026/protocol.json": "16442d4a286ba8db6c0a22bc9c9f1e026d865a4efba3d964ed55addd1e07cb8e",
+    "/Users/chrise/GitHub/TradingAgents/docs/research/regime_program/module_domains_20261026/cards.json": "b87c9ed2c6b2721c85bfb229ef016e45b8dd089059e4498d4329314d7caaf294",
+    "/Users/chrise/GitHub/TradingAgents/results/research/domain_inputs_20261026_v001/completion.json": "6c7d0edb5b937057a0f775e548fe38edbbcb9faf99abe0b576e0c4b82cadaa0c",
+    "/Users/chrise/GitHub/TradingAgents/results/research/domain_inputs_20261026_v001_independent_audit.json": "fe47b0ebcadf66eb958e9e7c635438d0918db862c70e7186d487edaad420adbd",
+    "/Users/chrise/GitHub/TradingAgents/data/research/github_factor_market_20261025_v001/completion.json": "ed02f4e90f371bd6bc848464710cf8d63b135c0e68682ef0943056a24c6f7cbf",
+    "/Users/chrise/GitHub/TradingAgents/results/research/regime_accounts_20261026_v001/completion.json": "f6f3b80404797f22e6aa47a86e812dfdb79fd275cfb93717acafe879b44a22ed"
+  },
+  "inputs": "/Users/chrise/GitHub/TradingAgents/results/research/domain_inputs_20261026_v001",
+  "mechanism_groups": {
+    "trend_domain": "price_persistence",
+    "relative_domain": "price_persistence",
+    "breakout_domain": "price_persistence",
+    "carry_domain": "funding_plus_momentum_unseparated",
+    "price_reversion_domain": "price_reversion"
+  },
+  "implementation_clarifications": [
+    "Missing full-family controls are generated only in diagnostic windows. Capacity comparisons use already frozen static trend and actual cash controls; missing own-family capacity is left unavailable.",
+    "All high-cost2025module accounts verify real JSON continuation at first entry or a fixed flat boundary; selection uses only registered two-cost2025metrics.",
+    "Trend, relative momentum and breakout are not automatically independent mechanisms. Funding-plus-momentum requires a same-opportunity funding-term ablation before claiming separate funding alpha."
+  ]
+}

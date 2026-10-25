@@ -1,0 +1,10 @@
+{
+  "schema": "independent-domain-input-audit.v1",
+  "passed": true,
+  "input_completion_sha256": "6c7d0edb5b937057a0f775e548fe38edbbcb9faf99abe0b576e0c4b82cadaa0c",
+  "target_values_checked": 2918400,
+  "allowed_hourly_rows": 36048,
+  "maximum_error": 0.0,
+  "auditor_sha256": "366b9e3c0cc9e9fc3016affd60d25c75657707e89709953496e666b65ad3f18b",
+  "account_returns_computed": false
+}
