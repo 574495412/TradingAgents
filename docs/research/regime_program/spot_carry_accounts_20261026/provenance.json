@@ -1,0 +1,11 @@
+{
+  "run_completion_sha256": "57bae7a56aab907d9ed510f142664cb9569d2d39fcd7d0540bf6e499dc8673af",
+  "publication_source_sha256": "b958c521852655b06e6c48c4e44274eeaf459fccd1320130a9d71374bd8c856c",
+  "mark_completion_sha256": "8e95e35ac289f3d5f0cd18d9d83023417d2cab581ef99a7dae5c66932d26e056",
+  "raw_run": "results/research/spot_carry_accounts_20261026_v002",
+  "prior_batch_raw_reproduction_boolean_note": "raw previous_attempt_audit_passed=false described incomplete batch; corrected per-case audit presence in publication without changing raw receipts",
+  "finalizer_source_sha256": "47d37fe4ddf3c80ea97585885375f1745371a8ec3990db5f01883cdbccca4e05",
+  "process_restart_audit_sha256": "afa7c7dbfdc11f557bedaab34482f585d7aecb34889af0f58d74b4dc1ce3ddeb",
+  "periods_recomputed_from_bound_curves": true,
+  "all_state_and_period_totals_reconcile": true
+}

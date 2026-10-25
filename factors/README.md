@@ -70,3 +70,5 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 `common/github_formulas.py` 保存PST的3个日频规则、Qlib的2个具体价量公式及Sentinel组合映射；固定源码commit与研究状态登记在 `catalog.json.github_research_registry`。这是来源明确的数学适配，不能继承原股票／期货工作流的收益声明；5个公式和3个组合不等于8个独立盈利因子。13个仓库筛选、40币数据质量及46个完整账户见 [GitHub复现报告](../docs/research/github_factor_study_20261025/README.md)。
 
 `portfolio/module_domains.json` 集中登记7张条件性模块／风控卡；这属于适用域与失效假设，不增加已验证因子数。模块、配置和总账户分别按v002协议验收，不要求每个策略全年20%或覆盖所有行情。已完成其中5类既有策略的10个条件账户，未取得双成本净优势；见[完整结果](../docs/research/regime_program/domain_accounts_20261026/README.md)，[预登记与解释](../docs/research/regime_program/module_domains_20261026/README.md)保留原版本。
+
+`crypto/spot_perpetual_carry.py` 保存既有资金费机制的一次固定成本条件对照，另有固定持有基线；不改原74列，也不计作两个独立收益源。真实现货库存与永续钱包由Freqtrade研究引擎分别核算；20成本／区间／容量账户已独立重建，4次持仓检查点经新进程恢复一致，但只有2/7个完整周期，仍证据不足。见[分账账户结果](../docs/research/regime_program/spot_carry_accounts_20261026/README.md)。股票不能直接使用加密资金费与交易日历规则。

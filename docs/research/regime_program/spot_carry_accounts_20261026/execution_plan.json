@@ -1,0 +1,124 @@
+{
+  "schema": "segregated-spot-perpetual-account-plan.v1",
+  "version": "20261026_v001",
+  "purpose": "Upgrade the preserved BTC/ETH hold baseline to actual5m marks, exact funding and independently filled segregated cash accounts; compare one cost-conditioned variant within the same funding mechanism. Hybrid diversification research, not a replacement for primary perpetual alpha or a claim of independent new factor discovery.",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "spot_data": "data/research/spot_perpetual_feasibility_20261026_v001",
+  "mark_data": "data/research/spot_perpetual_marks_20261026_v003",
+  "perpetual_data": "data/research/github_factor_market_20261025_v001",
+  "factor": "factors/crypto/spot_perpetual_carry.py",
+  "engine": "../freqtrade/research/crypto/spot_perpetual_account.py",
+  "legacy_hold_plan": "../freqtrade/research/crypto/hedged_hold_plan.json",
+  "legacy_hold_train": "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/train.json",
+  "legacy_hold_scope": "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/scope_disposition.json",
+  "candidates": [
+    "fixed_hold",
+    "cost_guarded"
+  ],
+  "windows": [
+    {
+      "id": "screen2025",
+      "start": "2025-01-01",
+      "end": "2026-01-01"
+    },
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "account": {
+    "capital": 10000,
+    "spot_fee_bps": 10,
+    "perpetual_fee_bps": 5,
+    "entry_slippage_buffer_bps": 10,
+    "initial_futures_wallet_fraction": 0.7,
+    "asset_spot_fraction": 0.25,
+    "initial_gross_target": 0.5,
+    "gross_reduction_trigger": 0.8,
+    "gross_reduction_target": 0.5,
+    "participation": 0.01,
+    "drawdown_halt": 0.15,
+    "initial_margin_ratio": 1.0,
+    "maintenance_stress_ratio": 0.05,
+    "margin_exit_ratio": 0.2,
+    "rearm_hours": 24
+  },
+  "baseline": "Same25percent aggregate spot /70percent futures wallet /5percent residual-cash initial allocation as old hold baseline, equally split fixed assets; preserve net base quantity except risk reductions. No increase from old0.5initial gross to chase return. Weekly Monday00:00UTC entry review, no periodic forced close and no upward rebalancing existing positions.",
+  "condition": {
+    "lookback_days": 28,
+    "forecast_cost_recovery_days": 60,
+    "cost_coverage_buffer": 1.25,
+    "exit_negative_funding_days": 7,
+    "availability_delay_minutes": 5,
+    "entry": "past28day settled rate sum times60/28 exceeds1.25times stress four-leg roundtrip rate cost; uses only events available after5minutes; otherwise cash; exit condition must be inactive",
+    "exit": "on weekly review past7day settled rate sum negative; entry/exit thresholds frozen once, no search or fitted predictor"
+  },
+  "execution": "Submit after observable decision; fill independently at next5m completed-bar trade close with side-specific slippage and each actual5m1percent quote-volume cap. Equal desired net base quantities; a partial or missing leg causes queued full unwind in subsequent intervals. Spot buy fee charged in base, spot sell fee in quote; no futures short-sale proceeds credited. No atomic hedge or imaginary spot mark cash transfer.",
+  "funding": "Exact eventTime and actual markPrice; prior inventory receives or pays events in(start,end] before fills at the bar end. Newly entered inventory receives nothing at the same settlement instant. Preserve events and wallet source in ledger.",
+  "risk": "Futures wallet cash is segregated from spot assets and free quote cash. Transfers only at initialisation or fully flat weekly review, with both wallets journalled; no intrahold assumption of instantaneous spot-gain collateral. Mark OHLC high plus non-positive in-bar funding gives conservative futures margin envelope; possible maintenance breach is a hard qualification failure, never interpreted as a verified exchange liquidation model. Margin<20percent,5m NAV drawdown15percent or conservative spot-low/perp-high stress envelope15percent halts new entries and requests delayed unwind. Gross drift>0.8 requests proportional reduction toward0.5. Intrabar envelopes are conservative nonsynchronous bounds, not exact tick drawdown.",
+  "end_boundary": "At each registered terminal boundary, request whole-book unwind one interval before end. Retain any capacity-limited residual as marked inventory with exit reserve; do not invent liquidation fills. Continuation tests split the same unmodified full-account schedule, not concatenated cold windows.",
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
+  "capacity_followup": "At most two continuous608day candidates with positive marked and closed PnL in both costs and no risk-path flags; this only selects finite capacity diagnostics, never admission or economic independence.",
+  "budgets": {
+    "new_strategy_accounts": 12,
+    "new_capacity_accounts_max": 8,
+    "new_total_accounts_max": 20,
+    "cash_reference_rows": 6
+  },
+  "qualification": "v002module domain: both-cost net edge, sufficient completed campaigns/clusters and allocated-sleeve capacity; low turnover is not forced into30artificial cycles. Insufficient cycles remain unknown. The unchanged20percent/15percent/Sharpe1is only a future total multistrategy account target. Historical tiers, lots, order book and live liquidation are not verified by this model.",
+  "parameter_grid": false,
+  "independent_oos": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "data_acquisition_amendment": "v001readtimeoutandv002trueJune29gapwerepreserved;v003revalidates42officialZIPsanduses576actualAPIbarsforthetwoJune29gaps.Candidate,costandriskrulesunchangedbeforeaccountPNL.",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/carry_feasibility/run_accounts.py": "a2aadc857067e12f5d7810ab292063851527e86abf8be464aaa6df5769374eb2",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/carry_feasibility/account_plan.json": "87415b2280024ba6878e0c834adf1d7e6de2bbf215cf7f68c76531f3e3c87723",
+    "../freqtrade/research/crypto/spot_perpetual_account.py": "8e377b19cff144974ec77bf80d32d70c8dee46d07cc1cb71810ccedd146e6f8d",
+    "factors/crypto/spot_perpetual_carry.py": "b1c9150565410325e34fef7535c65ca78d4223cb6874f3073db9c90258016fa1",
+    "research_tools/carry_feasibility/account_audit.py": "f7822b7aa68998c004c6c9db79d4c392eb4c6c835876ce8c610f6da73d6c0614",
+    "research_tools/factor_lab/io.py": "6df5e23975811f0ef16f4cdb9272a08bb4fb7a9d3ce92aba0af3f7996f22a5a7",
+    "research_tools/factor_lab/metrics.py": "5f47747b99bdb6376a2c8ad8b8fb181501037052ed14b1c77b0ee74822236df0",
+    "research_tools/factor_lab/study.py": "a7aabf7ddd8c0231207efe802c9d495eb84ac6bf181bd822fb8c41616782d42d",
+    "research_tools/github_factor_study/run.py": "eef625d8907602f529fe1c9fcc4ec1e15062c357a8edd9c0bd9a63335136ec01",
+    "research_tools/regime_program/module_gate.py": "7ef329522a986b6ad68b28fb54e35fe33d8f82f6c86f9acce8aa0e19ed239ed3",
+    "research_tools/regime_program/reporting.py": "7432d48f9469e1de9913e53b479a55a48fb3ff81e192e0fb1a9bb30ee7468ed9",
+    "results/research/spot_carry_accounts_20261026_v002/protocol.json": "cd9bb3c619f9e94b161fa804dd466b3447e8756239282e90dd30e049ba0011e7",
+    "../freqtrade/research/crypto/hedged_hold_plan.json": "bfa2e1e6fab74eb9361f7f86014431a9c621c036d0d2b02d59b43c0887533578",
+    "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/train.json": "53190d391b4d3d74858ccc0926e8e9ed27530896c3cab3f89956578318f40db7",
+    "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/scope_disposition.json": "2879aa0b865a72ee1d9e321d5c3570a2baa5742aab126c28678b05a8250e5562",
+    "results/research/spot_carry_accounts_20261026_v001/plan.json": "e8330e0865d4126a8e0c555fa2b8f68d4f16048909b3367ece2b72f77399f6e7",
+    "results/research/spot_carry_accounts_20261026_v001/accounts/screen2025_fixed_hold_cap10000_slip3/result.json": "5e54cd61a498b1cbaeb0536d1624c8cd038a34fc3992e64c197de74949d813db",
+    "results/research/spot_carry_accounts_20261026_v001/accounts/screen2025_fixed_hold_cap10000_slip10/result.json": "fe369c15c9e197cbc39a45b355741599036310d1e86fd4ee58f23f9e3d7c0c47",
+    "results/research/spot_carry_accounts_20261026_v001/accounts/screen2025_cost_guarded_cap10000_slip3/result.json": "fa9d318083aa6ac8973b82e796ed94c6013b6698769fe8ba3d34c8d638f4f1fe",
+    "results/research/spot_carry_accounts_20261026_v001/accounts/screen2025_fixed_hold_cap10000_slip3/equity_5m.parquet": "4c92e2365385def37c86f5291cda1842540b73fdf0f6c904b2dabc48028f36eb",
+    "results/research/spot_carry_accounts_20261026_v001/accounts/screen2025_fixed_hold_cap10000_slip10/equity_5m.parquet": "0e019af15b62ac95cfc4b00f46ff64f5e172355e9141e3d1082c91307fd242f2",
+    "results/research/spot_carry_accounts_20261026_v001/accounts/screen2025_cost_guarded_cap10000_slip3/equity_5m.parquet": "7636ed866ec61445be1cba85c8e29e0837c1ec26ff1169280d22abb06e66d776",
+    "data/research/spot_perpetual_feasibility_20261026_v001/completion.json": "ac22b236d2def51da8582e1578e7c8a2200828b8ce95645ec871b384bbb80c4b",
+    "data/research/spot_perpetual_marks_20261026_v003/completion.json": "8e95e35ac289f3d5f0cd18d9d83023417d2cab581ef99a7dae5c66932d26e056",
+    "data/research/github_factor_market_20261025_v001/completion.json": "ed02f4e90f371bd6bc848464710cf8d63b135c0e68682ef0943056a24c6f7cbf",
+    "data/research/github_factor_market_20261025_v001/BTCUSDT_5m.parquet": "15294b1ef8acd9c83f6a350d894a18af096bd4b5c26bce2ebaa633172f2f092d",
+    "data/research/github_factor_market_20261025_v001/ETHUSDT_5m.parquet": "a3ccf07b5c45adfabe6ba8eec23396e1510947d6112a69082e772d3da20e654a",
+    "results/research/regime_states_20261025_v002/completion.json": "bba262fc7b4a7eec35daa256581a98fd0bdfdd95548640aa57d2b1d182dcaef1",
+    "results/research/regime_states_20261025_v002/states_daily.parquet": "ff9144a0234ee3b58695133776312e698c56688f1a30d437ffc5fee1cbf2ceab",
+    "results/research/regime_states_20261025_v002/event_risk_hourly.parquet": "c5abc09e5b5cbf8ccdbb5b29aa765abebb2cd30dae00f25dc46b3602bca7cab0"
+  },
+  "registered_at_utc": "2026-10-25T20:07:10.660274+00:00",
+  "pid": 30714
+}

@@ -1113,7 +1113,9 @@
     "market_scope": "hybrid_spot_perpetual_research_only",
     "legacy_hold": "../freqtrade/research/crypto/hedged_hold_plan.json",
     "changes": "segregated5mexecution_and_actual_marks; no new independent alpha claim",
-    "state": "preregistered_accounts_not_yet_evaluated",
-    "independent_alpha_proven": false
+    "state": "20_audited_accounts_evidence_insufficient",
+    "independent_alpha_proven": false,
+    "report": "../docs/research/regime_program/spot_carry_accounts_20261026/README.md",
+    "actual_process_restarts": 4
   }
 }

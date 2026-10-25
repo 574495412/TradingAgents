@@ -1,0 +1,15 @@
+{
+  "manifest": {
+    "summary.json": "9009309d38856b4612da9aff7092d87df72d62fd65dbb02a13c663d7cd823727",
+    "provenance.json": "b810753f663749067bb61b3b62c625eddeb2a284a6de1a178f38a5f28009e4f9",
+    "accounts.csv": "7cf7d3c635a3b389f1f8be40a72db09239e619ebf7a38e449277accb8ebd8ea2",
+    "execution_plan.json": "d8f7346eeef2305eff7b8bbe399bb4b8ad0782e83c26f1b2b9fe13cd7c42c2e6",
+    "README.md": "d98c1ec1916b017e7e12fa06555c0a6e8af7830df857e59f2f751a3800711f1b",
+    "process_restart_audit.json": "afa7c7dbfdc11f557bedaab34482f585d7aecb34889af0f58d74b4dc1ce3ddeb",
+    "mark_data_summary.json": "23931288954770ea018cce29e6b8f578607173a0565c00f573c73e5d705e654e"
+  },
+  "audit_passed": true,
+  "actual_accounts": 20,
+  "reused_references": 6,
+  "profit_proven": false
+}

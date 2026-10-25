@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "account": "continuous2025_2026_fixed_hold_cap10000_slip10",
+      "split": "2025-01-01T00:05:00+00:00",
+      "passed": true,
+      "first_pid": 30969,
+      "restored_pid": 30975,
+      "checkpoint_sha256": "6c0ba61a33c022f7ad0e870ef5aa701886936ca4b23435cf731119070aa00f3f",
+      "open_positions_at_split": 2,
+      "curve_and_all_ledgers_exact": true
+    },
+    {
+      "account": "continuous2025_2026_fixed_hold_cap10000_slip10",
+      "split": "2026-01-01",
+      "passed": true,
+      "first_pid": 30988,
+      "restored_pid": 30991,
+      "checkpoint_sha256": "deeadf4fd75193ee69ff614fa44b3535c0a9946a8214c396d04f89fabe576e3a",
+      "open_positions_at_split": 2,
+      "curve_and_all_ledgers_exact": true
+    },
+    {
+      "account": "continuous2025_2026_cost_guarded_cap10000_slip10",
+      "split": "2025-01-01T00:05:00+00:00",
+      "passed": true,
+      "first_pid": 30992,
+      "restored_pid": 30993,
+      "checkpoint_sha256": "6c0ba61a33c022f7ad0e870ef5aa701886936ca4b23435cf731119070aa00f3f",
+      "open_positions_at_split": 2,
+      "curve_and_all_ledgers_exact": true
+    },
+    {
+      "account": "continuous2025_2026_cost_guarded_cap10000_slip10",
+      "split": "2026-01-01",
+      "passed": true,
+      "first_pid": 30995,
+      "restored_pid": 30996,
+      "checkpoint_sha256": "194749b28cdc7c0fc5ba7a35a585fad21499ea74349c974c7705cce3d1ef36ea",
+      "open_positions_at_split": 2,
+      "curve_and_all_ledgers_exact": true
+    }
+  ],
+  "run_completion_sha256": "57bae7a56aab907d9ed510f142664cb9569d2d39fcd7d0540bf6e499dc8673af",
+  "controller_source_sha256": "da12831ad8dc8d1f60b258c1955be12b11fce4c1d0b2bc2cfbc3577c442d8bc8",
+  "worker_source_sha256": "03a66f211c3c8e1c30e0240345659bf3e633c5f303bfc34082b5b867b77adb34"
+}

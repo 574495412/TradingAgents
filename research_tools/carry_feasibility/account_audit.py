@@ -21,6 +21,7 @@ def audit_account(folder, spot, perpetual, marks, funding):  # noqa: C901
         raise ValueError("Account curve has calendar gaps")
     n = len(curve)
     quote_delta, future_delta, negative_funding = np.zeros(n), np.zeros(n), np.zeros(n)
+    transfer_future_delta = np.zeros(n)
     spot_delta = {s: np.zeros(n) for s in spot}
     short_delta = {s: np.zeros(n) for s in spot}
     basis_delta = {s: np.zeros(n) for s in spot}
@@ -36,7 +37,7 @@ def audit_account(folder, spot, perpetual, marks, funding):  # noqa: C901
     decisions = {pd.Timestamp(r["time"]): r for r in read(folder / "signals.json")}
     for e in events:
         t = pd.Timestamp(e["time"])
-        effective = t.ceil("5min")
+        effective = pd.Timestamp(e["effective_time"]) if e["type"] == "transfer" else t.ceil("5min")
         i = times.get_loc(effective)
         if e["type"] == "transfer":
             if positions:
@@ -45,6 +46,7 @@ def audit_account(folder, spot, perpetual, marks, funding):  # noqa: C901
                 raise ValueError("Wallet transfer conservation failed")
             quote_delta[i] += e["quote_delta"]
             future_delta[i] += e["futures_delta"]
+            transfer_future_delta[i] += e["futures_delta"]
             continue
         s, identity = e["symbol"], e["position_id"]
         key = (s, identity)
@@ -164,7 +166,7 @@ def audit_account(folder, spot, perpetual, marks, funding):  # noqa: C901
         envelope_reserve += sq[:-1] * low * (sf + slip) + pq[:-1] * trade_high * (pf + slip)
         envelope_short += pq[:-1] * high
     nav = quote + future + assets + floating - reserve
-    margin_low = future[:-1] + negative_funding[1:] + envelope_float
+    margin_low = future[:-1] + transfer_future_delta[1:] + negative_funding[1:] + envelope_float
     stress_nav = (
         quote[:-1]
         + future[:-1]

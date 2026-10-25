@@ -1,0 +1,405 @@
+{
+  "schema": "actual-mark-path-data.v1",
+  "archives": [
+    {
+      "symbol": "BTCUSDT",
+      "month": "2024-12",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2024-12.zip",
+      "sha256": "14d46f61a5e91a03a81d7cb2b470fa6cad4e1ec3ca2c2e28ca0aa19242d2b526",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-01",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-01.zip",
+      "sha256": "7dfcb53ed40298c6a28e2220a5a87ff429b405c4a45b2947c00731383be6b1e0",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-02",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-02.zip",
+      "sha256": "2ae377c8d976ed316e15ddf22c7b871b09c7485bec6bf7a393d9daf425412212",
+      "rows": 8064,
+      "archive_rows": 8064,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-03",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-03.zip",
+      "sha256": "8881a1d4fe8064d804a76fac7b8daa4c74585a5c6dc571f0aa0cd8091d726103",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-04",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-04.zip",
+      "sha256": "1aad080659abd851eafc5fca907a7439389aef934386a9ed6de1cefc52b24604",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-05",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-05.zip",
+      "sha256": "d4e3df625e651e5d9c172e14bfd65d2ea0e8034ab6eb2826225ef7fc4a958282",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-06",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-06.zip",
+      "sha256": "06175d7a395b12dcfd273cd6a3a9bc1ad0c6372f8865ab5ad8767421f4d34460",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-07",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-07.zip",
+      "sha256": "a2a7767cf9d5a15c4ede0f120e8e8ecf9a732d2875eaa72d08b700d4d8cf10a6",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-08",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-08.zip",
+      "sha256": "f2a26b31c8d5b24045758f712018fdb1c9846e2a4a2018735460981ef8f82e08",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-09",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-09.zip",
+      "sha256": "af347edb4fc9de1f6c1dde780848871589282ad3b5ef6548bc8dd7ed7b104c66",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-10",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-10.zip",
+      "sha256": "6ad408769d0829506395a73debe260a30336b524967710bbbf725b92185d0d2d",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-11",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-11.zip",
+      "sha256": "f4a73ec1949e36575d2d879f95b0d07a3539b219f9b17cea4f9967e29f980733",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2025-12",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2025-12.zip",
+      "sha256": "9ca4f9f8cbb8df53401f4cfd632203f8c170a27befaeb48e108f949852cbb006",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-01",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-01.zip",
+      "sha256": "c8ecb38b48badd12941be2d110d5effb104c460d4b110418f1476c7dc42baa6d",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-02",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-02.zip",
+      "sha256": "e65adc4af92074f9d76566119f921e5357cc88c3d41dff183ac3cb13541fe797",
+      "rows": 8064,
+      "archive_rows": 8064,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-03",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-03.zip",
+      "sha256": "771f18260247dc7f2809adba097a7f3cb98914b87429d89d5a80cc4bd7915c64",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-04",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-04.zip",
+      "sha256": "042a7dbe721dfe5935072f156a302c957672cf1884ea3bf87dc6886e9fe7dbf9",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-05",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-05.zip",
+      "sha256": "64c96470917268a97237b9be899ce7346765b94f2009ce7a1f23ed8963cd7a9b",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-06",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-06.zip",
+      "sha256": "e02cf899d32a506fcb3165e795040dadea291989bdd12082bec1a83875d908fc",
+      "rows": 8640,
+      "archive_rows": 8352,
+      "actual_api_repair_rows": 288
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-07",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-07.zip",
+      "sha256": "dd6dad968f6e95915057748b734a749ae5f6751043706c33affeef173a31c840",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "month": "2026-08",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/5m/BTCUSDT-5m-2026-08.zip",
+      "sha256": "132ad3a82af62c145d10b1e6b88db264f28767c1a6d1bc838313db91e12e4708",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2024-12",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2024-12.zip",
+      "sha256": "9bf065be38673801ca882ed606838214671e6ed74d76046eb87434d7bf8fad43",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-01",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-01.zip",
+      "sha256": "fda09e02141279c8e27eb84ab2ebd8c44c7e802986c0e0d29b53fa2ce3c0a700",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-02",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-02.zip",
+      "sha256": "bbaa1c16fd79950fb4ce8f571011d5ae6e95f7fbecdeacfc31b2d602435a3150",
+      "rows": 8064,
+      "archive_rows": 8064,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-03",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-03.zip",
+      "sha256": "e20e70d17d10a2e39c8cf33b8828e10d7e032a50a9018602383f557963f19b17",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-04",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-04.zip",
+      "sha256": "59903c5f750d49bc9124a5f070d4319536652b2ac1eefc56a1727f5ecdcf5698",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-05",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-05.zip",
+      "sha256": "c2d67fa177a057109958e5c29694a54f395a4b49ae1980ba11a8d0121a8e9a3f",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-06",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-06.zip",
+      "sha256": "276d590de55103e64d1e521ba6863b53ff074a61f715f7830508e6933aba438c",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-07",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-07.zip",
+      "sha256": "daffcdf4d69733fcbf2f9d2ac5b307c72a04ef0d8c034b862e8a173d68b5efaa",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-08",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-08.zip",
+      "sha256": "dd38dc974003b0fc88dbc428af6f6353235bf8851b641e38181933ba9a2ff9af",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-09",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-09.zip",
+      "sha256": "5c555539585d6f7271828690182a1a28931751620b3768ebebef94827c8d6ce2",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-10",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-10.zip",
+      "sha256": "9acfb29169648757ffa7191a25347481b958c8a753ee93fa857a4aa56c1a6d18",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-11",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-11.zip",
+      "sha256": "1483c2dd0b18e2b8dc591b8bfde0301726568aaaa604fb62e941ee80c0708117",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2025-12",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2025-12.zip",
+      "sha256": "e86dca4746dc9c38423b90284246c4b2cb65474bcbe7e45185b9a677c45802d4",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-01",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-01.zip",
+      "sha256": "c0a948e2be30dfccc83ac915a7e990ee240e28b16ae587819cbf7bf6926102fa",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-02",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-02.zip",
+      "sha256": "963619670d8b2e997080158557dec4bd66cae66c70110d7bcd83a3bcc2460c63",
+      "rows": 8064,
+      "archive_rows": 8064,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-03",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-03.zip",
+      "sha256": "f23b021c70ef1945ba57e6b94ededa85a078982790972ec3de6bda167cfc1400",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-04",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-04.zip",
+      "sha256": "583093e90d14b4e75e4a0c11a1ad530b037d78e4047102578d67d478360709bf",
+      "rows": 8640,
+      "archive_rows": 8640,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-05",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-05.zip",
+      "sha256": "ac3b27e40a4f4247cd9daa535f5a1ce29cf856b71be3409bfdfe36edf555a185",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-06",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-06.zip",
+      "sha256": "de38736aea72c09d2802071b7c49bb108557fc5a5c81022bf8d706fd7e42430d",
+      "rows": 8640,
+      "archive_rows": 8352,
+      "actual_api_repair_rows": 288
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-07",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-07.zip",
+      "sha256": "1f8219a7f16fa1d5269f96a4afa4511b8e979863666d333559e073657d79180f",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "month": "2026-08",
+      "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/5m/ETHUSDT-5m-2026-08.zip",
+      "sha256": "2eaacf0f8ddb5f07ceab41d407672b139c00741e551e7e998934afe2486c4c14",
+      "rows": 8928,
+      "archive_rows": 8928,
+      "actual_api_repair_rows": 0
+    }
+  ],
+  "counts": [
+    {
+      "symbol": "BTCUSDT",
+      "rows": 184032,
+      "raw_price_values": 736128,
+      "passed": true
+    },
+    {
+      "symbol": "ETHUSDT",
+      "rows": 184032,
+      "raw_price_values": 736128,
+      "passed": true
+    }
+  ],
+  "independent_csv_audit_passed": true,
+  "maximum_price_error": 0.0,
+  "raw_api_sample_bars": 2,
+  "actual_api_gap_repair_bars": 576,
+  "start": "2024-12-01T00:00:00Z",
+  "end_exclusive": "2026-09-01T00:00:00Z",
+  "financial_accounts": 0,
+  "profit_proven": false
+}

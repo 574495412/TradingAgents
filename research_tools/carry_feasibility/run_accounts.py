@@ -55,7 +55,7 @@ def restart(engine, inputs, signals, config, window, full, split):
     }
 
 
-def run(root):
+def run(root, previous_attempt=None):
     root.mkdir(parents=True, exist_ok=False)
     (root / "accounts").mkdir()
     (root / "source_snapshot").mkdir()
@@ -85,6 +85,12 @@ def run(root):
     source_files += [
         Path(plan[k]) for k in ["legacy_hold_plan", "legacy_hold_train", "legacy_hold_scope"]
     ]
+    if previous_attempt:
+        source_files += (
+            [previous_attempt / "plan.json"]
+            + list((previous_attempt / "accounts").glob("*/result.json"))
+            + list((previous_attempt / "accounts").glob("*/equity_5m.parquet"))
+        )
     source_files += [
         spot_root / "completion.json",
         mark_root / "completion.json",
@@ -127,6 +133,7 @@ def run(root):
         state_root / "event_risk_hourly.parquet"
     ).covered_fomc_post_release
     rows, audits, restarts = [], [], []
+    reproduced = []
 
     def one(candidate, window, cost, phase, capital=10000):
         config = {**plan["account"], "capital": capital, "slippage_bps": cost}
@@ -192,6 +199,31 @@ def run(root):
             "source_hashes": {p.name: sha(p) for p in folder.iterdir()},
         }
         save(folder / "result.json", result)
+        if previous_attempt and (previous_attempt / "accounts" / identity / "result.json").exists():
+            old = previous_attempt / "accounts" / identity
+            pd.testing.assert_frame_equal(a["curve"], pd.read_parquet(old / "equity_5m.parquet"))
+            if m != read(old / "result.json")["metrics"]:
+                raise ValueError("Journal repair changed prior economic metrics")
+            normalised = [
+                {
+                    k: v
+                    for k, v in e.items()
+                    if not (e["type"] == "transfer" and k == "effective_time")
+                }
+                for e in a["events"]
+            ]
+            if normalised != read(old / "events.json"):
+                raise ValueError("Journal repair changed prior economic ledger")
+            reproduced.append(
+                {
+                    "id": identity,
+                    "passed": True,
+                    "equity_and_all_curve_fields_exact": True,
+                    "metrics_exact": True,
+                    "economic_ledger_exact_except_explicit_transfer_valuation_time": True,
+                    "previous_attempt_audit_passed": False,
+                }
+            )
         audit = audit_account(folder, *inputs)
         save(folder / "independent_audit.json", audit)
         row = {
@@ -340,6 +372,7 @@ def run(root):
         },
         "audits": audits,
         "restart_checks": restarts,
+        "reproduced_prior_attempt": reproduced,
         "module_assessments": assessments,
         "capacity_selection": capacity_followups,
         "profit_goal_met": False,
@@ -369,5 +402,20 @@ def run(root):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--previous-attempt", type=Path)
     args = parser.parse_args()
-    run(args.output)
+    try:
+        run(args.output, args.previous_attempt)
+    except Exception:
+        if args.output.exists():
+            (args.output / "status.json").write_text(
+                json.dumps(
+                    {
+                        "status": "failed",
+                        "pid": os.getpid(),
+                        "completion_exists": (args.output / "completion.json").exists(),
+                    }
+                )
+                + "\n"
+            )
+        raise
