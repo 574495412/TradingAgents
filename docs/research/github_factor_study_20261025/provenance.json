@@ -1,0 +1,8 @@
+{
+  "run": "/Users/chrise/GitHub/TradingAgents/results/research/github_factor_study_20261025_v001",
+  "run_summary_sha256": "dc8971b4fc3db0c5381bcaa7534df585ca062917cd98d84543aad8ab4db90778",
+  "publication": "/Users/chrise/GitHub/TradingAgents/results/research/github_factor_publication_20261025_v001",
+  "publication_summary_sha256": "baa038ad2a02e7c8270923b2928b2a70bbbc9b370a09ea03365cc0a2281e49f0",
+  "data_completion_sha256": "ed02f4e90f371bd6bc848464710cf8d63b135c0e68682ef0943056a24c6f7cbf",
+  "source_pack_receipts_sha256": "83ccc88e1cba84cc5c152b9c3bb4e84dc2b42a4c65a40f80a5f4582f25244ed3"
+}

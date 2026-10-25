@@ -1,0 +1,35 @@
+{
+  "grain": "symbol and unique5minute UTC bar start; separate actual funding-event grain",
+  "symbols": 40,
+  "five_minute_rows": 12983040,
+  "funding_events": 127576,
+  "archives_official_checksum_verified": 1480,
+  "bar_calendar_missing_or_duplicate_rows": 0,
+  "null_required_numeric_inputs": 0,
+  "native_ohlcv_reconciliation": "passed;rtol1e-12,atol1e-8",
+  "funding_schedule": "observed1h/4h/8h;not a synthetic8h grid",
+  "official_reconciliations": {
+    "symbols": [
+      "TRBUSDT",
+      "AXSUSDT",
+      "MASKUSDT",
+      "SKLUSDT"
+    ],
+    "query_start": "2026-06-24T00:00:00Z",
+    "query_end": "2026-06-24T16:01:00Z",
+    "observed_hours": [
+      0,
+      8,
+      12,
+      16
+    ],
+    "no_synthetic_04_event": true
+  },
+  "coverage_end_exclusive": "2026-09-01",
+  "known_limits": [
+    "contemporary named40-contract pool;survivorship/selection bias",
+    "historical research inputs,not current live market freshness",
+    "funding marks use hourly open proxy;private settlement boundary attribution unverified"
+  ],
+  "checks_script": "freqtrade/research/crypto/prepare_github_factor_data.py"
+}

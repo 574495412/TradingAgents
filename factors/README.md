@@ -62,3 +62,7 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 `common/mechanisms.py` 新增6个机制定义，登记在 `catalog.json.discovery_registry`；`common/regime.py` 提供同一时点的BTC趋势、市场宽度及相对动量条件。原74列冻结面板保持原定义，不把新增研发项自动加入旧模型。126账户结果及拒绝原因见 [研发报告](../docs/research/factor_discovery_20261025/README.md)。
 
 加密五分钟数据先聚合并滞后一根小时bar；股票传入 `features(session_hour_bars, asset_class="equity")`，保留原交易日历，窗口按观测bar计数。加密日历7/21/63天不可原样解释为股票天数，日UTC策略规则不作为股票策略适配器。真实主动成交字段缺失则保持未知，不用涨跌符号代替。
+
+## GitHub来源复现
+
+`common/github_formulas.py` 保存PST的3个日频规则、Qlib的2个具体价量公式及Sentinel组合映射；固定源码commit与研究状态登记在 `catalog.json.github_research_registry`。这是来源明确的数学适配，不能继承原股票／期货工作流的收益声明；5个公式和3个组合不等于8个独立盈利因子。13个仓库筛选、40币数据质量及46个完整账户见 [GitHub复现报告](../docs/research/github_factor_study_20261025/README.md)。

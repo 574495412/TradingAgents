@@ -1,0 +1,39 @@
+{
+  "tests": {
+    "TradingAgents": 22,
+    "Freqtrade": 15,
+    "CZ_cockpit": 30,
+    "total": 67
+  },
+  "accounts_independently_audited": 46,
+  "max_nav_error": 4.773028194904327e-09,
+  "source_repos": 13,
+  "specific_upstream_files": 22,
+  "executed_source_snapshot_manifest_verified": true,
+  "data_prepare_snapshot_verified": true,
+  "snapshot_repair": "Two packages used the same run.py basename; exact original source was recovered from this task tool history and matched the preregistered SHA256. Original plan, accounts and completion receipts unchanged. Future archives use path-derived unique names; regression test added.",
+  "browser": {
+    "url": "http://127.0.0.1:8793/research#factor-lab",
+    "title": "CZ · 因子与量化组合",
+    "viewports": [
+      "1512x1100",
+      "390x844"
+    ],
+    "browser": "Browser plugin not available; bundled Playwright and installed Chrome",
+    "checks": {
+      "page_identity": true,
+      "nonblank": true,
+      "no_framework_overlay": true,
+      "console_clean": true,
+      "screenshot": true,
+      "interaction": true
+    },
+    "errors": [],
+    "overflow": false,
+    "interaction": "GitHub screen9 -> cost15 -> 2026loss4rows -> continuousgain4rows -> capacity6 -> source13 -> old discovery/comparison -> mobile",
+    "screenshots": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9"
+  },
+  "build": "Vite production build passed; existing index chunk500kB warning remains",
+  "orders_enabled": false,
+  "production_eligible": false
+}

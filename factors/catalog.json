@@ -1044,5 +1044,31 @@
     "report": "../docs/research/factor_discovery_20261025/README.md",
     "core74_panel_unchanged": true,
     "production_eligible": false
+  },
+  "github_research_registry": {
+    "source": "common/github_formulas.py",
+    "frequency": "completed daily observations; next decision only",
+    "factor_ids": [
+      "pst_ewmac32",
+      "pst_accel4",
+      "pst_breakout10",
+      "qlib_corr20",
+      "qlib_resi20"
+    ],
+    "portfolio_ids": [
+      "sentinel_champion",
+      "sentinel_carry21",
+      "sentinel_carry14_buffer"
+    ],
+    "upstream_commits": {
+      "pst-group/pysystemtrade": "164328bd76d2937d3dd61491377704c488283bc2",
+      "microsoft/qlib": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "adensvaz/sentinel-hyperliquid": "ca647c099755ae9770f92205d5fc413e8e7c6c95"
+    },
+    "evidence": "13source survey and46local accounts; all admission gates currently failed; source claims are separate",
+    "report": "../docs/research/github_factor_study_20261025/README.md",
+    "independent_alpha_proven": false,
+    "production_eligible": false,
+    "active74_unchanged": true
   }
 }
