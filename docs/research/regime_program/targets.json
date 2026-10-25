@@ -316,9 +316,11 @@
         "domain_accounts_20261026/summary.json",
         "domain_accounts_20261026/selection.json",
         "spot_perpetual_feasibility_20261026/README.md",
-        "spot_carry_accounts_20261026/README.md"
+        "spot_carry_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/verification.json"
       ],
-      "outcome": "现货＋永续20账户分账、资金费、风险包络、独立审计及4次落盘新进程恢复完成；两个同机制方案均证据不足，缺总组合/收益目标与合格容量。保留进行中。"
+      "outcome": "MAX与同期限普通动量／BTC对冲24账户、708次输入独立复算及6次新进程恢复完成；2026冷启动MAX高成本+13.72%，连续账户−10.71%，不能拼接；两个MAX连续版本未取得组合准入。总账户收益与容量保持未完成。"
     },
     {
       "id": "R07",
@@ -344,9 +346,11 @@
         "domain_accounts_20261026/summary.json",
         "domain_accounts_20261026/selection.json",
         "spot_perpetual_feasibility_20261026/README.md",
-        "spot_carry_accounts_20261026/README.md"
+        "spot_carry_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/verification.json"
       ],
-      "outcome": "现货＋永续20账户分账、资金费、风险包络、独立审计及4次落盘新进程恢复完成；两个同机制方案均证据不足，缺总组合/收益目标与合格容量。保留进行中。"
+      "outcome": "MAX与同期限普通动量／BTC对冲24账户、708次输入独立复算及6次新进程恢复完成；2026冷启动MAX高成本+13.72%，连续账户−10.71%，不能拼接；两个MAX连续版本未取得组合准入。总账户收益与容量保持未完成。"
     },
     {
       "id": "R08",
@@ -372,9 +376,11 @@
         "domain_accounts_20261026/summary.json",
         "domain_accounts_20261026/selection.json",
         "spot_perpetual_feasibility_20261026/README.md",
-        "spot_carry_accounts_20261026/README.md"
+        "spot_carry_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/verification.json"
       ],
-      "outcome": "现货＋永续20账户分账、资金费、风险包络、独立审计及4次落盘新进程恢复完成；两个同机制方案均证据不足，缺总组合/收益目标与合格容量。保留进行中。"
+      "outcome": "MAX与同期限普通动量／BTC对冲24账户、708次输入独立复算及6次新进程恢复完成；2026冷启动MAX高成本+13.72%，连续账户−10.71%，不能拼接；两个MAX连续版本未取得组合准入。总账户收益与容量保持未完成。"
     },
     {
       "id": "R09",
@@ -420,11 +426,11 @@
   "representative_actual": "新版总账户尚未运行，实际栏保持未知。前版单策略/风险修正以及币对结果保存在各自历史报告，不能直接当作新版总组合实际值。",
   "account_evidence": {
     "date": "2026-10-26",
-    "accounts": 20,
+    "accounts": 24,
     "audit_passed": true,
     "profit_goal_met": false,
-    "source": "spot_carry_accounts_20261026/summary.json",
-    "next_action": "同一资金费机制20个新账户完成，固定持有跨年压力净收益1.42%、条件0.79%，仅2/7个完整周期；不具组合准入，不能承担20%目标。10万此终点单5分钟退出协议有残余，100万失败对冲增加。保留原持有基线与本轮，停止28/7/60日窗口门槛搜索；后续容量改进须独立预登记分批退出，同时转向永续主线中未充分验证的独立收益机制。",
+    "source": "max_effect_accounts_20261026/verification.json",
+    "next_action": "停止MAX参数网格；补更早完整周期及point-in-time可交易池，冻结规则复查年度差异；条件适用域必须在下一批评价前另登记，不按2026盈利状态路由。",
     "rounds": [
       {
         "name": "regime",
@@ -460,19 +466,28 @@
         "actual_process_restarts": 4,
         "passed": false,
         "reason": "2/7完整周期，容量退出未过；同一资金费机制，不是两个独立收益源"
+      },
+      {
+        "name": "max_effect_matched_momentum",
+        "accounts": 24,
+        "reused_cash_references": 6,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 6,
+        "passed": false,
+        "reason": "2026冷启动正收益不能覆盖2025连续停机；两种MAX连续账户负收益且未触发容量，无独立机制准入"
       }
     ]
   },
   "current_research_stage": {
-    "mechanism": "hybrid_spot_perpetual_funding_research",
-    "status": "20_accounts_audited_sparse_cycles_capacity_unqualified",
-    "report": "spot_carry_accounts_20261026/README.md",
+    "mechanism": "crypto_MAX_continuation_vs_matched_momentum",
+    "status": "24_accounts_audited_continuous_risk_and_net_edge_failed",
+    "report": "max_effect_accounts_20261026/README.md",
     "account_returns_computed": true,
     "profit_proven": false,
-    "new_financial_accounts": 20,
+    "new_financial_accounts": 24,
     "cash_references": 6,
-    "actual_process_restarts": 4,
-    "independent_mechanisms": 1
+    "actual_process_restarts": 6,
+    "independent_mechanisms_proven": 0
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",

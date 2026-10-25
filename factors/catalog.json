@@ -1117,5 +1117,16 @@
     "independent_alpha_proven": false,
     "report": "../docs/research/regime_program/spot_carry_accounts_20261026/README.md",
     "actual_process_restarts": 4
+  },
+  "max_effect_research_registry": {
+    "module": "factors/common/max_effect.py",
+    "protocol": "research_tools/max_effect/plan.json",
+    "mechanism": "positive_extreme_return_continuation_overlapping_momentum",
+    "state": "24_audited_accounts_continuous_net_edge_failed",
+    "market_scope": "retrospective_liquid_crypto_perpetual_pool",
+    "independent_alpha_proven": false,
+    "report": "../docs/research/regime_program/max_effect_accounts_20261026/README.md",
+    "actual_process_restarts": 6,
+    "legacy74_columns_unchanged": true
   }
 }

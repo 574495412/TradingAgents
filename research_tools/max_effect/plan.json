@@ -4,33 +4,115 @@
   "mechanism": "Extreme positive-return continuation and speculative demand; compare with ordinary momentum before claiming any independent source. Do not import the negative stock MAX direction or flip direction after seeing returns.",
   "factor_root": "factors/",
   "data": "data/research/github_factor_market_20261025_v001",
-  "funding_data": "data/research/max_effect_actual_funding_20261026_v001",
+  "funding_data": "data/research/max_effect_actual_funding_20261026_v002",
   "funding_start": "2025-01-01T00:00:00Z",
   "funding_end_exclusive": "2026-09-01T00:00:00Z",
   "funding_request_budget": 400,
   "funding_page_limit": 1000,
   "funding_policy": "Official public funding history; paginate ascending fundingTime+1ms, preserve exact settlement milliseconds and markPrice, no hourly mark proxy. Final page must contain fewer than1000records and full coverage must be reconciled against the sealed nominal calendar. Missing or conflicting events remain explicit rather than zero or forward-fill.",
   "sources": [
-    {"id":"MAX2021","url":"https://link.springer.com/article/10.1186/s40854-021-00291-9","doi":"10.1186/s40854-021-00291-9","use":"maximum daily simple return over prior28calendar days, formed weekly; published crypto direction long highMAX/short lowMAX; no inherited profit claim"},
-    {"id":"BETA2025","url":"https://link.springer.com/article/10.1186/s40854-025-00777-w","doi":"10.1186/s40854-025-00777-w","use":"negative-control warning: crypto beta forecasts and hedges can be unstable; estimated target neutrality is not realised neutrality"},
-    {"id":"NBER25882","url":"https://www.nber.org/papers/w25882","use":"crypto market/size/momentum overlap; do not countMAXandordinarymomentum as independent mechanisms by name"}
+    {
+      "id": "MAX2021",
+      "url": "https://link.springer.com/article/10.1186/s40854-021-00291-9",
+      "doi": "10.1186/s40854-021-00291-9",
+      "use": "maximum daily simple return over prior28calendar days, formed weekly; published crypto direction long highMAX/short lowMAX; no inherited profit claim"
+    },
+    {
+      "id": "BETA2025",
+      "url": "https://link.springer.com/article/10.1186/s40854-025-00777-w",
+      "doi": "10.1186/s40854-025-00777-w",
+      "use": "negative-control warning: crypto beta forecasts and hedges can be unstable; estimated target neutrality is not realised neutrality"
+    },
+    {
+      "id": "NBER25882",
+      "url": "https://www.nber.org/papers/w25882",
+      "use": "crypto market/size/momentum overlap; do not countMAXandordinarymomentum as independent mechanisms by name"
+    }
   ],
-  "candidates": ["max28", "max28_btc_beta", "momentum28_control", "momentum28_btc_beta_control"],
-  "parameters": {"lookback_days":28,"beta_lookback_days":60,"minimum_listing_observations":180,"minimum_daily_quote_volume":50000000,"maximum_eligible":30,"minimum_eligible":10,"long_names":4,"short_names":4,"rebalance_weekday_utc":0},
+  "candidates": [
+    "max28",
+    "max28_btc_beta",
+    "momentum28_control",
+    "momentum28_btc_beta_control"
+  ],
+  "parameters": {
+    "lookback_days": 28,
+    "beta_lookback_days": 60,
+    "minimum_listing_observations": 180,
+    "minimum_daily_quote_volume": 50000000,
+    "maximum_eligible": 30,
+    "minimum_eligible": 10,
+    "long_names": 4,
+    "short_names": 4,
+    "rebalance_weekday_utc": 0
+  },
   "calendar": "Use actual UTC daily aggregates of existing5mperpetual data; Monday00:00decisions and each cold-account initial clock. Only completed prior days. Hold selected target book between weekly decisions; no daily equal-weight rebalancing. Risk/stop exits remain live every5m.",
   "construction": "ExcludeBTCfromrankinginall4cases. Same prior liquidity/age/beta-completeness eligibility for all variants. Long4highestMAX28or28daycumulative momentum and short4lowest, equal absolute weights. BTC-beta variants add signed BTC target = -sum(nonBTCweight*past60dayOLSbeta); scale DOWN total gross only, maximum9names. No clipping/beta tuning or leverage-up to restore portfolio beta. BTC beta is1; use a tiny nonzero variance floor solely for numerical missingness.",
-  "source_departures": ["28days matches paper's explicit calendar-month convention; use weekly UTCMonday rather than claim exact original sample clock", "40 retrospective liquid perpetual pool, not historical523coin spot market or point-in-time market-cap weighting", "equal-weight4/4book and actual futures funding/costs, not original decile/value-weighted frictionless portfolio", "contemporaneous60dayOLS BTC hedge is a declared engineering control, not the original paper's lag/current/lead crypto-index beta or a promise of market neutrality"],
-  "account": {"capital":10000,"fee_bps":5,"slippage_bps":3,"participation":0.01,"gross":0.8,"max_positions":10,"rebalance_hours":24,"threshold":0.0032,"stop_loss":0.08,"drawdown_halt":0.15},
-  "costs_slippage_bps": [3,10],
-  "windows": [{"id":"screen2025","start":"2025-01-01","end":"2026-01-01"},{"id":"diagnostic2026","start":"2026-01-01","end":"2026-09-01"},{"id":"continuous2025_2026","start":"2025-01-01","end":"2026-09-01"}],
-  "capacity_capitals": [100000,1000000],
+  "source_departures": [
+    "28days matches paper's explicit calendar-month convention; use weekly UTCMonday rather than claim exact original sample clock",
+    "40 retrospective liquid perpetual pool, not historical523coin spot market or point-in-time market-cap weighting",
+    "equal-weight4/4book and actual futures funding/costs, not original decile/value-weighted frictionless portfolio",
+    "contemporaneous60dayOLS BTC hedge is a declared engineering control, not the original paper's lag/current/lead crypto-index beta or a promise of market neutrality"
+  ],
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "windows": [
+    {
+      "id": "screen2025",
+      "start": "2025-01-01",
+      "end": "2026-01-01"
+    },
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
   "capacity_followup": "At most2MAXvariants whose continuous608day marked and closed PnL are positive in both costs, without risk halt; only finite capacity diagnostics, no return-based admission or direction selection.",
-  "budgets": {"new_base_accounts":24,"new_capacity_accounts_max":8,"total_new_accounts_max":32,"reused_cash_reference_rows":6},
+  "budgets": {
+    "new_base_accounts": 24,
+    "new_capacity_accounts_max": 8,
+    "total_new_accounts_max": 32,
+    "reused_cash_reference_rows": 6
+  },
   "engine_requirement": "Versioned extension of existing Freqtrade resized account: explicit weekly rebalance flag, exact funding events in(clock,next5m] processed after requests but before fills at next5mclose, no future funding cash used to size requests. Keep source engine immutable. Preserve actual cash, partial fills, weighted campaigns, pending exits, highwater and halt across JSON restart.",
-  "validation": ["independent rawdaily/MAX/momentum/beta/ranking/hedge arithmetic", "real data prefix and future perturbation", "exact funding schedule versus archived nominal calendar and explicit differences", "full independent cash/position/funding/NAV/lifecycle audit", "actual on-disk checkpoint read by a new Python interpreter", "period/state/PnL attribution and actual rather than target beta diagnostics", "same-risk and same-universe control comparisons; no stitched states or cold windows"],
+  "validation": [
+    "independent rawdaily/MAX/momentum/beta/ranking/hedge arithmetic",
+    "real data prefix and future perturbation",
+    "exact funding schedule versus archived nominal calendar and explicit differences",
+    "full independent cash/position/funding/NAV/lifecycle audit",
+    "actual on-disk checkpoint read by a new Python interpreter",
+    "period/state/PnL attribution and actual rather than target beta diagnostics",
+    "same-risk and same-universe control comparisons; no stitched states or cold windows"
+  ],
   "qualification": "Use existing v002module acceptance within preregistered opportunity set, not per-module20percent annual hurdle. Need positive both-cost closed/marked PnL, sufficient cycles/clusters and intended-sleeve capacity; zero or sparse opportunities unknown. Need evidence of distinct economic source, not names, before total portfolio allocation. Portfolio20percent/15percent/Sharpe1targets stay unchanged and uncompleted.",
   "parameter_grid": false,
   "independent_oos": false,
   "orders_enabled": false,
-  "production_eligible": false
+  "production_eligible": false,
+  "funding_terminal_boundary_inclusive": "Also request exactly2026-09-01T00:00:00.000Z; only settlements at or before the terminal valuation enter. Core collection is end-exclusive, a separately archived exact-boundary supplement makes(clock,next5m]account treatment complete. No postterminal rate or mark is used.",
+  "execution_clarification": "Weekly reversal first closes old inventory; after confirmed flat, a queued signal can submit at the next5mclock and fill one interval later, within original weekly target validity. Stops/halt cancel queued reversal. Fees, partial fills and actual risk release are paid; no wait until next week merely because a single order flipped direction."
 }
