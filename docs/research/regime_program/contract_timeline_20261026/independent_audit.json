@@ -1,0 +1,12 @@
+{
+  "schema": "independent-contract-timeline-preview.v1",
+  "passed": true,
+  "decisions": 366,
+  "baseline_reproduced_without_restrictions": true,
+  "schedule_revisions_and_distinct_episodes_reproduced": true,
+  "source_completion_sha256": "d9c56f110f1096366b7110bc3ff24c05312cb412c30b7b9d4a17f8ceea3f6191",
+  "verifier_sha256": "4864bc6b2bac5e10088ed77bf6f24d3cbfa72d5bf7da5ca4fde4af38d57e21a1",
+  "new_financial_accounts": 0,
+  "historical_tradability_certified": false,
+  "profit_goal_met": false
+}

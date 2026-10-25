@@ -1,0 +1,10 @@
+{
+  "scenario_audit_passed": true,
+  "historical_certification_passed": false,
+  "scenario_completion_sha256": "d9c56f110f1096366b7110bc3ff24c05312cb412c30b7b9d4a17f8ceea3f6191",
+  "independent_audit_sha256": "0b651616d292ce07853bf14f85c5e50da0ec31aaf5a24c67a0a87e9daa53da83",
+  "publisher_sha256": "d60dd55e1e977f03ea4ca1d1c16a9f22d80abf08abb328bb0b57610bf2270e4b",
+  "new_financial_accounts": 0,
+  "raw_binding_sha256": "e67153dd4bb98eb0ba1ad77b586a0083b940868bc0aa3c998ac9d3b8582d3692",
+  "metrics_computed": false
+}
