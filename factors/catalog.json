@@ -1128,5 +1128,31 @@
     "report": "../docs/research/regime_program/max_effect_accounts_20261026/README.md",
     "actual_process_restarts": 6,
     "legacy74_columns_unchanged": true
+  },
+  "pure_funding_research_registry": {
+    "module": "factors/crypto/funding_cross_section.py",
+    "protocol": "research_tools/funding_cross_section/plan.json",
+    "variants": [
+      "funding7_raw",
+      "funding7_cost_floor"
+    ],
+    "controls": [
+      "momentum28_control",
+      "cash"
+    ],
+    "report": "../docs/research/regime_program/funding_cross_section_20261026_v002/README.md",
+    "new_accounts": 30,
+    "reused_references": 12,
+    "source_variants": [
+      "archive",
+      "api_revision"
+    ],
+    "financial_audit_passed": true,
+    "actual_process_restarts": 8,
+    "alpha_proven": false,
+    "production_eligible": false,
+    "old_74_columns_unchanged": true,
+    "asset_class": "crypto",
+    "stock_reuse": "Do not apply funding cashflows or UTC calendar to equities; common mathematics and independent account verification only."
   }
 }

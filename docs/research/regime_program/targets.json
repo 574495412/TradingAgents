@@ -475,11 +475,11 @@
   "representative_actual": "新版总账户尚未运行，实际栏保持未知。前版单策略/风险修正以及币对结果保存在各自历史报告，不能直接当作新版总组合实际值。",
   "account_evidence": {
     "date": "2026-10-26",
-    "accounts": 24,
+    "accounts": 30,
     "audit_passed": true,
     "profit_goal_met": false,
-    "source": "max_effect_accounts_20261026/verification.json",
-    "next_action": "停止MAX参数网格；补更早完整周期及point-in-time可交易池，冻结规则复查年度差异；条件适用域必须在下一批评价前另登记，不按2026盈利状态路由。",
+    "source": "funding_cross_section_20261026_v002/verification.json",
+    "next_action": "先解释纯资金费2025/2026差异及价格暴露；预登记下一项可反证机制。历史合约状态与终止现金、拟分配容量、独立机制和总账户收益仍待验证。",
     "rounds": [
       {
         "name": "regime",
@@ -524,17 +524,30 @@
         "actual_process_restarts": 6,
         "passed": false,
         "reason": "2026冷启动正收益不能覆盖2025连续停机；两种MAX连续账户负收益且未触发容量，无独立机制准入"
+      },
+      {
+        "name": "pure_funding_source_sensitive",
+        "accounts": 30,
+        "reused_momentum_references": 6,
+        "reused_cash_references": 6,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 8,
+        "passed": false,
+        "reason": "2026冷启动改善，但2025和608日连续扣费PnL负；源版本期末收益相同仍有32个中间净值差异；容量未触发，不是按单策略20%淘汰"
       }
     ]
   },
   "current_research_stage": {
-    "mechanism": "source_version_and_contract_lifecycle_qualification",
-    "status": "source_conflicts_preserved_known_terminal_preview_repaired_pure_funding_preregistered",
-    "report": "historical_execution_20261026/README.md",
-    "new_financial_accounts": 0,
+    "mechanism": "pure_funding_cross_section_source_sensitivity",
+    "status": "financially_audited_no_continuous_net_edge",
+    "report": "funding_cross_section_20261026_v002/README.md",
+    "new_financial_accounts": 30,
+    "reused_references": 12,
+    "actual_process_restarts": 8,
     "source_agreement_passed": false,
     "terminal_settlement_values_verified": false,
-    "next_registered_plan": "research_tools/funding_cross_section/plan.json",
+    "capacity_followups": [],
+    "next_action": "Use observed state and price/carry attribution to specify a new falsifiable hypothesis; complete historical tradability and terminal cash before expanded-universe execution. Do not retrofit2026 winners or treat calendar years as tradable regimes.",
     "previous_sealed_account_report": "max_effect_accounts_20261026/README.md",
     "previous_sealed_account_count": 24,
     "profit_proven": false

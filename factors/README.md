@@ -74,3 +74,5 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 `crypto/spot_perpetual_carry.py` 保存既有资金费机制的一次固定成本条件对照，另有固定持有基线；不改原74列，也不计作两个独立收益源。真实现货库存与永续钱包由Freqtrade研究引擎分别核算；20成本／区间／容量账户已独立重建，4次持仓检查点经新进程恢复一致，但只有2/7个完整周期，仍证据不足。见[分账账户结果](../docs/research/regime_program/spot_carry_accounts_20261026/README.md)。股票不能直接使用加密资金费与交易日历规则。
 
 `common/max_effect.py`集中保存MAX28正向延续、匹配普通28日动量、滞后60日BTC beta及共同资格规则，不改旧74列。24个周频永续账户与6次实际进程恢复完成；2026冷启动有正收益，连续账户仍因2025风险停机为负，未证明独立alpha。见[MAX对照完整结果](../docs/research/regime_program/max_effect_accounts_20261026/README.md)。股票不能直接继承加密MAX方向或UTC日历。
+
+`crypto/funding_cross_section.py`单独保存决策前7日实际已结算资金费排名及固定成本过滤，不改变旧74列。两种行情版本共30个新账户、6个动量和6个现金引用，8次新进程恢复完成；2026冷启动改善但跨年扣费损益仍负，尚无模块准入。两个变体属于同一资金费机制，股票不能直接继承其结算与日历。见[资金费与来源敏感性结果](../docs/research/regime_program/funding_cross_section_20261026_v002/README.md)。

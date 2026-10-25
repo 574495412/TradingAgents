@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "results/research/funding_cross_section_publication_20261026_v001/completion.json": "18c193e984b95ab8560202a4665a99dbf37ffeb3edcf797fe52f0d0541eb23c4",
+    "results/research/funding_cross_section_accounts_20261026_v001/completion.json": "e0eeaa2e90d7b9cea9b2beb254389217989efca13556e08f2bbc72cb019ee538",
+    "results/research/funding_cross_section_inputs_20261026_v002/completion.json": "4bcf5a36ee89e06e2f3040533c217b3584e01050bfb6c7819d51998f325e5c5d",
+    "results/research/funding_cross_section_inputs_20261026_v002_independent_audit.json": "6c94445699913ce6e1b6ec9e25237e249234777f2f4b96c205095e9cc2a91e69",
+    "data/research/funding_cross_section_data_20261026_v001/completion.json": "2ac32c42518f56aba37fa96e6b445ff6bf753ea63abe4e49485b76ac03faacb6",
+    "results/research/funding_cross_section_attribution_20261026_v001/completion.json": "eef863d08bf1650879e1d3e60220f8b2753f0d026ebfbcef0aea9d73b6ed3c19",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/funding_cross_section/write_review_v2.py": "1faaf164f10cd8dcfb2e1300e01fa4fb138ce77d0997e49b583a3c55a3718b4f",
+    "research_tools/funding_cross_section/plan.json": "bf5d7e6577591fec14893c790836e3f3c58edb3830b69194aa3ccd12d712ab16"
+  },
+  "account_and_period_evidence_checked": true,
+  "new_financial_accounts_in_reporting": 0,
+  "failed_input_release_preserved": "results/research/funding_cross_section_inputs_20261026_v001",
+  "input_retry_reason": "Parquet omits derived index.freq metadata; v002 checks identical timestamps, columns and values with check_freq=False. No model or financial parameter change.",
+  "transport_failures_preserved": [
+    "raw/bars_BNBUSDT.json",
+    "recovery/bars_BNBUSDT_attempt1.json"
+  ],
+  "transport_recovery": "recovery/bars_BNBUSDT_attempt2.json",
+  "financial_execution_source_commit": "4712882"
+}

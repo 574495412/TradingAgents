@@ -1,0 +1,10 @@
+{
+  "manifest": {
+    "summary.json": "ab4247936b932191d36e06f3744d1e5c8c727e6fc9767ab18dba554b4bb32add",
+    "README.md": "07a18e44a2747697ed2132f83010656004bf22cfb37a632bb24e809520761b21",
+    "registered_plan.json": "9c507dbb3b03e95a44f8d2f360375026a8706dfa5e2e4db227c25b447edb608a",
+    "verification.json": "5ff9a7ef7c89404a97bed3e9bf396277279f28501086a65e2a87add176708aa0"
+  },
+  "report_complete": true,
+  "profit_goal_met": false
+}
