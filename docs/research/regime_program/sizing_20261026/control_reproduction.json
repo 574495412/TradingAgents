@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cases": [
+    "screen2025_trend_cap10000_slip3",
+    "screen2025_trend_cap10000_slip10",
+    "screen2025_breakout_cap10000_slip3",
+    "screen2025_breakout_cap10000_slip10",
+    "screen2025_mean_reversion_cap10000_slip3",
+    "screen2025_mean_reversion_cap10000_slip10"
+  ],
+  "count": 6,
+  "parent_completion_sha256": "f6f3b80404797f22e6aa47a86e812dfdb79fd275cfb93717acafe879b44a22ed"
+}

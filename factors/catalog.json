@@ -1093,6 +1093,8 @@
       "breakout"
     ],
     "alpha_proven": false,
-    "production_eligible": false
+    "production_eligible": false,
+    "source_sizing": "factors/portfolio/source_sizing.py",
+    "sizing_protocol": "research_tools/regime_program/sizing_plan.json"
   }
 }

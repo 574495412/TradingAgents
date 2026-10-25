@@ -52,7 +52,14 @@ def select(rows, plan):
         assessments,
         key=lambda a: (-a["minimum_two_cost_return"], a["maximum_drawdown"], a["candidate"]),
     )
-    research = [r["candidate"] for r in ranked if r["candidate"] not in ("cash", "equal_mix")][:3]
+    research = [
+        r["candidate"]
+        for r in ranked
+        if r["candidate"]
+        in plan.get(
+            "followup_candidates", [c for c in plan["candidates"] if c not in ("cash", "equal_mix")]
+        )
+    ][:3]
     best_static = next(r["candidate"] for r in ranked if r["candidate"] in plan["static_families"])
     return {
         "assessments": assessments,
@@ -90,10 +97,10 @@ def restart_check(engine, bars, rates, targets, config, window, full):
     }
 
 
-def run(root):
+def run(root, plan_path=None):
     started = time.monotonic()
     root.mkdir(parents=True, exist_ok=False)
-    plan_path = Path(__file__).with_name("execution_plan.json")
+    plan_path = plan_path or Path(__file__).with_name("execution_plan.json")
     plan = read(plan_path)
     inputs, data = Path(plan["inputs"]), Path(plan["data"])
     for name, digest in read(inputs / "completion.json")["manifest"].items():
@@ -136,7 +143,12 @@ def run(root):
     rows, audits, restarts = [], [], []
 
     def one(candidate, window, cost, phase, capital=10000):
-        config = {**plan["account"], "capital": capital, "slippage_bps": cost}
+        config = {
+            **plan["account"],
+            **plan.get("candidate_config", {}).get(candidate, {}),
+            "capital": capital,
+            "slippage_bps": cost,
+        }
         a = engine.replay(bars, rates, targets[candidate], config, window["start"], window["end"])
         boundary = pd.date_range(window["start"], window["end"], freq="D", tz="UTC")
         benchmark = bars["BTCUSDT"].close.reindex(boundary - pd.Timedelta(minutes=5))
@@ -162,7 +174,11 @@ def run(root):
         }
         rows.append(row)
         audits.append(audit_account(root, row, bars, rates))
-        if phase == "screen2025" and candidate == "event_router" and cost == 10:
+        if (
+            phase == "screen2025"
+            and candidate == plan.get("restart_candidate", "event_router")
+            and cost == 10
+        ):
             restarts.append(
                 restart_check(engine, bars, rates, targets[candidate], config, window, a)
             )
@@ -239,4 +255,6 @@ def run(root):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, required=True)
-    run(parser.parse_args().output.resolve())
+    parser.add_argument("--plan", type=Path)
+    args = parser.parse_args()
+    run(args.output.resolve(), args.plan.resolve() if args.plan else None)

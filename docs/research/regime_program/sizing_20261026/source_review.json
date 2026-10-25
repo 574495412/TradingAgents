@@ -1,0 +1,62 @@
+{
+  "schema": "forecast-sizing-source-review.v1",
+  "retrieved_at": "2026-10-25T16:49:14.487964+00:00",
+  "records": [
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "file": "systems/positionsizing.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/positionsizing.py",
+      "sha256": "a75386ff4e14893ad0288b34212f4b73d71781828138b3b736d88c0631ab8320",
+      "license": "GPL-3.0; read for independent mathematical adaptation, not vendored"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "file": "systems/portfolio.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/portfolio.py",
+      "sha256": "65eaa0e96bb04ceb567808dcfe12c1c564f29dcc535bb3f07ede7386b5c652a9",
+      "license": "GPL-3.0; read for independent mathematical adaptation, not vendored"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "file": "systems/buffering.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/buffering.py",
+      "sha256": "e73d927fb9e0e173a7837c60c587aea8fe2632dbd3eef4c7c2bdd7ea63d76458",
+      "license": "GPL-3.0; read for independent mathematical adaptation, not vendored"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "file": "systems/forecast_scale_cap.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/forecast_scale_cap.py",
+      "sha256": "9828b7371a3f93a9d32a42bfdf5d47efddfb20d842f8636afa1b2a80b4e9a894",
+      "license": "GPL-3.0; read for independent mathematical adaptation, not vendored"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "file": "sysdata/config/defaults.yaml",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/sysdata/config/defaults.yaml",
+      "sha256": "6ab5e12dae82dd4b2b78f0cf951bc258b92f81bb4f9a975d6bbb746d6d7e9972",
+      "license": "GPL-3.0; read for independent mathematical adaptation, not vendored"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/LICENSE",
+      "sha256": "b98fbb37db5b23bc5cfdcd16793206a5a7120a7b01f75374e5e0888376e4691c",
+      "license": "GPL-3.0; read for independent mathematical adaptation, not vendored"
+    }
+  ],
+  "third_party_trading_code_executed": false,
+  "observations": [
+    "Subsystem position is volatility scalar times forecast divided by average_absolute_forecast.",
+    "Defaults: average_absolute_forecast10, forecast_cap20, percentage_vol_target16, instrument_div_multiplier1.",
+    "Default forecast buffer uses10percent of average-volatility-scaled position and trades to nearest edge.",
+    "Prior local direction-only inverse-volatility normalization does not retain forecast magnitude or absolute risk budget.",
+    "This is a new source-inspired sizing hypothesis, not proof of crypto profit or full upstream system reproduction."
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "assessments": [
+    {
+      "candidate": "trend",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.029212927751704365,
+      "maximum_drawdown": 0.15411100180833825
+    },
+    {
+      "candidate": "breakout",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.14269695581975617,
+      "maximum_drawdown": 0.153401965903315
+    },
+    {
+      "candidate": "mean_reversion",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.15216453977729338,
+      "maximum_drawdown": 0.1582926106937279
+    },
+    {
+      "candidate": "trend_conviction",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.02062580290559457,
+      "maximum_drawdown": 0.15218705734840432
+    },
+    {
+      "candidate": "trend_risk16",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip10:cagr",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl"
+      ],
+      "minimum_two_cost_return": -0.03127255729696443,
+      "maximum_drawdown": 0.1365504792601263
+    },
+    {
+      "candidate": "trend_risk16_buffer10",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip10:cagr",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl"
+      ],
+      "minimum_two_cost_return": -0.049628473686930574,
+      "maximum_drawdown": 0.1347207849337564
+    },
+    {
+      "candidate": "breakout_risk16",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.14059713726964962,
+      "maximum_drawdown": 0.15009519814591543
+    },
+    {
+      "candidate": "reversion_risk16",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:drawdown",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip3:risk_halt",
+        "slip10:cagr",
+        "slip10:drawdown",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl",
+        "slip10:risk_halt"
+      ],
+      "minimum_two_cost_return": -0.15353949170678483,
+      "maximum_drawdown": 0.15965762460655697
+    },
+    {
+      "candidate": "equal_mix",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:sharpe",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip10:cagr",
+        "slip10:sharpe",
+        "slip10:profit_factor",
+        "slip10:closed_pnl"
+      ],
+      "minimum_two_cost_return": -0.0736091969152749,
+      "maximum_drawdown": 0.0954298670424818
+    },
+    {
+      "candidate": "cash",
+      "passed": false,
+      "reasons": [
+        "slip3:cagr",
+        "slip3:sharpe",
+        "slip3:complete_lifecycles",
+        "slip3:profit_factor",
+        "slip3:closed_pnl",
+        "slip10:cagr",
+        "slip10:sharpe",
+        "slip10:complete_lifecycles",
+        "slip10:profit_factor",
+        "slip10:closed_pnl"
+      ],
+      "minimum_two_cost_return": 0.0,
+      "maximum_drawdown": 0.0
+    }
+  ],
+  "research_followups": [
+    "trend_conviction",
+    "trend_risk16",
+    "trend_risk16_buffer10"
+  ],
+  "best_static": "trend",
+  "admitted_candidates": [],
+  "followup_cohort": [
+    "trend_conviction",
+    "trend_risk16",
+    "trend_risk16_buffer10",
+    "cash",
+    "trend",
+    "equal_mix"
+  ],
+  "later_returns_used": false,
+  "production_eligible": false
+}

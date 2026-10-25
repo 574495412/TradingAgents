@@ -1,0 +1,30 @@
+{
+  "url": "http://127.0.0.1:8793/research#factor-lab",
+  "title": "CZ · 因子与量化组合",
+  "viewports": [
+    "1512x1100",
+    "390x844"
+  ],
+  "browser": "Browser plugin not available; bundled Playwright and installed Chrome",
+  "checks": {
+    "page_identity": true,
+    "nonblank": true,
+    "no_framework_overlay": true,
+    "console_clean": true,
+    "screenshot": true,
+    "interaction": true
+  },
+  "errors": [],
+  "overflow": false,
+  "interaction": "original12 -> sizing10 -> continuous6 -> risk profit8bps/loss15bps -> capacity6 -> original ML preserved -> pending study recovery -> goal DD15.22 -> sizing mobile",
+  "research_tests": 39,
+  "execution_tests": 19,
+  "service_tests": 33,
+  "financial_cases": 56,
+  "source_files_checked": 6,
+  "independent_sizing_checks": 12190,
+  "matched_control_cases": 6,
+  "profit_goal_met": false,
+  "build_passed": true,
+  "source_deviations": "Crypto365calendar, common robust35dayvol, prior top10selection, shared stops/funding/capacity, no source leverage; complete upstream program performance not replicated"
+}

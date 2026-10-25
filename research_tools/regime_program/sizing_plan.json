@@ -1,0 +1,123 @@
+{
+  "schema": "forecast-strength-sizing-study.v1",
+  "version": "20261026_v001",
+  "hypothesis": "Prior sign-only fixed-gross intents discard forecast amplitude and absolute risk sizing. Source forecast/10 times vol scalar, with source-default risk16percent and forecast-buffer10percent, may improve continuous economic efficiency. Test before any expansion, no forecast parameter grid.",
+  "parent_accounts": "results/research/regime_accounts_20261026_v001",
+  "parent_inputs": "results/research/regime_inputs_20261026_v001",
+  "source_pack": "data/research/forecast_sizing_sources_20261026_v001",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "states": "results/research/regime_states_20261025_v002",
+  "inputs": "results/research/forecast_sizing_inputs_20261026_v001",
+  "input_audit": "results/research/forecast_sizing_inputs_20261026_v001_audit.json",
+  "engine": "/Users/chrise/GitHub/freqtrade/research/crypto/sizing_portfolio.py",
+  "candidates": [
+    "trend",
+    "breakout",
+    "mean_reversion",
+    "trend_conviction",
+    "trend_risk16",
+    "trend_risk16_buffer10",
+    "breakout_risk16",
+    "reversion_risk16",
+    "equal_mix",
+    "cash"
+  ],
+  "candidate_names": {
+    "trend": "原趋势·固定敞口",
+    "breakout": "原突破·固定敞口",
+    "mean_reversion": "原极端回归·固定敞口",
+    "trend_conviction": "趋势·预测幅度",
+    "trend_risk16": "趋势·16%风险预算",
+    "trend_risk16_buffer10": "趋势·16%风险＋10%缓冲",
+    "breakout_risk16": "突破·16%风险预算",
+    "reversion_risk16": "极端回归·16%风险预算",
+    "equal_mix": "风险预算三规则等权",
+    "cash": "现金"
+  },
+  "static_families": [
+    "trend",
+    "breakout",
+    "mean_reversion"
+  ],
+  "followup_candidates": [
+    "trend_conviction",
+    "trend_risk16",
+    "trend_risk16_buffer10",
+    "breakout_risk16",
+    "reversion_risk16"
+  ],
+  "restart_candidate": "trend_risk16_buffer10",
+  "calibration": "Reuse frozen2024 mean-absolute raw forecast normalization; all prediction inputs lag one complete UTC day. No sizing parameter selected on2025/2026 returns. Existing history is consumed and diagnostic, not independentOOS.",
+  "parameters": {
+    "average_absolute_forecast": 10,
+    "forecast_cap": 20,
+    "annual_risk_target": 0.16,
+    "annualization": 365,
+    "buffer_fraction": 0.1,
+    "maximum_gross": 0.8,
+    "maximum_positions": 10,
+    "relative_volatility_floor": 0.001,
+    "existing_selection_threshold": 0.32
+  },
+  "selection_clock": "Choose same up-to10names as prior sign-only intent using abs(clip(raw/2024norm,-3,3)) and prior threshold0.32; break ties alphabetically. Actual source-scaled forecasts then clip(raw/2024norm*10,-20,20). This preserves symbol selection and timing for a controlled sizing comparison.",
+  "absolute_sizing": "For N selected names: average_notional_fraction=0.16/(sqrt365*max(relative_vol,0.001))/N; desired_fraction=average_notional_fraction*forecast/10. If sum(abs)>0.8, scale down only. Divide resulting fractions by0.8 to encode unit-gross inputs to the common engine. Never normalize weak signals back up to80percent gross.",
+  "buffering": "Band halfwidth=0.10*average_notional_fraction, scaled down with any gross-cap reduction. Actual marked held weight drives nearest-band-edge target. Nonselected names have zero target/width. Stop/halt and hard gross limits override buffer; event-risk changes bypass buffer.",
+  "candidate_config": {
+    "trend_risk16_buffer10": {
+      "position_buffer": true
+    }
+  },
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "screen": {
+    "id": "screen2025",
+    "start": "2025-01-01",
+    "end": "2026-01-01"
+  },
+  "diagnostics": [
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "capacity_capitals": [
+    100000,
+    1000000
+  ],
+  "admission": {
+    "minimum_cagr": 0.2,
+    "maximum_drawdown": 0.15,
+    "minimum_sharpe": 1,
+    "minimum_complete_lifecycles": 100,
+    "minimum_closed_profit_factor": 1.15,
+    "closed_pnl_positive": true
+  },
+  "selection": "2025two-cost screen freezes3of5new sizing research profiles by minimum return, then lower worst drawdown, then name. Freeze best of3original static controls separately. Later cohort =3new profiles,cash,best_original_static,new3ruleequalmix; no downstream reselection.",
+  "budget": "20screen+24diagnostic+12capacity=56maximum accounts; no parameter grid or lower economic gates.",
+  "execution": "Same resized account and cost/funding/capacity mechanics as prior56cases; only optional source-default actual-inventory forecast buffer is added in a versioned engine. All controls use this engine with buffer disabled; they must reproduce prior screen ledgers and metrics.",
+  "restart": "Actual buffer state is held inventory; JSON resume preserves old highwater,halt,funding,pending exits,prices,config. No rule to restart a halted account or reset highwater.",
+  "changes_vs_previous": "Source default annual risk16percent and cap20 are mathematical references, not full source performance reproduction. Crypto uses365 instead of business days, common robust35dayvol/floor instead of upstream current mixedvol, top10liquid pool instead of private source instruments, fixed2024scale instead of future-backfilled estimates, common0.8gross/no leverage/8percent stop/15percent hardhalt. Current broad40pool has survivorship selection bias and is not point-in-time membership.",
+  "independent_oos": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}
