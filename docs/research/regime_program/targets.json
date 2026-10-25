@@ -183,59 +183,72 @@
       "id": "R01",
       "title": "补充行情识别、震荡与模型公开来源",
       "owner": "TradingAgents",
-      "status": "in_progress",
+      "status": "done",
       "depends_on": [
         "R00"
       ],
       "done_when": "每一采用版本记录commit/许可证/具体公式/参数/收益口径；先复用已有13仓库，最多新增12个候选来源",
       "evidence": [
-        "../github_factor_study_20261025/source_catalog.json"
+        "preparation_20261026/source_review.json",
+        "preparation_20261026/provenance.json"
       ]
     },
     {
       "id": "R02",
       "title": "实现因果行情分类与可用性检查",
       "owner": "TradingAgents",
-      "status": "planned",
+      "status": "done",
       "depends_on": [
         "R01"
       ],
       "done_when": "趋势方向、波动、流动性与不确定状态可逐时复算；前缀一致性通过；不以未来收益判定当时行情",
-      "evidence": []
+      "evidence": [
+        "preparation_20261026/states_summary.json",
+        "preparation_20261026/independent_audit.json"
+      ]
     },
     {
       "id": "R03",
       "title": "统一五类收益策略及现金接口",
       "owner": "TradingAgents + Freqtrade",
-      "status": "planned",
+      "status": "in_progress",
       "depends_on": [
         "R01"
       ],
       "done_when": "趋势、相对动量、资金费组合、震荡回归、波动突破有版本、适用状态、失效条件和独立账户；不因数量不足伪造有效收益源",
-      "evidence": []
+      "evidence": [
+        "preparation_20261026/inputs_summary.json",
+        "preparation_20261026/independent_audit.json"
+      ]
     },
     {
       "id": "R04",
       "title": "核实事件时点并实现风险覆盖层",
       "owner": "TradingAgents",
-      "status": "planned",
+      "status": "in_progress",
       "depends_on": [
         "R02"
       ],
       "done_when": "至少完成已有FOMC公开时点回放；预告/发布时间/首次可用分开，缺失事件覆盖显式标注；有无事件覆盖层同账户比较",
-      "evidence": []
+      "evidence": [
+        "preparation_20261026/inputs_summary.json",
+        "preparation_20261026/independent_audit.json"
+      ]
     },
     {
       "id": "R05",
       "title": "HMM与固定小型神经网络对照",
       "owner": "TradingAgents",
-      "status": "planned",
+      "status": "in_progress",
       "depends_on": [
         "R02",
         "R03"
       ],
       "done_when": "HMM与MLP分别对照规则/线性；过去拟合、成熟标签、相同信息与执行预算、无随机时间切分；预测改善与账户改善分别验收",
-      "evidence": []
+      "evidence": [
+        "preparation_20261026/inputs_summary.json",
+        "preparation_20261026/independent_audit.json"
+      ]
     },
     {
       "id": "R06",
@@ -276,5 +289,26 @@
   ],
   "production_eligible": false,
   "orders_enabled": false,
-  "independent_oos": false
+  "independent_oos": false,
+  "preparation_evidence": {
+    "date": "2026-10-26",
+    "title": "因果行情与策略输入已生成，账户收益尚未计算",
+    "source_records": 13,
+    "forecast_days": 608,
+    "monthly_fits": 20,
+    "hmm_forecast_days": 608,
+    "linear_forecast_days": 608,
+    "mlp_forecast_days": 608,
+    "independent_probability_max_error": 2.220446049250313e-16,
+    "prefix_cut_checks": 3,
+    "verified_official_releases": 22,
+    "warning_summary": "336个NumPy数组shape弃用警告，未出现优化未收敛警告；完整警告保留在拟合回执",
+    "profit_verified": false,
+    "states_2025": {
+      "range": 237,
+      "trend_up": 59,
+      "volatility_breakout": 42,
+      "trend_down": 27
+    }
+  }
 }

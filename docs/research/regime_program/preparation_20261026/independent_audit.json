@@ -1,0 +1,76 @@
+{
+  "schema": "multi-regime-independent-input-audit.v1",
+  "passed": true,
+  "model_framework_imported": false,
+  "forecast_days": 608,
+  "hmm_forward_days": 608,
+  "maximum_probability_error": {
+    "linear": 2.220446049250313e-16,
+    "mlp": 0.0
+  },
+  "target_checks": [
+    {
+      "candidate": "trend",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "relative_momentum",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "carry_momentum",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "mean_reversion",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "breakout",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "cash",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "equal_mix",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "rule_router",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "event_router",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "hmm_router",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "linear_router",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    },
+    {
+      "candidate": "mlp_router",
+      "hourly_rows": 14592,
+      "unit_gross_bounded": true
+    }
+  ],
+  "input_completion_sha256": "cb9a6f49f3b850debef010372d441335f347206de8d66acd8b5ccd1b4bc65a3d",
+  "strategy_profit_verified": false,
+  "orders_enabled": false
+}

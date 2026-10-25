@@ -1,0 +1,75 @@
+{
+  "schema": "causal-market-state-evidence.v1",
+  "profile": [
+    {
+      "year": 2024,
+      "observed_days": 366,
+      "states": {
+        "range": 176,
+        "volatility_breakout": 97,
+        "trend_up": 73,
+        "trend_down": 20
+      },
+      "minimum_eligible": 21.0,
+      "maximum_eligible": 30.0
+    },
+    {
+      "year": 2025,
+      "observed_days": 365,
+      "states": {
+        "range": 237,
+        "trend_up": 59,
+        "volatility_breakout": 42,
+        "trend_down": 27
+      },
+      "minimum_eligible": 18.0,
+      "maximum_eligible": 30.0
+    },
+    {
+      "year": 2026,
+      "observed_days": 243,
+      "states": {
+        "range": 148,
+        "volatility_breakout": 57,
+        "trend_up": 19,
+        "trend_down": 19
+      },
+      "minimum_eligible": 12.0,
+      "maximum_eligible": 20.0
+    }
+  ],
+  "source_records": 13,
+  "prefix_checks": [
+    {
+      "prefix_rows": 450,
+      "prefix_equal": true,
+      "future_and_current_day_perturbation_equal": true
+    },
+    {
+      "prefix_rows": 730,
+      "prefix_equal": true,
+      "future_and_current_day_perturbation_equal": true
+    },
+    {
+      "prefix_rows": 1000,
+      "prefix_equal": true,
+      "future_and_current_day_perturbation_equal": true
+    }
+  ],
+  "verified_official_releases": 22,
+  "flagged_hourly_decisions": 504,
+  "event_coverage": {
+    "requested": 22,
+    "verified": 22,
+    "failures": [],
+    "scope": "FOMC official statement news; not general crypto news or analyst consensus",
+    "cpi_source_status": "BLS archive HTTP403 observed; no CPI or consensus surprise is fabricated",
+    "lexicon": "Fixed transparent phrase counts, not a trained sentiment model",
+    "retrieved_at": "2026-10-25T05:36:46.144221+00:00"
+  },
+  "account_returns_computed": false,
+  "strategy_profit_proven": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "elapsed_seconds": 0.8159285839938093
+}

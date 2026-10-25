@@ -1,0 +1,4 @@
+# Optional research-only dependencies; use an isolated target, not production.
+scikit-learn==1.7.2
+hmmlearn==0.3.3
+threadpoolctl==3.6.0

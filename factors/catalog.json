@@ -1070,5 +1070,29 @@
     "independent_alpha_proven": false,
     "production_eligible": false,
     "active74_unchanged": true
+  },
+  "regime_research_registry": {
+    "source": "factors/common/market_states.py",
+    "strategy_source": "factors/common/regime_books.py",
+    "portfolio_source": "factors/portfolio/regime_allocation.py",
+    "protocol": "research_tools/regime_program/plan.json",
+    "feature_columns": [
+      "trend_z",
+      "efficiency",
+      "volatility_ratio",
+      "breadth",
+      "eligible_count"
+    ],
+    "state_clock": "preceding complete daily/observed session only; parameters and native quote-unit thresholds supplied per market",
+    "strategy_market": "crypto USDT perpetual research; equity factor calendar compatibility is not a validated stock strategy",
+    "families": [
+      "trend",
+      "relative_momentum",
+      "carry_momentum",
+      "mean_reversion",
+      "breakout"
+    ],
+    "alpha_proven": false,
+    "production_eligible": false
   }
 }

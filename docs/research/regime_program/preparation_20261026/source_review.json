@@ -1,0 +1,126 @@
+{
+  "schema": "regime-program-sources.v1",
+  "retrieved_at": "2026-10-25T15:57:33.950726+00:00",
+  "records": [
+    {
+      "repository": "hmmlearn/hmmlearn",
+      "ref": "0.3.3",
+      "commit": "67c5a95009afe95317923c9fbe75f47962037f48",
+      "file": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/hmmlearn/hmmlearn/67c5a95009afe95317923c9fbe75f47962037f48/LICENSE.txt",
+      "sha256": "3e1189a748644e7e65cf59dbd17cd623044467d89a7484d4841e03b9ca5e3c27",
+      "use": "GaussianHMM training reference; our inference must filter past observations only",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "repository": "hmmlearn/hmmlearn",
+      "ref": "0.3.3",
+      "commit": "67c5a95009afe95317923c9fbe75f47962037f48",
+      "file": "src/hmmlearn/base.py",
+      "url": "https://raw.githubusercontent.com/hmmlearn/hmmlearn/67c5a95009afe95317923c9fbe75f47962037f48/src/hmmlearn/base.py",
+      "sha256": "bb3e50ab5c55d30c8f506ada01d09cc253695f501135b844ab1d80b6063ad326",
+      "use": "GaussianHMM training reference; our inference must filter past observations only",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "repository": "hmmlearn/hmmlearn",
+      "ref": "0.3.3",
+      "commit": "67c5a95009afe95317923c9fbe75f47962037f48",
+      "file": "src/hmmlearn/hmm.py",
+      "url": "https://raw.githubusercontent.com/hmmlearn/hmmlearn/67c5a95009afe95317923c9fbe75f47962037f48/src/hmmlearn/hmm.py",
+      "sha256": "f01a75d2c9b7109ebd26ab6b91a33b7179a8fd4e79fb132130b70436ff347521",
+      "use": "GaussianHMM training reference; our inference must filter past observations only",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "repository": "scikit-learn/scikit-learn",
+      "ref": "1.7.2",
+      "commit": "25dee604bae18205b01548348388baf7a1cdfe0e",
+      "file": "COPYING",
+      "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/25dee604bae18205b01548348388baf7a1cdfe0e/COPYING",
+      "sha256": "75684d16f4662ab842ed5af9482ac01939aee83c8243d89993616d959d3053f8",
+      "use": "Single fixed MLP baseline matching the isolated installed research dependency",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "repository": "scikit-learn/scikit-learn",
+      "ref": "1.7.2",
+      "commit": "25dee604bae18205b01548348388baf7a1cdfe0e",
+      "file": "sklearn/neural_network/_multilayer_perceptron.py",
+      "url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/25dee604bae18205b01548348388baf7a1cdfe0e/sklearn/neural_network/_multilayer_perceptron.py",
+      "sha256": "ab529cbf71f881a411eaca3f3fbedea299e85869b6ebdc71b8233f2cf2c2222d",
+      "use": "Single fixed MLP baseline matching the isolated installed research dependency",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "url": "https://hmmlearn.readthedocs.io/en/0.3.3/api.html",
+      "sha256": "8837cfe0da66c642da679f18781c04c386ddb6ea37de4718a4848ee937754b76",
+      "use": "method documentation, captured snapshot rather than fixed source commit"
+    },
+    {
+      "url": "https://scikit-learn.org/1.7/modules/generated/sklearn.neural_network.MLPClassifier.html",
+      "sha256": "bd81b32fc06d39666971f94c5f2a402a32545d951fa5cdd99cb4bd403bdb5f57",
+      "use": "method documentation, captured snapshot rather than fixed source commit"
+    },
+    {
+      "url": "https://nixtlaverse.nixtla.io/neuralforecast/docs/capabilities/cross_validation.html",
+      "sha256": "cbd22454738151b0c4573bbed666c3300913bb41979f734d1d4a33dc3887055c",
+      "use": "method documentation, captured snapshot rather than fixed source commit"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "file": "systems/provided/rules/ewmac.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/provided/rules/ewmac.py",
+      "sha256": "6794f76f5183e71a760b5a7a05fbd6fa79485374a7ac1d0a72cfd697863702ba",
+      "use": "reuse sealed mathematical source; no source execution",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "license": "GPL-3.0"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "file": "systems/provided/rules/breakout.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/provided/rules/breakout.py",
+      "sha256": "9e7fd5079ff1c7bb09913c2c3a512a923e8d8fb5525065831f6d69c71b5c198f",
+      "use": "reuse sealed mathematical source; no source execution",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "license": "GPL-3.0"
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "file": "systems/provided/rules/mr_wings.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/164328bd76d2937d3dd61491377704c488283bc2/systems/provided/rules/mr_wings.py",
+      "sha256": "e1f7ed12f65d4659752ae1885dda0c86f4c0329d10c2fa7406e1d03a5612ceba",
+      "use": "reuse sealed mathematical source; no source execution",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "license": "GPL-3.0"
+    },
+    {
+      "repository": "adensvaz/sentinel-hyperliquid",
+      "file": "src/sentinel/strategy/funding_carry.py",
+      "url": "https://raw.githubusercontent.com/adensvaz/sentinel-hyperliquid/ca647c099755ae9770f92205d5fc413e8e7c6c95/src/sentinel/strategy/funding_carry.py",
+      "sha256": "33e4ba7d30f0ae6141b7492635ad843435c87ea956342cd22c753896dbb02d2a",
+      "use": "reuse sealed mathematical source; no source execution",
+      "commit": "ca647c099755ae9770f92205d5fc413e8e7c6c95",
+      "license": "MIT"
+    },
+    {
+      "repository": "adensvaz/sentinel-hyperliquid",
+      "file": "scripts/bt_longbinance.py",
+      "url": "https://raw.githubusercontent.com/adensvaz/sentinel-hyperliquid/ca647c099755ae9770f92205d5fc413e8e7c6c95/scripts/bt_longbinance.py",
+      "sha256": "e8425082d033baa1b77868278c74638b2bd039735633c1902bc53c8e23ff3615",
+      "use": "reuse sealed mathematical source; no source execution",
+      "commit": "ca647c099755ae9770f92205d5fc413e8e7c6c95",
+      "license": "MIT"
+    }
+  ],
+  "third_party_code_executed": false,
+  "profit_proven": false,
+  "orders_enabled": false,
+  "notes": [
+    "HMM is a statistical model, not a neural network.",
+    "Full-sequence Viterbi/MAP/posterior smoothing cannot determine past trading states.",
+    "MLP early_stopping must be disabled; all scaling and labels mature strictly before each fit.",
+    "PST GPL programs are references for independent mathematical adapters; not vendored or imported.",
+    "Framework prediction capability is not proof of trading alpha."
+  ]
+}

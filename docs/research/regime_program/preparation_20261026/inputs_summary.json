@@ -1,0 +1,38 @@
+{
+  "schema": "multi-regime-intent-preparation.v1",
+  "candidates": [
+    "trend",
+    "relative_momentum",
+    "carry_momentum",
+    "mean_reversion",
+    "breakout",
+    "cash",
+    "equal_mix",
+    "rule_router",
+    "event_router",
+    "hmm_router",
+    "linear_router",
+    "mlp_router"
+  ],
+  "daily_forecasts": 608,
+  "monthly_fits": 20,
+  "forecast_availability": {
+    "linear_probability": 608,
+    "mlp_probability": 608
+  },
+  "hmm_known_decisions": 608,
+  "per_family_active_days": {
+    "trend": 1099,
+    "relative_momentum": 1099,
+    "carry_momentum": 1000,
+    "mean_reversion": 109,
+    "breakout": 1099
+  },
+  "strict_training_maturity": true,
+  "model_warning_count": 336,
+  "source_only_profit_claims": false,
+  "account_returns_computed": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "elapsed_seconds": 11.766603957999905
+}

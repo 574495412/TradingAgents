@@ -1,0 +1,62 @@
+{
+  "schema": "multi-regime-causal-study.v1",
+  "version": "20261025_v001",
+  "data": "data/research/github_factor_market_20261025_v001",
+  "source_pack": "data/research/regime_sources_20261025_v002",
+  "parent_source_pack": "data/research/github_factor_survey_20261025_v001",
+  "state_parameters": {
+    "momentum_window": 20,
+    "volatility_window": 20,
+    "slow_ma_window": 100,
+    "efficiency_window": 20,
+    "trend_z_min": 1.0,
+    "efficiency_min": 0.2,
+    "volatility_history": 252,
+    "volatility_history_min": 126,
+    "high_volatility_quantile": 0.8,
+    "turnover_window": 28,
+    "minimum_daily_quote": 50000000,
+    "maximum_eligible": 30,
+    "minimum_eligible": 10
+  },
+  "state_clock": "Completed daily observations at day d become usable at UTC d+1; no intraday price from the decision day. Unknown/incomplete history stays unknown. Equity adapters preserve supplied observed sessions.",
+  "state_precedence": ["unknown", "liquidity_stress", "volatility_breakout", "trend_up", "trend_down", "range"],
+  "training": "2024 historical calibration only; all predictive labels end strictly before fit time. Later rolling refits use strictly matured past labels and retain coefficient/scale receipts. All currently available2025/2026history is consumed diagnostic history, not untouchedOOS.",
+  "strategy_families": {
+    "trend": "PST EWMAC32/128 using robust35day price-unit volatility and training-only mean-absolute normalization",
+    "relative_momentum": "Sentinel21day momentum ranking without funding term; top/bottom5 equal weights, local adaptation ablation",
+    "carry_momentum": "Existing source-pinned Sentinel21day momentum plus inverse5day mean funding ranks, top/bottom5",
+    "mean_reversion": "PST mr_wings Lfast4/Lslow16: negative EWMAC only if absolute value >=3times prior rolling5000(min3) standard deviation; use common robust35day volatility; source includes current completed observation in trailing std",
+    "breakout": "PST10day range midpoint forecast smoothed EWM2; use prior closed UTC days",
+    "cash": "Zero-interest cash benchmark; not an alpha source"
+  },
+  "source_deviations": [
+    "Source formulas only; common account execution and crypto UTC calendars differ from source complete systems.",
+    "Momentum-only ranking is a preregistered ablation of source carry ranking, not a separately discovered public profitable strategy.",
+    "Daily state parameters are a transparent self-developed hypothesis after source review; no claim of an upstream profitable regime classifier.",
+    "Trend, breakout and mr_wings use fixed public defaults and common volume eligibility. Sparse reversion may have too few samples; no threshold tuning to create trades."
+  ],
+  "models": {
+    "HMM": "GaussianHMM3states, diagonal covariance,100iterations,seed17; fit past features, implement forward-only filtering with fixed parameters; no Viterbi or smoothed past labels",
+    "MLP": "MLPClassifier hidden16,tanh,alpha1,Adam,learning_rate0.001,max_iter300,shufflefalse,early_stoppingfalse,seed17; predict one-day benchmark return sign from matured daily labels; compare same-data linear logistic baseline",
+    "refit": "monthly, previous365calendar days, minimum180complete examples; one fixed specification per model, no architecture search"
+  },
+  "candidates": ["trend", "relative_momentum", "carry_momentum", "mean_reversion", "breakout", "cash", "equal_mix", "rule_router", "event_router", "hmm_router", "linear_router", "mlp_router"],
+  "routing": {
+    "trend_up": {"trend": 0.5, "relative_momentum": 0.5},
+    "trend_down": {"trend": 0.5, "relative_momentum": 0.5},
+    "range": {"carry_momentum": 0.5, "mean_reversion": 0.5},
+    "volatility_breakout": {"breakout": 1.0},
+    "liquidity_stress": {},
+    "unknown": {}
+  },
+  "model_overlay": "Linear/MLP produce probability of next-day BTC open-to-open positive return. On trend_up,full risk only if probability>=0.55; trend_down full only if<=0.45; otherwise half risk. On range/breakout keep rule risk unchanged. Missing/nonconverged/nonfinite forecasts mean cash. HMM filters3Gaussian states and maps fitted emission means back to raw trend_z/volatility_ratio: volatility_ratio>1 =>breakout, trend_z>=1 =>up, <=-1 =>down, else range; same routing matrix. Never override unknown/liquidity_stress.",
+  "mixture": "Five fixed unit-gross family targets averaged; net opposing intentions per symbol, keep10largest absolute net weights without re-normalizing after trimming. Multiply by common gross0.8. No strategy-level account-equity stitching.",
+  "account": {"capital":10000,"fee_bps":5,"slippage_bps":3,"participation":0.01,"gross":0.8,"max_positions":10,"rebalance_hours":24,"threshold":0.0032,"stop_loss":0.08,"drawdown_halt":0.15},
+  "event_overlay": "Only verified official FOMC actual release+5minutes and trailing24hours; reduce gross tohalf. Intraday new availability requires next hourly risk decision, not anticipation of the release. Other news coverage unknown; no claim of general event protection.",
+  "screen":{"id":"screen2025","start":"2025-01-01","end":"2026-01-01"},
+  "diagnostics":[{"id":"diagnostic2026","start":"2026-01-01","end":"2026-09-01"},{"id":"continuous2025_2026","start":"2025-01-01","end":"2026-09-01"}],
+  "maximum_accounts":60,
+  "formula_parameter_search":false,
+  "independent_oos":false,"production_eligible":false,"orders_enabled":false
+}

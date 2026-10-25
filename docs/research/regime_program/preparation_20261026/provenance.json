@@ -1,0 +1,13 @@
+{
+  "inputs": "/Users/chrise/GitHub/TradingAgents/results/research/regime_inputs_20261026_v001",
+  "states": "/Users/chrise/GitHub/TradingAgents/results/research/regime_states_20261025_v002",
+  "source_pack": "/Users/chrise/GitHub/TradingAgents/data/research/regime_sources_20261025_v002",
+  "snapshots_preserved": true,
+  "input_completion_sha256": "cb9a6f49f3b850debef010372d441335f347206de8d66acd8b5ccd1b4bc65a3d",
+  "state_completion_sha256": "bba262fc7b4a7eec35daa256581a98fd0bdfdd95548640aa57d2b1d182dcaef1",
+  "warning_types": [
+    "Setting the shape on a NumPy array has been deprecated in NumPy 2.5.\nAs an alternative, you can create a new view using np.reshape (with copy=False if needed)."
+  ],
+  "warning_interpretation": "336个NumPy2.5数组shape弃用警告，不是优化未收敛；本轮20次月度拟合均完成，收敛和权重保留在本地fits.json",
+  "executed_source_identity": "每个阶段自身plan/source_snapshot冻结当时执行源码；后续格式化或新审计文件不追溯改变旧回执"
+}
