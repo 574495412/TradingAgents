@@ -1,0 +1,11 @@
+{
+  "schema": "pure-funding-collection-transport-recovery.v1",
+  "parent_plan_sha256": "bf5d7e6577591fec14893c790836e3f3c58edb3830b69194aa3ccd12d712ab16",
+  "failure_receipt_sha256": "a301ed65fe58f773dd0182197292a1c95e75ddc2600c4987c8f41bba855b2fc4",
+  "symbol": "BNBUSDT",
+  "date": "2025-01-29",
+  "maximum_additional_bar_attempts": 2,
+  "maximum_total_bar_attempts": 42,
+  "reason": "Initial connector transport failed before a data response; preserve the receipt and retry same public read. No change to time window, universe, candidate parameters or financial gates.",
+  "before_targets_and_returns": true
+}
