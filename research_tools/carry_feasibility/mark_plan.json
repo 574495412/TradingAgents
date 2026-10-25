@@ -1,0 +1,21 @@
+{
+  "schema": "spot-perpetual-mark-collection.v1",
+  "version": "20261026_v001",
+  "symbols": ["BTCUSDT", "ETHUSDT"],
+  "start": "2024-12-01T00:00:00Z",
+  "end_exclusive": "2026-09-01T00:00:00Z",
+  "interval": "5m",
+  "spot_data": "data/research/spot_perpetual_feasibility_20261026_v001",
+  "official_repository_commit": "d571690eb66760763b0bd6e27e8cd35603c7e244",
+  "archive": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/{symbol}/5m/{symbol}-5m-{month}.zip",
+  "budget_monthly_files": 42,
+  "checks": ["official SHA256 each ZIP", "complete millisecond UTC5m clock and OHLC", "independent raw CSV value reconstruction", "two public connector marks versus archives", "no substitution of trade price for mark price"],
+  "purpose": "Actual mark OHLC for segregated futures collateral and conservative intrabar margin envelopes. This is neither a broker historical maintenance-tier reconstruction nor a strategy return.",
+  "prior_baseline": "../freqtrade/research/crypto/hedged_hold_plan.json",
+  "prior_results": "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/train.json",
+  "prior_scope_disposition": "Prior positive2024training-only hold baseline was preserved outside the then perpetual-only primary scope; do not relabel it as new alpha. Hybrid carry here is a separately labelled research diversification module, not a substitute for the primary perpetual strategy objective.",
+  "independent_oos": false,
+  "financial_accounts": 0,
+  "production_eligible": false,
+  "orders_enabled": false
+}
