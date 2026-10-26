@@ -1,0 +1,15 @@
+{
+  "schema": "equity-exas-lifecycle-verification.v1",
+  "scope": "Internal source/time/coverage review only; no independent economic attestation.",
+  "source_hashes_match": true,
+  "input_hashes_match": true,
+  "raw_document_byte_roundtrips": 5,
+  "original_and_api_acceptance_clock_matches": 3,
+  "missing_sessions": 64,
+  "minimum_required_price_sessions": 84,
+  "candidate_price_rows_acquired": 0,
+  "actual_cash_available_at": null,
+  "new_economic_accounts": 0,
+  "external_independent_attestation": false,
+  "profit_goal_met": false
+}

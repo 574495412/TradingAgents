@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261026_depth_v004",
+  "version": "20261027_depth_v005",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -23,7 +23,7 @@
       "domain": "历史证券身份及生命周期",
       "original_records": "交易所上市/停牌/复牌/退市/代码与类别变化公告、原始证券目录快照、监管原始持仓文件、并购/分拆/拆合股与除息付款通知。",
       "required_fields": "永久证券/类别身份与发行人CIK分开；effective_time、first_published_at、captured_at、版本、可交易状态和来源。",
-      "current_gap": "ARK披露成员不是全市场上市主表；EXAS的64根日线和并购现金到账时间缺失。"
+      "current_gap": "固定EXAS的并购协议、最后交易日/生效日/停牌日和原始接受时间已核查；64根日线及账户现金可用仍缺。ARK披露成员仍不是全市场上市主表。"
     },
     {
       "id": "R2",
@@ -75,7 +75,7 @@
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。"
+      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。 新增EXAS原始完整申报生命周期核查：3份申报、5个文档字节可追溯，3项UTC接受时钟一致。当前Nasdaq页有事后修订，不能回填为3月20日已知；64日行情和券商资金可用仍缺。目录找到退市文件不等于取得行情。"
     },
     {
       "id": "G3",
@@ -97,7 +97,7 @@
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。"
+      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。 EXAS每股105美元是毛现金权利；未取得资金可用凭证，不提前转成可投资现金。"
     },
     {
       "id": "G5",
@@ -172,7 +172,18 @@
     "new_economic_accounts": 0,
     "external_attestation_received": false,
     "original_input_review": "results/research/equity_arelle_review_20261026_v002",
-    "attribution": "results/research/equity_depth_attribution_20261026_v002"
+    "attribution": "results/research/equity_depth_attribution_20261026_v002",
+    "exas_lifecycle": {
+      "report": "docs/research/equities_exas_lifecycle_20261027/README.md",
+      "input_contract": "docs/research/equities_exas_lifecycle_20261027/missing-input-contract.json",
+      "run": "results/research/equity_exas_lifecycle_20261027_v004",
+      "raw_filings": 3,
+      "raw_documents": 5,
+      "candidate_price_rows_acquired": 0,
+      "cash_spendable_at": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    }
   },
   "decision_rules": {
     "strategy_admission_required_gates": [

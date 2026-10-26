@@ -1,0 +1,23 @@
+{
+  "schema": "equity-lifecycle-canonical-consistency.v1",
+  "version": "20261027_depth_v005",
+  "previous_criteria_commit": "1900da0",
+  "evaluation_levels_unchanged": true,
+  "all_gate_pass_conditions_unchanged": true,
+  "external_veto_and_evidence_policy_unchanged": true,
+  "challenge_cagr": 0.5,
+  "max_drawdown_limit": 0.15,
+  "actual_metrics_remain_null": true,
+  "new_account_budget_executed": 16,
+  "new_searches_frozen": true,
+  "missing_64_sessions_same_as_previous_raw_gap": true,
+  "api_version_and_acceptance_sha_match": true,
+  "profit_goal_status": "not_met",
+  "all_external_attestations_missing": true,
+  "files_sha256": {
+    "tradingagents/research/equities/objectives.json": "b75dc5f328a49ba5a9089d207f2bc07527c444e0beee5526351a9b55fcc0da6f",
+    "docs/research/equities_depth_acceptance_20261026/acceptance.json": "a57ba63e15032259ba0eab043019c25b1c44ed5ca3babbe5611206dfa77b06d4",
+    "docs/research/equities_exas_lifecycle_20261027/missing-input-contract.json": "2d16abf7731edcbf10c1b0ee143a60e877df22396c28286bd5a192fb8a8c01fe",
+    "tradingagents/research/equities/lifecycle_review.py": "1d3d77c8821fe5972bd907e6f4bac40db33510bab45a78fe2216b426fe5754af"
+  }
+}

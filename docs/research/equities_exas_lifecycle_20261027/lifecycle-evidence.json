@@ -1,0 +1,278 @@
+{
+  "schema": "equity-lifecycle-source-review.v1",
+  "security": {
+    "historical_ticker": "EXAS",
+    "cusip": "30063P105",
+    "issuer_cik": "0001124140"
+  },
+  "filings": [
+    {
+      "accession": "0001193125-25-288896",
+      "parent_file": "data/research/equity_exas_lifecycle_20261026_v001/raw/initial_8k.txt",
+      "parent_sha256": "1d1c5de2d8825bd522686b70cc99910ef0b2ead8703a5a1a1788eaf75ec0cc5d",
+      "accepted_at_utc": "2025-11-20T13:02:02+00:00",
+      "research_available_at_utc": "2025-11-20T14:02:02+00:00",
+      "availability_assumption": "Existing one-hour research processing lag; not proof of first public release.",
+      "original_api_acceptance_match": true,
+      "documents": [
+        {
+          "filename": "d38144d8k.htm",
+          "source_start": 1306,
+          "source_end": 46403,
+          "framing_removed": "SEC PDS <XBRL> framing",
+          "sha256": "ce9d0c75f08cea6169e1b10227e704a2e2c2fd0bf881add71587cce5a2200504"
+        },
+        {
+          "filename": "d38144dex21.htm",
+          "source_start": 46521,
+          "source_end": 608189,
+          "framing_removed": null,
+          "sha256": "6de98cafa84384f189dc5395bf784d1e69d147e0d686e8b39abc64b2a3256fd6"
+        },
+        {
+          "filename": "d38144dex991.htm",
+          "source_start": 608302,
+          "source_end": 640608,
+          "framing_removed": null,
+          "sha256": "4fe7e9bdc9174d4db39e84950935ae65074875d18e62f1be6394bee18402ce4a"
+        }
+      ]
+    },
+    {
+      "accession": "0001193125-26-116862",
+      "parent_file": "data/research/equity_exas_lifecycle_20261026_v001/raw/preclose_8k.txt",
+      "parent_sha256": "7c2fc139e2557afea0d16153e2cc88318de20724631d11470406484fda989efd",
+      "accepted_at_utc": "2026-03-20T13:12:45+00:00",
+      "research_available_at_utc": "2026-03-20T14:12:45+00:00",
+      "availability_assumption": "Existing one-hour research processing lag; not proof of first public release.",
+      "original_api_acceptance_match": true,
+      "documents": [
+        {
+          "filename": "d92966d8k.htm",
+          "source_start": 1190,
+          "source_end": 27772,
+          "framing_removed": "SEC PDS <XBRL> framing",
+          "sha256": "604ca5159c8bb66a0b016b25e66d0c10f15273d1df2f7216a72a38be235db25c"
+        }
+      ]
+    },
+    {
+      "accession": "0001193125-26-118700",
+      "parent_file": "data/research/equity_exas_lifecycle_20261026_v001/raw/completed_8k.txt",
+      "parent_sha256": "64b25a336d3faca5eb946c320507126141cb971595f345af2310a0d4bd834240",
+      "accepted_at_utc": "2026-03-23T13:00:16+00:00",
+      "research_available_at_utc": "2026-03-23T14:00:16+00:00",
+      "availability_assumption": "Existing one-hour research processing lag; not proof of first public release.",
+      "original_api_acceptance_match": true,
+      "documents": [
+        {
+          "filename": "d128802d8k.htm",
+          "source_start": 1910,
+          "source_end": 51602,
+          "framing_removed": "SEC PDS <XBRL> framing",
+          "sha256": "ea4a290f318a84339877f0cf73fc117922bbfcb976e7e43df4d63681bbad3c1f"
+        }
+      ]
+    }
+  ],
+  "contract_clauses": [
+    {
+      "phrase": "no holder of Book-Entry Shares shall be required to deliver a Certificate or letter of transmittal",
+      "positions_in_text_projection": [
+        90011
+      ]
+    },
+    {
+      "phrase": "as promptly as reasonably practicable after the Effective Time",
+      "positions_in_text_projection": [
+        90438
+      ]
+    },
+    {
+      "phrase": "No interest will be paid or accrued",
+      "positions_in_text_projection": [
+        90700
+      ]
+    },
+    {
+      "phrase": "no event later than the fifth Business Day thereafter",
+      "positions_in_text_projection": [
+        88303
+      ]
+    }
+  ],
+  "timeline_clauses": {
+    "initial_forecast": {
+      "phrase": "second quarter of 2026",
+      "positions_in_text_projection": [
+        4224
+      ]
+    },
+    "preclose_expectation": {
+      "phrase": "March 23, 2026",
+      "positions_in_text_projection": [
+        2982
+      ]
+    },
+    "completion_cash_right": {
+      "phrase": "right to receive $105.00 in cash",
+      "positions_in_text_projection": [
+        6480
+      ]
+    },
+    "trading_halted_before_open": {
+      "phrase": "halted prior to the opening of trading",
+      "positions_in_text_projection": [
+        9889
+      ]
+    }
+  },
+  "exchange_clauses": {
+    "revision_notice": {
+      "phrase": "UPDATED: Merger closed",
+      "positions_in_text_projection": [
+        44,
+        5169
+      ]
+    },
+    "last_trading_day": {
+      "phrase": "Last Trading Date: March 20, 2026",
+      "positions_in_text_projection": [
+        6055
+      ]
+    },
+    "suspension_day": {
+      "phrase": "Marketplace Effective Date for Suspension: March 24, 2026",
+      "positions_in_text_projection": [
+        6089
+      ]
+    },
+    "closed_before_open": {
+      "phrase": "closed prior to the market open on March 23, 2026",
+      "positions_in_text_projection": [
+        5664
+      ]
+    }
+  },
+  "book_entry_transmittal_required": false,
+  "certificate_holders_require_surrender_or_loss_affidavit": true,
+  "five_business_days_means": "Deadline to mail certificate-holder instructions, not a universal payment or broker availability deadline.",
+  "cash_right": {
+    "gross_usd_per_eligible_share": 105,
+    "interest": false,
+    "withholding_and_fees_verified": false
+  },
+  "last_trading_day": "2026-03-20",
+  "merger_effective_day": "2026-03-23",
+  "suspension_effective_day": "2026-03-24",
+  "exact_merger_effective_clock": null,
+  "broker_cash_received_at": null,
+  "broker_cash_spendable_at": null,
+  "cash_receipt_inferred_from_contract": false,
+  "nasdaq_current_page_is_updated": true,
+  "nasdaq_page_first_published_at": null,
+  "nasdaq_page_historical_revision_available_at": null,
+  "updated_page_backdated_as_signal": false,
+  "remaining_missing_sessions": [
+    "2024-06-27",
+    "2024-06-28",
+    "2024-07-01",
+    "2024-07-02",
+    "2024-07-03",
+    "2024-07-05",
+    "2024-07-08",
+    "2024-07-09",
+    "2024-07-10",
+    "2024-07-11",
+    "2024-07-12",
+    "2024-07-15",
+    "2024-07-16",
+    "2024-07-17",
+    "2024-07-18",
+    "2024-07-19",
+    "2024-07-22",
+    "2024-07-23",
+    "2024-07-24",
+    "2024-07-25",
+    "2024-07-26",
+    "2024-07-29",
+    "2024-07-30",
+    "2024-07-31",
+    "2024-08-01",
+    "2024-08-02",
+    "2024-08-05",
+    "2024-08-06",
+    "2024-08-07",
+    "2024-08-08",
+    "2024-08-09",
+    "2024-08-12",
+    "2024-08-13",
+    "2024-08-14",
+    "2024-08-15",
+    "2024-08-16",
+    "2024-08-19",
+    "2024-08-20",
+    "2024-08-21",
+    "2024-08-22",
+    "2024-08-23",
+    "2024-08-26",
+    "2024-08-27",
+    "2024-08-28",
+    "2024-08-29",
+    "2024-08-30",
+    "2024-09-03",
+    "2024-09-04",
+    "2024-09-05",
+    "2024-09-06",
+    "2024-09-09",
+    "2024-09-10",
+    "2024-09-11",
+    "2024-09-12",
+    "2024-09-13",
+    "2024-09-16",
+    "2024-09-17",
+    "2024-09-18",
+    "2024-09-19",
+    "2024-09-20",
+    "2024-09-23",
+    "2024-09-24",
+    "2024-09-25",
+    "2024-09-26"
+  ],
+  "missing_session_count": 64,
+  "vendor_declaration": {
+    "source": "v2-published-stock-files",
+    "scope": "daily-file-boundaries",
+    "release_id": null,
+    "records": [
+      {
+        "file": "EXAS_day_delisted_2026-03-24.csv",
+        "name": "Exact Sciences Corp",
+        "type": "CS",
+        "scopeNote": null,
+        "active": false,
+        "delistDate": "2026-03-24",
+        "firstDate": "2003-10-01",
+        "lastDate": "2026-03-20",
+        "coverage": "2003-10-01 / 2026-03-20",
+        "sizeDayBytes": 533985,
+        "sizeMinuteBytes": 147756928
+      }
+    ],
+    "file_contents_acquired": false,
+    "period_completeness_verified": false,
+    "reported_offer": {
+      "id": "stk-day",
+      "amount": 199,
+      "billing": "one-time"
+    },
+    "currency": "USD",
+    "price_basis": "single-user",
+    "purchase_authorized": false,
+    "purchase_made": false
+  },
+  "long_window_execution_allowed": false,
+  "new_economic_accounts": 0,
+  "external_independent_attestation": null,
+  "profit_goal_met": false
+}
