@@ -1,0 +1,28 @@
+{
+  "all_internal_checks_passed": true,
+  "checks": {
+    "registered_sources_unchanged": true,
+    "source_snapshot_matches": true,
+    "all_stock_close_drawdowns_exceed_15pct": true,
+    "carry_has_one_mechanism_and_no_admitted_variants": true,
+    "negative_sparse_rows_and_cash_separate": true,
+    "calendar_overlap_scope_corrected": true,
+    "no_false_portfolio_or_external_claim": true,
+    "no_verified_wait_claim": true,
+    "financial_scope_targets_budget_unchanged": true,
+    "all_prior_standards_unchanged": true,
+    "owner_gate_threshold_status_external_unchanged": true,
+    "adapter_gate_threshold_status_external_unchanged": true,
+    "original_metadata_and_sources_unchanged": true,
+    "original_prices_signals_unchanged": true,
+    "original_8_stock_states_unchanged": true,
+    "current_adapter_matches_owner": true
+  },
+  "registered_source_files": 12,
+  "version": "20261027_depth_v011",
+  "objective_sha256": "6c36b7994169bcc28e6d0afe4955a4a3bc7aadda830e6c6b3d5a41bd9c139016",
+  "acceptance_sha256": "33beec31984900902ee72c75e57f41df05b29281394098770cf8a60e074358bd",
+  "profit_goal_met": false,
+  "external_independent_attestation": false,
+  "scope": "Source/qualification/canonical consistency only; no shared-capital simulation or financial certification."
+}

@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v010",
+  "version": "20261027_depth_v011",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -119,7 +119,7 @@
       "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
       "status": "blocked",
       "independent_evidence": null,
-      "current_evidence_note": "既有股票动量与同步BTC/USD收益相关约0.343，控制SPY/QQQ后BTC系数约0.151。不能仅按股票/加密标签推定机制独立；本轮价格风险变量未提供既有加密策略的同期净损益，也未运行共同资本组合。"
+      "current_evidence_note": "新核对20个既有BTC/ETH双腿账户，16条内部净收益为正，但固定持有/成本过滤两变体均明确不具组合测试资格，且同属一个资金费机制；容量诊断选择不等于准入。当前20个账户与股票无共同日期；另有2024旧训练122个共同股票日期，但属于归档范围、不同账本/执行，不是获准同步PnL。48个另行非现金策略账户均负。8股票账户收盘回撤均超15%，USD/USDT和共同资金/现金可用亦未验证；不拼接净值，不触发剩余容量预算。"
     },
     {
       "id": "G7",
@@ -261,6 +261,22 @@
       "DSR": null,
       "PBO": null,
       "real_admission_minimum_effect": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "portfolio_readiness_review": {
+      "report": "docs/research/equities_depth_acceptance_20261026/portfolio-readiness.json",
+      "registration": "docs/research/equities_depth_acceptance_20261026/portfolio-readiness-registration.json",
+      "run": "results/research/equity_portfolio_readiness_20261027_v001",
+      "stock_accounts_within_15pct_close_drawdown": 0,
+      "reviewed_preexisting_matched_crypto_accounts": 20,
+      "eligible_matched_crypto_variants": 0,
+      "matched_crypto_distinct_mechanisms": 1,
+      "current_20_crypto_overlap_dates": 0,
+      "legacy_2024_calendar_overlap_dates": 122,
+      "legacy_calendar_overlap_is_admissible_PnL": false,
+      "shared_capital_FX_verified": false,
+      "common_capital_account_executed": false,
       "new_economic_accounts": 0,
       "external_independent_attestation": null
     }

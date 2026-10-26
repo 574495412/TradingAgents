@@ -1,0 +1,20 @@
+{
+  "inputs_sha256": {
+    "results/research/equities_pit_stocks_20261026_v002/summary.json": "911c169c02f052319830bbf3d1cfc320391620d89fa417a05849a1c741f90df3",
+    "results/research/sparse_family_accounts_20261026_v002/summary.json": "04988627fc73aa06fd405adafb1beb8acceee98701b49b048879f4b71af57385",
+    "results/research/spot_carry_accounts_20261026_v002/summary.json": "ed70babab641efb07eb10fd4e3f5dba3fb9babac6d54b7d017cf19be3a18c237",
+    "results/research/spot_carry_accounts_20261026_v002/completion.json": "57bae7a56aab907d9ed510f142664cb9569d2d39fcd7d0540bf6e499dc8673af",
+    "results/research/spot_carry_accounts_20261026_v002/plan.json": "d8f7346eeef2305eff7b8bbe399bb4b8ad0782e83c26f1b2b9fe13cd7c42c2e6",
+    "results/research/spot_carry_accounts_20261026_v002/capacity_selection.json": "5e40b31dff776d9d7447931abe3a0df6afd5f8c894c2a11bba43ba245a24d756",
+    "results/research/spot_carry_accounts_20261026_v002/legacy_evidence.json": "d66ebdf5f9f67aee35b8cce22770fc3e6d39203d2ec249bc5894ad5e229ec58a",
+    "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/train.json": "53190d391b4d3d74858ccc0926e8e9ed27530896c3cab3f89956578318f40db7",
+    "../freqtrade/user_data/crypto_quant/hedged_hold_run_v001/scope_disposition.json": "2879aa0b865a72ee1d9e321d5c3570a2baa5742aab126c28678b05a8250e5562",
+    "results/research/matched_carry_horizon_inputs_20261026_v001/summary.json": "ce8d0c5baf10af6ae1d0d4c202fb2f9ab67fbbd003a338863d6a7f09dbda8387",
+    "data/research/equity_portfolio_readiness_20261027_v001/carry-task-status.json": "acf65e8132227a24aba732a38113f62661d255d28ccb5a77d30c2e660e870177",
+    "results/research/equity_depth_attribution_20261026_v002/paired-daily-returns.csv": "1898ac37967abdbe22a9b0a8ad6fcf85ac93f11648e94f129642f5370f0700a3"
+  },
+  "analysis_sha256": "6e049f944a96c455c1c1423e35c99663bee8c86bebcc45f566a46e714c706cdb",
+  "target_source_commit": "b98e4b9",
+  "target_blob_sha256": "547e8e96d5cd8b2d52505948a7b2142c968f3fc69b195e123e02ee6b696ec716",
+  "own_source_checks_are_external_attestation": false
+}

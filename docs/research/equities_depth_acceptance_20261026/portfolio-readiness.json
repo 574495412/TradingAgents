@@ -1,0 +1,172 @@
+{
+  "schema": "equity-crypto-portfolio-readiness.v1",
+  "observed_at_utc": "2026-10-26T18:09:36.871036+00:00",
+  "stock_accounts": [
+    {
+      "name": "US_disclosed_equal_10000_5bps",
+      "currency": "USD",
+      "diagnostic_cagr": 0.02652881826554654,
+      "close_drawdown": 0.26259026855142076,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_disclosed_equal_10000_15bps",
+      "currency": "USD",
+      "diagnostic_cagr": 0.026430324250791726,
+      "close_drawdown": 0.26276783694208616,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_french_mom_12_2_10000_5bps",
+      "currency": "USD",
+      "diagnostic_cagr": 0.07213803313589051,
+      "close_drawdown": 0.28355594698173303,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_french_mom_12_2_10000_15bps",
+      "currency": "USD",
+      "diagnostic_cagr": 0.06802185144115636,
+      "close_drawdown": 0.2815181861099475,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_gross_profitability_10000_5bps",
+      "currency": "USD",
+      "diagnostic_cagr": -0.1558700801535976,
+      "close_drawdown": 0.4131011657182234,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_gross_profitability_10000_15bps",
+      "currency": "USD",
+      "diagnostic_cagr": -0.15783743797037697,
+      "close_drawdown": 0.4239113628374601,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_stock_blend_equal_10000_5bps",
+      "currency": "USD",
+      "diagnostic_cagr": -0.03573753595293039,
+      "close_drawdown": 0.309553263955183,
+      "within_drawdown_limit": false
+    },
+    {
+      "name": "US_stock_blend_equal_10000_15bps",
+      "currency": "USD",
+      "diagnostic_cagr": -0.04219994555925832,
+      "close_drawdown": 0.31669739952164333,
+      "within_drawdown_limit": false
+    }
+  ],
+  "minimum_stock_close_drawdown": 0.26259026855142076,
+  "stock_scope": "Frozen internal diagnostics with unresolved input conflicts, not independently certified performance. No extension of the same unchanged continuous NAV can erase an existing drawdown.",
+  "sparse_crypto": {
+    "noncash_accounts": 48,
+    "negative_noncash_accounts": 48,
+    "cash_controls": 6,
+    "capacity_followup_queue": []
+  },
+  "matched_crypto": {
+    "preexisting_accounts": 20,
+    "positive_internal_account_rows": 16,
+    "mechanisms": 1,
+    "variant_assessments": [
+      {
+        "candidate": "fixed_hold",
+        "capacity_100k_passed_research_proxy": false,
+        "status": "evidence_insufficient",
+        "eligible_for_portfolio_test": false,
+        "production_eligible": false,
+        "reasons": [
+          "lifecycle_or_cluster_evidence_insufficient"
+        ],
+        "minimum_complete_lifecycles": 2
+      },
+      {
+        "candidate": "cost_guarded",
+        "capacity_100k_passed_research_proxy": false,
+        "status": "evidence_insufficient",
+        "eligible_for_portfolio_test": false,
+        "production_eligible": false,
+        "reasons": [
+          "lifecycle_or_cluster_evidence_insufficient"
+        ],
+        "minimum_complete_lifecycles": 7
+      }
+    ],
+    "continuous_high_cost_diagnostics": [
+      {
+        "id": "continuous2025_2026_fixed_hold_cap10000_slip10",
+        "capital_usdt": 10000,
+        "slippage_bps": 10,
+        "diagnostic_cagr": 0.008515066137006366,
+        "matched_closed_pairs": 2
+      },
+      {
+        "id": "continuous2025_2026_cost_guarded_cap10000_slip10",
+        "capital_usdt": 10000,
+        "slippage_bps": 10,
+        "diagnostic_cagr": 0.0047466441587467045,
+        "matched_closed_pairs": 7
+      }
+    ],
+    "capacity_followup_role": "capacity diagnostics only; not admission or untouched OOS",
+    "internal_audit_is_external": false
+  },
+  "legacy_crypto": {
+    "preexisting_training_rows": 9,
+    "original_and_mirrored_records_match": true,
+    "scope": "PRESERVED_OUTSIDE_CURRENT_PERPETUAL_ONLY_SCOPE",
+    "scope_reason": "Human clarified primary objective is perpetual contract strategy similar to Omofun and DAmorne",
+    "quantity_precision": "continuous initial economic screen, not exchange-lot execution",
+    "independent_OOS": false
+  },
+  "calendar_alignment": {
+    "stock_return_dates": 372,
+    "current_20_crypto_overlap_dates": 0,
+    "legacy_2024_crypto_calendar_overlap_dates": 122,
+    "legacy_overlap_range": [
+      "2024-01-02",
+      "2024-06-26"
+    ],
+    "calendar_overlap_is_admissible_synchronized_PnL": false,
+    "reason": "Legacy calendar overlap exists. Its archived economic screen is a different account model and scope; it is not a verified net series in the segregated-wallet model or an admitted module."
+  },
+  "known_exit_horizon": {
+    "old_primary_data_only_slots": 2,
+    "horizon_guarded_primary_slots": 0,
+    "financial_accounts_in_horizon_review": 0
+  },
+  "case_task_observation": {
+    "threadId": "01a17139-1f82-7922-83d5-2ffc22a459b9",
+    "title": "评估量化研究主线与规律",
+    "status": {
+      "type": "systemError"
+    },
+    "latest_turn_status": "failed",
+    "latest_turn_completed_at": 1793027123,
+    "error": "Selected model is at capacity. Please try a different model.",
+    "observed_at_utc": "2026-10-26 18:09:00 UTC",
+    "scope": "Read-only task status observation; not financial evidence or a verified running job.",
+    "matching_live_python_processes": [],
+    "observation_role": "Operational status only; no live-process wait or completed new financial case is claimed."
+  },
+  "eligible_stock_modules": 0,
+  "eligible_reviewed_crypto_modules": 0,
+  "USD_USDT_FX_conversion_verified": false,
+  "common_capital_account_executed": false,
+  "required_shared_capital_evidence": [
+    "independently admitted modules",
+    "synchronized genuine joint net PnL and original valuation clocks",
+    "USD/USDT conversion and transfer/settlement eligibility",
+    "single cash/margin/receivable ledger and continuous high-water mark",
+    "external independent reconstruction and genuinely unseen forward account receipts"
+  ],
+  "new_economic_accounts": 0,
+  "current_program_executed_accounts": 16,
+  "portfolio_target_actual": null,
+  "profit_goal_met": false,
+  "external_independent_attestation": false,
+  "verdict": "No portfolio run admitted. Positive local carry diagnostics do not change module qualification; calendar overlap alone does not authorize return stitching or shared capital."
+}
