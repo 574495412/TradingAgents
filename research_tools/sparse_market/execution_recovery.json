@@ -1,0 +1,19 @@
+{
+  "schema": "sparse-engine-format-recovery.v1",
+  "failed_run": "results/research/sparse_family_accounts_20261026_v001",
+  "failed_completion_sha256": "8bb349cb47f0a10fd0ba45a92d6020c319f200711461ceef052cfce3c1b6c704",
+  "initialization_failures": 54,
+  "validated_economic_accounts_in_failed_run": 0,
+  "cause": "Pandas inferred one timestamp format for mixed whole-second and millisecond publication strings. No first mark, funding cash or fill was computed.",
+  "new_engine": "/Users/chrise/GitHub/freqtrade/research/crypto/sparse_calendar_v2.py",
+  "new_helper": "/Users/chrise/GitHub/freqtrade/research/crypto/sparse_sources_v2.py",
+  "engine_sha256": "b7d01f158e9cedb150456e2555753ba3ed7235178995ac3e2223c3e8dfbaba7f",
+  "helper_sha256": "059b38ad537c6ef6c244527cba42c1cbfb6f06644db551a5835ae12872323857",
+  "repair_scope": "Explicit mixed ISO publication parsing, same nanosecond chronology; run one full172name lifecycle preflight before matrix.",
+  "frozen_targets": "results/research/sparse_weekly_targets_20261026_v001",
+  "frozen_targets_completion_sha256": "38c8ea6c81aef09616db8588091d829c0c2e7707e320712c006ef0c49a8e866e",
+  "financial_parameters_changed": false,
+  "source_versions_or_roster_changed": false,
+  "new_alpha_hypotheses": 0,
+  "same_48_strategy_and6cash_matrix": true
+}
