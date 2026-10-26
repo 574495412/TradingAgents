@@ -1,0 +1,23 @@
+{
+  "schema": "equity-signal-order-evidence-verification.v1",
+  "version": "20261027_depth_v013",
+  "registered_input_files_checked": 73,
+  "parent_completion_files_checked": 50,
+  "audit_output_sha256": {
+    "summary.json": "aa86ee564173e4d3b743c7469f341084a1ffbbb27bda3fc1dffff3951c7f48eb",
+    "monthly-inputs.json": "b1ebe07ef2d80b2bc0d9256fcf176eff1a6c74f9e494cb815cba249805b0a781",
+    "registration.json": "67d60f62611c8ccc4c93ca94dca331b77e2ce62255e0d0b557393a2d3e64d457",
+    "integer-boundaries.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "mismatches.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "account-checks.json": "377bc393adaea979314bb8a426d96fe5c93577e3ae99daf03266182f7bdc05c9"
+  },
+  "objective_sha256": "5517b0c96a2b7a4c5ec2474082b162ab6a1513c4f3fe2d528e82854eea383405",
+  "acceptance_sha256": "feee932ea7e48444d1de695b92eb8c9b936a15d6c88b3dc53fd38bac142969a6",
+  "adapter_versions_and_hashes_match": true,
+  "financial_targets_budget_gates_status_and_external_flags_unchanged": true,
+  "fills_outside_first_session_after_month_end": 96,
+  "new_financial_accounts": 0,
+  "external_attestation": false,
+  "profit_goal_met": false,
+  "scope": "Current internal file and adapter consistency only; not historical publication, original pre-evaluation sealing, source authenticity or external acceptance."
+}

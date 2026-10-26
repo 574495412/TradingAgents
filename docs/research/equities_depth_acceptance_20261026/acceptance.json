@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v012",
+  "version": "20261027_depth_v013",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -64,7 +64,7 @@
       "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "纠正启动前成交量上下文后，同池等权高成本诊断CAGR17.62%，动量仍6.80%，动量成交与净值逐项不变。固定配对均值由+1.88变为−3.69基点/日；原20日块/2000次/固定种子的区间改为约[−19.46,+9.75]基点，仍跨零。旧配对结果仅对应旧实现；非风险匹配对照，不证明可重复alpha或全市场动量失效。原COIN集中与BTC暴露结论保留原有边界。"
+      "current_evidence_note": "纠正启动前成交量上下文后，同池等权高成本诊断CAGR17.62%，动量仍6.80%，动量成交与净值逐项不变。固定配对均值由+1.88变为−3.69基点/日；原20日块/2000次/固定种子的区间改为约[−19.46,+9.75]基点，仍跨零。旧配对结果仅对应旧实现；非风险匹配对照，不证明可重复alpha或全市场动量失效。原COIN集中与BTC暴露结论保留原有边界。 冻结改编的18个月末排序与实际请求已用独立标量规则核对；原French定义是六个市值加权多空组合，本地十股等权现金改编不能继承其论文业绩或称完整原版复现。"
     },
     {
       "id": "G2",
@@ -97,7 +97,7 @@
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "发现账户输入截断导致原前19个评价日prior20成交量不可用，已有源文件实际提供启动前20日。已保留原16账户，纠正复算8个：只增加只读前史，不提前交易、不改变规则/成本/区间/原数据。8份Decimal账本最大差约3.05e−12美元，8份实际JSON状态由新解释器继续恢复逐项一致；仍是内部核对，不能替代外部证据。"
+      "current_evidence_note": "发现账户输入截断导致原前19个评价日prior20成交量不可用，已有源文件实际提供启动前20日。已保留原16账户，纠正复算8个：只增加只读前史，不提前交易、不改变规则/成本/区间/原数据。8份Decimal账本最大差约3.05e−12美元，8份实际JSON状态由新解释器继续恢复逐项一致；仍是内部核对，不能替代外部证据。 标量年/月/Fraction/Decimal按18月末、121次年度可得输入、258条目标请求及228笔既有成交核对，0协议不一致；包含成交量、资金可用、次序与可负担数量。96笔并非月末后首个交易日成交，符合已冻结的逐日目标维护/资金延后模型，不表示真实成交认证。"
     },
     {
       "id": "G5",
@@ -298,6 +298,22 @@
       "raw_inputs_or_frozen_engine_modified": false,
       "independent_forward_OOS": false,
       "external_attestation": null
+    },
+    "signal_order_contract_audit": {
+      "report": "docs/research/equities_pit_stocks_20261026/README.md",
+      "run": "results/research/equity_signal_order_contract_20261027_v002",
+      "plan": "docs/research/equities_pit_stocks_20261026/signal-order-contract-plan.json",
+      "summary": "docs/research/equities_pit_stocks_20261026/signal-order-summary.json",
+      "monthly_decisions": 18,
+      "annual_availability_rows": 121,
+      "daily_weight_checks": 14920,
+      "integer_request_checks": 258,
+      "observed_fills_checked": 228,
+      "contract_mismatches": 0,
+      "monthly_signal_does_not_imply_monthly_only_execution": true,
+      "full_original_paper_replication": false,
+      "new_financial_accounts": 0,
+      "external_independent_attestation": null
     }
   },
   "decision_rules": {

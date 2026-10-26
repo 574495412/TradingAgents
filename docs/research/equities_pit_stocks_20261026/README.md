@@ -101,3 +101,27 @@ python -m tradingagents.research.equities.pit_stocks --pit data/research/NEW_PIT
 [逐账户对照](volume-context-comparisons.json)、[19日缺失上下文证明](volume-context-warmup-proof.json)、[来源登记](volume-context-registration.json)、[内部账本](volume-context-internal-ledger-audits.json)和[新解释器恢复](volume-context-fresh-process-restart.json)均可检查。八账户共2,976个日终账本点的Decimal最大余额差约3.05e−12美元；新进程读实际JSON恢复全部状态一致。它们只支持这次内部实现/算术核对，不能代替G7/G8，也不解决行情真实性、竞价、容量、EXAS并购资金及历史缺口。
 
 主纠正脚本直接运行，绕过应用初始化器和dotenv：`tradingagents/research/equities/pit_context_correction.py --output results/research/NEW_CORRECTION_REVIEW`。当前总预算已满，不能据此自动启动额外金融重放；合成回归检查可用`--self-test`，仅测试首日采用前日20量、不消费当日量、不产生窗前交易和拒绝缺上下文。核查已有结果见[verify_volume_context.py](verify_volume_context.py)。原协议完整外部复现、来源认证和真正未见前向仍未完成。
+
+## 后续：月末信号到整数股订单的标量核对
+
+计算前保存[核对规则与容差](signal-order-contract-plan.json)。预期侧直接读取原始十进制价格和年度记录，使用日历年月、精确有理数和Decimal；不调用生产打分函数或账户重放引擎。生产函数只用于暴露冻结目标权重供比较。动量用形成月之前一月的月末价格除以形成月上一年同月月末价格，即下一持有月的前2至12月累计收益；有股息时逐日构造总回报。前期须完整，不把缺失填零。质量侧从毛利和资产重算比率，按当时可得、550日年龄及最新报告期/版本排序，最新缺失不回退旧数；正分前三、不足槽位现金，固定各半不再归一。
+
+逐日订单侧独立按前日净值/收盘价、原整数持仓、5%不交易带、真正前20日量及0.1%上限核对目标请求，再按原身份顺序先卖后买、三交易日资金锁、独立费用公式和当时可用现金核对可负担数量。只核查已有记录，不生成新的金融路径或绩效。
+
+| 已核查范围 | 结果 |
+| --- | ---: |
+| 2022-12-30至2024-05-31真实月末决策 | 18 |
+| 年度记录在决策时可用的重复读取 | 121；不是121份独立财报 |
+| 日目标权重比较 | 14,920 |
+| 有符号整数股目标请求 | 258 |
+| 既有成交数量、可负担性及现金核对 | 228 |
+| 协议不一致项 | 0 |
+| 新金融账户／新假设 | 0／0 |
+
+完整每月原价起止、年度版本、排名与权重在封存结果`monthly-inputs.json`；摘要见[signal-order-summary.json](signal-order-summary.json)，逐账户覆盖见[signal-order-account-checks.json](signal-order-account-checks.json)。零不一致只支持这份冻结改编在该输入上的实现一致性，不证明所有原价、历史可得、经济优势或真实订单正确，也不能替代G7。
+
+其中96笔成交并不在月末信号后的首个交易日；这是原引擎逐日目标维护和资金解锁补单模型的表现，不是本轮新加规则。不能将“月末产生信号”宣传为“只在月初交易”。本次原作者[French定义页面](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html)描述六个按规模及前2至12月收益分组的市值加权组合，用高收益组减低收益组构造因子；本地十只ARK披露队列、固定等权正分前三、现金长仓及账户规则有实质差异。因此这里验证的是已披露的数学改编，不是原版市场宽度、多空因子或公开论文业绩的复现。网页是当前观察，不认证历史网页版本或CRSP数据发布。
+
+来源与代码见[signal-order-registration.json](signal-order-registration.json)。主脚本为`tradingagents/research/equities/signal_order_audit.py --output results/research/NEW_SIGNAL_CONTRACT_AUDIT`；它只核对源记录，不调用金融重放引擎。24/24账户预算及风险/外部验收门槛保持，已纠正的回撤超限结果继续有效，独立核查与真实前向仍缺。
+
+本核查v002补充显式登记实际消费的交易日历和父运行摘要，算法、容差及全部检查结果与v001相同；两份审计结果均保留。这些哈希在本轮采集，只证明当前输入一致，不能追溯证明旧金融评估前已封存日历、数据当时可得或来源真实。

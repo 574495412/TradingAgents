@@ -1,0 +1,17 @@
+{
+  "schema": "equity-signal-order-contract-audit.v1",
+  "monthly_decisions": 18,
+  "eligible_annual_inputs": 121,
+  "daily_weight_checks": 14920,
+  "integer_request_checks": 258,
+  "recorded_fill_checks": 228,
+  "mismatches": 0,
+  "internal_contract_checks_passed": true,
+  "full_paper_replication": false,
+  "producer_score_function_reused_on_expected_side": false,
+  "new_financial_accounts": 0,
+  "new_hypotheses": 0,
+  "external_attestation": false,
+  "profit_goal_met": false,
+  "scope": "Frozen ten-stock mathematical adaptation and recorded target/execution logic only. Not market authenticity, original market-wide factor performance, causal alpha or independent financial acceptance."
+}

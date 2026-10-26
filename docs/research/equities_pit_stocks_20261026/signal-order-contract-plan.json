@@ -1,0 +1,25 @@
+{
+  "schema": "equity-signal-order-contract-audit.v1",
+  "scope": "Independent scalar interpretation of the already frozen narrow-cohort adaptation, not original market-wide paper replication or an external review. No new financial accounts, rules or parameters.",
+  "source_run": "results/research/equities_pit_stocks_context_20261027_v001",
+  "first_evaluation": "2023-01-03",
+  "last_evaluation": "2024-06-26",
+  "checks": [
+    "True full exchange-calendar month ends, including2022-12-30 prior decision; no partialJune-end signal",
+    "Momentum: month-end prior month numerator / same calendar month previous year denominator, or exact daily gross-dividend product across that interval; positive top3, symbol tie order",
+    "Annual quality: latest eligible report period and then availability/accession, original550-day age, no fallback from latest missing record; exact gross profit/assets, positive top3",
+    "Unfilled slots stay cash; equal0.8/10 and fixedhalfblend do not renormalize",
+    "Compare producer weights only as observed outputs; expected side uses independent calendar/datetime/Fraction/Decimal code",
+    "Every corrected daily target request reconstructed from prior NAV/close, prior inventory, integer lots,5percent band and genuine prior20volume",
+    "Compare exact signed requested, capped and filled quantities; retain mismatch and floating-boundary cases, never silently waive",
+    "Distinguish monthly signal from daily target maintenance and delayed cash completion"
+  ],
+  "score_absolute_tolerance": 1e-10,
+  "weight_absolute_tolerance": 1e-12,
+  "signed_integer_request_tolerance": 0,
+  "mismatch_policy": "Report and block fidelity conclusion; do not modify strategy parameters or rerun financial accounts within this audit.",
+  "raw_data_and_financial_authenticity_proved": false,
+  "external_attestation": false,
+  "new_financial_accounts": 0,
+  "new_hypotheses": 0
+}

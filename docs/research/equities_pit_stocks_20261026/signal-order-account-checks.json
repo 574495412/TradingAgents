@@ -1,0 +1,58 @@
+[
+  {
+    "account": "US_disclosed_equal_10000_5bps",
+    "request_checks": 16,
+    "recorded_fills_checked": 16,
+    "recorded_fill_count": 16,
+    "fills_outside_first_session_after_month_end": 6
+  },
+  {
+    "account": "US_disclosed_equal_10000_15bps",
+    "request_checks": 16,
+    "recorded_fills_checked": 16,
+    "recorded_fill_count": 16,
+    "fills_outside_first_session_after_month_end": 6
+  },
+  {
+    "account": "US_french_mom_12_2_10000_5bps",
+    "request_checks": 46,
+    "recorded_fills_checked": 39,
+    "recorded_fill_count": 39,
+    "fills_outside_first_session_after_month_end": 20
+  },
+  {
+    "account": "US_french_mom_12_2_10000_15bps",
+    "request_checks": 45,
+    "recorded_fills_checked": 38,
+    "recorded_fill_count": 38,
+    "fills_outside_first_session_after_month_end": 19
+  },
+  {
+    "account": "US_gross_profitability_10000_5bps",
+    "request_checks": 29,
+    "recorded_fills_checked": 23,
+    "recorded_fill_count": 23,
+    "fills_outside_first_session_after_month_end": 14
+  },
+  {
+    "account": "US_gross_profitability_10000_15bps",
+    "request_checks": 28,
+    "recorded_fills_checked": 22,
+    "recorded_fill_count": 22,
+    "fills_outside_first_session_after_month_end": 13
+  },
+  {
+    "account": "US_stock_blend_equal_10000_5bps",
+    "request_checks": 39,
+    "recorded_fills_checked": 37,
+    "recorded_fill_count": 37,
+    "fills_outside_first_session_after_month_end": 9
+  },
+  {
+    "account": "US_stock_blend_equal_10000_15bps",
+    "request_checks": 39,
+    "recorded_fills_checked": 37,
+    "recorded_fill_count": 37,
+    "fills_outside_first_session_after_month_end": 9
+  }
+]
