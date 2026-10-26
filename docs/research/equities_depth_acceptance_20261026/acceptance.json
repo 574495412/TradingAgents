@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v007",
+  "version": "20261027_depth_v008",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -75,7 +75,7 @@
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。 新增EXAS原始完整申报生命周期核查：3份申报、5个文档字节可追溯，3项UTC接受时钟一致。当前Nasdaq页有事后修订，不能回填为3月20日已知；64日行情和券商资金可用仍缺。目录找到退市文件不等于取得行情。 COIN七份原始Item2.02核对为六次完整业绩、一次初步指引/重组。六个IR结构化发布时间隔离；四份分发原站显示与其名义时间相差5/6小时，分钟精度不伪造秒。首次公开仍未全面认证。"
+      "current_evidence_note": "20个实际消费年度原件及45项数值已有内部Arelle/原文核对，非外部认证。EXAS生命周期原件可追溯；后续取得64个缺口日候选，但6月26日开盘差0.025美元超既定容差，20个固定重叠日成交量差异未解释，候选0日准入，旧数值保留为待来源核实的诊断。不得改容差、选择性替换旧末日或将并购现金权利当可用资金。COIN六个IR元数据时钟继续隔离，四份原分发页只有分钟精度，首次公开仍未全面认证。外部独立重建尚缺。"
     },
     {
       "id": "G3",
@@ -213,6 +213,22 @@
       "new_economic_accounts": 0,
       "PEAD_reproduced": false,
       "external_independent_attestation": null
+    },
+    "exas_gap_review": {
+      "report": "docs/research/equities_exas_lifecycle_20261027/README.md",
+      "run": "results/research/equity_exas_gap_20261027_v001",
+      "summary": "docs/research/equities_exas_lifecycle_20261027/price-gap-summary.json",
+      "candidate_missing_session_rows_acquired": 64,
+      "contract_rows_observed": 84,
+      "admitted_gap_rows": 0,
+      "fixed_overlap_price_failures": [
+        "2024-06-26"
+      ],
+      "fixed_overlap_volume_differences": 20,
+      "frozen_accounts_modified": false,
+      "cash_spendable_at": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
     }
   },
   "decision_rules": {
@@ -258,5 +274,14 @@
     ],
     "unresolved_clock_conflict_admitted_to_intraday_signal": false,
     "own_checks_replace_external_attestation": false
+  },
+  "price_source_conflict_policy": {
+    "contract": "docs/research/equities_exas_lifecycle_20261027/missing-input-contract.json",
+    "acquired_is_not_admitted": true,
+    "frozen_tolerances_must_not_be_relaxed_after_candidate_observation": true,
+    "unexplained_overlap_blocks_consumption": true,
+    "required_resolution": "原始成交/竞价与交易时段、供应商版本/修订和复权链解释差异；保留两源原值及原冻结回测，不平均、不选择性替换、不凭发布日推断文件生成时点。",
+    "independent_acceptance_required": true,
+    "cash_availability_not_inferred_from_price_coverage": true
   }
 }

@@ -1,0 +1,10 @@
+{
+  "internal_source_consistency_checks_passed": true,
+  "original_table_rows_rebuilt": 200,
+  "fixed_overlap_sessions_recomputed": 20,
+  "contract_sha256": "2d16abf7731edcbf10c1b0ee143a60e877df22396c28286bd5a192fb8a8c01fe",
+  "frozen_account_states_unchanged": 8,
+  "candidate_data_admitted": false,
+  "external_attestation": false,
+  "scope": "Two parsers and Decimal checks are internal consistency only; source conflicts remain open."
+}

@@ -1,6 +1,6 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261027_depth_v007",
+  "version": "20261027_depth_v008",
   "title": "股票优先 · 原始证据与独立验证",
   "program_status": "active",
   "profit_goal_status": "not_met",
@@ -262,6 +262,22 @@
       "new_economic_accounts": 0,
       "PEAD_reproduced": false,
       "external_independent_attestation": null
+    },
+    "exas_gap_review": {
+      "report": "docs/research/equities_exas_lifecycle_20261027/README.md",
+      "run": "results/research/equity_exas_gap_20261027_v001",
+      "summary": "docs/research/equities_exas_lifecycle_20261027/price-gap-summary.json",
+      "candidate_missing_session_rows_acquired": 64,
+      "contract_rows_observed": 84,
+      "admitted_gap_rows": 0,
+      "fixed_overlap_price_failures": [
+        "2024-06-26"
+      ],
+      "fixed_overlap_volume_differences": 20,
+      "frozen_accounts_modified": false,
+      "cash_spendable_at": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
     }
   },
   "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
@@ -286,7 +302,7 @@
     ],
     "completed_accounts": 8,
     "full_window_available": false,
-    "gap": "EXAS仍缺2024-06-27至2024-09-26共64个交易日行情；并购合同和事件时间已核查，2026实际券商现金可用时间仍未知。数据商目录边界不是行情完整性证据；长窗口继续阻断。",
+    "gap": "EXAS的64个缺失交易日已取得供应商候选，原84行契约覆盖齐全；左端6月26日开盘价差0.025美元越过原0.01容差，20个固定重叠日成交量均有未解释差异，准入仍为0日。原回测保持诊断；实际并购现金可用时间及长窗口仍未认证。",
     "combination_status": "股票动量8周期、质量3周期，回撤均超15%；所查48个加密账户均为负，且双方已评估时段无交集。跨资产总账户尚未执行。",
     "high_cost_accounts": [
       {
@@ -353,7 +369,7 @@
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。 新增EXAS原始完整申报生命周期核查：3份申报、5个文档字节可追溯，3项UTC接受时钟一致。当前Nasdaq页有事后修订，不能回填为3月20日已知；64日行情和券商资金可用仍缺。目录找到退市文件不等于取得行情。 COIN七份原始Item2.02核对为六次完整业绩、一次初步指引/重组。六个IR结构化发布时间隔离；四份分发原站显示与其名义时间相差5/6小时，分钟精度不伪造秒。首次公开仍未全面认证。"
+      "current_evidence_note": "20个实际消费年度原件及45项数值已有内部Arelle/原文核对，非外部认证。EXAS生命周期原件可追溯；后续取得64个缺口日候选，但6月26日开盘差0.025美元超既定容差，20个固定重叠日成交量差异未解释，候选0日准入，旧数值保留为待来源核实的诊断。不得改容差、选择性替换旧末日或将并购现金权利当可用资金。COIN六个IR元数据时钟继续隔离，四份原分发页只有分钟精度，首次公开仍未全面认证。外部独立重建尚缺。"
     },
     {
       "id": "G3",

@@ -1,0 +1,1212 @@
+{
+  "left_fixed": [
+    {
+      "date": "2024-06-12",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001373291016",
+        "high": "-4.5776367E-7",
+        "low": "9.15527344E-7",
+        "close": "6.1035156E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2935856,
+      "reference_volume": 2935900,
+      "volume_difference": -44,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-13",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "-7.6293945E-7",
+        "low": "0.000001525878906",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2560991,
+      "reference_volume": 2561000,
+      "volume_difference": -9,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-14",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001373291016",
+        "high": "-0.000001220703125",
+        "low": "-7.6293945E-7",
+        "close": "-0.000001068115234"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1950468,
+      "reference_volume": 1950500,
+      "volume_difference": -32,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-17",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "-7.6293945E-7",
+        "low": "-0.00000183105469",
+        "close": "-0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2352907,
+      "reference_volume": 2352900,
+      "volume_difference": 7,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-18",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.00000183105469",
+        "high": "-9.15527344E-7",
+        "low": "-0.00000183105469",
+        "close": "0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2812513,
+      "reference_volume": 2812500,
+      "volume_difference": 13,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-20",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "7.6293945E-7",
+        "low": "1.5258789E-7",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3493446,
+      "reference_volume": 3493400,
+      "volume_difference": 46,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-21",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001220703125",
+        "high": "0.00000183105469",
+        "low": "-0.000001373291016",
+        "close": "0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 10207376,
+      "reference_volume": 10207400,
+      "volume_difference": -24,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-24",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.0000016784668",
+        "high": "9.15527344E-7",
+        "low": "-0.00000183105469",
+        "close": "-7.6293945E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3752974,
+      "reference_volume": 3753000,
+      "volume_difference": -26,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-25",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001220703125",
+        "high": "0.00000183105469",
+        "low": "0.000001068115234",
+        "close": "0.000001068115234"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3857732,
+      "reference_volume": 3857700,
+      "volume_difference": 32,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-26",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.0250016784668",
+        "high": "-1.5258789E-7",
+        "low": "-0.0000016784668",
+        "close": "1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": false,
+      "candidate_volume": 5287268,
+      "reference_volume": 5213465,
+      "volume_difference": 73803,
+      "volume_definition_or_revision_difference_explained": false
+    }
+  ],
+  "right_fixed": [
+    {
+      "date": "2024-09-27",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1296551,
+      "reference_volume": 1279262,
+      "volume_difference": 17289,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-09-30",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1632893,
+      "reference_volume": 1579438,
+      "volume_difference": 53455,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-01",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1959675,
+      "reference_volume": 1939808,
+      "volume_difference": 19867,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-02",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2162909,
+      "reference_volume": 2158584,
+      "volume_difference": 4325,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-03",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.01",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1513408,
+      "reference_volume": 1510766,
+      "volume_difference": 2642,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-04",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2011108,
+      "reference_volume": 1992650,
+      "volume_difference": 18458,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-07",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.01",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1499783,
+      "reference_volume": 1426592,
+      "volume_difference": 73191,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-08",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1587999,
+      "reference_volume": 1584857,
+      "volume_difference": 3142,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-09",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1338854,
+      "reference_volume": 1330884,
+      "volume_difference": 7970,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-10-10",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "0.00",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1386696,
+      "reference_volume": 1375177,
+      "volume_difference": 11519,
+      "volume_definition_or_revision_difference_explained": false
+    }
+  ],
+  "additional_left_all_observed": [
+    {
+      "date": "2024-03-22",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001068115234",
+        "high": "0.000001068115234",
+        "low": "0.00",
+        "close": "0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1011708,
+      "reference_volume": 1011600,
+      "volume_difference": 108,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-03-25",
+      "price_differences_candidate_minus_reference": {
+        "open": "7.6293945E-7",
+        "high": "9.1552734E-7",
+        "low": "0.00",
+        "close": "0.0000016784668"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1803464,
+      "reference_volume": 1803400,
+      "volume_difference": 64,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-03-26",
+      "price_differences_candidate_minus_reference": {
+        "open": "-9.1552734E-7",
+        "high": "-3.0517578E-7",
+        "low": "-4.5776367E-7",
+        "close": "0.00000213623047"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1920618,
+      "reference_volume": 1920600,
+      "volume_difference": 18,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-03-27",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.00000274658203",
+        "high": "-3.0517578E-7",
+        "low": "3.0517578E-7",
+        "close": "0.00000274658203"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1710772,
+      "reference_volume": 1710800,
+      "volume_difference": -28,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-03-28",
+      "price_differences_candidate_minus_reference": {
+        "open": "-3.0517578E-7",
+        "high": "-0.00000274658203",
+        "low": "-3.0517578E-7",
+        "close": "0.00000244140625"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 5469456,
+      "reference_volume": 5469500,
+      "volume_difference": -44,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-01",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00000244140625",
+        "high": "0.00",
+        "low": "-0.00000305175781",
+        "close": "-0.00000366210938"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3173531,
+      "reference_volume": 3173500,
+      "volume_difference": 31,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-02",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00000366210938",
+        "high": "-0.00000274658203",
+        "low": "-0.00000366210938",
+        "close": "0.00000213623047"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 11351714,
+      "reference_volume": 11351700,
+      "volume_difference": 14,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-03",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.00000122070312",
+        "high": "-0.00000274658203",
+        "low": "-9.1552734E-7",
+        "close": "3.0517578E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 4852303,
+      "reference_volume": 4852300,
+      "volume_difference": 3,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-04",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.0000015258789",
+        "high": "-0.00000183105469",
+        "low": "0.00000366210938",
+        "close": "-0.00000366210938"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3441223,
+      "reference_volume": 3441200,
+      "volume_difference": 23,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-05",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.00000213623047",
+        "high": "-0.00000122070312",
+        "low": "-0.00000183105469",
+        "close": "-0.0000033569336"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2108387,
+      "reference_volume": 2029600,
+      "volume_difference": 78787,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-08",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.0000033569336",
+        "high": "-0.00000244140625",
+        "low": "-0.0000033569336",
+        "close": "-0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1659083,
+      "reference_volume": 1659000,
+      "volume_difference": 83,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-09",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00000213623047",
+        "high": "-0.00000244140625",
+        "low": "0.00000122070312",
+        "close": "-0.00000213623047"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2568737,
+      "reference_volume": 2568700,
+      "volume_difference": 37,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-10",
+      "price_differences_candidate_minus_reference": {
+        "open": "-9.1552734E-7",
+        "high": "0.00000244140625",
+        "low": "-0.0000015258789",
+        "close": "0.0000015258789"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2297144,
+      "reference_volume": 2296900,
+      "volume_difference": 244,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-11",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.0000033569336",
+        "high": "0.00000366210938",
+        "low": "-0.00000213623047",
+        "close": "0.00000305175781"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 5334939,
+      "reference_volume": 5334900,
+      "volume_difference": 39,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-12",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00000183105469",
+        "high": "0.0000015258789",
+        "low": "0.00000122070312",
+        "close": "0.00000366210938"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2428865,
+      "reference_volume": 2428800,
+      "volume_difference": 65,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-15",
+      "price_differences_candidate_minus_reference": {
+        "open": "3.0517578E-7",
+        "high": "0.0000015258789",
+        "low": "-0.00000305175781",
+        "close": "0.0000015258789"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3060358,
+      "reference_volume": 3060300,
+      "volume_difference": 58,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-16",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.0000015258789",
+        "high": "-0.00000305175781",
+        "low": "6.1035156E-7",
+        "close": "-6.1035156E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3472199,
+      "reference_volume": 3472100,
+      "volume_difference": 99,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-17",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.00000274658203",
+        "high": "0.00000213623047",
+        "low": "-0.000001068115234",
+        "close": "-0.000001220703125"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2516226,
+      "reference_volume": 2516200,
+      "volume_difference": 26,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-18",
+      "price_differences_candidate_minus_reference": {
+        "open": "-9.15527344E-7",
+        "high": "0.00000183105469",
+        "low": "0.000001220703125",
+        "close": "4.5776367E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1597962,
+      "reference_volume": 1597900,
+      "volume_difference": 62,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-19",
+      "price_differences_candidate_minus_reference": {
+        "open": "-1.5258789E-7",
+        "high": "4.5776367E-7",
+        "low": "0.000001068115234",
+        "close": "9.15527344E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2168842,
+      "reference_volume": 2168600,
+      "volume_difference": 242,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-22",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "4.5776367E-7",
+        "low": "-3.0517578E-7",
+        "close": "1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1594417,
+      "reference_volume": 1594400,
+      "volume_difference": 17,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-23",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001525878906",
+        "high": "0.00",
+        "low": "0.00000183105469",
+        "close": "0.000001220703125"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1777688,
+      "reference_volume": 1777700,
+      "volume_difference": -12,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-24",
+      "price_differences_candidate_minus_reference": {
+        "open": "-9.15527344E-7",
+        "high": "0.00000122070312",
+        "low": "-0.000001220703125",
+        "close": "-0.0000016784668"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1213600,
+      "reference_volume": 1213600,
+      "volume_difference": 0,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-25",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00000183105469",
+        "high": "0.00",
+        "low": "-0.000001525878906",
+        "close": "-9.15527344E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2648606,
+      "reference_volume": 2648400,
+      "volume_difference": 206,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-26",
+      "price_differences_candidate_minus_reference": {
+        "open": "-4.5776367E-7",
+        "high": "-0.000001373291016",
+        "low": "-7.6293945E-7",
+        "close": "0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2019062,
+      "reference_volume": 2018900,
+      "volume_difference": 162,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-29",
+      "price_differences_candidate_minus_reference": {
+        "open": "9.15527344E-7",
+        "high": "-0.00000183105469",
+        "low": "0.000001068115234",
+        "close": "0.000001220703125"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2216577,
+      "reference_volume": 2216600,
+      "volume_difference": -23,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-04-30",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "-6.1035156E-7",
+        "low": "7.6293945E-7",
+        "close": "0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2698563,
+      "reference_volume": 2698600,
+      "volume_difference": -37,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-01",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "7.6293945E-7",
+        "low": "-0.000001220703125",
+        "close": "0.0000016784668"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2172084,
+      "reference_volume": 2172000,
+      "volume_difference": 84,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-02",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001220703125",
+        "high": "-3.0517578E-7",
+        "low": "-0.000001068115234",
+        "close": "-9.15527344E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1587056,
+      "reference_volume": 1587000,
+      "volume_difference": 56,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-03",
+      "price_differences_candidate_minus_reference": {
+        "open": "4.5776367E-7",
+        "high": "-0.0000016784668",
+        "low": "-0.000001220703125",
+        "close": "3.0517578E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1612633,
+      "reference_volume": 1612500,
+      "volume_difference": 133,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-06",
+      "price_differences_candidate_minus_reference": {
+        "open": "4.5776367E-7",
+        "high": "-0.000001068115234",
+        "low": "-4.5776367E-7",
+        "close": "0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2657723,
+      "reference_volume": 2657700,
+      "volume_difference": 23,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-07",
+      "price_differences_candidate_minus_reference": {
+        "open": "-6.1035156E-7",
+        "high": "-9.15527344E-7",
+        "low": "-0.000001373291016",
+        "close": "1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1934015,
+      "reference_volume": 1934000,
+      "volume_difference": 15,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-08",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "-4.5776367E-7",
+        "low": "-9.15527344E-7",
+        "close": "4.5776367E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3677157,
+      "reference_volume": 3677200,
+      "volume_difference": -43,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-09",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "-0.000001068115234",
+        "low": "0.00",
+        "close": "-0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 10687789,
+      "reference_volume": 10687800,
+      "volume_difference": -11,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-10",
+      "price_differences_candidate_minus_reference": {
+        "open": "1.5258789E-7",
+        "high": "-0.000001525878906",
+        "low": "-3.0517578E-7",
+        "close": "0.0000016784668"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 5928130,
+      "reference_volume": 5928000,
+      "volume_difference": 130,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-13",
+      "price_differences_candidate_minus_reference": {
+        "open": "-3.0517578E-7",
+        "high": "-4.5776367E-7",
+        "low": "-0.00000183105469",
+        "close": "-1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2703507,
+      "reference_volume": 2703400,
+      "volume_difference": 107,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-14",
+      "price_differences_candidate_minus_reference": {
+        "open": "-7.6293945E-7",
+        "high": "-9.15527344E-7",
+        "low": "3.0517578E-7",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3726372,
+      "reference_volume": 3726400,
+      "volume_difference": -28,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-15",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.0000016784668",
+        "high": "6.1035156E-7",
+        "low": "1.5258789E-7",
+        "close": "-1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2740230,
+      "reference_volume": 2740100,
+      "volume_difference": 130,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-16",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "-0.000001373291016",
+        "low": "1.5258789E-7",
+        "close": "-7.6293945E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2566064,
+      "reference_volume": 2566100,
+      "volume_difference": -36,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-17",
+      "price_differences_candidate_minus_reference": {
+        "open": "-7.6293945E-7",
+        "high": "-7.6293945E-7",
+        "low": "0.000001525878906",
+        "close": "-0.000001068115234"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2453347,
+      "reference_volume": 2453300,
+      "volume_difference": 47,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-20",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001525878906",
+        "high": "0.00000183105469",
+        "low": "-1.5258789E-7",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 5629326,
+      "reference_volume": 5629100,
+      "volume_difference": 226,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-21",
+      "price_differences_candidate_minus_reference": {
+        "open": "-7.6293945E-7",
+        "high": "-9.15527344E-7",
+        "low": "-6.1035156E-7",
+        "close": "-4.5776367E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3641687,
+      "reference_volume": 3641700,
+      "volume_difference": -13,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-22",
+      "price_differences_candidate_minus_reference": {
+        "open": "-7.6293945E-7",
+        "high": "-0.00000183105469",
+        "low": "-7.6293945E-7",
+        "close": "-0.0000016784668"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2612451,
+      "reference_volume": 2612400,
+      "volume_difference": 51,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-23",
+      "price_differences_candidate_minus_reference": {
+        "open": "-6.1035156E-7",
+        "high": "0.000001068115234",
+        "low": "-0.000001220703125",
+        "close": "-0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 6007167,
+      "reference_volume": 6007200,
+      "volume_difference": -33,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-24",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.00",
+        "high": "0.00",
+        "low": "-0.000001525878906",
+        "close": "-1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 6014957,
+      "reference_volume": 6012900,
+      "volume_difference": 2057,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-28",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001525878906",
+        "high": "-0.0000016784668",
+        "low": "-4.5776367E-7",
+        "close": "-4.5776367E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3979641,
+      "reference_volume": 3979600,
+      "volume_difference": 41,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-29",
+      "price_differences_candidate_minus_reference": {
+        "open": "-9.15527344E-7",
+        "high": "-4.5776367E-7",
+        "low": "-1.5258789E-7",
+        "close": "3.0517578E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 4726566,
+      "reference_volume": 4726600,
+      "volume_difference": -34,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-30",
+      "price_differences_candidate_minus_reference": {
+        "open": "7.6293945E-7",
+        "high": "-6.1035156E-7",
+        "low": "-4.5776367E-7",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2571711,
+      "reference_volume": 2571700,
+      "volume_difference": 11,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-05-31",
+      "price_differences_candidate_minus_reference": {
+        "open": "3.0517578E-7",
+        "high": "-0.0000016784668",
+        "low": "-0.000001068115234",
+        "close": "-7.6293945E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2144952,
+      "reference_volume": 2144800,
+      "volume_difference": 152,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-03",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001525878906",
+        "high": "0.000001373291016",
+        "low": "9.15527344E-7",
+        "close": "3.0517578E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2104648,
+      "reference_volume": 2104600,
+      "volume_difference": 48,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-04",
+      "price_differences_candidate_minus_reference": {
+        "open": "3.0517578E-7",
+        "high": "3.0517578E-7",
+        "low": "7.6293945E-7",
+        "close": "-7.6293945E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2368012,
+      "reference_volume": 2368000,
+      "volume_difference": 12,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-05",
+      "price_differences_candidate_minus_reference": {
+        "open": "-4.5776367E-7",
+        "high": "-7.6293945E-7",
+        "low": "-0.000001373291016",
+        "close": "7.6293945E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2341281,
+      "reference_volume": 2341300,
+      "volume_difference": -19,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-06",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001373291016",
+        "high": "-0.000001068115234",
+        "low": "9.15527344E-7",
+        "close": "0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1421523,
+      "reference_volume": 1421500,
+      "volume_difference": 23,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-07",
+      "price_differences_candidate_minus_reference": {
+        "open": "7.6293945E-7",
+        "high": "0.0000016784668",
+        "low": "-0.000001220703125",
+        "close": "-3.0517578E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1632394,
+      "reference_volume": 1632400,
+      "volume_difference": -6,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-10",
+      "price_differences_candidate_minus_reference": {
+        "open": "-6.1035156E-7",
+        "high": "9.15527344E-7",
+        "low": "0.0000016784668",
+        "close": "6.1035156E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2042482,
+      "reference_volume": 2042400,
+      "volume_difference": 82,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-11",
+      "price_differences_candidate_minus_reference": {
+        "open": "-6.1035156E-7",
+        "high": "0.000001373291016",
+        "low": "-6.1035156E-7",
+        "close": "6.1035156E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1688259,
+      "reference_volume": 1688300,
+      "volume_difference": -41,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-12",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001373291016",
+        "high": "-4.5776367E-7",
+        "low": "9.15527344E-7",
+        "close": "6.1035156E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2935856,
+      "reference_volume": 2935900,
+      "volume_difference": -44,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-13",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "-7.6293945E-7",
+        "low": "0.000001525878906",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2560991,
+      "reference_volume": 2561000,
+      "volume_difference": -9,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-14",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001373291016",
+        "high": "-0.000001220703125",
+        "low": "-7.6293945E-7",
+        "close": "-0.000001068115234"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 1950468,
+      "reference_volume": 1950500,
+      "volume_difference": -32,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-17",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "-7.6293945E-7",
+        "low": "-0.00000183105469",
+        "close": "-0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2352907,
+      "reference_volume": 2352900,
+      "volume_difference": 7,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-18",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.00000183105469",
+        "high": "-9.15527344E-7",
+        "low": "-0.00000183105469",
+        "close": "0.00000183105469"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 2812513,
+      "reference_volume": 2812500,
+      "volume_difference": 13,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-20",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001373291016",
+        "high": "7.6293945E-7",
+        "low": "1.5258789E-7",
+        "close": "0.00"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3493446,
+      "reference_volume": 3493400,
+      "volume_difference": 46,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-21",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.000001220703125",
+        "high": "0.00000183105469",
+        "low": "-0.000001373291016",
+        "close": "0.000001525878906"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 10207376,
+      "reference_volume": 10207400,
+      "volume_difference": -24,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-24",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.0000016784668",
+        "high": "9.15527344E-7",
+        "low": "-0.00000183105469",
+        "close": "-7.6293945E-7"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3752974,
+      "reference_volume": 3753000,
+      "volume_difference": -26,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-25",
+      "price_differences_candidate_minus_reference": {
+        "open": "-0.000001220703125",
+        "high": "0.00000183105469",
+        "low": "0.000001068115234",
+        "close": "0.000001068115234"
+      },
+      "price_within_preexisting_tolerance": true,
+      "candidate_volume": 3857732,
+      "reference_volume": 3857700,
+      "volume_difference": 32,
+      "volume_definition_or_revision_difference_explained": false
+    },
+    {
+      "date": "2024-06-26",
+      "price_differences_candidate_minus_reference": {
+        "open": "0.0250016784668",
+        "high": "-1.5258789E-7",
+        "low": "-0.0000016784668",
+        "close": "1.5258789E-7"
+      },
+      "price_within_preexisting_tolerance": false,
+      "candidate_volume": 5287268,
+      "reference_volume": 5213465,
+      "volume_difference": 73803,
+      "volume_definition_or_revision_difference_explained": false
+    }
+  ]
+}
