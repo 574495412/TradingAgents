@@ -1,0 +1,66 @@
+{
+  "schema": "equity-crypto-exposure-review-plan.v1",
+  "version": "20261027_v001",
+  "frozen_before_new_crypto_data_analysis": true,
+  "role": "Post-result diagnostic review of the already fixed stock mechanism; not a preregistered original strategy, new candidate or OOS evidence.",
+  "source_attribution_run": "results/research/equity_depth_attribution_20261026_v002",
+  "focal_account": "US_french_mom_12_2_10000_15bps",
+  "fixed_equity_control": "US_disclosed_equal_10000_15bps",
+  "session_calendar": "data/research/equity_pit_20261026_v001/prices/signal_sessions.csv",
+  "first_anchor_day": "2022-12-30",
+  "last_day": "2024-06-26",
+  "risk_factors": [
+    "SPY_gross_total_return",
+    "QQQ_minus_SPY_gross_return",
+    "BTCUSD_close_to_close_return"
+  ],
+  "primary_crypto_source": {
+    "exchange": "Coinbase Exchange",
+    "product": "BTC-USD",
+    "endpoint": "https://api.exchange.coinbase.com/products/BTC-USD/candles",
+    "granularity_seconds": 3600,
+    "batch_max_buckets": 300,
+    "alignment": "Use the last completed hourly bucket ending exactly at the frozen US exchange session close; never the bucket opening at that close. Include weekend and holiday price movement from the preceding stock close. No UTC calendar-day close substitution.",
+    "coverage": "Every hour from 2022-12-30 00:00 UTC through 2024-06-27 00:00 UTC. No missing/duplicate/conflicting required anchor and no imputed return.",
+    "limits": "USD exchange spot price control, not broker executable price, transfer or account settlement proof. Actual final trade clock within bucket is not given."
+  },
+  "source_crosscheck": {
+    "exchange": "Binance",
+    "symbol": "BTCUSDT",
+    "interval": "1h",
+    "purpose": "Seven fixed clock and cross-market spot-proxy comparisons using the available read-only plugin. USDT quote is not assumed equal to USD; differences remain visible. This is not independent strategy verification.",
+    "session_days": [
+      "2022-12-30",
+      "2023-01-03",
+      "2023-03-10",
+      "2023-03-13",
+      "2023-07-03",
+      "2023-11-24",
+      "2024-06-26"
+    ]
+  },
+  "regressions": {
+    "method": "OLS with intercept; HAC Bartlett lag5, finite-sample correction, Student-t95 intervals, same settings as prior audit. No lag, factor subset, date or window search.",
+    "outcomes": [
+      "focal net account daily return",
+      "paired focal minus fixed equity control net daily return",
+      "COIN raw close-to-close price return"
+    ],
+    "baseline": "Existing same-period two-factor regression, retained unchanged. Extended three-factor regressions are a descriptive sensitivity, not causal alpha or discovery-adjusted significance.",
+    "report": [
+      "all coefficients and intervals",
+      "raw and conditional BTC correlation",
+      "conditioning and R-squared",
+      "unexplained/invalid inputs",
+      "COIN inventory and marked-PnL contribution alongside exposures"
+    ]
+  },
+  "expected_input_periods": 372,
+  "new_economic_accounts": 0,
+  "fit_or_execute_allocations": false,
+  "strategy_admission_from_this_audit": false,
+  "external_independent_attestation_received": false,
+  "orders_allowed": false,
+  "production_eligible": false,
+  "profit_goal_met": false
+}

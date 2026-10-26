@@ -1,0 +1,43 @@
+{
+  "schema": "equity-crypto-exposure-verification.v1",
+  "role": "Internal source, clock and independent matrix-method checks; not independent external strategy attestation.",
+  "source_batch_hashes_verified": 44,
+  "stock_close_endpoints_raw_bound": 373,
+  "same_frozen_return_observations": 372,
+  "missing_hour_count_retained": 3,
+  "official_maintenance_interval_contains_all_three_missing_hours": true,
+  "BTC_USD_full_trading_resume_posted_at": "2023-03-04T21:37:58.298000+00:00",
+  "first_all_functionality_disabled_posted_at": "2023-03-04T17:16:05.799000+00:00",
+  "source_amendment_explicit": true,
+  "no_required_endpoint_removed": true,
+  "old_two_factor_results_unchanged": true,
+  "matrix_HAC5_crosschecks": {
+    "focal_net_account_two_factor": {
+      "max_coefficient_se_interval_error": 3.064215547965432e-14,
+      "passed": true
+    },
+    "focal_net_account_three_factor": {
+      "max_coefficient_se_interval_error": 1.0658141036401503e-14,
+      "passed": true
+    },
+    "focal_minus_fixed_equity_control_two_factor": {
+      "max_coefficient_se_interval_error": 6.106226635438361e-15,
+      "passed": true
+    },
+    "focal_minus_fixed_equity_control_three_factor": {
+      "max_coefficient_se_interval_error": 5.10702591327572e-15,
+      "passed": true
+    },
+    "COIN_raw_price_two_factor": {
+      "max_coefficient_se_interval_error": 1.1524114995609125e-13,
+      "passed": true
+    },
+    "COIN_raw_price_three_factor": {
+      "max_coefficient_se_interval_error": 1.0658141036401503e-14,
+      "passed": true
+    }
+  },
+  "new_economic_accounts": 0,
+  "external_independent_attestation": false,
+  "profit_goal_met": false
+}

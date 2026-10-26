@@ -1,0 +1,18 @@
+{
+  "source": "https://status.exchange.coinbase.com/incidents/5rzjgq4mgdy3",
+  "raw_file": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.json",
+  "raw_sha256": "8912f4c6eb8dffc13c2be4abddb88620f77aa1aa2f3262a31abff1c0b55e22b0",
+  "posted_times_are_not_exact_first_or_last_trade_clocks": true,
+  "updates": [
+    {
+      "id": "w3mnst0bvltx",
+      "posted_at": "2023-03-04T13:37:58.298-08:00",
+      "body": "The following markets will now enter full-trading mode on @CoinbaseExch, Coinbase Pro and Advanced Trade. Limit, market and stop orders are all now available.\n\nBTC-USD"
+    },
+    {
+      "id": "q4b65s9mp2pc",
+      "posted_at": "2023-03-04T09:16:05.799-08:00",
+      "body": "As part of our scheduled maintenance period, all functionality has been disabled on Coinbase Exchange (including Coinbase Pro). We expect our maintenance period to last up to 8 hours. We will provide an update when functionality has been restored."
+    }
+  ]
+}

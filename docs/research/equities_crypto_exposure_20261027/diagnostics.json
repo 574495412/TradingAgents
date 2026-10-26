@@ -1,0 +1,348 @@
+{
+  "schema": "equity-crypto-exposure-diagnostics.v1",
+  "window": [
+    "2023-01-03",
+    "2024-06-26"
+  ],
+  "models": {
+    "focal_net_account": {
+      "two_factor": {
+        "observations": 372,
+        "rsquared": 0.18499032157389372,
+        "design_condition_number": 396.226816728426,
+        "hac_lags": 5,
+        "coefficients": {
+          "intercept_daily_return": {
+            "value": -0.0006945040983271344,
+            "standard_error_hac": 0.0008725966239145196,
+            "confidence95": [
+              -0.0024103900401570436,
+              0.0010213818435027746
+            ],
+            "descriptive_pvalue": 0.42659890859953054
+          },
+          "SPY_gross_total_return": {
+            "value": 0.8640733322928481,
+            "standard_error_hac": 0.35077801759515936,
+            "confidence95": [
+              0.1742986384665508,
+              1.5538480261191454
+            ],
+            "descriptive_pvalue": 0.01422193128447662
+          },
+          "QQQ_minus_SPY_gross_return": {
+            "value": 0.14149974346919902,
+            "standard_error_hac": 0.2238633328401262,
+            "confidence95": [
+              -0.2987081775612077,
+              0.5817076644996058
+            ],
+            "descriptive_pvalue": 0.5277254164399037
+          }
+        },
+        "selection_corrected": false,
+        "causal_alpha_identified": false
+      },
+      "three_factor": {
+        "observations": 372,
+        "rsquared": 0.2504912363400206,
+        "design_condition_number": 396.2336648403884,
+        "hac_lags": 5,
+        "coefficients": {
+          "intercept_daily_return": {
+            "value": -0.0011374706989139872,
+            "standard_error_hac": 0.000855950200066452,
+            "confidence95": [
+              -0.0028206379353733248,
+              0.0005456965375453503
+            ],
+            "descriptive_pvalue": 0.18470491277370485
+          },
+          "SPY_gross_total_return": {
+            "value": 0.8219919263217674,
+            "standard_error_hac": 0.33336625803967984,
+            "confidence95": [
+              0.16645009312881265,
+              1.4775337595147222
+            ],
+            "descriptive_pvalue": 0.014128770262023124
+          },
+          "QQQ_minus_SPY_gross_return": {
+            "value": 0.06754149418507215,
+            "standard_error_hac": 0.21874846495968803,
+            "confidence95": [
+              -0.36261232693365153,
+              0.49769531530379585
+            ],
+            "descriptive_pvalue": 0.7576763217030608
+          },
+          "BTCUSD_close_to_close_return": {
+            "value": 0.15131361744617847,
+            "standard_error_hac": 0.03871225176815083,
+            "confidence95": [
+              0.07518863515087919,
+              0.22743859974147773
+            ],
+            "descriptive_pvalue": 0.0001104644133630495
+          }
+        },
+        "selection_corrected": false,
+        "causal_alpha_identified": false
+      },
+      "raw_BTC_correlation": 0.34289187266274307,
+      "conditional_BTC_correlation": 0.28349297375610794
+    },
+    "focal_minus_fixed_equity_control": {
+      "two_factor": {
+        "observations": 372,
+        "rsquared": 0.043258713925340975,
+        "design_condition_number": 396.226816728426,
+        "hac_lags": 5,
+        "coefficients": {
+          "intercept_daily_return": {
+            "value": 0.0006275374915857717,
+            "standard_error_hac": 0.0006273800038135057,
+            "confidence95": [
+              -0.000606151132946708,
+              0.0018612261161182514
+            ],
+            "descriptive_pvalue": 0.3178445090836759
+          },
+          "SPY_gross_total_return": {
+            "value": -0.12482290292596773,
+            "standard_error_hac": 0.29605727676136373,
+            "confidence95": [
+              -0.7069939831810695,
+              0.457348177329134
+            ],
+            "descriptive_pvalue": 0.6735497985673677
+          },
+          "QQQ_minus_SPY_gross_return": {
+            "value": -0.18536820870367243,
+            "standard_error_hac": 0.24628777390825107,
+            "confidence95": [
+              -0.669671857505263,
+              0.29893544009791817
+            ],
+            "descriptive_pvalue": 0.45214082894332275
+          }
+        },
+        "selection_corrected": false,
+        "causal_alpha_identified": false
+      },
+      "three_factor": {
+        "observations": 372,
+        "rsquared": 0.05514416234376196,
+        "design_condition_number": 396.2336648403884,
+        "hac_lags": 5,
+        "coefficients": {
+          "intercept_daily_return": {
+            "value": 0.00048803493305950134,
+            "standard_error_hac": 0.000635016657151768,
+            "confidence95": [
+              -0.0007606816766694387,
+              0.0017367515427884413
+            ],
+            "descriptive_pvalue": 0.44266007209167135
+          },
+          "SPY_gross_total_return": {
+            "value": -0.13807551337499027,
+            "standard_error_hac": 0.29507527610953727,
+            "confidence95": [
+              -0.7183207624539756,
+              0.4421697357039951
+            ],
+            "descriptive_pvalue": 0.6401093731848231
+          },
+          "QQQ_minus_SPY_gross_return": {
+            "value": -0.2086597277163164,
+            "standard_error_hac": 0.24508658722039509,
+            "confidence95": [
+              -0.6906056559642174,
+              0.2732862005315846
+            ],
+            "descriptive_pvalue": 0.395116693515228
+          },
+          "BTCUSD_close_to_close_return": {
+            "value": 0.047652885671754665,
+            "standard_error_hac": 0.03421628214125029,
+            "confidence95": [
+              -0.01963108137344268,
+              0.114936852716952
+            ],
+            "descriptive_pvalue": 0.16455251715927688
+          }
+        },
+        "selection_corrected": false,
+        "causal_alpha_identified": false
+      },
+      "raw_BTC_correlation": 0.06010607419192132,
+      "conditional_BTC_correlation": 0.11145781580307641
+    },
+    "COIN_raw_price": {
+      "two_factor": {
+        "observations": 372,
+        "rsquared": 0.18129566918781426,
+        "design_condition_number": 396.226816728426,
+        "hac_lags": 5,
+        "coefficients": {
+          "intercept_daily_return": {
+            "value": 0.002741559221077638,
+            "standard_error_hac": 0.0024536207967419555,
+            "confidence95": [
+              -0.0020832742888483085,
+              0.007566392731003585
+            ],
+            "descriptive_pvalue": 0.26457062560708927
+          },
+          "SPY_gross_total_return": {
+            "value": 0.688185038041788,
+            "standard_error_hac": 0.9948452219865098,
+            "confidence95": [
+              -1.2680922198800015,
+              2.6444622959635775
+            ],
+            "descriptive_pvalue": 0.4895288115281342
+          },
+          "QQQ_minus_SPY_gross_return": {
+            "value": 1.718919822487083,
+            "standard_error_hac": 0.8333391596240414,
+            "confidence95": [
+              0.08023029563496076,
+              3.357609349339205
+            ],
+            "descriptive_pvalue": 0.03984147873750447
+          }
+        },
+        "selection_corrected": false,
+        "causal_alpha_identified": false
+      },
+      "three_factor": {
+        "observations": 372,
+        "rsquared": 0.4030740100799306,
+        "design_condition_number": 396.2336648403884,
+        "hac_lags": 5,
+        "coefficients": {
+          "intercept_daily_return": {
+            "value": 0.0003653842561725802,
+            "standard_error_hac": 0.0018965273872601613,
+            "confidence95": [
+              -0.003364006496976736,
+              0.004094775009321897
+            ],
+            "descriptive_pvalue": 0.8473318221104233
+          },
+          "SPY_gross_total_return": {
+            "value": 0.4624506751697914,
+            "standard_error_hac": 0.9105169625701927,
+            "confidence95": [
+              -1.328018349219292,
+              2.2529196995588747
+            ],
+            "descriptive_pvalue": 0.6118284428763371
+          },
+          "QQQ_minus_SPY_gross_return": {
+            "value": 1.3221907233511367,
+            "standard_error_hac": 0.7880916677521788,
+            "confidence95": [
+              -0.22753737342842184,
+              2.8719188201306953
+            ],
+            "descriptive_pvalue": 0.09425240972791776
+          },
+          "BTCUSD_close_to_close_return": {
+            "value": 0.8116811270883788,
+            "standard_error_hac": 0.08199034286441087,
+            "confidence95": [
+              0.6504527532826012,
+              0.9729095008941564
+            ],
+            "descriptive_pvalue": 1.2168318813168604e-20
+          }
+        },
+        "selection_corrected": false,
+        "causal_alpha_identified": false
+      },
+      "raw_BTC_correlation": 0.5537072520074539,
+      "conditional_BTC_correlation": 0.5204703828951386
+    }
+  },
+  "observations": 372,
+  "clock_marks": 373,
+  "full_hourly_coverage_complete": false,
+  "unfilled_hourly_buckets": [
+    "2023-03-04T18:00:00+00:00",
+    "2023-03-04T19:00:00+00:00",
+    "2023-03-04T20:00:00+00:00"
+  ],
+  "source_amendment": {
+    "schema": "equity-crypto-source-amendment.v1",
+    "version": "20261027_v001",
+    "original_plan_sha256": "8ff8f48aa18693569028f05b096d4a50017b534f01d722b95a63460f0e80859a",
+    "timing": "After the full-hour capture was rejected, before any risk regression was generated. Original plan and failed coverage record are retained.",
+    "unfilled_hours_utc": [
+      "2023-03-04T18:00:00+00:00",
+      "2023-03-04T19:00:00+00:00",
+      "2023-03-04T20:00:00+00:00"
+    ],
+    "incident_record": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.json",
+    "incident_sha256": "8912f4c6eb8dffc13c2be4abddb88620f77aa1aa2f3262a31abff1c0b55e22b0",
+    "change": "Full hourly coverage stays false. Permit only the originally fixed 373 stock-close endpoints and 372 close-to-close descriptive returns, conditional on every exact required completed bucket existing and tracing to raw response bytes. No new endpoint, date, asset, factor, model, lag, price source or account is selected.",
+    "why": "The three missing hours are on Saturday 2023-03-04, consistent with the exchange original maintenance incident. None is a required stock-close endpoint. These returns require observed endpoint prices, not unobserved intervening prices; no value is imputed.",
+    "prohibited_claims": [
+      "No assertion of complete continuous hourly history.",
+      "No conversion of the maintenance interval into zero returns or executable prices.",
+      "No continuous-risk, combined-account, capacity or exchange 24/7 availability certification.",
+      "No external strategy attestation or profit-goal pass from this internal analysis."
+    ],
+    "original_financial_goal_unchanged": true,
+    "no_required_endpoint_or_sample_removed": true,
+    "new_economic_accounts": 0
+  },
+  "shortened_sessions": [
+    {
+      "date": "2023-07-03",
+      "stock_close_utc": "2023-07-03T17:00:00+00:00",
+      "bucket_start_utc": "2023-07-03T16:00:00+00:00",
+      "bucket_end_exclusive_utc": "2023-07-03T17:00:00+00:00",
+      "stock_close_new_york": "2023-07-03T13:00:00-04:00",
+      "BTCUSD_close": 31053.12,
+      "raw_lineage": [
+        {
+          "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230622T100000.json",
+          "row": 29,
+          "sha256": "ef3d2472744ed7270ebe5667ddf65051b5eed8ad3b63e8f4dc056c5e50423637"
+        }
+      ]
+    },
+    {
+      "date": "2023-11-24",
+      "stock_close_utc": "2023-11-24T18:00:00+00:00",
+      "bucket_start_utc": "2023-11-24T17:00:00+00:00",
+      "bucket_end_exclusive_utc": "2023-11-24T18:00:00+00:00",
+      "stock_close_new_york": "2023-11-24T13:00:00-05:00",
+      "BTCUSD_close": 37880.07,
+      "raw_lineage": [
+        {
+          "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231118T220000.json",
+          "row": 160,
+          "sha256": "e21d8bfce9c1ed8c748933195257ed9dbcb8932288629cc536cce79b29888685"
+        }
+      ]
+    }
+  ],
+  "BTC_stock_close_return_total": 2.6791937304097884,
+  "new_economic_accounts": 0,
+  "causal_alpha_identified": false,
+  "selection_corrected": false,
+  "fit_or_execute_allocations": false,
+  "external_independent_attestation": false,
+  "profit_goal_met": false,
+  "limitations": [
+    "Existing same-period two-factor regression, retained unchanged. Extended three-factor regressions are a descriptive sensitivity, not causal alpha or discovery-adjusted significance.",
+    "USD exchange spot price control, not broker executable price, transfer or account settlement proof. Actual final trade clock within bucket is not given.",
+    "Binance probes use USDT and another exchange; price differences are not failures or a verified FX conversion.",
+    "No existing crypto strategy PnL is aligned or admitted by this spot risk-factor analysis; no common-capital combined account was run.",
+    "Missing EXAS history and merger cash evidence remain unresolved. No original minimum alpha effect or power plan was supplied by this audit."
+  ]
+}

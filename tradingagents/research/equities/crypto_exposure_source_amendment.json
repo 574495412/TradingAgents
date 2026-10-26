@@ -1,0 +1,24 @@
+{
+  "schema": "equity-crypto-source-amendment.v1",
+  "version": "20261027_v001",
+  "original_plan_sha256": "8ff8f48aa18693569028f05b096d4a50017b534f01d722b95a63460f0e80859a",
+  "timing": "After the full-hour capture was rejected, before any risk regression was generated. Original plan and failed coverage record are retained.",
+  "unfilled_hours_utc": [
+    "2023-03-04T18:00:00+00:00",
+    "2023-03-04T19:00:00+00:00",
+    "2023-03-04T20:00:00+00:00"
+  ],
+  "incident_record": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.json",
+  "incident_sha256": "8912f4c6eb8dffc13c2be4abddb88620f77aa1aa2f3262a31abff1c0b55e22b0",
+  "change": "Full hourly coverage stays false. Permit only the originally fixed 373 stock-close endpoints and 372 close-to-close descriptive returns, conditional on every exact required completed bucket existing and tracing to raw response bytes. No new endpoint, date, asset, factor, model, lag, price source or account is selected.",
+  "why": "The three missing hours are on Saturday 2023-03-04, consistent with the exchange original maintenance incident. None is a required stock-close endpoint. These returns require observed endpoint prices, not unobserved intervening prices; no value is imputed.",
+  "prohibited_claims": [
+    "No assertion of complete continuous hourly history.",
+    "No conversion of the maintenance interval into zero returns or executable prices.",
+    "No continuous-risk, combined-account, capacity or exchange 24/7 availability certification.",
+    "No external strategy attestation or profit-goal pass from this internal analysis."
+  ],
+  "original_financial_goal_unchanged": true,
+  "no_required_endpoint_or_sample_removed": true,
+  "new_economic_accounts": 0
+}

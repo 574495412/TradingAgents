@@ -1,0 +1,24 @@
+{
+  "schema": "equity-crypto-exposure-registration.v1",
+  "source_sha256": "60d8e5eed53d73007793a8a2c5ce716a0e074b6a8bbec6079e7e741eb4b50cf3",
+  "helper_source_sha256": "62fb822bbeb98f8a11a5b76cde2f4bdc90e092e6cddcfb5692a8e75632ca4774",
+  "inputs_sha256": {
+    "tradingagents/research/equities/crypto_exposure_plan.json": "8ff8f48aa18693569028f05b096d4a50017b534f01d722b95a63460f0e80859a",
+    "tradingagents/research/equities/crypto_exposure_source_amendment.json": "7d50d537b3be916e07914b177f6e7f6e961d98892af2f65abbb76b90fc0a0450",
+    "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.json": "8912f4c6eb8dffc13c2be4abddb88620f77aa1aa2f3262a31abff1c0b55e22b0",
+    "results/research/equity_depth_attribution_20261026_v002/paired-daily-returns.csv": "1898ac37967abdbe22a9b0a8ad6fcf85ac93f11648e94f129642f5370f0700a3",
+    "data/research/equity_pit_20261026_v001/prices/signal_sessions.csv": "d856681ca4df7bc08e8785fc770ed5928c2d3c1d1d20a4845c3eff43814b923a",
+    "data/research/equity_pit_20261026_v001/prices/COIN.US.csv": "9c87fb1ea88a44ee8239c46baceb2739da1d451d3111a2ead4a5f5664e89db40",
+    "data/research/equity_crypto_exposure_20261027_v001/hourly-candles.json": "b3c5701b3656dc986ea9039aa7079779ad1bee0dfde7156076751d2c6bf7c86e",
+    "data/research/equity_crypto_exposure_20261027_v001/coinbase-source-manifest.json": "011edfd9ed298bcd57397e89bc261ded642f318990db8b97f2e549bdf12090bb",
+    "data/research/equity_crypto_exposure_20261027_v001/binance-fixed-probes.json": "e210bc041b2bd9df745fdef3e3de927e5d6b894e2a1ce6c2bd6ee69d71aa50ff",
+    "results/research/equity_depth_attribution_20261026_v002/diagnostics.json": "58f93741547f8e17cdbcae7a3cb01652dbac1c5526c0bb8aa0725d0f3927dfdb"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "statsmodels": "0.14.6",
+    "scipy": "1.17.1"
+  },
+  "new_economic_accounts": 0
+}

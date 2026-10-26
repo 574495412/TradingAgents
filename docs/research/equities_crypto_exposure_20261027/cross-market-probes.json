@@ -1,0 +1,51 @@
+[
+  {
+    "date": "2022-12-30",
+    "coinbase_BTCUSD": 16561.21,
+    "binance_BTCUSDT": 16568.69,
+    "relative_quoted_price_difference": 0.0004516578196882559,
+    "USD_USDT_conversion_verified": false
+  },
+  {
+    "date": "2023-01-03",
+    "coinbase_BTCUSD": 16655.42,
+    "binance_BTCUSDT": 16661.37,
+    "relative_quoted_price_difference": 0.00035724106627155194,
+    "USD_USDT_conversion_verified": false
+  },
+  {
+    "date": "2023-03-10",
+    "coinbase_BTCUSD": 19971.73,
+    "binance_BTCUSDT": 19969.31,
+    "relative_quoted_price_difference": -0.00012117127559796437,
+    "USD_USDT_conversion_verified": false
+  },
+  {
+    "date": "2023-03-13",
+    "coinbase_BTCUSD": 24370.08,
+    "binance_BTCUSDT": 24279.91,
+    "relative_quoted_price_difference": -0.003700028887882234,
+    "USD_USDT_conversion_verified": false
+  },
+  {
+    "date": "2023-07-03",
+    "coinbase_BTCUSD": 31053.12,
+    "binance_BTCUSDT": 31042.22,
+    "relative_quoted_price_difference": -0.00035101142815918696,
+    "USD_USDT_conversion_verified": false
+  },
+  {
+    "date": "2023-11-24",
+    "coinbase_BTCUSD": 37880.07,
+    "binance_BTCUSDT": 37850.0,
+    "relative_quoted_price_difference": -0.0007938211307423337,
+    "USD_USDT_conversion_verified": false
+  },
+  {
+    "date": "2024-06-26",
+    "coinbase_BTCUSD": 60931.9,
+    "binance_BTCUSDT": 61000.01,
+    "relative_quoted_price_difference": 0.0011178052875422395,
+    "USD_USDT_conversion_verified": false
+  }
+]

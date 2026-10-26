@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v005",
+  "version": "20261027_depth_v006",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -64,7 +64,7 @@
       "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。"
+      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。 固定372期追加BTC/USD风险控制后，动量截距每日−11.37基点，95%区间仍跨零；动量相对固定队列的额外BTC暴露也跨零，不认证独立优势。"
     },
     {
       "id": "G2",
@@ -97,7 +97,7 @@
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。 EXAS每股105美元是毛现金权利；未取得资金可用凭证，不提前转成可投资现金。"
+      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。 EXAS每股105美元是毛现金权利；未取得资金可用凭证，不提前转成可投资现金。 373个股票收盘端点逐项绑定原始BTC/USD响应，372期净账户风险归因未改旧收益；这是内部描述性敏感性，不是将拟合系数当作实际利润归因。"
     },
     {
       "id": "G5",
@@ -108,7 +108,7 @@
       "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
       "status": "not_passed",
       "independent_evidence": null,
-      "current_evidence_note": "动量收盘回撤28.15%，日低价包络28.99%，均超15%；80%为下单目标，实际最高收盘股票敞口84.54%，32日超过80%，并非持续硬上限。"
+      "current_evidence_note": "动量收盘回撤28.15%，日低价包络28.99%，均超15%；80%为下单目标，实际最高收盘股票敞口84.54%，32日超过80%，并非持续硬上限。 原始交易所维护状态与2023-03-04三个无K线小时一致；全小时覆盖保持false，仅预定收盘端点可用于归因，不能认证全天可成交/可转出。"
     },
     {
       "id": "G6",
@@ -118,7 +118,8 @@
       "required_artifact": "至少两个合格机制、共同期间原始数据、统一净额成交与资金占用、增量和成本归因。",
       "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
       "status": "blocked",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "既有股票动量与同步BTC/USD收益相关约0.343，控制SPY/QQQ后BTC系数约0.151。不能仅按股票/加密标签推定机制独立；本轮价格风险变量未提供既有加密策略的同期净损益，也未运行共同资本组合。"
     },
     {
       "id": "G7",
@@ -181,6 +182,20 @@
       "raw_documents": 5,
       "candidate_price_rows_acquired": 0,
       "cash_spendable_at": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "crypto_exposure": {
+      "report": "docs/research/equities_crypto_exposure_20261027/README.md",
+      "run": "results/research/equity_crypto_exposure_20261027_v001",
+      "risk_factor": "Coinbase BTC-USD spot close-to-close",
+      "fixed_stock_return_observations": 372,
+      "raw_bound_stock_close_endpoints": 373,
+      "full_hourly_coverage_complete": false,
+      "missing_nonendpoint_hours": 3,
+      "source_amendment_explicit": true,
+      "existing_crypto_strategy_net_pnl_aligned": false,
+      "common_capital_account_executed": false,
       "new_economic_accounts": 0,
       "external_independent_attestation": null
     }

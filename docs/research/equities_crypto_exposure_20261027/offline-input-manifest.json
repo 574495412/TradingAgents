@@ -1,0 +1,536 @@
+{
+  "schema": "equity-crypto-offline-input-manifest.v1",
+  "role": "Hashes and capture references establish local provenance, not truth or external attestation. These ignored public sources must accompany this manifest for offline reproduction.",
+  "files": [
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/binance-fixed-probes.json",
+      "bytes": 7658,
+      "sha256": "e210bc041b2bd9df745fdef3e3de927e5d6b894e2a1ce6c2bd6ee69d71aa50ff"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20221230T000000.json",
+      "bytes": 18411,
+      "sha256": "f5465c295e4b7def3be7827d7757cf6de9e821e7c9226ca0707ee8cf82d2dd7b"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20221230T000000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "c6d755d84a854aad7f78b80eda189d21ddd3ec3f5ae3713f42c9570332bdf2e0"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230111T110000.json",
+      "bytes": 18525,
+      "sha256": "294371fe4f3b57a8c93a20748c348fa430b70f6e91b2dafc30803b99e3494a48"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230111T110000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "285f51a91834d53d59b381e72354d99d867632864dfebad19249e41eb2c3b240"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230123T220000.json",
+      "bytes": 18393,
+      "sha256": "1a4cd393b3483059da86e270c1a379e5b2b5d654947be4ded7a1cb9fe5732076"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230123T220000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "e10db3aaeede20da2bc016cc50a9a59e8b751b49ebe5e919921eda08b4c602f8"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230205T090000.json",
+      "bytes": 18354,
+      "sha256": "0e2817a7d705b379711f84183905e54b0dd2003cae9bcbaa24a10007f138df0e"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230205T090000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "119ca9db3ef216819c4d60eac0f70414992510174ee3cb938a6dba8c9850b20b"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230217T200000.json",
+      "bytes": 18362,
+      "sha256": "306a1461492b762c0b300053d4e30c39b2e47704910317dbe4991bc5b8afd1b3"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230217T200000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "d4ae495e080b0135b656681acf5d9f82b3a4fff8200052d118e346aa158ad10c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230302T070000.json",
+      "bytes": 18180,
+      "sha256": "2d3e528a3c92335f56d2691ef1f9329f7fae9e72f7d7a81657e3fd2478ba57a2"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230302T070000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "1f171394dddaeb1fb19186ea363cc9f93fec36b359577b71467e1b6510a76601"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230314T180000.json",
+      "bytes": 18386,
+      "sha256": "e240679a228fc092262bec614d555f68a6677ef4f9546a046d59c82bd782e1dd"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230314T180000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "5dcb977571146365cf9480e4f44bf0d5153787e507b79f5a8cc572e3cda31f4f"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230327T050000.json",
+      "bytes": 18329,
+      "sha256": "4724420faedb4dc48030971c8a085067c3bf15dcfbd4075a676b7734c93ef2bc"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230327T050000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "3176b4d3e5dbfd6c3f92e160ba88921dc100c4e6fa9f60ba9b2afd5e054f9889"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230408T160000.json",
+      "bytes": 18286,
+      "sha256": "cb821b62b0a4c111324192b817fb4393c0bd9ea402ec99e07a4f5fc8ab115066"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230408T160000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "5b599c8bdf9a2899e2b651c80cdb6f31ea05a1c96aba31115ff39ab97b53d66e"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230421T030000.json",
+      "bytes": 18365,
+      "sha256": "0abded6389804436d37a9422a3ce0477b9fe63cd572eb9ca5c4373f66f92582c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230421T030000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "be7e51cf539166720fafe6da278db0846491459ae6bfbeceaa4092e567b377a0"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230503T140000.json",
+      "bytes": 18321,
+      "sha256": "7092814f2125337664032c4eea9f0135e8889c88e281426b1039a1f7d37d439b"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230503T140000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "f04f14f3024768845a5e91c086b8ecbc60a6b8f148b364a41933f8efe58b3911"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230516T010000.json",
+      "bytes": 18301,
+      "sha256": "b2759f7a3b25f31eb21b9697efa82c7fa43cb913593c97b2ff710dfa51de8930"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230516T010000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "a0f464e7851b0345e3b0ad32e86a80642ae604def9a5f67f36db67b6ea5f734a"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230528T120000.json",
+      "bytes": 18301,
+      "sha256": "f9c96b2a949ab22e3d5788c5d6f8d420fe76a5f008eddef4333c76954c147ae8"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230528T120000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "4b11dc05beac501d9fbfd4b71c0e5aca59a280bd18c0b3da0ce8474fe74c1afb"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230609T230000.json",
+      "bytes": 18372,
+      "sha256": "5c4179de3b6e90f757914adc8853497ee0144ccfa6e8a0bc63c8dcbb5271dc54"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230609T230000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "536bf68d08014f7682bb18600b93d91ac670d00066c4f4723040667c164f65c4"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230622T100000.json",
+      "bytes": 18316,
+      "sha256": "ef3d2472744ed7270ebe5667ddf65051b5eed8ad3b63e8f4dc056c5e50423637"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230622T100000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "13c3bdb5df401c109cd1d2cf14a68472f9b5dd78793fd02e423045b42a05be71"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230704T210000.json",
+      "bytes": 18288,
+      "sha256": "1731a02dcb697b9c73c3f15c326d84205615fe2a635c89a82bf90a75df939161"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230704T210000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "2e6666ad45619cf2cf1d1b745ea1e61a7575e3c5c77382b4a46c8095950ea7be"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230717T080000.json",
+      "bytes": 18304,
+      "sha256": "225ff60efd39d3defd147def4b72ebf177b504db0ba1a3d13cfe42ddba748841"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230717T080000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "d8829799fdb0726fc2d1ba48fd0a2996a215ed2182486c10e01e54b72e16dce0"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230729T190000.json",
+      "bytes": 18275,
+      "sha256": "fd193da8243436dc796e03fbdfe95cda1168b948141b3d57f6da0739bfd22176"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230729T190000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "c72c29879d8b16e92dbcc854ba2e1378f31932ad06f617253ee7272acb7a6e6f"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230811T060000.json",
+      "bytes": 18335,
+      "sha256": "c849e12a9371f2cd4f55a65133db94ae214c843fc4e890028699eb07a472ecd8"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230811T060000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "e1784d0cc5c1ed05f80c1442955f1f6eb16c9bd31ec45bdcb3a9e627e44d2497"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230823T170000.json",
+      "bytes": 18299,
+      "sha256": "4eaab383f35726a4cbd44cdc9b851d5e41568df24895a25ac78daab1579d2f71"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230823T170000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "cc61cb4df373ae35c4b52220cac74f30b497aaafdb7d6a5c722b95554d24b1ab"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230905T040000.json",
+      "bytes": 18304,
+      "sha256": "4882541a6902e8103bcdcd76e122b3612a6f5c850bf1c9b31d8e11be22264d67"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230905T040000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "df47ccffa511a186fe5d9ec171b48e7e4bb2510d5fdf5db0d02f175874fcf830"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230917T150000.json",
+      "bytes": 18323,
+      "sha256": "08473231bab16f984b7ffb1d6869cfdbffb1d5483ae977160c05eb71189ff013"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230917T150000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "afe3a43e2f2cd3767c87da130f6fe753db854fc4347298e6e4c8218232a72316"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230930T020000.json",
+      "bytes": 18326,
+      "sha256": "5ca09f67ee1807aa24498263d5e59791d7f900772e094c6dcb6d2922f66a4441"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230930T020000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "c4cf995aceb83dcb27d65d580332b701f20ccca83ed253515a1f033f84643b8a"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231012T130000.json",
+      "bytes": 18376,
+      "sha256": "0fdc3bcf3e7001de38b3397b12451c6afc4a0df7dd891bc220163128107fa849"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231012T130000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "f8a3c1f0169a3281187e962f63079f94cb05dc092740bb2997f8eafb9eab1554"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231025T000000.json",
+      "bytes": 18300,
+      "sha256": "bc3646d196c14d2dd397aa13e40415266a59d6ffb7a35c5f2c0f9b95b9019a2c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231025T000000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "bf003b0f6b1bdbb399d6c5d2ae6be2361f1b31899efb6477a3de7d13a711d664"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231106T110000.json",
+      "bytes": 18314,
+      "sha256": "afb4a54efe62ae5329304570645e114dfe656bc87fae9a14f202f03335d03500"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231106T110000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "5a132af03077865413c1678099a070363e5aee2b3cc5717844198cc9bf64ad9f"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231118T220000.json",
+      "bytes": 18292,
+      "sha256": "e21d8bfce9c1ed8c748933195257ed9dbcb8932288629cc536cce79b29888685"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231118T220000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "68f4019791bcaf7099977e6c321a39f2c6b2f0c1077c176d2e0623a9e2b54f3e"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231201T090000.json",
+      "bytes": 18280,
+      "sha256": "458b940a3f937b9aabd322124f9aae66f0605d59cb1facf3ffbf250266c5d7eb"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231201T090000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "15891d8227fc00e5de9f2571fb1acd56cf0c46203a499ac0aaf114df90ca66ee"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231213T200000.json",
+      "bytes": 18302,
+      "sha256": "0a35a052659ed3942dd8fcb78a77cefe637b10783af98783e7f01a4cbd00ab69"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231213T200000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "c4b3cd71ce126ad3f3f50ca34ce10306c1ab94ab1733ccb9e57309e85e5a50e5"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231226T070000.json",
+      "bytes": 18302,
+      "sha256": "18cd6b6c8b0f1836bbf0d0c65a70c11e1d9bce5bf5336e814ba133fcd06425ae"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231226T070000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "9b659f97cc86a9990aeac03318bacaa7a0ee9f757d8d6aebb03a64088705cfcc"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240107T180000.json",
+      "bytes": 18321,
+      "sha256": "0ada494586089bdf376f686995f1461890e98510cd6efd657f61b86dfb5c65ae"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240107T180000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "cd65ad48b023446fec128487c935d3dcb11eadd3735e7ba397ca5ee2c6e27b63"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240120T050000.json",
+      "bytes": 18280,
+      "sha256": "4b87f1c94895ac9ff0a60af68005d8be1171de2ae8e0cd5721528403eabe84cb"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240120T050000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "d6620e61aecc3f1fa6171e6a1d4f2f882bb1d034725cf74b04a22784497925e3"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240201T160000.json",
+      "bytes": 18241,
+      "sha256": "8a7cee11d1a4edf4345ebc9f0b01785c08ce6d96e914785c3eb73e3e967fadb2"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240201T160000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "b30be60f7d15fabc5a9094215f19a7fa7b703ce3ad59bf57e9aa5386e91dcef0"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240214T030000.json",
+      "bytes": 18259,
+      "sha256": "437971540ced86f02d05bfe5bed3587bd7970809ea0691d5a38613c84ef653d0"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240214T030000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "347a58f17eb88ac1dc320f53446383fd7ce144addf7915be677f98b3f9603092"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240226T140000.json",
+      "bytes": 18293,
+      "sha256": "0fd95c89bc6288f95f5c6b90ee5dc7a2273b003a9d5f927abbb8c7269b1bb24c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240226T140000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "72c4035c7c89c8a962a27fd01e46a5fd82e113d443d579c1035bfe31be400a58"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240310T010000.json",
+      "bytes": 18360,
+      "sha256": "d8049b492e9d633851ff84c51b4d70bb5d7c146be8c57f394aa528a3dd19e620"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240310T010000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "971314d4fd204ab7d9002e854ae9c3d9cebf5de5acfbeb24ec89bdcd336e3dc5"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240322T120000.json",
+      "bytes": 18274,
+      "sha256": "401943683982a96aadedc4469a1be5089f8a9a2b20e37cb1ccf4acc934a8b97d"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240322T120000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "9ac0c125f0441d745575a12080fc5626e9da5a5341641fd80be9e75021f7be0b"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240403T230000.json",
+      "bytes": 18207,
+      "sha256": "0e9fa418800733ab3550c5729088503c3725ac2815b061ce91978858531e5918"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240403T230000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "0a68dcfa9fe4080abd924e51bb36cc6729fd0b262d96accaecadfb3495d705ba"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240416T100000.json",
+      "bytes": 18259,
+      "sha256": "450132bc4c3adfb9966a8e98dd98450f0f649dcbeaafa975556fcb68e8ade7bd"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240416T100000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "138564a7f1a4c2c90d70ea518c0555e2344341e7b5378bf9ade1ec2f93898d37"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240428T210000.json",
+      "bytes": 18295,
+      "sha256": "6ced0e8d922179ee3aa2a52bb1b171dd65f05b122c49f65e51be982603aaeb5c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240428T210000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "8e430e95fb63964f0c31dfbeb9a6a926a492976e047da9202c052a46bb8564b4"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240511T080000.json",
+      "bytes": 18304,
+      "sha256": "cc094d006d082d5f7cb566aa793cfab75763133fdcf96d48e8e2b5d1d572e472"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240511T080000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "ab363ab94f13fd59bacd53358a66f5557b61d2555078b3c067c0e45f49832fd3"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240523T190000.json",
+      "bytes": 18219,
+      "sha256": "1dfb1000af12daa817579ec6902d333264c021c73415b15c64f62e26e61718e7"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240523T190000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "17ae8930a104d42e22a3814d68ccb225731b47cecef6c92b029feaefc136182c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240605T060000.json",
+      "bytes": 18146,
+      "sha256": "4076a98c251d7950e1cbb95483b6fd0ec8cccc220de43a2a1b1b83747cbb20fb"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240605T060000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "13c45bbc24233eebfddb6ae5f639402c58e3edc4637971df7781ab4ddebbd6f5"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240617T170000.json",
+      "bytes": 13621,
+      "sha256": "e70632f27d9a8257d6d9866ccb78b469151461692c77b023462e4ae9a3f78dd2"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240617T170000.json.receipt.json",
+      "bytes": 395,
+      "sha256": "081a6032c317ef1f20b655e3c7d5ae68b1b2b76cfda4e71c05ca8b9ed978542c"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coinbase-source-manifest.json",
+      "bytes": 24267,
+      "sha256": "011edfd9ed298bcd57397e89bc261ded642f318990db8b97f2e549bdf12090bb"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/collection-plan.json",
+      "bytes": 254,
+      "sha256": "5d0e58dfe8164ef1df90966e5488b1e7a3dec20fce7338764355602454b315c8"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/collector_source.py",
+      "bytes": 15461,
+      "sha256": "934a8df70dd1c1cf252035db8d0a02212d1b9f0a9efcde37f4eefe5edbf9acf3"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.htm",
+      "bytes": 104580,
+      "sha256": "e68b57214c57cce4cd48d6d9821f4ac82c2852075b8715c2a6e687649b4afebb"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.htm.receipt.json",
+      "bytes": 302,
+      "sha256": "7458bf8f8cce3b19a2b6b6d0d7a335ada58e78279828d066edf8efb7e8df665e"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.json",
+      "bytes": 42347,
+      "sha256": "8912f4c6eb8dffc13c2be4abddb88620f77aa1aa2f3262a31abff1c0b55e22b0"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-incident.json.receipt.json",
+      "bytes": 313,
+      "sha256": "4781ebe10b792a7325cbaa2f3fcfc9c5b3b6e1ab081a53a723a677c84e1e91b2"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/coinbase-scheduled-upgrade.failure.json",
+      "bytes": 180,
+      "sha256": "ddb4d802f5f1e74cac222cb538a3156f94b50a4234ece041047db96edec0a927"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/missing_hours.json",
+      "bytes": 56,
+      "sha256": "6aeed4ac785bdeca30c22b315a7fa6057cb0348510977fdfde9d9dc7a432c630"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/missing_hours.json.receipt.json",
+      "bytes": 374,
+      "sha256": "0fbed1560d471389277857a8a846d6460b208d0f951262e42ec50491a850ad03"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/nasdaq-2023-calendar.pdf",
+      "bytes": 274749,
+      "sha256": "3781aa7ec98e429b39c9b1cbdb3677043b8ba622084b8c9d5e10fd7836d9a13b"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/nasdaq-2023-calendar.pdf.receipt.json",
+      "bytes": 320,
+      "sha256": "1355f0981d0d71b1e4bf507d9aa2416b770e8fe9bdd591a9308a61ad287021f9"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/wider_window.json",
+      "bytes": 606,
+      "sha256": "29617c3959afbe99b07038846be483b810c57ee4ee8b1bb2f69c8833a67b7624"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/coverage-probes/wider_window.json.receipt.json",
+      "bytes": 375,
+      "sha256": "7a69fd4b68773bef44eedd42986086e9cda29088a58d495873016902e5b23ea1"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/hourly-candles.json",
+      "bytes": 4922129,
+      "sha256": "b3c5701b3656dc986ea9039aa7079779ad1bee0dfde7156076751d2c6bf7c86e"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/initial-failure.json",
+      "bytes": 263,
+      "sha256": "73a2b2a1a6e99f690bb68f0378e431239d90ceb1742269b2c2ff5b4f5f426d94"
+    },
+    {
+      "path": "data/research/equity_crypto_exposure_20261027_v001/initial-incomplete-manifest.json",
+      "bytes": 24267,
+      "sha256": "011edfd9ed298bcd57397e89bc261ded642f318990db8b97f2e549bdf12090bb"
+    }
+  ]
+}

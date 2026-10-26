@@ -1,0 +1,587 @@
+{
+  "schema": "equity-crypto-source-manifest.v1",
+  "plan_sha256": "8ff8f48aa18693569028f05b096d4a50017b534f01d722b95a63460f0e80859a",
+  "receipts": [
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20221230T000000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2022-12-30T00%3A00%3A00%2B00%3A00&end=2023-01-11T11%3A00%3A00%2B00%3A00",
+      "sha256": "f5465c295e4b7def3be7827d7757cf6de9e821e7c9226ca0707ee8cf82d2dd7b",
+      "bytes": 18411,
+      "captured_at_utc": "2026-10-26T16:16:42.488703+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230111T110000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-01-11T11%3A00%3A00%2B00%3A00&end=2023-01-23T22%3A00%3A00%2B00%3A00",
+      "sha256": "294371fe4f3b57a8c93a20748c348fa430b70f6e91b2dafc30803b99e3494a48",
+      "bytes": 18525,
+      "captured_at_utc": "2026-10-26T16:16:42.501581+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230123T220000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-01-23T22%3A00%3A00%2B00%3A00&end=2023-02-05T09%3A00%3A00%2B00%3A00",
+      "sha256": "1a4cd393b3483059da86e270c1a379e5b2b5d654947be4ded7a1cb9fe5732076",
+      "bytes": 18393,
+      "captured_at_utc": "2026-10-26T16:16:43.361734+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230205T090000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-02-05T09%3A00%3A00%2B00%3A00&end=2023-02-17T20%3A00%3A00%2B00%3A00",
+      "sha256": "0e2817a7d705b379711f84183905e54b0dd2003cae9bcbaa24a10007f138df0e",
+      "bytes": 18354,
+      "captured_at_utc": "2026-10-26T16:16:43.361618+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230217T200000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-02-17T20%3A00%3A00%2B00%3A00&end=2023-03-02T07%3A00%3A00%2B00%3A00",
+      "sha256": "306a1461492b762c0b300053d4e30c39b2e47704910317dbe4991bc5b8afd1b3",
+      "bytes": 18362,
+      "captured_at_utc": "2026-10-26T16:16:44.211329+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230302T070000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-03-02T07%3A00%3A00%2B00%3A00&end=2023-03-14T18%3A00%3A00%2B00%3A00",
+      "sha256": "2d3e528a3c92335f56d2691ef1f9329f7fae9e72f7d7a81657e3fd2478ba57a2",
+      "bytes": 18180,
+      "captured_at_utc": "2026-10-26T16:16:44.916811+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230314T180000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-03-14T18%3A00%3A00%2B00%3A00&end=2023-03-27T05%3A00%3A00%2B00%3A00",
+      "sha256": "e240679a228fc092262bec614d555f68a6677ef4f9546a046d59c82bd782e1dd",
+      "bytes": 18386,
+      "captured_at_utc": "2026-10-26T16:16:45.821723+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230327T050000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-03-27T05%3A00%3A00%2B00%3A00&end=2023-04-08T16%3A00%3A00%2B00%3A00",
+      "sha256": "4724420faedb4dc48030971c8a085067c3bf15dcfbd4075a676b7734c93ef2bc",
+      "bytes": 18329,
+      "captured_at_utc": "2026-10-26T16:16:45.821861+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230408T160000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-04-08T16%3A00%3A00%2B00%3A00&end=2023-04-21T03%3A00%3A00%2B00%3A00",
+      "sha256": "cb821b62b0a4c111324192b817fb4393c0bd9ea402ec99e07a4f5fc8ab115066",
+      "bytes": 18286,
+      "captured_at_utc": "2026-10-26T16:16:46.638315+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230421T030000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-04-21T03%3A00%3A00%2B00%3A00&end=2023-05-03T14%3A00%3A00%2B00%3A00",
+      "sha256": "0abded6389804436d37a9422a3ce0477b9fe63cd572eb9ca5c4373f66f92582c",
+      "bytes": 18365,
+      "captured_at_utc": "2026-10-26T16:16:47.378676+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230503T140000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-05-03T14%3A00%3A00%2B00%3A00&end=2023-05-16T01%3A00%3A00%2B00%3A00",
+      "sha256": "7092814f2125337664032c4eea9f0135e8889c88e281426b1039a1f7d37d439b",
+      "bytes": 18321,
+      "captured_at_utc": "2026-10-26T16:16:47.477334+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230516T010000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-05-16T01%3A00%3A00%2B00%3A00&end=2023-05-28T12%3A00%3A00%2B00%3A00",
+      "sha256": "b2759f7a3b25f31eb21b9697efa82c7fa43cb913593c97b2ff710dfa51de8930",
+      "bytes": 18301,
+      "captured_at_utc": "2026-10-26T16:16:48.277570+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230528T120000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-05-28T12%3A00%3A00%2B00%3A00&end=2023-06-09T23%3A00%3A00%2B00%3A00",
+      "sha256": "f9c96b2a949ab22e3d5788c5d6f8d420fe76a5f008eddef4333c76954c147ae8",
+      "bytes": 18301,
+      "captured_at_utc": "2026-10-26T16:16:49.302395+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230609T230000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-06-09T23%3A00%3A00%2B00%3A00&end=2023-06-22T10%3A00%3A00%2B00%3A00",
+      "sha256": "5c4179de3b6e90f757914adc8853497ee0144ccfa6e8a0bc63c8dcbb5271dc54",
+      "bytes": 18372,
+      "captured_at_utc": "2026-10-26T16:16:49.890948+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230622T100000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-06-22T10%3A00%3A00%2B00%3A00&end=2023-07-04T21%3A00%3A00%2B00%3A00",
+      "sha256": "ef3d2472744ed7270ebe5667ddf65051b5eed8ad3b63e8f4dc056c5e50423637",
+      "bytes": 18316,
+      "captured_at_utc": "2026-10-26T16:16:50.082005+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230704T210000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-07-04T21%3A00%3A00%2B00%3A00&end=2023-07-17T08%3A00%3A00%2B00%3A00",
+      "sha256": "1731a02dcb697b9c73c3f15c326d84205615fe2a635c89a82bf90a75df939161",
+      "bytes": 18288,
+      "captured_at_utc": "2026-10-26T16:16:50.720341+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230717T080000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-07-17T08%3A00%3A00%2B00%3A00&end=2023-07-29T19%3A00%3A00%2B00%3A00",
+      "sha256": "225ff60efd39d3defd147def4b72ebf177b504db0ba1a3d13cfe42ddba748841",
+      "bytes": 18304,
+      "captured_at_utc": "2026-10-26T16:16:50.918614+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230729T190000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-07-29T19%3A00%3A00%2B00%3A00&end=2023-08-11T06%3A00%3A00%2B00%3A00",
+      "sha256": "fd193da8243436dc796e03fbdfe95cda1168b948141b3d57f6da0739bfd22176",
+      "bytes": 18275,
+      "captured_at_utc": "2026-10-26T16:16:51.570810+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230811T060000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-08-11T06%3A00%3A00%2B00%3A00&end=2023-08-23T17%3A00%3A00%2B00%3A00",
+      "sha256": "c849e12a9371f2cd4f55a65133db94ae214c843fc4e890028699eb07a472ecd8",
+      "bytes": 18335,
+      "captured_at_utc": "2026-10-26T16:16:51.765066+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230823T170000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-08-23T17%3A00%3A00%2B00%3A00&end=2023-09-05T04%3A00%3A00%2B00%3A00",
+      "sha256": "4eaab383f35726a4cbd44cdc9b851d5e41568df24895a25ac78daab1579d2f71",
+      "bytes": 18299,
+      "captured_at_utc": "2026-10-26T16:16:52.376525+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230905T040000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-09-05T04%3A00%3A00%2B00%3A00&end=2023-09-17T15%3A00%3A00%2B00%3A00",
+      "sha256": "4882541a6902e8103bcdcd76e122b3612a6f5c850bf1c9b31d8e11be22264d67",
+      "bytes": 18304,
+      "captured_at_utc": "2026-10-26T16:16:53.295036+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230917T150000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-09-17T15%3A00%3A00%2B00%3A00&end=2023-09-30T02%3A00%3A00%2B00%3A00",
+      "sha256": "08473231bab16f984b7ffb1d6869cfdbffb1d5483ae977160c05eb71189ff013",
+      "bytes": 18323,
+      "captured_at_utc": "2026-10-26T16:16:53.224440+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20230930T020000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-09-30T02%3A00%3A00%2B00%3A00&end=2023-10-12T13%3A00%3A00%2B00%3A00",
+      "sha256": "5ca09f67ee1807aa24498263d5e59791d7f900772e094c6dcb6d2922f66a4441",
+      "bytes": 18326,
+      "captured_at_utc": "2026-10-26T16:16:54.115703+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231012T130000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-10-12T13%3A00%3A00%2B00%3A00&end=2023-10-25T00%3A00%3A00%2B00%3A00",
+      "sha256": "0fdc3bcf3e7001de38b3397b12451c6afc4a0df7dd891bc220163128107fa849",
+      "bytes": 18376,
+      "captured_at_utc": "2026-10-26T16:16:54.157163+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231025T000000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-10-25T00%3A00%3A00%2B00%3A00&end=2023-11-06T11%3A00%3A00%2B00%3A00",
+      "sha256": "bc3646d196c14d2dd397aa13e40415266a59d6ffb7a35c5f2c0f9b95b9019a2c",
+      "bytes": 18300,
+      "captured_at_utc": "2026-10-26T16:16:55.036055+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231106T110000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-11-06T11%3A00%3A00%2B00%3A00&end=2023-11-18T22%3A00%3A00%2B00%3A00",
+      "sha256": "afb4a54efe62ae5329304570645e114dfe656bc87fae9a14f202f03335d03500",
+      "bytes": 18314,
+      "captured_at_utc": "2026-10-26T16:16:55.036224+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231118T220000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-11-18T22%3A00%3A00%2B00%3A00&end=2023-12-01T09%3A00%3A00%2B00%3A00",
+      "sha256": "e21d8bfce9c1ed8c748933195257ed9dbcb8932288629cc536cce79b29888685",
+      "bytes": 18292,
+      "captured_at_utc": "2026-10-26T16:16:55.957962+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231201T090000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-12-01T09%3A00%3A00%2B00%3A00&end=2023-12-13T20%3A00%3A00%2B00%3A00",
+      "sha256": "458b940a3f937b9aabd322124f9aae66f0605d59cb1facf3ffbf250266c5d7eb",
+      "bytes": 18280,
+      "captured_at_utc": "2026-10-26T16:16:55.957827+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231213T200000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-12-13T20%3A00%3A00%2B00%3A00&end=2023-12-26T07%3A00%3A00%2B00%3A00",
+      "sha256": "0a35a052659ed3942dd8fcb78a77cefe637b10783af98783e7f01a4cbd00ab69",
+      "bytes": 18302,
+      "captured_at_utc": "2026-10-26T16:16:56.883282+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20231226T070000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2023-12-26T07%3A00%3A00%2B00%3A00&end=2024-01-07T18%3A00%3A00%2B00%3A00",
+      "sha256": "18cd6b6c8b0f1836bbf0d0c65a70c11e1d9bce5bf5336e814ba133fcd06425ae",
+      "bytes": 18302,
+      "captured_at_utc": "2026-10-26T16:16:56.883402+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240107T180000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-01-07T18%3A00%3A00%2B00%3A00&end=2024-01-20T05%3A00%3A00%2B00%3A00",
+      "sha256": "0ada494586089bdf376f686995f1461890e98510cd6efd657f61b86dfb5c65ae",
+      "bytes": 18321,
+      "captured_at_utc": "2026-10-26T16:16:58.300752+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240120T050000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-01-20T05%3A00%3A00%2B00%3A00&end=2024-02-01T16%3A00%3A00%2B00%3A00",
+      "sha256": "4b87f1c94895ac9ff0a60af68005d8be1171de2ae8e0cd5721528403eabe84cb",
+      "bytes": 18280,
+      "captured_at_utc": "2026-10-26T16:16:57.800563+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240201T160000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-02-01T16%3A00%3A00%2B00%3A00&end=2024-02-14T03%3A00%3A00%2B00%3A00",
+      "sha256": "8a7cee11d1a4edf4345ebc9f0b01785c08ce6d96e914785c3eb73e3e967fadb2",
+      "bytes": 18241,
+      "captured_at_utc": "2026-10-26T16:16:58.645015+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240214T030000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-02-14T03%3A00%3A00%2B00%3A00&end=2024-02-26T14%3A00%3A00%2B00%3A00",
+      "sha256": "437971540ced86f02d05bfe5bed3587bd7970809ea0691d5a38613c84ef653d0",
+      "bytes": 18259,
+      "captured_at_utc": "2026-10-26T16:16:59.222204+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240226T140000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-02-26T14%3A00%3A00%2B00%3A00&end=2024-03-10T01%3A00%3A00%2B00%3A00",
+      "sha256": "0fd95c89bc6288f95f5c6b90ee5dc7a2273b003a9d5f927abbb8c7269b1bb24c",
+      "bytes": 18293,
+      "captured_at_utc": "2026-10-26T16:17:00.209799+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240310T010000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-03-10T01%3A00%3A00%2B00%3A00&end=2024-03-22T12%3A00%3A00%2B00%3A00",
+      "sha256": "d8049b492e9d633851ff84c51b4d70bb5d7c146be8c57f394aa528a3dd19e620",
+      "bytes": 18360,
+      "captured_at_utc": "2026-10-26T16:17:00.081421+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240322T120000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-03-22T12%3A00%3A00%2B00%3A00&end=2024-04-03T23%3A00%3A00%2B00%3A00",
+      "sha256": "401943683982a96aadedc4469a1be5089f8a9a2b20e37cb1ccf4acc934a8b97d",
+      "bytes": 18274,
+      "captured_at_utc": "2026-10-26T16:17:00.932917+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240403T230000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-04-03T23%3A00%3A00%2B00%3A00&end=2024-04-16T10%3A00%3A00%2B00%3A00",
+      "sha256": "0e9fa418800733ab3550c5729088503c3725ac2815b061ce91978858531e5918",
+      "bytes": 18207,
+      "captured_at_utc": "2026-10-26T16:17:01.061639+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240416T100000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-04-16T10%3A00%3A00%2B00%3A00&end=2024-04-28T21%3A00%3A00%2B00%3A00",
+      "sha256": "450132bc4c3adfb9966a8e98dd98450f0f649dcbeaafa975556fcb68e8ade7bd",
+      "bytes": 18259,
+      "captured_at_utc": "2026-10-26T16:17:01.793552+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240428T210000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-04-28T21%3A00%3A00%2B00%3A00&end=2024-05-11T08%3A00%3A00%2B00%3A00",
+      "sha256": "6ced0e8d922179ee3aa2a52bb1b171dd65f05b122c49f65e51be982603aaeb5c",
+      "bytes": 18295,
+      "captured_at_utc": "2026-10-26T16:17:01.886424+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240511T080000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-05-11T08%3A00%3A00%2B00%3A00&end=2024-05-23T19%3A00%3A00%2B00%3A00",
+      "sha256": "cc094d006d082d5f7cb566aa793cfab75763133fdcf96d48e8e2b5d1d572e472",
+      "bytes": 18304,
+      "captured_at_utc": "2026-10-26T16:17:03.324667+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240523T190000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-05-23T19%3A00%3A00%2B00%3A00&end=2024-06-05T06%3A00%3A00%2B00%3A00",
+      "sha256": "1dfb1000af12daa817579ec6902d333264c021c73415b15c64f62e26e61718e7",
+      "bytes": 18219,
+      "captured_at_utc": "2026-10-26T16:17:02.820692+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240605T060000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-06-05T06%3A00%3A00%2B00%3A00&end=2024-06-17T17%3A00%3A00%2B00%3A00",
+      "sha256": "4076a98c251d7950e1cbb95483b6fd0ec8cccc220de43a2a1b1b83747cbb20fb",
+      "bytes": 18146,
+      "captured_at_utc": "2026-10-26T16:17:04.221458+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "data/research/equity_crypto_exposure_20261027_v001/coinbase/20240617T170000.json",
+      "url": "https://api.exchange.coinbase.com/products/BTC-USD/candles?granularity=3600&start=2024-06-17T17%3A00%3A00%2B00%3A00&end=2024-06-27T00%3A00%3A00%2B00%3A00",
+      "sha256": "e70632f27d9a8257d6d9866ccb78b469151461692c77b023462e4ae9a3f78dd2",
+      "bytes": 13621,
+      "captured_at_utc": "2026-10-26T16:17:04.175864+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "requested_hour_count": 13080,
+  "observed_requested_hour_count": 13077,
+  "missing_hours_utc": [
+    "2023-03-04T18:00:00+00:00",
+    "2023-03-04T19:00:00+00:00",
+    "2023-03-04T20:00:00+00:00"
+  ],
+  "returned_outside_global_window": 1,
+  "complete": false
+}

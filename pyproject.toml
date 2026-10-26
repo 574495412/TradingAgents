@@ -62,7 +62,7 @@ cli = ["static/*"]
 tradingagents = ["assets/*.svg"]
 "tradingagents.dataflows.research" = ["historical_capture_plan.md", "historical_funding_plan.md", "historical_panel_plan.md", "basis_oi_panel_plan.md", "basis_oi_prices_plan.md", "spot_archives_plan.md", "hedged_market_plan.md"]
 "tradingagents.research.quant" = ["plans/*.md", "requirements-forward.txt"]
-"tradingagents.research.equities" = ["plan.json", "protocol_v002.json", "sources_v002.json", "objectives.json", "external_plan.json", "stock_protocol.json", "depth_review_plan.json", "requirements.txt"]
+"tradingagents.research.equities" = ["plan.json", "protocol_v002.json", "sources_v002.json", "objectives.json", "external_plan.json", "stock_protocol.json", "depth_review_plan.json", "crypto_exposure_plan.json", "crypto_exposure_source_amendment.json", "requirements.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

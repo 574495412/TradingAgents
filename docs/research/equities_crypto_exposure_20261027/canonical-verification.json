@@ -1,0 +1,20 @@
+{
+  "schema": "equity-crypto-canonical-consistency.v1",
+  "goal_version": "20261027_depth_v006",
+  "prior_acceptance_commit": "b05ba70",
+  "financial_and_external_acceptance_requirements_unchanged": true,
+  "current_account_budget_executed": 16,
+  "new_economic_accounts": 0,
+  "all_actual_target_metrics_remain_null": true,
+  "all_external_attestations_remain_missing": true,
+  "api_version_and_acceptance_sha_match": true,
+  "source_checks_and_matrix_checks_are_internal": true,
+  "local_clock_source_tests_passed": 16,
+  "profit_goal_status": "not_met",
+  "files_sha256": {
+    "tradingagents/research/equities/objectives.json": "b1ca2139bbf830f3409befa14b5562c8c173764e86932290813440386ae4657a",
+    "docs/research/equities_depth_acceptance_20261026/acceptance.json": "abf92a8a57f618eecc208f2335cdb58d8bd7f98bfa53dea8f20387b80c337c9a",
+    "tradingagents/research/equities/crypto_exposure_plan.json": "8ff8f48aa18693569028f05b096d4a50017b534f01d722b95a63460f0e80859a",
+    "tradingagents/research/equities/crypto_exposure_source_amendment.json": "7d50d537b3be916e07914b177f6e7f6e961d98892af2f65abbb76b90fc0a0450"
+  }
+}
