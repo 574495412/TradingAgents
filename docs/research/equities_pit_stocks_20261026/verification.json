@@ -1,0 +1,57 @@
+{
+  "scope": "Internal engineering verification only; no external independent attestation or real forward performance inferred.",
+  "stock_tests": {
+    "passed": 40,
+    "command": "pytest tests/test_equities_research.py tests/test_equities_layered.py tests/test_equities_external.py tests/test_equities_pit.py"
+  },
+  "independent_algorithm_ledger_accounts": 8,
+  "curve_points": 2976,
+  "fills": 221,
+  "max_ledger_error_native": 3.16e-12,
+  "fresh_interpreter_restarts": 8,
+  "source_hashes_current_match": true,
+  "metric_crosschecks": [
+    {
+      "name": "US_disclosed_equal_10000_5bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_disclosed_equal_10000_15bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_french_mom_12_2_10000_5bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_french_mom_12_2_10000_15bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_gross_profitability_10000_5bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_gross_profitability_10000_15bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_stock_blend_equal_10000_5bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    },
+    {
+      "name": "US_stock_blend_equal_10000_15bps",
+      "cagr_from_frozen_curve_matches": true,
+      "year_contributions_compound_to_total": true
+    }
+  ],
+  "external_attestation_received": false,
+  "profit_goal_met": false
+}

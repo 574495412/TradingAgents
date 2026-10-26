@@ -1,0 +1,753 @@
+{
+  "schema": "equity-pit-stock-summary.v1",
+  "bounded_window": [
+    "2023-01-01",
+    "2024-06-27"
+  ],
+  "original_requested_window": [
+    "2023-01-01",
+    "2026-10-01"
+  ],
+  "records": [
+    {
+      "name": "US_disclosed_equal_10000_5bps",
+      "market": "US",
+      "policy": "disclosed_equal",
+      "capital": 10000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": 0.04085169470634464,
+        "net_pnl": 408.5169470634464,
+        "ending_equity": 10408.516947063446,
+        "annualized_return": 0.02652881826554654,
+        "sharpe_zero_rf_252": 0.23510424791241957,
+        "max_drawdown": 0.273493834516098,
+        "close_max_drawdown": 0.26259026855142076,
+        "win_rate": null,
+        "win_rate_wilson95": null,
+        "closed_trades": 0,
+        "entry_month_clusters": 0,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 0.0,
+        "open_cycle_pnl": 408.5169470634464,
+        "unrealized_mark_pnl": -771.8022671704966,
+        "mean_closed_pnl": null,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": null,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 13.655975001335145,
+        "net_return_after_exit_reserve": 0.03948609720621121,
+        "fees": 14.059999999999999,
+        "fee_components": {
+          "commission": 14.0,
+          "sec31": 0.03,
+          "taf": 0.03
+        },
+        "slippage": 5.183015018462438,
+        "turnover_initial_capital": 1.0369122131946562,
+        "requested_shares": 4065,
+        "filled_shares": 245,
+        "capacity_restricted_requests": 190,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.6801088490906686,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.25690703091621225,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.03181252938957191,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": 0.040851694706343755,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": 0.06310739283737088,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.06529215747779815,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.25472988283518716,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.049446455355058316,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.17189444477240112,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.15601180272712423,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.008490545917160697,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_disclosed_equal_10000_15bps",
+      "market": "US",
+      "policy": "disclosed_equal",
+      "capital": 10000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": 0.04136689754033096,
+        "net_pnl": 413.66897540330865,
+        "ending_equity": 10413.668975403309,
+        "annualized_return": 0.026430324250791726,
+        "sharpe_zero_rf_252": 0.2363404096130582,
+        "max_drawdown": 0.2741808200598249,
+        "close_max_drawdown": 0.26276783694208616,
+        "win_rate": null,
+        "win_rate_wilson95": null,
+        "closed_trades": 0,
+        "entry_month_clusters": 0,
+        "profit_factor": null,
+        "realized_closed_net_pnl": 0.0,
+        "open_cycle_pnl": 413.66897540330865,
+        "unrealized_mark_pnl": -763.6544188156813,
+        "mean_closed_pnl": null,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": null,
+        "closed_payoff_ratio": null,
+        "exit_reserve": 20.283150003433228,
+        "net_return_after_exit_reserve": 0.039338582539987454,
+        "fees": 14.059999999999999,
+        "fee_components": {
+          "commission": 14.0,
+          "sec31": 0.03,
+          "taf": 0.03
+        },
+        "slippage": 15.541005027294473,
+        "turnover_initial_capital": 1.0369938263228893,
+        "requested_shares": 4066,
+        "filled_shares": 246,
+        "capacity_restricted_requests": 190,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.680371622422016,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.25600909190940957,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.031041610385512897,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": 0.041366897540331626,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": 0.0631545787976131,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.06539788230337917,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.2548778726601737,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.049544832271918304,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.17089222980287022,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.1549459788566322,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.008525376914069405,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_french_mom_12_2_10000_5bps",
+      "market": "US",
+      "policy": "french_mom_12_2",
+      "capital": 10000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": 0.10928138695936229,
+        "net_pnl": 1092.8138695936232,
+        "ending_equity": 11092.813869593623,
+        "annualized_return": 0.07213803313589051,
+        "sharpe_zero_rf_252": 0.3818494735129291,
+        "max_drawdown": 0.2917827241669936,
+        "close_max_drawdown": 0.28355594698173303,
+        "win_rate": 0.625,
+        "win_rate_wilson95": [
+          0.30573785458380187,
+          0.863158240538479
+        ],
+        "closed_trades": 8,
+        "entry_month_clusters": 6,
+        "profit_factor": 1.2880737002724354,
+        "realized_closed_net_pnl": 733.9139711155908,
+        "open_cycle_pnl": 358.89989847803236,
+        "unrealized_mark_pnl": -793.8443017202153,
+        "mean_closed_pnl": 91.73924638944885,
+        "mean_closed_pnl_month_cluster95": [
+          -525.7099896878133,
+          768.1376150139968
+        ],
+        "worst_closed_cycle": -918.9545305442812,
+        "closed_payoff_ratio": 0.7728442201634612,
+        "exit_reserve": 7.632295065879823,
+        "net_return_after_exit_reserve": 0.10851815745277427,
+        "fees": 39.57,
+        "fee_components": {
+          "commission": 39.0,
+          "sec31": 0.4,
+          "taf": 0.17000000000000004
+        },
+        "slippage": 35.45158725452134,
+        "turnover_initial_capital": 7.090689288638591,
+        "requested_shares": 1606,
+        "filled_shares": 1319,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.5259222267656163,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.4353908332981593,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.0,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": 0.1092813869593634,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": 0.1156751236953748,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.07933389333247287,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.441279521577856,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.0400856916025335,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.22719209205863533,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.21607995884166098,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": -0.004252162122591052,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_french_mom_12_2_10000_15bps",
+      "market": "US",
+      "policy": "french_mom_12_2",
+      "capital": 10000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": 0.10378182660288804,
+        "net_pnl": 1037.8182660288803,
+        "ending_equity": 11037.81826602888,
+        "annualized_return": 0.06802185144115636,
+        "sharpe_zero_rf_252": 0.37184927778179555,
+        "max_drawdown": 0.2898868183912998,
+        "close_max_drawdown": 0.2815181861099475,
+        "win_rate": 0.625,
+        "win_rate_wilson95": [
+          0.30573785458380187,
+          0.863158240538479
+        ],
+        "closed_trades": 8,
+        "entry_month_clusters": 6,
+        "profit_factor": 1.1960682840152375,
+        "realized_closed_net_pnl": 492.5169667615892,
+        "open_cycle_pnl": 545.3012992672911,
+        "unrealized_mark_pnl": -771.5402459709103,
+        "mean_closed_pnl": 61.56462084519865,
+        "mean_closed_pnl_month_cluster95": [
+          -520.8792988092632,
+          675.6921910738498
+        ],
+        "worst_closed_cycle": -911.3003576087949,
+        "closed_payoff_ratio": 0.7176409704091425,
+        "exit_reserve": 15.525680187225342,
+        "net_return_after_exit_reserve": 0.10222925858416554,
+        "fees": 38.57,
+        "fee_components": {
+          "commission": 38.0,
+          "sec31": 0.4,
+          "taf": 0.17000000000000004
+        },
+        "slippage": 105.01727157640572,
+        "turnover_initial_capital": 7.002194795615056,
+        "requested_shares": 1541,
+        "filled_shares": 1252,
+        "capacity_restricted_requests": 0,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.5245105343693397,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.4290157342400551,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.0,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": 0.10378182660288804,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": 0.11535535070037817,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.07709066479170446,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.43189238226379967,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.04246605697678196,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.22759295075930408,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.2148932583405846,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": -0.0038661870553949873,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_gross_profitability_10000_5bps",
+      "market": "US",
+      "policy": "gross_profitability",
+      "capital": 10000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": -0.2210509528530119,
+        "net_pnl": -2210.5095285301195,
+        "ending_equity": 7789.4904714698805,
+        "annualized_return": -0.1558700801535976,
+        "sharpe_zero_rf_252": -0.3768228819899431,
+        "max_drawdown": 0.4207396970474473,
+        "close_max_drawdown": 0.4131011657182234,
+        "win_rate": 0.3333333333333333,
+        "win_rate_wilson95": [
+          0.0614903152761605,
+          0.7923450448735121
+        ],
+        "closed_trades": 3,
+        "entry_month_clusters": 3,
+        "profit_factor": 0.27938693535897535,
+        "realized_closed_net_pnl": -1031.6673331022257,
+        "open_cycle_pnl": -1178.8421954278938,
+        "unrealized_mark_pnl": -2029.536321106405,
+        "mean_closed_pnl": -343.88911103407526,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": -1276.2086497597693,
+        "closed_payoff_ratio": 0.5587738707179507,
+        "exit_reserve": 6.357930037498475,
+        "net_return_after_exit_reserve": -0.22168674585676185,
+        "fees": 21.26,
+        "fee_components": {
+          "commission": 21.0,
+          "sec31": 0.13999999999999999,
+          "taf": 0.12
+        },
+        "slippage": 15.029389980315077,
+        "turnover_initial_capital": 3.0062995000739106,
+        "requested_shares": 3543,
+        "filled_shares": 1034,
+        "capacity_restricted_requests": 57,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.7231404570387105,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.1786399840754973,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.0918745880500309,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": -0.2210509528530138,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": -0.03594163831144637,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.027867988389657983,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.17178881759518871,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.20090357129060343,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.3391119784910577,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.2005644371485753,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.016894079641158077,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_gross_profitability_10000_15bps",
+      "market": "US",
+      "policy": "gross_profitability",
+      "capital": 10000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": -0.22310867435884474,
+        "net_pnl": -2231.0867435884475,
+        "ending_equity": 7768.9132564115525,
+        "annualized_return": -0.15783743797037697,
+        "sharpe_zero_rf_252": -0.38520006406371704,
+        "max_drawdown": 0.43188170621877864,
+        "close_max_drawdown": 0.4239113628374601,
+        "win_rate": 0.3333333333333333,
+        "win_rate_wilson95": [
+          0.0614903152761605,
+          0.7923450448735121
+        ],
+        "closed_trades": 3,
+        "entry_month_clusters": 3,
+        "profit_factor": 0.27347843754123885,
+        "realized_closed_net_pnl": -1072.2088645367621,
+        "open_cycle_pnl": -1158.8778790516853,
+        "unrealized_mark_pnl": -2008.1668109684451,
+        "mean_closed_pnl": -357.4029548455874,
+        "mean_closed_pnl_month_cluster95": null,
+        "worst_closed_cycle": -1315.1805883455281,
+        "closed_payoff_ratio": 0.5469568750824777,
+        "exit_reserve": 12.59546011209488,
+        "net_return_after_exit_reserve": -0.22436822037005422,
+        "fees": 21.26,
+        "fee_components": {
+          "commission": 21.0,
+          "sec31": 0.13999999999999999,
+          "taf": 0.12
+        },
+        "slippage": 45.486629948616,
+        "turnover_initial_capital": 3.0337031936026575,
+        "requested_shares": 3548,
+        "filled_shares": 1043,
+        "capacity_restricted_requests": 57,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.7259726893464713,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.17741323418259425,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.09228294363598777,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": -0.22310867435884596,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": -0.02242496189391019,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.024315699184702666,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.14971877342213635,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.19993754562639798,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.3401710605193753,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.20279223556335568,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.016900982166393907,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_stock_blend_equal_10000_5bps",
+      "market": "US",
+      "policy": "stock_blend_equal",
+      "capital": 10000,
+      "slippage_bps": 5,
+      "metrics": {
+        "net_return": -0.05150888698677969,
+        "net_pnl": -515.0888698677973,
+        "ending_equity": 9484.911130132203,
+        "annualized_return": -0.03573753595293039,
+        "sharpe_zero_rf_252": 0.002262230710176539,
+        "max_drawdown": 0.31963634066629143,
+        "close_max_drawdown": 0.309553263955183,
+        "win_rate": 0.5555555555555556,
+        "win_rate_wilson95": [
+          0.2666473457440297,
+          0.811224570528086
+        ],
+        "closed_trades": 9,
+        "entry_month_clusters": 8,
+        "profit_factor": 0.9309563086691738,
+        "realized_closed_net_pnl": -93.51160085439562,
+        "open_cycle_pnl": -421.57726901340163,
+        "unrealized_mark_pnl": -1765.6142139081603,
+        "mean_closed_pnl": -10.390177872710625,
+        "mean_closed_pnl_month_cluster95": [
+          -256.45487253121127,
+          222.36014579702507
+        ],
+        "worst_closed_cycle": -608.6171724777221,
+        "closed_payoff_ratio": 0.7447650469353391,
+        "exit_reserve": 8.93987004852295,
+        "net_return_after_exit_reserve": -0.052402873991632126,
+        "fees": 37.449999999999996,
+        "fee_components": {
+          "commission": 37.0,
+          "sec31": 0.26,
+          "taf": 0.19000000000000003
+        },
+        "slippage": 22.708944902895137,
+        "turnover_initial_capital": 4.542175714080477,
+        "requested_shares": 2357,
+        "filled_shares": 1126,
+        "capacity_restricted_requests": 57,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.6121516759095822,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.30269925701556,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.043759845186281066,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": -0.05150888698678102,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": 0.03773649076708829,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.046170266406283744,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.29393812795726304,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.1227864062508005,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.2719032363723153,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.19668902329237026,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.006867149190961541,
+            "sessions": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "US_stock_blend_equal_10000_15bps",
+      "market": "US",
+      "policy": "stock_blend_equal",
+      "capital": 10000,
+      "slippage_bps": 15,
+      "metrics": {
+        "net_return": -0.06017211495776176,
+        "net_pnl": -601.7211495776173,
+        "ending_equity": 9398.278850422383,
+        "annualized_return": -0.04219994555925832,
+        "sharpe_zero_rf_252": -0.017015710847419124,
+        "max_drawdown": 0.3272082662538326,
+        "close_max_drawdown": 0.31669739952164333,
+        "win_rate": 0.5555555555555556,
+        "win_rate_wilson95": [
+          0.2666473457440297,
+          0.811224570528086
+        ],
+        "closed_trades": 9,
+        "entry_month_clusters": 8,
+        "profit_factor": 0.9374054731764532,
+        "realized_closed_net_pnl": -84.03501870632158,
+        "open_cycle_pnl": -517.6861308712957,
+        "unrealized_mark_pnl": -1794.6620576444975,
+        "mean_closed_pnl": -9.337224300702397,
+        "mean_closed_pnl_month_cluster95": [
+          -253.02748320115057,
+          221.81353852667772
+        ],
+        "worst_closed_cycle": -588.9122542977332,
+        "closed_payoff_ratio": 0.7499243785411625,
+        "exit_reserve": 16.08801514339447,
+        "net_return_after_exit_reserve": -0.061780916472101155,
+        "fees": 37.449999999999996,
+        "fee_components": {
+          "commission": 37.0,
+          "sec31": 0.26,
+          "taf": 0.19000000000000003
+        },
+        "slippage": 68.5312346835141,
+        "turnover_initial_capital": 4.5699021414024825,
+        "requested_shares": 2369,
+        "filled_shares": 1129,
+        "capacity_restricted_requests": 57,
+        "unfilled_exit_requests": 0,
+        "mean_exposure": 0.6161623215343576,
+        "halted_sessions": 0,
+        "sessions": 372,
+        "module_sample_status": "insufficient",
+        "periods": {
+          "2023": {
+            "net_return": 0.3044270331097123,
+            "sessions": 250
+          },
+          "90d_00": {
+            "net_return": 0.043109564191961214,
+            "sessions": 62
+          },
+          "regime_disclosed_stock_monthly": {
+            "net_return": -0.0601721149577622,
+            "sessions": 372
+          },
+          "90d_01": {
+            "net_return": 0.037357059226139855,
+            "sessions": 62
+          },
+          "90d_02": {
+            "net_return": -0.04571538931757402,
+            "sessions": 63
+          },
+          "90d_03": {
+            "net_return": 0.296327439980385,
+            "sessions": 62
+          },
+          "90d_04": {
+            "net_return": -0.13074524088546313,
+            "sessions": 61
+          },
+          "2024": {
+            "net_return": -0.2795090402245666,
+            "sessions": 122
+          },
+          "90d_05": {
+            "net_return": -0.19787181222739503,
+            "sessions": 61
+          },
+          "90d_06": {
+            "net_return": 0.006947070713307912,
+            "sessions": 1
+          }
+        }
+      }
+    }
+  ],
+  "new_accounts": 8,
+  "profit_goal_status": "not_met",
+  "actual_qualified_total_account": null,
+  "full_window_available": false,
+  "production_eligible": false,
+  "independent_forward_oos": false
+}

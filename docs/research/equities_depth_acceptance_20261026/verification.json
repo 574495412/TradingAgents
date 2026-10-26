@@ -1,0 +1,59 @@
+{
+  "scope": "Document/adapter/UI consistency only; this is not external scientific, source, execution or return certification.",
+  "goal_version": "20261026_depth_v003",
+  "retained_challenge": {
+    "net_cagr": 0.5,
+    "max_drawdown": 0.15,
+    "net_sharpe": 1
+  },
+  "all_external_gate_evidence_missing": true,
+  "profit_goal_met": false,
+  "source_hashes": {
+    "tradingagents/research/equities/objectives.json": "a7a4d143f8602d46dc24670b9517624927291704d672135088c1649ded030656",
+    "docs/research/equities_depth_acceptance_20261026/README.md": "3d4bff0363f1b4a270ba4a7863fd075a5bb4e122275ec42cac377062e3cf9c7a",
+    "docs/research/equities_depth_acceptance_20261026/acceptance.json": "7a737264d255016cf88f84aab5d68cd77ce5975a66ac83c8a881fd5431e56202",
+    "docs/research/equities_depth_acceptance_20261026/objective-audit.json": "9b0f0e28c1aaa0075328793af019d14d7f5569c95112037011e61fd9beec6a96",
+    "docs/research/equities_depth_acceptance_20261026/previous-objectives.json": "6efc52956b1ec53b218c648bc746a3ee72b6732b387f409155ba8a771aa2edd5"
+  },
+  "adapter_tests_passed": 15,
+  "adversarial_checks": [
+    "Inline success flags cannot override the owner acceptance standard",
+    "Internal ledger success leaves external verification unknown",
+    "Acceptance standard outside owner path is rejected"
+  ],
+  "browser": {
+    "reason": "Browser plugin not available",
+    "flow": "research route -> expanded independent acceptance -> required external evidence, unmet profit goal and preserved stock diagnostics",
+    "checks": [
+      {
+        "name": "desktop",
+        "width": 1536,
+        "height": 1024,
+        "page_identity": true,
+        "acceptance_interaction": true,
+        "external_pending": true,
+        "target_actual_unknown": true,
+        "market_filter": true,
+        "stock_report": true,
+        "document_overflow": false,
+        "app_errors": []
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "page_identity": true,
+        "acceptance_interaction": true,
+        "external_pending": true,
+        "target_actual_unknown": true,
+        "market_filter": true,
+        "stock_report": true,
+        "document_overflow": false,
+        "app_errors": []
+      }
+    ]
+  },
+  "browser_qa_sha256": "3c6b1918157e59ae65ce227278c0edfd750334f7979a9b0cd5fc196186ab6854",
+  "build_passed": true,
+  "build_note": "Existing >500kB main bundle warning remains; no unrelated bundle refactor."
+}

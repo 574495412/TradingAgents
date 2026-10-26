@@ -12,6 +12,11 @@ def D(value):
 
 
 def expected_fee(market, date, side, q, price, spec):
+    if market not in {"US", "HK"} or any(
+        s.get("instrument") not in ({"ETF", "equity"} if market == "US" else {"ETF"})
+        for s in spec["symbols"]
+    ):
+        raise ValueError("Unreviewed instrument fee treatment in independent audit")
     value = D(q) * D(price)
     cent = Decimal(".01")
 

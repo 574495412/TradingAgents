@@ -1,0 +1,593 @@
+{
+  "schema": "equity-original-annual-audit.v1",
+  "passed": true,
+  "auditor_source_sha256": "f6eeccfb4e9c635eafbfd7184271955b6e89d05055a0314b4616c3853840b2c1",
+  "annual_signal_versions": 44,
+  "tag_values_checked": 97,
+  "scope": "All available annual US-GAAP signal inputs, not every companyfact/custom taxonomy/quarterly event or original public dissemination vintage.",
+  "facts_sha256": "3dd2be0b2a4dc005ca11c32e03fdf9518f71370c17217ea7dda23cfb697d88d7",
+  "annual_sha256": "d2a0bd642bce378765e3388451524aefffb7438245b525276cf7da61ee89763a",
+  "records": [
+    {
+      "cik": "0001318605",
+      "accession": "0001564590-20-004475",
+      "period_end": "2019-12-31",
+      "available_at": "2020-02-13T13:12:18+00:00",
+      "tags_checked": {
+        "GrossProfit": 4069000000.0,
+        "Assets": 34309000000.0
+      },
+      "original_file": "0001564590-20-004475.htm",
+      "original_sha256": "b6813269aacbb87789024b83f5caf337b453d07e9a193905e9d4c8d5012d50df",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-20-000010",
+      "period_end": "2019-12-31",
+      "available_at": "2020-02-21T14:50:33+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 876293000.0,
+        "CostOfRevenue": 216717000.0,
+        "Assets": 3505768000.0
+      },
+      "original_file": "0001124140-20-000010.htm",
+      "original_sha256": "9d70dbc19e342f1e0cba5cc16184b617765fec4cb283a7d8c7b965667835acf6",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001628280-20-002303",
+      "period_end": "2019-12-31",
+      "available_at": "2020-02-26T22:16:57+00:00",
+      "tags_checked": {
+        "GrossProfit": 1889685000.0,
+        "Assets": 4551258000.0
+      },
+      "original_file": "0001628280-20-002303.htm",
+      "original_sha256": "95943e45cce7fb84385f272b9fe61ffa311c05896c2fd8849676366b936f9327",
+      "passed": true
+    },
+    {
+      "cik": "0001652130",
+      "accession": "0001564590-20-007409",
+      "period_end": "2019-12-31",
+      "available_at": "2020-02-27T22:34:29+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 43103000.0,
+        "CostOfGoodsAndServicesSold": 0.0,
+        "Assets": 334280000.0
+      },
+      "original_file": "0001564590-20-007409.htm",
+      "original_sha256": "c62acfb3ef81457bf2444dd35e6a078a24739f7140416830cfac53fd73ba0dda",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001564590-20-007916",
+      "period_end": "2019-12-31",
+      "available_at": "2020-02-29T02:31:09+00:00",
+      "tags_checked": {
+        "GrossProfit": 495224000.0,
+        "Assets": 1470234000.0
+      },
+      "original_file": "0001564590-20-007916.htm",
+      "original_sha256": "0c37830153f7d248241dc1b907e3cd4eee25e28f89b25be6fd1f3e996aa0b868",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-20-000095",
+      "period_end": "2020-01-31",
+      "available_at": "2020-03-20T21:37:28+00:00",
+      "tags_checked": {
+        "GrossProfit": 507262000.0,
+        "Assets": 1289845000.0
+      },
+      "original_file": "0001585521-20-000095.htm",
+      "original_sha256": "a1d280d24d99088d54c14f96976221484c20b04cac7409ac76e2cfc5cd3cb52a",
+      "passed": true
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0001564590-21-004599",
+      "period_end": "2020-12-31",
+      "available_at": "2021-02-08T13:27:23+00:00",
+      "tags_checked": {
+        "GrossProfit": 6630000000.0,
+        "Assets": 52148000000.0
+      },
+      "original_file": "0001564590-21-004599.htm",
+      "original_sha256": "3bd41a517fbd810d59cebaf8c661898a08e4034b79356d059fff2a62695bdd43",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-21-000029",
+      "period_end": "2020-12-31",
+      "available_at": "2021-02-16T23:02:30+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 1491391000.0,
+        "CostOfRevenue": 354324000.0,
+        "Assets": 4925092000.0
+      },
+      "original_file": "0001124140-21-000029.htm",
+      "original_sha256": "6ce78a939e75fcd4a9c6820203537ea15c4a3fbceec3d19ded5cc4e4fc392b00",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001512673-21-000008",
+      "period_end": "2020-12-31",
+      "available_at": "2021-02-23T22:19:48+00:00",
+      "tags_checked": {
+        "GrossProfit": 2733409000.0,
+        "Assets": 9869550000.0
+      },
+      "original_file": "0001512673-21-000008.htm",
+      "original_sha256": "0e3236eb2c0e19c8f0d69cc03cd8b9ca5198257978eeee6f9ef89c647ca267fb",
+      "passed": true
+    },
+    {
+      "cik": "0001652130",
+      "accession": "0001564590-21-009011",
+      "period_end": "2020-12-31",
+      "available_at": "2021-02-26T00:10:26+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 57994000.0,
+        "CostOfGoodsAndServicesSold": 0.0,
+        "Assets": 676322000.0
+      },
+      "original_file": "0001564590-21-009011.htm",
+      "original_sha256": "59d2975a27a4f082fa5a96e3cedd0151b87e4347aac923bb3425d3e5e1c3b6f1",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001564590-21-009021",
+      "period_end": "2020-12-31",
+      "available_at": "2021-02-26T00:16:33+00:00",
+      "tags_checked": {
+        "GrossProfit": 808219000.0,
+        "Assets": 2270542000.0
+      },
+      "original_file": "0001564590-21-009021.htm",
+      "original_sha256": "dd9ada6d90b6fd6c9fe76707215950cad5c9ed390fdacae06c13b7ea39b3761d",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-21-000048",
+      "period_end": "2021-01-31",
+      "available_at": "2021-03-18T21:03:41+00:00",
+      "tags_checked": {
+        "GrossProfit": 1829379000.0,
+        "Assets": 5297993000.0
+      },
+      "original_file": "0001585521-21-000048.htm",
+      "original_sha256": "cf25658663d03be8dd19bc0d094875c888de34ebca79b9d660220e7a78a961ec",
+      "passed": true
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0000950170-22-000796",
+      "period_end": "2021-12-31",
+      "available_at": "2022-02-05T02:11:27+00:00",
+      "tags_checked": {
+        "GrossProfit": 13606000000.0,
+        "Assets": 62131000000.0
+      },
+      "original_file": "0000950170-22-000796.htm",
+      "original_sha256": "a76ed08b70b7018e905fa3732927a6b381efcc25bb2eb5b37833add844308620",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001428439-22-000010",
+      "period_end": "2021-12-31",
+      "available_at": "2022-02-18T22:54:27+00:00",
+      "tags_checked": {
+        "GrossProfit": 1408600000.0,
+        "Assets": 4082145000.0
+      },
+      "original_file": "0001428439-22-000010.htm",
+      "original_sha256": "5304b6ced935bb7d495ff9cf2f7ff0004fb455535823f66ca16289fbb090cf86",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-22-000022",
+      "period_end": "2021-12-31",
+      "available_at": "2022-02-22T23:06:46+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 1767087000.0,
+        "CostOfRevenue": 458757000.0,
+        "Assets": 6684884000.0
+      },
+      "original_file": "0001124140-22-000022.htm",
+      "original_sha256": "503cf12ee15f9a9d95da4dc88eb20f0ec2e6ab0f268da4a8c7b37b501788dc5c",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001628280-22-003825",
+      "period_end": "2021-12-31",
+      "available_at": "2022-02-24T22:19:13+00:00",
+      "tags_checked": {
+        "GrossProfit": 4419823000.0,
+        "Assets": 13925764000.0
+      },
+      "original_file": "0001628280-22-003825.htm",
+      "original_sha256": "3e2a494fa02d4bfb8bf52293a46800d6fb6ae8730d85d8ce74c4d965396e5b2c",
+      "passed": true
+    },
+    {
+      "cik": "0001652130",
+      "accession": "0000950170-22-001981",
+      "period_end": "2021-12-31",
+      "available_at": "2022-02-24T22:22:35+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 33053000.0,
+        "CostOfGoodsAndServicesSold": 0.0,
+        "Assets": 1294464000.0
+      },
+      "original_file": "0000950170-22-001981.htm",
+      "original_sha256": "fad494c2a2d3c5ed69e0a5a2f083c2341206d6b2934435fa7660d672684247af",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-22-000037",
+      "period_end": "2022-01-31",
+      "available_at": "2022-03-07T22:02:53+00:00",
+      "tags_checked": {
+        "GrossProfit": 3045310000.0,
+        "Assets": 7551318000.0
+      },
+      "original_file": "0001585521-22-000037.htm",
+      "original_sha256": "a5fa527682959590668a366189c33f17b9526b78e36ce6efb6357ff189c4fe91",
+      "passed": true
+    },
+    {
+      "cik": "0001734722",
+      "accession": "0001734722-22-000006",
+      "period_end": "2022-01-31",
+      "available_at": "2022-04-04T22:22:35+00:00",
+      "tags_checked": {
+        "GrossProfit": 723384000.0,
+        "Assets": 2572450000.0
+      },
+      "original_file": "0001734722-22-000006.htm",
+      "original_sha256": "ebf46b9c6ec9b45f1cce7bc71c02f38fe0ea68f43f1487ecbcfdc8d361eaa0e0",
+      "passed": true
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0000950170-23-001409",
+      "period_end": "2022-12-31",
+      "available_at": "2023-01-31T03:29:15+00:00",
+      "tags_checked": {
+        "GrossProfit": 20853000000.0,
+        "Assets": 82338000000.0
+      },
+      "original_file": "0000950170-23-001409.htm",
+      "original_sha256": "47d1fcd5dbe7af3ca86e0ffd12f05b96be950f278ecb7ec4e3ffd61aa862ad34",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001428439-23-000007",
+      "period_end": "2022-12-31",
+      "available_at": "2023-02-16T22:51:10+00:00",
+      "tags_checked": {
+        "GrossProfit": 1441122000.0,
+        "Assets": 4412601000.0
+      },
+      "original_file": "0001428439-23-000007.htm",
+      "original_sha256": "3846f7534a9d37428ee3923766ced97335be2236ed06c1c9def04c83918f5e7a",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-23-000014",
+      "period_end": "2022-12-31",
+      "available_at": "2023-02-21T23:04:22+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 2084279000.0,
+        "CostOfRevenue": 574394000.0,
+        "Assets": 6226873000.0
+      },
+      "original_file": "0001124140-23-000014.htm",
+      "original_sha256": "10e58d137f97442a863e0d975161517ccd954ae0b21bbab4a2681948e2cdd3f6",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001628280-23-004840",
+      "period_end": "2022-12-31",
+      "available_at": "2023-02-23T22:23:08+00:00",
+      "tags_checked": {
+        "GrossProfit": 5991892000.0,
+        "Assets": 31364340000.0
+      },
+      "original_file": "0001628280-23-004840.htm",
+      "original_sha256": "e07e643dc43e5d869013288c40516355e09925a33c3ad120389665d0844951ff",
+      "passed": true
+    },
+    {
+      "cik": "0001477449",
+      "accession": "0001558370-23-002559",
+      "period_end": "2022-12-31",
+      "available_at": "2023-03-01T22:02:35+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 2406840000.0,
+        "CostOfGoodsAndServicesSold": 743987000.0,
+        "Assets": 4345355000.0
+      },
+      "original_file": "0001558370-23-002559.htm",
+      "original_sha256": "9477290f7aae33863e19f38c5f9260ec75aeaecf4d068c33541357c59519ddec",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-23-000035",
+      "period_end": "2023-01-31",
+      "available_at": "2023-03-03T17:07:37+00:00",
+      "tags_checked": {
+        "GrossProfit": 3292509000.0,
+        "Assets": 8128065000.0
+      },
+      "original_file": "0001585521-23-000035.htm",
+      "original_sha256": "05dab78d3033326c31832d9c3907b524a4cdcbc56c7b216ae98ec64c3866c613",
+      "passed": true
+    },
+    {
+      "cik": "0001734722",
+      "accession": "0001734722-23-000017",
+      "period_end": "2023-01-31",
+      "available_at": "2023-03-24T22:18:54+00:00",
+      "tags_checked": {
+        "GrossProfit": 878530000.0,
+        "Assets": 2735206000.0
+      },
+      "original_file": "0001734722-23-000017.htm",
+      "original_sha256": "c3ff6372ebcda18af43b102291158c60b183251b8d75de0093acfd39e16e6eda",
+      "passed": true
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0001628280-24-002390",
+      "period_end": "2023-12-31",
+      "available_at": "2024-01-27T03:00:20+00:00",
+      "tags_checked": {
+        "GrossProfit": 17660000000.0,
+        "Assets": 106618000000.0
+      },
+      "original_file": "0001628280-24-002390.htm",
+      "original_sha256": "c370a9ddc1cf29aa57d0d4aeeb6f41367c747f84475a5f19831b3edd5370ab38",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001428439-24-000011",
+      "period_end": "2023-12-31",
+      "available_at": "2024-02-16T22:06:52+00:00",
+      "tags_checked": {
+        "GrossProfit": 1522615000.0,
+        "Assets": 4261792000.0
+      },
+      "original_file": "0001428439-24-000011.htm",
+      "original_sha256": "558286b9403146fe971ad5c2c3bd1b1f5c6c4db233f41104b1ba934952f0e88e",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-24-000012",
+      "period_end": "2023-12-31",
+      "available_at": "2024-02-21T23:05:28+00:00",
+      "tags_checked": {
+        "RevenueFromContractWithCustomerExcludingAssessedTax": 2499766000.0,
+        "CostOfRevenue": 654248000.0,
+        "Assets": 6471334000.0
+      },
+      "original_file": "0001124140-24-000012.htm",
+      "original_sha256": "97bf39d31cfa248b5256204a37a91a0cc1c60439fee4b988b3f8ec0c62125900",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001628280-24-006354",
+      "period_end": "2023-12-31",
+      "available_at": "2024-02-22T22:18:13+00:00",
+      "tags_checked": {
+        "GrossProfit": 7504886000.0,
+        "Assets": 34069893000.0
+      },
+      "original_file": "0001628280-24-006354.htm",
+      "original_sha256": "079c1d6513c5487554c96fb8694d3971a15033c40c13bac560a6d3c7cbcb26da",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-24-000030",
+      "period_end": "2024-01-31",
+      "available_at": "2024-03-02T00:30:11+00:00",
+      "tags_checked": {
+        "GrossProfit": 3449423000.0,
+        "Assets": 9929793000.0
+      },
+      "original_file": "0001585521-24-000030.htm",
+      "original_sha256": "2d1f94e5c00786e9da9c9f61780c5ec2f7ed5d87b29005ebfac95bc1fbb8f002",
+      "passed": true
+    },
+    {
+      "cik": "0001734722",
+      "accession": "0001734722-24-000011",
+      "period_end": "2024-01-31",
+      "available_at": "2024-03-27T22:26:17+00:00",
+      "tags_checked": {
+        "GrossProfit": 1112148000.0,
+        "Assets": 2954758000.0
+      },
+      "original_file": "0001734722-24-000011.htm",
+      "original_sha256": "7f533c50c985dbacff3b7f84a38ec3750df1555d15cefcfe34162e2215dac246",
+      "passed": true
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0001628280-25-003063",
+      "period_end": "2024-12-31",
+      "available_at": "2025-01-30T02:42:33+00:00",
+      "tags_checked": {
+        "GrossProfit": 17450000000.0,
+        "Assets": 122070000000.0
+      },
+      "original_file": "0001628280-25-003063.htm",
+      "original_sha256": "59ce09af89b426a7addd2bcaa9d253da86388f813cb3321e45195a01d1cec193",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001428439-25-000013",
+      "period_end": "2024-12-31",
+      "available_at": "2025-02-14T22:04:14+00:00",
+      "tags_checked": {
+        "GrossProfit": 1805645000.0,
+        "Assets": 4303933000.0
+      },
+      "original_file": "0001428439-25-000013.htm",
+      "original_sha256": "7659e7077566b39929278b6472ee342c6d0c9899aaea519804c2f986fbb1c091",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-25-000020",
+      "period_end": "2024-12-31",
+      "available_at": "2025-02-19T23:11:06+00:00",
+      "tags_checked": {
+        "GrossProfit": 1918717000.0,
+        "Assets": 5928139000.0
+      },
+      "original_file": "0001124140-25-000020.htm",
+      "original_sha256": "1f9cb660390f26c0b57893e0a41711507c34215f35a3032a44e78d4d352b1019",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001628280-25-007376",
+      "period_end": "2024-12-31",
+      "available_at": "2025-02-24T22:17:17+00:00",
+      "tags_checked": {
+        "GrossProfit": 8889036000.0,
+        "Assets": 36777595000.0
+      },
+      "original_file": "0001628280-25-007376.htm",
+      "original_sha256": "844206752c2071eab19abfa30ebee6e4ab19fbbaa99639601686eceacdad9cb9",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-25-000042",
+      "period_end": "2025-01-31",
+      "available_at": "2025-02-28T22:02:08+00:00",
+      "tags_checked": {
+        "GrossProfit": 3535806000.0,
+        "Assets": 10988421000.0
+      },
+      "original_file": "0001585521-25-000042.htm",
+      "original_sha256": "dee7f90586b0867d4cb4fdde6573fe40e80e1d4879cf942ce1b9521ce44e3cef",
+      "passed": true
+    },
+    {
+      "cik": "0001734722",
+      "accession": "0001734722-25-000007",
+      "period_end": "2025-01-31",
+      "available_at": "2025-03-24T22:27:24+00:00",
+      "tags_checked": {
+        "GrossProfit": 1182722000.0,
+        "Assets": 2865270000.0
+      },
+      "original_file": "0001734722-25-000007.htm",
+      "original_sha256": "b83dc6d09303d89d19cf83c212789adf58d085b2636ba91d789724513312ffc9",
+      "passed": true
+    },
+    {
+      "cik": "0001318605",
+      "accession": "0001628280-26-003952",
+      "period_end": "2025-12-31",
+      "available_at": "2026-01-29T02:55:03+00:00",
+      "tags_checked": {
+        "GrossProfit": 17094000000.0,
+        "Assets": 137806000000.0
+      },
+      "original_file": "0001628280-26-003952.htm",
+      "original_sha256": "b52f32a036a906d397617b55991d47134c31ee7d6d365d9e9810f8e9ea4ad88d",
+      "passed": true
+    },
+    {
+      "cik": "0001124140",
+      "accession": "0001124140-26-000011",
+      "period_end": "2025-12-31",
+      "available_at": "2026-02-13T22:09:33+00:00",
+      "tags_checked": {
+        "GrossProfit": 2262755000.0,
+        "Assets": 5860629000.0
+      },
+      "original_file": "0001124140-26-000011.htm",
+      "original_sha256": "b210fc00bb21f5e6430f1455feb053e9c2209cfaa249bd7415c15fd88cfe8651",
+      "passed": true
+    },
+    {
+      "cik": "0001428439",
+      "accession": "0001628280-26-008114",
+      "period_end": "2025-12-31",
+      "available_at": "2026-02-13T22:14:59+00:00",
+      "tags_checked": {
+        "GrossProfit": 2074424000.0,
+        "Assets": 4433483000.0
+      },
+      "original_file": "0001628280-26-008114.htm",
+      "original_sha256": "419c8da8c7a592be8b3b9fc14e1e64c870fa4d413b88854e7c54710c7b108bfa",
+      "passed": true
+    },
+    {
+      "cik": "0001512673",
+      "accession": "0001628280-26-012254",
+      "period_end": "2025-12-31",
+      "available_at": "2026-02-26T22:07:56+00:00",
+      "tags_checked": {
+        "GrossProfit": 10359929000.0,
+        "Assets": 39549887000.0
+      },
+      "original_file": "0001628280-26-012254.htm",
+      "original_sha256": "2c2b48f4776003aaac5692a05643c85c1ad99315f42384604a6e947b6dd538b1",
+      "passed": true
+    },
+    {
+      "cik": "0001585521",
+      "accession": "0001585521-26-000030",
+      "period_end": "2026-01-31",
+      "available_at": "2026-02-27T23:18:02+00:00",
+      "tags_checked": {
+        "GrossProfit": 3749733000.0,
+        "Assets": 11960416000.0
+      },
+      "original_file": "0001585521-26-000030.htm",
+      "original_sha256": "29a94349b1c6557c60b2d30124a1459d0c4361444d0bf3d3d2345b555895892f",
+      "passed": true
+    },
+    {
+      "cik": "0001734722",
+      "accession": "0001734722-26-000012",
+      "period_end": "2026-01-31",
+      "available_at": "2026-03-25T01:59:27+00:00",
+      "tags_checked": {
+        "GrossProfit": 1339588000.0,
+        "Assets": 3179200000.0
+      },
+      "original_file": "0001734722-26-000012.htm",
+      "original_sha256": "48c88966875d9c629c319dff8db1155aca9b7cb1a35abdd5ba9a909bb64b68ff",
+      "passed": true
+    }
+  ]
+}

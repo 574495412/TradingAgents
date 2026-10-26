@@ -1,0 +1,162 @@
+{
+  "schema": "equity-pit-quality.v1",
+  "research_input_checks_passed": true,
+  "raw_sec_files_verified": 67,
+  "filing_metadata_rows": 8736,
+  "historical_disclosure_rows": 3325,
+  "disclosure_periods": [
+    "2022-09-30",
+    "2022-12-31",
+    "2023-03-31",
+    "2023-06-30",
+    "2023-09-30",
+    "2023-12-31",
+    "2024-03-31",
+    "2024-06-30",
+    "2024-09-30",
+    "2024-12-31",
+    "2025-03-31",
+    "2025-06-30",
+    "2025-09-30",
+    "2025-12-31",
+    "2026-03-31",
+    "2026-06-30"
+  ],
+  "distinct_historical_cusips": 368,
+  "first_snapshot_not_in_last": 130,
+  "disappeared_is_not_delisting_evidence": true,
+  "seed_members": 10,
+  "quote_members": 10,
+  "full_window_available": false,
+  "full_window_admitted": false,
+  "coverage_gap": "EXAS archive ends 2024-06-26. Full requested account through 2026-09-30 blocked; do not drop EXAS, manufacture bars or fabricate merger cash settlement.",
+  "bounded_diagnostic_last_session": "2024-06-26",
+  "company_fact_rows": 3663,
+  "annual_versions": 66,
+  "annual_status": {
+    "missing_or_ambiguous": 22,
+    "available": 44
+  },
+  "by_issuer": [
+    {
+      "symbol": "TSLA.US",
+      "cik": "0001318605",
+      "annual_versions": 7,
+      "usable_profitability_versions": 7,
+      "historical_symbols": [
+        "TSLA"
+      ]
+    },
+    {
+      "symbol": "ZM.US",
+      "cik": "0001585521",
+      "annual_versions": 7,
+      "usable_profitability_versions": 7,
+      "historical_symbols": [
+        "ZM"
+      ]
+    },
+    {
+      "symbol": "ROKU.US",
+      "cik": "0001428439",
+      "annual_versions": 7,
+      "usable_profitability_versions": 7,
+      "historical_symbols": [
+        "ROKU"
+      ]
+    },
+    {
+      "symbol": "PATH.US",
+      "cik": "0001734722",
+      "annual_versions": 5,
+      "usable_profitability_versions": 5,
+      "historical_symbols": [
+        "PATH"
+      ]
+    },
+    {
+      "symbol": "EXAS.US",
+      "cik": "0001124140",
+      "annual_versions": 7,
+      "usable_profitability_versions": 7,
+      "historical_symbols": [
+        "EXAS"
+      ]
+    },
+    {
+      "symbol": "NTLA.US",
+      "cik": "0001652130",
+      "annual_versions": 7,
+      "usable_profitability_versions": 3,
+      "historical_symbols": [
+        "NTLA"
+      ]
+    },
+    {
+      "symbol": "CRSP.US",
+      "cik": "0001674416",
+      "annual_versions": 7,
+      "usable_profitability_versions": 0,
+      "historical_symbols": [
+        "CRSP"
+      ]
+    },
+    {
+      "symbol": "TDOC.US",
+      "cik": "0001477449",
+      "annual_versions": 7,
+      "usable_profitability_versions": 1,
+      "historical_symbols": [
+        "TDOC"
+      ]
+    },
+    {
+      "symbol": "XYZ.US",
+      "cik": "0001512673",
+      "annual_versions": 7,
+      "usable_profitability_versions": 7,
+      "historical_symbols": [
+        "SQ"
+      ]
+    },
+    {
+      "symbol": "COIN.US",
+      "cik": "0001679788",
+      "annual_versions": 5,
+      "usable_profitability_versions": 0,
+      "historical_symbols": [
+        "COIN"
+      ]
+    }
+  ],
+  "filing_events": 777,
+  "item_202_filing_events": 313,
+  "known_first_earnings_release_time": false,
+  "earnings_expectation_history": false,
+  "point_in_time_certified": false,
+  "market_wide_historical_universe_complete": false,
+  "delisted_price_coverage_certified": false,
+  "corporate_actions_certified": false,
+  "limitations": [
+    "Pre-window disclosed ARK top10 is a narrow historical institution-selected cohort. All 16 disclosure snapshots retained; not a market-wide survivor-free security master. First-snapshot exits are not automatically delistings.",
+    "SEC API is a current extraction with original accession and acceptance timestamps. Later filing versions/comparatives cannot leak backwards. Every available annual signal input is independently checked against its original inline XBRL before execution; quarterly facts, unavailable/custom tags and exact historical public dissemination vintages remain uncertified.",
+    "Gross-profitability tags are unavailable for some issuers/versions. No zero fill, IFRS substitution or today's Yahoo fundamental fields. Latest unavailable annual version blocks that observation; unaffected securities remain eligible.",
+    "8-K acceptance is a known filing event, not proof of first earnings release. No historical consensus expectations or certified release clock, so earnings-surprise/PEAD strategy is gated.",
+    "Yahoo's current symbol is a quote lookup only. Historical cover tags and permanent issuer CIK retained; SQ/XYZ is one issuer. Full security-class/CUSIP/corporate-action history is not independently certified.",
+    "Warmup split-adjusted prices are used only in return ratios. Account prices after 2022-12-30 must have no reported split through capture. Missing delisted bars or unhandled splits block the entire fixed cohort. Public action completeness and prices are not broker-certified.",
+    "EXAS was acquired in March 2026 and disappeared from Yahoo. CC0 academic snapshot recovers every member through 2024-06-26 only. A separately frozen common-coverage pilot may run; the original 2023-2026 protocol remains blocked. No return attributed to missing periods or merger settlement.",
+    "Same v2 cash/fees/settlement/participation assumptions apply. Three-session lock, daily-low drawdown and fixed slippage are conservative proxies, not synchronized intraday or market-depth proof. All evaluated history remains diagnostic."
+  ],
+  "input_hashes": {
+    "protocol.json": "b1b270e303e61845368fde52a4d991b6a9fa3214b0afcc68126093f15a2a9666",
+    "seed.json": "30e6e20a606ebf828ded34cad2ba2ce78d093ab209482cfdb2f39ba3fe0f15b1",
+    "identities.json": "55e49ffb1757148a16ab5948a40e30cb89314fd0f26c5b174eda7aaefed041f3",
+    "historical-holdings.json": "db0ba886a558e760b44bb6674a5c2a2519f04085d3d39524c730221898e3ac65",
+    "filings.json": "fc18ff7d37dbf46561efda683bbe546946a93455151965c524689010f614bdf3",
+    "facts.json": "3dd2be0b2a4dc005ca11c32e03fdf9518f71370c17217ea7dda23cfb697d88d7",
+    "annual.json": "d2a0bd642bce378765e3388451524aefffb7438245b525276cf7da61ee89763a",
+    "events.json": "a3ac3a70e38278f354fbf2d5c88a2a6996c0f27119c78d10a2d08d0e6c3de344",
+    "source-receipts.json": "7d464baeca7f5f4399030c15160dc036e0c4a144b8fafc17e8f75a702dc13f30"
+  },
+  "price_manifest_sha256": "f5995630cdcbd7c77314cd043d08fb93449746b03d06701cbb3b5cd39f975ddf"
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "cross-asset-combination-admission.v1",
+  "registered_at": "2026-10-26",
+  "decision": "NOT_ADMITTED",
+  "profit_goal_status": "not_met",
+  "total_account_actual": null,
+  "combined_cagr": null,
+  "combined_max_drawdown": null,
+  "combined_sharpe": null,
+  "cross_asset_account_executed": false,
+  "production_eligible": false,
+  "stock_source": "results/research/equities_pit_stocks_20261026_v002",
+  "stock_summary_sha256": "911c169c02f052319830bbf3d1cfc320391620d89fa417a05849a1c741f90df3",
+  "crypto_source": "results/research/sparse_family_accounts_20261026_v002/summary.json",
+  "crypto_summary_sha256": "04988627fc73aa06fd405adafb1beb8acceee98701b49b048879f4b71af57385",
+  "stock_diagnostic_window": [
+    "2023-01-01",
+    "2024-06-27"
+  ],
+  "crypto_windows": [
+    {
+      "id": "screen2025",
+      "start": "2025-01-01",
+      "end": "2026-01-01"
+    },
+    {
+      "id": "diagnostic2026",
+      "start": "2026-01-01",
+      "end": "2026-09-01"
+    },
+    {
+      "id": "continuous2025_2026",
+      "start": "2025-01-01",
+      "end": "2026-09-01"
+    }
+  ],
+  "crypto_strategy_accounts_checked": 48,
+  "crypto_negative_accounts": 48,
+  "crypto_capacity_triggered_candidates": [],
+  "reasons": [
+    "Stock momentum has 8 complete cycles; quality has 3, stock blend 9; none meets the module sample gate. All high-cost stock diagnostics exceed 15% drawdown.",
+    "The current source-corrected sparse crypto study has 48/48 negative strategy accounts and no capacity followup candidate. This is scoped to that research package, not all crypto mechanisms or CZ production.",
+    "Stock common history ends 2024-06-26; the frozen current crypto account windows start 2025-01-01. No common evaluated period exists for these packages.",
+    "USD and USDT require an observed conversion/basis and shared capital, reserve, settlement and risk ledger. Weighted sums of independent native returns are not a tradable total account.",
+    "Matched spot/perpetual carry research is in progress in its owning task; no current completed economic result or admission is inferred."
+  ],
+  "next_requirements": [
+    "Recover EXAS 64 missing pre-delisting sessions and verified merger cash availability; resolve other historical security identities before a broad pool expansion.",
+    "Broaden a pre-window stock cohort and complete original filing inputs before another candidate freeze; preserve the used 16-account budget.",
+    "Only freeze cross-asset execution after eligible independent mechanisms, overlapping history and native-currency conversion/capital evidence exist."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "real_data_future_perturbation": true,
+  "prefix_invariance": true,
+  "policies": [
+    "disclosed_equal",
+    "french_mom_12_2",
+    "gross_profitability",
+    "stock_blend_equal"
+  ],
+  "future_cutoff": "2024-01-01",
+  "prefix_end": "2023-07-14"
+}

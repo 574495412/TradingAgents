@@ -1,0 +1,163 @@
+{
+  "schema": "equity-expert-acceptance.v1",
+  "version": "20261026_depth_v003",
+  "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
+  "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
+  "evaluation_levels": [
+    {
+      "id": "research_validity",
+      "criterion": "原始数据、因果时间、方法、反证和限制可由外部独立参与者复核。可信的负结论可以完成研究证据验收，但不获得策略准入或收益达标。"
+    },
+    {
+      "id": "strategy_admission",
+      "criterion": "预登记适用域内扣全成本的优势及风险/容量/独立复算证据通过后才准入。30周期/4月簇是既有最低研究计数，统计功效不足仍不通过；不要求每个模块全年50%。"
+    },
+    {
+      "id": "profit_target",
+      "criterion": "至少两个获准机制在统一资本账户中，于事前冻结、未被查看/调参污染的前向期同时满足总本金净CAGR>=50%、同步可执行口径最大回撤<=15%、净Sharpe>=1；真实绩效须有外部账户记录和独立核对。至少12个月且达到事前功效与既有100完整周期下限，低相关有效样本不足继续未知。研究模拟/影子账本不等于真实绩效。"
+    }
+  ],
+  "raw_data_requirements": [
+    {
+      "id": "R1",
+      "domain": "历史证券身份及生命周期",
+      "original_records": "交易所上市/停牌/复牌/退市/代码与类别变化公告、原始证券目录快照、监管原始持仓文件、并购/分拆/拆合股与除息付款通知。",
+      "required_fields": "永久证券/类别身份与发行人CIK分开；effective_time、first_published_at、captured_at、版本、可交易状态和来源。",
+      "current_gap": "ARK披露成员不是全市场上市主表；EXAS的64根日线和并购现金到账时间缺失。"
+    },
+    {
+      "id": "R2",
+      "domain": "财报及事件",
+      "original_records": "原始10-K/10-Q/20-F及修订文件、iXBRL实例/上下文/单位；公司IR公告及附件、原始发布时刻。做预期差还需当时逐条分析师预测及各版本。",
+      "required_fields": "accession、会计期间、币种/量纲/scale/sign、实体/分部上下文、accepted/first_public/available/captured各时间；修订只影响其后决策。",
+      "current_gap": "97项年度输入已内部对原文核对；8-K时间不等于首次公告，季度/自定义标签和历史预测尚未完成。"
+    },
+    {
+      "id": "R3",
+      "domain": "可执行价格及交易成本",
+      "original_records": "未复权成交记录、官方开盘/收盘竞价结果、拟成交时点买卖报价/盘口、成交量、停牌标识；逐次历史企业行动、经纪商当时费用/税费/结算规则。",
+      "required_fields": "event_time与receive_time、价格/数量/币种、bid/ask及深度、竞价量、修正标记、费用生效/结算时间。",
+      "current_gap": "日线与固定滑点未认证竞价成交和容量；原始退市行情仍缺。"
+    },
+    {
+      "id": "R4",
+      "domain": "加密双腿与统一资金",
+      "original_records": "同资产身份的现货/永续逐笔成交与报价、真实资金费结算及账户账单、合约/上下市/保证金/强平条款历史、当时USD/USDT可兑换报价与转账时延记录。",
+      "required_fields": "两腿可交易区间、结算流水、数量/费率/实际支付、基差、保证金占用、FX、到账与不可用资金。",
+      "current_gap": "当前股票和所查加密账户无共同评估期；无已认证共同资本/兑换账本。"
+    },
+    {
+      "id": "R5",
+      "domain": "真实前向结果",
+      "original_records": "冻结策略的带外部时间凭证的决策日志、经纪商/交易所订单与成交回执、对账单、现金/费用/融资/资金费/股息到账流水、转入转出及同步持仓估值原始记录。",
+      "required_fields": "外部订单/成交ID、账户与策略版本绑定、真实费用、库存/权益、外部资金流、不可改写时间与更正轨迹。",
+      "current_gap": "未启动本目标的真实前向账户；本次目标修改不授权下单或部署。"
+    }
+  ],
+  "gates": [
+    {
+      "id": "G1",
+      "name": "经济机制与可证伪假设",
+      "expert_work": "写清收益由谁支付、为何持续、何种市场/成本/竞争条件会失效；公开方法与本地偏离逐项登记。",
+      "methods_tools": "机制卡、预注册实验协议；固定同机会集等权/被动对照、训练期确定的同风险对照、单机制移除和分层置换安慰剂。",
+      "required_artifact": "冻结假设、正/负对照、最小经济效果与拒绝条件、所有偏离及试验记录。",
+      "pass_when": "在事前域内优势超过预登记经济门槛；不能由市场/行业暴露、个别股票或事后择时解释。反证和原完整结果同时保留。",
+      "status": "partial_internal",
+      "independent_evidence": null
+    },
+    {
+      "id": "G2",
+      "name": "原始数据、历史身份与因果时间",
+      "expert_work": "区分证券与发行人身份、有效时间和获知时间，追到原始文件；重建退市、停牌、修订与付款。",
+      "methods_tools": "SEC EDGAR原文/接受时间、交易所公告；Arelle作XBRL标准验证，独立上下文/单位核对；Parquet/DuckDB双时间表、as-of join、SHA256来源清单。已有Python采集器保留。",
+      "required_artifact": "原文包、许可/覆盖和缺口清单、版本映射、每笔决策到当时数据的追溯链、外部源差异报告。",
+      "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
+      "status": "partial_internal",
+      "independent_evidence": null
+    },
+    {
+      "id": "G3",
+      "name": "选择偏差、功效与真正未见样本",
+      "expert_work": "登记所有影响选择的历史尝试，估计相关试验和有效独立样本；不能把账户数量当独立试验。",
+      "methods_tools": "全试验注册表；按时间滚动训练/验证，重叠标签时purge/embargo；分块bootstrap/HAC区间、DSR与在条件满足时CSCV/PBO。Python/NumPy/SciPy/statsmodels，需独立实现复核。",
+      "required_artifact": "完整搜索史、泄漏/重叠检查、事前功效与样本计划、统计量前提/区间/不能计算的原因、锁定前向协议。",
+      "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
+      "status": "pending",
+      "independent_evidence": null
+    },
+    {
+      "id": "G4",
+      "name": "净收益机制与账户恒等式",
+      "expert_work": "拆开价格暴露、信号选择、真实收入、费用、融资、资金费和FX；资金费率预测不当现金，未平仓浮盈不当闭合胜率。",
+      "methods_tools": "Python事件驱动主账本、独立Decimal复式核对、逐笔PnL/现金归因；市场/行业暴露回归另报，单机制消融、去最大贡献样本的敏感性仅作诊断不重选。",
+      "required_artifact": "每笔决策/订单/成交/持仓/现金/应收/未结算链，净值重建、收益归因与残差解释。",
+      "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
+      "status": "partial_internal",
+      "independent_evidence": null
+    },
+    {
+      "id": "G5",
+      "name": "可成交性、容量、连续风险",
+      "expert_work": "检验开盘缺口、不可成交、排队/冲击、停牌、退市、保证金、错腿、USDT偏离和系统中断；不将回撤截成阈值。",
+      "methods_tools": "交易时点原始竞价/bid-ask与独立成交模型；延迟/费用/深度/流动性压力；同步可执行净值与跨年高水位，真实JSON恢复。",
+      "required_artifact": "目标本金下成交偏差、拒单/部分成交、容量曲线、压力亏损、同步净值与真实高水位记录。",
+      "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
+      "status": "not_passed",
+      "independent_evidence": null
+    },
+    {
+      "id": "G6",
+      "name": "组合增量与统一资本",
+      "expert_work": "先证明各机制，再证明组合有增量；对准同期间、同风险、同资金及持仓/保证金/结算约束。",
+      "methods_tools": "统一事件时钟/资本账本，实际USD/USDT报价和转账约束，静态固定配置与预登记风险配置/移除消融，分块相关性和尾部依赖检验。",
+      "required_artifact": "至少两个合格机制、共同期间原始数据、统一净额成交与资金占用、增量和成本归因。",
+      "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
+      "status": "blocked",
+      "independent_evidence": null
+    },
+    {
+      "id": "G7",
+      "name": "外部独立重建与盲核对",
+      "expert_work": "请未参与选择/实现、未获知预期输出的第三方，使用合法原始数据和独立代码重建。",
+      "methods_tools": "外部审计人/团队独立事件引擎或LEAN实现；预先封存输入、规则、容差、所有差异；依赖锁定与可复现实验包；外部可核验时间戳或签名。",
+      "required_artifact": "可核验身份/独立性声明、方法和源码版本、输入出处、逐笔差异与签署结论、可复算材料。",
+      "pass_when": "第三方确认来源与时间、成交/资金/统计口径，并解决实质差异；同一引擎导入、另一AI赞同、单纯哈希或本地绿测不构成此项通过。",
+      "status": "pending_external",
+      "independent_evidence": null
+    },
+    {
+      "id": "G8",
+      "name": "锁定前向成绩与真实绩效",
+      "expert_work": "在未发生时期检验冻结规则，区分模拟、影子与真实账户；不把短窗年化当一年成绩。",
+      "methods_tools": "事前协议/版本外部时间凭证、只追加决策日志、外部行情与经纪商/交易所回执及对账；第三方净值、资金流和费用重建。",
+      "required_artifact": "至少12个月且满足事前功效/独立周期要求的前向证据；真实绩效必须有外部账户原始凭证，逐笔闭合并保留完整失败/超限。",
+      "pass_when": "研究模拟只能验证前向模拟表现；真实总账户全本金净CAGR>=50%、最大回撤<=15%、净Sharpe>=1同时成立且外部独立核对。任何工程通过不代替该项；尚未授权或未取得真实证据则保持未验证。",
+      "status": "not_started",
+      "independent_evidence": null
+    }
+  ],
+  "evidence_policy": {
+    "own_backtest_sufficient": false,
+    "internal_decimal_audit_sufficient": false,
+    "own_tests_sufficient": false,
+    "second_ai_sufficient": false,
+    "source_hash_proves_truth": false,
+    "external_data_reconciliation_required": true,
+    "independent_implementation_required": true,
+    "unseen_forward_evidence_required": true,
+    "real_performance_requires_external_account_records": true,
+    "external_attestation_received": false,
+    "future_performance_guaranteed": false
+  },
+  "fail_closed": "缺失、冲突、未核验或未取得的独立证据一律不视为通过。研究可信的否定结论可以交付；策略准入和收益目标必须分别判断。",
+  "immediate_next_work": [
+    "冻结新增候选、扩池和参数搜索；先关闭当前机制的数据与证据缺口。",
+    "针对EXAS建立从原始公告、64个缺失交易日、终止持仓到现金可用的完整可复算案例。",
+    "完成已注册个股机制的风险暴露/费用/收益归因和完整试验史，写清拒绝条件。",
+    "准备第三方可独立重建的最小审计包及锁定前向协议；未取得外部证据不宣告验收。"
+  ],
+  "orders_allowed": false,
+  "deployment_allowed": false,
+  "profit_goal_met": false,
+  "current_acceptance_status": "not_passed"
+}

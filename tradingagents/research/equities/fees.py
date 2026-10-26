@@ -1,6 +1,6 @@
 """Dated statutory components, separate from assumed broker and slippage costs.
 
-Only registered ETFs and 2023-2026Q3 are supported. Rounding up US pass-through
+Registered US listed common shares/ETFs and HK ETFs, 2023-2026Q3. Rounding up US pass-through
 components is conservative; SRO charge date vs broker trade date is unverified.
 """
 
@@ -11,8 +11,11 @@ def charge(market, day, side, quantity, price, spec):
     day = str(day)[:10]
     if not "2023-01-01" <= day < "2026-10-01" or side not in {"BUY", "SELL"}:
         raise ValueError("Fee schedule outside reviewed dates or side")
-    if market not in {"US", "HK"} or any(s.get("instrument") != "ETF" for s in spec["symbols"]):
-        raise ValueError("Only reviewed ETF fee treatment supported")
+    reviewed = {"ETF", "equity"} if market == "US" else {"ETF"}
+    if market not in {"US", "HK"} or any(
+        s.get("instrument") not in reviewed for s in spec["symbols"]
+    ):
+        raise ValueError("Only reviewed US shares/ETFs or HK ETF fee treatment supported")
     value = Decimal(str(price)) * quantity
 
     def cents(amount, up=False):

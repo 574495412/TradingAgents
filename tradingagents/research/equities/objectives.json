@@ -1,10 +1,10 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261026_external_first_v001",
-  "title": "港美股外部策略优先 · 高收益研发",
+  "version": "20261026_depth_v003",
+  "title": "股票优先 · 原始证据与独立验证",
   "program_status": "active",
   "profit_goal_status": "not_met",
-  "objective": "优先检索并复现外部股票策略，结合已有加密因子的可迁移数学和完整账户工程，分环境验证收益模块、配置增量及总账户；挑战扣费年化50%、最大回撤不超过15%。",
+  "objective": "在不扩大候选和参数搜索的前提下，先把一条已注册股票策略的经济机制、原始数据、当时可得信息、可执行净收益和失效边界研究透；以外部独立重建和真正未见的前向证据验收。仅在至少两个机制通过后验证统一资本多策略组合，保留总账户扣费年化50%、最大回撤15%、净夏普1的挑战，缺证或反证成立则不准入、如实报告未达标。",
   "user_confirmation": {
     "date_shanghai": "2026-10-26",
     "challenge_cagr": 0.5,
@@ -21,7 +21,7 @@
       "challenge": 0.5,
       "actual": null,
       "status": "not_met",
-      "definition": "(期末扣可执行退出准备权益/期初本金)^(365.25/实际自然日)-1；禁止短窗平均年化"
+      "definition": "无外部资金流时：(期末扣退出准备权益/期初全部本金)^(365.25/实际自然日)-1；有转入转出时先按单位净值消除外部资金流影响。闲置现金计入总本金，费用/税费/融资/资金费/FX和浮亏完整计入；至少12个月且满足事前功效要求的独立前向证据方可用于收益目标验收，短窗年化只作诊断。"
     },
     {
       "id": "max_drawdown",
@@ -37,21 +37,21 @@
       "base": 1,
       "actual": null,
       "status": "not_evaluated",
-      "definition": "股票252、加密365；零无风险假设单列，不跨币种硬合并"
+      "definition": "原币股票诊断252、加密365，频率/无风险假设与序列相关处理预登记。将来的24/7统一总账户用完整UTC日净收益及365日口径；不平均不同子账户夏普。点估计、HAC/分块区间和选择校正分别报告。"
     }
   ],
   "levels": [
     {
-      "id": "module",
-      "criterion": "事前登记机制/适用域/禁用域/周期/失效，检验同机会集扣费优势与尾部；至少30完整周期和4入场月簇只为最低研究计数；相关性仍须检验。不要求各模块全年50%"
+      "id": "research_validity",
+      "criterion": "原始数据、因果时间、方法、反证和限制可由外部独立参与者复核。可信的负结论可以完成研究证据验收，但不获得策略准入或收益达标。"
     },
     {
-      "id": "allocation",
-      "criterion": "同模块集的静态、风险分配、有限调权和移除消融，在统一本金/库存/净额成交下扣切换成本并匹配实际风险；风控按减损/收益代价验收"
+      "id": "strategy_admission",
+      "criterion": "预登记适用域内扣全成本的优势及风险/容量/独立复算证据通过后才准入。30周期/4月簇是既有最低研究计数，统计功效不足仍不通过；不要求每个模块全年50%。"
     },
     {
-      "id": "total",
-      "criterion": "至少两个有独立经济证据的机制、100完整周期、PF>=1.15及闭合PnL正；两成本/目标资金/连续恢复均通过，独立样本与真实风险完整时才判挑战达标"
+      "id": "profit_target",
+      "criterion": "至少两个获准机制在统一资本账户中，于事前冻结、未被查看/调参污染的前向期同时满足总本金净CAGR>=50%、同步可执行口径最大回撤<=15%、净Sharpe>=1；真实绩效须有外部账户记录和独立核对。至少12个月且达到事前功效与既有100完整周期下限，低相关有效样本不足继续未知。研究模拟/影子账本不等于真实绩效。"
     }
   ],
   "budget": {
@@ -62,7 +62,10 @@
     "followup_accounts_max": 8,
     "capacity_accounts_max": 8,
     "existing_accounts_reused_not_new": true,
-    "stopping": "无成本优势且无新可定位失效机制则停止同组搜索；样本不足记未知。不改阈值刷参数、抬杠杆或拼赢家"
+    "stopping": "当前16个已完成账户保留；暂停新增候选/扩池/调参。优先关闭现有机制证据缺口；剩余8容量账户只在准入证据通过后触发，不扩大总预算。",
+    "executed_new_accounts": 16,
+    "executed_stock_accounts": 8,
+    "remaining_capacity_accounts": 8
   },
   "capital_and_risk": {
     "US": {
@@ -75,7 +78,7 @@
       "base": 100000,
       "capacity_reference": 1000000
     },
-    "initial_scope": "沿用旧ETF现金基线，先验证每侧最低费和整数整手；10倍资金仅容量代理，须盘口/竞价/历史规则进一步认证",
+    "initial_scope": "当前聚焦已封存个股机制及原始证据；不新增ETF或个股参数搜索。10倍资金仅原币容量参考，只有机制准入后才触发容量试验。",
     "gross_limit": 0.8,
     "short_enabled": false,
     "leverage_enabled": false,
@@ -92,19 +95,19 @@
       "id": "tsmom_relative",
       "name": "AQR/PST趋势与横截面动量",
       "priority": 1,
-      "status": "broader_pit_universe_required"
+      "status": "stock_diagnostic_insufficient"
     },
     {
       "id": "quality_value",
       "name": "AQR质量/价值 + ARK公司论点",
       "priority": 1,
-      "status": "blocked_pit_fundamentals"
+      "status": "stock_quality_failed_value_pending"
     },
     {
       "id": "earnings_event",
       "name": "盈余/公告后漂移与事件风险层",
       "priority": 2,
-      "status": "blocked_pit_events"
+      "status": "filing_events_captured_release_pending"
     },
     {
       "id": "crypto_carry_momentum",
@@ -143,24 +146,26 @@
     },
     {
       "id": "E03",
-      "title": "PIT股票池与权威企业行动/结算",
-      "status": "data_required",
+      "title": "补当前历史个股身份、退市和现金原始证据",
+      "status": "in_progress",
       "owner": "TradingAgents",
-      "done_when": "成员/退市/停牌、除息付款与历史整手、实际账户限制可审核"
+      "done_when": "逐项关闭已知缺口并由外部独立者复核；先保留当前固定队列，不以扩池代替证据深度",
+      "progress": "16期ARK历史披露、368个CUSIP及信息生效区间完成；个股池保留退市EXAS。64根退市前日线、终止现金到账与广泛市场身份/企业行动仍缺。"
     },
     {
       "id": "E04",
-      "title": "价值质量与ARK主题论点模块",
-      "status": "data_required",
+      "title": "深入既有股票机制与原始财报口径",
+      "status": "in_progress",
       "owner": "TradingAgents",
-      "done_when": "PIT财报/历史假设和使用权证据齐全后另行预登记；不补人造收益"
+      "done_when": "可证伪机制、原始输入、经济归因、偏差/功效和独立核对完成；不新增因子凑收益",
+      "progress": "已关联3,663条财报数值，44个可用年度版本97个因子输入与原始iXBRL核对。毛利质量个股账户已跑，价值/完整QMJ/ARK公司模型仍未复现。"
     },
     {
       "id": "E05",
       "title": "同风险配置、容量与独立样本验收",
       "status": "waiting_module_evidence",
       "owner": "TradingAgents",
-      "done_when": "不同机制合格后冻结组合及比较，全部硬约束通过"
+      "done_when": "至少两个机制准入后，同风险统一资本、真实FX/资金和独立前向证据通过G6-G8；自有回测与测试不充分"
     },
     {
       "id": "E06",
@@ -168,11 +173,25 @@
       "status": "done",
       "owner": "CZ-Agent",
       "done_when": "50%/15%、未达标、来源与任务可见，股票加密指标不混合"
+    },
+    {
+      "id": "E07",
+      "title": "核查目标并写入专家级独立验收标准",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "现有目标审计、原始数据/方法工具/外部证据和拒绝条件写入规范，收益实际值不变"
+    },
+    {
+      "id": "E08",
+      "title": "取得外部独立重建与前向证据",
+      "status": "data_required",
+      "owner": "独立核查方待确定",
+      "done_when": "G7、G8所需外部原始凭证、独立代码及签署差异结论可核验；本次不授权交易或联系第三方"
     }
   ],
   "evidence": {
     "prior_crypto_admitted_candidates": [],
-    "prior_crypto_status": "本轮读取的TradingAgents GitHub/因子研究包与Freqtrade current_status未见通过该研发验收的新增候选；不评价独立CZ生产策略或其收益。新条件域账户在读取时尚未计算",
+    "prior_crypto_status": "已核对本日时点池修正后的加密研究：48个策略账户均为负、无容量追加候选；匹配现货/永续研究仍在其原任务推进。仅代表所查研究包，不评价独立CZ生产策略。",
     "prior_equity_selection": {
       "US": "cash",
       "HK": "cash"
@@ -186,12 +205,146 @@
     "external_account_count": 8,
     "external_audit_passed": true,
     "external_restart_passed": true,
-    "first_execution_profit_goal_status": "not_met"
+    "first_execution_profit_goal_status": "not_met",
+    "pit_stock_run": "results/research/equities_pit_stocks_20261026_v002",
+    "pit_stock_accounts": 8,
+    "pit_stock_profit_goal_status": "not_met",
+    "pit_stock_full_window_available": false,
+    "combination_admission": "docs/research/equities_pit_stocks_20261026/combination-admission.json",
+    "independent_external_replication_received": false,
+    "verified_real_forward_account": null
   },
-  "source_catalog": "docs/research/equities_external_first_20261026/sources.json",
-  "execution_plan": "tradingagents/research/equities/external_plan.json",
-  "report": "docs/research/equities_external_first_20261026/README.md",
+  "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
+  "execution_plan": "tradingagents/research/equities/stock_protocol.json",
+  "report": "docs/research/equities_pit_stocks_20261026/README.md",
   "production_eligible": false,
   "broker_verified": false,
-  "independent_forward_oos": false
+  "independent_forward_oos": false,
+  "research_progress": {
+    "title": "已进入个股复现 · 历史覆盖仍需补齐",
+    "scope": "2022年已披露ARK前10大固定个股；非全市场股票池、非ARK基金实际收益。",
+    "disclosure_periods": 16,
+    "historical_cusips": 368,
+    "seed_members": 10,
+    "annual_versions_reconciled": 44,
+    "annual_values_reconciled": 97,
+    "filing_events": 777,
+    "earnings_filing_events": 313,
+    "window": [
+      "2023-01-01",
+      "2024-06-27"
+    ],
+    "completed_accounts": 8,
+    "full_window_available": false,
+    "gap": "EXAS仍缺2024-06-27至2024-09-26共64个交易日行情；2026并购现金到账未核实。长窗口未运行，未删除退市成员。",
+    "combination_status": "股票动量8周期、质量3周期，回撤均超15%；所查48个加密账户均为负，且双方已评估时段无交集。跨资产总账户尚未执行。",
+    "high_cost_accounts": [
+      {
+        "policy": "disclosed_equal",
+        "cagr": 0.026430324250791726,
+        "drawdown": 0.2741808200598249,
+        "closed_cycles": 0
+      },
+      {
+        "policy": "french_mom_12_2",
+        "cagr": 0.06802185144115636,
+        "drawdown": 0.2898868183912998,
+        "closed_cycles": 8
+      },
+      {
+        "policy": "gross_profitability",
+        "cagr": -0.15783743797037697,
+        "drawdown": 0.43188170621877864,
+        "closed_cycles": 3
+      },
+      {
+        "policy": "stock_blend_equal",
+        "cagr": -0.04219994555925832,
+        "drawdown": 0.3272082662538326,
+        "closed_cycles": 9
+      }
+    ]
+  },
+  "acceptance_standard": "docs/research/equities_depth_acceptance_20261026/acceptance.json",
+  "acceptance_report": "docs/research/equities_depth_acceptance_20261026/README.md",
+  "objective_audit": "docs/research/equities_depth_acceptance_20261026/objective-audit.json",
+  "verification_policy": {
+    "own_backtest_sufficient": false,
+    "internal_decimal_audit_sufficient": false,
+    "own_tests_sufficient": false,
+    "second_ai_sufficient": false,
+    "source_hash_proves_truth": false,
+    "external_data_reconciliation_required": true,
+    "independent_implementation_required": true,
+    "unseen_forward_evidence_required": true,
+    "real_performance_requires_external_account_records": true,
+    "external_attestation_received": false,
+    "future_performance_guaranteed": false
+  },
+  "acceptance_gates": [
+    {
+      "id": "G1",
+      "name": "经济机制与可证伪假设",
+      "pass_when": "在事前域内优势超过预登记经济门槛；不能由市场/行业暴露、个别股票或事后择时解释。反证和原完整结果同时保留。",
+      "status": "partial_internal",
+      "independent_evidence": null
+    },
+    {
+      "id": "G2",
+      "name": "原始数据、历史身份与因果时间",
+      "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
+      "status": "partial_internal",
+      "independent_evidence": null
+    },
+    {
+      "id": "G3",
+      "name": "选择偏差、功效与真正未见样本",
+      "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
+      "status": "pending",
+      "independent_evidence": null
+    },
+    {
+      "id": "G4",
+      "name": "净收益机制与账户恒等式",
+      "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
+      "status": "partial_internal",
+      "independent_evidence": null
+    },
+    {
+      "id": "G5",
+      "name": "可成交性、容量、连续风险",
+      "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
+      "status": "not_passed",
+      "independent_evidence": null
+    },
+    {
+      "id": "G6",
+      "name": "组合增量与统一资本",
+      "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
+      "status": "blocked",
+      "independent_evidence": null
+    },
+    {
+      "id": "G7",
+      "name": "外部独立重建与盲核对",
+      "pass_when": "第三方确认来源与时间、成交/资金/统计口径，并解决实质差异；同一引擎导入、另一AI赞同、单纯哈希或本地绿测不构成此项通过。",
+      "status": "pending_external",
+      "independent_evidence": null
+    },
+    {
+      "id": "G8",
+      "name": "锁定前向成绩与真实绩效",
+      "pass_when": "研究模拟只能验证前向模拟表现；真实总账户全本金净CAGR>=50%、最大回撤<=15%、净Sharpe>=1同时成立且外部独立核对。任何工程通过不代替该项；尚未授权或未取得真实证据则保持未验证。",
+      "status": "not_started",
+      "independent_evidence": null
+    }
+  ],
+  "focus_policy": {
+    "mode": "depth_before_breadth",
+    "new_families_frozen": true,
+    "universe_expansion_frozen": true,
+    "parameter_search_frozen": true,
+    "remaining_8_capacity_accounts_conditional": true,
+    "scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。"
+  }
 }

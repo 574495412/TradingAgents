@@ -1,0 +1,17 @@
+{
+  "registered_at_utc": "2026-10-26T14:28:20.931702+00:00",
+  "registered_before_returns": true,
+  "original_requested_window": [
+    "2023-01-01",
+    "2026-10-01"
+  ],
+  "bounded_window": [
+    "2023-01-01",
+    "2024-06-27"
+  ],
+  "reason": "EXAS was acquired/delisted; Yahoo history unavailable. CC0 2024 academic archive recovers complete common member history only through 2024-06-26. End is mechanically min(last observed date of every frozen member)+1, fixed before returns. No member removed or imputed and no factor/weight/fee changed.",
+  "original_full_window_status": "blocked_delisted_prices_and_terminal_settlement",
+  "new_account_budget": 8,
+  "independent_forward_oos": false,
+  "production_eligible": false
+}

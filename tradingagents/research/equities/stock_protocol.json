@@ -1,0 +1,30 @@
+{
+  "schema": "equity-disclosed-stock-plan.v1",
+  "version": "20261026_pit_v001",
+  "universe": {
+    "manager_cik": "0001697748",
+    "seed_accession": "0001104659-22-109252",
+    "seed_report_date": "2022-09-30",
+    "known_before": "2023-01-01",
+    "rule": "Aggregate non-option SH common-stock rows by CUSIP; rank stated value descending, CUSIP breaks ties; first 10, fixed before prices are collected. No future survivor, return, fundamental coverage or action filter.",
+    "size": 10,
+    "scope": "Historical ARK disclosed seed cohort, not all US stocks, not ARKK's daily portfolio or fund performance. Preserve all later historical disclosure rows, including disappeared securities."
+  },
+  "data_start": "2021-01-01",
+  "data_end": "2026-10-01",
+  "window": ["2023-01-01", "2026-10-01"],
+  "policies": ["disclosed_equal", "french_mom_12_2", "gross_profitability", "stock_blend_equal"],
+  "slippage_bps": [5, 15],
+  "accounts": 8,
+  "gross_limit": 0.8,
+  "selected_stocks": 3,
+  "fundamentals": "US-GAAP annual 10-K or 10-K/A facts joined to the exact accession and SEC acceptance timestamp. Same report end; duration 330-380 days; use only filing accepted by decision close plus 1 hour. Amendments take effect only after their own availability. Annual age <=550 days. Missing/ambiguous fields unavailable, never zero-filled. GrossProfit/Assets or same-accession Revenues minus CostOfRevenue divided by Assets. No IFRS-to-GAAP substitution.",
+  "events": "Capture 8-K items and acceptance time as filing events. Item 2.02 is not certified first public earnings-release time. No PEAD/surprise result without actual release and contemporaneous expectation data.",
+  "rebalance": "Actual exchange month-end close determines following session target. Equal baseline 0.8/10. Momentum: prior months 2-12 gross total return, top3 positive scores, each 0.8/3; missing/nonpositive slots cash. Profitability: top3 positive GP/assets, each 0.8/3; unavailable slots cash. Blend: half of each fixed book, netted before integer cash execution. Fixed ranks, no fitted weights or parameter search.",
+  "execution": "Reuse v2 continuous native USD cash account: next actual open, integer shares, adverse 5/15bps, dated statutory fees, minimum commission, three exchange-session sale-cash lock, prior20 volume participation cap, ex-date receivables. No leverage/short or historical fabricated bars. Any unhandled split/delisting/spin-off blocks entire account, never silently drops a seed member.",
+  "market": {"currency": "USD", "initial_cash": 10000, "minimum_fee": 1, "commission_bps": 1, "dividend_haircut": 0.3},
+  "paper_scope": "Independent mathematical long-only adaptations of French momentum and Novy-Marx profitability on a narrow institution-selected cohort, not reproduction of original market-wide long-short portfolios or private ARK methods.",
+  "history_role": "Retrospective diagnostic; freeze before this run's returns, but historical period has been seen in other studies. Independent forward OOS false.",
+  "production_eligible": false,
+  "orders_allowed": false
+}
