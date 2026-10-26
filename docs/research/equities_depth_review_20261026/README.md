@@ -93,3 +93,24 @@ python tradingagents/research/equities/arelle_review.py --output results/researc
 ```
 
 需保留输入/工具wheel/插件/分类模式与原始申报；现有结果目录不覆盖。[verification.json](verification.json)只记录内部来源、算术及方法核查，不是外部审计或收益认证。方法依据：[Arelle Python API](https://arelle.readthedocs.io/en/latest/python_api/python_api.html)、[SEC转换插件说明](https://arelle.readthedocs.io/en/latest/plugins/popular/transforms_sec.html)、[HAC协方差说明](https://www.statsmodels.org/stable/generated/statsmodels.regression.linear_model.RegressionResults.get_robustcov_results.html)。
+
+## 后续：选择记录与功效规划
+
+本次只核查四个现存股票研究目录的180条完整账户结果：早期108、ETF探索56、本目标ETF8、个股8。前164条是旧计划复用，当前计划仍执行16/24；**180是观察到的账户记录数，不是独立试验数，也不证明完整搜索史已经取得**。26条是显式现金策略；按原始十进制权益的精确有理比率、时间戳与币种比较，净值路径严格不同的有160条，但它们同样受共享市场、策略、成本、资本和区间影响，不能拿160代替独立试验数量。
+
+还有一次个股v001未完成尝试：有注册和协议，账户结果/状态均为0，无最终摘要。封存费用源代码当时仅允许ETF，和个股域不兼容；缺少终止异常日志，不仅凭目录推断确切报错。记录该尝试，不将它冒充额外8个已完成账户，也不从选择史中删去。现个股372个收益日期全部落在早先US市场账户结果的日期内；这支持“市场时期已有历史研究覆盖”，**不证明研究者曾查看全部个股结果，更不认证未来样本外**。全部180份结果的前向OOS标记仍为false。
+
+[观察到的选择链](selection-lineage.json)与结果逐一绑定，原始逐账户清单在`results/research/equity_selection_power_20261027_v002/observed-records.json`。该范围没有穷尽此前人类/模型选择、放弃的候选、来源和时间窗口等影响，DSR/PBO保持空值。本次不使用相关试验数的猜测输出“选择校正后显著”。
+
+在计算前保存[规划假设](selection-power-plan.json)，对四组明确的假设情景使用非中心t分布。设日收益独立同分布正态、年化频率252、单次预先锁定的单边5%检验、目标功效80%；原假设与备择以真实年化夏普表示，均不是现策略的已知夏普。统计量为`T=(Z+lambda)/sqrt(V/df)`，`df=n-1`、`lambda=S*sqrt(n/252)`；取原假设分布95%临界值，在备择分布计算拒绝概率。以整数二分寻找满足80%的最小n，同时用正态与卡方混合积分核对原假设尾概率和备择功效，截断尾质量不超过2e-12。[SciPy原始方法说明](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nct.html)已保存，工具版本见注册。
+
+| 假设情景：原假设→备择夏普 | 252日时功效 | 该模型下80%功效所需日数 | 按252日折算年数 |
+| --- | ---: | ---: | ---: |
+| 0→1 | 25.86% | 1,560 | 6.19 |
+| 0→1.5 | 44.08% | 694 | 2.75 |
+| 0→2 | 63.67% | 391 | 1.55 |
+| 1→1.5 | 12.54% | 6,254 | 24.82 |
+
+**这不是新验收期限、真实收益预测或策略选择结果。** 它只展示“一年/100笔”不能普遍代替统计功效。未知的真实效应、序列相关、厚尾、制度变化和多重选择都没有被这些理想模型认证；没有据此选最容易过关的一行。夏普检验不认证净CAGR50%、最大回撤15%、容量或真实资金。12个月及既有100完整周期仍是原最低要求，G3/G7/G8继续未通过；真实经济最小效应和前向功效计划需要在新的评价前锁定，不补写为原历史实验的事前假设。
+
+本次新增经济账户为0；v001的格式/未使用变量检查未通过，结果保留。最终v002清理检查问题、绑定循环参数并用精确有理比例比较路径，所有功效数值及路径数量保持。主脚本为`tradingagents/research/equities/selection_power_review.py --output results/research/NEW_SELECTION_POWER_REVIEW`，使用原审计Python和合法可用的源文件，输出新目录。[注册](selection-power-registration.json)和[核查结果](selection-power-verification.json)只证明内部记录/计算一致，不能代替外部独立参与者。

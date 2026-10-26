@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v009",
+  "version": "20261027_depth_v010",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -86,7 +86,7 @@
       "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
       "status": "pending",
       "independent_evidence": null,
-      "current_evidence_note": "372个日收益的固定HAC5和20日分块区间已作事后诊断；未登记的原始最小效应/功效及完整选择史没有因此补齐，不能认证样本外或显著alpha。"
+      "current_evidence_note": "已从四个既有股票研究目录重建180条完成账户记录，其中164条旧计划复用、当前计划仍16条；26条现金策略、160条严格不同净值路径均不能转换为独立试验数。另保留一次0账户结果的未完成个股尝试。372个股票收益日期均落在已有US市场研究日期内，但不证明个股数据曾被查看。完整选择史、独立试验数及最小经济效应仍未认证，DSR/PBO留空。预先列明四组独立正态单次检验规划假设的非中心t功效，仅是方法情景；12月和100周期不能代替实际功效，未据情景指定新验收期限。"
     },
     {
       "id": "G4",
@@ -242,6 +242,27 @@
       "admitted_gap_rows": 0,
       "new_economic_accounts": 0,
       "external_independent_attestation": null
+    },
+    "selection_power_review": {
+      "report": "docs/research/equities_depth_review_20261026/README.md",
+      "run": "results/research/equity_selection_power_20261027_v002",
+      "lineage": "docs/research/equities_depth_review_20261026/selection-lineage.json",
+      "planning": "docs/research/equities_depth_review_20261026/power-planning.json",
+      "observed_completed_records": 180,
+      "prior_reused_records": 164,
+      "current_program_account_records": 16,
+      "cash_policy_records": 26,
+      "exact_distinct_curves": 160,
+      "independent_trial_count": null,
+      "complete_search_history_certified": false,
+      "stock_market_date_overlap_with_earlier_US_results": 372,
+      "stock_specific_prior_viewing_proven": false,
+      "incomplete_attempts_retained": 1,
+      "DSR": null,
+      "PBO": null,
+      "real_admission_minimum_effect": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
     }
   },
   "decision_rules": {
@@ -321,6 +342,28 @@
       "本地可见原始文件不代表获准向第三方再分发，外部复核者须有合法数据访问。"
     ],
     "current_gate_pass": false,
+    "own_checks_replace_external_attestation": false
+  },
+  "selection_and_power_policy": {
+    "applies_to_gate": "G3",
+    "budget_counts_are_not_independent_trial_counts": true,
+    "observed_artifacts_are_not_certified_complete_search_history": true,
+    "all_influential_controls_costs_capital_phases_source_choices_and_incomplete_attempts_must_be_disclosed": true,
+    "historical_market_date_overlap_does_not_prove_stock_specific_viewing": true,
+    "power_planning_requires": [
+      "economic effect and null/alternative defined before new evaluation",
+      "single or multiple contrast and all selection structure",
+      "return frequency, dependence and nonnormal assumptions",
+      "fixed analysis schedule or preregistered sequential boundaries",
+      "prospective sample requirement with failure/inconclusive outcomes preserved"
+    ],
+    "rules": [
+      "未认证完整搜索史与适用输入时，DSR/PBO保持未知，不用180条记录或160条不同路径代填试验数。",
+      "单次独立正态非中心t情景只是方法敏感性，不认证真实优势、50%净CAGR或15%路径回撤，也不自动改变12月和100周期下限。",
+      "不得依据本次情景挑选最容易通过的效应、期限或统计方法；真正前向之前另行锁定经济效应和功效计划。",
+      "中途看见显著结果不据此提前停表；既定风险超限仍即时记录失败，不能重启高水位。"
+    ],
+    "real_admission_effect_or_horizon_adopted_by_this_review": null,
     "own_checks_replace_external_attestation": false
   }
 }

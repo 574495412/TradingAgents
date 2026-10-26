@@ -1,0 +1,49 @@
+{
+  "schema": "equity-selection-power-review-plan.v1",
+  "kind": "retrospective lineage audit plus assumption-based future statistical planning; not a new strategy registration",
+  "completed_roots": [
+    "equities_hkus_20261024_v001",
+    "equities_layered_20261026_v001",
+    "equities_external_20261026_v001",
+    "equities_pit_stocks_20261026_v002"
+  ],
+  "incomplete_attempts": [
+    "equities_pit_stocks_20261026_v001"
+  ],
+  "scope": "Only these observed local equity artifacts. Do not certify all attempted hypotheses, human choices, or actual viewing chronology. Include cash/control/cost/capital/phase variants without treating account records as independent trials.",
+  "stock_observation_calendar": "results/research/equity_depth_attribution_20261026_v002/paired-daily-returns.csv",
+  "deduplication": "Exact clock+normalized Decimal equity+currency equality only; equality or inequality is not a count of statistically independent tests.",
+  "power_model": {
+    "annualization": 252,
+    "one_sided_alpha": 0.05,
+    "desired_power": 0.8,
+    "iid_gaussian_daily_excess_returns_assumed": true,
+    "single_prespecified_contrast_assumed": true,
+    "null_alternative_annual_sharpe_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1.5
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1.5
+      ]
+    ],
+    "method": "Exact noncentral-t under the stated iid-normal model: critical=nct.ppf(1-alpha,n-1,S0*sqrt(n/F)); power=nct.sf(critical,n-1,S1*sqrt(n/F)); integer bisection for minimum n. Also show large-n z approximation.",
+    "minimum_effect_for_real_admission_adopted": null,
+    "scenario_selection_based_on_observed_returns": false,
+    "applicability": "Planning sensitivity only. No multiple-selection correction, dependence/heavy-tail robustness, drawdown certification, CAGR certification, or real forward evidence. Do not convert the best scenario into an admission target."
+  },
+  "DSR_PBO_computable": false,
+  "reason": "Complete influential search history, correlation/selection structure and required comparable independent observations are not certified. Observed record count is not the missing trial input.",
+  "new_economic_accounts": 0,
+  "external_attestation": false
+}

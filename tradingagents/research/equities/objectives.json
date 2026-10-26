@@ -1,6 +1,6 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261027_depth_v009",
+  "version": "20261027_depth_v010",
   "title": "股票优先 · 原始证据与独立验证",
   "program_status": "active",
   "profit_goal_status": "not_met",
@@ -291,6 +291,27 @@
       "admitted_gap_rows": 0,
       "new_economic_accounts": 0,
       "external_independent_attestation": null
+    },
+    "selection_power_review": {
+      "report": "docs/research/equities_depth_review_20261026/README.md",
+      "run": "results/research/equity_selection_power_20261027_v002",
+      "lineage": "docs/research/equities_depth_review_20261026/selection-lineage.json",
+      "planning": "docs/research/equities_depth_review_20261026/power-planning.json",
+      "observed_completed_records": 180,
+      "prior_reused_records": 164,
+      "current_program_account_records": 16,
+      "cash_policy_records": 26,
+      "exact_distinct_curves": 160,
+      "independent_trial_count": null,
+      "complete_search_history_certified": false,
+      "stock_market_date_overlap_with_earlier_US_results": 372,
+      "stock_specific_prior_viewing_proven": false,
+      "incomplete_attempts_retained": 1,
+      "DSR": null,
+      "PBO": null,
+      "real_admission_minimum_effect": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
     }
   },
   "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
@@ -390,7 +411,7 @@
       "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
       "status": "pending",
       "independent_evidence": null,
-      "current_evidence_note": "372个日收益的固定HAC5和20日分块区间已作事后诊断；未登记的原始最小效应/功效及完整选择史没有因此补齐，不能认证样本外或显著alpha。"
+      "current_evidence_note": "已从四个既有股票研究目录重建180条完成账户记录，其中164条旧计划复用、当前计划仍16条；26条现金策略、160条严格不同净值路径均不能转换为独立试验数。另保留一次0账户结果的未完成个股尝试。372个股票收益日期均落在已有US市场研究日期内，但不证明个股数据曾被查看。完整选择史、独立试验数及最小经济效应仍未认证，DSR/PBO留空。预先列明四组独立正态单次检验规划假设的非中心t功效，仅是方法情景；12月和100周期不能代替实际功效，未据情景指定新验收期限。"
     },
     {
       "id": "G4",

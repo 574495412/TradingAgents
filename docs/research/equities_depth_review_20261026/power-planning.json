@@ -1,0 +1,92 @@
+{
+  "assumptions": {
+    "annualization": 252,
+    "one_sided_alpha": 0.05,
+    "desired_power": 0.8,
+    "iid_gaussian_daily_excess_returns_assumed": true,
+    "single_prespecified_contrast_assumed": true,
+    "null_alternative_annual_sharpe_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1.5
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1.5
+      ]
+    ],
+    "method": "Exact noncentral-t under the stated iid-normal model: critical=nct.ppf(1-alpha,n-1,S0*sqrt(n/F)); power=nct.sf(critical,n-1,S1*sqrt(n/F)); integer bisection for minimum n. Also show large-n z approximation.",
+    "minimum_effect_for_real_admission_adopted": null,
+    "scenario_selection_based_on_observed_returns": false,
+    "applicability": "Planning sensitivity only. No multiple-selection correction, dependence/heavy-tail robustness, drawdown certification, CAGR certification, or real forward evidence. Do not convert the best scenario into an admission target."
+  },
+  "scenarios": [
+    {
+      "null_annual_sharpe": 0,
+      "alternative_annual_sharpe": 1,
+      "minimum_daily_observations": 1560,
+      "illustrative_years_252": 6.190476190476191,
+      "power_at_252_days": 0.2586386872181347,
+      "power_at_n_minus_1": 0.7999199886934913,
+      "power_at_n": 0.8001433579322964,
+      "large_n_z_approx_years": 6.182557232019766,
+      "quadrature_crosscheck": {
+        "null_tail": 0.04999999999988746,
+        "alternative_tail": 0.8001433579306054
+      }
+    },
+    {
+      "null_annual_sharpe": 0,
+      "alternative_annual_sharpe": 1.5,
+      "minimum_daily_observations": 694,
+      "illustrative_years_252": 2.753968253968254,
+      "power_at_252_days": 0.4408173321726689,
+      "power_at_n_minus_1": 0.7995969188352967,
+      "power_at_n": 0.800099909439985,
+      "large_n_z_approx_years": 2.7478032142310074,
+      "quadrature_crosscheck": {
+        "null_tail": 0.04999999999988687,
+        "alternative_tail": 0.8000999094384298
+      }
+    },
+    {
+      "null_annual_sharpe": 0,
+      "alternative_annual_sharpe": 2,
+      "minimum_daily_observations": 391,
+      "illustrative_years_252": 1.5515873015873016,
+      "power_at_252_days": 0.6367375340317962,
+      "power_at_n_minus_1": 0.7992324732079874,
+      "power_at_n": 0.8001273503835832,
+      "large_n_z_approx_years": 1.5456393080049415,
+      "quadrature_crosscheck": {
+        "null_tail": 0.04999999999987214,
+        "alternative_tail": 0.8001273503819909
+      }
+    },
+    {
+      "null_annual_sharpe": 1,
+      "alternative_annual_sharpe": 1.5,
+      "minimum_daily_observations": 6254,
+      "illustrative_years_252": 24.817460317460316,
+      "power_at_252_days": 0.12541873706461354,
+      "power_at_n_minus_1": 0.7999489354797271,
+      "power_at_n": 0.8000046442667249,
+      "large_n_z_approx_years": 24.730228928079065,
+      "quadrature_crosscheck": {
+        "null_tail": 0.04999999999977965,
+        "alternative_tail": 0.8000046442637249
+      }
+    }
+  ],
+  "actual_admission_power_or_required_horizon": null,
+  "new_economic_accounts": 0,
+  "external_attestation": false
+}

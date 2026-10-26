@@ -1,0 +1,112 @@
+{
+  "schema": "equity-observed-selection-lineage.v1",
+  "studies": [
+    {
+      "study": "equities_hkus_20261024_v001",
+      "account_records": 108,
+      "registered_at_or_date": "2026-10-24",
+      "clock_is_external_preregistration_proof": false,
+      "declared_history_role": null,
+      "declared_forward_OOS": false,
+      "selection_summary": {
+        "US": "cash",
+        "HK": "cash"
+      }
+    },
+    {
+      "study": "equities_layered_20261026_v001",
+      "account_records": 56,
+      "registered_at_or_date": "2026-10-25T18:32:47.558366+00:00",
+      "clock_is_external_preregistration_proof": false,
+      "declared_history_role": "Previously inspected 2023-2026 history; exploratory diagnosis, no reselection of the old cash decision",
+      "declared_forward_OOS": false,
+      "selection_summary": null
+    },
+    {
+      "study": "equities_external_20261026_v001",
+      "account_records": 8,
+      "registered_at_or_date": "2026-10-25T19:11:49.213406+00:00",
+      "clock_is_external_preregistration_proof": false,
+      "declared_history_role": "2023-2026已看历史，仅探索诊断；无独立样本外",
+      "declared_forward_OOS": false,
+      "selection_summary": null
+    },
+    {
+      "study": "equities_pit_stocks_20261026_v002",
+      "account_records": 8,
+      "registered_at_or_date": "2026-10-26T14:28:20.931702+00:00",
+      "clock_is_external_preregistration_proof": false,
+      "declared_history_role": "Retrospective diagnostic; freeze before this run's returns, but historical period has been seen in other studies. Independent forward OOS false.",
+      "declared_forward_OOS": null,
+      "selection_summary": null
+    }
+  ],
+  "observed_completed_account_records": 180,
+  "reused_prior_program_account_records": 164,
+  "current_program_executed_accounts": 16,
+  "cash_policy_records": 26,
+  "exact_equal_curve_groups": [
+    [
+      "equities_hkus_20261024_v001/US_validation_cash_5bps",
+      "equities_hkus_20261024_v001/US_validation_cash_10bps",
+      "equities_hkus_20261024_v001/US_validation_cash_20bps"
+    ],
+    [
+      "equities_hkus_20261024_v001/US_holdout_cash_5bps",
+      "equities_hkus_20261024_v001/US_holdout_cash_10bps",
+      "equities_hkus_20261024_v001/US_holdout_cash_20bps"
+    ],
+    [
+      "equities_hkus_20261024_v001/US_continuous_cash_5bps",
+      "equities_hkus_20261024_v001/US_continuous_cash_10bps",
+      "equities_hkus_20261024_v001/US_continuous_cash_20bps",
+      "equities_layered_20261026_v001/US_cash_10000_5bps",
+      "equities_layered_20261026_v001/US_cash_10000_15bps",
+      "equities_layered_20261026_v001/US_cash_100000_5bps",
+      "equities_layered_20261026_v001/US_cash_100000_15bps"
+    ],
+    [
+      "equities_hkus_20261024_v001/HK_validation_cash_10bps",
+      "equities_hkus_20261024_v001/HK_validation_cash_20bps",
+      "equities_hkus_20261024_v001/HK_validation_cash_40bps"
+    ],
+    [
+      "equities_hkus_20261024_v001/HK_holdout_cash_10bps",
+      "equities_hkus_20261024_v001/HK_holdout_cash_20bps",
+      "equities_hkus_20261024_v001/HK_holdout_cash_40bps"
+    ],
+    [
+      "equities_hkus_20261024_v001/HK_continuous_cash_10bps",
+      "equities_hkus_20261024_v001/HK_continuous_cash_20bps",
+      "equities_hkus_20261024_v001/HK_continuous_cash_40bps",
+      "equities_layered_20261026_v001/HK_cash_100000_5bps",
+      "equities_layered_20261026_v001/HK_cash_100000_15bps",
+      "equities_layered_20261026_v001/HK_cash_1000000_5bps",
+      "equities_layered_20261026_v001/HK_cash_1000000_15bps"
+    ]
+  ],
+  "exact_distinct_curve_count": 160,
+  "distinct_curves_are_independent_trials": false,
+  "incomplete_attempts": [
+    {
+      "study": "equities_pit_stocks_20261026_v001",
+      "registered_at": "2026-10-26T14:27:10.801055+00:00",
+      "account_results_present": 0,
+      "states_present": 0,
+      "summary_present": false,
+      "archived_fee_scope_rejects_non_ETF": true,
+      "terminal_error_log_available": false,
+      "scope": "Incomplete local attempt retained; fee-scope incompatibility is visible, exact terminal exception is not certified from the artifact alone."
+    }
+  ],
+  "stock_daily_return_dates": 372,
+  "stock_dates_also_in_earlier_US_market_results": 372,
+  "market_date_overlap_proves_prior_stock_specific_viewing": false,
+  "all_prior_researcher_choices_and_hypotheses_enumerated": false,
+  "independent_trial_count": null,
+  "DSR": null,
+  "PBO": null,
+  "reason": "These are observed artifacts with controls, costs, phases and capital variants. Missing influential choices, security-specific viewing chronology, and test dependence preclude a certified effective trial count or selection-adjusted statistic.",
+  "new_economic_accounts": 0,
+  "external_attestation": false
+}
