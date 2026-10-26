@@ -1,0 +1,107 @@
+{
+  "parent": {
+    "paired_difference_bootstrap": {
+      "paired_mean_daily_return_difference": 0.00018751928214348607,
+      "circular_block_sessions": 20,
+      "draws": 2000,
+      "seed": 20261026,
+      "descriptive_percentile95": [
+        -0.0007462299119809019,
+        0.0011062880655067116
+      ],
+      "selection_corrected": false,
+      "forward_forecast": false
+    },
+    "paired_difference_regression": {
+      "observations": 372,
+      "rsquared": 0.043258713925340975,
+      "design_condition_number": 396.226816728426,
+      "hac_lags": 5,
+      "coefficients": {
+        "intercept_daily_return": {
+          "value": 0.0006275374915857717,
+          "standard_error_hac": 0.0006273800038135057,
+          "confidence95": [
+            -0.000606151132946708,
+            0.0018612261161182514
+          ],
+          "descriptive_pvalue": 0.3178445090836759
+        },
+        "SPY_gross_total_return": {
+          "value": -0.12482290292596773,
+          "standard_error_hac": 0.29605727676136373,
+          "confidence95": [
+            -0.7069939831810695,
+            0.457348177329134
+          ],
+          "descriptive_pvalue": 0.6735497985673677
+        },
+        "QQQ_minus_SPY_gross_return": {
+          "value": -0.18536820870367243,
+          "standard_error_hac": 0.24628777390825107,
+          "confidence95": [
+            -0.669671857505263,
+            0.29893544009791817
+          ],
+          "descriptive_pvalue": 0.45214082894332275
+        }
+      },
+      "selection_corrected": false,
+      "causal_alpha_identified": false
+    }
+  },
+  "corrected": {
+    "paired_difference_bootstrap": {
+      "paired_mean_daily_return_difference": -0.0003694642141952145,
+      "circular_block_sessions": 20,
+      "draws": 2000,
+      "seed": 20261026,
+      "descriptive_percentile95": [
+        -0.0019460385525239443,
+        0.0009751854577822357
+      ],
+      "selection_corrected": false,
+      "forward_forecast": false
+    },
+    "paired_difference_regression": {
+      "observations": 372,
+      "rsquared": 0.06992546447151193,
+      "design_condition_number": 396.226816728426,
+      "hac_lags": 5,
+      "coefficients": {
+        "intercept_daily_return": {
+          "value": 0.0002722104689185183,
+          "standard_error_hac": 0.0006871841047815647,
+          "confidence95": [
+            -0.0010790777581135942,
+            0.0016234986959506308
+          ],
+          "descriptive_pvalue": 0.6922421279861367
+        },
+        "SPY_gross_total_return": {
+          "value": -0.09176574869388304,
+          "standard_error_hac": 0.3294690197499797,
+          "confidence95": [
+            -0.73963813756626,
+            0.556106640178494
+          ],
+          "descriptive_pvalue": 0.7807644831086981
+        },
+        "QQQ_minus_SPY_gross_return": {
+          "value": -0.32667325183179674,
+          "standard_error_hac": 0.2960940927858201,
+          "confidence95": [
+            -0.908916727621178,
+            0.25557022395758455
+          ],
+          "descriptive_pvalue": 0.27062668338552137
+        }
+      },
+      "selection_corrected": false,
+      "causal_alpha_identified": false
+    }
+  },
+  "scope": "Same frozen lag5 and block20/2000/seed20261026 descriptive procedures; correction to comparator implementation only. Not risk-matched alpha, OOS, selection correction or external evidence.",
+  "new_financial_replays": 0,
+  "external_attestation": false
+}

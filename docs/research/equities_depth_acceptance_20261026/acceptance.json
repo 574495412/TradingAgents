@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v011",
+  "version": "20261027_depth_v012",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -64,7 +64,7 @@
       "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。 固定372期追加BTC/USD风险控制后，动量截距每日−11.37基点，95%区间仍跨零；动量相对固定队列的额外BTC暴露也跨零，不认证独立优势。 COIN七个固定SEC申报反应会话仅合计约190美元贡献，全部期间约2,900美元；四会话无仓位。不据此认定财报因果收益、无事件收益或可执行避财报优势。"
+      "current_evidence_note": "纠正启动前成交量上下文后，同池等权高成本诊断CAGR17.62%，动量仍6.80%，动量成交与净值逐项不变。固定配对均值由+1.88变为−3.69基点/日；原20日块/2000次/固定种子的区间改为约[−19.46,+9.75]基点，仍跨零。旧配对结果仅对应旧实现；非风险匹配对照，不证明可重复alpha或全市场动量失效。原COIN集中与BTC暴露结论保留原有边界。"
     },
     {
       "id": "G2",
@@ -86,7 +86,7 @@
       "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
       "status": "pending",
       "independent_evidence": null,
-      "current_evidence_note": "已从四个既有股票研究目录重建180条完成账户记录，其中164条旧计划复用、当前计划仍16条；26条现金策略、160条严格不同净值路径均不能转换为独立试验数。另保留一次0账户结果的未完成个股尝试。372个股票收益日期均落在已有US市场研究日期内，但不证明个股数据曾被查看。完整选择史、独立试验数及最小经济效应仍未认证，DSR/PBO留空。预先列明四组独立正态单次检验规划假设的非中心t功效，仅是方法情景；12月和100周期不能代替实际功效，未据情景指定新验收期限。"
+      "current_evidence_note": "本地股票研究此前180条完成记录，本次再增8条事后同协议纠错金融评估，观察范围共188条；当前预算从16增至24/24，不能把8次修复隐去，也不能当8次独立新策略试验。完整影响选择史与实际最小效应/功效仍未认证，DSR/PBO留空，原理想化规划不改验收期限。"
     },
     {
       "id": "G4",
@@ -97,7 +97,7 @@
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。 EXAS每股105美元是毛现金权利；未取得资金可用凭证，不提前转成可投资现金。 373个股票收盘端点逐项绑定原始BTC/USD响应，372期净账户风险归因未改旧收益；这是内部描述性敏感性，不是将拟合系数当作实际利润归因。 从原模拟成交和COIN原价重建372期库存及损益，最大差异约1.68e−13美元；只支持内部来源/算术一致，非券商成交或外部独立审计。"
+      "current_evidence_note": "发现账户输入截断导致原前19个评价日prior20成交量不可用，已有源文件实际提供启动前20日。已保留原16账户，纠正复算8个：只增加只读前史，不提前交易、不改变规则/成本/区间/原数据。8份Decimal账本最大差约3.05e−12美元，8份实际JSON状态由新解释器继续恢复逐项一致；仍是内部核对，不能替代外部证据。"
     },
     {
       "id": "G5",
@@ -108,7 +108,7 @@
       "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
       "status": "not_passed",
       "independent_evidence": null,
-      "current_evidence_note": "动量收盘回撤28.15%，日低价包络28.99%，均超15%；80%为下单目标，实际最高收盘股票敞口84.54%，32日超过80%，并非持续硬上限。 原始交易所维护状态与2023-03-04三个无K线小时一致；全小时覆盖保持false，仅预定收盘端点可用于归因，不能认证全天可成交/可转出。 EXAS共16笔模拟成交的时钟均由日历赋值；未消费真实竞价或报价原件。UTP现版为2026、官方FAQ为2025，名含March2024时刻表PDF元数据声明2026，均不认证2024实际规则；供应商Open种类、成交量和修订链仍未核实。"
+      "current_evidence_note": "修复后的高成本等权/动量/质量/混合收盘回撤约26.59%/28.15%/41.98%/32.01%，均超15%；日低价包络仍不认证同步盘中风险。动量经济路径未变，80%仍是目标而非持续硬上限。真实竞价/报价、容量、成交时钟、来源版本及原EXAS冲突仍缺；不能以纠错或账本通过认证达标。"
     },
     {
       "id": "G6",
@@ -119,7 +119,7 @@
       "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
       "status": "blocked",
       "independent_evidence": null,
-      "current_evidence_note": "新核对20个既有BTC/ETH双腿账户，16条内部净收益为正，但固定持有/成本过滤两变体均明确不具组合测试资格，且同属一个资金费机制；容量诊断选择不等于准入。当前20个账户与股票无共同日期；另有2024旧训练122个共同股票日期，但属于归档范围、不同账本/执行，不是获准同步PnL。48个另行非现金策略账户均负。8股票账户收盘回撤均超15%，USD/USDT和共同资金/现金可用亦未验证；不拼接净值，不触发剩余容量预算。"
+      "current_evidence_note": "原8与纠错8股票路径均未通过15%风险线。已有双腿20账户内部部分为正，但两变体均无组合资格，且同属一个机制；2024旧训练只有122个共同日期，未形成兼容同期PnL。USD/USDT和共享现金/结算仍未验证，不拼接净值。原8个预留容量名额已登记转用于必要纠错，累计24/24，无自动追加余额。"
     },
     {
       "id": "G7",
@@ -262,7 +262,8 @@
       "PBO": null,
       "real_admission_minimum_effect": null,
       "new_economic_accounts": 0,
-      "external_independent_attestation": null
+      "external_independent_attestation": null,
+      "snapshot_scope": "原v010的180条观察清单，不含后续8次执行上下文纠错；全局预算和当前结果以volume_context_correction为准。"
     },
     "portfolio_readiness_review": {
       "report": "docs/research/equities_depth_acceptance_20261026/portfolio-readiness.json",
@@ -279,6 +280,24 @@
       "common_capital_account_executed": false,
       "new_economic_accounts": 0,
       "external_independent_attestation": null
+    },
+    "volume_context_correction": {
+      "plan": "docs/research/equities_pit_stocks_20261026/volume-context-correction-plan.json",
+      "report": "docs/research/equities_pit_stocks_20261026/README.md",
+      "run": "results/research/equities_pit_stocks_context_20261027_v001",
+      "comparison": "docs/research/equities_pit_stocks_20261026/volume-context-comparisons.json",
+      "contrast": "docs/research/equities_pit_stocks_20261026/volume-context-contrast.json",
+      "status": "eight_correction_accounts_complete_internal_only",
+      "completed_replays": 8,
+      "parent_run": "results/research/equities_pit_stocks_20261026_v002",
+      "old_numerical_results_retained": true,
+      "warmup_blocked_evaluation_sessions": 19,
+      "genuine_prior_context_sessions": 20,
+      "new_hypotheses": 0,
+      "fresh_process_JSON_recovery_accounts": 8,
+      "raw_inputs_or_frozen_engine_modified": false,
+      "independent_forward_OOS": false,
+      "external_attestation": null
     }
   },
   "decision_rules": {
@@ -381,5 +400,19 @@
     ],
     "real_admission_effect_or_horizon_adopted_by_this_review": null,
     "own_checks_replace_external_attestation": false
+  },
+  "execution_context_policy": {
+    "applies_to_gates": [
+      "G2",
+      "G4",
+      "G5"
+    ],
+    "lookback_source_context_must_precede_account_start": true,
+    "no_pre_window_fills_or_initial_wealth": true,
+    "rolling_volume_must_use_actual_observations_not_zero_fill": true,
+    "monthly_signal_is_not_monthly_only_execution_when_daily_target_maintenance_is_inherited": true,
+    "implementation_repair_replays_counted_in_budget": true,
+    "preserve_all_legacy_results_and_no_result_based_parameter_choice": true,
+    "repairs_do_not_certify_market_data_or_external_financial_results": true
   }
 }

@@ -1,0 +1,189 @@
+{
+  "scope": "Compact comparison projection; full results and all input hashes remain sealed in the correction run. All returns are internal diagnostics.",
+  "records": [
+    {
+      "name": "US_disclosed_equal_10000_5bps",
+      "policy": "disclosed_equal",
+      "slippage_bps": 5,
+      "old_first_fill": "2023-01-31",
+      "corrected_first_fill": "2023-01-03",
+      "economic_curve_exactly_unchanged": false,
+      "fills_exactly_unchanged": false,
+      "old_metrics": {
+        "annualized_return": 0.02652881826554654,
+        "net_return": 0.04085169470634464,
+        "close_max_drawdown": 0.26259026855142076,
+        "max_drawdown": 0.273493834516098,
+        "closed_trades": 0
+      },
+      "corrected_metrics": {
+        "annualized_return": 0.17738706627993794,
+        "net_return": 0.27460105759964004,
+        "close_max_drawdown": 0.26571427432551353,
+        "max_drawdown": 0.274862496812346,
+        "closed_trades": 0
+      }
+    },
+    {
+      "name": "US_disclosed_equal_10000_15bps",
+      "policy": "disclosed_equal",
+      "slippage_bps": 15,
+      "old_first_fill": "2023-01-31",
+      "corrected_first_fill": "2023-01-03",
+      "economic_curve_exactly_unchanged": false,
+      "fills_exactly_unchanged": false,
+      "old_metrics": {
+        "annualized_return": 0.026430324250791726,
+        "net_return": 0.04136689754033096,
+        "close_max_drawdown": 0.26276783694208616,
+        "max_drawdown": 0.2741808200598249,
+        "closed_trades": 0
+      },
+      "corrected_metrics": {
+        "annualized_return": 0.17618170619146412,
+        "net_return": 0.2734152668716432,
+        "close_max_drawdown": 0.26587978919369826,
+        "max_drawdown": 0.2755292648077242,
+        "closed_trades": 0
+      }
+    },
+    {
+      "name": "US_french_mom_12_2_10000_5bps",
+      "policy": "french_mom_12_2",
+      "slippage_bps": 5,
+      "old_first_fill": "2023-05-01",
+      "corrected_first_fill": "2023-05-01",
+      "economic_curve_exactly_unchanged": true,
+      "fills_exactly_unchanged": true,
+      "old_metrics": {
+        "annualized_return": 0.07213803313589051,
+        "net_return": 0.10928138695936229,
+        "close_max_drawdown": 0.28355594698173303,
+        "max_drawdown": 0.2917827241669936,
+        "closed_trades": 8
+      },
+      "corrected_metrics": {
+        "annualized_return": 0.07213803313589051,
+        "net_return": 0.10928138695936229,
+        "close_max_drawdown": 0.28355594698173303,
+        "max_drawdown": 0.2917827241669936,
+        "closed_trades": 8
+      }
+    },
+    {
+      "name": "US_french_mom_12_2_10000_15bps",
+      "policy": "french_mom_12_2",
+      "slippage_bps": 15,
+      "old_first_fill": "2023-05-01",
+      "corrected_first_fill": "2023-05-01",
+      "economic_curve_exactly_unchanged": true,
+      "fills_exactly_unchanged": true,
+      "old_metrics": {
+        "annualized_return": 0.06802185144115636,
+        "net_return": 0.10378182660288804,
+        "close_max_drawdown": 0.2815181861099475,
+        "max_drawdown": 0.2898868183912998,
+        "closed_trades": 8
+      },
+      "corrected_metrics": {
+        "annualized_return": 0.06802185144115636,
+        "net_return": 0.10378182660288804,
+        "close_max_drawdown": 0.2815181861099475,
+        "max_drawdown": 0.2898868183912998,
+        "closed_trades": 8
+      }
+    },
+    {
+      "name": "US_gross_profitability_10000_5bps",
+      "policy": "gross_profitability",
+      "slippage_bps": 5,
+      "old_first_fill": "2023-01-31",
+      "corrected_first_fill": "2023-01-03",
+      "economic_curve_exactly_unchanged": false,
+      "fills_exactly_unchanged": false,
+      "old_metrics": {
+        "annualized_return": -0.1558700801535976,
+        "net_return": -0.2210509528530119,
+        "close_max_drawdown": 0.4131011657182234,
+        "max_drawdown": 0.4207396970474473,
+        "closed_trades": 3
+      },
+      "corrected_metrics": {
+        "annualized_return": -0.07524238949089823,
+        "net_return": -0.10855965978779769,
+        "close_max_drawdown": 0.4211723939195202,
+        "max_drawdown": 0.42905861165563086,
+        "closed_trades": 3
+      }
+    },
+    {
+      "name": "US_gross_profitability_10000_15bps",
+      "policy": "gross_profitability",
+      "slippage_bps": 15,
+      "old_first_fill": "2023-01-31",
+      "corrected_first_fill": "2023-01-03",
+      "economic_curve_exactly_unchanged": false,
+      "fills_exactly_unchanged": false,
+      "old_metrics": {
+        "annualized_return": -0.15783743797037697,
+        "net_return": -0.22310867435884474,
+        "close_max_drawdown": 0.4239113628374601,
+        "max_drawdown": 0.43188170621877864,
+        "closed_trades": 3
+      },
+      "corrected_metrics": {
+        "annualized_return": -0.07762480128233362,
+        "net_return": -0.11120861317186359,
+        "close_max_drawdown": 0.4197747113861846,
+        "max_drawdown": 0.42818911619233113,
+        "closed_trades": 3
+      }
+    },
+    {
+      "name": "US_stock_blend_equal_10000_5bps",
+      "policy": "stock_blend_equal",
+      "slippage_bps": 5,
+      "old_first_fill": "2023-01-31",
+      "corrected_first_fill": "2023-01-03",
+      "economic_curve_exactly_unchanged": false,
+      "fills_exactly_unchanged": false,
+      "old_metrics": {
+        "annualized_return": -0.03573753595293039,
+        "net_return": -0.05150888698677969,
+        "close_max_drawdown": 0.309553263955183,
+        "max_drawdown": 0.31963634066629143,
+        "closed_trades": 9
+      },
+      "corrected_metrics": {
+        "annualized_return": 0.003982965934984373,
+        "net_return": 0.006823716898441523,
+        "close_max_drawdown": 0.31802030173683105,
+        "max_drawdown": 0.3283531919321402,
+        "closed_trades": 9
+      }
+    },
+    {
+      "name": "US_stock_blend_equal_10000_15bps",
+      "policy": "stock_blend_equal",
+      "slippage_bps": 15,
+      "old_first_fill": "2023-01-31",
+      "corrected_first_fill": "2023-01-03",
+      "economic_curve_exactly_unchanged": false,
+      "fills_exactly_unchanged": false,
+      "old_metrics": {
+        "annualized_return": -0.04219994555925832,
+        "net_return": -0.06017211495776176,
+        "close_max_drawdown": 0.31669739952164333,
+        "max_drawdown": 0.3272082662538326,
+        "closed_trades": 9
+      },
+      "corrected_metrics": {
+        "annualized_return": 0.00016370325503500816,
+        "net_return": 0.0019573870673657012,
+        "close_max_drawdown": 0.32010585636979316,
+        "max_drawdown": 0.3309826440384044,
+        "closed_trades": 9
+      }
+    }
+  ]
+}

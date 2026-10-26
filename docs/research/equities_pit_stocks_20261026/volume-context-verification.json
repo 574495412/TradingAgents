@@ -1,0 +1,21 @@
+{
+  "all_internal_checks_passed": true,
+  "source_context_days": 20,
+  "old_zero_cap_days": 19,
+  "completed_correction_accounts": 8,
+  "completed_program_accounts": 24,
+  "new_strategy_hypotheses": 0,
+  "momentum_paths_exactly_unchanged": 2,
+  "Decimal_ledger_max_error": 3.044e-12,
+  "fresh_process_recoveries": 8,
+  "parent_files_unchanged": true,
+  "corrected_contrast_reproduced": true,
+  "budget_reallocation_registered_before_corrected_returns": true,
+  "financial_targets_and_gate_statuses_unchanged": true,
+  "current_adapter_version": "20261027_depth_v012",
+  "objective_sha256": "7019f202e1ee3bb4337567ef99c976c8f88fde092dd080fbd4dfed1037489a11",
+  "acceptance_sha256": "1cb05ac8ace856c0a51d8e63f220194244448ae6ce1dc19db8cf8f5de8c4b2e8",
+  "profit_goal_met": false,
+  "external_independent_attestation": false,
+  "scope": "Implementation context, recorded hypothetical economics and internal consistency only; original source conflicts and G7/G8 are unresolved."
+}

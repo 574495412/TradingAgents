@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "accounts": [
+    {
+      "name": "US_disclosed_equal_10000_5bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 16,
+      "closed_cycles": 0,
+      "max_absolute_balance_error": "2.708E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_disclosed_equal_10000_15bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 16,
+      "closed_cycles": 0,
+      "max_absolute_balance_error": "3.006E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_french_mom_12_2_10000_5bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 39,
+      "closed_cycles": 8,
+      "max_absolute_balance_error": "2.215E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_french_mom_12_2_10000_15bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 38,
+      "closed_cycles": 8,
+      "max_absolute_balance_error": "3.044E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_gross_profitability_10000_5bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 23,
+      "closed_cycles": 3,
+      "max_absolute_balance_error": "2.619E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_gross_profitability_10000_15bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 22,
+      "closed_cycles": 3,
+      "max_absolute_balance_error": "2.406E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_stock_blend_equal_10000_5bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 37,
+      "closed_cycles": 9,
+      "max_absolute_balance_error": "2.432E-12",
+      "source_certified": false
+    },
+    {
+      "name": "US_stock_blend_equal_10000_15bps",
+      "passed": true,
+      "method": "independent Decimal, no engine imports",
+      "curve_points": 372,
+      "fills": 37,
+      "closed_cycles": 9,
+      "max_absolute_balance_error": "2.931E-12",
+      "source_certified": false
+    }
+  ],
+  "external_attestation": false
+}

@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "accounts": [
+    {
+      "name": "US_disclosed_equal_10000_5bps",
+      "exact_state_matches": true,
+      "state_sha256": "fd85dc1faf52d3ef584adc46867f0714f529d467b55928a10383bb2e5d09f63a",
+      "resumed_sha256": "fd85dc1faf52d3ef584adc46867f0714f529d467b55928a10383bb2e5d09f63a",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_disclosed_equal_10000_15bps",
+      "exact_state_matches": true,
+      "state_sha256": "5d3f63e899cb33fce2928650cdc0e7bc69ffec26f5f2085caa91c8595b30e870",
+      "resumed_sha256": "5d3f63e899cb33fce2928650cdc0e7bc69ffec26f5f2085caa91c8595b30e870",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_french_mom_12_2_10000_5bps",
+      "exact_state_matches": true,
+      "state_sha256": "550100a62c9f0a959ccde36b4fcff8cfcfbe19bc4a23c6e707a363fa29707db6",
+      "resumed_sha256": "550100a62c9f0a959ccde36b4fcff8cfcfbe19bc4a23c6e707a363fa29707db6",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_french_mom_12_2_10000_15bps",
+      "exact_state_matches": true,
+      "state_sha256": "cfbe1efefb0efb0b4dccd1bf5c83d22d707c29b127e3ca3b2ed4ef2b3a1b887d",
+      "resumed_sha256": "cfbe1efefb0efb0b4dccd1bf5c83d22d707c29b127e3ca3b2ed4ef2b3a1b887d",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_gross_profitability_10000_5bps",
+      "exact_state_matches": true,
+      "state_sha256": "30bc2e248590de87265436a2de406588be85485fe612d5990077da8f02db10b1",
+      "resumed_sha256": "30bc2e248590de87265436a2de406588be85485fe612d5990077da8f02db10b1",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_gross_profitability_10000_15bps",
+      "exact_state_matches": true,
+      "state_sha256": "ab8865703e5646c1c292c85c694b0d340443eb497149c808ae3ea4a35be8d4fa",
+      "resumed_sha256": "ab8865703e5646c1c292c85c694b0d340443eb497149c808ae3ea4a35be8d4fa",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_stock_blend_equal_10000_5bps",
+      "exact_state_matches": true,
+      "state_sha256": "756536accac12bcd791ee2f9f4eb92f7c19ed491f756bc5468259c7000a387c7",
+      "resumed_sha256": "756536accac12bcd791ee2f9f4eb92f7c19ed491f756bc5468259c7000a387c7",
+      "checkpoint_had_positions": true
+    },
+    {
+      "name": "US_stock_blend_equal_10000_15bps",
+      "exact_state_matches": true,
+      "state_sha256": "c1462ed2c0b79e35be93e0045a7175c36e3f88fb5baf117694c1e304305b9f7c",
+      "resumed_sha256": "c1462ed2c0b79e35be93e0045a7175c36e3f88fb5baf117694c1e304305b9f7c",
+      "checkpoint_had_positions": true
+    }
+  ],
+  "external_attestation": false
+}

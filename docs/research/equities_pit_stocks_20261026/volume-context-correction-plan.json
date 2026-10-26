@@ -1,0 +1,41 @@
+{
+  "schema": "equity-prior-volume-context-correction.v1",
+  "registered_at_utc": "2026-10-26T18:25:20.140138+00:00",
+  "parent_run": "results/research/equities_pit_stocks_20261026_v002",
+  "pit_dataset": "data/research/equity_pit_20261026_v001",
+  "purpose": "Correct missing pre-account prior20 volume context in the existing eight accounts; no parameter selection or new strategy family.",
+  "observed_defect": "Account frames start2022-12-30, so rolling20 volume is unavailable for first19 evaluation sessions even though the sealed signal files contain prior prices/volume. Full-exit source and daily5percent target-maintenance logic remain frozen.",
+  "correction": "Provide exactly20 observed exchange sessions before first evaluation day as read-only context; account NAV/cash starts at the original2023-01-03 open, no pre-window trades or wealth. Rolling volume at priorDec30 uses its20 known observations.",
+  "unchanged": [
+    "all10 identities and seed",
+    "all raw/financial input files",
+    "four policies and ranks",
+    "annual asof rule",
+    "gross target0.8 and top3",
+    "daily target maintenance and5percent no-trade band",
+    "integer shares and fees",
+    "3-session settlement",
+    "5/15bps slippage",
+    "same2023-01-01 to2024-06-27 bounded window",
+    "no newEXAS candidate data consumption",
+    "no leverage/shorting and no production eligibility"
+  ],
+  "required_checks": [
+    "All parent frozen source and input hashes verified",
+    "Original19zero-cap sessions traced to source observations",
+    "New context has20genuine prior observations for each symbol",
+    "No pre-window fills or NAV",
+    "Eight complete paired replays; preserve parent all metrics",
+    "Decimal inventory/cash/fees and liquidity-cap checks",
+    "Checkpoint JSON restored in a fresh interpreter with no dotenv/application initializer",
+    "Report non-monthly fills as daily target-maintenance/deferred funding where applicable, not imply monthly-only execution",
+    "All original source conflicts, independent evidence gaps and risk failures preserved"
+  ],
+  "economic_replays": 8,
+  "new_strategy_hypotheses": 0,
+  "financial_budget_allocation": "Use original remaining8 of24 for required implementation repair, not capacity; total max24 unchanged; count all8 actual financial evaluations, do not label them0 new accounts.",
+  "posthoc_implementation_correction": true,
+  "independent_forward_OOS": false,
+  "external_attestation": false,
+  "profit_goal_met": false
+}

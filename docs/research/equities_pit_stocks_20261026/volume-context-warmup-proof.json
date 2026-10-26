@@ -1,0 +1,80 @@
+{
+  "first_evaluation_day": "2023-01-03",
+  "first_prior_day": "2022-12-30",
+  "context_start": "2022-12-02",
+  "old_context_start": "2022-12-30",
+  "old_zero_cap_days": [
+    "2023-01-03",
+    "2023-01-04",
+    "2023-01-05",
+    "2023-01-06",
+    "2023-01-09",
+    "2023-01-10",
+    "2023-01-11",
+    "2023-01-12",
+    "2023-01-13",
+    "2023-01-17",
+    "2023-01-18",
+    "2023-01-19",
+    "2023-01-20",
+    "2023-01-23",
+    "2023-01-24",
+    "2023-01-25",
+    "2023-01-26",
+    "2023-01-27",
+    "2023-01-30"
+  ],
+  "symbols": {
+    "TSLA.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 143210075.0,
+      "old_prior_mean_was_missing": true
+    },
+    "ZM.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 3102495.0,
+      "old_prior_mean_was_missing": true
+    },
+    "ROKU.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 6157875.0,
+      "old_prior_mean_was_missing": true
+    },
+    "PATH.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 6332360.0,
+      "old_prior_mean_was_missing": true
+    },
+    "EXAS.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 2603060.0,
+      "old_prior_mean_was_missing": true
+    },
+    "NTLA.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 1425550.0,
+      "old_prior_mean_was_missing": true
+    },
+    "CRSP.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 1173995.0,
+      "old_prior_mean_was_missing": true
+    },
+    "TDOC.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 4013915.0,
+      "old_prior_mean_was_missing": true
+    },
+    "XYZ.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 9747950.0,
+      "old_prior_mean_was_missing": true
+    },
+    "COIN.US": {
+      "known_observations_before_first_fill": 20,
+      "known_mean_volume_on_prior_day": 11114235.0,
+      "old_prior_mean_was_missing": true
+    }
+  },
+  "pre_window_trades": 0
+}
