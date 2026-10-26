@@ -1,0 +1,141 @@
+{
+  "schema": "equity-exas-market-semantics.v1",
+  "review_kind": "Retrospective source/applicability audit; no new strategy or performance estimate",
+  "security": {
+    "ticker": "EXAS",
+    "cik": "0001124140",
+    "CUSIP": "30063P105",
+    "listed_venue": "Nasdaq",
+    "applicable_consolidated_plan": "UTP/Tape C"
+  },
+  "documents": [
+    {
+      "path": "data/research/equity_exas_market_semantics_20261027_v001/utp-output-4.1a.pdf",
+      "sha256": "d9e2683481a4528c8f62911ea9650e2aca0d3b202180571adfcb68b4aefb2b98",
+      "url": "https://www.utpplan.com/DOC/UtpBinaryOutputSpec-4.1a%20(New%20Directory%20Message).pdf",
+      "observed_at": "2026-10-26T17:32:32.937261+00:00",
+      "pages": 61,
+      "inspected_text_pages": [
+        32,
+        33,
+        48,
+        49,
+        59,
+        60,
+        61
+      ],
+      "pdf_declared_created_at": "D:20261002150737-04'00'",
+      "pdf_declared_modified_at": "D:20261002150737-04'00'",
+      "metadata_is_verified_publication_or_effective_time": false,
+      "historical_2024_rule_version_verified": false
+    },
+    {
+      "path": "data/research/equity_exas_market_semantics_20261027_v001/utp-schedule-march2024.pdf",
+      "sha256": "808700222595b4ff3c19bcd0aec149bf458f03c3b09647aded5487ac9b37a07d",
+      "url": "https://www.utpplan.com/DOC/UTP%20SIP%20Transmission%20Schedule%20-%20March%202024.pdf",
+      "observed_at": "2026-10-26T17:32:30.979923+00:00",
+      "pages": 1,
+      "inspected_text_pages": [
+        1
+      ],
+      "pdf_declared_created_at": "D:20260304095651-05'00'",
+      "pdf_declared_modified_at": "D:20260304095652-05'00'",
+      "metadata_is_verified_publication_or_effective_time": false,
+      "historical_2024_rule_version_verified": false
+    },
+    {
+      "path": "data/research/equity_exas_market_semantics_20261027_v001/nasdaq-openclose-faq.pdf",
+      "sha256": "77019216cf35f1c4ff8da6b948fd0075ccbe7f133e69cbdca15d54dfa2febfac",
+      "url": "https://www.nasdaqtrader.com/content/ProductsServices/Trading/Crosses/openclose_faqs.pdf",
+      "observed_at": "2026-10-26T17:34:06.192602+00:00",
+      "pages": 4,
+      "inspected_text_pages": [
+        1,
+        2,
+        4
+      ],
+      "pdf_declared_created_at": "D:20251104154702Z",
+      "pdf_declared_modified_at": "D:20251104154702Z",
+      "metadata_is_verified_publication_or_effective_time": false,
+      "historical_2024_rule_version_verified": false
+    }
+  ],
+  "current_document_observations": [
+    "The vendor condition table explicitly follows CTS; do not assume it is a complete historical Tape-C implementation.",
+    "Current UTP specification separates opening prints O from official market-center open Q and distinguishes consolidated/participant statistics.",
+    "Current UTP odd-lot I and extended-hours T/U conditions can update volume without updating consolidated high/low/last; this does not identify the cause of the 20 observed differences.",
+    "Current Nasdaq FAQ distinguishes opening-cross NOOP from the eligible-trade fallback when no cross exists; a vendor Open label alone does not identify either path.",
+    "The file named March 2024 declares 2026 PDF creation metadata. This prevents treating its filename as a historical version certificate; metadata alone does not prove that its rules changed or when first released."
+  ],
+  "frozen_engine_facts": {
+    "raw_price": "vendor daily open",
+    "fill_timestamp": "calendar session open",
+    "liquidity_cap": "0.001 times previous 20-session mean full-day vendor volume",
+    "auction_or_quote_evidence_consumed": false,
+    "day_volume_proves_auction_capacity": false
+  },
+  "accounts": [
+    {
+      "account": "US_disclosed_equal_10000_15bps",
+      "EXAS_simulated_fills": 1,
+      "fills_with_calendar_assigned_clock": 1,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_disclosed_equal_10000_5bps",
+      "EXAS_simulated_fills": 1,
+      "fills_with_calendar_assigned_clock": 1,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_french_mom_12_2_10000_15bps",
+      "EXAS_simulated_fills": 5,
+      "fills_with_calendar_assigned_clock": 5,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_french_mom_12_2_10000_5bps",
+      "EXAS_simulated_fills": 5,
+      "fills_with_calendar_assigned_clock": 5,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_gross_profitability_10000_15bps",
+      "EXAS_simulated_fills": 0,
+      "fills_with_calendar_assigned_clock": 0,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_gross_profitability_10000_5bps",
+      "EXAS_simulated_fills": 0,
+      "fills_with_calendar_assigned_clock": 0,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_stock_blend_equal_10000_15bps",
+      "EXAS_simulated_fills": 2,
+      "fills_with_calendar_assigned_clock": 2,
+      "actual_external_order_receipts": 0
+    },
+    {
+      "account": "US_stock_blend_equal_10000_5bps",
+      "EXAS_simulated_fills": 2,
+      "fills_with_calendar_assigned_clock": 2,
+      "actual_external_order_receipts": 0
+    }
+  ],
+  "EXAS_simulated_fills": 16,
+  "observed_price_or_volume_difference_causes_resolved": false,
+  "historical_2024_tape_and_auction_records_acquired": false,
+  "candidate_gap_rows_admitted": 0,
+  "external_independent_attestation": false,
+  "new_economic_accounts": 0,
+  "profit_goal_met": false,
+  "source_access_scope": "Official publicly linked documents retrieved without login; public availability does not grant redistribution. Schedule carries a restricted-distribution footer. PDF files remain local and are not published or committed.",
+  "required_next_evidence": [
+    "Historical rule edition and actual effective/revision dates for Tape C",
+    "Source identifier, regular/extended session, price-type and volume/correction cutoff definitions",
+    "EXAS trade/auction records with venue, sale conditions, exchange/SIP timestamps, size, cancellation/correction chain",
+    "Broker order acceptance/cutoff, execution/partial/reject receipts for execution certification"
+  ]
+}

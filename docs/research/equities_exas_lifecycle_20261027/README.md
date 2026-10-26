@@ -73,3 +73,15 @@ HistoricalData.net公开覆盖API确实返回`EXAS_day_delisted_2026-03-24.csv`�
 八个原账户在6月26日均未模拟成交EXAS；只有两档等权账户期初持有12股，其余为零。因而这个开盘价冲突不直接改变该日模拟成交现金；固定持仓时隔夜/日内拆分会相互转移，不能把其中一项变动当新增利润。此限定核对没有证明全部价格、容量或原回测可信。原输入和数值原样保留，继续作为待来源核实的诊断，不重算出一个替代赢家。
 
 [本次机器摘要](price-gap-summary.json)明确区分“候选已取得64日”和“准入0日”；旧`missing-input-contract.json`及此前生命周期报告保留原始时点，不回写。主分析为`tradingagents/research/equities/exas_gap_review.py`，结果为`results/research/equity_exas_gap_20261027_v001`。[离线核对脚本](verify_price_gap.py)用另一HTML解析路径和Decimal重建200行及20日差异，只证明我们的内部一致性，不通过G7/G8。实际开盘/成交量源记录、复权与证券身份链、并购现金可用和外部独立核查仍缺；不产生新的经济账户。
+
+## 后续：开盘、成交量与历史规范的口径
+
+进一步核对[供应商成交条件说明](https://chartexchange.com/docs/stock-trade-conditions/)发现它明确引用CTS；[UTP官方技术目录](https://www.utpplan.com/technical)则说明Nasdaq上市证券属于Tape C。不能直接把前者作为EXAS全部历史交易条件和成交量差异的解释。供应商历史日线说明只描述OHLCV列，没有解决这20日实际修订/时段差异；其API另需密钥，未调用鉴权接口或购买权限。
+
+已取得三份官方PDF并检查表格、脚注及版本：[当前UTP输出规范](https://www.utpplan.com/DOC/UtpBinaryOutputSpec-4.1a%20(New%20Directory%20Message).pdf)正文标注2026年10月；[开收盘FAQ](https://www.nasdaqtrader.com/content/ProductsServices/Trading/Crosses/openclose_faqs.pdf)元数据声明2025年11月；文件名带[March 2024的时刻表](https://www.utpplan.com/DOC/UTP%20SIP%20Transmission%20Schedule%20-%20March%202024.pdf)元数据却声明2026年3月创建。元数据不等于真实首次发布或生效时钟，也不能据此断定历史规则改变；当前资料不能充当2024原版凭证。时刻表另有分发限制页脚，公开目录可访问不构成对外分发授权，PDF原件保留本地，不加入Git或发布。
+
+现版UTP区分O类开盘交易和Q类市场官方开盘，脚注区分市场中心与合并市场；零股、某些延长时段交易可计量而不更新某些价格统计。FAQ区分开盘竞价形成的官方价与无竞价时的合格成交回退。它们说明必须追查哪些定义，**不能证明42.625与42.65分别属于哪一种价，也不能证明20日量差由零股、盘后、晚报或修订造成**。
+
+同时从封存源代码和八个账户逐笔核查16笔EXAS模拟成交：价格取供应商日线Open，时间全部由交易日历开盘赋值，容量取前20日平均日量的0.1%。这不是逐笔交易所时钟、开盘竞价成交或券商回执。即使两份日线相同，也不足以通过真实执行和容量验收。未改源代码、成交、费用或收益，没有新经济账户。
+
+[机器证据](market-semantics-evidence.json)、[来源清单](market-semantics-registration.json)和[可运行核查](verify_market_semantics.py)绑定三份原件、八个原状态和源码。开发中v001/v002保留；最终v003包含逐笔时间核对、封存分析源码，并支持通过`--output`指定新目录复算，不覆盖原结果。此内部核对不构成独立审计。目标规范v009明确要求历史Tape/生效版本、Open类型、成交量时段和修订截点、实际订单/成交或独立保守模型；无法解释的原64日候选仍不准入，50%/15%及G7/G8门槛保留。

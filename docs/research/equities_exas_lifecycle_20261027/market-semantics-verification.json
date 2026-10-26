@@ -1,0 +1,40 @@
+{
+  "checks": {
+    "objective_unchanged_objective": true,
+    "objective_unchanged_targets": true,
+    "objective_unchanged_levels": true,
+    "objective_unchanged_budget": true,
+    "objective_unchanged_production_eligible": true,
+    "objective_unchanged_broker_verified": true,
+    "objective_unchanged_independent_forward_oos": true,
+    "objective_unchanged_profit_goal_status": true,
+    "standard_unchanged_evaluation_levels": true,
+    "standard_unchanged_decision_rules": true,
+    "standard_unchanged_focal_scope": true,
+    "standard_unchanged_source_clock_policy": true,
+    "standard_unchanged_price_source_conflict_policy": true,
+    "gates_requirements_status_external_unchanged": true,
+    "acceptance_gates_requirements_status_external_unchanged": true,
+    "frozen_9_inputs": true,
+    "frozen_19_sources": true,
+    "original_price_manifest": true,
+    "original_20_prices_and_signals": true,
+    "market_inputs_bound": true,
+    "market_source_snapshot": true,
+    "no_external_acceptance": true,
+    "live_adapter_current": true
+  },
+  "all_internal_checks_passed": true,
+  "version": "20261027_depth_v009",
+  "objective_sha256": "43d31b0423e63e4877e51c7a905bd3d0af6046063ae616b28169d323d83cfc03",
+  "acceptance_sha256": "90a29544b8eccb67896af86af428e099dea8be1b022607725683857bacbd3477",
+  "external_attestation_received": false,
+  "scope": "Original-source applicability and internal canonical/frozen-file consistency; no financial promotion.",
+  "visual_PDF_review": "UTP48/49, schedule1 and NasdaqFAQ2 rendered and inspected.",
+  "runtime": {
+    "python": "3.12.14",
+    "pypdf": "6.10.0",
+    "bundled_runtime": "26.1020.11348",
+    "rendering": "bundled Poppler pdftoppm; pages visually inspected, not financial verification"
+  }
+}
