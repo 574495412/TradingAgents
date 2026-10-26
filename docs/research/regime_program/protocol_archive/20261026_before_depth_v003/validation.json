@@ -1,0 +1,50 @@
+{
+  "url": "http://127.0.0.1:8793/research#factor-lab",
+  "title": "CZ · 因子与量化组合",
+  "viewports": [
+    "1512x1100",
+    "390x844"
+  ],
+  "browser": "Browser plugin not available; bundled Playwright and installed Chrome",
+  "checks": {
+    "page_identity": true,
+    "nonblank": true,
+    "no_framework_overlay": true,
+    "console_runtime_errors": true,
+    "no_unexpected_warnings": true,
+    "screenshot": true,
+    "interaction": true
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "phase": "entry",
+      "message": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    },
+    {
+      "phase": "entry",
+      "message": "The width(-1) and height(-1) of chart should be greater than 0,\n       please check the style of container, or the props width(100%) and height(100%),\n       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the\n       height and width."
+    }
+  ],
+  "overflow": false,
+  "interaction": "three-leveltargets -> totalactualsunknown -> audited26plus10references -> cost15/8 -> years2/90day7 -> coldmatched0 -> capacitynegative -> taskfilter10to3 -> oldexperimentpreserved -> mobilecontrols",
+  "scope": "v002三层目标与已审计币对账户展示，不验证总账户收益或实盘",
+  "unit_tests": {
+    "owned_cockpit_service": 13,
+    "research_module_and_pair_audit": 11,
+    "two_leg_executor": 6
+  },
+  "build": {
+    "passed": true,
+    "warning": "existing main bundle >500kB; shared stock task also editing frontend"
+  },
+  "protocol_checks": [
+    "三级目标与模块年化门槛分离",
+    "旧目标和失败记录归档",
+    "新总账户实际值为空",
+    "26新账户与10引用对照分别标注",
+    "4真实JSON恢复核验",
+    "策略卡/数据/源码在新适用域计算前登记",
+    "生产与独立OOS均未确认"
+  ]
+}

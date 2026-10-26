@@ -1,0 +1,31 @@
+{
+  "schema": "research-depth-method-sources.v1",
+  "verified_read_at_utc": "2026-10-26T14:46:27Z",
+  "scope": "仅为目标设计引用的三份原始研究，不是新增市场数据、盈利结果或安装依赖",
+  "sources": [
+    {
+      "id": "aqr-trading-costs",
+      "title": "Trading Costs",
+      "authors": "Andrea Frazzini, Ronen Israel, Tobias J. Moskowitz",
+      "version": "2018-08-23",
+      "url": "https://www.aqr.com/insights/research/working-paper/trading-costs",
+      "use": "真实执行成本与冲击应由真实成交数据校准；股票样本结论和数值不能迁移为加密成本认证。"
+    },
+    {
+      "id": "deflated-sharpe",
+      "title": "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality",
+      "authors": "David H. Bailey, Marcos Lopez de Prado",
+      "version": "2014-07-31",
+      "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+      "use": "控制多重搜索与收益非正态造成的业绩膨胀；需完整试验历史及适用假设，不把账户数当独立试验数。"
+    },
+    {
+      "id": "pbo",
+      "title": "The Probability of Backtest Overfitting",
+      "authors": "David H. Bailey, Jonathan M. Borwein, Marcos Lopez de Prado, Qiji Jim Zhu",
+      "version": "2015-02-27",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "use": "PBO/CSCV用于适用试验集合的选择稳定性诊断，不能把已看的历史转换成新的未见证据。"
+    }
+  ]
+}

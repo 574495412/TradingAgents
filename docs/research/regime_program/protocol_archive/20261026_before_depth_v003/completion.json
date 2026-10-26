@@ -1,0 +1,8 @@
+{
+  "manifest": {
+    "targets.json": "b32693d259bc7cc230d27055aee7eaee2a1ce4565f6b171e283560d51aa3a1c0",
+    "README.md": "1d89b1a0bfae4d2e13edea1c56ffa2d018b965640babdaa3b9960dd444df4f73",
+    "validation.json": "8093ab064bf0eb6520059ed5d0b49d597de02a248876b33dc771bcf013eaf443"
+  },
+  "purpose": "Preserve v002 before user-requested depth-first goal revision; no financial result changed."
+}
