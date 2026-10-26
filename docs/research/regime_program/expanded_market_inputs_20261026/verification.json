@@ -1,0 +1,41 @@
+{
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/publish_inputs.py": "8af87779447434a2083a1247afa936715ee380fd8367709fd0f0b235dfd504e9",
+    "results/research/expanded_market_cohort_20261026_v001/completion.json": "6ccaf1ea9f82fc37eff5ced392222a530599f531fa1690955e805d688b8301d8",
+    "data/research/expanded_5m_market_20261026_v001/completion.json": "9e0b9ec97111db35a026095309dd87fd4b3620f0df3c06c0d94e6f68cd4be30f",
+    "results/research/expanded_market_source_audit_20261026_v001/completion.json": "0c0c8c43545f51742167faa7145352f4fd359311e26b79e4e06774edd1200160",
+    "results/research/expanded_exact_funding_inputs_20261026_v001/completion.json": "819672f2b74eb3944b795f4a33042d9987a9388b84cde0e9753661c6cc41f9d5",
+    "results/research/expanded_market_cohort_20261026_v001_independent_audit.json": "ab1d0d48bc0dbd7eaeca76944d058640c273fd83d4cdd30a009a7ceb2623160b",
+    "results/research/expanded_exact_funding_inputs_20261026_v001_independent_audit.json": "d21b566d6d2c7f1d139f06f870c08ae59b54efe80d50e2617fe27c04dccd5dfa",
+    "data/research/expanded_official_type_references_20261026_v001/f083bdc8f37d4d45a0e0ec6fd5cd4086.txt": "622016eca7d2e78fe8a89e7b5244e465aec82345d99260496a3f4a60b7d8342f",
+    "data/research/expanded_official_type_references_20261026_v001/d592f6ba938746cbadaaf5a8a714abd6.txt": "c12417a72cc92e864104da6cfcc92a2ad8654577d9eecf24e4c9a9814b55ba2f",
+    "data/research/expanded_official_type_references_20261026_v001/plan.json": "17d6f7a6b08cbcf9243eeeda2aa2daf6b4deab4c0dca1fafaa41debf4ae7341b",
+    "data/research/expanded_official_type_references_20261026_v001/bd92dee1018f421fae1ace119fc2f706.txt": "f3c170baaa371107cb5e93c2128fdb27ac282856f3a6e8e787c3f08e2a2eb087",
+    "data/research/expanded_official_type_references_20261026_v001/bd92dee1018f421fae1ace119fc2f706.receipt.json": "840ae7ba1b1bf2eec85b12edee81be8d3b19ec11fe179c6bfd11254b17e5d319",
+    "data/research/expanded_official_type_references_20261026_v001/xau_type_blog.html": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/research/expanded_official_type_references_20261026_v001/d592f6ba938746cbadaaf5a8a714abd6.receipt.json": "a3185d9c4ee84a987f848e467cc40484093b56ab50d34e44288e8689441947cd",
+    "data/research/expanded_official_type_references_20261026_v001/xau_type_blog.receipt.json": "e4802216e7f994f6745f65e6424a87aabcb7ab71dae854b0024b1f20b46c3c6f",
+    "data/research/expanded_official_type_references_20261026_v001/d592f6ba938746cbadaaf5a8a714abd6.raw": "a6aaad31aa982d3c8af112426b982523a78779008106f5ed4bcafab4c935f9ae",
+    "data/research/expanded_official_type_references_20261026_v001/f083bdc8f37d4d45a0e0ec6fd5cd4086.receipt.json": "0b832bde7e601f233fbdc89fe685b23526f29591b74ad9823bab22cd9679b509",
+    "data/research/expanded_official_type_references_20261026_v001/f083bdc8f37d4d45a0e0ec6fd5cd4086.raw": "adf8a6041ca3ea38c16edffbaec5b413da28d47592d7334ddd4c4defe13cae35",
+    "data/research/expanded_official_type_references_20261026_v001/bd92dee1018f421fae1ace119fc2f706.raw": "b4c254695ea77a85967dc912c2791532b2fb402ab6628b173da7571497a37cb8",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/catalog.py": "1bde2ebeb4ae0b3d9651175164f30ad8ee4de9ec5420a52c3095f18cc474f982",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/ingest.py": "0306244fba26a2bb8c7c4be346dd3e7577d015ab36aadc3fea5d0a08f1e50b48",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/funding_inputs.py": "917f61c3953ddd9e20a5ebeca0bc863dc00d85e249ac05aa3756488ec9ff2618",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/cohort.py": "9c17ab4241063546889eaf67d02201625e774636544e941a211120496e90eed9",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/capture_types.py": "2d3a7c464ad387352c5be0c3fb1c386e80ee45eb1c30ef40eb698d927065b7ec",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/audit_funding.py": "7cb8ffd635e2a8faa925870d58db96ac887d29c9e6ec7d7e6c61cbb13001054a",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/audit_market.py": "512ee7ac62874a86c2cf2f43eafff6742077f6a818a462b2f3bd5491e21a97d8",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/audit_cohort.py": "ff1235b8274cb4ecc9a06f39415d01716d9d6f8b2a728bb593528fed6abd1280",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/expanded_market/funding_recovery.json": "caa05aaa80b0d8f64ddb112f4e6d2f44159cf9d12e8584e4bc3b1c4a2c5ba2cf"
+  },
+  "portable_copies": {
+    "cohort_audit.json": "ab1d0d48bc0dbd7eaeca76944d058640c273fd83d4cdd30a009a7ceb2623160b",
+    "market_audit.json": "60251d4728d917f49b0ba34dd392c8968ef42f93ff911a046224e18a0486879b",
+    "funding_audit.json": "d21b566d6d2c7f1d139f06f870c08ae59b54efe80d50e2617fe27c04dccd5dfa",
+    "funding_unknown_marks.json": "cd15e76741c3968747837a1828cfe20654834b34ea5b24833243214fad5a4d3c",
+    "gaps.json": "61646df281305476464def60c3a81a84a1dde6a822635913af5283d8c6e025b3"
+  },
+  "new_financial_accounts": 0,
+  "historical_certification_passed": false
+}

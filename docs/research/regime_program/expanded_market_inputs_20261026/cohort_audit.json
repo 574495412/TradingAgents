@@ -1,0 +1,10 @@
+{
+  "schema": "expanded-cohort-independent-audit.v1",
+  "passed": true,
+  "decisions": 89,
+  "exact_selected_and_eligible_counts": true,
+  "cohort_completion_sha256": "6ccaf1ea9f82fc37eff5ced392222a530599f531fa1690955e805d688b8301d8",
+  "source_sha256": "ff1235b8274cb4ecc9a06f39415d01716d9d6f8b2a728bb593528fed6abd1280",
+  "new_financial_accounts": 0,
+  "historical_versions_certified": false
+}

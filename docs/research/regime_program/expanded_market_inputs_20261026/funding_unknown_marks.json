@@ -1,0 +1,110 @@
+[
+  {
+    "symbol": "ALLOUSDT",
+    "time": "2025-11-11T12:00:00.002000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-06-01T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "APRUSDT",
+    "time": "2025-10-23T08:00:00.001000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-17T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "BARDUSDT",
+    "time": "2025-09-18T08:00:00.002000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-03-23T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "EDENUSDT",
+    "time": "2025-09-30T08:00:00.005000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-05-25T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-23T08:00:00.001000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-23T12:00:00+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-23T16:00:00.004000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-23T20:00:00+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-24T00:00:00+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-24T04:00:00.002000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "ONUSDT",
+    "time": "2025-10-24T08:00:00+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-08-10T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  },
+  {
+    "symbol": "SAHARAUSDT",
+    "time": "2025-06-26T12:00:00.005000+00:00",
+    "mark": 0.0,
+    "rate": 5e-05,
+    "first_candidate": "2026-03-16T00:00:00+00:00",
+    "before_first_candidate": true,
+    "inside_first_predictor_window": false
+  }
+]

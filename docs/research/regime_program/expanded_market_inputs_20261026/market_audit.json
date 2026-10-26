@@ -1,0 +1,21 @@
+{
+  "schema": "expanded-market-independent-reconciliation.v1",
+  "source_integrity_passed": true,
+  "manifest_files_checked": {
+    "data/research/expanded_5m_market_20261026_v001": 5806,
+    "results/research/expanded_market_cohort_20261026_v001": 5
+  },
+  "symbols": 175,
+  "rows": 27386202,
+  "raw_or_adopted_numeric_rows_reconciled": 27386202,
+  "interior_missing_bars": 300,
+  "unusable_execution_bars": 1037090,
+  "complete_days_compared": 95059,
+  "daily_conflicting_days": 120,
+  "gap_days": 2,
+  "daily_and_five_minute_sources_concordant": false,
+  "historical_tradability_certified": false,
+  "financial_accounts": 0,
+  "profit_goal_met": false,
+  "no_prices_imputed": true
+}

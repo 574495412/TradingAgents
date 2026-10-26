@@ -1,0 +1,1244 @@
+{
+  "schema": "expanded-funding-independent-audit.v1",
+  "passed": true,
+  "source_sha256": "7cb8ffd635e2a8faa925870d58db96ac887d29c9e6ec7d7e6c61cbb13001054a",
+  "inputs_completion_sha256": "819672f2b74eb3944b795f4a33042d9987a9388b84cde0e9753661c6cc41f9d5",
+  "cohort_completion_sha256": "6ccaf1ea9f82fc37eff5ced392222a530599f531fa1690955e805d688b8301d8",
+  "symbols": 175,
+  "records": 473223,
+  "unqualified_marks": 12,
+  "unqualified_marks_before_first_candidate_only": true,
+  "past_seven_day_anchors": 2670,
+  "max_decimal_sum_error": 2.220446049250313e-16,
+  "actual_historical_schedule_certified": false,
+  "payable_cashflows_certified": false,
+  "new_financial_accounts": 0,
+  "profit_goal_met": false,
+  "symbol_reports": [
+    {
+      "symbol": "1000BONKUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "1000LUNCUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-08T00:00:00+00:00"
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "1000SHIBUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ACEUSDT",
+      "records": 3946,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "ACHUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "AGLDUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "AIOTUSDT",
+      "records": 2929,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "symbol": "AKEUSDT",
+      "records": 2036,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "ALLOUSDT",
+      "records": 1760,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 1,
+      "first_candidate": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ALPACAUSDT",
+      "records": 2054,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-28T00:00:00+00:00"
+    },
+    {
+      "symbol": "APEUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-04T00:00:00+00:00"
+    },
+    {
+      "symbol": "API3USDT",
+      "records": 4278,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-31T00:00:00+00:00"
+    },
+    {
+      "symbol": "APRUSDT",
+      "records": 1875,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 1,
+      "first_candidate": "2026-08-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "APTUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-07-07T00:00:00+00:00"
+    },
+    {
+      "symbol": "ARCUSDT",
+      "records": 3547,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-03-02T00:00:00+00:00"
+    },
+    {
+      "symbol": "ARIAUSDT",
+      "records": 2289,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-13T00:00:00+00:00"
+    },
+    {
+      "symbol": "ASTERUSDT",
+      "records": 2078,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-03-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "AUCTIONUSDT",
+      "records": 3751,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "AXSUSDT",
+      "records": 2679,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-01-19T00:00:00+00:00"
+    },
+    {
+      "symbol": "BAKEUSDT",
+      "records": 848,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-22T00:00:00+00:00"
+    },
+    {
+      "symbol": "BANANAS31USDT",
+      "records": 3170,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "BANANAUSDT",
+      "records": 3842,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-07T00:00:00+00:00"
+    },
+    {
+      "symbol": "BANKUSDT",
+      "records": 3103,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "BARDUSDT",
+      "records": 2736,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 1,
+      "first_candidate": "2026-03-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "BCHUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "BEATUSDT",
+      "records": 2090,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-08T00:00:00+00:00"
+    },
+    {
+      "symbol": "BERAUSDT",
+      "records": 3427,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-02-02T00:00:00+00:00"
+    },
+    {
+      "symbol": "BICOUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "BIOUSDT",
+      "records": 4443,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-08-25T00:00:00+00:00"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "records": 2054,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "BNBUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "BNXUSDT",
+      "records": 919,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "BROCCOLI714USDT",
+      "records": 3206,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-01-12T00:00:00+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": null
+    },
+    {
+      "symbol": "BTRUSDT",
+      "records": 2234,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-31T00:00:00+00:00"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "records": 2721,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-02-02T00:00:00+00:00"
+    },
+    {
+      "symbol": "BUSDT",
+      "records": 2797,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-18T00:00:00+00:00"
+    },
+    {
+      "symbol": "CAKEUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-03T00:00:00+00:00"
+    },
+    {
+      "symbol": "CFXUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-07-28T00:00:00+00:00"
+    },
+    {
+      "symbol": "COTIUSDT",
+      "records": 2577,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-03T00:00:00+00:00"
+    },
+    {
+      "symbol": "CRCLUSDT",
+      "records": 619,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "CRVUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "CYSUSDT",
+      "records": 1574,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "DASHUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-11-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "DEGOUSDT",
+      "records": 2928,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-03-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "DEXEUSDT",
+      "records": 3994,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-27T00:00:00+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "DOGSUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-18T00:00:00+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "DUSKUSDT",
+      "records": 2602,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-01-26T00:00:00+00:00"
+    },
+    {
+      "symbol": "EDENUSDT",
+      "records": 2013,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 1,
+      "first_candidate": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "symbol": "EIGENUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-10-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ENJUSDT",
+      "records": 2614,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-13T00:00:00+00:00"
+    },
+    {
+      "symbol": "ENSUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "EOSUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-07T00:00:00+00:00"
+    },
+    {
+      "symbol": "ESPORTSUSDT",
+      "records": 2771,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-05-26T00:00:00+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "records": 1994,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "FHEUSDT",
+      "records": 3037,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-22T00:00:00+00:00"
+    },
+    {
+      "symbol": "FIDAUSDT",
+      "records": 3730,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-08T00:00:00+00:00"
+    },
+    {
+      "symbol": "FILUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "FTMUSDT",
+      "records": 530,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "GALAUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-27T00:00:00+00:00"
+    },
+    {
+      "symbol": "GASUSDT",
+      "records": 3726,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-21T00:00:00+00:00"
+    },
+    {
+      "symbol": "GMTUSDT",
+      "records": 2637,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "HBARUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "HEIUSDT",
+      "records": 3400,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "HIFIUSDT",
+      "records": 1695,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "HIGHUSDT",
+      "records": 1601,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-27T00:00:00+00:00"
+    },
+    {
+      "symbol": "HOMEUSDT",
+      "records": 3029,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-22T00:00:00+00:00"
+    },
+    {
+      "symbol": "HUSDT",
+      "records": 3010,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-29T00:00:00+00:00"
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "records": 2750,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ICPUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-11-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "INJUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "INTCUSDT",
+      "records": 632,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-03T00:00:00+00:00"
+    },
+    {
+      "symbol": "IPUSDT",
+      "records": 3569,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-22T00:00:00+00:00"
+    },
+    {
+      "symbol": "JELLYJELLYUSDT",
+      "records": 3152,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-11-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "JUPUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-27T00:00:00+00:00"
+    },
+    {
+      "symbol": "KAITOUSDT",
+      "records": 3343,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-10-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "LABUSDT",
+      "records": 2298,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-04T00:00:00+00:00"
+    },
+    {
+      "symbol": "LDOUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "LINKUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "LITUSDT",
+      "records": 1506,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-01-12T00:00:00+00:00"
+    },
+    {
+      "symbol": "LPTUSDT",
+      "records": 4577,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-02T00:00:00+00:00"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "LUNA2USDT",
+      "records": 3201,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "LYNUSDT",
+      "records": 2476,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "records": 3336,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-28T00:00:00+00:00"
+    },
+    {
+      "symbol": "MASKUSDT",
+      "records": 3947,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-09T00:00:00+00:00"
+    },
+    {
+      "symbol": "MEMEUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-08T00:00:00+00:00"
+    },
+    {
+      "symbol": "MERLUSDT",
+      "records": 3058,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-05-12T00:00:00+00:00"
+    },
+    {
+      "symbol": "MSTRUSDT",
+      "records": 619,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-24T00:00:00+00:00"
+    },
+    {
+      "symbol": "NEARUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "NEIROUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "NMRUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "NOMUSDT",
+      "records": 2210,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "OMUSDT",
+      "records": 2730,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ONGUSDT",
+      "records": 3858,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-31T00:00:00+00:00"
+    },
+    {
+      "symbol": "ONTUSDT",
+      "records": 3058,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "ONUSDT",
+      "records": 1876,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 7,
+      "first_candidate": "2026-08-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "OPUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-05-26T00:00:00+00:00"
+    },
+    {
+      "symbol": "ORCAUSDT",
+      "records": 4707,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-04T00:00:00+00:00"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "PAXGUSDT",
+      "records": 3135,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-10-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-07-07T00:00:00+00:00"
+    },
+    {
+      "symbol": "PEOPLEUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-05-19T00:00:00+00:00"
+    },
+    {
+      "symbol": "PIPPINUSDT",
+      "records": 4843,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "PIXELUSDT",
+      "records": 3728,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-03-16T00:00:00+00:00"
+    },
+    {
+      "symbol": "PLAYUSDT",
+      "records": 2404,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "PNUTUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-05-12T00:00:00+00:00"
+    },
+    {
+      "symbol": "POPCATUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-24T00:00:00+00:00"
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "records": 2912,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-10-13T00:00:00+00:00"
+    },
+    {
+      "symbol": "PYTHUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "RAREUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-17T00:00:00+00:00"
+    },
+    {
+      "symbol": "RESOLVUSDT",
+      "records": 3461,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-12-08T00:00:00+00:00"
+    },
+    {
+      "symbol": "RIVERUSDT",
+      "records": 2942,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-03T00:00:00+00:00"
+    },
+    {
+      "symbol": "RVNUSDT",
+      "records": 3975,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-16T00:00:00+00:00"
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "records": 3423,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 1,
+      "first_candidate": "2026-03-16T00:00:00+00:00"
+    },
+    {
+      "symbol": "SANDUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-30T00:00:00+00:00"
+    },
+    {
+      "symbol": "SIGNUSDT",
+      "records": 4528,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-03-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "records": 3639,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-02-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "SKLUSDT",
+      "records": 2871,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-09-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "records": 2852,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-04T00:00:00+00:00"
+    },
+    {
+      "symbol": "SNXUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-10-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "SPELLUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-03T00:00:00+00:00"
+    },
+    {
+      "symbol": "SPXUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "STEEMUSDT",
+      "records": 3855,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-20T00:00:00+00:00"
+    },
+    {
+      "symbol": "STOUSDT",
+      "records": 3159,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-04-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "STRKUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-11-24T00:00:00+00:00"
+    },
+    {
+      "symbol": "SUIUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "SYNUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-29T00:00:00+00:00"
+    },
+    {
+      "symbol": "TAOUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-02-03T00:00:00+00:00"
+    },
+    {
+      "symbol": "TIAUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-27T00:00:00+00:00"
+    },
+    {
+      "symbol": "TLMUSDT",
+      "records": 2414,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "symbol": "TNSRUSDT",
+      "records": 4478,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-11-24T00:00:00+00:00"
+    },
+    {
+      "symbol": "TONUSDT",
+      "records": 3273,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-07T00:00:00+00:00"
+    },
+    {
+      "symbol": "TRBUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-02T00:00:00+00:00"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "records": 3541,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-07-21T00:00:00+00:00"
+    },
+    {
+      "symbol": "TRXUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "TURBOUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-05-05T00:00:00+00:00"
+    },
+    {
+      "symbol": "TUTUSDT",
+      "records": 3176,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-08-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "UBUSDT",
+      "records": 2120,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-11T00:00:00+00:00"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "VANRYUSDT",
+      "records": 3623,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-13T00:00:00+00:00"
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "records": 2474,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "VINEUSDT",
+      "records": 2754,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-08-04T00:00:00+00:00"
+    },
+    {
+      "symbol": "VIRTUALUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-06-09T00:00:00+00:00"
+    },
+    {
+      "symbol": "VOXELUSDT",
+      "records": 3716,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-04-21T00:00:00+00:00"
+    },
+    {
+      "symbol": "VVVUSDT",
+      "records": 3477,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-03-09T00:00:00+00:00"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "WLDUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "WLFIUSDT",
+      "records": 2240,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-02-23T00:00:00+00:00"
+    },
+    {
+      "symbol": "XAGUSDT",
+      "records": 1419,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-07-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "XAUUSDT",
+      "records": 1581,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-06-15T00:00:00+00:00"
+    },
+    {
+      "symbol": "XLMUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "XMRUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-01-19T00:00:00+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ZBTUSDT",
+      "records": 2294,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2026-05-18T00:00:00+00:00"
+    },
+    {
+      "symbol": "ZECUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-10-06T00:00:00+00:00"
+    },
+    {
+      "symbol": "ZENUSDT",
+      "records": 1845,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-01-01T00:00:00+00:00"
+    },
+    {
+      "symbol": "ZKUSDT",
+      "records": 3734,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-11-10T00:00:00+00:00"
+    },
+    {
+      "symbol": "ZROUSDT",
+      "records": 3689,
+      "raw_or_reference_reconciled": true,
+      "unqualified_marks": 0,
+      "first_candidate": "2025-03-31T00:00:00+00:00"
+    }
+  ]
+}

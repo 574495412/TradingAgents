@@ -1,0 +1,83 @@
+{
+  "schema": "expanded-market-evidence.v1",
+  "title": "扩展历史币池 · 执行行情与实际资金费",
+  "decisions": 89,
+  "symbols": 175,
+  "memberships": 2670,
+  "market_rows": 27386202,
+  "funding_events": 473223,
+  "new_archive_symbols": 149,
+  "reused_market_symbols": 26,
+  "archive_http_requests": 5452,
+  "funding_api_requests": 478,
+  "interior_missing_bars": 300,
+  "unusable_execution_bars": 1037090,
+  "compared_complete_days": 95059,
+  "daily_conflicting_days": 120,
+  "nonpositive_or_unknown_funding_marks": 12,
+  "unknown_marks_before_first_candidate_only": true,
+  "classifications_pending": [
+    {
+      "symbol": "CRCLUSDT",
+      "capture_type": "EQUITY",
+      "capture_contract_type": "TRADIFI_PERPETUAL",
+      "historical_type_calendar_certified": false
+    },
+    {
+      "symbol": "INTCUSDT",
+      "capture_type": "EQUITY",
+      "capture_contract_type": "TRADIFI_PERPETUAL",
+      "historical_type_calendar_certified": false
+    },
+    {
+      "symbol": "MSTRUSDT",
+      "capture_type": "EQUITY",
+      "capture_contract_type": "TRADIFI_PERPETUAL",
+      "historical_type_calendar_certified": false
+    },
+    {
+      "symbol": "XAGUSDT",
+      "capture_type": "COMMODITY",
+      "capture_contract_type": "TRADIFI_PERPETUAL",
+      "historical_type_calendar_certified": false
+    },
+    {
+      "symbol": "XAUUSDT",
+      "capture_type": "COMMODITY",
+      "capture_contract_type": "TRADIFI_PERPETUAL",
+      "historical_type_calendar_certified": false
+    }
+  ],
+  "cohort_audit_passed": true,
+  "market_integrity_passed": true,
+  "funding_arithmetic_passed": true,
+  "daily_and_five_minute_sources_concordant": false,
+  "missing_prices_imputed": false,
+  "historical_tradability_certified": false,
+  "payable_cashflows_certified": false,
+  "dense_engine_compatible": false,
+  "type_capture": {
+    "complete": false,
+    "official_cms_details": 3,
+    "named_symbols": 4,
+    "remaining_blog_response": {
+      "url": "https://www.binance.com/en/blog/futures/2106113045523004581",
+      "status": 202,
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "captured_at_utc": "2026-10-26T00:01:52.814594+00:00"
+    }
+  },
+  "new_financial_accounts": 0,
+  "portfolio_actual": null,
+  "metrics": {
+    "net_return": null,
+    "win_rate": null,
+    "max_drawdown": null,
+    "sharpe": null,
+    "capacity_usdt": null
+  },
+  "profit_goal_met": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "next_action": "先按事前可用的官方产品类型修订加密资格并冻结来源差异情景；新增稀疏日历/合约边界引擎，真实无量区间不成交、非空库存缺标记或未知终端现金即阻断，风险和费用跨年连续。随后只比较已登记资金费、成本门槛、MAX、动量与现金，完成财务独立复算、真实进程恢复和容量后再判断模块及总账户。"
+}

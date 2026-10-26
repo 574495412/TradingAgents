@@ -1,0 +1,66 @@
+{
+  "schema": "expanded-funding-continuation.v1",
+  "parent": "data/research/expanded_exact_funding_collection_20261026_v001",
+  "parent_api_calls": 468,
+  "maximum_additional_calls": 60,
+  "maximum_combined_calls": 528,
+  "original_limit": 1200,
+  "maximum_pages_per_symbol": 10,
+  "limit": 1000,
+  "end_inclusive": 1788220799999,
+  "workers": 3,
+  "transport_retries": 0,
+  "policy": "Keep first full raw page including zero markPrice. Continue last actual fundingTime+1ms. Finite time/rate and strict time ordering required; nonpositive/nonfinite marks remain explicit unqualified cashflow data. No mark substitution or removed symbols. Financial use requires positive event mark for every held event and lifecycle validity. Recovery is collection only, not financial admission.",
+  "scope": [
+    {
+      "symbol": "ALLOUSDT",
+      "parent_path": "data/research/expanded_exact_funding_collection_20261026_v001/raw/ALLOUSDT_page000.json",
+      "parent_sha256": "fe14afa0d51240112979280ca23510f3f32ab0eb41ef209563f57fd2b24fa46b",
+      "rows": 1000,
+      "last_time": 1777248000004,
+      "known_nonpositive_marks": 1
+    },
+    {
+      "symbol": "APRUSDT",
+      "parent_path": "data/research/expanded_exact_funding_collection_20261026_v001/raw/APRUSDT_page000.json",
+      "parent_sha256": "9938024918ba35ff4fd97cf94fee2fed10f4f76772b305e75d490e2d1939721e",
+      "rows": 1000,
+      "last_time": 1775592000000,
+      "known_nonpositive_marks": 1
+    },
+    {
+      "symbol": "BARDUSDT",
+      "parent_path": "data/research/expanded_exact_funding_collection_20261026_v001/raw/BARDUSDT_page000.json",
+      "parent_sha256": "29d5a9347f9e178c8a8bc8ef9497e2e1c82769e7809d2051d31e64cee7d75f65",
+      "rows": 1000,
+      "last_time": 1772568000000,
+      "known_nonpositive_marks": 1
+    },
+    {
+      "symbol": "EDENUSDT",
+      "parent_path": "data/research/expanded_exact_funding_collection_20261026_v001/raw/EDENUSDT_page000.json",
+      "parent_sha256": "988380fd7f89532b71c90bcf5f80b3771d7d3a3ac0aeb7f7cd0f6f71501838ae",
+      "rows": 1000,
+      "last_time": 1773604800000,
+      "known_nonpositive_marks": 1
+    },
+    {
+      "symbol": "ONUSDT",
+      "parent_path": "data/research/expanded_exact_funding_collection_20261026_v001/raw/ONUSDT_page000.json",
+      "parent_sha256": "a7b7660e5ecea109e49940051cbb83a6be402fd8f8c6568e1b931510c8c60cb0",
+      "rows": 1000,
+      "last_time": 1775592000000,
+      "known_nonpositive_marks": 7
+    },
+    {
+      "symbol": "SAHARAUSDT",
+      "parent_path": "data/research/expanded_exact_funding_collection_20261026_v001/raw/SAHARAUSDT_page000.json",
+      "parent_sha256": "1bf6adfa8449dfaacdeda9b9183d0344868018c6329407e1d9e8b3d61ec83cb2",
+      "rows": 1000,
+      "last_time": 1759622400000,
+      "known_nonpositive_marks": 1
+    }
+  ],
+  "new_financial_accounts": 0,
+  "profit_goal_met": false
+}

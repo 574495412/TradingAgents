@@ -1,0 +1,14 @@
+{
+  "manifest": {
+    "funding_unknown_marks.json": "cd15e76741c3968747837a1828cfe20654834b34ea5b24833243214fad5a4d3c",
+    "summary.json": "c9fadcd8232118cb06e46ae18e5c6cbf53f22168df749719f8dcf719733bd496",
+    "funding_audit.json": "d21b566d6d2c7f1d139f06f870c08ae59b54efe80d50e2617fe27c04dccd5dfa",
+    "cohort_audit.json": "ab1d0d48bc0dbd7eaeca76944d058640c273fd83d4cdd30a009a7ceb2623160b",
+    "README.md": "0ed25098564fd8ee98e1c7d11a1e02414ac1dc1c7ff2d78b0101e088bec66be1",
+    "gaps.json": "61646df281305476464def60c3a81a84a1dde6a822635913af5283d8c6e025b3",
+    "market_audit.json": "60251d4728d917f49b0ba34dd392c8968ef42f93ff911a046224e18a0486879b",
+    "verification.json": "0e633a0e6f6549ee3766c612d0f01b91bbb04855b801047038909bf0ab24a5e8"
+  },
+  "financial_accounts": 0,
+  "historical_certification_passed": false
+}
