@@ -1,0 +1,22 @@
+{
+  "schema": "matched-carry-pre-account-horizon-amendment.v1",
+  "version": "20261026_v002",
+  "parent_plan": "research_tools/matched_carry/plan.json",
+  "parent_registration": "results/research/matched_carry_registration_20261026_v001",
+  "daily_sources": "data/research/matched_carry_spot_daily_20261026_v002",
+  "daily_audit": "results/research/matched_carry_daily_audit_20261026_v002",
+  "boundaries": "results/research/matched_carry_boundaries_20261026_v001",
+  "perpetual_registry": "results/research/sparse_identity_registry_20261026_v002",
+  "reason": "Before any new spot account returns, daily source review found two high-rate signals whose already announced first-leg exit is much sooner than7days. Future holding opportunity cannot be represented by the full past7day accrual. Preserve v001 source/screen results and add one explicitly versioned correction, without selecting thresholds from returns.",
+  "horizon_rule": "At each frozen decision use only terminal schedules whose separate source availability is <=decision. Horizon ends at the earliest of next frozen weekly review, registered account terminal, known perpetual entry cutoff and known spot stop minus30minutes. A not-yet-visible notice cannot shorten the past horizon. Maximum horizon7days, no extension beyond the next review.",
+  "entry_rule": "Raw candidate still requires same frozen short slot, approved asset identity, usable prior28spotdays and positive known past7day funding. Guarded candidate additionally requires past7rate * remaining_hours/168 >1.25*.007. Keep same .007stress full four-leg cost, same1.25buffer, same0.5gross risk budget and no parameter search. Planned terminal exits and known notices also force both legs toward flat, never automatic new-asset inventory transfer.",
+  "identity_source_review": "Inspect the official new-listing catalog and already sealed sources for explicit spot/perpetual asset names and episode dates. Current metadata can be recorded as a diagnostic but cannot establish past identity or remove past names. Missing identity remains unknown, including same-ticker collisions.",
+  "identity_budget": {"maximum_catalog_pages":80,"page_size":50,"maximum_new_detail_requests":110,"maximum_total_requests":190,"maximum_workers":4},
+  "before_new_account_returns": true,
+  "original_historical_notices_certified": false,
+  "profit_goal_met": false,
+  "portfolio_actual": null,
+  "independent_oos": false,
+  "orders_enabled": false,
+  "production_eligible": false
+}
