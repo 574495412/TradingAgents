@@ -1,0 +1,7 @@
+{
+  "reason": "SEC's direct HTML delivery inserted Akamai scripts and invalid XHTML attributes; incomplete dependent downloads and an initially wrong plugin path were retained as failed probes. Use the SEC complete submission and exact documented SGML framing boundaries, not script removal or source repairs.",
+  "original_web_bytes_are_not_pristine_filer_document": true,
+  "comparison_to_old_web_capture": "Record both byte hashes and compare every consumed numeric input; changed input is a failure, never silently accepted.",
+  "strategy_or_return_recomputed": false,
+  "reference": "https://www.sec.gov/files/info/edgar/specifications/pds-dissemination-spec030314.pdf"
+}

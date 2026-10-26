@@ -1,0 +1,107 @@
+{
+  "schema": "equity-mechanism-diagnostics.v1",
+  "focal_account": "US_french_mom_12_2_10000_15bps",
+  "window": [
+    "2023-01-03",
+    "2024-06-26"
+  ],
+  "risk_controls": "gross ETF returns, not implementable net benchmark accounts",
+  "net_account_regression": {
+    "observations": 372,
+    "rsquared": 0.18499032157389372,
+    "design_condition_number": 396.226816728426,
+    "hac_lags": 5,
+    "coefficients": {
+      "intercept_daily_return": {
+        "value": -0.0006945040983271344,
+        "standard_error_hac": 0.0008725966239145196,
+        "confidence95": [
+          -0.0024103900401570436,
+          0.0010213818435027746
+        ],
+        "descriptive_pvalue": 0.42659890859953054
+      },
+      "SPY_gross_total_return": {
+        "value": 0.8640733322928481,
+        "standard_error_hac": 0.35077801759515936,
+        "confidence95": [
+          0.1742986384665508,
+          1.5538480261191454
+        ],
+        "descriptive_pvalue": 0.01422193128447662
+      },
+      "QQQ_minus_SPY_gross_return": {
+        "value": 0.14149974346919902,
+        "standard_error_hac": 0.2238633328401262,
+        "confidence95": [
+          -0.2987081775612077,
+          0.5817076644996058
+        ],
+        "descriptive_pvalue": 0.5277254164399037
+      }
+    },
+    "selection_corrected": false,
+    "causal_alpha_identified": false
+  },
+  "paired_net_difference_regression": {
+    "observations": 372,
+    "rsquared": 0.043258713925340975,
+    "design_condition_number": 396.226816728426,
+    "hac_lags": 5,
+    "coefficients": {
+      "intercept_daily_return": {
+        "value": 0.0006275374915857717,
+        "standard_error_hac": 0.0006273800038135057,
+        "confidence95": [
+          -0.000606151132946708,
+          0.0018612261161182514
+        ],
+        "descriptive_pvalue": 0.3178445090836759
+      },
+      "SPY_gross_total_return": {
+        "value": -0.12482290292596773,
+        "standard_error_hac": 0.29605727676136373,
+        "confidence95": [
+          -0.7069939831810695,
+          0.457348177329134
+        ],
+        "descriptive_pvalue": 0.6735497985673677
+      },
+      "QQQ_minus_SPY_gross_return": {
+        "value": -0.18536820870367243,
+        "standard_error_hac": 0.24628777390825107,
+        "confidence95": [
+          -0.669671857505263,
+          0.29893544009791817
+        ],
+        "descriptive_pvalue": 0.45214082894332275
+      }
+    },
+    "selection_corrected": false,
+    "causal_alpha_identified": false
+  },
+  "paired_difference_bootstrap": {
+    "paired_mean_daily_return_difference": 0.00018751928214348607,
+    "circular_block_sessions": 20,
+    "draws": 2000,
+    "seed": 20261026,
+    "descriptive_percentile95": [
+      -0.0007462299119809019,
+      0.0011062880655067116
+    ],
+    "selection_corrected": false,
+    "forward_forecast": false
+  },
+  "risk_control_correlation": 0.9192817802515807,
+  "focal_fixed_cohort_net_correlation": 0.7037065205961415,
+  "new_economic_accounts": 0,
+  "candidate_selection_changed": false,
+  "external_independent_attestation": false,
+  "profit_goal_met": false,
+  "limitations": [
+    "Observed historical period and selected focus already seen; uncertainty intervals are descriptive, not selection-corrected significance, causal identification, capacity certification or forward forecasts. The original plan did not predefine a minimum alpha effect; do not invent one after seeing returns.",
+    "Only the existing truncated common period; 64 EXAS sessions and terminal cash evidence remain missing.",
+    "Per-stock and best-day subtraction is an arithmetic fragility diagnostic, not a new executable portfolio.",
+    "An 80% target can drift with prices and integer-share/no-trade rules. Observed closing exposure does not certify intraday risk."
+  ]
+}

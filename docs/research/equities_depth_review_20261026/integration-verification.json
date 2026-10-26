@@ -1,0 +1,18 @@
+{
+  "local_tests_passed": 49,
+  "canonical_goal_checks": {
+    "version": "20261026_depth_v004",
+    "targets_preserved": true,
+    "actual_metrics_remain_null": true,
+    "new_accounts_still_16": true,
+    "all_external_evidence_remains_missing": true,
+    "api_owner_goal_version_verified": true,
+    "api_owner_acceptance_sha256_verified": true
+  },
+  "canonical_source_hashes": {
+    "tradingagents/research/equities/objectives.json": "2b639848c013a1c3be5edb7cd312484ba8e7a63d9c875d40881aa640444edb28",
+    "docs/research/equities_depth_acceptance_20261026/acceptance.json": "4c12a229012c67ee2909ee2d5d3d7a9c9b75b28de6f3144907fb787aa0431135",
+    "docs/research/equities_depth_acceptance_20261026/README.md": "78e3406c4d057b40e3049e5e5ade359513738833c0f436d0fe6f4b28b8c6e290"
+  },
+  "scope": "Canonical goal and existing read-only interface consistency. Not external attestation or financial performance evidence."
+}

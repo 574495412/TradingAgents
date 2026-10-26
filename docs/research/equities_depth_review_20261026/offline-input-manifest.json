@@ -1,0 +1,1956 @@
+{
+  "schema": "equity-depth-offline-manifest.v1",
+  "scope": "Public raw submissions, Arelle taxonomy cache, pinned tool distributions/plugins and retained local evidence. Hashes establish provenance, not truth or external attestation. Ignored data/results must accompany this manifest for reproduction.",
+  "files": [
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.w3.org/2001/xml.xsd",
+      "bytes": 8836,
+      "sha256": "61960fb3131e38022caad5360e2f33a3382578ab3c80cd58bd74320ede61b20c"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd",
+      "bytes": 23637,
+      "sha256": "5dbad94cecf42918b976449a8e1cb800d57e96442a9d0f5c00ca77e4da831827"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd",
+      "bytes": 16088,
+      "sha256": "f906cd30bc47a81bd1c97e24447f4917b21eb3d8a8b4fc520129ce2534ac5bca"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2003/xl-2003-12-31.xsd",
+      "bytes": 8734,
+      "sha256": "e28b0965d34f4879833b433a62d0d1e86e8b1f22e6b7642bab861983f5bb5818"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2003/xlink-2003-12-31.xsd",
+      "bytes": 3350,
+      "sha256": "5ffa8cb747ccd11e0d6420cf5668b60e3b7a64e20915d0e1774e5559d3343971"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2005/xbrldt-2005.xsd",
+      "bytes": 3929,
+      "sha256": "caf850f08d74c087c7946e6ea6d9fb5c0e9f8edf63bf639ccb9143e77e3390c7"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2006/ref-2006-02-27.xsd",
+      "bytes": 6544,
+      "sha256": "fae0144a41edf741c3b74c866988f64d24714dba4ca822258dea8b490b7904b7"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xbrl/xbrl-instance-2003-12-31-ixmod.xsd",
+      "bytes": 24007,
+      "sha256": "a94f3708860ea83fd0fc3a44e65c48241a9251ea7f8bed3e0100dbd992d536d5"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xbrl/xbrl-linkbase-2003-12-31-ixmod.xsd",
+      "bytes": 15818,
+      "sha256": "53bea9d338f3d7358ea75463276a64398bb10ba81180aab2c781fbdf04c30f9b"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xbrl/xl-2003-12-31.xsd",
+      "bytes": 8449,
+      "sha256": "aee30730060a3d33ff3b24cd0018fb4034efc75f4b3626d27f6d2a9ca6280e51"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xbrl/xlink-2003-12-31.xsd",
+      "bytes": 3217,
+      "sha256": "42055541d925fa21b0e10c6f68d5c40d06b7490b24415b59d0dc7ded02e68f88"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-attribs-1.xsd",
+      "bytes": 3090,
+      "sha256": "3735757aecf3eccc8c4b98ce429d554bd653553c9c6cfb2d67c95c2cb0cf5787"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-base-1.xsd",
+      "bytes": 1370,
+      "sha256": "683aa6226a81d68306798ca0fbc2a39657de380da0bdf13a89c96e5cb2ab6f55"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-bdo-1.xsd",
+      "bytes": 3122,
+      "sha256": "49d12ea7ab2501e0e6673259b47d3759b1ab9d4eebbb8bbbdaccd2a68d17efe3"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-blkphras-1.xsd",
+      "bytes": 6548,
+      "sha256": "3232ba73e8b921f12ea817fb95d9dcf5188ee8144ea91fd70487dbd19d26b3c5"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-blkpres-1.xsd",
+      "bytes": 1383,
+      "sha256": "6d528719fcb31b10371acc529edfdd2baa636e468463b17cd4f38ea91ff63235"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-blkstruct-1.xsd",
+      "bytes": 1783,
+      "sha256": "c413a3840cb68e8050eb185c9301eb49790db14e6c8e0f7b4a888fb70252c74b"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-csismap-1.xsd",
+      "bytes": 4005,
+      "sha256": "160a5e0e9ae1b87016df7b313ce70dfce2684560c3dbb357ff89d1cc78921933"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-datatypes-1.xsd",
+      "bytes": 4878,
+      "sha256": "d7482741ea338080791e5392c55438c15f5221fea7440063ed17bfee2e76064d"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-edit-1.xsd",
+      "bytes": 1544,
+      "sha256": "8093b0bd9789b5e551c652d554fe7f50784ce301fbb8103cd55f5d68ce03187c"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-events-1.xsd",
+      "bytes": 5372,
+      "sha256": "932995924a652991653a80edbc51edba5f2ecdf0754a504aacc0ac351e0743a2"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-form-1.xsd",
+      "bytes": 13733,
+      "sha256": "2966201caa2ca4b1dc1d53be14cdfd2f098c0922f67e64f00568e10b67059fbd"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-framework-1.xsd",
+      "bytes": 2557,
+      "sha256": "f534abb42c167e3486a322cc316d7531b92282317d3f975304e5ed312284f812"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-hypertext-1.xsd",
+      "bytes": 2011,
+      "sha256": "b24be88fe6bbe670fa026c4dbce152b2c2b6aa7f09bc9ab29af8ee9d734e1322"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-image-1.xsd",
+      "bytes": 1778,
+      "sha256": "8a95326b41b4140580ceb778a63f7d7879dc56b028eda63e7b3a218febfe7bc1"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-inlphras-1.xsd",
+      "bytes": 6623,
+      "sha256": "e4099a98a23e866dadf036315b15d4683c64fc98d7d21a90a7581985ff205ca5"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-inlpres-1.xsd",
+      "bytes": 1562,
+      "sha256": "f4fd643750dd51e4f4e0452cbd9abb747443654ee974d133896fb64acc96adf3"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-inlstruct-1.xsd",
+      "bytes": 1929,
+      "sha256": "36c22a2632806f18f41f836040687b189ccd3918d7b4648ea1e84a5acddb74ad"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-inlstyle-1.xsd",
+      "bytes": 1036,
+      "sha256": "d173db1e855a369570994a57f2ddde6f5985333d8bf9f950b7342ba7de112e6f"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-link-1.xsd",
+      "bytes": 1826,
+      "sha256": "e6e8600e9d1fb8e5fb8bac34b06442434e3bc6cafe443a0b1a852f4519fafe09"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-list-1.xsd",
+      "bytes": 3860,
+      "sha256": "3bf63d00adfa3368c5238a1aaab44bbd1af5a9bb3264f21707406880efaa6fe6"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-meta-1.xsd",
+      "bytes": 1611,
+      "sha256": "1cf470deb645bb75970c3b2999bdfe6e49eb5c7a537a350560aa02141e573b32"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-object-1.xsd",
+      "bytes": 2743,
+      "sha256": "4caeceb6176f06cbee30485d5070409b6af4892f76858c1532d5135ad2eb596e"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-param-1.xsd",
+      "bytes": 2114,
+      "sha256": "cb8b341941fa752e8204629507e4e657b4a08e0c0c01d7d39a8df8dfcdcb9773"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-pres-1.xsd",
+      "bytes": 1630,
+      "sha256": "7212dc78171b5e6a9a439b5b5786cdd499bc5eb2215605d158dc35b31cba2893"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-ruby-basic-1.xsd",
+      "bytes": 3389,
+      "sha256": "a1e46a4eaca32fff05eb47471e8bb69de7a42739d962970b5818c433f34c730d"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-script-1.xsd",
+      "bytes": 2803,
+      "sha256": "bc72e7025c5363e3a64ddd1244b06bc52ee5eeb831ccb752226a8710c9146d42"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-ssismap-1.xsd",
+      "bytes": 1666,
+      "sha256": "190d805fff1d31e71cf3607512826079367466178eeac3b5fe917fd5b7fbcd8a"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-struct-1.xsd",
+      "bytes": 3408,
+      "sha256": "25d7e4491f7f573883aadc42edc96a38063cca43bfc1d59f2c17ac985cfc55c0"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-style-1.xsd",
+      "bytes": 2052,
+      "sha256": "53c4393f1c72659d5f79ebda400a4a982dad9a548cddb25cdbb7a045765a7b56"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-table-1.xsd",
+      "bytes": 12031,
+      "sha256": "0ae2c765950e49cb846c6e4cec478ff7e63087171970dacc3d46045985d6327a"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml/xhtml-text-1.xsd",
+      "bytes": 2111,
+      "sha256": "e022b7e24b6d04c24f0c8df81b18553c7d801e213a11675652eaa57337e90fca"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml-inlinexbrl-1_1-definitions.xsd",
+      "bytes": 10365,
+      "sha256": "f4d41d3ab1ae0f820d24b2a3a50e0b9c9dc540211c66e02b4f9e60909b148684"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml-inlinexbrl-1_1-model.xsd",
+      "bytes": 20673,
+      "sha256": "9798e606dd2f118a3e0ca3dcbf27206d1c7617a4b2189b3fd2031fa943f8cb5f"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml-inlinexbrl-1_1-modules.xsd",
+      "bytes": 19996,
+      "sha256": "d250483fffd79739717cdcd34c0761455c22cb56af21dfd154b722e9b99585fc"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/2013/inlineXBRL/xhtml-inlinexbrl-1_1.xsd",
+      "bytes": 1331,
+      "sha256": "ca3b7697e99f92b7f3d22b36fbe57c9bb4ffe7250eaf064a4111d07131077884"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/lrr/arcrole/esma-arcrole-2018-11-21.xsd",
+      "bytes": 1023,
+      "sha256": "52640b1d3568f6fd497e9037abc1734612a30037e1c38fa89447a8878632aceb"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/lrr/role/negated-2009-12-16.xsd",
+      "bytes": 2108,
+      "sha256": "b6b3fdd3bb93dad157f13586b5b9f14998b4940875c78af3f29d28116cc0092a"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/lrr/role/net-2009-12-16.xsd",
+      "bytes": 864,
+      "sha256": "de7db88c29983dab5668dd437fdf659f9b66c1235e1e0240b79573305982a446"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/http/www.xbrl.org/utr/utr.xml",
+      "bytes": 234781,
+      "sha256": "0236426fa29a1c1bca4b6088f65dc75d01df7c3fa716e5c5ae3f0702d0ba9002"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/www.xbrl.org/2020/extensible-enumerations-2.0.xsd",
+      "bytes": 2198,
+      "sha256": "17a021e3e3fd5ca2ff0cde05988c78f12a6cadd71077347e0ae4376a78b586e8"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/www.xbrl.org/dtr/type/2020-01-21/types.xsd",
+      "bytes": 43431,
+      "sha256": "a62f1f3635bc6b6cddd1422ab2c9ba00ebbe73cefc3500e207fa0e9c12ee0293"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/www.xbrl.org/dtr/type/2022-03-31/types.xsd",
+      "bytes": 45291,
+      "sha256": "e7eb1bef6a68845cc0dd5d370d18ceda92978dd54a6809a22286d4e6af87ca4b"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2021/elts/srt-2021-01-31.xsd",
+      "bytes": 132345,
+      "sha256": "a8f17b2a0ca9a4381c1bc26b6e56ba7b49facfcb56f75b9563da85544b26af04"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2021/elts/srt-roles-2021-01-31.xsd",
+      "bytes": 22277,
+      "sha256": "6086e436961855b6af4093caeac01d9c90e8cf1e07f7f1623865add2ceba9159"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2021/elts/srt-types-2021-01-31.xsd",
+      "bytes": 1464,
+      "sha256": "ae3222249a48b14c799baf8ab58e5cb25e137074c4fbfae93dfc88bd137c75b7"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2022/elts/srt-2022.xsd",
+      "bytes": 132668,
+      "sha256": "8bb73872e07466f089d682488163f911a0762edc9a8502ec0746345d22137fa8"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2022/elts/srt-roles-2022.xsd",
+      "bytes": 22508,
+      "sha256": "8adafb9d72002d5b13135d3d403c407402ec27be8d9cda834de9b5e4b63d3352"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2022/elts/srt-types-2022.xsd",
+      "bytes": 1436,
+      "sha256": "b9b3aaf6010dc3e9c283c6b03bcd81c1884661e3e2dafd52abaea5c06d603167"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2022q3/srt-sup-2022q3.xsd",
+      "bytes": 10939,
+      "sha256": "cfc12f142198f8d175894b8d352ad57b4de7cd275c7ada905cbb9d0f0b8882e1"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2023/elts/srt-2023.xsd",
+      "bytes": 143257,
+      "sha256": "e6f6c3c94842807268aa6e6310bf23fbaf387e1530247d5a798cccb1f9f6672e"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2023/elts/srt-roles-2023.xsd",
+      "bytes": 23152,
+      "sha256": "168e9b14e9162bff89a16c4c8891c0af4d61cdf9d9ea5551fe4735d16b2c20bb"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/srt/2023/elts/srt-types-2023.xsd",
+      "bytes": 1653,
+      "sha256": "2d2425ad2291b3c8d1b31f4f91c1cbd43c85f1fbf4c19fefe7196c312f32879a"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2021/elts/us-gaap-2021-01-31.xsd",
+      "bytes": 4710896,
+      "sha256": "1439d8b53c733977a05b818c4fd8cb46c68698c489b93a0ee0a43dff09642caa"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2021/elts/us-roles-2021-01-31.xsd",
+      "bytes": 236645,
+      "sha256": "5740f7ba8c93d36c52733896b3976afbdc7d4c52dfe37d47292e24a38a02f869"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2021/elts/us-types-2021-01-31.xsd",
+      "bytes": 11635,
+      "sha256": "56d537c7d0c15b12991ed39d554d8a2128cb7a18524c2781d0c520f06a1093d6"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2022/elts/us-gaap-2022.xsd",
+      "bytes": 4717120,
+      "sha256": "e8c6b324f1b6f463eddee9d21f9e3daf13103165e8cc3ee107b4cec4d38f9693"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2022/elts/us-roles-2022.xsd",
+      "bytes": 235209,
+      "sha256": "31816a63cb72af5d5a433cf05e637ba3ce2e95ff751524ce9b4978eb5c4566eb"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2022/elts/us-types-2022.xsd",
+      "bytes": 11607,
+      "sha256": "9a261d6eb766625e2daea474513e210ab3e31967b62928cefc33662d63274f68"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2023/elts/us-gaap-2023.xsd",
+      "bytes": 4858012,
+      "sha256": "5b23edf9ea3f1a6e35a50214e72d8a21acc2c262c6490d606a72cee0c3fb342e"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2023/elts/us-roles-2023.xsd",
+      "bytes": 235275,
+      "sha256": "207ca9dc6e2890ec585379643e7fa18cd6d8195b2f39e52d1aed9461519f95b3"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.fasb.org/us-gaap/2023/elts/us-types-2023.xsd",
+      "bytes": 10759,
+      "sha256": "3edc0cab30fb34f4e600d4cd5a34eb2ba47dae9e5e710e15ec662b7bb18aeafe"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/country/2021/country-2021.xsd",
+      "bytes": 42514,
+      "sha256": "921eccde5e8b9e825448ffbc87123126e03c4bffaf9c233e90dad390af73fa89"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/country/2022/country-2022.xsd",
+      "bytes": 42241,
+      "sha256": "706bf0d76808408c37c736b5202ffc55b35de00895d809596b908f0961f9a729"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/country/2023/country-2023.xsd",
+      "bytes": 42500,
+      "sha256": "b020349116649ac236d9a201c1ccf9c934526a58ac12739c11ca4a72ef012ab7"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/dei/2021q4/dei-2021q4.xsd",
+      "bytes": 137573,
+      "sha256": "58f2352af56d0c90e840e8f181f231ce04739e4406f0d8d67037f947b7e832a9"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/dei/2022/dei-2022.xsd",
+      "bytes": 137569,
+      "sha256": "ab7f4ef0960077d050fbd4e59ef2802827bbd317dfaf1296fdd8beb30aec3e66"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/dei/2023/dei-2023.xsd",
+      "bytes": 138005,
+      "sha256": "7467723f0ff8a1effe24c49a3306406915ee29c5d1269dddb4a30a43320a8af6"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/ecd/2023/ecd-2023.xsd",
+      "bytes": 156403,
+      "sha256": "1acb063fd11d35496518589072d9e50138eed8b5965e1b5b349249556c24e451"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/exch/2022/exch-2022.xsd",
+      "bytes": 346955,
+      "sha256": "b32973130f7c6ea1d8113466e3dcbabb90fe8faa572a4cf286a18ce665cd023f"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/exch/2023/exch-2023.xsd",
+      "bytes": 356929,
+      "sha256": "5a904c5e5c560cd8a169ad02997a90452a8523aad1de9934c465325fe39b1f7b"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/stpr/2021/stpr-2021.xsd",
+      "bytes": 11890,
+      "sha256": "559012476f7c083861423854af467f9fde3c27671605ea2fe759c552c8929800"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/stpr/2022/stpr-2022.xsd",
+      "bytes": 11890,
+      "sha256": "74417432ee3f51a3404b70edd2e60e56bd947f457f66c6fee372b3aaa583f499"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/cache/web/https/xbrl.sec.gov/stpr/2023/stpr-2023.xsd",
+      "bytes": 12062,
+      "sha256": "2c2f10edf9965f44d405673ddfdbd801c024ba77f7332299533f4c99ba31e288"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0000950170-22-000796.txt",
+      "bytes": 29316024,
+      "sha256": "58a198d40dcf6862f0efa5b11b0974f4003666bb1d0ef1cde2df990d8029b3d2"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0000950170-22-001981.txt",
+      "bytes": 20023967,
+      "sha256": "9e19095fb8e092e04767e79248416cc1b7a192fadc361b666f20024282ba46ac"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0000950170-23-001409.txt",
+      "bytes": 31445171,
+      "sha256": "453815944369c3e777b32e30af0d4fcf17439d4f73e9be3b7da52c8c6e8a594e"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001124140-22-000022.txt",
+      "bytes": 19199226,
+      "sha256": "25a2de93c4d5e1c3858bb143033b1db63151e8f075898505184aac38c6249d02"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001124140-23-000014.txt",
+      "bytes": 18009432,
+      "sha256": "e6cde0f0b60fb81571c06ac91169a67327e3df7d34b7d2f6664df0dfe86ab9fd"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001124140-24-000012.txt",
+      "bytes": 15930441,
+      "sha256": "b32a393e97e59ab0b3672b3fb29b599f8cffb81304866b0d35ac6fa171a786d9"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001428439-22-000010.txt",
+      "bytes": 13203338,
+      "sha256": "0e6640277989e564a8f0441183a571eb689bac52407b88c52429b278564e78dc"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001428439-23-000007.txt",
+      "bytes": 13193556,
+      "sha256": "4e746782eb399a0ccbdf3ab295cebecee9a6b8fe53964ed6ccac2c07f0e1512b"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001428439-24-000011.txt",
+      "bytes": 11837368,
+      "sha256": "0b01c7dafccc1c25e32d593183c27230af4bce8ab85476b91362f0d2bf53a634"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001558370-23-002559.txt",
+      "bytes": 16234203,
+      "sha256": "bf799d16f4cff1d1467a75175a2455be5e83ef84702897d866a9d03cdf1ec01d"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001585521-22-000037.txt",
+      "bytes": 11797675,
+      "sha256": "51e4b1113c25dad6e663fa26104e1ee25d2639812d1c47b91d1b379e3025f15e"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001585521-23-000035.txt",
+      "bytes": 21837997,
+      "sha256": "9b2c14637f3d5b9f8742e245477c63308fc784419a3f106531741d4c87c21874"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001585521-24-000030.txt",
+      "bytes": 13422469,
+      "sha256": "ada1ca62ce2a8e5efe21ca57f82ab7f06b5b497b3c14df767b9f17255cf50f46"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001628280-22-003825.txt",
+      "bytes": 24112681,
+      "sha256": "92717a47b3b7ce9e270fcf0b0c145225e15e8ad1e3d1968117f38b841bc7a14d"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001628280-23-004840.txt",
+      "bytes": 31484118,
+      "sha256": "68e42c4e1c25e71cdfea0dd2c616a52725759d950d105747f8650cbd27e87fb7"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001628280-24-002390.txt",
+      "bytes": 15527801,
+      "sha256": "3de152d6410563c8e1d94e4457a3e50b9dbb6f6359f14ce31489e7321130c176"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001628280-24-006354.txt",
+      "bytes": 26842128,
+      "sha256": "d773ed43a6fc88f313dc82bcea0df431da55272b49b1099dd6dee55ba6eced3f"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001734722-22-000006.txt",
+      "bytes": 14113054,
+      "sha256": "d215ae0a98d3bbab85ee218f5c200afed1b916cbd00341f6dc6fd85c70457efe"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001734722-23-000017.txt",
+      "bytes": 14167326,
+      "sha256": "8edba46fc3741be4db9418bf21f7ba345dfd70490641f348390eb7a94fb2254a"
+    },
+    {
+      "path": "data/research/equity_arelle_20261026_v001/complete-submissions/0001734722-24-000011.txt",
+      "bytes": 15127657,
+      "sha256": "4c5254f15e57e294a1b854eaa0f133ed935ee42ca83425fd728c4a774c975b8f"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/edgar-pin.json",
+      "bytes": 409,
+      "sha256": "c21794e3d4b0a5cdd44d4bbc5146cf98c11d824a2be7ae5e1fbf52674670b0d9"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/plugins/EDGAR/LICENSE",
+      "bytes": 6554,
+      "sha256": "5537d4d10b76b81b6e8dfd8b644480a4b1efa332fbb0cdb61126c5be781ef7b4"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/plugins/EDGAR/transform/__init__.py",
+      "bytes": 41912,
+      "sha256": "2296586f945ffd95ab37d3d4147c4e45f42ce4e5f397f61143e053208adefbf1"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/plugins/EDGAR/transform/text2num.py",
+      "bytes": 3660,
+      "sha256": "6c9b26354320a2fb34fe380cdc71ff7f8d1cc712811e6b10c661e512f0383409"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/arelle_release-2.47.3-py3-none-any.whl",
+      "bytes": 6168075,
+      "sha256": "e3a4837ab0b8af0525ec7d1f01e5262f4e378cd8f196e2d3319ed725cae2e3bf"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/attrs-26.1.0-py3-none-any.whl",
+      "bytes": 67548,
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/bottle-0.13.4-py2.py3-none-any.whl",
+      "bytes": 103807,
+      "sha256": "045684fbd2764eac9cdeb824861d1551d113e8b683d8d26e296898d3dd99a12e"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/certifi-2026.10.23-py3-none-any.whl",
+      "bytes": 135082,
+      "sha256": "e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/et_xmlfile-2.0.0-py3-none-any.whl",
+      "bytes": 18059,
+      "sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/filelock-4.2.4-py3-none-any.whl",
+      "bytes": 162475,
+      "sha256": "301241438c57936ef93f4243a94f2559022268bfcf9b375a9a72eb0f8db8358e"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/isodate-0.7.2-py3-none-any.whl",
+      "bytes": 22320,
+      "sha256": "28009937d8031054830160fce6d409ed342816b543597cece116d966c6d99e15"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/jaconv-0.5.0-py3-none-any.whl",
+      "bytes": 16831,
+      "sha256": "2914114fe761ca49fc7089e25e6ad4a400c26f262ffce84e13b176916b71610a"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/jsonschema-4.26.0-py3-none-any.whl",
+      "bytes": 90630,
+      "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "bytes": 18437,
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/lxml-6.1.3-cp311-cp311-macosx_10_9_universal2.whl",
+      "bytes": 8563141,
+      "sha256": "c66f858b82497173f73366795fc6ee8171620e75a338506d6b2e7bc16f5fca11"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl",
+      "bytes": 5469159,
+      "sha256": "4cfe66903cc32a9921a6733d96b19bb6abf310397581bbad89c228f5abaf0ee8"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/openpyxl-3.1.5-py2.py3-none-any.whl",
+      "bytes": 250910,
+      "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/packaging-26.3-py3-none-any.whl",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/pandas-3.1.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "bytes": 11159002,
+      "sha256": "0d2ca3b380f0f6cc788780430eb23762619730c11d53989f3982ec96835bfb9e"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/patsy-1.0.3-py2.py3-none-any.whl",
+      "bytes": 233318,
+      "sha256": "d3dbebe8fd5f46e29912d030b63c6268647b59bf788a99e2af28a30234cf357c"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/pillow-13.0.0-cp311-cp311-macosx_11_0_arm64.whl",
+      "bytes": 4856298,
+      "sha256": "37290fbef0c73e2d51d594eb78fded7dc7170d1c3ad0a890269e6fd8c8c4e061"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/pyparsing-3.3.3-py3-none-any.whl",
+      "bytes": 126420,
+      "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "bytes": 229892,
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/referencing-0.37.0-py3-none-any.whl",
+      "bytes": 26766,
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/regex-2026.9.29-cp311-cp311-macosx_11_0_arm64.whl",
+      "bytes": 292123,
+      "sha256": "066d0e3dbfdd739bce2bf8c2a41dd16f73e3d8adc2eb06dd803a36a307f56075"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/rpds_py-2026.9.1-cp311-cp311-macosx_11_0_arm64.whl",
+      "bytes": 346770,
+      "sha256": "3231c4c0e521dafa5be0c9f114ee2c2ad46650836f2d72caa86801950c3e7044"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/scipy-1.17.1-cp311-cp311-macosx_14_0_arm64.whl",
+      "bytes": 20334032,
+      "sha256": "a3472cfbca0a54177d0faa68f697d8ba4c80bbdc19908c3465556d9f7efce9ee"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/six-1.17.0-py2.py3-none-any.whl",
+      "bytes": 11050,
+      "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/statsmodels-0.14.6-cp311-cp311-macosx_11_0_arm64.whl",
+      "bytes": 10003346,
+      "sha256": "341fa68a7403e10a95c7b6e41134b0da3a7b835ecff1eb266294408535a06eb6"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/truststore-0.10.5-py3-none-any.whl",
+      "bytes": 19017,
+      "sha256": "9aaaedaefaf06d8b206278cf8b5012bc897f485a874503501e12d776df78951c"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels/typing_extensions-4.16.0-py3-none-any.whl",
+      "bytes": 45571,
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"
+    },
+    {
+      "path": "data/research/equity_audit_tools_20261026_v001/wheels-manifest.json",
+      "bytes": 3285,
+      "sha256": "af86e8b3c005a53b0b33c3101a92b873806cd85fc54afa280e0a11c2cfcc3c36"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/arelle.json",
+      "bytes": 95381,
+      "sha256": "cae0c454eb469ddaf46c309cd71c57e38dfdc1bf50bbe962341cc0ca3accba97"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/FilingSummary.xml",
+      "bytes": 77732,
+      "sha256": "7268f3d4210b0083391897f80cada3e27a06ca85d6a1005bd7da9931e9154406"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231.htm",
+      "bytes": 7898922,
+      "sha256": "41796afb229d46d684bb52b6d36ec3462a8d40285be664c26cde66632b34ea40"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231.xsd",
+      "bytes": 149721,
+      "sha256": "6d4199439c955ab64aa9e7ce853bc9c69b9e61bc1976b4f4412ee273f5898151"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231_cal.xml",
+      "bytes": 131576,
+      "sha256": "773980168d6787e0856b7daf46e4450c15a058e70bfa990878a61c2c842f37c5"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231_def.xml",
+      "bytes": 613320,
+      "sha256": "edabba5621c1a6c674d09aa68a3c95ca93826bd7bf7c04538dde7ccd5a437f80"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231_htm.xml",
+      "bytes": 6763040,
+      "sha256": "8a404f592359398e82ae868832de8e78893393f7967f65427643937f716d8ea9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231_lab.xml",
+      "bytes": 1079035,
+      "sha256": "5c69d3f1e2a4325963b552a880ed9a0e826ce79331ce72bc04ab9dd5e0bd7d8f"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/documents/tsla-20211231_pre.xml",
+      "bytes": 911036,
+      "sha256": "7b82bf359265d2ed03a0eb7c80ed6df48e59a33125145c5a750b0708da5383b1"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/extraction.json",
+      "bytes": 2067,
+      "sha256": "a5cabf550f2f4cdeac51997271ddf92473099a8189be7d77e6e0a0b4e9bdcf3d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/review.json",
+      "bytes": 1758,
+      "sha256": "e22d33a15fe5c00a797d4112ea149ee4df944590dfae4ee6f2a27e321783b0b7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-000796/worker.log",
+      "bytes": 37,
+      "sha256": "d2e902847213651a47a48cd10e2d1017fc6022cc277c38aa4b2071783944ccc5"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/arelle.json",
+      "bytes": 28285,
+      "sha256": "83b60486135594483afaaecb2e3be742c9a52f51dcbfd424c534b69e0eeba3d8"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/FilingSummary.xml",
+      "bytes": 43715,
+      "sha256": "92d4fe888a72fd3df0b3107e52888e304aad8f0905f347c634ac09d4ba7cc2c4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231.htm",
+      "bytes": 3932720,
+      "sha256": "a7df8be5198d15f7a29ea2b0918b04e97ab5666e7fd54bce134f118a1f2bda7f"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231.xsd",
+      "bytes": 80953,
+      "sha256": "b8367b32bfd19642dd0a7ab70b223a83c86cbef087f9106d9decc7f8c24702ec"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231_cal.xml",
+      "bytes": 57596,
+      "sha256": "ff29292502c58c9a4a5bf73cd388c0304dab15ad4bc9f040d6d2a45f2f10d9aa"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231_def.xml",
+      "bytes": 309076,
+      "sha256": "2eaa74d73de8751267b7ff78bda6341e67d8802a16ba26b846e193b1211f31ac"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231_htm.xml",
+      "bytes": 2561584,
+      "sha256": "f834918eea107a60a97c9d43aa8afbb1673403dc77131f11272f9b7a7243f66d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231_lab.xml",
+      "bytes": 641616,
+      "sha256": "1c3c9a4589523dc3d155ba69f08f42b7fceb15c8ca10a7d2e14333037262a1f0"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/documents/ntla-20211231_pre.xml",
+      "bytes": 490051,
+      "sha256": "61dc7a79451c3187758d5ec6a0b17093936d9f2bb5380da08134c6977162ec93"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/extraction.json",
+      "bytes": 2065,
+      "sha256": "6cd176f2867d297e0e7ab867870ba83f67b032283524c3114adc87876b764148"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/review.json",
+      "bytes": 2104,
+      "sha256": "56ee3099d8f22fa5af64c1bbc4fd563666dde88fcb538800c6be64c7aa0ca4a3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-22-001981/worker.log",
+      "bytes": 36,
+      "sha256": "6c424ab70db26260498a1d7e2b68fe076915dd6fe3a6b11006adc9e27512261c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/arelle.json",
+      "bytes": 71339,
+      "sha256": "d13bb768ae745e4f6663abdc497df027292c72fef013d76ea3f2d89a7fcae674"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/FilingSummary.xml",
+      "bytes": 73313,
+      "sha256": "2c99e2ab14d2988cb21e5da5bbb019652428e774a1651643f35bfa6345f3a8e5"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231.htm",
+      "bytes": 7964287,
+      "sha256": "52a2625c773c648badea7fab99ebfda14fc72a23a2177e51911e5d946cc2b0fc"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231.xsd",
+      "bytes": 147811,
+      "sha256": "de98a4db9f397e41c08342c0eda7e74535b9f3d9a491e39dc9efba74a40d19df"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231_cal.xml",
+      "bytes": 136182,
+      "sha256": "faa6d132d9b898f310af2625405f7709bc4709b8df1ab727191084702c976e87"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231_def.xml",
+      "bytes": 550437,
+      "sha256": "f8cb460d231afbb7a4d48d3e37efd906ab718abb6e7a488020be5a868b41ca4b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231_htm.xml",
+      "bytes": 6979630,
+      "sha256": "483e8d7a0563bce548a125017dfcce9cb1136e578afd7a30af7ef56d294dc2da"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231_lab.xml",
+      "bytes": 1070834,
+      "sha256": "508ec8bfd8ee58a5c689b03103b6826fa1fe05f53b79c32472013a550745cc8d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/documents/tsla-20221231_pre.xml",
+      "bytes": 843203,
+      "sha256": "ad0dd1d700bf3c3ce19e363833bfc06cdb729cab8f3af94574938b1dec74d5f6"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/extraction.json",
+      "bytes": 2070,
+      "sha256": "7f4a5ed5c8c7495c378e881bc08a62abff5e516343f4e7d8acd637c890dfbc4d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/review.json",
+      "bytes": 1758,
+      "sha256": "a29ada726d6b6236f5e42b38a12efba1a9f413b660aca324a7a3b3af7eb18170"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0000950170-23-001409/worker.log",
+      "bytes": 36,
+      "sha256": "1c68af71dd97ec89209de507b33b9dd82083a8e9bd359f480627c667a245d64c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/arelle.json",
+      "bytes": 64920,
+      "sha256": "f603257c519c038b9413943008531b72c913fad4584bb9c661ce7343efaa72fc"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/FilingSummary.xml",
+      "bytes": 78429,
+      "sha256": "f9eb05979ac04f5a72ac7b01d5a4eaa00105f3ecf21a827fc8475b0e02f35270"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231.htm",
+      "bytes": 3736292,
+      "sha256": "5568ea13d9e7ffc6bbd0b8107c546f8023103c645e81eb5e9866f027b6c079f0"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231.xsd",
+      "bytes": 123932,
+      "sha256": "6721d0ba98ad20e83c989fd8deef9086180ae35f0dd980ed5fa3237c1d7e7118"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231_cal.xml",
+      "bytes": 165765,
+      "sha256": "88b73ac5d04482bf2e9162d44a34050def4d4bc5b6bab858a49ec1c0c84d02d6"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231_def.xml",
+      "bytes": 769415,
+      "sha256": "31ec870009d52ace087e0641950eacd0bc830cec598100fb0048d51ce2b2b282"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231_htm.xml",
+      "bytes": 3787556,
+      "sha256": "f4741358310b069a1a612c316b8e2e8e89f0ae84ddcf5358d4ee7697a3ea540f"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231_lab.xml",
+      "bytes": 1387784,
+      "sha256": "5792256317426de619b65707c8b16927b96f2e7fd2de77b4f74a888a1f381379"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/documents/exas-20211231_pre.xml",
+      "bytes": 1063279,
+      "sha256": "3e15a1209b02d35ea6eba5eb0dd1904b6bc948664715b95b8272f3fb6abba054"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/extraction.json",
+      "bytes": 2060,
+      "sha256": "fb273f8a6f87a68fe07efd211ac346c7577439f1d28ec92eace9826a678c3b69"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/review.json",
+      "bytes": 2135,
+      "sha256": "e72df89ac115774e9b75669067d665a02dc35935da71fa6e22a815df10ec24b9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-22-000022/worker.log",
+      "bytes": 36,
+      "sha256": "f577ed5556807e9fb07ee128af07fb830f3442cd554655107405333aa7cb9d02"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/arelle.json",
+      "bytes": 45162,
+      "sha256": "ab3ef152d905333db88c13231df860afb06578082d9a9dc1b60542c4e692fb02"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/FilingSummary.xml",
+      "bytes": 67897,
+      "sha256": "c5cbc4896b0ff5a07ff8cda1fce68153133431259ce43653ffbdfd98d95b1958"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231.htm",
+      "bytes": 3555614,
+      "sha256": "c84e773ecf3eb84272f2e9ab31d912f84797231e5589997870c18572cae0a118"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231.xsd",
+      "bytes": 106852,
+      "sha256": "ae5d8ff913bc323f6523289065e0e71ce8638b646708ad68adcd0a42584fbc0d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231_cal.xml",
+      "bytes": 147527,
+      "sha256": "054598217b220dac94bbeb0daf5eb942814d0f33179d77fd34914787f3ef2406"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231_def.xml",
+      "bytes": 690565,
+      "sha256": "79714d9daddf6ab685434cb62d4e758c627f5938adb9e6f47f7cddddb9737712"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231_htm.xml",
+      "bytes": 3392764,
+      "sha256": "59281b265127b6a5b98415f9d7baedb4976e735d62f1b67eb181b5a841ee830c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231_lab.xml",
+      "bytes": 1318354,
+      "sha256": "498da96588221a16c89fecd7c476852fd721be4276e848906d766c80a5bacb13"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/documents/exas-20221231_pre.xml",
+      "bytes": 960615,
+      "sha256": "402be78ca755ceb8f1e6fefc3bd022108f41f50458ba83f3853180d2c77a7994"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/extraction.json",
+      "bytes": 2060,
+      "sha256": "27e24ea6741b901b915d02237cc42eb2c5ddd99bf9815bd8f0fc718dcc8536e3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/review.json",
+      "bytes": 2135,
+      "sha256": "05fbe8f09465b1394c2af33a7e5ad5b9cb81181970b7e7c42ade9ea0bcb4100d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-23-000014/worker.log",
+      "bytes": 36,
+      "sha256": "c7b7782d48b7efbc72dbc98ae5e904d9510edddac9831a69982ae4bd23be11fa"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/arelle.json",
+      "bytes": 42473,
+      "sha256": "f47301527f60050bf6bc1f01268365e607999a9f619e2b1d7ce59aa8efc45e67"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/FilingSummary.xml",
+      "bytes": 67353,
+      "sha256": "7f466ad07c628803320538b484f83a3f08ff12905f90ee779386acd925123571"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231.htm",
+      "bytes": 2645489,
+      "sha256": "9e3fa37a78620f28a8752a75b96e236dc735161902aca0ad2a51164ed18072b7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231.xsd",
+      "bytes": 106055,
+      "sha256": "da467cc28fbfe0baa43ac55c698fa515c47b0b158f26010b22b6106add8985dc"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231_cal.xml",
+      "bytes": 144868,
+      "sha256": "b8febb7c62375df0948537284ca26c26a8dcd7acb9c53ca8173bfe27cf26c894"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231_def.xml",
+      "bytes": 667871,
+      "sha256": "2eb35a490124ea6267bdea87082a5b49f13995f363653e2cef439f3c680ee848"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231_htm.xml",
+      "bytes": 2545226,
+      "sha256": "b01ddc4174f2c41e81d8e98910f9c35e1e0b10b22c3714482d6c0d7243111817"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231_lab.xml",
+      "bytes": 1265743,
+      "sha256": "5919cb22dcda5986abed1a83ce505df04d53424b6c0d6ddd80d77397cf645ea7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/documents/exas-20231231_pre.xml",
+      "bytes": 945426,
+      "sha256": "308c8a62402df0009c2bbbdfa24b8d429d76395819d0b7d82de8d2fde37e1e93"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/extraction.json",
+      "bytes": 2060,
+      "sha256": "c185777ef77b50f5c955809f8e8558635f37b355b9ca2b3f8fb98c6d22fb2b2a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/review.json",
+      "bytes": 1997,
+      "sha256": "ac9cf902fbb98221e0d439499ac0c3562e1043ea6de0221f8e202d89a1b78015"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001124140-24-000012/worker.log",
+      "bytes": 36,
+      "sha256": "4b0bef77818b6c9f2543fab6ee0b40cedcf16dca33fd450f6bcd5b01cb97436c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/arelle.json",
+      "bytes": 44140,
+      "sha256": "6e58afc57116703f387239e51c63717529947d7bea73f15edcd8c516b3151651"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/FilingSummary.xml",
+      "bytes": 61468,
+      "sha256": "69cee40e383a7f038407cad4fd4f48df734781b6b169fcd660e7ae9746719b16"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231.htm",
+      "bytes": 2577240,
+      "sha256": "93f0b22a27ae41ee36a5a5a0916a7ce26965c8d2d8f148d5464e773dba7c26e6"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231.xsd",
+      "bytes": 85260,
+      "sha256": "e6378fb372f871646a78b2fa2b578bd2c1070c7b4cddb412e9976dc37cdef8a9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231_cal.xml",
+      "bytes": 137987,
+      "sha256": "605f12ef5284bee0e6f9f7c48b4207b0b45819330ba0439516d2f740dbdaeea0"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231_def.xml",
+      "bytes": 469472,
+      "sha256": "18672b887e7d6c927dc809b2bebb0f3ebffe52bc38eba0ccdfd9b458da9a6291"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231_htm.xml",
+      "bytes": 2017439,
+      "sha256": "ec5ae970a583b1ec95503ecad88ecc88f48bdce9c9b1db011ce3a01c1b068d69"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231_lab.xml",
+      "bytes": 992439,
+      "sha256": "55b40e698f5daa3e4313941802cf9f384e5f47998c798e410c022fe8b5d0c6d1"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/documents/roku-20211231_pre.xml",
+      "bytes": 700027,
+      "sha256": "f38faceac7cdd8c246711fcd279bce87bcefb2fd7e3ac2370031493256884977"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/extraction.json",
+      "bytes": 2059,
+      "sha256": "5065c840f629199e03864dbd84ab730d3dd13104e751fcf790b075ea103d9b79"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/review.json",
+      "bytes": 1767,
+      "sha256": "4af46c214495bd4082951e13cdfd27881b7853c7a41bf7a0b6f2481a26a6912e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-22-000010/worker.log",
+      "bytes": 36,
+      "sha256": "c668aaec6d9049c09ce94d9ba38adca9df95abf16777e087c2499c1c48b0d5dd"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/arelle.json",
+      "bytes": 41372,
+      "sha256": "3dbfdb8ac02b5adfed02d1b5e47b3a703b6428131b976bef9dd9d50981d3ce8e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/FilingSummary.xml",
+      "bytes": 65580,
+      "sha256": "0d4f46095b7fa255a966345cfd61b75c7edb6ea65e6ff81e0f1022f86648dd40"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231.htm",
+      "bytes": 2599766,
+      "sha256": "beecdaa4c84dd30c82ede5169eef21d856b5692c026d63c3049432b15f42d6a4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231.xsd",
+      "bytes": 85560,
+      "sha256": "a0e49b72bb21cfe42f909ebd5c297c02f6b0b3f7a26c9cdce0d8ed5f59c907ca"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231_cal.xml",
+      "bytes": 139183,
+      "sha256": "da5dfe29fb52797a9125eef36cbb5e659863bd8ed7bf0f76dc09c25ba43df0a3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231_def.xml",
+      "bytes": 464421,
+      "sha256": "3eb20f235cad7f9fccef02ad3ee4cdd85bcbd8a6ed9e6d21770edb1060b85833"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231_htm.xml",
+      "bytes": 2072071,
+      "sha256": "b1d1ff96c79e077c003cc89f981ae0918e96e39e999662e5ac2335c242faaa79"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231_lab.xml",
+      "bytes": 987006,
+      "sha256": "16fe1a61cd2c91c442b9ef959112d50f2908c603f96370e1032b6027ba207ebd"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/documents/roku-20221231_pre.xml",
+      "bytes": 710686,
+      "sha256": "ac1a40931b4a16c7e6e8a27105bf5dc07653542dc31155e324a5af7ae25440f9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/extraction.json",
+      "bytes": 2059,
+      "sha256": "1b09d371b9d0bb69d9b137e56c0b530f2f1e5e534236d7cdb8fb5c2d6e9b6d41"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/review.json",
+      "bytes": 1767,
+      "sha256": "92acfc65f69826eebcc332044afb26b4796c7fedef43bfd966ffa3e310186275"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-23-000007/worker.log",
+      "bytes": 36,
+      "sha256": "c4e83d84e333cb8c1b7e98cd7fd481c1aae833e907bfd4585c38dd7bd5718528"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/arelle.json",
+      "bytes": 38879,
+      "sha256": "956dc96d21915ba7b40e2d8f46a19028a8e3cc4b7431a24c9f4f420b05946def"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/FilingSummary.xml",
+      "bytes": 62657,
+      "sha256": "6a3428c60a45fe439eac89742ec8b950a5d140b0a49bcff3596d75e19dfda778"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231.htm",
+      "bytes": 2048179,
+      "sha256": "277f27ddb01ca07978f1eb45b720a08c7ed6d0b04c81953df0e66afddb2aa465"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231.xsd",
+      "bytes": 76576,
+      "sha256": "17da0a49a261a955c9ac88d98403517bd6a2bb9dcc12f82df1f9fbccb85c183f"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231_cal.xml",
+      "bytes": 120380,
+      "sha256": "adf0e89adfaab88af56afc9f377cff07286aa120726ec7a4f17ed44bd2ef0d37"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231_def.xml",
+      "bytes": 371448,
+      "sha256": "cca1be7abdcfc1a36fe19d80bce51e703623086bb9b9c53a08db7ab698f16eca"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231_htm.xml",
+      "bytes": 1548513,
+      "sha256": "32e8490b5d184c5c793769da85aafd17c4e640a05effcf9acaa6295958d22624"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231_lab.xml",
+      "bytes": 966419,
+      "sha256": "9d2cf9b366c7689848f945cc353f624f6924ac0151dea8b0e70f570ed58b5bc7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/documents/roku-20231231_pre.xml",
+      "bytes": 662269,
+      "sha256": "7a506d1846cb531c30e5e1e9419593b0d039d6d36b977684b51438a3a58e2694"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/extraction.json",
+      "bytes": 2058,
+      "sha256": "d75fbc86e01e1a54d97d8606694d3efd1a6c897ef332a070ee0af570940cc6a5"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/review.json",
+      "bytes": 1678,
+      "sha256": "854f6b0908ac4a79917179c07ec2989ca1ddc4f876ec4f92db6dc06b7c47f029"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001428439-24-000011/worker.log",
+      "bytes": 36,
+      "sha256": "055d26e118bdf010674042180e42da7dfdf0d0c8f2385a6433172f11435e6302"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/arelle.json",
+      "bytes": 68348,
+      "sha256": "4eaf70b89d520ae4698f157ab439c6311fbf23399b4a1e326c0b2115215013cf"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/FilingSummary.xml",
+      "bytes": 63871,
+      "sha256": "457d4ef2486c8464f3e94873217288fd283b88592f66ec3b0e68ae8464996a1c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231.xsd",
+      "bytes": 93386,
+      "sha256": "107c152a55abd1d02f7f742420e22bf1cb9140350467b8f6db68fa3e65805475"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231_cal.xml",
+      "bytes": 105097,
+      "sha256": "0dbc846dcc8b23e3184f75dd695b1c28fb1bb38aee64090cd2cfc2e11a2388c7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231_def.xml",
+      "bytes": 380864,
+      "sha256": "0eec17b9c1cb2efbc18b7f33f2bc4e358dc8b46dbf4d45da2c31646720b889c9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231_lab.xml",
+      "bytes": 806570,
+      "sha256": "3f2d63f3c737b16327dec2068493c4e6c34c2a1c4e74d99a86ac9aba63b842f0"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231_pre.xml",
+      "bytes": 639409,
+      "sha256": "a0fec138fbf870f753a69bdd7ba08ff832388a593de1d3f1af73742a1ef06969"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231x10k.htm",
+      "bytes": 4265514,
+      "sha256": "a45c38c7254a6ad7cf5d10711f33eda2e5d97f6ba621af2ccf75346c49e3c1e7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/documents/tdoc-20221231x10k_htm.xml",
+      "bytes": 3133185,
+      "sha256": "2570f9c57ad4f96e3e9bc77ac0077429674b9222727480705402215122d78a4f"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/extraction.json",
+      "bytes": 2068,
+      "sha256": "05e648a459e6ebecf1959e60a8254f0b8e9c18ef143b4f3a412ece129c612d3a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/review.json",
+      "bytes": 2540,
+      "sha256": "a2793d32ef6d97f1a35ddc1fdf36090c0d39d7e99aef3586a0150ab493cb00dd"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001558370-23-002559/worker.log",
+      "bytes": 40,
+      "sha256": "fe67811ada3831a5b33cb2a7f20bc65853cd08d3fa83b59dabafbd34dc3ef952"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/arelle.json",
+      "bytes": 38110,
+      "sha256": "359e9a52c1c5bc7869d53e80cf58a31b851557a5c7eae6e765b526757b5ae45e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/FilingSummary.xml",
+      "bytes": 47256,
+      "sha256": "5495e2bb52aad04a0c1f0d9f51b19bb1ca914cb8b3b42111edf91a861c2b9768"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131.htm",
+      "bytes": 2691050,
+      "sha256": "e897101be04abf921547c7f94cb71912acbe5bda8adc627ce21b0546ba7c069b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131.xsd",
+      "bytes": 59998,
+      "sha256": "95faee95a4d1149730fbd390fb4e847bbf3d60de0654d208a9a7724b938bc295"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131_cal.xml",
+      "bytes": 118223,
+      "sha256": "4655a68e86f09dbdf36bfa5abcb938cfe98c57e4bc1bc980ad0ed77680997678"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131_def.xml",
+      "bytes": 360622,
+      "sha256": "16937a872210277f8006df744615f40439d971f0f1ef101c146f517b9f7fe740"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131_htm.xml",
+      "bytes": 2190770,
+      "sha256": "d3415e9e37b787dacd3712589406ebb44dda1bdcdfe26b2119cb0d2681a399ae"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131_lab.xml",
+      "bytes": 859483,
+      "sha256": "1c2c7b8a38845b81289f50ee907338e4d9a6f85b8e8ca3d9e6a83b02140fadde"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/documents/zm-20220131_pre.xml",
+      "bytes": 577374,
+      "sha256": "9fdfa4bcf6f3bf6bc06824d6c8aeab23333b44063748ff33635399c606e3fc42"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/extraction.json",
+      "bytes": 2045,
+      "sha256": "d7c4e35da9929a6886915272cf59a14d57f883e8d5da82d13e76829bf89ec9c3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/review.json",
+      "bytes": 1767,
+      "sha256": "4dd32bf2a2117856c52f58e12b3a01c258e3f3e6bdbed32f8eb51c3e84948fda"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-22-000037/worker.log",
+      "bytes": 34,
+      "sha256": "a9528770f4a38c06842f6221d0efa90b6a139f1ef0bab21f4ef5e4029aee5cc2"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/arelle.json",
+      "bytes": 37890,
+      "sha256": "34cc1ffe462af6544a4afa2dda7c9d00be46fa6be6dc8ecac0c107ef4fe3940a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/FilingSummary.xml",
+      "bytes": 51537,
+      "sha256": "bcb1a376f917922bc27322285e678232b39475f76c1f1f0d6816966de5691bcc"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131.htm",
+      "bytes": 2765838,
+      "sha256": "118d19f3909a158da2cf1af29ee06a93b090c199435a24ac98c160e813a02fbd"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131.xsd",
+      "bytes": 59619,
+      "sha256": "c2a49623364858cd491be2f327933c0300e6a5372a4f7544b1c057c18bc99057"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131_cal.xml",
+      "bytes": 126185,
+      "sha256": "42770a675044218812dd7efaf615a65c44ed582aa58dd6acbae540f40c4f3bd1"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131_def.xml",
+      "bytes": 353700,
+      "sha256": "21a09f7a94064ced7aed683d1ac709cfdc98158d2fe8bdb3f8e3de55cdd5ea96"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131_htm.xml",
+      "bytes": 2303964,
+      "sha256": "451ce6a6c06d68f6800c37c3c069c38fdbaa68116e18723d81524707e51bc32a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131_lab.xml",
+      "bytes": 875161,
+      "sha256": "ce663ad68bc4d95ad79d6018e0a788a06b2499ab69be53324449731e36b9c759"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/documents/zm-20230131_pre.xml",
+      "bytes": 582894,
+      "sha256": "dae92f0e188e2a7003aae122aa2ec9657b9af2c56aff5ab77b4b8c8b77984662"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/extraction.json",
+      "bytes": 2046,
+      "sha256": "8ab71209dccdc1b3b49c737ca331aff46f9fcafafeaeb039bb3d32c76b7a82e5"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/review.json",
+      "bytes": 1767,
+      "sha256": "86f7bc4d4e17ca00741be028d56c3490080ce576987c93786fb96bedb5ea8b14"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-23-000035/worker.log",
+      "bytes": 34,
+      "sha256": "4aababc912e61e2b0c05c0b9a72e081f09d681c36f825e1eeb42137173030f8b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/arelle.json",
+      "bytes": 35793,
+      "sha256": "1dcd1b06840f9b7909eef5b1806dc8ac94f5c385413bd1da6647eb7e97a2b69e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/FilingSummary.xml",
+      "bytes": 54950,
+      "sha256": "4f80baedd0e980235d78a100c6232fa8c950d1292ba810673bd68360123d3cd5"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131.htm",
+      "bytes": 2291715,
+      "sha256": "3b3514df4d80748523057d8b0142242a9d7677e6dce0eeed5a03ec2c57209cf4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131.xsd",
+      "bytes": 62771,
+      "sha256": "fa43cbe15a92fc949cc71c7ace383070d65f1818760c619731f21e56153e3d93"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131_cal.xml",
+      "bytes": 127237,
+      "sha256": "b3b031756236a1286387cf548c1b83ac071323d266da5f7bb1926b2cb481e468"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131_def.xml",
+      "bytes": 333911,
+      "sha256": "98b8a887269bdaf860aa95f271c080806f2a46ad576e01ff9863b8a214a8d42e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131_htm.xml",
+      "bytes": 1886070,
+      "sha256": "90081aecfdfdd55837ef6322820ea0956e1edf7d01eb0b8dce691f46eea5d17d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131_lab.xml",
+      "bytes": 962422,
+      "sha256": "8b4704b7caadfb442bcc289b3c03aaea572a05d41a09570cb1819abf61c85f88"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/documents/zm-20240131_pre.xml",
+      "bytes": 642944,
+      "sha256": "3622284f726d272472d6c77c72dd4067712ede99f66c11853a2066a13ea16506"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/extraction.json",
+      "bytes": 2044,
+      "sha256": "1531ee6b9fc0c0a6985c84655260dc9d7ff332f766b2e4ee51d5bc5d7587c206"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/review.json",
+      "bytes": 1678,
+      "sha256": "fe5a028964eea0f19c6cc99e7ea510d0a606884b0357085a248575773caa96dd"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001585521-24-000030/worker.log",
+      "bytes": 34,
+      "sha256": "7111cfca87067bfcfc849b315c3f91073e2016c312ef5d673a7d60b84a282184"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/arelle.json",
+      "bytes": 137130,
+      "sha256": "4b348ba2a4b9b927b4c9e4f9602ff16e73c9279b513d14d2e4e21464eefc5ac3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/FilingSummary.xml",
+      "bytes": 71714,
+      "sha256": "6b9266b1bd72708f3f6a1ea1b60a7535791ad844ec89ca379a1b378d016a3833"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231.htm",
+      "bytes": 4197689,
+      "sha256": "eec5e8bc8b3f6f0b766c1a55208f9dbe00e50fe4308396088d0d7b2529635e99"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231.xsd",
+      "bytes": 96822,
+      "sha256": "fd2e4b3783e1885654adc8d76e0c8c5c7811a758669f47c440e38f6af88e308d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231_cal.xml",
+      "bytes": 178172,
+      "sha256": "39da56ec9497586df77c93f38c2f127a0d0f4792d02de7ef39af71bc46f413fe"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231_def.xml",
+      "bytes": 651685,
+      "sha256": "62e9ba4a4af3d11d8ee502218503dc624239e7ae2223939645aa7a98eb0da1ed"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231_htm.xml",
+      "bytes": 3986218,
+      "sha256": "43809e43171114e2bc1bb99f0121b0033c2e793e40df614cbd2d5b9fb12f7c76"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231_lab.xml",
+      "bytes": 1205634,
+      "sha256": "92c0198d84e086309e1ce2651de27bf2116b29a306879f379c0c330f677d0874"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/documents/sq-20211231_pre.xml",
+      "bytes": 935829,
+      "sha256": "e3f05b5d0f3124639cd8a9b16d04e9eb32e403f4a6e6018029aaf1b49bd266a6"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/extraction.json",
+      "bytes": 2046,
+      "sha256": "e94c4871bfa92fb49640cebedeabd6d6519d6851ebf5ffced37876e578621c47"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/review.json",
+      "bytes": 1958,
+      "sha256": "da5e41a987989cf062099dcbd19319873d169a40833f814041aee438c61e7643"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-22-003825/worker.log",
+      "bytes": 35,
+      "sha256": "205e5d531530f18bed356d0f9f183cde8c7ada1c22fcd638ee6263bb823d991d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/arelle.json",
+      "bytes": 126573,
+      "sha256": "556dde516cce50f32dd6920aa1bf2bc429886131f93506be793f1b238c073702"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/FilingSummary.xml",
+      "bytes": 74589,
+      "sha256": "0dc83a76db15377e5b8ad20b7afa9c3a5a2a4be22be9894477849cca37656f0b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231.htm",
+      "bytes": 4200172,
+      "sha256": "0621e72b474b525ddecb125fb10c58562ef0173ffe4584a3f5f7b36ae0a8d87e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231.xsd",
+      "bytes": 103400,
+      "sha256": "c0f359db29740dee5ae99da26b22db588e9df7bedcc509eacacf3bd4e28fc3fe"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231_cal.xml",
+      "bytes": 189966,
+      "sha256": "f45de112f6cf078f06614833a6d87e96ed99b93d8753a53be2813916a5e33de4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231_def.xml",
+      "bytes": 663375,
+      "sha256": "848687eab540cc3721dfb410b5e13f2f52468e9c7c1638e06f435191be66363c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231_htm.xml",
+      "bytes": 3885799,
+      "sha256": "a765478cb1631bff274c61b739f89b9249618a776178440d18c0db2adb90932e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231_lab.xml",
+      "bytes": 1267829,
+      "sha256": "3694a56417764a28ee169ab54ee79703ca769a7582482a1dc79dda7f5d898ebe"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/documents/sq-20221231_pre.xml",
+      "bytes": 947838,
+      "sha256": "21ff68ae658b72897ccc46e26eaeaafd4a7a6c74063ebdcbb06931e39a57636b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/extraction.json",
+      "bytes": 2046,
+      "sha256": "2a1e3783c1ed7bece8cb4f63d766c4d16a4f47e05b245171c6466ac717fe8889"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/review.json",
+      "bytes": 1769,
+      "sha256": "e6128bd2ed32917457f1164fc00e48638a4b173f2848194994ebe17b117a17fe"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-23-004840/worker.log",
+      "bytes": 35,
+      "sha256": "abd8360ab2e0e18e6e11c7740ba5d08fc3b9b4a01471b989e2a933d2d6b9ea45"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/arelle.json",
+      "bytes": 82956,
+      "sha256": "8cdb6c6b60b1bb6de5fc5c8e0a4c709075fb9fe59cfe4355de6a0f0ec2c89494"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/FilingSummary.xml",
+      "bytes": 62583,
+      "sha256": "375b00c441e9e1fc6a46a25579a7db64312cc088aef2f53f2663055f32bae21e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231.htm",
+      "bytes": 2672745,
+      "sha256": "7118ce954b12dd5f43597f3939f0be4500b23f37086b2bd845653d9fb308f7ed"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231.xsd",
+      "bytes": 104439,
+      "sha256": "551425ca26c7b8922f9e3d5a277b744eb5a0a04b4e4cf87209cefc75ddecf60a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231_cal.xml",
+      "bytes": 152662,
+      "sha256": "d12152373e144e4a49fe2af38be5512f55975ea14bfecbd3549c6faf0198cc4c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231_def.xml",
+      "bytes": 527729,
+      "sha256": "66b13e94a08f62dc82920f738aea60d5d12942161139c02107cb95c0fc053688"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231_htm.xml",
+      "bytes": 2557374,
+      "sha256": "6d437f6a916f0b3442f1043b28d159eca6d48d6315e02a96a6d0c67cd8c687a0"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231_lab.xml",
+      "bytes": 1251967,
+      "sha256": "95cf0878e9ca84f8ca6a882ea9ce6203647a408b49820b0142c5aa7fbbec2018"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/documents/tsla-20231231_pre.xml",
+      "bytes": 817347,
+      "sha256": "726f46be75f6df2484bba69759d336107c8e20b5ead174342cbb6d374087aff9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/extraction.json",
+      "bytes": 2060,
+      "sha256": "311ae42450940aa10282338bd41f71faaf309510e626bc9620989a7b5165fa1c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/review.json",
+      "bytes": 1684,
+      "sha256": "7a5b9a6ebc15ded437094548ab0a32b730a713c3eda5c1990eedfe65f0a2dac3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-002390/worker.log",
+      "bytes": 37,
+      "sha256": "6b63cf81d7b6bea5938a1f648ef41a4595ec9e91de8432f3992af31256397298"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/arelle.json",
+      "bytes": 116388,
+      "sha256": "05319250cf2259dbf68447d7db3a8653850240e17ca507638ac948cf22b76b01"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/FilingSummary.xml",
+      "bytes": 75453,
+      "sha256": "9c8be5980b31e12d500fb8a32077adee227232196730cd2fec2c01b166335e4b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231.htm",
+      "bytes": 3163778,
+      "sha256": "23fb00e98ef586007cc29723ba607b22d0f37d31a82a31acf02e393686d81068"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231.xsd",
+      "bytes": 101694,
+      "sha256": "f330283c07a535b832bd87ab31143685c687260d441889774081692c9e605ef7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231_cal.xml",
+      "bytes": 180014,
+      "sha256": "1c354d4e179b5c1871b988e0bd1ef86e636d4dccd2ad44cb2604162a4ae7104a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231_def.xml",
+      "bytes": 632157,
+      "sha256": "c7f431729fd75ac364a28cd6e981db5b391455cbfcf441904795bc1152a328e9"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231_htm.xml",
+      "bytes": 2995095,
+      "sha256": "c533f1e7177d2e868dff5b6f850f3fe66019232bfe0db932549a92b509d7af4a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231_lab.xml",
+      "bytes": 1338363,
+      "sha256": "3ff8f1d2e707bb9c23a5104ad0cc2c9b2c96e1f8e19325ddfacf1cacab460358"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/documents/sq-20231231_pre.xml",
+      "bytes": 976769,
+      "sha256": "b8aa95a65a678801838a40c5896f83b1cb73b36a58698d8306c7f6acbd98141c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/extraction.json",
+      "bytes": 2046,
+      "sha256": "5fc02c59fb7dd76ba9f6529f21fe960959170eb82af97a0f82e88bf538fe5bdb"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/review.json",
+      "bytes": 1680,
+      "sha256": "566c72db5f954e7b5ac496a8702822b4dc8f3f9aaa2e97adaaad6835311d1f20"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001628280-24-006354/worker.log",
+      "bytes": 35,
+      "sha256": "08dc043ab68a5ee2bcbd9914d8cad419b540916e68644e4e955d769fbf39bb68"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/arelle.json",
+      "bytes": 53994,
+      "sha256": "0ded5016f5be812c900398cb1e0b8e24840ba292f1f20b58fd1acfbec15541fb"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/FilingSummary.xml",
+      "bytes": 58165,
+      "sha256": "cf54a797f27506e9948ebff56a53dbdbb3a95ad3c86349146e03704b2edd4734"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131.htm",
+      "bytes": 3068455,
+      "sha256": "36f84c83d691d047d888f2e64a7a538771841202331db2b6546160bd0b2bdde7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131.xsd",
+      "bytes": 76384,
+      "sha256": "56ac594343eb91adb612cd996306727fb19b381272a60284a24f3e19e0f0ded4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131_cal.xml",
+      "bytes": 133748,
+      "sha256": "e8e3dc6775f45390a5f75744b4df6487b82e0ee873732dd2f77a9cdf75cde82c"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131_def.xml",
+      "bytes": 474659,
+      "sha256": "9256351aeeac142fc9b540dd6fee17a357a4a6289b93decf8e597256d66f05eb"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131_htm.xml",
+      "bytes": 2420020,
+      "sha256": "e5d3b911e275d94889f1091485522b5032303a37473eb2b1daa084dbece90aac"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131_lab.xml",
+      "bytes": 1042243,
+      "sha256": "0c200789171c7679c309b890b0eeca3fd6647598ee68308a5d8eb1c8c4c26180"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/documents/path-20220131_pre.xml",
+      "bytes": 732944,
+      "sha256": "51034dbc23ecb4c85365e095900458c536baa6ee482e839e96a2f53ffbcde874"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/extraction.json",
+      "bytes": 2059,
+      "sha256": "b2f18c0aae43588dce96b54f3dc5fc8a9f1bab84e07b0f709517d97fe0dacb7a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/review.json",
+      "bytes": 1765,
+      "sha256": "320d2a01373c853ddc66b2e710ceca92c142db3b8b155324cc5fa4b7c88a9235"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-22-000006/worker.log",
+      "bytes": 36,
+      "sha256": "413f20d5b4b01b93acc5b656523fe532634c0d01903054609eee20c1ea13caa7"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/arelle.json",
+      "bytes": 53640,
+      "sha256": "a857f7e9342c89f7253281d949b7e14de66a3adfc896dfd7b286faaa7d9c27cd"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/FilingSummary.xml",
+      "bytes": 60693,
+      "sha256": "25295501281c4b8947233794d0ad5e7404dfe6bade2c668d17558c1dcc34b851"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131.htm",
+      "bytes": 2707850,
+      "sha256": "012335a458c15621c3370dc0ef2c46f2f60bdebf7e8c2430475698f6b71c4506"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131.xsd",
+      "bytes": 78114,
+      "sha256": "e2a82a8a1697a83ed20ce451e3fc433e436be45bd94c4c525fc07b2916997df0"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131_cal.xml",
+      "bytes": 140341,
+      "sha256": "148e4df4d822f2be4110ce2cca5666d1ef57fddf8268d50512da4bd4dbb83a3b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131_def.xml",
+      "bytes": 472958,
+      "sha256": "7f7783ae4507004bb70ded393fc4568ca0f4417889acccc596ab92d92d3fad46"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131_htm.xml",
+      "bytes": 2010250,
+      "sha256": "aac95e5cf4c320d7e1f32940cf55b4ff1e08edfcb59489bf684c25e65ee4a427"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131_lab.xml",
+      "bytes": 1025350,
+      "sha256": "73f75b8e79aa18c03a26e8bb3cbbc3d02b3960cb8ea668cfad740db64c69a8c4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/documents/path-20230131_pre.xml",
+      "bytes": 730000,
+      "sha256": "7a49e0f8157cd56ebd6cdb3a1216aae064ea0c5f911c61f9ebd2e7d5d05887a3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/extraction.json",
+      "bytes": 2059,
+      "sha256": "74a45c3eb1a97bf760c39fed65897a7ae93e91a8b7901e2298e3855984a7635b"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/review.json",
+      "bytes": 1765,
+      "sha256": "38ed010ca072daebdd947117c3c2f3c0d3925f308046649357a4042f76456c41"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-23-000017/worker.log",
+      "bytes": 36,
+      "sha256": "b4afba9c25f79cf09b5b5e95d4eb727ddd4a13a1015365912d397e32f117a45e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/arelle.json",
+      "bytes": 50695,
+      "sha256": "7f628b9f7cdd8d077df596a20742fa4443a94e98df71da245fc33ada443342e4"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/FilingSummary.xml",
+      "bytes": 57676,
+      "sha256": "884a505318bdbd94d93fbda943c98ad8094ac7111bd0353210ad70da5b749c8d"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131.htm",
+      "bytes": 2569080,
+      "sha256": "266cd9dba0429ac8911117724eaa97947a40182d19de942cb1a09742e6606178"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131.xsd",
+      "bytes": 72313,
+      "sha256": "3d9222f65b683abce648f6a78cf79cc511ced1759058ed01264e5e4e85f38e37"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131_cal.xml",
+      "bytes": 132453,
+      "sha256": "c261d0b7486dc6aafff8b72d2593d93c6dbbfc1e7ca9fb749d6f710fd6dcd456"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131_def.xml",
+      "bytes": 414803,
+      "sha256": "b08085bb870d385bfaf9ee4e7ff12d119bea1149c4d4395846f828ddcea2c752"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131_htm.xml",
+      "bytes": 1796092,
+      "sha256": "cc10e6d0a581e52fefc3d7446919eb8c4a14e22ca262813f7bd4f1c679562a6e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131_lab.xml",
+      "bytes": 958519,
+      "sha256": "74bf705a9eb1ec50562c200dc01ff34fe87567db456bac0c6337a2700b38c96e"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/documents/path-20240131_pre.xml",
+      "bytes": 714539,
+      "sha256": "a1191887ca67f9effa6e9f28aac49b007253fe858c8b2a01ecfd06a1d1d8bb81"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/extraction.json",
+      "bytes": 2060,
+      "sha256": "4829d00e0cb99a215f47c33ac609806b650c6ea03e2122f36e86c79a07644795"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/review.json",
+      "bytes": 1678,
+      "sha256": "36820ecf4226ecd9c49866a2ecc389285e08a567c50e766c0afdcc0f74fe6dd3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/0001734722-24-000011/worker.log",
+      "bytes": 36,
+      "sha256": "508ca9880742ad67d7097e84fc60ff6d5f151bd30df6de7ce9c8d0d2112bea3a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/arelle_review.py",
+      "bytes": 16529,
+      "sha256": "be64341c4fc5ba0a425d75c7979923a9fe185046645028bd126e264b312bdb27"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/arelle_worker.py",
+      "bytes": 5235,
+      "sha256": "020d557502e55f04d80a927653ec6123cbdf06a2a6f6c7ad5661e3e5296b18f3"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/plan.json",
+      "bytes": 3510,
+      "sha256": "5fbcf80d517c7cd5184c5cb6ef1973ee73eaccd32ac5b81202dfc81348953408"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/progress.json",
+      "bytes": 42041,
+      "sha256": "5b621571bc6fdc3f675b1902d3046c4c13591db1c8633d1e95a25078dbfdb79a"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/registration.json",
+      "bytes": 2020,
+      "sha256": "b8c3c843cbf8cef8135151d52dd1ab41688d2886288928f8ad1d3cdb8e2fb0fa"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/source-amendment.json",
+      "bytes": 677,
+      "sha256": "b2603f36f39969aef18d0310044391846a37a645313c7ddcb4da331bd2b01905"
+    },
+    {
+      "path": "results/research/equity_arelle_review_20261026_v002/summary.json",
+      "bytes": 42536,
+      "sha256": "8ff45ea7b02c4b1c11cd3d2f70b23ac73ab34fb32adcac65960c5c8ca2aa2082"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/attribution.json",
+      "bytes": 20580,
+      "sha256": "523dd0a507f6f5390ab68c9c2a04fe8c411a9144777921b79e761f20c3632bd4"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/attribution_source.py",
+      "bytes": 15071,
+      "sha256": "62fb822bbeb98f8a11a5b76cde2f4bdc90e092e6cddcfb5692a8e75632ca4774"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/daily-stock-pnl.csv",
+      "bytes": 1639160,
+      "sha256": "07d578f3c2988ff220a130a1ae0c1740e2ed49dbc23b22eab15a54cf341a0db6"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/diagnostics.json",
+      "bytes": 3767,
+      "sha256": "58f93741547f8e17cdbcae7a3cb01652dbac1c5526c0bb8aa0725d0f3927dfdb"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/paired-daily-returns.csv",
+      "bytes": 49814,
+      "sha256": "1898ac37967abdbe22a9b0a8ad6fcf85ac93f11648e94f129642f5370f0700a3"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/plan.json",
+      "bytes": 3510,
+      "sha256": "5fbcf80d517c7cd5184c5cb6ef1973ee73eaccd32ac5b81202dfc81348953408"
+    },
+    {
+      "path": "results/research/equity_depth_attribution_20261026_v002/registration.json",
+      "bytes": 3269,
+      "sha256": "6134c8d6c9a13ab26eef86079540b9a85009137c640f1baafbd1699179b04faa"
+    }
+  ]
+}

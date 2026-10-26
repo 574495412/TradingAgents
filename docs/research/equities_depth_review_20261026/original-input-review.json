@@ -1,0 +1,1222 @@
+{
+  "schema": "equity-original-tool-review.v1",
+  "selected_annual_versions": 20,
+  "attempted_versions": 20,
+  "reviewed_versions": 20,
+  "numeric_inputs_checked": 45,
+  "numeric_matches": 45,
+  "complete_numeric_match_versions": 20,
+  "full_xbrl_validation_passed_versions": 20,
+  "all_selected_versions_reviewed": true,
+  "all_consumed_inputs_match": true,
+  "all_xbrl_validations_passed": true,
+  "records": [
+    {
+      "accession": "0000950170-22-000796",
+      "cik": "0001318605",
+      "period_end": "2021-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017022000796/0000950170-22-000796.txt",
+        "sha256": "58a198d40dcf6862f0efa5b11b0974f4003666bb1d0ef1cde2df990d8029b3d2",
+        "bytes": 29316024,
+        "captured_at_utc": "2026-10-26T15:34:46.875375+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-02-05T01:11:27+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "a76ed08b70b7018e905fa3732927a6b381efcc25bb2eb5b37833add844308620",
+      "sgml_primary_sha256": "41796afb229d46d684bb52b6d36ec3462a8d40285be664c26cde66632b34ea40",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 13606000000.0,
+          "observed": [
+            {
+              "value": "13606000000",
+              "context_id": "C_1de69f73-df01-4830-8af0-0f11b469bc4a",
+              "decimals": "-6",
+              "source_line": 3945
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 62131000000.0,
+          "observed": [
+            {
+              "value": "62131000000",
+              "context_id": "C_e046c801-4c6a-48c1-b48f-a30525bd1ed8",
+              "decimals": "-6",
+              "source_line": 3405
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "cae0c454eb469ddaf46c309cd71c57e38dfdc1bf50bbe962341cc0ca3accba97",
+      "extraction_sha256": "a5cabf550f2f4cdeac51997271ddf92473099a8189be7d77e6e0a0b4e9bdcf3d"
+    },
+    {
+      "accession": "0001428439-22-000010",
+      "cik": "0001428439",
+      "period_end": "2021-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1428439/000142843922000010/0001428439-22-000010.txt",
+        "sha256": "0e6640277989e564a8f0441183a571eb689bac52407b88c52429b278564e78dc",
+        "bytes": 13203338,
+        "captured_at_utc": "2026-10-26T15:34:48.493379+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-02-18T21:54:27+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "5304b6ced935bb7d495ff9cf2f7ff0004fb455535823f66ca16289fbb090cf86",
+      "sgml_primary_sha256": "93f0b22a27ae41ee36a5a5a0916a7ce26965c8d2d8f148d5464e773dba7c26e6",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 1408600000.0,
+          "observed": [
+            {
+              "value": "1408600000",
+              "context_id": "ia8a5cbb465594e749e7782fda6b7614d_D20210101-20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 4082145000.0,
+          "observed": [
+            {
+              "value": "4082145000",
+              "context_id": "i9b4776616f9f4935b0b1641872070537_I20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "6e58afc57116703f387239e51c63717529947d7bea73f15edcd8c516b3151651",
+      "extraction_sha256": "5065c840f629199e03864dbd84ab730d3dd13104e751fcf790b075ea103d9b79"
+    },
+    {
+      "accession": "0001124140-22-000022",
+      "cik": "0001124140",
+      "period_end": "2021-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1124140/000112414022000022/0001124140-22-000022.txt",
+        "sha256": "25a2de93c4d5e1c3858bb143033b1db63151e8f075898505184aac38c6249d02",
+        "bytes": 19199226,
+        "captured_at_utc": "2026-10-26T15:34:50.112785+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-02-22T22:06:46+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "503cf12ee15f9a9d95da4dc88eb20f0ec2e6ab0f268da4a8c7b37b501788dc5c",
+      "sgml_primary_sha256": "5568ea13d9e7ffc6bbd0b8107c546f8023103c645e81eb5e9866f027b6c079f0",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "expected": 1767087000.0,
+          "observed": [
+            {
+              "value": "1767087000",
+              "context_id": "i4b24d80649c54536a20318fbf501f4aa_D20210101-20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "CostOfRevenue",
+          "expected": 458757000.0,
+          "observed": [
+            {
+              "value": "458757000",
+              "context_id": "i4b24d80649c54536a20318fbf501f4aa_D20210101-20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 6684884000.0,
+          "observed": [
+            {
+              "value": "6684884000",
+              "context_id": "i0b33f40c7193475d80a4779d5d4ed9da_I20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "f603257c519c038b9413943008531b72c913fad4584bb9c661ce7343efaa72fc",
+      "extraction_sha256": "fb273f8a6f87a68fe07efd211ac346c7577439f1d28ec92eace9826a678c3b69"
+    },
+    {
+      "accession": "0001628280-22-003825",
+      "cik": "0001512673",
+      "period_end": "2021-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828022003825/0001628280-22-003825.txt",
+        "sha256": "92717a47b3b7ce9e270fcf0b0c145225e15e8ad1e3d1968117f38b841bc7a14d",
+        "bytes": 24112681,
+        "captured_at_utc": "2026-10-26T15:34:51.340359+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-02-24T21:19:13+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "3e2a494fa02d4bfb8bf52293a46800d6fb6ae8730d85d8ce74c4d965396e5b2c",
+      "sgml_primary_sha256": "eec5e8bc8b3f6f0b766c1a55208f9dbe00e50fe4308396088d0d7b2529635e99",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 4419823000.0,
+          "observed": [
+            {
+              "value": "4419823000",
+              "context_id": "ie99ba01cb41e465988919cf39598aef9_D20210101-20211231",
+              "decimals": "-3",
+              "source_line": 4
+            },
+            {
+              "value": "4419823000",
+              "context_id": "ie99ba01cb41e465988919cf39598aef9_D20210101-20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 13925764000.0,
+          "observed": [
+            {
+              "value": "13925764000",
+              "context_id": "i78b5e1ea67d641f79aef881f7354df35_I20211231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "4b348ba2a4b9b927b4c9e4f9602ff16e73c9279b513d14d2e4e21464eefc5ac3",
+      "extraction_sha256": "e94c4871bfa92fb49640cebedeabd6d6519d6851ebf5ffced37876e578621c47"
+    },
+    {
+      "accession": "0000950170-22-001981",
+      "cik": "0001652130",
+      "period_end": "2021-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1652130/000095017022001981/0000950170-22-001981.txt",
+        "sha256": "9e19095fb8e092e04767e79248416cc1b7a192fadc361b666f20024282ba46ac",
+        "bytes": 20023967,
+        "captured_at_utc": "2026-10-26T15:34:52.649701+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-02-24T21:22:35+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "fad494c2a2d3c5ed69e0a5a2f083c2341206d6b2934435fa7660d672684247af",
+      "sgml_primary_sha256": "a7df8be5198d15f7a29ea2b0918b04e97ab5666e7fd54bce134f118a1f2bda7f",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "expected": 33053000.0,
+          "observed": [
+            {
+              "value": "33053000",
+              "context_id": "C_a734acd0-6823-4b27-b8d7-ca0a9da7ad93",
+              "decimals": "-3",
+              "source_line": 2802
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "CostOfGoodsAndServicesSold",
+          "expected": 0.0,
+          "observed": [
+            {
+              "value": "0",
+              "context_id": "C_a734acd0-6823-4b27-b8d7-ca0a9da7ad93",
+              "decimals": "-3",
+              "source_line": 6264
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 1294464000.0,
+          "observed": [
+            {
+              "value": "1294464000",
+              "context_id": "C_4fa54778-7c1e-4b53-95e2-bef12194947c",
+              "decimals": "-3",
+              "source_line": 2573
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "83b60486135594483afaaecb2e3be742c9a52f51dcbfd424c534b69e0eeba3d8",
+      "extraction_sha256": "6cd176f2867d297e0e7ab867870ba83f67b032283524c3114adc87876b764148"
+    },
+    {
+      "accession": "0001585521-22-000037",
+      "cik": "0001585521",
+      "period_end": "2022-01-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552122000037/0001585521-22-000037.txt",
+        "sha256": "51e4b1113c25dad6e663fa26104e1ee25d2639812d1c47b91d1b379e3025f15e",
+        "bytes": 11797675,
+        "captured_at_utc": "2026-10-26T15:34:54.058100+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-03-07T21:02:53+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "a5fa527682959590668a366189c33f17b9526b78e36ce6efb6357ff189c4fe91",
+      "sgml_primary_sha256": "e897101be04abf921547c7f94cb71912acbe5bda8adc627ce21b0546ba7c069b",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 3045310000.0,
+          "observed": [
+            {
+              "value": "3045310000",
+              "context_id": "ieda796705a2a4dd191d42a89e56de98a_D20210201-20220131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 7551318000.0,
+          "observed": [
+            {
+              "value": "7551318000",
+              "context_id": "i0d1e85d764f744f199ca4190f6b9a487_I20220131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "359e9a52c1c5bc7869d53e80cf58a31b851557a5c7eae6e765b526757b5ae45e",
+      "extraction_sha256": "d7c4e35da9929a6886915272cf59a14d57f883e8d5da82d13e76829bf89ec9c3"
+    },
+    {
+      "accession": "0001734722-22-000006",
+      "cik": "0001734722",
+      "period_end": "2022-01-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472222000006/0001734722-22-000006.txt",
+        "sha256": "d215ae0a98d3bbab85ee218f5c200afed1b916cbd00341f6dc6fd85c70457efe",
+        "bytes": 14113054,
+        "captured_at_utc": "2026-10-26T15:34:55.233737+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2022-04-04T21:22:35+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "ebf46b9c6ec9b45f1cce7bc71c02f38fe0ea68f43f1487ecbcfdc8d361eaa0e0",
+      "sgml_primary_sha256": "36f84c83d691d047d888f2e64a7a538771841202331db2b6546160bd0b2bdde7",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 723384000.0,
+          "observed": [
+            {
+              "value": "723384000",
+              "context_id": "ifdf40ab9b2ae461bab1fa8f2dda1a7f5_D20210201-20220131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 2572450000.0,
+          "observed": [
+            {
+              "value": "2572450000",
+              "context_id": "i673584a7fa2c4d2fb1f28d283a5745bd_I20220131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "0ded5016f5be812c900398cb1e0b8e24840ba292f1f20b58fd1acfbec15541fb",
+      "extraction_sha256": "b2f18c0aae43588dce96b54f3dc5fc8a9f1bab84e07b0f709517d97fe0dacb7a"
+    },
+    {
+      "accession": "0000950170-23-001409",
+      "cik": "0001318605",
+      "period_end": "2022-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000095017023001409/0000950170-23-001409.txt",
+        "sha256": "453815944369c3e777b32e30af0d4fcf17439d4f73e9be3b7da52c8c6e8a594e",
+        "bytes": 31445171,
+        "captured_at_utc": "2026-10-26T15:34:56.040138+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-01-31T02:29:15+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "47d1fcd5dbe7af3ca86e0ffd12f05b96be950f278ecb7ec4e3ffd61aa862ad34",
+      "sgml_primary_sha256": "52a2625c773c648badea7fab99ebfda14fc72a23a2177e51911e5d946cc2b0fc",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 20853000000.0,
+          "observed": [
+            {
+              "value": "20853000000",
+              "context_id": "C_b6c8c636-658e-4c1f-97de-bb0bd181ac0d",
+              "decimals": "-6",
+              "source_line": 3924
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 82338000000.0,
+          "observed": [
+            {
+              "value": "82338000000",
+              "context_id": "C_4e91897b-2f4e-40a6-af73-92666313a137",
+              "decimals": "-6",
+              "source_line": 3394
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "d13bb768ae745e4f6663abdc497df027292c72fef013d76ea3f2d89a7fcae674",
+      "extraction_sha256": "7f4a5ed5c8c7495c378e881bc08a62abff5e516343f4e7d8acd637c890dfbc4d"
+    },
+    {
+      "accession": "0001428439-23-000007",
+      "cik": "0001428439",
+      "period_end": "2022-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1428439/000142843923000007/0001428439-23-000007.txt",
+        "sha256": "4e746782eb399a0ccbdf3ab295cebecee9a6b8fe53964ed6ccac2c07f0e1512b",
+        "bytes": 13193556,
+        "captured_at_utc": "2026-10-26T15:34:57.855885+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-02-16T21:51:10+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "3846f7534a9d37428ee3923766ced97335be2236ed06c1c9def04c83918f5e7a",
+      "sgml_primary_sha256": "beecdaa4c84dd30c82ede5169eef21d856b5692c026d63c3049432b15f42d6a4",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 1441122000.0,
+          "observed": [
+            {
+              "value": "1441122000",
+              "context_id": "i0c8c913530644227bf905315b34252cf_D20220101-20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 4412601000.0,
+          "observed": [
+            {
+              "value": "4412601000",
+              "context_id": "i3b873d14dabe464ca6930d5fd4574714_I20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "3dbfdb8ac02b5adfed02d1b5e47b3a703b6428131b976bef9dd9d50981d3ce8e",
+      "extraction_sha256": "1b09d371b9d0bb69d9b137e56c0b530f2f1e5e534236d7cdb8fb5c2d6e9b6d41"
+    },
+    {
+      "accession": "0001124140-23-000014",
+      "cik": "0001124140",
+      "period_end": "2022-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1124140/000112414023000014/0001124140-23-000014.txt",
+        "sha256": "e6cde0f0b60fb81571c06ac91169a67327e3df7d34b7d2f6664df0dfe86ab9fd",
+        "bytes": 18009432,
+        "captured_at_utc": "2026-10-26T15:34:58.658601+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-02-21T22:04:22+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "10e58d137f97442a863e0d975161517ccd954ae0b21bbab4a2681948e2cdd3f6",
+      "sgml_primary_sha256": "c84e773ecf3eb84272f2e9ab31d912f84797231e5589997870c18572cae0a118",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "expected": 2084279000.0,
+          "observed": [
+            {
+              "value": "2084279000",
+              "context_id": "i50e7e004dd0743b9948bd851583cc5a2_D20220101-20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "CostOfRevenue",
+          "expected": 574394000.0,
+          "observed": [
+            {
+              "value": "574394000",
+              "context_id": "i50e7e004dd0743b9948bd851583cc5a2_D20220101-20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 6226873000.0,
+          "observed": [
+            {
+              "value": "6226873000",
+              "context_id": "ia85bd30e018243849407149cc6b054ab_I20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "ab3ef152d905333db88c13231df860afb06578082d9a9dc1b60542c4e692fb02",
+      "extraction_sha256": "27e24ea6741b901b915d02237cc42eb2c5ddd99bf9815bd8f0fc718dcc8536e3"
+    },
+    {
+      "accession": "0001628280-23-004840",
+      "cik": "0001512673",
+      "period_end": "2022-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828023004840/0001628280-23-004840.txt",
+        "sha256": "68e42c4e1c25e71cdfea0dd2c616a52725759d950d105747f8650cbd27e87fb7",
+        "bytes": 31484118,
+        "captured_at_utc": "2026-10-26T15:34:59.663299+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-02-23T21:23:08+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "e07e643dc43e5d869013288c40516355e09925a33c3ad120389665d0844951ff",
+      "sgml_primary_sha256": "0621e72b474b525ddecb125fb10c58562ef0173ffe4584a3f5f7b36ae0a8d87e",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 5991892000.0,
+          "observed": [
+            {
+              "value": "5991892000",
+              "context_id": "ie0d781a0d3fb4d8e97cfc28bfb436a29_D20220101-20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 31364340000.0,
+          "observed": [
+            {
+              "value": "31364340000",
+              "context_id": "i3a2d3e75c2144936b9f98c7d761c08ca_I20221231",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "556dde516cce50f32dd6920aa1bf2bc429886131f93506be793f1b238c073702",
+      "extraction_sha256": "2a1e3783c1ed7bece8cb4f63d766c4d16a4f47e05b245171c6466ac717fe8889"
+    },
+    {
+      "accession": "0001558370-23-002559",
+      "cik": "0001477449",
+      "period_end": "2022-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1477449/000155837023002559/0001558370-23-002559.txt",
+        "sha256": "bf799d16f4cff1d1467a75175a2455be5e83ef84702897d866a9d03cdf1ec01d",
+        "bytes": 16234203,
+        "captured_at_utc": "2026-10-26T15:35:01.315350+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-03-01T21:02:35+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "9477290f7aae33863e19f38c5f9260ec75aeaecf4d068c33541357c59519ddec",
+      "sgml_primary_sha256": "a45c38c7254a6ad7cf5d10711f33eda2e5d97f6ba621af2ccf75346c49e3c1e7",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "expected": 2406840000.0,
+          "observed": [
+            {
+              "value": "2406840000",
+              "context_id": "Duration_1_1_2022_To_12_31_2022_woI_HL9r9UyaAcM2cQgooQ",
+              "decimals": "-3",
+              "source_line": 117
+            },
+            {
+              "value": "2406840000",
+              "context_id": "Duration_1_1_2022_To_12_31_2022_woI_HL9r9UyaAcM2cQgooQ",
+              "decimals": "-3",
+              "source_line": 103
+            },
+            {
+              "value": "2406840000",
+              "context_id": "Duration_1_1_2022_To_12_31_2022_woI_HL9r9UyaAcM2cQgooQ",
+              "decimals": "-3",
+              "source_line": 117
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "CostOfGoodsAndServicesSold",
+          "expected": 743987000.0,
+          "observed": [
+            {
+              "value": "743987000",
+              "context_id": "Duration_1_1_2022_To_12_31_2022_woI_HL9r9UyaAcM2cQgooQ",
+              "decimals": "-3",
+              "source_line": 103
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 4345355000.0,
+          "observed": [
+            {
+              "value": "4345355000",
+              "context_id": "As_Of_12_31_2022_JW9NiOhHuU6CHWhQg3xfyA",
+              "decimals": "-3",
+              "source_line": 102
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "4eaf70b89d520ae4698f157ab439c6311fbf23399b4a1e326c0b2115215013cf",
+      "extraction_sha256": "05e648a459e6ebecf1959e60a8254f0b8e9c18ef143b4f3a412ece129c612d3a"
+    },
+    {
+      "accession": "0001585521-23-000035",
+      "cik": "0001585521",
+      "period_end": "2023-01-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552123000035/0001585521-23-000035.txt",
+        "sha256": "9b2c14637f3d5b9f8742e245477c63308fc784419a3f106531741d4c87c21874",
+        "bytes": 21837997,
+        "captured_at_utc": "2026-10-26T15:35:03.035281+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-03-03T16:07:37+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "05dab78d3033326c31832d9c3907b524a4cdcbc56c7b216ae98ec64c3866c613",
+      "sgml_primary_sha256": "118d19f3909a158da2cf1af29ee06a93b090c199435a24ac98c160e813a02fbd",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 3292509000.0,
+          "observed": [
+            {
+              "value": "3292509000",
+              "context_id": "iff1c3275c05843719b2d4e85852beda9_D20220201-20230131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 8128065000.0,
+          "observed": [
+            {
+              "value": "8128065000",
+              "context_id": "id57a05e2ba7744578f99e4e80f468785_I20230131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "34cc1ffe462af6544a4afa2dda7c9d00be46fa6be6dc8ecac0c107ef4fe3940a",
+      "extraction_sha256": "8ab71209dccdc1b3b49c737ca331aff46f9fcafafeaeb039bb3d32c76b7a82e5"
+    },
+    {
+      "accession": "0001734722-23-000017",
+      "cik": "0001734722",
+      "period_end": "2023-01-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472223000017/0001734722-23-000017.txt",
+        "sha256": "8edba46fc3741be4db9418bf21f7ba345dfd70490641f348390eb7a94fb2254a",
+        "bytes": 14167326,
+        "captured_at_utc": "2026-10-26T15:35:04.419166+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2023-03-24T21:18:54+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "c3ff6372ebcda18af43b102291158c60b183251b8d75de0093acfd39e16e6eda",
+      "sgml_primary_sha256": "012335a458c15621c3370dc0ef2c46f2f60bdebf7e8c2430475698f6b71c4506",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 878530000.0,
+          "observed": [
+            {
+              "value": "878530000",
+              "context_id": "i7980d02f75b74d6387cc10ed3f73c7d0_D20220201-20230131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 2735206000.0,
+          "observed": [
+            {
+              "value": "2735206000",
+              "context_id": "i439075e5d9d04a98908a053117632975_I20230131",
+              "decimals": "-3",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "a857f7e9342c89f7253281d949b7e14de66a3adfc896dfd7b286faaa7d9c27cd",
+      "extraction_sha256": "74a45c3eb1a97bf760c39fed65897a7ae93e91a8b7901e2298e3855984a7635b"
+    },
+    {
+      "accession": "0001628280-24-002390",
+      "cik": "0001318605",
+      "period_end": "2023-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/0001628280-24-002390.txt",
+        "sha256": "3de152d6410563c8e1d94e4457a3e50b9dbb6f6359f14ce31489e7321130c176",
+        "bytes": 15527801,
+        "captured_at_utc": "2026-10-26T15:35:05.284254+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2024-01-27T02:00:20+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "c370a9ddc1cf29aa57d0d4aeeb6f41367c747f84475a5f19831b3edd5370ab38",
+      "sgml_primary_sha256": "7118ce954b12dd5f43597f3939f0be4500b23f37086b2bd845653d9fb308f7ed",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 17660000000.0,
+          "observed": [
+            {
+              "value": "17660000000",
+              "context_id": "c-1",
+              "decimals": "-6",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 106618000000.0,
+          "observed": [
+            {
+              "value": "106618000000",
+              "context_id": "c-5",
+              "decimals": "-6",
+              "source_line": 4
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "8cdb6c6b60b1bb6de5fc5c8e0a4c709075fb9fe59cfe4355de6a0f0ec2c89494",
+      "extraction_sha256": "311ae42450940aa10282338bd41f71faaf309510e626bc9620989a7b5165fa1c"
+    },
+    {
+      "accession": "0001428439-24-000011",
+      "cik": "0001428439",
+      "period_end": "2023-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1428439/000142843924000011/0001428439-24-000011.txt",
+        "sha256": "0b01c7dafccc1c25e32d593183c27230af4bce8ab85476b91362f0d2bf53a634",
+        "bytes": 11837368,
+        "captured_at_utc": "2026-10-26T15:35:06.526156+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2024-02-16T21:06:52+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "558286b9403146fe971ad5c2c3bd1b1f5c6c4db233f41104b1ba934952f0e88e",
+      "sgml_primary_sha256": "277f27ddb01ca07978f1eb45b720a08c7ed6d0b04c81953df0e66afddb2aa465",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 1522615000.0,
+          "observed": [
+            {
+              "value": "1522615000",
+              "context_id": "c-1",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 4261792000.0,
+          "observed": [
+            {
+              "value": "4261792000",
+              "context_id": "c-5",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "956dc96d21915ba7b40e2d8f46a19028a8e3cc4b7431a24c9f4f420b05946def",
+      "extraction_sha256": "d75fbc86e01e1a54d97d8606694d3efd1a6c897ef332a070ee0af570940cc6a5"
+    },
+    {
+      "accession": "0001124140-24-000012",
+      "cik": "0001124140",
+      "period_end": "2023-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1124140/000112414024000012/0001124140-24-000012.txt",
+        "sha256": "b32a393e97e59ab0b3672b3fb29b599f8cffb81304866b0d35ac6fa171a786d9",
+        "bytes": 15930441,
+        "captured_at_utc": "2026-10-26T15:35:08.428149+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2024-02-21T22:05:28+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "97bf39d31cfa248b5256204a37a91a0cc1c60439fee4b988b3f8ec0c62125900",
+      "sgml_primary_sha256": "9e3fa37a78620f28a8752a75b96e236dc735161902aca0ad2a51164ed18072b7",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+          "expected": 2499766000.0,
+          "observed": [
+            {
+              "value": "2499766000",
+              "context_id": "c-1",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "CostOfRevenue",
+          "expected": 654248000.0,
+          "observed": [
+            {
+              "value": "654248000",
+              "context_id": "c-1",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 6471334000.0,
+          "observed": [
+            {
+              "value": "6471334000",
+              "context_id": "c-4",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "f47301527f60050bf6bc1f01268365e607999a9f619e2b1d7ce59aa8efc45e67",
+      "extraction_sha256": "c185777ef77b50f5c955809f8e8558635f37b355b9ca2b3f8fb98c6d22fb2b2a"
+    },
+    {
+      "accession": "0001628280-24-006354",
+      "cik": "0001512673",
+      "period_end": "2023-12-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828024006354/0001628280-24-006354.txt",
+        "sha256": "d773ed43a6fc88f313dc82bcea0df431da55272b49b1099dd6dee55ba6eced3f",
+        "bytes": 26842128,
+        "captured_at_utc": "2026-10-26T15:35:09.895490+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2024-02-22T21:18:13+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "079c1d6513c5487554c96fb8694d3971a15033c40c13bac560a6d3c7cbcb26da",
+      "sgml_primary_sha256": "23fb00e98ef586007cc29723ba607b22d0f37d31a82a31acf02e393686d81068",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 7504886000.0,
+          "observed": [
+            {
+              "value": "7504886000",
+              "context_id": "c-1",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 34069893000.0,
+          "observed": [
+            {
+              "value": "34069893000",
+              "context_id": "c-5",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "05319250cf2259dbf68447d7db3a8653850240e17ca507638ac948cf22b76b01",
+      "extraction_sha256": "5fc02c59fb7dd76ba9f6529f21fe960959170eb82af97a0f82e88bf538fe5bdb"
+    },
+    {
+      "accession": "0001585521-24-000030",
+      "cik": "0001585521",
+      "period_end": "2024-01-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552124000030/0001585521-24-000030.txt",
+        "sha256": "ada1ca62ce2a8e5efe21ca57f82ab7f06b5b497b3c14df767b9f17255cf50f46",
+        "bytes": 13422469,
+        "captured_at_utc": "2026-10-26T15:35:11.383084+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2024-03-01T23:30:11+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "2d1f94e5c00786e9da9c9f61780c5ec2f7ed5d87b29005ebfac95bc1fbb8f002",
+      "sgml_primary_sha256": "3b3514df4d80748523057d8b0142242a9d7677e6dce0eeed5a03ec2c57209cf4",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 3449423000.0,
+          "observed": [
+            {
+              "value": "3449423000",
+              "context_id": "c-1",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 9929793000.0,
+          "observed": [
+            {
+              "value": "9929793000",
+              "context_id": "c-5",
+              "decimals": "-3",
+              "source_line": 5
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "1dcd1b06840f9b7909eef5b1806dc8ac94f5c385413bd1da6647eb7e97a2b69e",
+      "extraction_sha256": "1531ee6b9fc0c0a6985c84655260dc9d7ff332f766b2e4ee51d5bc5d7587c206"
+    },
+    {
+      "accession": "0001734722-24-000011",
+      "cik": "0001734722",
+      "period_end": "2024-01-31",
+      "review_completed": true,
+      "source_receipt": {
+        "url": "https://www.sec.gov/Archives/edgar/data/1734722/000173472224000011/0001734722-24-000011.txt",
+        "sha256": "4c5254f15e57e294a1b854eaa0f133ed935ee42ca83425fd728c4a774c975b8f",
+        "bytes": 15127657,
+        "captured_at_utc": "2026-10-26T15:35:12.544712+00:00",
+        "events": [
+          {
+            "attempt": 1,
+            "http_status": 200
+          }
+        ]
+      },
+      "raw_acceptance_at_utc": "2024-03-27T21:26:17+00:00",
+      "raw_api_acceptance_match": true,
+      "old_web_primary_sha256": "7f533c50c985dbacff3b7f84a38ec3750df1555d15cefcfe34162e2215dac246",
+      "sgml_primary_sha256": "266cd9dba0429ac8911117724eaa97947a40182d19de942cb1a09742e6606178",
+      "whole_primary_bytes_equal": false,
+      "comparisons": [
+        {
+          "tag": "GrossProfit",
+          "expected": 1112148000.0,
+          "observed": [
+            {
+              "value": "1112148000",
+              "context_id": "c-1",
+              "decimals": "-3",
+              "source_line": 8
+            }
+          ],
+          "unambiguous_exact_match": true
+        },
+        {
+          "tag": "Assets",
+          "expected": 2954758000.0,
+          "observed": [
+            {
+              "value": "2954758000",
+              "context_id": "c-6",
+              "decimals": "-3",
+              "source_line": 8
+            }
+          ],
+          "unambiguous_exact_match": true
+        }
+      ],
+      "inputs_match": true,
+      "full_xbrl_validation_passed": true,
+      "validation_log_codes": {},
+      "tool_output_sha256": "7f628b9f7cdd8d077df596a20742fa4443a94e98df71da245fc33ada443342e4",
+      "extraction_sha256": "4829d00e0cb99a215f47c33ac609806b650c6ea03e2122f36e86c79a07644795"
+    }
+  ],
+  "new_economic_accounts": 0,
+  "external_human_attestation": false,
+  "independent_data_provider": false,
+  "profit_goal_met": false
+}

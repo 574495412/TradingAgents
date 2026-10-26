@@ -1,0 +1,29 @@
+{
+  "schema": "equity-depth-verification.v1",
+  "role": "Internal provenance/arithmetic/method crosschecks; not external independent attestation or market/return certification",
+  "raw_document_byte_roundtrips": 160,
+  "decision_availability_checks": 121,
+  "active_annual_versions": 20,
+  "raw_input_values_matched": 45,
+  "full_arelle_xml_validations_passed": 20,
+  "new_economic_accounts": 0,
+  "source_hash_checks": {
+    "arelle_worker.py": true,
+    "arelle_review.py": true,
+    "depth_review_plan.json": true
+  },
+  "math_crosschecks": {
+    "net_account_regression": {
+      "OLS_and_HAC_Bartlett5_independent_matrix_error": 3.064215547965432e-14,
+      "passed": true
+    },
+    "paired_net_difference_regression": {
+      "OLS_and_HAC_Bartlett5_independent_matrix_error": 6.106226635438361e-15,
+      "passed": true
+    }
+  },
+  "attributed_accounts": 4,
+  "daily_stock_attribution_rows": 14880,
+  "external_human_attestation": false,
+  "profit_goal_met": false
+}

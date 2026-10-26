@@ -1,6 +1,6 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261026_depth_v003",
+  "version": "20261026_depth_v004",
   "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
@@ -30,7 +30,7 @@
       "domain": "财报及事件",
       "original_records": "原始10-K/10-Q/20-F及修订文件、iXBRL实例/上下文/单位；公司IR公告及附件、原始发布时刻。做预期差还需当时逐条分析师预测及各版本。",
       "required_fields": "accession、会计期间、币种/量纲/scale/sign、实体/分部上下文、accepted/first_public/available/captured各时间；修订只影响其后决策。",
-      "current_gap": "97项年度输入已内部对原文核对；8-K时间不等于首次公告，季度/自定义标签和历史预测尚未完成。"
+      "current_gap": "旧网页载体97项内部比对保留；实际消费20个年度版本45项输入已对完整申报原件并用Arelle校验。季度/自定义标签、首次公告及历史预测仍未完成，尚无外部独立核对。"
     },
     {
       "id": "R3",
@@ -61,9 +61,10 @@
       "expert_work": "写清收益由谁支付、为何持续、何种市场/成本/竞争条件会失效；公开方法与本地偏离逐项登记。",
       "methods_tools": "机制卡、预注册实验协议；固定同机会集等权/被动对照、训练期确定的同风险对照、单机制移除和分层置换安慰剂。",
       "required_artifact": "冻结假设、正/负对照、最小经济效果与拒绝条件、所有偏离及试验记录。",
-      "pass_when": "在事前域内优势超过预登记经济门槛；不能由市场/行业暴露、个别股票或事后择时解释。反证和原完整结果同时保留。",
+      "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
       "status": "partial_internal",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。"
     },
     {
       "id": "G2",
@@ -73,7 +74,8 @@
       "required_artifact": "原文包、许可/覆盖和缺口清单、版本映射、每笔决策到当时数据的追溯链、外部源差异报告。",
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。"
     },
     {
       "id": "G3",
@@ -83,7 +85,8 @@
       "required_artifact": "完整搜索史、泄漏/重叠检查、事前功效与样本计划、统计量前提/区间/不能计算的原因、锁定前向协议。",
       "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
       "status": "pending",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "372个日收益的固定HAC5和20日分块区间已作事后诊断；未登记的原始最小效应/功效及完整选择史没有因此补齐，不能认证样本外或显著alpha。"
     },
     {
       "id": "G4",
@@ -93,7 +96,8 @@
       "required_artifact": "每笔决策/订单/成交/持仓/现金/应收/未结算链，净值重建、收益归因与残差解释。",
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。"
     },
     {
       "id": "G5",
@@ -103,7 +107,8 @@
       "required_artifact": "目标本金下成交偏差、拒单/部分成交、容量曲线、压力亏损、同步净值与真实高水位记录。",
       "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
       "status": "not_passed",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "动量收盘回撤28.15%，日低价包络28.99%，均超15%；80%为下单目标，实际最高收盘股票敞口84.54%，32日超过80%，并非持续硬上限。"
     },
     {
       "id": "G6",
@@ -123,7 +128,8 @@
       "required_artifact": "可核验身份/独立性声明、方法和源码版本、输入出处、逐笔差异与签署结论、可复算材料。",
       "pass_when": "第三方确认来源与时间、成交/资金/统计口径，并解决实质差异；同一引擎导入、另一AI赞同、单纯哈希或本地绿测不构成此项通过。",
       "status": "pending_external",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "Arelle和statsmodels是第三方维护的本地工具；本地运行及内部矩阵复算均不构成独立审计人签署。尚无外部独立证据。"
     },
     {
       "id": "G8",
@@ -159,5 +165,36 @@
   "orders_allowed": false,
   "deployment_allowed": false,
   "profit_goal_met": false,
-  "current_acceptance_status": "not_passed"
+  "current_acceptance_status": "not_passed",
+  "progress_evidence": {
+    "report": "docs/research/equities_depth_review_20261026/README.md",
+    "verification": "docs/research/equities_depth_review_20261026/verification.json",
+    "new_economic_accounts": 0,
+    "external_attestation_received": false,
+    "original_input_review": "results/research/equity_arelle_review_20261026_v002",
+    "attribution": "results/research/equity_depth_attribution_20261026_v002"
+  },
+  "decision_rules": {
+    "strategy_admission_required_gates": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G7"
+    ],
+    "profit_target_required_gates": [
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6",
+      "G7",
+      "G8"
+    ],
+    "missing_external_evidence_is_veto": true,
+    "internal_checks_cannot_set_external_gate_passed": true,
+    "credible_negative_research": "可以交付完整、可独立复核的负结论；不因此准入，不将风险或收益门槛改写为通过。"
+  }
 }

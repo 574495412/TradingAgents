@@ -1,0 +1,34 @@
+{
+  "schema": "equity-depth-review-plan.v1",
+  "version": "20261026_v001",
+  "frozen_run": "results/research/equities_pit_stocks_20261026_v002",
+  "pit_dataset": "data/research/equity_pit_20261026_v001",
+  "role": "Post-result diagnostic audit of already registered rules; no new candidate, account, fitted allocation, winner selection or OOS claim.",
+  "focal_account": "US_french_mom_12_2_10000_15bps",
+  "controls": ["US_disclosed_equal_10000_15bps", "US_gross_profitability_10000_15bps", "US_stock_blend_equal_10000_15bps"],
+  "financial_input_review": {
+    "tool": "arelle-release==2.47.3",
+    "scope": "Every annual accession consumed to rank the fixed ten-stock cohort during the existing common window, including the preceding month-end decision. Do not select filings by whether validation succeeds.",
+    "originals": "Original issuer HTML plus referenced issuer schema/linkbases, captured from the exact accession; primary bytes must match the already sealed original HTML.",
+    "matching": "Exact issuer CIK, report end, same annual 330-380 day duration or instant Assets, USD, no dimensions, standard US-GAAP tags. Compare transformed numeric values and retain context/units/decimals/validity and ambiguity.",
+    "validation": "Full DTS and XML validation requested; formulas disabled. Missing taxonomies, load errors or validation errors are explicit non-passes, never repaired by dropping facts, changing the source HTML or disabling validation.",
+    "external_human_attestation": false
+  },
+  "account_attribution": {
+    "scope": "Read frozen fills and account marks; no rerun or removal of securities.",
+    "identity": "Daily equity change = prior inventory*(today open - prior close) + post-open inventory*(close-open) + actual dividend receivable - actual commission/statutory fees - recorded adverse slippage. Noninterest settlement releases do not create PnL.",
+    "ending": "Report every stock's contribution, closed cycles, retained inventory and aggregate exit reserve separately. Removing a contributor from the sum is an accounting sensitivity only, never a valid counterfactual trading account.",
+    "risk": "Observed exposure, largest holding and gross drift are descriptive; an 80% target is not a proven continuous hard exposure ceiling."
+  },
+  "exposure_diagnostics": {
+    "benchmarks": "Existing hash-frozen SPY/QQQ 2018-2026 public data; gross ex-dividend total returns, zero cash interest. Controls only, not new strategies or inherited net returns.",
+    "regressions": "OLS of focal daily net return on intercept, SPY return and (QQQ-SPY) return. HAC Bartlett lag5 with finite-sample correction; report coefficient intervals, conditioning and correlation. Repeat for paired focal-minus-fixed-cohort return as a descriptive differential, not a matched-risk alpha claim.",
+    "bootstrap": "Paired circular moving-block bootstrap of the focal-minus-fixed-cohort daily return mean, fixed20-session blocks, 2000 draws, seed20261026. No block/lag/benchmark search.",
+    "limits": "Observed historical period and selected focus already seen; uncertainty intervals are descriptive, not selection-corrected significance, causal identification, capacity certification or forward forecasts. The original plan did not predefine a minimum alpha effect; do not invent one after seeing returns."
+  },
+  "new_economic_accounts": 0,
+  "admission_from_this_review": false,
+  "external_independent_verification": false,
+  "production_eligible": false,
+  "orders_allowed": false
+}

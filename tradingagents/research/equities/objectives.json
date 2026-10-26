@@ -1,6 +1,6 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261026_depth_v003",
+  "version": "20261026_depth_v004",
   "title": "股票优先 · 原始证据与独立验证",
   "program_status": "active",
   "profit_goal_status": "not_met",
@@ -82,7 +82,8 @@
     "gross_limit": 0.8,
     "short_enabled": false,
     "leverage_enabled": false,
-    "orders_enabled": false
+    "orders_enabled": false,
+    "gross_limit_scope": "0.8为既有实验下单目标，不是连续硬上限；已封存动量实际收盘最高0.8454184377，32日超0.8，保留原结果并判风险未通过。"
   },
   "priority_queue": [
     {
@@ -158,7 +159,7 @@
       "status": "in_progress",
       "owner": "TradingAgents",
       "done_when": "可证伪机制、原始输入、经济归因、偏差/功效和独立核对完成；不新增因子凑收益",
-      "progress": "已关联3,663条财报数值，44个可用年度版本97个因子输入与原始iXBRL核对。毛利质量个股账户已跑，价值/完整QMJ/ARK公司模型仍未复现。"
+      "progress": "旧网页97项比对保留；当前实际消费的20年度原件45项输入已由完整申报提取并通过Arelle标准校验。四个固定账户完成逐股收益/风险暴露归因；统计区间跨零、集中和回撤问题仍在，尚无外部独立认证。"
     },
     {
       "id": "E05",
@@ -212,7 +213,16 @@
     "pit_stock_full_window_available": false,
     "combination_admission": "docs/research/equities_pit_stocks_20261026/combination-admission.json",
     "independent_external_replication_received": false,
-    "verified_real_forward_account": null
+    "verified_real_forward_account": null,
+    "depth_review": {
+      "report": "docs/research/equities_depth_review_20261026/README.md",
+      "verification": "docs/research/equities_depth_review_20261026/verification.json",
+      "new_economic_accounts": 0,
+      "external_attestation_received": false,
+      "original_input_review": "results/research/equity_arelle_review_20261026_v002",
+      "attribution": "results/research/equity_depth_attribution_20261026_v002"
+    },
+    "external_audit_passed_scope": "旧external_audit_passed字段只表示外部规则账户的内部账本复算，不表示外部独立参与者验收。"
   },
   "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
   "execution_plan": "tradingagents/research/equities/stock_protocol.json",
@@ -221,7 +231,7 @@
   "broker_verified": false,
   "independent_forward_oos": false,
   "research_progress": {
-    "title": "已进入个股复现 · 历史覆盖仍需补齐",
+    "title": "深入原始财报与收益机制 · 尚未独立验收",
     "scope": "2022年已披露ARK前10大固定个股；非全市场股票池、非ARK基金实际收益。",
     "disclosure_periods": 16,
     "historical_cusips": 368,
@@ -263,7 +273,11 @@
         "drawdown": 0.3272082662538326,
         "closed_cycles": 9
       }
-    ]
+    ],
+    "complete_submission_versions_validated": 20,
+    "consumed_original_values_matched": 45,
+    "depth_new_accounts": 0,
+    "risk_scope": "80%为目标；动量最高收盘股票敞口84.54%，32日超80%。收盘回撤28.15%，低价包络28.99%，均超15%。"
   },
   "acceptance_standard": "docs/research/equities_depth_acceptance_20261026/acceptance.json",
   "acceptance_report": "docs/research/equities_depth_acceptance_20261026/README.md",
@@ -285,37 +299,42 @@
     {
       "id": "G1",
       "name": "经济机制与可证伪假设",
-      "pass_when": "在事前域内优势超过预登记经济门槛；不能由市场/行业暴露、个别股票或事后择时解释。反证和原完整结果同时保留。",
+      "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
       "status": "partial_internal",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。"
     },
     {
       "id": "G2",
       "name": "原始数据、历史身份与因果时间",
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。"
     },
     {
       "id": "G3",
       "name": "选择偏差、功效与真正未见样本",
       "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
       "status": "pending",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "372个日收益的固定HAC5和20日分块区间已作事后诊断；未登记的原始最小效应/功效及完整选择史没有因此补齐，不能认证样本外或显著alpha。"
     },
     {
       "id": "G4",
       "name": "净收益机制与账户恒等式",
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。"
     },
     {
       "id": "G5",
       "name": "可成交性、容量、连续风险",
       "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
       "status": "not_passed",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "动量收盘回撤28.15%，日低价包络28.99%，均超15%；80%为下单目标，实际最高收盘股票敞口84.54%，32日超过80%，并非持续硬上限。"
     },
     {
       "id": "G6",
@@ -329,7 +348,8 @@
       "name": "外部独立重建与盲核对",
       "pass_when": "第三方确认来源与时间、成交/资金/统计口径，并解决实质差异；同一引擎导入、另一AI赞同、单纯哈希或本地绿测不构成此项通过。",
       "status": "pending_external",
-      "independent_evidence": null
+      "independent_evidence": null,
+      "current_evidence_note": "Arelle和statsmodels是第三方维护的本地工具；本地运行及内部矩阵复算均不构成独立审计人签署。尚无外部独立证据。"
     },
     {
       "id": "G8",
