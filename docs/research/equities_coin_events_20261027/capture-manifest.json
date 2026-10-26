@@ -1,0 +1,263 @@
+{
+  "schema": "equity-coin-events-capture.v1",
+  "records": [
+    {
+      "file": "raw/0001679788-23-000003.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978823000003/0001679788-23-000003.txt",
+      "sha256": "1e593f3e0235b778933d2f2f5a41d1362be553265980c89d9800d1f7d96288de",
+      "bytes": 154063,
+      "captured_at_utc": "2026-10-26T16:41:02.441581+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/0001679788-23-000029.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978823000029/0001679788-23-000029.txt",
+      "sha256": "50057f130700590c3ee1a037be4d9848129f98959592e21cfa6e6b0406a078b8",
+      "bytes": 6296717,
+      "captured_at_utc": "2026-10-26T16:41:02.570429+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/0001679788-23-000071.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978823000071/0001679788-23-000071.txt",
+      "sha256": "1148784ac9899527ad147e3c659c9fa4c16b4a4930b1b324d1b10d14b7b1c6d9",
+      "bytes": 5801150,
+      "captured_at_utc": "2026-10-26T16:41:02.551968+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/0001679788-23-000105.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978823000105/0001679788-23-000105.txt",
+      "sha256": "d34d9f62f27f38897fcbe6469150e7f060ff879c29f67b0b010a31b1734f91d9",
+      "bytes": 6459973,
+      "captured_at_utc": "2026-10-26T16:41:03.098481+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/0001679788-23-000112.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978823000112/0001679788-23-000112.txt",
+      "sha256": "1d6e33128169e780c2c7360fe715e80c79f8bac44b97dbdc43334fc8f5936b1b",
+      "bytes": 6040351,
+      "captured_at_utc": "2026-10-26T16:41:03.208369+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/0001679788-24-000019.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978824000019/0001679788-24-000019.txt",
+      "sha256": "a899286c92426655c53045f2da81b182207a475fbf0d5b3ebd9a6c1465a13353",
+      "bytes": 6478712,
+      "captured_at_utc": "2026-10-26T16:41:03.279625+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/0001679788-24-000087.txt",
+      "status": "captured",
+      "url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978824000087/0001679788-24-000087.txt",
+      "sha256": "9d8d99d09ae27683e4e5ccb5e82aa9c6832f99f8e87e9c88aad0f3c244a1dc33",
+      "bytes": 5520266,
+      "captured_at_utc": "2026-10-26T16:41:03.736299+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2022Q4-release.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Releases-Fourth-Quarter-and-Full-Year-2022-Shareholder-Letter/default.aspx",
+      "sha256": "bc1c53662dc85bf792969d5c0bf51f4fc7cb0eb9196a7ec6b5f8134f5878ca97",
+      "bytes": 58886,
+      "captured_at_utc": "2026-10-26T16:41:04.345351+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2022Q4-schedule.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Announces-Date-of-Fourth-Quarter-and-Full-Year-2022-Financial-Results/default.aspx",
+      "sha256": "34e092fe8149befbf5b52c5552fe383177c10afaa2425cf97d9bee40c22205cd",
+      "bytes": 59008,
+      "captured_at_utc": "2026-10-26T16:41:04.374719+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q1-release.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Releases-First-Quarter-2023-Shareholder-Letter/default.aspx",
+      "sha256": "d6ce470a7255a55c7420547bab2d9e7642a62a8ca0b821fce5fc5b955150b93b",
+      "bytes": 58203,
+      "captured_at_utc": "2026-10-26T16:41:04.550618+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q1-schedule.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Announces-Date-of-First-Quarter-2023-Financial-Results/default.aspx",
+      "sha256": "11521cf2c8e94ccf32cf0e79d4a46a3673cf45a06eb338a4c71a9fa22c5610aa",
+      "bytes": 58865,
+      "captured_at_utc": "2026-10-26T16:41:05.234885+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q2-release.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Releases-Second-Quarter-2023-Shareholder-Letter/default.aspx",
+      "sha256": "99db1a908111cb64620bb24982a1a9bc31988376dda6e7505365e1418bfe0b97",
+      "bytes": 58234,
+      "captured_at_utc": "2026-10-26T16:41:05.273826+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q2-schedule.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Announces-Date-of-Second-Quarter-2023-Financial-Results/default.aspx",
+      "sha256": "74647dd1704c8b04cf47896d96b8dfe8151998d6b3f5e750cb35feebad095d26",
+      "bytes": 58892,
+      "captured_at_utc": "2026-10-26T16:41:05.433453+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q3-release.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Releases-Third-Quarter-2023-Shareholder-Letter/default.aspx",
+      "sha256": "e481c3dd91eee55d717e48555c6c5c8ca2e001dac1bfdca7c5508671b779afdb",
+      "bytes": 58234,
+      "captured_at_utc": "2026-10-26T16:41:06.056346+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q3-schedule.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2023/Coinbase-Announces-Date-of-Third-Quarter-2023-Financial-Results/default.aspx",
+      "sha256": "2ec7e5aaf7d13d271b9098aadc448084173b6c92000ef1d71e0e7f626a503deb",
+      "bytes": 58894,
+      "captured_at_utc": "2026-10-26T16:41:06.102958+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q4-release.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2024/Coinbase-Releases-Fourth-Quarter-and-Full-Year-2023-Shareholder-Letter/default.aspx",
+      "sha256": "adf8f5f6f8bd358fb24f7e6634272181e3cdd28e55b2d7cdebb9a6369ecb4044",
+      "bytes": 58700,
+      "captured_at_utc": "2026-10-26T16:41:06.261728+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2023Q4-schedule.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2024/Coinbase-Announces-Date-of-Fourth-Quarter-and-Full-Year-2023-Financial-Results/default.aspx",
+      "sha256": "8bfe55024d738b1a8fd9ec41fc33b60ba3206edc2cef0d94c600cb9b1edecec1",
+      "bytes": 59251,
+      "captured_at_utc": "2026-10-26T16:41:07.002841+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2024Q1-release.htm",
+      "status": "captured",
+      "url": "https://investor.coinbase.com/news/news-details/2024/Coinbase-Releases-First-Quarter-2024-Shareholder-Letter/default.aspx",
+      "sha256": "2ac174808654b96b92fe72b96a54374f015b261b296655573fbb4794ac239756",
+      "bytes": 58940,
+      "captured_at_utc": "2026-10-26T16:38:03.184780+00:00",
+      "events": [
+        {
+          "attempt": 1,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "file": "raw/2024Q1-schedule.htm",
+      "url": "https://investor.coinbase.com/news/news-details/2024/Coinbase-Announces-Date-of-First-Quarter-2024-Financial-Results/default.aspx",
+      "status": "failed",
+      "error": "HTTPError"
+    }
+  ]
+}

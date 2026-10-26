@@ -1,0 +1,26 @@
+{
+  "schema": "equity-coin-event-diagnostic.v1",
+  "selected_filings": 7,
+  "regular_earnings_releases": 6,
+  "preliminary_financial_events": 1,
+  "raw_acceptance_clocks_matched": 7,
+  "source_reported_ir_clock_anomalies": 6,
+  "original_wire_page_clock_crosschecks": 4,
+  "certified_first_public_release_clocks": 0,
+  "unchanged_coin_marked_pnl": "2899.65331903076158",
+  "unique_filing_reaction_sessions": 7,
+  "filing_reaction_session_coin_net_marked_pnl": "189.99981689453165",
+  "all_other_sessions_coin_net_marked_pnl": "2709.65350213622993",
+  "zero_inventory_filing_reaction_sessions": [
+    "2023-01-10",
+    "2023-02-22",
+    "2023-05-05",
+    "2023-11-03"
+  ],
+  "scope": "Accounting proximity to SEC filing only; not causal earnings PnL, global first-news reaction, net strategy counterfactual or executable event avoidance.",
+  "historical_consensus_acquired": false,
+  "PEAD_reproduced": false,
+  "new_economic_accounts": 0,
+  "external_independent_attestation": false,
+  "profit_goal_met": false
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "quarter": "2022Q4",
+    "ir_release_source": "data/research/equity_coin_events_20261027_v001/raw/2022Q4-release.htm",
+    "ir_schedule_source": "data/research/equity_coin_events_20261027_v001/raw/2022Q4-schedule.htm",
+    "source_reported_clock": "2023-02-21T15:11:00Z",
+    "literal_minus_sec_acceptance_seconds": -21297.0,
+    "issue": "literal_metadata_precedes_planned_after_close_slot",
+    "automatic_timezone_correction_applied": false,
+    "actual_first_public_at": null,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20230221005806/en/Coinbase-Releases-Fourth-Quarter-and-Full-Year-2022-Shareholder-Letter",
+      "source_displayed_publication": "Feb 21, 2023 4:11 PM Eastern Standard Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2023-02-21T21:11:00+00:00",
+        "2023-02-21T21:12:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 21600.0,
+      "absolute_first_public_certified": false
+    }
+  },
+  {
+    "quarter": "2023Q1",
+    "ir_release_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-release.htm",
+    "ir_schedule_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-schedule.htm",
+    "source_reported_clock": "2023-05-04T15:05:00Z",
+    "literal_minus_sec_acceptance_seconds": -18052.0,
+    "issue": "literal_metadata_precedes_planned_after_close_slot",
+    "automatic_timezone_correction_applied": false,
+    "actual_first_public_at": null,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20230504006012/en/Coinbase-Releases-First-Quarter-2023-Shareholder-Letter",
+      "source_displayed_publication": "May 4, 2023 4:05 PM Eastern Daylight Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2023-05-04T20:05:00+00:00",
+        "2023-05-04T20:06:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 18000.0,
+      "absolute_first_public_certified": false
+    }
+  },
+  {
+    "quarter": "2023Q2",
+    "ir_release_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q2-release.htm",
+    "ir_schedule_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q2-schedule.htm",
+    "source_reported_clock": "2023-08-03T15:05:00Z",
+    "literal_minus_sec_acceptance_seconds": -18187.0,
+    "issue": "literal_metadata_precedes_planned_after_close_slot",
+    "automatic_timezone_correction_applied": false,
+    "actual_first_public_at": null,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20230803432342/en/Coinbase-Releases-Second-Quarter-2023-Shareholder-Letter",
+      "source_displayed_publication": "Aug 3, 2023 4:05 PM Eastern Daylight Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2023-08-03T20:05:00+00:00",
+        "2023-08-03T20:06:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 18000.0,
+      "absolute_first_public_certified": false
+    }
+  },
+  {
+    "quarter": "2023Q3",
+    "ir_release_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q3-release.htm",
+    "ir_schedule_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q3-schedule.htm",
+    "source_reported_clock": "2023-11-02T15:13:00Z",
+    "literal_minus_sec_acceptance_seconds": -17569.0,
+    "issue": "literal_metadata_precedes_planned_after_close_slot",
+    "automatic_timezone_correction_applied": false,
+    "actual_first_public_at": null
+  },
+  {
+    "quarter": "2023Q4",
+    "ir_release_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q4-release.htm",
+    "ir_schedule_source": "data/research/equity_coin_events_20261027_v001/raw/2023Q4-schedule.htm",
+    "source_reported_clock": "2024-02-15T15:14:00Z",
+    "literal_minus_sec_acceptance_seconds": -21167.0,
+    "issue": "literal_metadata_precedes_planned_after_close_slot",
+    "automatic_timezone_correction_applied": false,
+    "actual_first_public_at": null
+  },
+  {
+    "quarter": "2024Q1",
+    "ir_release_source": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-release.htm",
+    "ir_schedule_source": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-schedule-canonical.htm",
+    "source_reported_clock": "2024-05-02T15:11:00Z",
+    "literal_minus_sec_acceptance_seconds": -17511.0,
+    "issue": "literal_metadata_precedes_planned_after_close_slot",
+    "automatic_timezone_correction_applied": false,
+    "actual_first_public_at": null,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20240502854983/en/Coinbase-Releases-First-Quarter-2024-Shareholder-Letter",
+      "source_displayed_publication": "May 2, 2024 4:11 PM Eastern Daylight Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2024-05-02T20:11:00+00:00",
+        "2024-05-02T20:12:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 18000.0,
+      "absolute_first_public_certified": false
+    }
+  }
+]

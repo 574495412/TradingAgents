@@ -1,0 +1,446 @@
+{
+  "schema": "equity-event-offline-input-manifest.v1",
+  "role": "Local source integrity and offline audit inventory; hashes do not establish truth or external strategy acceptance. Captured public originals must accompany the manifest.",
+  "files": [
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/businesswire-observed-clocks.json",
+      "bytes": 1539,
+      "sha256": "8a75f2a6a5384dc9130cbe0393d5016557bf6f34057c88d41332bba7ba455e69"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/capture-manifest.json",
+      "bytes": 8912,
+      "sha256": "7ee3e2be3a8406af896f06e2b3ae57da51ab89876c1224be080092193a3db3ef"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/collector_source.py",
+      "bytes": 1789,
+      "sha256": "15cf7369242a1359623446f81d60412cadbe6596c693fc661f82965b9f9df4b7"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000003/R1.htm",
+      "bytes": 29029,
+      "sha256": "cb65c86f4e49e0a7444a6dbdd813aee0a1899eddeed4156f809f35f53d2a0453"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000003/R1.htm.text",
+      "bytes": 7218,
+      "sha256": "55d73d794678a4b29dc0bef0de83b8ed69f05a61295e73051a0485fa7bb12549"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000003/coin-20230110.htm",
+      "bytes": 40978,
+      "sha256": "2fa56cf4b64f6afa9c11e0b32f4c33a64af5f358799f956f145548331c4dbfd9"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000003/coin-20230110.htm.text",
+      "bytes": 8601,
+      "sha256": "ce043b9f7af8a385d3286b8db039d2e71027a9dbe2fe3c97e616d165b5160a4f"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000029/R1.htm",
+      "bytes": 29029,
+      "sha256": "0a8d04ad04de73bfc45cc7e8d007df6d06e5baad881272409702de22523f0565"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000029/R1.htm.text",
+      "bytes": 7218,
+      "sha256": "30e28c5f6885c53b88c53c61081e882edb1f9f656854f340bb9c15b913248a48"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000029/coin-20230221.htm",
+      "bytes": 38116,
+      "sha256": "25faca8c70d70b52c5a45cb56f152cc64dffec606f34b9704643b55c9894acdb"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000029/coin-20230221.htm.text",
+      "bytes": 4936,
+      "sha256": "6c6cd223c808ade4ba58ca8e385dd8f25820c97a735a4bc88f2c07064c00a7f3"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000029/q4shareholderletter2022.htm",
+      "bytes": 82743,
+      "sha256": "0130c52822091f740d32405e5504434a1e9b0712bebcc829eb14d96ce3cb909f"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000029/q4shareholderletter2022.htm.text",
+      "bytes": 72711,
+      "sha256": "17a42d9791479f640455480a7f360b2f2da83a35243599a19a737a6fa0e6cf92"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000071/R1.htm",
+      "bytes": 29028,
+      "sha256": "db452c4afc1288ac189500115e2e2300f407699a4f41ba3cd3e7b0a437087130"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000071/R1.htm.text",
+      "bytes": 7216,
+      "sha256": "e8cac196e58237a5772ad8ce37c5fc7a5391ad96fd6581ea5ebd32f7852237b5"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000071/coin-20230504.htm",
+      "bytes": 38045,
+      "sha256": "7fddd1225a5608dd84ba5dd83421968cfeb272a61e19b662813813fcd39c5738"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000071/coin-20230504.htm.text",
+      "bytes": 4878,
+      "sha256": "95b49a53d9f11d35d6c1e6ea6f82125860c2a820568ef31117597da3cff00120"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000071/q123shareholderletter.htm",
+      "bytes": 77280,
+      "sha256": "0f87c67224f1e36e609671f2e9959c157beb98b9fef1dbbf84b66994fc4a4912"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000071/q123shareholderletter.htm.text",
+      "bytes": 67602,
+      "sha256": "aa6c650e981fc19aac49ed823bd492faa11a5b3f20c687a1da3a72cc242bb33a"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000105/R1.htm",
+      "bytes": 29030,
+      "sha256": "2792149a297adfd11ad799c007d1bd9469ece5caee991fc4f01748dc026a810e"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000105/R1.htm.text",
+      "bytes": 7218,
+      "sha256": "6fad5107d34bbe2b4e8899a789fa7f2488fbcc99cd7f9608d9fbee6071c1d13a"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000105/coin-20230803.htm",
+      "bytes": 32509,
+      "sha256": "66ac18c1b4434cb347d4847eb5cb654078df5cca645afec92c2b56898049b712"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000105/coin-20230803.htm.text",
+      "bytes": 4889,
+      "sha256": "22d8a988e4dd8b16da8a6180637252f7ada1d562f18ea609c6ed529bf16c6a59"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000105/coinbaseq223shareholderl.htm",
+      "bytes": 83271,
+      "sha256": "612b641c28bbdb8cc06d370068af87aa359a0afe7909f464814ff8304b9c8fb8"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000105/coinbaseq223shareholderl.htm.text",
+      "bytes": 73512,
+      "sha256": "5cae32572d13055bb95fbafefc64e713c2a805b397c50071714160afb39a2eef"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000112/R1.htm",
+      "bytes": 29030,
+      "sha256": "4fe40d981888bd7354d53d647ad37b4d1c272caf5767f2b2f661c105b36c7770"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000112/R1.htm.text",
+      "bytes": 7218,
+      "sha256": "f6e708781124783f12d791d0e182a1fa186a190783b700aec7f8ca63196cfd08"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000112/coin-20231102.htm",
+      "bytes": 32196,
+      "sha256": "ad112a22198b11fc1bc8ffd48ed788dab8b398eca07ffdf979adca4fab3fb86d"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000112/coin-20231102.htm.text",
+      "bytes": 4966,
+      "sha256": "d635faab131742adbe3a119faf2f73623921859b064d3c8d3c3bc7a860e89f7f"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000112/secshareholderletterq320.htm",
+      "bytes": 79853,
+      "sha256": "e9fd7c2ba43cf580181437a79aa3ab0efdc8135b4ffe862ce665457ae3a0eb18"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-23-000112/secshareholderletterq320.htm.text",
+      "bytes": 70122,
+      "sha256": "f91f32f3ba315841d1a640f5dda7dfc18fce7c572f67d600a9a183f163fe52a1"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000019/R1.htm",
+      "bytes": 29031,
+      "sha256": "dbe8d65b19900550f0c302411976e10abc4fe1fa6d07b5d8067b2f19239bddf8"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000019/R1.htm.text",
+      "bytes": 7220,
+      "sha256": "f7c5637c04934ec4526be3a2e20797c651c7ea3b642d56fc768459864c469ae3"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000019/coin-20240215.htm",
+      "bytes": 32410,
+      "sha256": "cc72e9854a4f65af1c9c212fdb8a384edeb43579e5d91baf0878166ff6a8adff"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000019/coin-20240215.htm.text",
+      "bytes": 4993,
+      "sha256": "5dba73413d78e7540d65f2e67f708c08896c83d6179ed10e10b8049a2bd78248"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000019/shareholderletterq42023.htm",
+      "bytes": 84756,
+      "sha256": "1630a8251622513ae9220d247630d897045317669e9ce0246c9568f756dd16e6"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000019/shareholderletterq42023.htm.text",
+      "bytes": 73797,
+      "sha256": "4e5167ba22b9b2bc54f8ee115b09d0886a6ed568fb73a35199f51ffbabe8c12e"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000087/R1.htm",
+      "bytes": 29031,
+      "sha256": "c5d7ea28c39d1437c0481fc6d0f2d95e9283e07a8ac52d67a0ddb2cd6866e49b"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000087/R1.htm.text",
+      "bytes": 7219,
+      "sha256": "4b5ee1b1f34631f6f5a179e8c7f3706e5e5900594da9421096f46c7d869cefdc"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000087/coin-20240502.htm",
+      "bytes": 31746,
+      "sha256": "391c4e233ba9aa45740772b5c9ef4d9c151869abcc2462e49b8c3e06538afd3d"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000087/coin-20240502.htm.text",
+      "bytes": 4931,
+      "sha256": "dce5e777507f2a96207cb543b313af17d88b375ecb9713d537004eb0417869a2"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000087/secshareholderletterq120.htm",
+      "bytes": 73253,
+      "sha256": "fe35234f4eb674b9f34428c78c9a9a64f0b664329370af13d7d2c8484c44f4a4"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/documents/0001679788-24-000087/secshareholderletterq120.htm.text",
+      "bytes": 63913,
+      "sha256": "af4feadd7bd1e29029b9d89fc338d80d56a4dd71557e1bd9f7c2d57cad60dd05"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/extraction.json",
+      "bytes": 6492,
+      "sha256": "77b83c7922047f0f727dd6c7652ffd5c0fa40ef189e20cd705dfd869536836e4"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/followup-captures.json",
+      "bytes": 950,
+      "sha256": "3067aad99b5b942389becbca6e0a0d916e2fbd519b650e5ea67f650c2789346b"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000003.txt",
+      "bytes": 154063,
+      "sha256": "1e593f3e0235b778933d2f2f5a41d1362be553265980c89d9800d1f7d96288de"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000003.txt.receipt.json",
+      "bytes": 334,
+      "sha256": "20532a7a6b2061ca3b2aa6741bb8beaaa4b214b9ac2f563e155147d439d69753"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000029.txt",
+      "bytes": 6296717,
+      "sha256": "50057f130700590c3ee1a037be4d9848129f98959592e21cfa6e6b0406a078b8"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000029.txt.receipt.json",
+      "bytes": 335,
+      "sha256": "a741313a6db0b1030b95af7725711878583e71fece511d039daf25563cb35295"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000071.txt",
+      "bytes": 5801150,
+      "sha256": "1148784ac9899527ad147e3c659c9fa4c16b4a4930b1b324d1b10d14b7b1c6d9"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000071.txt.receipt.json",
+      "bytes": 335,
+      "sha256": "256b8333a3b5046050cedfd0500cb7de6ea2a702a55655a11172059600573fa6"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000105.txt",
+      "bytes": 6459973,
+      "sha256": "d34d9f62f27f38897fcbe6469150e7f060ff879c29f67b0b010a31b1734f91d9"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000105.txt.receipt.json",
+      "bytes": 335,
+      "sha256": "abc100714989928238f70b3920cce8457ad38ba4c84485d34b4e167673af6067"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000112.txt",
+      "bytes": 6040351,
+      "sha256": "1d6e33128169e780c2c7360fe715e80c79f8bac44b97dbdc43334fc8f5936b1b"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000112.txt.receipt.json",
+      "bytes": 335,
+      "sha256": "2bd78e068577d4ca475b5063b3e92ed8f52df7f631ea8bae08c8a7cff1d68c29"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-24-000019.txt",
+      "bytes": 6478712,
+      "sha256": "a899286c92426655c53045f2da81b182207a475fbf0d5b3ebd9a6c1465a13353"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-24-000019.txt.receipt.json",
+      "bytes": 335,
+      "sha256": "1d4b0b4a3a93b573deede27fcca7812c51b555c1c8f8888ddbd09876b0c3bbd2"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-24-000087.txt",
+      "bytes": 5520266,
+      "sha256": "9d8d99d09ae27683e4e5ccb5e82aa9c6832f99f8e87e9c88aad0f3c244a1dc33"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/0001679788-24-000087.txt.receipt.json",
+      "bytes": 335,
+      "sha256": "e6a31423257db3fed69c4c91c0790b35147be0505083fe8bd05604571734b3f3"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2022Q4-release.htm",
+      "bytes": 58886,
+      "sha256": "bc1c53662dc85bf792969d5c0bf51f4fc7cb0eb9196a7ec6b5f8134f5878ca97"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2022Q4-release.htm.receipt.json",
+      "bytes": 378,
+      "sha256": "98a8b7087b160bb3e75520ed8b95b4dc6ad8348502013c14fae9ec946894bae4"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2022Q4-schedule.htm",
+      "bytes": 59008,
+      "sha256": "34e092fe8149befbf5b52c5552fe383177c10afaa2425cf97d9bee40c22205cd"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2022Q4-schedule.htm.receipt.json",
+      "bytes": 386,
+      "sha256": "a5e86f068b8171893b1e6b9d44682c774f901915b3deaaf8924eff739741c0a7"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-businesswire.failure.json",
+      "bytes": 272,
+      "sha256": "784f905d1d06e15b371e6d5309d9710254232be6858f770447921df9bb48b209"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-release.htm",
+      "bytes": 58203,
+      "sha256": "d6ce470a7255a55c7420547bab2d9e7642a62a8ca0b821fce5fc5b955150b93b"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-release.htm.receipt.json",
+      "bytes": 363,
+      "sha256": "d8457b7066bb64cab88d5a4af30d99e339f7a207a1296151dbdfe067ace9cfb0"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-schedule.htm",
+      "bytes": 58865,
+      "sha256": "11521cf2c8e94ccf32cf0e79d4a46a3673cf45a06eb338a4c71a9fa22c5610aa"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q1-schedule.htm.receipt.json",
+      "bytes": 371,
+      "sha256": "b85fd28bff06a37da78eb778efb95632267cc332e08aecd04ef3b990a53efb52"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q2-release.htm",
+      "bytes": 58234,
+      "sha256": "99db1a908111cb64620bb24982a1a9bc31988376dda6e7505365e1418bfe0b97"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q2-release.htm.receipt.json",
+      "bytes": 364,
+      "sha256": "8cd737675579c53022a25c7c532e2acc5266a773a0e4d9fa210a5d5ccc919c68"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q2-schedule.htm",
+      "bytes": 58892,
+      "sha256": "74647dd1704c8b04cf47896d96b8dfe8151998d6b3f5e750cb35feebad095d26"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q2-schedule.htm.receipt.json",
+      "bytes": 372,
+      "sha256": "d5ee01165d182d63463085cc3c4a1a9672c1c5e4caf9aeb9e32d2278b61836c6"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q3-release.htm",
+      "bytes": 58234,
+      "sha256": "e481c3dd91eee55d717e48555c6c5c8ca2e001dac1bfdca7c5508671b779afdb"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q3-release.htm.receipt.json",
+      "bytes": 363,
+      "sha256": "bf5a933e724065c6af7e9f95cd86de9d0c60231039a20dd75fc3c3b049c3783c"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q3-schedule.htm",
+      "bytes": 58894,
+      "sha256": "2ec7e5aaf7d13d271b9098aadc448084173b6c92000ef1d71e0e7f626a503deb"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q3-schedule.htm.receipt.json",
+      "bytes": 371,
+      "sha256": "39c4ca9f68b4d43c04fd2317ee7c01c717ea7173728868f977071a28877027d8"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q4-release.htm",
+      "bytes": 58700,
+      "sha256": "adf8f5f6f8bd358fb24f7e6634272181e3cdd28e55b2d7cdebb9a6369ecb4044"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q4-release.htm.receipt.json",
+      "bytes": 378,
+      "sha256": "2a2dc43567578667882789bb810779eca33e075a8669ffa53d19991ecec82b7a"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q4-schedule.htm",
+      "bytes": 59251,
+      "sha256": "8bfe55024d738b1a8fd9ec41fc33b60ba3206edc2cef0d94c600cb9b1edecec1"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2023Q4-schedule.htm.receipt.json",
+      "bytes": 386,
+      "sha256": "d53fc8d69b3ddf9b13e1a980047ba892dd8862fc06966c8138563747b5d38186"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-businesswire.failure.json",
+      "bytes": 272,
+      "sha256": "d1d40a62fcbad7cfedbd58c3d1549031e5f40ce69d7609468673b1ffe9c925fc"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-release.htm",
+      "bytes": 58940,
+      "sha256": "2ac174808654b96b92fe72b96a54374f015b261b296655573fbb4794ac239756"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-release.htm.receipt.json",
+      "bytes": 363,
+      "sha256": "9689fc90c72132e39d072f4f9f93225cf19992c10acd72628e36e38fb07f61f0"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-schedule-canonical.htm",
+      "bytes": 55943,
+      "sha256": "405b4f9f82084b9e2bfb2db9f245debb7c93eade45fb5a6e8cd2c95a610d57fd"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-schedule-canonical.htm.receipt.json",
+      "bytes": 387,
+      "sha256": "de65b477ed0e09e374a2a6a25ecb861b92850ae72036c5669ca18dffec922343"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/2024Q1-schedule.failure.json",
+      "bytes": 256,
+      "sha256": "2beffdcf0606109af9d80131bc293b0ac7b0932f1864b2bcfbf01a262cd64694"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/news-index.htm",
+      "bytes": 50847,
+      "sha256": "6ee75eaebc599224a6af6de0f845fe54811973179497cfd14d100520032fca24"
+    },
+    {
+      "path": "data/research/equity_coin_events_20261027_v001/raw/news-index.htm.receipt.json",
+      "bytes": 289,
+      "sha256": "28539c2868147d9ad67d7d05c08e6c452f75939e0b003307c90fb0bf16c4230f"
+    }
+  ]
+}

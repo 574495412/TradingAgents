@@ -1,0 +1,30 @@
+{
+  "schema": "equity-wire-browser-observations.v1",
+  "observed_at_utc": "2026-10-26 16:55:06 UTC",
+  "method": "Read-only original Business Wire pages through browser accessibility state; these are publisher-displayed minute-level clocks, not downloaded HTML or historical delivery logs.",
+  "browser_reason": "Direct HTTP source captures timed out and web extracted text omitted the displayed publication clock.",
+  "records": [
+    {
+      "quarter": "2022Q4",
+      "url": "https://www.businesswire.com/news/home/20230221005806/en/Coinbase-Releases-Fourth-Quarter-and-Full-Year-2022-Shareholder-Letter",
+      "visible_publication_text": "Feb 21, 2023 4:11 PM Eastern Standard Time"
+    },
+    {
+      "quarter": "2023Q1",
+      "url": "https://www.businesswire.com/news/home/20230504006012/en/Coinbase-Releases-First-Quarter-2023-Shareholder-Letter",
+      "visible_publication_text": "May 4, 2023 4:05 PM Eastern Daylight Time"
+    },
+    {
+      "quarter": "2023Q2",
+      "url": "https://www.businesswire.com/news/home/20230803432342/en/Coinbase-Releases-Second-Quarter-2023-Shareholder-Letter",
+      "visible_publication_text": "Aug 3, 2023 4:05 PM Eastern Daylight Time"
+    },
+    {
+      "quarter": "2024Q1",
+      "url": "https://www.businesswire.com/news/home/20240502854983/en/Coinbase-Releases-First-Quarter-2024-Shareholder-Letter",
+      "visible_publication_text": "May 2, 2024 4:11 PM Eastern Daylight Time"
+    }
+  ],
+  "absolute_first_public_release_certified": false,
+  "external_independent_attestation": false
+}

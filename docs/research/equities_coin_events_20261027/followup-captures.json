@@ -1,0 +1,28 @@
+[
+  {
+    "file": "raw/2024Q1-schedule-canonical.htm",
+    "status": "captured",
+    "url": "https://investor.coinbase.com/news/news-details/2024/Coinbase-Announces-Date-of-First-Quarter-2024-Financial-Results-2024-ZJZEJ9ztUB/default.aspx",
+    "sha256": "405b4f9f82084b9e2bfb2db9f245debb7c93eade45fb5a6e8cd2c95a610d57fd",
+    "bytes": 55943,
+    "captured_at_utc": "2026-10-26T16:43:06.009169+00:00",
+    "events": [
+      {
+        "attempt": 1,
+        "status": 200
+      }
+    ]
+  },
+  {
+    "file": "raw/2023Q1-businesswire.htm",
+    "url": "https://www.businesswire.com/news/home/20230504006012/en/Coinbase-Releases-First-Quarter-2023-Shareholder-Letter",
+    "status": "failed",
+    "error": "ReadTimeout"
+  },
+  {
+    "file": "raw/2024Q1-businesswire.htm",
+    "url": "https://www.businesswire.com/news/home/20240502854983/en/Coinbase-Releases-First-Quarter-2024-Shareholder-Letter",
+    "status": "failed",
+    "error": "ReadTimeout"
+  }
+]

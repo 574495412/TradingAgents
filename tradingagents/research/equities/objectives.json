@@ -1,6 +1,6 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261027_depth_v006",
+  "version": "20261027_depth_v007",
   "title": "股票优先 · 原始证据与独立验证",
   "program_status": "active",
   "profit_goal_status": "not_met",
@@ -159,7 +159,7 @@
       "status": "in_progress",
       "owner": "TradingAgents",
       "done_when": "可证伪机制、原始输入、经济归因、偏差/功效和独立核对完成；不新增因子凑收益",
-      "progress": "旧网页97项比对保留；当前实际消费的20年度原件45项输入已由完整申报提取并通过Arelle标准校验。四个固定账户完成逐股收益/风险暴露归因；统计区间跨零、集中和回撤问题仍在，尚无外部独立认证。 已完成原372期的BTC/USD同步收盘暴露归因，保留三个停机小时与来源修订；没有新增经济账户或策略准入。"
+      "progress": "实际消费的20年度原件45项输入经完整申报和Arelle核查；四个账户归因及372期BTC/USD风险对照完成。COIN七份业绩候选已分为六次完整结果、一次初步指引/重组；六个IR时钟隔离，四份分发原站交叉核对。首次公开与历史预期仍不充分，未复现PEAD。"
     },
     {
       "id": "E05",
@@ -247,6 +247,21 @@
       "common_capital_account_executed": false,
       "new_economic_accounts": 0,
       "external_independent_attestation": null
+    },
+    "coin_event_review": {
+      "report": "docs/research/equities_coin_events_20261027/README.md",
+      "run": "results/research/equity_coin_events_20261027_v002",
+      "issuer": "0001679788",
+      "selected_filings": 7,
+      "regular_earnings_releases": 6,
+      "preliminary_financial_events": 1,
+      "quarantined_ir_publication_clocks": 6,
+      "original_wire_display_clock_crosschecks": 4,
+      "certified_absolute_first_public_clocks": 0,
+      "scope": "Only COIN fixed-window financial filings, not the entire stock universe or all COIN events.",
+      "new_economic_accounts": 0,
+      "PEAD_reproduced": false,
+      "external_independent_attestation": null
     }
   },
   "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
@@ -303,7 +318,9 @@
     "consumed_original_values_matched": 45,
     "depth_new_accounts": 0,
     "risk_scope": "80%为目标；动量最高收盘股票敞口84.54%，32日超80%。收盘回撤28.15%，低价包络28.99%，均超15%。",
-    "crypto_exposure_scope": "仅已封存372期股票净收益的BTC/USD风险归因；不是加密策略净收益、USD/USDT兑换或统一资本组合。动量与BTC存在正向共变，独立alpha未认证。"
+    "crypto_exposure_scope": "仅已封存372期股票净收益的BTC/USD风险归因；不是加密策略净收益、USD/USDT兑换或统一资本组合。动量与BTC存在正向共变，独立alpha未认证。",
+    "earnings_filing_events_definition": "313为Item2.02申报候选数；未逐份证实为完整财报或首次公开公告。COIN已核查七份中只有六份完整季度业绩。",
+    "event_clock_scope": "原股实验继续采用SEC可得时间。新IR datePublished不得仅凭Z后缀准入；六例隔离，四例与分发原站名义时间差5/6小时，首次公开证据仍有限。"
   },
   "acceptance_standard": "docs/research/equities_depth_acceptance_20261026/acceptance.json",
   "acceptance_report": "docs/research/equities_depth_acceptance_20261026/README.md",
@@ -328,7 +345,7 @@
       "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。 固定372期追加BTC/USD风险控制后，动量截距每日−11.37基点，95%区间仍跨零；动量相对固定队列的额外BTC暴露也跨零，不认证独立优势。"
+      "current_evidence_note": "固定历史动量净收益集中于COIN；SPY及QQQ-SPY暴露回归截距区间跨零。少数赢家本身不否定趋势机制，但尚无证据确认独立稳定优势；本轮仅事后描述。 固定372期追加BTC/USD风险控制后，动量截距每日−11.37基点，95%区间仍跨零；动量相对固定队列的额外BTC暴露也跨零，不认证独立优势。 COIN七个固定SEC申报反应会话仅合计约190美元贡献，全部期间约2,900美元；四会话无仓位。不据此认定财报因果收益、无事件收益或可执行避财报优势。"
     },
     {
       "id": "G2",
@@ -336,7 +353,7 @@
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。 新增EXAS原始完整申报生命周期核查：3份申报、5个文档字节可追溯，3项UTC接受时钟一致。当前Nasdaq页有事后修订，不能回填为3月20日已知；64日行情和券商资金可用仍缺。目录找到退市文件不等于取得行情。"
+      "current_evidence_note": "20个实际消费的年度版本由SEC完整申报SGML重提取，160个文件字节区间可追溯；45项输入一致，20份Arelle校验通过。SEC两种载体不是两个独立来源；64根EXAS日线和现金到账仍缺。 新增EXAS原始完整申报生命周期核查：3份申报、5个文档字节可追溯，3项UTC接受时钟一致。当前Nasdaq页有事后修订，不能回填为3月20日已知；64日行情和券商资金可用仍缺。目录找到退市文件不等于取得行情。 COIN七份原始Item2.02核对为六次完整业绩、一次初步指引/重组。六个IR结构化发布时间隔离；四份分发原站显示与其名义时间相差5/6小时，分钟精度不伪造秒。首次公开仍未全面认证。"
     },
     {
       "id": "G3",
@@ -352,7 +369,7 @@
       "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。 EXAS每股105美元是毛现金权利；未取得资金可用凭证，不提前转成可投资现金。 373个股票收盘端点逐项绑定原始BTC/USD响应，372期净账户风险归因未改旧收益；这是内部描述性敏感性，不是将拟合系数当作实际利润归因。"
+      "current_evidence_note": "四个固定高成本账户完成逐日逐股隔夜/日内/股息/费用/滑点归因与库存恒等式；14,880行，未新增经济账户，仍缺外部独立重建。 EXAS每股105美元是毛现金权利；未取得资金可用凭证，不提前转成可投资现金。 373个股票收盘端点逐项绑定原始BTC/USD响应，372期净账户风险归因未改旧收益；这是内部描述性敏感性，不是将拟合系数当作实际利润归因。 从原模拟成交和COIN原价重建372期库存及损益，最大差异约1.68e−13美元；只支持内部来源/算术一致，非券商成交或外部独立审计。"
     },
     {
       "id": "G5",

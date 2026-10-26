@@ -1,0 +1,62 @@
+{
+  "schema": "equity-coin-event-review-plan.v1",
+  "version": "20261027_v001",
+  "role": "Post-result source and event-concentration review of the already chosen COIN contributor; not original preregistration, new signal, event-alpha strategy or OOS evidence.",
+  "focus": {
+    "symbol": "COIN.US",
+    "cusip": "19260Q107",
+    "issuer_cik": "0001679788",
+    "cohort_identity": "data/research/equity_pit_20261026_v001/identities.json"
+  },
+  "window": [
+    "2023-01-03",
+    "2024-06-26"
+  ],
+  "selection": "Every fixed-window issuer filing whose exact Item list contains 2.02; retain preliminary guidance/restructuring and corrections separately from actual quarterly earnings. No filtering by realized return or timestamp availability.",
+  "selected_accessions": [
+    "0001679788-23-000003",
+    "0001679788-23-000029",
+    "0001679788-23-000071",
+    "0001679788-23-000105",
+    "0001679788-23-000112",
+    "0001679788-24-000019",
+    "0001679788-24-000087"
+  ],
+  "selected_count": 7,
+  "original_documents": "Complete SEC SGML submissions, exact raw acceptance UTC versus existing API, primary8K and every HTML earnings exhibit with original offsets and SHA. Issuer IR releases and advance earnings-date announcements separately captured.",
+  "clock_policy": {
+    "separate": [
+      "announced schedule",
+      "source-reported publication",
+      "SEC accepted",
+      "research processing lag",
+      "webcast start",
+      "capture time",
+      "absolute first public release"
+    ],
+    "first_public_at": "Unknown unless established by original evidence; a source publication clock cannot prove no earlier channel.",
+    "date_only": "Date-only or timezone-ambiguous metadata is an interval/unknown, never midnight actual publication.",
+    "webcast_start": "Do not use Q&A start as earnings publication.",
+    "planned_after_close": "A planned release slot is not evidence of actual first-release time.",
+    "historical_site_metadata": "Captured in 2026; source-reported historical dates are not independently timestamped historical delivery observations."
+  },
+  "fixed_account_diagnostic": {
+    "source": "results/research/equity_depth_attribution_20261026_v002/daily-stock-pnl.csv",
+    "account": "US_french_mom_12_2_10000_15bps",
+    "anchor": "First regular stock session whose close follows the exact SEC acceptance clock. Label explicitly as filing-anchored, not first-news-anchored.",
+    "window": "One mechanically determined session per filing, no +/-day search. Preopen and afterclose map by actual frozen calendar; intraday clocks flagged because daily PnL cannot isolate their reaction.",
+    "metrics": [
+      "COIN prior and closing quantity",
+      "COIN overnight/intraday/net marked PnL and costs",
+      "same-session total account marked PnL",
+      "remaining sessions and total contribution reconciliation"
+    ],
+    "interpretation": "Descriptive dollar accounting only. Removing event-day sums is not an executable strategy, and publication proximity does not prove causality. No economic return rerun."
+  },
+  "new_economic_accounts": 0,
+  "historical_consensus_acquired": false,
+  "PEAD_strategy_reproduced": false,
+  "external_independent_attestation": false,
+  "orders_allowed": false,
+  "profit_goal_met": false
+}

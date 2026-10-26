@@ -1,0 +1,329 @@
+[
+  {
+    "accession": "0001679788-23-000003",
+    "event_kind": "preliminary_guidance_and_restructuring",
+    "raw_sec_accepted_at_utc": "2023-01-10T11:36:17+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2023-01-10T12:36:17+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "filing_reaction_session": "2023-01-10",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "0",
+      "closing_quantity": "0",
+      "overnight_price_pnl": "-0.0",
+      "intraday_price_pnl": "0.0",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "0.0"
+    },
+    "total_account_marked_pnl_same_session": "0.0",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  },
+  {
+    "accession": "0001679788-23-000029",
+    "event_kind": "regular_earnings_with_shareholder_letter",
+    "raw_sec_accepted_at_utc": "2023-02-21T21:05:57+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2023-02-21T22:05:57+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "quarter": "2022Q4",
+    "ir_release_metadata": {
+      "headline": "Coinbase Releases Fourth Quarter and Full Year 2022 Shareholder Letter",
+      "datePublished": "2023-02-21T15:11:00Z",
+      "dateModified": "2023-02-21T15:11:00Z"
+    },
+    "ir_schedule_metadata": {
+      "headline": "Coinbase Announces Date of Fourth Quarter and Full Year 2022 Financial Results",
+      "datePublished": "2023-01-24T15:01:00Z",
+      "dateModified": "2023-01-24T15:01:00Z"
+    },
+    "planned_release_day": "2023-02-21",
+    "planned_slot": "after_market_close",
+    "actual_release_slot_verified": false,
+    "metadata_clock_issue": "literal_metadata_precedes_planned_after_close_slot",
+    "metadata_automatically_shifted": false,
+    "ir_literal_minus_same_day_market_close_seconds": -20940.0,
+    "publication_clock_quarantined": true,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20230221005806/en/Coinbase-Releases-Fourth-Quarter-and-Full-Year-2022-Shareholder-Letter",
+      "source_displayed_publication": "Feb 21, 2023 4:11 PM Eastern Standard Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2023-02-21T21:11:00+00:00",
+        "2023-02-21T21:12:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 21600.0,
+      "absolute_first_public_certified": false
+    },
+    "filing_reaction_session": "2023-02-22",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "0",
+      "closing_quantity": "0",
+      "overnight_price_pnl": "0.0",
+      "intraday_price_pnl": "-0.0",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "0.0"
+    },
+    "total_account_marked_pnl_same_session": "0.0",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  },
+  {
+    "accession": "0001679788-23-000071",
+    "event_kind": "regular_earnings_with_shareholder_letter",
+    "raw_sec_accepted_at_utc": "2023-05-04T20:05:52+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2023-05-04T21:05:52+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "quarter": "2023Q1",
+    "ir_release_metadata": {
+      "headline": "Coinbase Releases First Quarter 2023 Shareholder Letter",
+      "datePublished": "2023-05-04T15:05:00Z",
+      "dateModified": "2023-05-04T15:05:00Z"
+    },
+    "ir_schedule_metadata": {
+      "headline": "Coinbase Announces Date of First Quarter 2023 Financial Results",
+      "datePublished": "2023-04-20T15:30:00Z",
+      "dateModified": "2023-04-20T15:30:00Z"
+    },
+    "planned_release_day": "2023-05-04",
+    "planned_slot": "after_market_close",
+    "actual_release_slot_verified": false,
+    "metadata_clock_issue": "literal_metadata_precedes_planned_after_close_slot",
+    "metadata_automatically_shifted": false,
+    "ir_literal_minus_same_day_market_close_seconds": -17700.0,
+    "publication_clock_quarantined": true,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20230504006012/en/Coinbase-Releases-First-Quarter-2023-Shareholder-Letter",
+      "source_displayed_publication": "May 4, 2023 4:05 PM Eastern Daylight Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2023-05-04T20:05:00+00:00",
+        "2023-05-04T20:06:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 18000.0,
+      "absolute_first_public_certified": false
+    },
+    "filing_reaction_session": "2023-05-05",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "0",
+      "closing_quantity": "0",
+      "overnight_price_pnl": "0.0",
+      "intraday_price_pnl": "0.0",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "0.0"
+    },
+    "total_account_marked_pnl_same_session": "63.55012512207021",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  },
+  {
+    "accession": "0001679788-23-000105",
+    "event_kind": "regular_earnings_with_shareholder_letter",
+    "raw_sec_accepted_at_utc": "2023-08-03T20:08:07+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2023-08-03T21:08:07+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "quarter": "2023Q2",
+    "ir_release_metadata": {
+      "headline": "Coinbase Releases Second Quarter 2023 Shareholder Letter",
+      "datePublished": "2023-08-03T15:05:00Z",
+      "dateModified": "2023-08-03T15:05:00Z"
+    },
+    "ir_schedule_metadata": {
+      "headline": "Coinbase Announces Date of Second Quarter 2023 Financial Results",
+      "datePublished": "2023-07-13T15:05:00Z",
+      "dateModified": "2023-07-13T15:05:00Z"
+    },
+    "planned_release_day": "2023-08-03",
+    "planned_slot": "after_market_close",
+    "actual_release_slot_verified": false,
+    "metadata_clock_issue": "literal_metadata_precedes_planned_after_close_slot",
+    "metadata_automatically_shifted": false,
+    "ir_literal_minus_same_day_market_close_seconds": -17700.0,
+    "publication_clock_quarantined": true,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20230803432342/en/Coinbase-Releases-Second-Quarter-2023-Shareholder-Letter",
+      "source_displayed_publication": "Aug 3, 2023 4:05 PM Eastern Daylight Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2023-08-03T20:05:00+00:00",
+        "2023-08-03T20:06:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 18000.0,
+      "absolute_first_public_certified": false
+    },
+    "filing_reaction_session": "2023-08-04",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "31",
+      "closing_quantity": "31",
+      "overnight_price_pnl": "-54.25",
+      "intraday_price_pnl": "-52.39007568359375",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "-106.64007568359375"
+    },
+    "total_account_marked_pnl_same_session": "-193.34017944335963",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  },
+  {
+    "accession": "0001679788-23-000112",
+    "event_kind": "regular_earnings_with_shareholder_letter",
+    "raw_sec_accepted_at_utc": "2023-11-02T20:05:49+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2023-11-02T21:05:49+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "quarter": "2023Q3",
+    "ir_release_metadata": {
+      "headline": "Coinbase Releases Third Quarter 2023 Shareholder Letter",
+      "datePublished": "2023-11-02T15:13:00Z",
+      "dateModified": "2023-11-02T15:13:00Z"
+    },
+    "ir_schedule_metadata": {
+      "headline": "Coinbase Announces Date of Third Quarter 2023 Financial Results",
+      "datePublished": "2023-10-06T15:05:00Z",
+      "dateModified": "2023-10-06T15:05:00Z"
+    },
+    "planned_release_day": "2023-11-02",
+    "planned_slot": "after_market_close",
+    "actual_release_slot_verified": false,
+    "metadata_clock_issue": "literal_metadata_precedes_planned_after_close_slot",
+    "metadata_automatically_shifted": false,
+    "ir_literal_minus_same_day_market_close_seconds": -17220.0,
+    "publication_clock_quarantined": true,
+    "filing_reaction_session": "2023-11-03",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "0",
+      "closing_quantity": "0",
+      "overnight_price_pnl": "-0.0",
+      "intraday_price_pnl": "0.0",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "0.0"
+    },
+    "total_account_marked_pnl_same_session": "548.31974983215328",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  },
+  {
+    "accession": "0001679788-24-000019",
+    "event_kind": "regular_earnings_with_shareholder_letter",
+    "raw_sec_accepted_at_utc": "2024-02-15T21:06:47+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2024-02-15T22:06:47+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "quarter": "2023Q4",
+    "ir_release_metadata": {
+      "headline": "Coinbase Releases Fourth Quarter and Full Year 2023 Shareholder Letter",
+      "datePublished": "2024-02-15T15:14:00Z",
+      "dateModified": "2024-02-15T15:14:00Z"
+    },
+    "ir_schedule_metadata": {
+      "headline": "Coinbase Announces Date of Fourth Quarter and Full Year 2023 Financial Results",
+      "datePublished": "2024-01-24T15:14:00Z",
+      "dateModified": "2024-01-24T15:14:00Z"
+    },
+    "planned_release_day": "2024-02-15",
+    "planned_slot": "after_market_close",
+    "actual_release_slot_verified": false,
+    "metadata_clock_issue": "literal_metadata_precedes_planned_after_close_slot",
+    "metadata_automatically_shifted": false,
+    "ir_literal_minus_same_day_market_close_seconds": -20760.0,
+    "publication_clock_quarantined": true,
+    "filing_reaction_session": "2024-02-16",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "26",
+      "closing_quantity": "26",
+      "overnight_price_pnl": "607.880126953125",
+      "intraday_price_pnl": "-227.2401428222653",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "380.6399841308597"
+    },
+    "total_account_marked_pnl_same_session": "-642.68015670776333",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  },
+  {
+    "accession": "0001679788-24-000087",
+    "event_kind": "regular_earnings_with_shareholder_letter",
+    "raw_sec_accepted_at_utc": "2024-05-02T20:02:51+00:00",
+    "sec_api_acceptance_match": true,
+    "research_available_at_with_existing_one_hour_assumption": "2024-05-02T21:02:51+00:00",
+    "absolute_first_public_at": null,
+    "absolute_first_public_certified": false,
+    "source_clock_for_intraday_signal_eligible": false,
+    "quarter": "2024Q1",
+    "ir_release_metadata": {
+      "headline": "Coinbase Releases First Quarter 2024 Shareholder Letter",
+      "datePublished": "2024-05-02T15:11:00Z",
+      "dateModified": "2024-05-02T15:11:00Z"
+    },
+    "ir_schedule_metadata": {
+      "headline": "Coinbase Announces Date of First Quarter 2024 Financial Results",
+      "datePublished": "2024-04-18T15:00:00Z",
+      "dateModified": "2024-04-18T15:00:00Z"
+    },
+    "planned_release_day": "2024-05-02",
+    "planned_slot": "after_market_close",
+    "actual_release_slot_verified": false,
+    "metadata_clock_issue": "literal_metadata_precedes_planned_after_close_slot",
+    "metadata_automatically_shifted": false,
+    "ir_literal_minus_same_day_market_close_seconds": -17340.0,
+    "publication_clock_quarantined": true,
+    "wire_original_page_clock": {
+      "source_url": "https://www.businesswire.com/news/home/20240502854983/en/Coinbase-Releases-First-Quarter-2024-Shareholder-Letter",
+      "source_displayed_publication": "May 2, 2024 4:11 PM Eastern Daylight Time",
+      "precision": "minute; seconds unknown",
+      "reported_utc_interval": [
+        "2024-05-02T20:11:00+00:00",
+        "2024-05-02T20:12:00+00:00"
+      ],
+      "nominal_IR_to_wire_start_seconds": 18000.0,
+      "absolute_first_public_certified": false
+    },
+    "filing_reaction_session": "2024-05-03",
+    "accepted_relative_to_reaction_session": "before_open",
+    "intraday_reaction_separable_from_daily_data": true,
+    "coin_contribution": {
+      "prior_quantity": "15",
+      "closing_quantity": "15",
+      "overnight_price_pnl": "30.7498168945314",
+      "intraday_price_pnl": "-114.7499084472657",
+      "fees": "0.0",
+      "slippage": "0.0",
+      "net_marked_pnl": "-84.0000915527343"
+    },
+    "total_account_marked_pnl_same_session": "-9.040054321288964",
+    "first_news_reaction_claimed": false,
+    "causality_identified": false
+  }
+]

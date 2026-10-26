@@ -1,0 +1,211 @@
+[
+  {
+    "accession": "0001679788-23-000003",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000003.txt",
+    "parent_sha256": "1e593f3e0235b778933d2f2f5a41d1362be553265980c89d9800d1f7d96288de",
+    "html_documents": [
+      {
+        "filename": "coin-20230110.htm",
+        "source_start": 1232,
+        "source_end": 42210,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "2fa56cf4b64f6afa9c11e0b32f4c33a64af5f358799f956f145548331c4dbfd9"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 72078,
+        "source_end": 101107,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "cb65c86f4e49e0a7444a6dbdd813aee0a1899eddeed4156f809f35f53d2a0453"
+      }
+    ]
+  },
+  {
+    "accession": "0001679788-23-000029",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000029.txt",
+    "parent_sha256": "50057f130700590c3ee1a037be4d9848129f98959592e21cfa6e6b0406a078b8",
+    "html_documents": [
+      {
+        "filename": "coin-20230221.htm",
+        "source_start": 1246,
+        "source_end": 39362,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "25faca8c70d70b52c5a45cb56f152cc64dffec606f34b9704643b55c9894acdb"
+      },
+      {
+        "filename": "q4shareholderletter2022.htm",
+        "source_start": 39494,
+        "source_end": 122237,
+        "framing_removed": null,
+        "role": "substantive_exhibit",
+        "sha256": "0130c52822091f740d32405e5504434a1e9b0712bebcc829eb14d96ce3cb909f"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 6183502,
+        "source_end": 6212531,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "0a8d04ad04de73bfc45cc7e8d007df6d06e5baad881272409702de22523f0565"
+      }
+    ]
+  },
+  {
+    "accession": "0001679788-23-000071",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000071.txt",
+    "parent_sha256": "1148784ac9899527ad147e3c659c9fa4c16b4a4930b1b324d1b10d14b7b1c6d9",
+    "html_documents": [
+      {
+        "filename": "coin-20230504.htm",
+        "source_start": 1246,
+        "source_end": 39291,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "7fddd1225a5608dd84ba5dd83421968cfeb272a61e19b662813813fcd39c5738"
+      },
+      {
+        "filename": "q123shareholderletter.htm",
+        "source_start": 39421,
+        "source_end": 116701,
+        "framing_removed": null,
+        "role": "substantive_exhibit",
+        "sha256": "0f87c67224f1e36e609671f2e9959c157beb98b9fef1dbbf84b66994fc4a4912"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 5691516,
+        "source_end": 5720544,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "db452c4afc1288ac189500115e2e2300f407699a4f41ba3cd3e7b0a437087130"
+      }
+    ]
+  },
+  {
+    "accession": "0001679788-23-000105",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000105.txt",
+    "parent_sha256": "d34d9f62f27f38897fcbe6469150e7f060ff879c29f67b0b010a31b1734f91d9",
+    "html_documents": [
+      {
+        "filename": "coin-20230803.htm",
+        "source_start": 1251,
+        "source_end": 33760,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "66ac18c1b4434cb347d4847eb5cb654078df5cca645afec92c2b56898049b712"
+      },
+      {
+        "filename": "coinbaseq223shareholderl.htm",
+        "source_start": 33893,
+        "source_end": 117164,
+        "framing_removed": null,
+        "role": "substantive_exhibit",
+        "sha256": "612b641c28bbdb8cc06d370068af87aa359a0afe7909f464814ff8304b9c8fb8"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 6355009,
+        "source_end": 6384039,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "2792149a297adfd11ad799c007d1bd9469ece5caee991fc4f01748dc026a810e"
+      }
+    ]
+  },
+  {
+    "accession": "0001679788-23-000112",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-23-000112.txt",
+    "parent_sha256": "1d6e33128169e780c2c7360fe715e80c79f8bac44b97dbdc43334fc8f5936b1b",
+    "html_documents": [
+      {
+        "filename": "coin-20231102.htm",
+        "source_start": 1251,
+        "source_end": 33447,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "ad112a22198b11fc1bc8ffd48ed788dab8b398eca07ffdf979adca4fab3fb86d"
+      },
+      {
+        "filename": "secshareholderletterq320.htm",
+        "source_start": 33580,
+        "source_end": 113433,
+        "framing_removed": null,
+        "role": "substantive_exhibit",
+        "sha256": "e9fd7c2ba43cf580181437a79aa3ab0efdc8135b4ffe862ce665457ae3a0eb18"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 5939496,
+        "source_end": 5968526,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "4fe40d981888bd7354d53d647ad37b4d1c272caf5767f2b2f661c105b36c7770"
+      }
+    ]
+  },
+  {
+    "accession": "0001679788-24-000019",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-24-000019.txt",
+    "parent_sha256": "a899286c92426655c53045f2da81b182207a475fbf0d5b3ebd9a6c1465a13353",
+    "html_documents": [
+      {
+        "filename": "coin-20240215.htm",
+        "source_start": 1299,
+        "source_end": 33709,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "cc72e9854a4f65af1c9c212fdb8a384edeb43579e5d91baf0878166ff6a8adff"
+      },
+      {
+        "filename": "shareholderletterq42023.htm",
+        "source_start": 33841,
+        "source_end": 118597,
+        "framing_removed": null,
+        "role": "substantive_exhibit",
+        "sha256": "1630a8251622513ae9220d247630d897045317669e9ce0246c9568f756dd16e6"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 6376168,
+        "source_end": 6405199,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "dbe8d65b19900550f0c302411976e10abc4fe1fa6d07b5d8067b2f19239bddf8"
+      }
+    ]
+  },
+  {
+    "accession": "0001679788-24-000087",
+    "parent_file": "data/research/equity_coin_events_20261027_v001/raw/0001679788-24-000087.txt",
+    "parent_sha256": "9d8d99d09ae27683e4e5ccb5e82aa9c6832f99f8e87e9c88aad0f3c244a1dc33",
+    "html_documents": [
+      {
+        "filename": "coin-20240502.htm",
+        "source_start": 1299,
+        "source_end": 33045,
+        "framing_removed": "SEC PDS <XBRL> framing",
+        "role": "primary_8k",
+        "sha256": "391c4e233ba9aa45740772b5c9ef4d9c151869abcc2462e49b8c3e06538afd3d"
+      },
+      {
+        "filename": "secshareholderletterq120.htm",
+        "source_start": 33178,
+        "source_end": 106431,
+        "framing_removed": null,
+        "role": "substantive_exhibit",
+        "sha256": "fe35234f4eb674b9f34428c78c9a9a64f0b664329370af13d7d2c8484c44f4a4"
+      },
+      {
+        "filename": "R1.htm",
+        "source_start": 5421353,
+        "source_end": 5450384,
+        "framing_removed": null,
+        "role": "auxiliary_render",
+        "sha256": "c5d7ea28c39d1437c0481fc6d0f2d95e9283e07a8ac52d67a0ddb2cd6866e49b"
+      }
+    ]
+  }
+]

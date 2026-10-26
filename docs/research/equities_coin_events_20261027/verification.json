@@ -1,0 +1,66 @@
+{
+  "schema": "equity-coin-event-verification.v1",
+  "role": "Internal source, precision and frozen simulated-inventory checks; no independent external attestation.",
+  "source_hashes_matched": true,
+  "seven_original_acceptance_clocks_matched": true,
+  "original_HTML_byte_roundtrips": 20,
+  "substantive_documents": 13,
+  "auxiliary_render_documents": 7,
+  "IR_metadata_quarantined": 6,
+  "original_wire_display_clock_crosschecks": [
+    {
+      "quarter": "2022Q4",
+      "IR_literal_clock": "2023-02-21T15:11:00Z",
+      "wire_reported_minute_utc": [
+        "2023-02-21T21:11:00+00:00",
+        "2023-02-21T21:12:00+00:00"
+      ],
+      "nominal_offset_hours": 6.0,
+      "SEC_clock_order": "SEC_before_reported_wire_minute",
+      "global_first_public_at": null
+    },
+    {
+      "quarter": "2023Q1",
+      "IR_literal_clock": "2023-05-04T15:05:00Z",
+      "wire_reported_minute_utc": [
+        "2023-05-04T20:05:00+00:00",
+        "2023-05-04T20:06:00+00:00"
+      ],
+      "nominal_offset_hours": 5.0,
+      "SEC_clock_order": "order_unknown_within_wire_display_minute",
+      "global_first_public_at": null
+    },
+    {
+      "quarter": "2023Q2",
+      "IR_literal_clock": "2023-08-03T15:05:00Z",
+      "wire_reported_minute_utc": [
+        "2023-08-03T20:05:00+00:00",
+        "2023-08-03T20:06:00+00:00"
+      ],
+      "nominal_offset_hours": 5.0,
+      "SEC_clock_order": "reported_wire_minute_before_SEC",
+      "global_first_public_at": null
+    },
+    {
+      "quarter": "2024Q1",
+      "IR_literal_clock": "2024-05-02T15:11:00Z",
+      "wire_reported_minute_utc": [
+        "2024-05-02T20:11:00+00:00",
+        "2024-05-02T20:12:00+00:00"
+      ],
+      "nominal_offset_hours": 5.0,
+      "SEC_clock_order": "SEC_before_reported_wire_minute",
+      "global_first_public_at": null
+    }
+  ],
+  "certified_absolute_first_public_clocks": 0,
+  "unchanged_frozen_COIN_contribution_rows": 372,
+  "max_original_simulated_fill_price_PnL_error": "1.68E-13",
+  "source_inventory_price_inputs_sha256": {
+    "results/research/equities_pit_stocks_20261026_v002/US_french_mom_12_2_10000_15bps/state.json": "de7040abf0e525129eaba0fd517e51f1cee7e64043d0abe00520ed43c3d31eb8",
+    "data/research/equity_pit_20261026_v001/prices/COIN.US.csv": "9c87fb1ea88a44ee8239c46baceb2739da1d451d3111a2ead4a5f5664e89db40"
+  },
+  "new_economic_accounts": 0,
+  "external_independent_attestation": false,
+  "profit_goal_met": false
+}

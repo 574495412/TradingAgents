@@ -1,0 +1,20 @@
+{
+  "schema": "equity-event-canonical-consistency.v1",
+  "version": "20261027_depth_v007",
+  "previous_criteria_commit": "148a0df",
+  "all_prior_gate_pass_conditions_unchanged": true,
+  "financial_targets_and_external_veto_unchanged": true,
+  "source_clock_precision_and_quarantine_rules_added": true,
+  "current_budget_executed": 16,
+  "new_economic_accounts": 0,
+  "all_actual_target_metrics_remain_null": true,
+  "all_external_gate_evidence_remains_missing": true,
+  "api_version_and_acceptance_sha_match": true,
+  "local_clock_and_raw_source_tests_passed": 19,
+  "profit_goal_status": "not_met",
+  "files_sha256": {
+    "tradingagents/research/equities/objectives.json": "ffb439f218fc6a31a700c0a8b324ad00570854630048e07cfaabdc16c0410b6e",
+    "docs/research/equities_depth_acceptance_20261026/acceptance.json": "97c2bce2431f99b46cd37cd7092aefcd3fba03df58393784f5c2dbf4e776bfe8",
+    "tradingagents/research/equities/coin_event_review_plan.json": "97bc5f41330f3c3eb261e51088eb0ebff33f29fd4cc4d5c3acfe5db4008804b8"
+  }
+}
