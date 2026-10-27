@@ -1,0 +1,8 @@
+{
+  "manifest": {
+    "targets.json": "94567b5b02066c236129e15dea52ee32d8e6ecdf49cfbae187fba30688c2eaf4",
+    "depth_contract_validation.json": "9bfa39f08c5b045f92a325d91c65dc8f7a3049b611fec123bb7726f2e4ef8b6e",
+    "README.md": "938af35aaf7cf0576e41226985535a3b20973ebf836a7824015f45b4564d1a9a"
+  },
+  "purpose": "Preserve prior objective, stage and validation; no financial source changes"
+}

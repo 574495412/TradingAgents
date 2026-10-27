@@ -1,0 +1,19 @@
+{
+  "schema": "public-capitalization-coverage-catalog.v1",
+  "version": "20261027_v001",
+  "question": "Which provider assets and daily PriceUSD/CapMrktEstUSD histories are exposed on the authorized Community route, before changing any strategy universe or requesting new economic results?",
+  "origin": "https://community-api.coinmetrics.io/v4",
+  "requests": [
+    {"name": "asset_reference", "path": "/reference-data/assets", "params": {"page_size": 10000}},
+    {"name": "estimated_cap_catalog", "path": "/catalog-v2/asset-metrics", "params": {"metrics": "CapMrktEstUSD", "page_size": 10000}},
+    {"name": "price_catalog", "path": "/catalog-v2/asset-metrics", "params": {"metrics": "PriceUSD", "page_size": 10000}}
+  ],
+  "authority": "https://docs.coinmetrics.io/api/v4/ documents the public Community hostname, reference-data/assets and catalog-v2/asset-metrics. Catalog contents are current-provider coverage claims, not historical availability or exchange-asset identity proof.",
+  "budget": {"maximum_requests": 3, "maximum_bytes_each": 8388608, "automatic_retries": 0},
+  "identity_policy": "Provider ticker equality is a candidate link only. Preserve full reference data and ambiguity; do not strip1000prefixes, stitch token migrations, map old/newPUMP or LIT by current names, or treat a current provider/exchange list as an original historical identity registry.",
+  "coverage_policy": "Retain all native historically eligible contract slots in the denominator. A catalog interval is not proof that every required date has valid values. Missing/unmapped/unavailable items stay explicit, never zero or a smaller silently selected universe. No profitable-horizon or surviving-asset filtering.",
+  "economic_evaluation_allowed": false,
+  "new_financial_accounts": 0,
+  "orders_enabled": false,
+  "profit_goal_met": false
+}

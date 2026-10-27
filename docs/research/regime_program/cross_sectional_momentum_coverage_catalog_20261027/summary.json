@@ -1,0 +1,23 @@
+{
+  "schema": "momentum-provider-catalog-decision.v1",
+  "decision": "unknown_with_missing_evidence",
+  "question": "公开供应商目录是否足以支持历史形成时点的身份与市值覆盖判断？",
+  "source_requests": 3,
+  "all_http_200": true,
+  "next_page_present": false,
+  "asset_reference_rows": 6347,
+  "estimated_cap_daily_catalog_rows": 850,
+  "price_daily_catalog_rows": 1145,
+  "asset_reference_fields": [
+    "asset",
+    "full_name"
+  ],
+  "historical_identity_certified": false,
+  "actual_formation_slot_coverage": null,
+  "economic_evaluation_allowed": false,
+  "new_financial_accounts": 0,
+  "new_economic_variants": 0,
+  "profit_goal_met": false,
+  "next_action": "仅登记并离线检查必要历史身份候选及52周形成时钟的原生资格分母；上限860个原生符号、一次审阅产物、下一轮网络请求0。当前同名只能作候选，1000前缀、PUMP/LIT新旧身份不自动拼接，未匹配槽位保留。若决定性身份缺口仍不可合法取得，封存为未知，停止追加目录或回测；有明确原始证据渠道时才单独登记有限补证。身份/实际日期面板足够后才登记唯一经济合同。",
+  "raw_completion_sha256": "1395ad743f452bf2cb5835c2cc2888e2cf410e59df481781c7d155157f046eb0"
+}
