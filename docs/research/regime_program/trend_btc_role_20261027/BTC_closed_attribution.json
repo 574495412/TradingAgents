@@ -1,0 +1,18 @@
+{
+  "daily_archive_btc_tradable_cap10000_slip3": {
+    "complete_cycles": 6,
+    "closed_net_pnl": 14.779520903569919
+  },
+  "daily_archive_btc_tradable_cap10000_slip10": {
+    "complete_cycles": 6,
+    "closed_net_pnl": 21.333068536675498
+  },
+  "daily_archive_magnitude_long_cap10000_slip3": {
+    "complete_cycles": 3,
+    "closed_net_pnl": -38.599714651003126
+  },
+  "daily_archive_magnitude_long_cap10000_slip10": {
+    "complete_cycles": 3,
+    "closed_net_pnl": -46.56056136386993
+  }
+}

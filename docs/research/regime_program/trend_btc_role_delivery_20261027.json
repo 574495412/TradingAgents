@@ -1,0 +1,40 @@
+{
+  "schema": "BTC-role-depth-delivery.v1",
+  "passed": true,
+  "sealed_manifests_verified": {
+    "data/research/trend_method_source_20261027_v001/completion.json": 2,
+    "results/research/trend_btc_inputs_20261027_v001/completion.json": 13,
+    "results/research/trend_btc_accounts_20261027_v001/completion.json": 52,
+    "docs/research/regime_program/trend_btc_role_20261027/completion.json": 8
+  },
+  "frozen_report_source_hashes_verified": 21,
+  "current_goal_sha256": "20f9c2aec75a877a296d05c55fd8f68448a11076d26ed8100775edc62ae4b1e0",
+  "existing_UI": {
+    "url": "http://127.0.0.1:8794/research#factor-lab",
+    "newStageVisible": true,
+    "newFinancialAccounts": 4,
+    "stageText": "BTC角色对照完成，旧EMA解释关闭\n本阶段新增收益账户 4\n\nBTC按同资格进入前30名竞争，保持EMA与风险规则；608日趋势账户在8/15bps每边成本下亏10.12%/10.46%，均停机。压力成本比同绝对目标权重多头少0.46USDT；实际风险路径不同。4条新账户内部现金、数学及真实持仓续跑通过；两套同源日档目标相同，不计独立证据。原论文12个月方向/1个月持有与本地EMA日频不同，不能继承原文业绩。\n\n下一步：关闭仅因排除BTC才失败的解释，不再调旧EMA权重、止损或窗口。先为原文12个月/1个月命题登记最小本地适配与偏离，再核验原始收益、精确资金费及资产历史是否充分；与同机会集多头及现金比较，缺证据记未知。外部复现、未见验证与总账户目标继续未完成。",
+    "errors": [],
+    "testedAt": "2026-10-27T04:31:33.359Z",
+    "tool": "bundled Playwright; dedicated Browser plugin unavailable",
+    "viewport": {
+      "width": 1280,
+      "height": 1000
+    }
+  },
+  "existing_server": {
+    "PID": 20954,
+    "command": "Python scripts/research_server.py --port 8794"
+  },
+  "new_financial_accounts": 4,
+  "profit_goal_met": false,
+  "external_review": false,
+  "independent_unseen_evidence": false,
+  "orders_enabled": false,
+  "tests": {
+    "ruff": "passed",
+    "compileall": "passed",
+    "diff_check": "passed"
+  },
+  "scope": "Frozen artifacts, goal contract and existing UI; no new financial replay during delivery verification"
+}

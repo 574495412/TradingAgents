@@ -1,0 +1,24 @@
+{
+  "source_url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+  "pdf_sha256": "7682f8e97eb4b77591dc85e36731ff51ed031970cdde81678108734db9478379",
+  "local_is_full_paper_replication": false,
+  "facts_and_local_mapping": [
+    {
+      "original": "12month own-return sign,1monthholding;section4.1 equation5",
+      "local": "EWMAC32/128,daily signal/rebalance;differentforecastspecification"
+    },
+    {
+      "original": "return-volatility COM60,261business-dayvariance scale;section2.4",
+      "local": "35dayprice-volatility/floor,365crypto-day scale;localriskadaptation"
+    },
+    {
+      "original": "volatility-matched alwayslong comparison;section4.1",
+      "local": "thisround matched-intent-magnitude long;actual riskpaths differ"
+    },
+    {
+      "original": "liquid multiasset futures/forwards",
+      "local": "USDTperpetuals,fees,funding,8percentstop/15percenthalt/.8gross;noinheritedsourceprofit"
+    }
+  ],
+  "next_required_work": "Close the oldEMA/BTCrolebranch. Before a new12month/1month local candidate, freeze its risk/market deviations, same-opportunity longcontrol, and exact rawexcess-return/funding history; missing records remain unknown."
+}

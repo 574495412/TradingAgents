@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "manifest": {
+    "original_method_mapping.json": "134973afc30b6e03dbf141bf08cb9560dd2524e9fb12c68f5fea18a7a0883adf",
+    "cash_components.json": "95b1e957c0c0b87d8dedb086cfbba5fb8e527abf80a29d03a2b985bf1c81dd1b",
+    "periods.json": "ecbc5855bdc9dc85362699e749fd902c41a9b80910b0a626193b3d17787771e4",
+    "BTC_closed_attribution.json": "76d01173a09a81c644fd8fa40f234e2d907769e562a53e3d399f22f7fbe24b25",
+    "comparisons.json": "881ca461b2448e24f4bb4f805adc21af0d88baf443eee9db8c58d97027978902",
+    "README.md": "d712631746f0c8c8f1241b41ab28da4808045d75e11a134578aa9a9594953e31",
+    "exposure.json": "314db55918ad988ed8f4793790396291528d86a93f801c3244e82a36adfa1148",
+    "verification.json": "44e85affd45bc1ec6c583b66b4fb90678d77fd590d2408b45eef102475eda232"
+  },
+  "profit_goal_met": false
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "trend-benchmark-tradability-study.v1",
+  "version": "20261027_v001",
+  "question": "Does changing only BTC eligibility within the same frozen trend/math/risk/clock contract explain failure of the existing PITtrend? Compare also same-intent-magnitude alwayslong.",
+  "hypothesis": "If excluding the dominant liquid benchmark was the decisive limitation, including BTC should improve bothcost fullaccount economics; direction changes must add beyond matched long exposure.",
+  "null": "Adding BTC eligibility does not produce robust positive net/closedPnL and incremental economics at bothcosts.",
+  "alternative_explanations": [
+    "A30name universe replaces the marginalalt whenBTCqualifies; aggregate delta is the whole selection/allocation path, not BTCtradePnL alone.",
+    "Positive results could be market/exposure or risk-sizing effects rather than timing.",
+    "Original academic monthlyTSM is a different implementation; BTCrole does not address all its differences."
+  ],
+  "inputs": {
+    "parent_targets": "results/research/trend_pool_inputs_20261027_v002",
+    "parent_accounts": "results/research/trend_pool_accounts_20261027_v001",
+    "method_source": "data/research/trend_method_source_20261027_v001"
+  },
+  "variants": [
+    "daily_archive",
+    "daily_with_complete_5m_reconciliation"
+  ],
+  "window": {
+    "id": "continuous2025_2026",
+    "start": "2025-01-01",
+    "end": "2026-09-01"
+  },
+  "role_change": "BTC remains reportingbenchmark and becomes eligible as a traded instrument. At every existing weeklyclock testits past180observations,quote28>=50M,beta60/pricehistory and identity under the same rules; rank BTC plus oldtop30alts byquote and take30. No reservedBTCslot, newmarketor fee/risk change. Oldmarginalalt may leave; disclose this.",
+  "unchanged": "SameEMA32/128,robust35dayvol/floor,frozen2024scale,16percentnominalrisk,forecast10/cap20,threshold.32,top10strength,weeklymembers,dailysignals,valid180contiguousdays,lifecycle,5mexecution,8percentratchet/15percenthalt,.8gross,capital10000.",
+  "control": "At each daily decision take absolute values of the BTCeligibletrendbook, preserving samepastinformation, selectednames and intendedgross/size. This is a magnitude-matched long book, not staticpassivebuyhold; actual riskpaths can differ.",
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "budget": {
+    "new_base_accounts_max": 4,
+    "logical_new_source_strategy_cost_cases": 8,
+    "existing_excludedBTC_source_cost_controls": 4,
+    "new_economic_mechanisms": 0,
+    "eligibility_variants": 1,
+    "new_formula_parameters": 0,
+    "new_market_archives": 0
+  },
+  "decision_record": {
+    "registration": "before newrole/long targets or financial returns; existing2025/2026 alreadyseen",
+    "primary": "Includedtrend minus excludedtrend and includedtrend minus matchedlong full608day netPnL atbothcosts/bothsources; report actualexposure,fees,carry,DD,Sharpe,winrate andyear/90day.",
+    "minimum_useful_net_pnl_usdt": 0,
+    "provisional_acceptance": "BTCeligibletrend must have positive totalANDclosedPnL,bothpositiveincrements,maxDD<=.15,nohalt for allsource/cost cases; sourceandsearch/unseen/external gaps still block any claim of admittedalpha.",
+    "statistics": "Paired32/128calendar-daycircularblocks,seed17,2000replications,minimum8blockequivalents; no freshOOS or corrected searchsignificance.",
+    "stopping": "If fails, close BTCqualification explanation for thisspecification; do not tuneBTCweights,EMA,holdingperiodor fees inthisround. Missingheldsource, stopactivationor cashfailure makes caseunknown and requires preserved technicalrepair.",
+    "external": "Original paper is methodreference, not independentverification of ourresults. Thirdpartyreview andunseenevidence notestablished."
+  },
+  "capacity_followup": {
+    "condition": "Only if all provisionalconditions hold",
+    "capitals": [
+      100000,
+      1000000
+    ],
+    "source_cost_cases_both_required": true,
+    "maximum_accounts": 8
+  },
+  "profit_goal_met": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "independent_oos": false
+}

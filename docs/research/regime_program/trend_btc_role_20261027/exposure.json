@@ -1,0 +1,22 @@
+{
+  "daily_archive_btc_tradable_cap10000_slip3": {
+    "active_5m_intervals": 58125,
+    "mean_gross_when_active": 0.2085505155721795,
+    "first_halt_request": "2025-07-22T05:00:00+00:00"
+  },
+  "daily_archive_btc_tradable_cap10000_slip10": {
+    "active_5m_intervals": 55564,
+    "mean_gross_when_active": 0.202575108535335,
+    "first_halt_request": "2025-07-13T07:35:00+00:00"
+  },
+  "daily_archive_magnitude_long_cap10000_slip3": {
+    "active_5m_intervals": 26546,
+    "mean_gross_when_active": 0.194161634599445,
+    "first_halt_request": "2025-04-03T12:50:00+00:00"
+  },
+  "daily_archive_magnitude_long_cap10000_slip10": {
+    "active_5m_intervals": 26518,
+    "mean_gross_when_active": 0.19370253663481804,
+    "first_halt_request": "2025-04-03T10:40:00+00:00"
+  }
+}

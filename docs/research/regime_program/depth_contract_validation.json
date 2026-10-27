@@ -2,7 +2,7 @@
   "schema": "research-depth-goal-validation.v1",
   "version": "20261026_v003",
   "decision_contract_revision": "20261027",
-  "validated_scope": "深度目标、匹配时点域诊断、机会集合同及现有界面API/显示；盈利/外部/未见验证未完成",
+  "validated_scope": "深度目标、原始方法映射、BTC资格与方向对照，以及现有界面API/显示；盈利/外部/未见验证未完成",
   "checks": {
     "previous_goal_bytes_preserved": true,
     "portfolio_targets_unchanged": true,
@@ -15,11 +15,15 @@
     "diagnostic_financial_account_separate_from_profit_goal": true,
     "matched_domain_and_source_equivalence_counts_verified": true,
     "benchmark_tradability_scope_explicit": true,
-    "existing_interface_shows_matched_PIT_diagnostic": true
+    "baseline_plus_at_most_one_variant_explicit": true,
+    "original_method_vs_local_adaptation_separated": true,
+    "intent_vs_realized_risk_distinguished": true,
+    "BTC_role_and_direction_control_frozen_artifacts_verified": true,
+    "existing_interface_shows_latest_BTC_role_diagnostic": true
   },
   "files_sha256": {
-    "docs/research/regime_program/targets.json": "7eacff62b1ed302395036f0475dce9242a6baa6e8bc9a1254810c137710fb036",
-    "docs/research/regime_program/README.md": "6f236a5d3acc892dd992648a4e793bd3faec75609ae9e3abaf76baa9c5f4703e",
+    "docs/research/regime_program/targets.json": "20f9c2aec75a877a296d05c55fd8f68448a11076d26ed8100775edc62ae4b1e0",
+    "docs/research/regime_program/README.md": "a8958577f7dcdf64dd3ed6ca47817e36951a21fa7b16fa49575f191b8e20c68b",
     "docs/research/regime_program/depth_sources.json": "c44bae71f68cf47262dbf1e784a1925f87ad281badffbbbe65d5a53ffbb85ab4",
     "docs/research/regime_program/protocol_archive/20261027_before_decision_contract/manifest.json": "d4c8eb6fb3de15d93b7bf535aca2c44134989d8b77393de6ed94b5454fb6d5be"
   },
@@ -27,5 +31,5 @@
   "third_party_review_performed": false,
   "independent_unseen_validation_completed": false,
   "orders_enabled": false,
-  "delivery_verification_sha256": "c0a282d470387e83f5c70cff0e80c5204022ab3d85b85ee7d5aa85db93d5f061"
+  "delivery_verification_sha256": "60e65e46a36c9cc2630d999a011f62bdfd51aca78cc4ab8b4763375d7cec3307"
 }
