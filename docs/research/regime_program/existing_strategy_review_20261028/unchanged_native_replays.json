@@ -1,0 +1,305 @@
+{
+  "original_parity": {
+    "passed": true,
+    "trades": 350,
+    "net_pnl": 602.1531186000001
+  },
+  "completion": {
+    "bounded_unchanged_replays_completed": true,
+    "jobs": 7,
+    "new_factors": 0,
+    "orders_enabled": false,
+    "production_eligible": false
+  },
+  "jobs": [
+    {
+      "candidate": "TrendControl",
+      "phase": "train",
+      "start": "2024-01-01",
+      "end": "2025-01-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": 0.6021531186000001,
+      "net_profit_usdt": 602.1531186000001,
+      "closed_trades": 350,
+      "win_rate": 0.32,
+      "native_closed_drawdown": 0.16231317491999994,
+      "hourly_observed_drawdown": 0.16065051453361112,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 1525.57885163,
+        "gross_loss": 923.42573303,
+        "profit_factor": 1.6520861365041009,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.16231317491999994
+      },
+      "funding_net_usdt": -36.134595948950974,
+      "actual_leverage_values": [
+        1.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "retrospective_fixed_increment_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 8.08740362500248,
+        "max_rss_bytes": 399917056,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    },
+    {
+      "candidate": "TrendControl",
+      "phase": "validation",
+      "start": "2025-01-01",
+      "end": "2026-01-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": -0.18314788093,
+      "net_profit_usdt": -183.14788093,
+      "closed_trades": 432,
+      "win_rate": 0.2523148148148148,
+      "native_closed_drawdown": 0.2663092410996586,
+      "hourly_observed_drawdown": 0.3213662309576737,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "净收益非正",
+          "利润因子不足",
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 1095.0902608,
+        "gross_loss": 1278.23814173,
+        "profit_factor": 0.8567184979458341,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.3213662309576737
+      },
+      "funding_net_usdt": -11.229356370326801,
+      "actual_leverage_values": [
+        1.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "retrospective_fixed_increment_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 6.056691125006182,
+        "max_rss_bytes": 400752640,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    },
+    {
+      "candidate": "TrendControl",
+      "phase": "holdout",
+      "start": "2026-01-01",
+      "end": "2026-09-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": 0.11867530299999995,
+      "net_profit_usdt": 118.67530299999996,
+      "closed_trades": 237,
+      "win_rate": 0.2911392405063291,
+      "native_closed_drawdown": 0.19458157987167268,
+      "hourly_observed_drawdown": 0.20928667328066441,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 637.38311941,
+        "gross_loss": 518.70781641,
+        "profit_factor": 1.2287902731471392,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.20928667328066441
+      },
+      "funding_net_usdt": -8.212144996614809,
+      "actual_leverage_values": [
+        1.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "retrospective_fixed_increment_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 5.0469240410020575,
+        "max_rss_bytes": 379961344,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    },
+    {
+      "candidate": "TrendControl",
+      "phase": "continuous",
+      "start": "2025-01-01",
+      "end": "2026-09-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": -0.07370820858000007,
+      "net_profit_usdt": -73.70820858000008,
+      "closed_trades": 668,
+      "win_rate": 0.26497005988023953,
+      "native_closed_drawdown": 0.2663092410996586,
+      "hourly_observed_drawdown": 0.3213662309576737,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "净收益非正",
+          "利润因子不足",
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 1726.08355549,
+        "gross_loss": 1799.79176407,
+        "profit_factor": 0.9590462574329609,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.3213662309576737
+      },
+      "funding_net_usdt": -19.63321069894361,
+      "actual_leverage_values": [
+        1.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "retrospective_fixed_increment_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 8.069682333996752,
+        "max_rss_bytes": 440008704,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    },
+    {
+      "candidate": "CompressionRetest",
+      "phase": "validation",
+      "start": "2025-01-01",
+      "end": "2026-01-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": -0.40496048194999995,
+      "net_profit_usdt": -404.96048195,
+      "closed_trades": 528,
+      "win_rate": 0.2537878787878788,
+      "native_closed_drawdown": 0.4677341220843659,
+      "hourly_observed_drawdown": 0.5241064512185691,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "净收益非正",
+          "利润因子不足",
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 1034.5815775,
+        "gross_loss": 1439.54205945,
+        "profit_factor": 0.7186879818539506,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.5241064512185691
+      },
+      "funding_net_usdt": -13.246015807056965,
+      "actual_leverage_values": [
+        2.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "new_autonomous_rule_on_previously_used_history_retrospective_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 14.118295666994527,
+        "max_rss_bytes": 894484480,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    },
+    {
+      "candidate": "CompressionRetest",
+      "phase": "holdout",
+      "start": "2026-01-01",
+      "end": "2026-09-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": 0.04909778154,
+      "net_profit_usdt": 49.09778154,
+      "closed_trades": 348,
+      "win_rate": 0.2988505747126437,
+      "native_closed_drawdown": 0.22712152320206488,
+      "hourly_observed_drawdown": 0.24354947987854614,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "利润因子不足",
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 1024.21391828,
+        "gross_loss": 975.11613674,
+        "profit_factor": 1.0503507015114562,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.24354947987854614
+      },
+      "funding_net_usdt": -23.8654076083211,
+      "actual_leverage_values": [
+        2.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "new_autonomous_rule_on_previously_used_history_retrospective_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 11.090790166010265,
+        "max_rss_bytes": 772767744,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    },
+    {
+      "candidate": "CompressionRetest",
+      "phase": "continuous",
+      "start": "2025-01-01",
+      "end": "2026-09-01",
+      "extra_cost_bps_per_side": 3,
+      "net_return": -0.39550895225000005,
+      "net_profit_usdt": -395.50895225000005,
+      "closed_trades": 874,
+      "win_rate": 0.2700228832951945,
+      "native_closed_drawdown": 0.5586962740338584,
+      "hourly_observed_drawdown": 0.6042680469013209,
+      "economic_audit": {
+        "passed": false,
+        "reasons": [
+          "净收益非正",
+          "利润因子不足",
+          "含浮亏观察或原生回撤超标"
+        ],
+        "gross_profit": 1604.13582152,
+        "gross_loss": 1999.64477377,
+        "profit_factor": 0.8022103938469365,
+        "profit_factor_status": "FINITE",
+        "risk_drawdown": 0.6042680469013209
+      },
+      "funding_net_usdt": -26.94162464838586,
+      "actual_leverage_values": [
+        2.0
+      ],
+      "can_short": true,
+      "native_final_account_reconciled": true,
+      "historical_evidence_status": "new_autonomous_rule_on_previously_used_history_retrospective_not_independent_oos",
+      "orders_enabled": false,
+      "production_eligible": false,
+      "runtime": {
+        "elapsed_seconds": 20.14924762499868,
+        "max_rss_bytes": 1159462912,
+        "signals_or_parameters_changed": false,
+        "original_core_files_verified": 341,
+        "orders_enabled": false
+      }
+    }
+  ]
+}

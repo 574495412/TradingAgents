@@ -1,0 +1,42 @@
+{
+  "schema": "existing-strategy-bounded-review-completion.v1",
+  "recorded_at_utc": "2026-10-27T17:13:43.069212+00:00",
+  "completed_scope": "当前本地研究证据统一口径复核及两个既有候选原样跨期补测；不表示长期盈利目标完成。",
+  "review_completed": true,
+  "account_scenarios": 1192,
+  "native_strategy_classes": 80,
+  "comparison_groups": 217,
+  "new_native_replay_invocations": 7,
+  "new_unique_period_accounts": 6,
+  "source_hash_mismatches": 0,
+  "new_signal_or_parameter_variants": 0,
+  "tests": {
+    "command": "/Users/chrise/GitHub/freqtrade/.venv/bin/python -m pytest research_tools/existing_strategy_review/test_normalize.py -q",
+    "passed": 4,
+    "failed": 0,
+    "ruff_passed": true
+  },
+  "UI_checks": {
+    "existing_cockpit_program_API_returned_v009": true,
+    "program_API_response_path": "/Users/chrise/GitHub/TradingAgents/data/research/existing_strategy_comparison_20261028_v001/program_after_review.json",
+    "program_API_response_sha256": "4a72bcbf8bca9932aebe03480ce7d3179b2ad3dc7b2609d54042a8505e72b141",
+    "new_inline_comparison_visual_rendered": true,
+    "inline_visual_container_widths_observed": [
+      1280,
+      360
+    ],
+    "inline_visual_series_toggle_and_restore_verified": true,
+    "existing_cockpit_frontend_rebuilt": false,
+    "existing_cockpit_rendered_page_retested": false
+  },
+  "verification_sha256": "8aedcfbef3ff4ef549fe2d9626d5b6c41b22cfd8240799cc8a97294538e47257",
+  "report_sha256": "1646c73cf5d0e9d15e4a3b7e15d2da27eba75f7ea19a63d3e074278817d0e4e9",
+  "original_NFI_X8_same_contract_non_NFI_challengers": 0,
+  "winner": null,
+  "profit_goal_met": false,
+  "third_party_review_performed": false,
+  "independent_oos": false,
+  "capacity_verified": false,
+  "orders_enabled": false,
+  "production_eligible": false
+}

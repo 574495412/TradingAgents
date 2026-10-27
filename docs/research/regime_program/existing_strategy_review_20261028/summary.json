@@ -1,0 +1,49 @@
+{
+  "schema": "existing-strategy-aligned-comparison.v1",
+  "accounts": 1192,
+  "account_kinds": {
+    "custom_account_with_curve": 780,
+    "equity_account": 176,
+    "native_account": 224,
+    "native_wallet_sum": 12
+  },
+  "markets": {
+    "crypto": 1016,
+    "HK": 80,
+    "US": 96
+  },
+  "native_strategy_classes": 80,
+  "duplicate_account_aliases": 180,
+  "summary_nodes_retained": 5854,
+  "legacy_curves": 84,
+  "legacy_curves_with_explicit_capital": 49,
+  "quality": {
+    "return_identity_failures": [],
+    "ending_curve_mismatches": [],
+    "native_closed_cash_audits": {
+      "true": 221,
+      "null": 3
+    },
+    "native_wallet_sum_order_audits": {
+      "true": 12
+    }
+  },
+  "strict_cohorts_with_multiple_accounts": 217,
+  "cohort_exclusions": {
+    "native_missing_engine_identity": 51,
+    "native_missing_curve_cost_or_actual_leverage": 3
+  },
+  "new_signal_or_parameter_variants": 0,
+  "new_replication_invocations": 7,
+  "new_unique_period_accounts": 6,
+  "new_independent_OOS_claim": false,
+  "global_better_than_original_NFI_proven": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "strict_NFI_X8_non_NFI_challenger_count": 0,
+  "full_account_records_path": "/Users/chrise/GitHub/TradingAgents/results/research/existing_strategy_review_20261028_v005/accounts.json",
+  "full_comparison_path": "/Users/chrise/GitHub/TradingAgents/results/research/existing_strategy_review_20261028_v005/comparison.json",
+  "full_account_records_sha256": "9ef1cb317e45d6e245eefd4ffbb74c95632c719cfb6c83e13086fdbbf8cb89de",
+  "full_comparison_sha256": "71759aa15360341e5c8b221936b7a1a0c2dc041ac08ccd9d157bfcd123051e71",
+  "recorded_at_utc": "2026-10-27T17:13:06.909005+00:00"
+}

@@ -1,0 +1,425 @@
+{
+  "schema": "same-six-coin-native-comparison.v1",
+  "capital_USDT": 1000,
+  "symbols": [
+    "BTC",
+    "ETH",
+    "BNB",
+    "SOL",
+    "XRP",
+    "DOGE"
+  ],
+  "leverage": 1,
+  "fee_per_side_including_proxy": 0.0008,
+  "native_engine_core_identical": true,
+  "different_signal_frequencies_position_budgets_and_slots_are_preserved_strategy_behavior": true,
+  "market_data_snapshots_required_by_each_frequency_differ": true,
+  "periods": [
+    {
+      "label": "2024全年",
+      "start": "2024-01-01 00:00:00+00:00",
+      "end": "2025-01-01 00:00:00+00:00",
+      "rows": [
+        {
+          "id": "93d406a3eb9031aacb09b9ce",
+          "strategy": "TrendControl",
+          "study": "funding_run_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/funding_run_v001/train/TrendControl/cost_3bps/backtest-result-2026-10-22_16-19-05.zip",
+          "start": "2024-01-01 00:00:00",
+          "end": "2024-12-31 23:00:00",
+          "capital": 1000.0,
+          "net_return": 0.6021531186000002,
+          "closed_trades": 350,
+          "win_rate": 0.32,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 4.99588511518374e-09,
+            "total_cash_error_USDT": 2.095157469739206e-08,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.16065051453361112,
+          "daily_equity_sharpe": 1.799020943436945,
+          "observation_rows": 8785,
+          "daily_return_count": 366,
+          "full_month_returns": {
+            "2024-01": -0.10465067722999988,
+            "2024-02": 0.1170396315326403,
+            "2024-03": 0.09504459354468708,
+            "2024-04": -0.007676631899633191,
+            "2024-05": -0.016966076791796292,
+            "2024-06": 0.007016369713708226,
+            "2024-07": 0.04850943450923206,
+            "2024-08": 0.053412404231378385,
+            "2024-09": 0.024882414709632483,
+            "2024-10": 0.062312764560149114,
+            "2024-11": 0.2321736446313838,
+            "2024-12": 0.005040914001703367
+          }
+        },
+        {
+          "id": "78969f30cc8e986454ea7874",
+          "strategy": "NostalgiaForInfinityX7",
+          "study": "nfi_run_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_run_v001/train/NFILeverage1x/cost_3bps/backtest-result-2026-10-22_15-50-43.zip",
+          "start": "2024-01-01 00:00:00",
+          "end": "2024-12-31 23:55:00",
+          "capital": 1000.0,
+          "net_return": 0.11560132987000005,
+          "closed_trades": 31,
+          "win_rate": 1.0,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 4.000000036957442e-09,
+            "total_cash_error_USDT": 1.0808292927322327e-08,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.012012319346444533,
+          "daily_equity_sharpe": 3.1079884372014974,
+          "observation_rows": 8785,
+          "daily_return_count": 366,
+          "full_month_returns": {
+            "2024-01": 0.006573281469999914,
+            "2024-02": 0.0,
+            "2024-03": 0.0019118866310354754,
+            "2024-04": 0.03283561319474848,
+            "2024-05": 0.007707295782426682,
+            "2024-06": 0.013704016017050513,
+            "2024-07": 0.0,
+            "2024-08": 0.011545813857362752,
+            "2024-09": 0.0,
+            "2024-10": 0.0,
+            "2024-11": 0.0034307473779111586,
+            "2024-12": 0.03296203461087788
+          }
+        }
+      ],
+      "engine_identity": "da7b8f287edc13472ed57110f40e1bb8455e73697a97b4c0cecccb2e2ec93562",
+      "pairlist_identity": "ce5d1d6b1d2e6e71f36ed2a3d39ea1e3347182219ed0427c02d8ab64be3671bd"
+    },
+    {
+      "label": "2025全年",
+      "start": "2025-01-01 00:00:00+00:00",
+      "end": "2026-01-01 00:00:00+00:00",
+      "rows": [
+        {
+          "id": "737fc824360e1152c9aece7f",
+          "strategy": "NostalgiaForInfinityX7",
+          "study": "nfi_run_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_run_v001/validation/NFILeverage1x/cost_3bps/backtest-result-2026-10-22_15-58-19.zip",
+          "start": "2025-01-01 00:00:00",
+          "end": "2025-12-31 23:55:00",
+          "capital": 1000.0,
+          "net_return": 0.06682237277000014,
+          "closed_trades": 28,
+          "win_rate": 0.9642857142857143,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 4.000000008721792e-09,
+            "total_cash_error_USDT": 4.581579560181126e-10,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.013563970585353746,
+          "daily_equity_sharpe": 2.524583273727658,
+          "observation_rows": 8761,
+          "daily_return_count": 365,
+          "full_month_returns": {
+            "2025-01": 0.0213184177900001,
+            "2025-02": 0.02608041286246232,
+            "2025-03": 0.004076584431903063,
+            "2025-04": 0.003309178932448864,
+            "2025-05": 0.0,
+            "2025-06": 0.0018438332638137656,
+            "2025-07": 0.0,
+            "2025-08": 0.0,
+            "2025-09": 0.0,
+            "2025-10": 0.00248685212099109,
+            "2025-11": 0.005723322601467906,
+            "2025-12": 0.00043918301880996324
+          }
+        },
+        {
+          "id": "0d0a7c72bf807b9f4366c6ca",
+          "strategy": "TrendControl",
+          "study": "existing_strategy_review_20261028_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/existing_strategy_review_20261028_v001/S1/backtest-result-2026-10-27_16-37-28.zip",
+          "start": "2025-01-01 00:00:00",
+          "end": "2025-12-31 23:00:00",
+          "capital": 1000.0,
+          "net_return": -0.1831478809299999,
+          "closed_trades": 432,
+          "win_rate": 0.2523148148148148,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 4.99702179002512e-09,
+            "total_cash_error_USDT": 1.6326907825714443e-08,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.3213662309576737,
+          "daily_equity_sharpe": -0.477364564338805,
+          "observation_rows": 8761,
+          "daily_return_count": 365,
+          "full_month_returns": {
+            "2025-01": -0.0314609697699999,
+            "2025-02": 0.057552854784554075,
+            "2025-03": -0.08335464421666383,
+            "2025-04": -0.04711776342583607,
+            "2025-05": 0.012441820283660254,
+            "2025-06": -0.08430962941236808,
+            "2025-07": 0.12851695803574503,
+            "2025-08": -0.09914504141442393,
+            "2025-09": 0.010531798654336066,
+            "2025-10": 0.03162048257289096,
+            "2025-11": 0.08322705038950629,
+            "2025-12": -0.14214767070471557
+          }
+        }
+      ],
+      "engine_identity": "da7b8f287edc13472ed57110f40e1bb8455e73697a97b4c0cecccb2e2ec93562",
+      "pairlist_identity": "ce5d1d6b1d2e6e71f36ed2a3d39ea1e3347182219ed0427c02d8ab64be3671bd"
+    },
+    {
+      "label": "2026年1–8月",
+      "start": "2026-01-01 00:00:00+00:00",
+      "end": "2026-09-01 00:00:00+00:00",
+      "rows": [
+        {
+          "id": "74e7a0cd985e3ba75a9da8b8",
+          "strategy": "TrendControl",
+          "study": "existing_strategy_review_20261028_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/existing_strategy_review_20261028_v001/S2/backtest-result-2026-10-27_16-37-33.zip",
+          "start": "2026-01-01 00:00:00",
+          "end": "2026-08-31 23:00:00",
+          "capital": 1000.0,
+          "net_return": 0.11867530300000007,
+          "closed_trades": 237,
+          "win_rate": 0.2911392405063291,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 4.997526550129771e-09,
+            "total_cash_error_USDT": 8.33853164294851e-08,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.20928667328066441,
+          "daily_equity_sharpe": 0.8297644861554346,
+          "observation_rows": 5833,
+          "daily_return_count": 243,
+          "full_month_returns": {
+            "2026-01": 0.11310204422000014,
+            "2026-02": 0.007417037407190241,
+            "2026-03": -0.04253499732749921,
+            "2026-04": -0.07853197365836295,
+            "2026-05": 0.005114935904355633,
+            "2026-06": 0.11061353762618409,
+            "2026-07": -0.056719550217009584,
+            "2026-08": 0.07383381712500081
+          }
+        },
+        {
+          "id": "3f896412edf7bd8ffaffbe53",
+          "strategy": "NostalgiaForInfinityX7",
+          "study": "nfi_run_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_run_v001/holdout/NFILeverage1x/cost_3bps/backtest-result-2026-10-22_15-59-00.zip",
+          "start": "2026-01-01 00:00:00",
+          "end": "2026-08-31 23:55:00",
+          "capital": 1000.0,
+          "net_return": 0.005067441759999847,
+          "closed_trades": 3,
+          "win_rate": 1.0,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 3.999999965141417e-09,
+            "total_cash_error_USDT": 2.6105357875394475e-09,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.004382255219841147,
+          "daily_equity_sharpe": 1.703443043018018,
+          "observation_rows": 5833,
+          "daily_return_count": 243,
+          "full_month_returns": {
+            "2026-01": 0.0,
+            "2026-02": 0.0,
+            "2026-03": 0.0008539838999999105,
+            "2026-04": 0.0034695136112352642,
+            "2026-05": 0.0,
+            "2026-06": 0.0,
+            "2026-07": 0.0,
+            "2026-08": 0.000737789323692617
+          }
+        }
+      ],
+      "engine_identity": "da7b8f287edc13472ed57110f40e1bb8455e73697a97b4c0cecccb2e2ec93562",
+      "pairlist_identity": "ce5d1d6b1d2e6e71f36ed2a3d39ea1e3347182219ed0427c02d8ab64be3671bd"
+    },
+    {
+      "label": "连续608日",
+      "start": "2025-01-01 00:00:00+00:00",
+      "end": "2026-09-01 00:00:00+00:00",
+      "rows": [
+        {
+          "id": "d2d00c6ec04dfbcc7219fb9c",
+          "strategy": "NostalgiaForInfinityX7",
+          "study": "nfi_run_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_run_v001/continuous/NFILeverage1x/cost_3bps/backtest-result-2026-10-22_16-01-53.zip",
+          "start": "2025-01-01 00:00:00",
+          "end": "2026-08-31 23:55:00",
+          "capital": 1000.0,
+          "net_return": 0.08184835676000013,
+          "closed_trades": 31,
+          "win_rate": 1.0,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 5.011160007599416e-09,
+            "total_cash_error_USDT": 1.0063970989904192e-08,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.013563970585353746,
+          "daily_equity_sharpe": 2.2866177423411806,
+          "observation_rows": 14593,
+          "daily_return_count": 608,
+          "full_month_returns": {
+            "2025-01": 0.0213184177900001,
+            "2025-02": 0.02608041286246232,
+            "2025-03": 0.004076584431903063,
+            "2025-04": 0.003309178932448864,
+            "2025-05": 0.0,
+            "2025-06": 0.0018438332638137656,
+            "2025-07": 0.0,
+            "2025-08": 0.0,
+            "2025-09": 0.0,
+            "2025-10": 0.00248685212099109,
+            "2025-11": 0.005723322601467906,
+            "2025-12": 0.00045041869781492494,
+            "2026-01": 0.008955626806119943,
+            "2026-02": 0.0,
+            "2026-03": 0.0008533230420495475,
+            "2026-04": 0.0034700242464476005,
+            "2026-05": 0.0,
+            "2026-06": 0.0,
+            "2026-07": 0.0,
+            "2026-08": 0.0007428400829878612
+          }
+        },
+        {
+          "id": "e98230e7d68f972457f22aa1",
+          "strategy": "TrendControl",
+          "study": "existing_strategy_review_20261028_v001",
+          "source_path": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/existing_strategy_review_20261028_v001/S3/backtest-result-2026-10-27_16-37-41.zip",
+          "start": "2025-01-01 00:00:00",
+          "end": "2026-08-31 23:00:00",
+          "capital": 1000.0,
+          "net_return": -0.07370820858000005,
+          "closed_trades": 668,
+          "win_rate": 0.26497005988023953,
+          "fees_per_side": [
+            0.0007999999999999999
+          ],
+          "leverage_values": [
+            1.0
+          ],
+          "gross_budget": null,
+          "pairlist_count": 6,
+          "order_cash_audit": {
+            "max_trade_cash_error_USDT": 4.997526550129771e-09,
+            "total_cash_error_USDT": 6.505634075892885e-08,
+            "max_quantity_residual": 0.0,
+            "passed": true
+          },
+          "risk_halted": null,
+          "sampled_full_drawdown": 0.3213662309576737,
+          "daily_equity_sharpe": 0.0010330328084428011,
+          "observation_rows": 14593,
+          "daily_return_count": 608,
+          "full_month_returns": {
+            "2025-01": -0.0314609697699999,
+            "2025-02": 0.057552854784554075,
+            "2025-03": -0.08335464421666383,
+            "2025-04": -0.04711776342583607,
+            "2025-05": 0.012441820283660254,
+            "2025-06": -0.08430962941236808,
+            "2025-07": 0.12851695803574503,
+            "2025-08": -0.09914504141442393,
+            "2025-09": 0.010531798654336066,
+            "2025-10": 0.03162048257289096,
+            "2025-11": 0.08322705038950629,
+            "2025-12": -0.14252770210242516,
+            "2026-01": 0.12765404317456475,
+            "2026-02": 0.008966822332040492,
+            "2026-03": -0.05134367030236875,
+            "2026-04": -0.09567556005878086,
+            "2026-05": 0.00634966333387621,
+            "2026-06": 0.13714677709583767,
+            "2026-07": -0.06868415198389943,
+            "2026-08": 0.09055718710402783
+          }
+        }
+      ],
+      "engine_identity": "da7b8f287edc13472ed57110f40e1bb8455e73697a97b4c0cecccb2e2ec93562",
+      "pairlist_identity": "ce5d1d6b1d2e6e71f36ed2a3d39ea1e3347182219ed0427c02d8ab64be3671bd"
+    }
+  ],
+  "last_period_overlaps_two_prior_periods": true,
+  "not_NFI_X8_author_contract": true
+}
