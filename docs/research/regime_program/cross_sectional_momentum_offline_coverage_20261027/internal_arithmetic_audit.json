@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "input_completion_sha256": "9e8206f93ddf4c601b71199a9389b1ff4fe73ca024d7e5255979e162a241e24a",
+  "audit_source_sha256": "5d967487e4052746b77359b6f90b7839cdae6e1213eabeb15147db5057b82152",
+  "qualification_symbol_clock_cases": 147920,
+  "eligible_slot_arithmetic_checks": 10480,
+  "maximum_quote_mean_drift_usdt": 7.62939453125e-06,
+  "all_native_eligible_order_and_top30_exact": true,
+  "shared_lifecycle_and_calendar_limit": true,
+  "third_party_review_performed": false,
+  "historical_identity_verified": false,
+  "new_financial_accounts": 0
+}

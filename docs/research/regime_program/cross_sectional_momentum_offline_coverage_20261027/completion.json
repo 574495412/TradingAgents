@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "summary.json": "6d0d2450604e37b5e6334030e9ce7086881e2a2f958f8bf43e5fff04189a40c6",
+    "source_full_rank_difference.json": "1b03a13565e24b0fc5d6c56bf1b5052b43144b02c80b1cd8110e9c1b08150da0",
+    "README.md": "8c4f0b8fd4633f8dc3ff3670eac27d58aa661efb4e0f7691e1e069f93857feeb",
+    "internal_arithmetic_audit.json": "d40469e0628578d2f8d7a974b0028bc66dce1f68804cbb99076df7f5891585f1",
+    "verification.json": "5f5dacc5db34a332172bfdfcb57bf1f5b7f39467ee50b764e4059587bc4a06ca",
+    "audit_failure_v001.json": "fdc87a1074fa3180c561f797d1fa6b37d48d14e57c1d4d02c264d5bb4a8f4f94"
+  },
+  "source_completion_sha256": "9e8206f93ddf4c601b71199a9389b1ff4fe73ca024d7e5255979e162a241e24a",
+  "profit_goal_met": false
+}

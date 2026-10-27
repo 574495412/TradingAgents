@@ -1,0 +1,19 @@
+[
+  {
+    "formation_label": "2025-02-11",
+    "same_eligible_set": true,
+    "top30_same": true,
+    "changed_ranks": [
+      {
+        "symbol": "PEOPLEUSDT",
+        "archive_rank": 67,
+        "reconciled_rank": 68
+      },
+      {
+        "symbol": "JASMYUSDT",
+        "archive_rank": 68,
+        "reconciled_rank": 67
+      }
+    ]
+  }
+]

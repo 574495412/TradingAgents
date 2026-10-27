@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "goals_gates_budget_and_depth_contract_preserved": true,
+    "previous_catalog_stage_preserved": true,
+    "raw_output_manifest_and_registered_inputs_match": true,
+    "bounded_offline_860_symbols_86_formations": true,
+    "full_denominator_and_missing_slots_retained": true,
+    "original_timing_and_local_universe_deviations_disclosed": true,
+    "internal_actual_prefix_audit_matches_output": true,
+    "failed_audit_preserved_and_repair_only_copy": true,
+    "full_rank_difference_kept_without_source_winner_selection": true,
+    "old_financial_results_and_ledgers_unchanged": true,
+    "unknown_branch_closed_no_subsample_economic_evaluation": true,
+    "profit_and_unfinished_gates_not_promoted": true,
+    "existing_API_exact_current_stage_and_depth_goal": true
+  },
+  "files_sha256": {
+    "research_tools/cross_sectional_momentum/offline_coverage.py": "259ac06d8f73c670a7f20a9b09f8f47e0e932f532f035acc784459bbf907062a",
+    "research_tools/cross_sectional_momentum/offline_coverage_plan.json": "c3bddda69c922a398625180c0fd41344e3ad7d4f586574feb88231b5d0925123",
+    "research_tools/cross_sectional_momentum/audit_offline_coverage.py": "0974d4c299358b6593ba69de5c223d16064fe3dce58daf7d6d5231f75d996958",
+    "research_tools/cross_sectional_momentum/audit_offline_coverage_v2.py": "5d967487e4052746b77359b6f90b7839cdae6e1213eabeb15147db5057b82152",
+    "tests/research_mainline/test_momentum_offline_coverage.py": "ba2c3891f852c882626e729f2d6b8b10adce6215d70dc8ebe2228d3446807d5f",
+    "results/research/cross_sectional_momentum_offline_coverage_20261027_v001/completion.json": "9e8206f93ddf4c601b71199a9389b1ff4fe73ca024d7e5255979e162a241e24a",
+    "docs/research/regime_program/cross_sectional_momentum_offline_coverage_20261027/internal_arithmetic_audit.json": "d40469e0628578d2f8d7a974b0028bc66dce1f68804cbb99076df7f5891585f1"
+  },
+  "old_financial_files_verified": 36,
+  "tests_passed": 6,
+  "test_scope": "Missing calendar/episode/partial/zero-volume, future perturbation, unapproved ticker links and new-year endpoint counterexamples",
+  "ruff_passed": true,
+  "economic_results_generated": false,
+  "third_party_review_performed": false,
+  "rendered_UI_retested": false,
+  "frontend_rebuilt": false,
+  "orders_enabled": false
+}

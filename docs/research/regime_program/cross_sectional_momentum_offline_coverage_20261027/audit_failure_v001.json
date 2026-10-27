@@ -1,0 +1,10 @@
+{
+  "status": "failed_before_membership_checks",
+  "error_type": "ValueError",
+  "message": "assignment destination is read-only",
+  "location": "valid[0] = False",
+  "source": "research_tools/cross_sectional_momentum/audit_offline_coverage.py",
+  "source_sha256": "0974d4c299358b6593ba69de5c223d16064fe3dce58daf7d6d5231f75d996958",
+  "repair": "versioned audit_offline_coverage_v2.py requests writable boolean-mask copy only; no membership or financial recomputation",
+  "financial_results_changed": false
+}

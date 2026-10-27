@@ -1,0 +1,39 @@
+{
+  "schema": "research-depth-goal-validation.v1",
+  "version": "20261027_v006",
+  "validated_at_utc": "2026-10-27T11:28:39.620847+00:00",
+  "validated_scope": "Four-question objective acceptance alignment and bounded provider catalog boundary; no qualified historical identity panel or new returns.",
+  "prior_validation": "docs/research/regime_program/protocol_archive/20261027_before_catalog_goal_alignment_v001/depth_contract_validation.json",
+  "checks": {
+    "four_user_requirements_bound_to_existing_contract": true,
+    "formal_objective_and_economic_thresholds_preserved": true,
+    "no_promotion_or_orders": true,
+    "previous_stage_preserved": true,
+    "prior_target_and_validation_snapshot_preserved": true,
+    "raw_capture_manifest_matches": true,
+    "registered_source_code_and_plan_unchanged": true,
+    "all_three_raw_JSON_bodies_match_decoded": true,
+    "current_reference_has_no_historical_identity_fields": true,
+    "catalog_counts_are_not_claimed_universe_coverage": true,
+    "bounded_next_decisive_gap_declared": true,
+    "existing_API_serves_exact_objective_contract_and_stage": true
+  },
+  "files_sha256": {
+    "docs/research/regime_program/targets.json": "b8ecb1fd3da4d10e4dbd905b3b741c98de826b65f9bbb137f3073e658e65b319",
+    "docs/research/regime_program/README.md": "9a9483fc041a24fb353c74710daf5c315196b2bdc4db4b111b8c37fc7e0df4c8",
+    "docs/research/regime_program/cross_sectional_momentum_coverage_catalog_20261027/completion.json": "62ed45dc653f9d1bcdf9fed52f0a1df45bb5c52d78346f6b18ea079d76d89dfb",
+    "docs/research/regime_program/cross_sectional_momentum_coverage_catalog_20261027/verification.json": "6d5bad09773dfc4df6458e39dd8cd531256437ac0a508411306f15da0fb58e85",
+    "data/research/cross_sectional_momentum_coverage_catalog_20261027_v001/completion.json": "1395ad743f452bf2cb5835c2cc2888e2cf410e59df481781c7d155157f046eb0",
+    "research_tools/cross_sectional_momentum/collect_coverage_catalog.py": "6028468b040be04403ab7a5600259b7a447421d070188778a0c5fe6fef4b2aff",
+    "research_tools/cross_sectional_momentum/coverage_catalog_plan.json": "9dbce7c3ff9c15aaa66731a9ef8dfdf10b084d5dcba5a90d3bb4ef0986480eea"
+  },
+  "new_financial_accounts": 0,
+  "new_economic_variants_evaluated": 0,
+  "profit_goal_met": false,
+  "third_party_review_performed": false,
+  "independent_unseen_validation_completed": false,
+  "orders_enabled": false,
+  "code_tests_run_this_round": false,
+  "rendered_UI_retested_this_round": false,
+  "frontend_rebuilt": false
+}

@@ -560,14 +560,14 @@
       "new_financial_accounts": 0
     }
   },
-  "representative_actual": "有限三次官方公开请求均200且无后续分页：当前资产参考6347、市值日频目录850、价格日频目录1145。参考仅含asset/full_name，无历史生效时点或合约地址；目录区间不是逐形成日期的实际非缺失数据。目录数量不代表本地历史币池覆盖率，未自动匹配同名/换币身份。新增金融账户和经济变体0，无收益或容量准入。 多策略总账户尚未建立，全部目标实际值为空，外部复核、完整未见验证和真实执行未完成。",
+  "representative_actual": "860原生符号、每源86个年52周形成时点，完整资格与前30均保留。前30同名候选目录区间必要条件通过2025年1392/1560、2026年832/1020；不是实际日期覆盖或历史身份认证。两源集合一致，内部前缀复算147920符号时点/10480合格槽位通过；初版只读数组错误保留，v2仅技术修复。网络/新金融账户/经济变体0，分支未知封存，无经济或原法准入。 多策略总账户尚未建立，实际指标继续为空，外部复核、完整未见验证与真实执行未完成。",
   "account_evidence": {
     "date": "2026-10-26",
     "accounts": 54,
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "sparse_accounts_20261026/verification.json",
-    "next_action": "仅登记并离线检查必要历史身份候选及52周形成时钟的原生资格分母；上限860个原生符号、一次审阅产物、下一轮网络请求0。当前同名只能作候选，1000前缀、PUMP/LIT新旧身份不自动拼接，未匹配槽位保留。若决定性身份缺口仍不可合法取得，封存为未知，停止追加目录或回测；有明确原始证据渠道时才单独登记有限补证。身份/实际日期面板足够后才登记唯一经济合同。",
+    "next_action": "本次原始身份/市值数据分支封存未知，停止目录扩张与供应商覆盖子样本回测。重开须先提出具体合法原始身份/类型及必要日期来源，并登记有限采集与可用时点合同；未知不等于动量被反驳。总研发继续优先核对已有阴性结果对应的原始经济机制及最强替代解释，只有新的可反驳命题才登记一个经济变体；不靠翻方向、窗口、风险预算或删币求阳性。",
     "rounds": [
       {
         "name": "regime",
@@ -655,17 +655,23 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "cross_sectional_momentum_provider_identity_coverage",
-    "label": "动量数据补证：目录可得，历史身份未验收",
-    "status": "catalog_available_historical_identity_and_actual_formation_coverage_unknown",
-    "report": "cross_sectional_momentum_coverage_catalog_20261027/README.md",
-    "description": "有限三次官方公开请求均200且无后续分页：当前资产参考6347、市值日频目录850、价格日频目录1145。参考仅含asset/full_name，无历史生效时点或合约地址；目录区间不是逐形成日期的实际非缺失数据。目录数量不代表本地历史币池覆盖率，未自动匹配同名/换币身份。新增金融账户和经济变体0，无收益或容量准入。",
-    "provider_asset_reference_rows": 6347,
-    "provider_estimated_cap_catalog_rows": 850,
-    "provider_price_catalog_rows": 1145,
+    "mechanism": "cross_sectional_momentum_offline_identity_denominator",
+    "label": "动量分母已核对，原始身份分支封存未知",
+    "status": "bounded_offline_review_complete_data_branch_closed_unknown",
+    "report": "cross_sectional_momentum_offline_coverage_20261027/README.md",
+    "description": "860原生符号、每源86个年52周形成时点，完整资格与前30均保留。前30同名候选目录区间必要条件通过2025年1392/1560、2026年832/1020；不是实际日期覆盖或历史身份认证。两源集合一致，内部前缀复算147920符号时点/10480合格槽位通过；初版只读数组错误保留，v2仅技术修复。网络/新金融账户/经济变体0，分支未知封存，无经济或原法准入。",
+    "native_symbols": 860,
+    "formations_per_source": 86,
+    "source_variant_selected_membership_changes": 0,
+    "selected_catalog_interval_candidate_slots_2025": 1392,
+    "selected_native_slots_2025": 1560,
+    "selected_catalog_interval_candidate_slots_2026": 832,
+    "selected_native_slots_2026": 1020,
     "historical_identities_certified": false,
     "actual_formation_slot_coverage": null,
     "full_formation_universe_ready": false,
+    "data_branch_closed_unknown": true,
+    "network_requests": 0,
     "new_financial_accounts": 0,
     "new_models": 0,
     "new_economic_variants_evaluated": 0,
@@ -674,7 +680,7 @@
     "portfolio_actual": null,
     "profit_proven": false,
     "recorder_still_running": false,
-    "next_action": "仅登记并离线检查必要历史身份候选及52周形成时钟的原生资格分母；上限860个原生符号、一次审阅产物、下一轮网络请求0。当前同名只能作候选，1000前缀、PUMP/LIT新旧身份不自动拼接，未匹配槽位保留。若决定性身份缺口仍不可合法取得，封存为未知，停止追加目录或回测；有明确原始证据渠道时才单独登记有限补证。身份/实际日期面板足够后才登记唯一经济合同。"
+    "next_action": "本次原始身份/市值数据分支封存未知，停止目录扩张与供应商覆盖子样本回测。重开须先提出具体合法原始身份/类型及必要日期来源，并登记有限采集与可用时点合同；未知不等于动量被反驳。总研发继续优先核对已有阴性结果对应的原始经济机制及最强替代解释，只有新的可反驳命题才登记一个经济变体；不靠翻方向、窗口、风险预算或删币求阳性。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -1477,5 +1483,34 @@
     "profit_proven": false,
     "recorder_still_running": false,
     "next_action": "先登记公开估计流通市值源的历史身份/覆盖合同，与既有原生可交易池逐形成时点核对，必要日期采集并报告缺失及选择偏差。仅在数据足够、时点和口径明确后登记一个本地动量经济合同及完整费用对照；不能把供应商替换当原法复现，不能用作者已实现因子或今日身份回填。旧亏损分支保持冻结，总账户、容量、外部与完整未见验证继续未完成。"
+  },
+  "previous_provider_catalog_stage": {
+    "mechanism": "cross_sectional_momentum_provider_identity_coverage",
+    "label": "动量数据补证：目录可得，历史身份未验收",
+    "status": "catalog_available_historical_identity_and_actual_formation_coverage_unknown",
+    "report": "cross_sectional_momentum_coverage_catalog_20261027/README.md",
+    "description": "有限三次官方公开请求均200且无后续分页：当前资产参考6347、市值日频目录850、价格日频目录1145。参考仅含asset/full_name，无历史生效时点或合约地址；目录区间不是逐形成日期的实际非缺失数据。目录数量不代表本地历史币池覆盖率，未自动匹配同名/换币身份。新增金融账户和经济变体0，无收益或容量准入。",
+    "provider_asset_reference_rows": 6347,
+    "provider_estimated_cap_catalog_rows": 850,
+    "provider_price_catalog_rows": 1145,
+    "historical_identities_certified": false,
+    "actual_formation_slot_coverage": null,
+    "full_formation_universe_ready": false,
+    "new_financial_accounts": 0,
+    "new_models": 0,
+    "new_economic_variants_evaluated": 0,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "next_action": "仅登记并离线检查必要历史身份候选及52周形成时钟的原生资格分母；上限860个原生符号、一次审阅产物、下一轮网络请求0。当前同名只能作候选，1000前缀、PUMP/LIT新旧身份不自动拼接，未匹配槽位保留。若决定性身份缺口仍不可合法取得，封存为未知，停止追加目录或回测；有明确原始证据渠道时才单独登记有限补证。身份/实际日期面板足够后才登记唯一经济合同。"
+  },
+  "momentum_offline_coverage_evidence": {
+    "report": "cross_sectional_momentum_offline_coverage_20261027/README.md",
+    "result_completion_sha256": "9e8206f93ddf4c601b71199a9389b1ff4fe73ca024d7e5255979e162a241e24a",
+    "internal_audit_sha256": "d40469e0628578d2f8d7a974b0028bc66dce1f68804cbb99076df7f5891585f1",
+    "historical_identity_or_alpha_admitted": false,
+    "data_branch_closed_unknown": true
   }
 }

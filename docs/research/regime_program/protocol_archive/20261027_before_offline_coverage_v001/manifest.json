@@ -1,0 +1,8 @@
+{
+  "manifest": {
+    "targets.json": "b8ecb1fd3da4d10e4dbd905b3b741c98de826b65f9bbb137f3073e658e65b319",
+    "depth_contract_validation.json": "c9eac7c18ffc794443f1922179dbc0fc2c3110c23972d19bc5cabbe8266cd8b1",
+    "README.md": "9a9483fc041a24fb353c74710daf5c315196b2bdc4db4b111b8c37fc7e0df4c8"
+  },
+  "purpose": "Preserve prior goal and stage; no financial results rewritten"
+}

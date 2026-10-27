@@ -1,0 +1,29 @@
+{
+  "schema": "momentum-offline-identity-coverage.v1",
+  "version": "20261027_v001",
+  "question": "Can the existing native liquid opportunity set be linked to the captured provider catalog without dropping unmatched historical slots?",
+  "daily": "data/research/historical_perpetual_daily_20261026_v002",
+  "cohort": "results/research/sparse_market_cohort_20261026_v003",
+  "catalog": "data/research/cross_sectional_momentum_coverage_catalog_20261027_v001",
+  "formation_labels_start": "2025-01-01",
+  "formation_labels_end_exclusive": "2026-09-01",
+  "calendar": "Frozen year52 source date labels:51 seven-date groups, final8/9dates. Local native qualification uses complete daily rows through label; modeled decision next UTC day00:05. This does not certify original publication or align provider timestamps with native closes.",
+  "eligibility": {
+    "minimum_valid_observed_days": 180,
+    "trailing_calendar_days": 28,
+    "minimum_mean_daily_quote_usdt": 50000000,
+    "maximum_selected_names": 30,
+    "btc_in_rank": true,
+    "first_observed_day_usable": false,
+    "require_beta_or_max_feature": false,
+    "policy": "Retain all860 archive names. Full positive-volume and quote usable native days only; current known identity episode age,28consecutive calendar days, and known terminal/type exclusions at assumed source availability. No current-status or performance filter. BTC participates, as no source rule excludes it. This180day/top30 USDT-perpetual set is a declared local liquid adaptation, not the paper30day/USDspot/cap-floor universe. All eligible and selected sets are retained separately."
+  },
+  "source_variants": ["daily_archive", "daily_with_complete_5m_reconciliation"],
+  "reconciliation": "Reuse exactly the122sealed conflict days; reconstruct only those actual full288-bar five-minute aggregates from the final sealed bundle. No new corrections or source selection by performance. Preserve both source variants.",
+  "identity": "Only exact lowercase native base ticker equals captured provider asset yields a candidate. No prefix stripping, migration stitching or historical identity certification. PUMP/LIT identity reuse stays flagged; all links remain unverified regardless of catalog interval.",
+  "catalog_test": "PriceUSD1d Community min/max must contain all three source-calendar momentum endpoints; CapMrktEstUSD1d Community interval must contain formation label. Necessary interval test only, not actual nonmissing row coverage, classification, point-in-time availability or original-author replication.",
+  "budget": {"maximum_native_symbols": 860, "maximum_output_reviews": 1, "network_requests": 0, "new_financial_accounts": 0, "new_economic_variants": 0, "workers": 1},
+  "stop": "After this single offline review, if history identity or actual date inputs remain decisive and unverified, close this data branch unknown. Further acquisition requires a specific source-backed bounded protocol; no provider-survivor-only portfolio or repeated directory expansion.",
+  "orders_enabled": false,
+  "economic_evaluation_allowed": false
+}
