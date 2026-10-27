@@ -1,0 +1,15 @@
+{
+  "posthoc": true,
+  "months": 20,
+  "unknown_legs": [
+    {
+      "decision": "2026-06-01T00:00:00+00:00",
+      "symbol": "TONUSDT"
+    }
+  ],
+  "mean_theoretical_trend_factor_monthly_payoff": null,
+  "mean_theoretical_long_factor_monthly_payoff": null,
+  "mean_theoretical_direction_difference": null,
+  "not_net_account_performance": true,
+  "scope": "Use all20frozen monthly books, not just stopped trades, to compute their nextmonth source-derived economic-index payoff with the original start weights, and the same weights with direction replaced bylong. Report allmonthly rows and unknowns, mean paired differences only. This is a gross theoretical factor statistic with daily reinvestment inside the economic index, not executable netmonthly account PnL; no stop,capacity,fees or customercash validation. Do not attribute the entire factor/account discrepancy to stops, since reinvestment and execution differ too."
+}

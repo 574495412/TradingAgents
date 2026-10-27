@@ -1,0 +1,42 @@
+[
+  {
+    "id": "daily_archive_monthly_tsmom_cap10000_slip3",
+    "closed_cycles": 149,
+    "win_rate": 0.16778523489932887,
+    "Wilson95": [
+      0.11630849695340292,
+      0.23596149075888526
+    ],
+    "scope": "Descriptive binomial approximation; correlated cycles are not independent discoveries. Paired time-block intervals and source/search/unseen limits remain separate."
+  },
+  {
+    "id": "daily_archive_monthly_tsmom_cap10000_slip10",
+    "closed_cycles": 149,
+    "win_rate": 0.16778523489932887,
+    "Wilson95": [
+      0.11630849695340292,
+      0.23596149075888526
+    ],
+    "scope": "Descriptive binomial approximation; correlated cycles are not independent discoveries. Paired time-block intervals and source/search/unseen limits remain separate."
+  },
+  {
+    "id": "daily_archive_magnitude_long_cap10000_slip3",
+    "closed_cycles": 132,
+    "win_rate": 0.11363636363636363,
+    "Wilson95": [
+      0.07008550377598652,
+      0.17903916784112006
+    ],
+    "scope": "Descriptive binomial approximation; correlated cycles are not independent discoveries. Paired time-block intervals and source/search/unseen limits remain separate."
+  },
+  {
+    "id": "daily_archive_magnitude_long_cap10000_slip10",
+    "closed_cycles": 132,
+    "win_rate": 0.11363636363636363,
+    "Wilson95": [
+      0.07008550377598652,
+      0.17903916784112006
+    ],
+    "scope": "Descriptive binomial approximation; correlated cycles are not independent discoveries. Paired time-block intervals and source/search/unseen limits remain separate."
+  }
+]

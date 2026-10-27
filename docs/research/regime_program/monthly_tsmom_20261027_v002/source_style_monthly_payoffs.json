@@ -1,0 +1,1202 @@
+[
+  {
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2025-02-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.011253982687075566,
+    "theoretical_long_factor_payoff": 0.011253982687075566,
+    "difference": 0.0,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.03261577024762425,
+        "forward_source_index_return": 0.08649728356274489
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.024366382715936476,
+        "forward_source_index_return": -0.01908486486823502
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.01389684786287573,
+        "forward_source_index_return": 0.44565052545850947
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.021210107456200413,
+        "forward_source_index_return": 0.2222525327426612
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.014843750730752352,
+        "forward_source_index_return": 0.03711674161112333
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": 0.01118466959271925,
+        "forward_source_index_return": -0.30994564923371226
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.013409007869634084,
+        "forward_source_index_return": -0.013596647965633535
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.028580119063475004,
+        "forward_source_index_return": -0.032148904611891904
+      },
+      {
+        "symbol": "LINKUSDT",
+        "unit_intent": 0.012992274887572059,
+        "forward_source_index_return": 0.24787274930684577
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.015126234589736375,
+        "forward_source_index_return": 0.10581539588494593
+      }
+    ]
+  },
+  {
+    "start": "2025-02-01T00:00:00+00:00",
+    "end": "2025-03-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.04601658812995831,
+    "theoretical_long_factor_payoff": -0.04601658812995831,
+    "difference": 0.0,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.03468636743138402,
+        "forward_source_index_return": -0.17979124960104287
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.025021781546842974,
+        "forward_source_index_return": -0.32381826360519084
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.018754864036106197,
+        "forward_source_index_return": -0.35890993052264764
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.0148803105452121,
+        "forward_source_index_return": -0.2936257797773041
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.015632906074236327,
+        "forward_source_index_return": -0.38696109206858964
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.014156075391588405,
+        "forward_source_index_return": -0.30417459475792974
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": 0.011804161104994583,
+        "forward_source_index_return": -0.4295307332693795
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.016109867879674764,
+        "forward_source_index_return": -0.3287793503130819
+      },
+      {
+        "symbol": "WIFUSDT",
+        "unit_intent": 0.012014738187857225,
+        "forward_source_index_return": -0.4460143031126703
+      },
+      {
+        "symbol": "LINKUSDT",
+        "unit_intent": 0.014585654988708,
+        "forward_source_index_return": -0.41139999416913897
+      }
+    ]
+  },
+  {
+    "start": "2025-03-01T00:00:00+00:00",
+    "end": "2025-04-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.009358101985942346,
+    "theoretical_long_factor_payoff": -0.015197934502949515,
+    "difference": 0.005839832517007169,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.036220370855389,
+        "forward_source_index_return": -0.022914508140238765
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.023853445547719346,
+        "forward_source_index_return": -0.1872198995389306
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.017954911827226624,
+        "forward_source_index_return": -0.15779119880556025
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.015758037964551892,
+        "forward_source_index_return": -0.02252646101573441
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.016358596566752533,
+        "forward_source_index_return": -0.17555653341935795
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.013967105377636898,
+        "forward_source_index_return": -0.1968548073602373
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": 0.012577574328922038,
+        "forward_source_index_return": -0.09088790093208998
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.029325505678541284,
+        "forward_source_index_return": 0.0389178314370191
+      },
+      {
+        "symbol": "LTCUSDT",
+        "unit_intent": 0.016139917726840328,
+        "forward_source_index_return": -0.35354804427352493
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": -0.016642354327151058,
+        "forward_source_index_return": 0.049028180744879135
+      }
+    ]
+  },
+  {
+    "start": "2025-04-01T00:00:00+00:00",
+    "end": "2025-05-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.006382581575594305,
+    "theoretical_long_factor_payoff": 0.013184003750874541,
+    "difference": -0.006801422175280236,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.03081823479493009,
+        "forward_source_index_return": 0.13821105445076443
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.021366536536900554,
+        "forward_source_index_return": -0.01746753018749103
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.015234087394883657,
+        "forward_source_index_return": 0.187257174234865
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.013352905841964621,
+        "forward_source_index_return": 0.04914637163144642
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": -0.009231333600942653,
+        "forward_source_index_return": 0.029302478797821774
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.015647859419672974,
+        "forward_source_index_return": 0.03029911234710503
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.01236674395093205,
+        "forward_source_index_return": 0.2306101469067099
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.013593563348500988,
+        "forward_source_index_return": 0.5475536364232017
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.02923777158191026,
+        "forward_source_index_return": -0.004437985781568732
+      },
+      {
+        "symbol": "AUCTIONUSDT",
+        "unit_intent": -0.008150852357455765,
+        "forward_source_index_return": -0.22391480583997703
+      }
+    ]
+  },
+  {
+    "start": "2025-05-01T00:00:00+00:00",
+    "end": "2025-06-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.0053345673182414,
+    "theoretical_long_factor_payoff": 0.014244113414729892,
+    "difference": -0.008909546096488492,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.03062054761020071,
+        "forward_source_index_return": 0.10593458770507524
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.01987332566493479,
+        "forward_source_index_return": 0.40242516483109037
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.016110929967612608,
+        "forward_source_index_return": 0.05782100335393592
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.01521193234523874,
+        "forward_source_index_return": -0.012503371802485064
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.012923731722092394,
+        "forward_source_index_return": -0.07863319496524568
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.01656530966926079,
+        "forward_source_index_return": 0.11290265946032574
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": 0.013307032806791942,
+        "forward_source_index_return": 0.3034081451470134
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.011076610373304234,
+        "forward_source_index_return": 0.0035333802692678606
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.03314774239913638,
+        "forward_source_index_return": 0.10018532857711548
+      },
+      {
+        "symbol": "OMUSDT",
+        "unit_intent": -0.006689362426431434,
+        "forward_source_index_return": -0.36312280473100955
+      }
+    ]
+  },
+  {
+    "start": "2025-06-01T00:00:00+00:00",
+    "end": "2025-07-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.0023918422175821,
+    "theoretical_long_factor_payoff": -0.0060816878485576,
+    "difference": 0.0036898456309755,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.03462944309046761,
+        "forward_source_index_return": 0.021901052065294024
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.018765916732842208,
+        "forward_source_index_return": -0.02085343114899474
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.01828329105972319,
+        "forward_source_index_return": -0.012531369660420455
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.011543839631395303,
+        "forward_source_index_return": -0.1655574758888767
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.01771576073385032,
+        "forward_source_index_return": 0.02437600760861236
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.01524278290531954,
+        "forward_source_index_return": -0.14518994652528838
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.014133680817855382,
+        "forward_source_index_return": -0.14749329913637677
+      },
+      {
+        "symbol": "WIFUSDT",
+        "unit_intent": -0.00969767770368502,
+        "forward_source_index_return": 0.02324926341993927
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.013129026046318833,
+        "forward_source_index_return": -0.16825263687045222
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.03564575026433861,
+        "forward_source_index_return": 0.000575054627085958
+      }
+    ]
+  },
+  {
+    "start": "2025-07-01T00:00:00+00:00",
+    "end": "2025-08-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.01014775123500468,
+    "theoretical_long_factor_payoff": 0.029003110146158344,
+    "difference": -0.018855358911153662,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.03902740263315264,
+        "forward_source_index_return": 0.07256927232198374
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.02084350469364566,
+        "forward_source_index_return": 0.47764791100415915
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.019882963858241724,
+        "forward_source_index_return": 0.10664416957396128
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.020761691931953517,
+        "forward_source_index_return": 0.3399733941887624
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.01281451551665301,
+        "forward_source_index_return": 0.09837060101060402
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.01742484573966012,
+        "forward_source_index_return": 0.2606172851316777
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.01501307470476058,
+        "forward_source_index_return": 0.292108525850594
+      },
+      {
+        "symbol": "WIFUSDT",
+        "unit_intent": -0.010462102393324882,
+        "forward_source_index_return": 0.05430755981469293
+      },
+      {
+        "symbol": "AAVEUSDT",
+        "unit_intent": 0.01611790780527526,
+        "forward_source_index_return": -0.05566022342464516
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.015713206007262066,
+        "forward_source_index_return": 0.2818480420554961
+      }
+    ]
+  },
+  {
+    "start": "2025-08-01T00:00:00+00:00",
+    "end": "2025-09-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.002118967707890829,
+    "theoretical_long_factor_payoff": 0.0008756719686705478,
+    "difference": -0.0029946396765613767,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.02309965374423785,
+        "forward_source_index_return": 0.1811172304518769
+      },
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.04491275837489569,
+        "forward_source_index_return": -0.07037072444486447
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.021543802137332892,
+        "forward_source_index_return": 0.15988829305004226
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.020527938725804048,
+        "forward_source_index_return": -0.0863989162883887
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.01721646902051742,
+        "forward_source_index_return": 0.012560563607446174
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.014353081460303023,
+        "forward_source_index_return": -0.10958984355000934
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.015457820437931279,
+        "forward_source_index_return": -0.10580650556991988
+      },
+      {
+        "symbol": "ENAUSDT",
+        "unit_intent": 0.010984284137098455,
+        "forward_source_index_return": 0.13198736137304978
+      },
+      {
+        "symbol": "1000BONKUSDT",
+        "unit_intent": 0.010770146107036922,
+        "forward_source_index_return": -0.15175356356021985
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.01734000022749848,
+        "forward_source_index_return": 0.09095966649132081
+      }
+    ]
+  },
+  {
+    "start": "2025-09-01T00:00:00+00:00",
+    "end": "2025-10-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 3.193746190455574e-05,
+    "theoretical_long_factor_payoff": 3.193746190455574e-05,
+    "difference": 0.0,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.0203301873790961,
+        "forward_source_index_return": -0.058837975321545444
+      },
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.0446568800100328,
+        "forward_source_index_return": 0.04882708747413056
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.019763926952228398,
+        "forward_source_index_return": 0.03744531249936123
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.020580260350467325,
+        "forward_source_index_return": 0.019516910794509457
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.01698708113725769,
+        "forward_source_index_return": 0.08411905963364785
+      },
+      {
+        "symbol": "LINKUSDT",
+        "unit_intent": 0.016073697815308933,
+        "forward_source_index_return": -0.08648656888864514
+      },
+      {
+        "symbol": "ENAUSDT",
+        "unit_intent": 0.01134745112824664,
+        "forward_source_index_return": -0.11484103488662156
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": 0.018015764007562253,
+        "forward_source_index_return": -0.011234508924207964
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": 0.015245393074750813,
+        "forward_source_index_return": -0.03838393053883293
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.016568095654132933,
+        "forward_source_index_return": -0.0020602813681811494
+      }
+    ]
+  },
+  {
+    "start": "2025-10-01T00:00:00+00:00",
+    "end": "2025-11-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.01764150462796145,
+    "theoretical_long_factor_payoff": -0.023602808545052485,
+    "difference": 0.005961303917091036,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.023187610671435595,
+        "forward_source_index_return": -0.07428519404675249
+      },
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.04999073218155653,
+        "forward_source_index_return": -0.04182394610386697
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.021031400303351485,
+        "forward_source_index_return": -0.09397849798025892
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.018516377128238542,
+        "forward_source_index_return": -0.20187263184510573
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.02414697581437761,
+        "forward_source_index_return": -0.12160988801253303
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.03448782189764855,
+        "forward_source_index_return": 0.08260102955427318
+      },
+      {
+        "symbol": "AVAXUSDT",
+        "unit_intent": 0.01857093404016898,
+        "forward_source_index_return": -0.3918706507989219
+      },
+      {
+        "symbol": "ENAUSDT",
+        "unit_intent": 0.012925446365837851,
+        "forward_source_index_return": -0.2832870104834968
+      },
+      {
+        "symbol": "WLDUSDT",
+        "unit_intent": -0.010398446452076687,
+        "forward_source_index_return": -0.3583049607797719
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.01878459856726595,
+        "forward_source_index_return": -0.27805460822160444
+      }
+    ]
+  },
+  {
+    "start": "2025-11-01T00:00:00+00:00",
+    "end": "2025-12-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.027882147490353955,
+    "theoretical_long_factor_payoff": -0.03556570169264222,
+    "difference": 0.007683554202288265,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.02271602887726888,
+        "forward_source_index_return": -0.22597473188635342
+      },
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": 0.044212434127508235,
+        "forward_source_index_return": -0.17929078537548648
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": 0.019679621232216758,
+        "forward_source_index_return": -0.2868085363356342
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.02350620535011598,
+        "forward_source_index_return": -0.19608362176129412
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": 0.01694354037522126,
+        "forward_source_index_return": -0.2191856595163112
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.02283326856061466,
+        "forward_source_index_return": -0.14179575013760592
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.007839300527494568,
+        "forward_source_index_return": 0.11876231485921496
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": 0.01643561503921085,
+        "forward_source_index_return": -0.36870853316026353
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.015460448902579658,
+        "forward_source_index_return": -0.3106133209126215
+      },
+      {
+        "symbol": "LINKUSDT",
+        "unit_intent": 0.01689169781182268,
+        "forward_source_index_return": -0.25224997646920655
+      }
+    ]
+  },
+  {
+    "start": "2025-12-01T00:00:00+00:00",
+    "end": "2026-01-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.0070772818074956246,
+    "theoretical_long_factor_payoff": -0.010216517459380453,
+    "difference": 0.01729379926687608,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.02334557323214954,
+        "forward_source_index_return": -0.010135650272710572
+      },
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.04074349520386736,
+        "forward_source_index_return": -0.03415228731258202
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.020064335665773595,
+        "forward_source_index_return": -0.06824789598354086
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.00813221400593086,
+        "forward_source_index_return": 0.19777300172926648
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": 0.022377408884459937,
+        "forward_source_index_return": -0.14432589218826053
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.018366410750637406,
+        "forward_source_index_return": -0.19671276854881825
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.025757767826203006,
+        "forward_source_index_return": -0.013227666204365551
+      },
+      {
+        "symbol": "FILUSDT",
+        "unit_intent": -0.007973352168398248,
+        "forward_source_index_return": -0.1656114127464744
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": -0.016929308326806752,
+        "forward_source_index_return": -0.06493359443812075
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.016096757589978732,
+        "forward_source_index_return": -0.11048829264738858
+      }
+    ]
+  },
+  {
+    "start": "2026-01-01T00:00:00+00:00",
+    "end": "2026-02-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.012909681240825128,
+    "theoretical_long_factor_payoff": -0.023319244527931538,
+    "difference": 0.036228925768756665,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.04278645150669814,
+        "forward_source_index_return": -0.10572129140222775
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.02524898840488378,
+        "forward_source_index_return": -0.17844372304395806
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.02264357940746775,
+        "forward_source_index_return": -0.15507649033048887
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.00903187071047767,
+        "forward_source_index_return": -0.3997876198436886
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.02543527861358466,
+        "forward_source_index_return": -0.10665647555888302
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.020379056735945204,
+        "forward_source_index_return": -0.11477932075148078
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.029297531580591927,
+        "forward_source_index_return": -0.09881880159083423
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": -0.016797033245626442,
+        "forward_source_index_return": -0.18075360006653696
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.0167214512993863,
+        "forward_source_index_return": 0.023968842876709973
+      },
+      {
+        "symbol": "ADAUSDT",
+        "unit_intent": -0.019662903533505586,
+        "forward_source_index_return": -0.12283880273580161
+      }
+    ]
+  },
+  {
+    "start": "2026-02-01T00:00:00+00:00",
+    "end": "2026-03-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.012042261240618227,
+    "theoretical_long_factor_payoff": -0.030076830561445,
+    "difference": 0.042119091802063226,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.03983985442784015,
+        "forward_source_index_return": -0.149026184612429
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.02439875520088417,
+        "forward_source_index_return": -0.19626623563959567
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.022866695282053255,
+        "forward_source_index_return": -0.19238089071327114
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.024273787143031578,
+        "forward_source_index_return": -0.15998467285525486
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.010155309375796426,
+        "forward_source_index_return": -0.2728260452570832
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.020192793831821924,
+        "forward_source_index_return": -0.09556357636411195
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.013731501140001977,
+        "forward_source_index_return": -0.11838026800748691
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.03075091717695417,
+        "forward_source_index_return": -0.2100986539530556
+      },
+      {
+        "symbol": "DASHUSDT",
+        "unit_intent": 0.008045479577174042,
+        "forward_source_index_return": -0.25358918680801357
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": -0.01737339379066654,
+        "forward_source_index_return": -0.21646982746271426
+      }
+    ]
+  },
+  {
+    "start": "2026-03-01T00:00:00+00:00",
+    "end": "2026-04-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.002275616431308751,
+    "theoretical_long_factor_payoff": -0.0021235049525807135,
+    "difference": -0.0001521114787280376,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.028443101721654613,
+        "forward_source_index_return": 0.020424801895054356
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.02029903848209654,
+        "forward_source_index_return": 0.07279796231946611
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.019278739490090204,
+        "forward_source_index_return": -0.008515468546913985
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.018808596422359103,
+        "forward_source_index_return": -0.022278278342439783
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.017959476157597826,
+        "forward_source_index_return": -0.016977986236548448
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.02660348318603691,
+        "forward_source_index_return": 0.001185199079441146
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.010401975397807546,
+        "forward_source_index_return": 0.12866578518020422
+      },
+      {
+        "symbol": "PIPPINUSDT",
+        "unit_intent": 0.004599700357651912,
+        "forward_source_index_return": -0.8955712982138448
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.012681716928558545,
+        "forward_source_index_return": -0.04863504574891919
+      },
+      {
+        "symbol": "SUIUSDT",
+        "unit_intent": -0.01601289782790978,
+        "forward_source_index_return": -0.028646995635457584
+      }
+    ]
+  },
+  {
+    "start": "2026-04-01T00:00:00+00:00",
+    "end": "2026-05-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.00314625606058864,
+    "theoretical_long_factor_payoff": 0.01141306175262257,
+    "difference": -0.01455931781321121,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.030109924769685097,
+        "forward_source_index_return": 0.12016829123844142
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.022036065157474447,
+        "forward_source_index_return": 0.0736742158345356
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.021894080786646692,
+        "forward_source_index_return": -0.001276088346751969
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.02234638992664112,
+        "forward_source_index_return": 0.01990100813655582
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.02036639207200157,
+        "forward_source_index_return": 0.14989708194842466
+      },
+      {
+        "symbol": "SIRENUSDT",
+        "unit_intent": 0.0023500144298332615,
+        "forward_source_index_return": 0.7813946230887214
+      },
+      {
+        "symbol": "TAOUSDT",
+        "unit_intent": 0.015596083494240931,
+        "forward_source_index_return": -0.1815956831868918
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.011305163690754341,
+        "forward_source_index_return": 0.415232041998449
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.031033956601365847,
+        "forward_source_index_return": -0.004998062990859697
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.014500381659112088,
+        "forward_source_index_return": 0.13873260882710414
+      }
+    ]
+  },
+  {
+    "start": "2026-05-01T00:00:00+00:00",
+    "end": "2026-06-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": 0.011751266263993365,
+    "theoretical_long_factor_payoff": 0.003601945462106906,
+    "difference": 0.008149320801886458,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.03383052851085531,
+        "forward_source_index_return": -0.036990843172839405
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": 0.024587980645774655,
+        "forward_source_index_return": -0.11343731724743056
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.024656224196747987,
+        "forward_source_index_return": -0.008311111607197552
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.02384743473904563,
+        "forward_source_index_return": -0.05958602029237425
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.026555823834000434,
+        "forward_source_index_return": -0.025660725416796537
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.011985454802028022,
+        "forward_source_index_return": 0.6242219367627535
+      },
+      {
+        "symbol": "1000PEPEUSDT",
+        "unit_intent": -0.01645868535870538,
+        "forward_source_index_return": -0.11716426054495677
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.03537835485446546,
+        "forward_source_index_return": 0.1509726713816646
+      },
+      {
+        "symbol": "SIRENUSDT",
+        "unit_intent": 0.0018721138950575844,
+        "forward_source_index_return": -0.23385150995685
+      },
+      {
+        "symbol": "TAOUSDT",
+        "unit_intent": -0.016749326779527576,
+        "forward_source_index_return": 0.023511395007866698
+      }
+    ]
+  },
+  {
+    "start": "2026-06-01T00:00:00+00:00",
+    "end": "2026-07-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": null,
+    "theoretical_long_factor_payoff": null,
+    "difference": null,
+    "unknown_legs": [
+      {
+        "decision": "2026-06-01T00:00:00+00:00",
+        "symbol": "TONUSDT"
+      }
+    ],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.04000828680152908,
+        "forward_source_index_return": -0.2059415773697285
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.029902974588342953,
+        "forward_source_index_return": -0.21715994851491416
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.028854523465503986,
+        "forward_source_index_return": -0.10289462680286254
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.01164966691245187,
+        "forward_source_index_return": -0.28476291804735276
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "unit_intent": 0.01721324371913183,
+        "forward_source_index_return": -0.1015480050925015
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.031336618328511257,
+        "forward_source_index_return": -0.21710964817060707
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.02809885979184099,
+        "forward_source_index_return": -0.28327024860003325
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": 0.03371642618337148,
+        "forward_source_index_return": -0.23184537647033332
+      },
+      {
+        "symbol": "NEARUSDT",
+        "unit_intent": -0.015689975948785375,
+        "forward_source_index_return": -0.23362341964141586
+      }
+    ]
+  },
+  {
+    "start": "2026-07-01T00:00:00+00:00",
+    "end": "2026-08-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.005776105061012251,
+    "theoretical_long_factor_payoff": 0.0032668838838863807,
+    "difference": -0.009042988944898632,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.03922213942942521,
+        "forward_source_index_return": 0.0665617979075348
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.02834811664734541,
+        "forward_source_index_return": 0.18056492368061394
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.025902158165979117,
+        "forward_source_index_return": -0.012766190308916348
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.010973839380717257,
+        "forward_source_index_return": 0.14018928803983166
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "unit_intent": 0.01591016890230587,
+        "forward_source_index_return": -0.19526366970872544
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.03113290595106019,
+        "forward_source_index_return": 0.019297035476519397
+      },
+      {
+        "symbol": "WLDUSDT",
+        "unit_intent": -0.009781245164119264,
+        "forward_source_index_return": -0.26139495697761383
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.02913357104307016,
+        "forward_source_index_return": -0.038625178687079154
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": -0.03428437944021284,
+        "forward_source_index_return": 0.06831449522150801
+      },
+      {
+        "symbol": "NEARUSDT",
+        "unit_intent": -0.014455461899072238,
+        "forward_source_index_return": -0.06970839070427048
+      }
+    ]
+  },
+  {
+    "start": "2026-08-01T00:00:00+00:00",
+    "end": "2026-09-01T00:00:00+00:00",
+    "theoretical_trend_factor_payoff": -0.026140606154151293,
+    "theoretical_long_factor_payoff": 0.059887780849411466,
+    "difference": -0.08602838700356276,
+    "unknown_legs": [],
+    "legs": [
+      {
+        "symbol": "BTCUSDT",
+        "unit_intent": -0.04278472811463377,
+        "forward_source_index_return": 0.24192388683914934
+      },
+      {
+        "symbol": "ETHUSDT",
+        "unit_intent": -0.030502240936100298,
+        "forward_source_index_return": 0.31856635057947824
+      },
+      {
+        "symbol": "SOLUSDT",
+        "unit_intent": -0.029648093960015498,
+        "forward_source_index_return": 0.4087814979364921
+      },
+      {
+        "symbol": "BANKUSDT",
+        "unit_intent": -0.004317878970248897,
+        "forward_source_index_return": -0.34461924525215204
+      },
+      {
+        "symbol": "ZECUSDT",
+        "unit_intent": 0.0128123618325093,
+        "forward_source_index_return": 0.8402564687207013
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "unit_intent": 0.017953890223866273,
+        "forward_source_index_return": 0.5885108938415757
+      },
+      {
+        "symbol": "XRPUSDT",
+        "unit_intent": -0.03448825843637514,
+        "forward_source_index_return": 0.29452088405800647
+      },
+      {
+        "symbol": "DOGEUSDT",
+        "unit_intent": -0.032302823596022996,
+        "forward_source_index_return": 0.18306020305967796
+      },
+      {
+        "symbol": "DEXEUSDT",
+        "unit_intent": 0.0033319382830800264,
+        "forward_source_index_return": -0.07195382628095859
+      },
+      {
+        "symbol": "BNBUSDT",
+        "unit_intent": -0.04052639089022207,
+        "forward_source_index_return": 0.1726693283523153
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "slippage_bps": 3,
+    "trend_minus_long_net_pnl": -427.92327436184314,
+    "paired_uncertainty": {
+      "mean_daily_return_D_minus_C": -7.827165453323592e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.00037194563074533773,
+            0.00023689038882978103
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  },
+  {
+    "slippage_bps": 10,
+    "trend_minus_long_net_pnl": -434.33069017970047,
+    "paired_uncertainty": {
+      "mean_daily_return_D_minus_C": -7.956118090199834e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.0003725727457702165,
+            0.00023393664903675695
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  }
+]

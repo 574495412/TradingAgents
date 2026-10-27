@@ -1,0 +1,34 @@
+{
+  "schema": "monthly-tsmom-review.v1",
+  "passed": true,
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/monthly_tsmom/review.py": "3d02c3751732e9884cf3035763fdfabc8d19397028fcd5a5e71cd24bda421db3",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/monthly_tsmom/review_plan.json": "50f2959eabb92f1a69090e485c114c638ffc052d4bfaedb9bc26956bcc86daf6",
+    "research_tools/trend_stop_audit/review.py": "6ae4f9a96d7d5d1ccc37d01a4e399cb9a96d0f898e942bf2a6a97f2f6370127f",
+    "results/research/monthly_tsmom_accounts_20261027_v001/completion.json": "4e0f2704ce548c3bd633f729b381c9d034c0890db00d76208a9279b06aba9756",
+    "results/research/monthly_tsmom_inputs_20261027_v001/completion.json": "94fb9d55839df8489dd6b8256eae9c8ce8b49cf7b159fb3f553cf7819760881d",
+    "results/research/monthly_tsmom_targets_20261027_v001/completion.json": "ba28ba31ce2f5beaa3375343e666039a5ecdabb7839be01ced5fd1153eceffe2",
+    "results/research/monthly_tsmom_inputs_20261027_v001_internal_audit.json": "386c9ac8d78460ff13556ef14679060cee772645916ac3b70da2d0affb3bc015"
+  },
+  "four_cash_and_stop_audits_passed": true,
+  "years_and_full_account_reconcile": true,
+  "actual_holding_process_restart": {
+    "performed": true,
+    "passed": true,
+    "split": "2025-02-01T00:05:00+00:00",
+    "held_positions": 10,
+    "addition_at_checkpoint": true,
+    "parent_pid": 28191,
+    "worker_pid": 28251,
+    "full_curve_ledger_requests_inventory_and_risk_equal": true
+  },
+  "maximum_internal_NAV_error_usdt": 1.0186340659856796e-10,
+  "actual_new_financial_accounts": 4,
+  "new_capacity_accounts": 0,
+  "capacity_triggered": false,
+  "profit_goal_met": false,
+  "external_review": false,
+  "independent_unseen_evidence": false,
+  "orders_enabled": false,
+  "source_style_diagnostic_is_posthoc": true
+}

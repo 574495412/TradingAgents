@@ -1,0 +1,33 @@
+{
+  "schema": "monthly-tsmom-data-readiness.v1",
+  "version": "20261027_v001",
+  "question": "Can the original 12-calendar-month own-return / one-month horizon be constructed from the actual local perpetual data without silently replacing futures total returns by price changes?",
+  "source_paper": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+  "source_pack": "data/research/trend_method_source_20261027_v001",
+  "cohort": "results/research/sparse_market_cohort_20261026_v003",
+  "existing_bindings": "results/research/trend_btc_inputs_20261027_v001/execution_bindings.json",
+  "window": {"start": "2025-01-01", "end": "2026-09-01"},
+  "candidate_rule": "At each first-of-month00UTC, consider all860 archived USDT symbols includingBTC; retain known crypto/identity-permitted assets with every completed daily price and positive volume/quote in the prior12calendar months plus the starting prior close, and mean prior28dayquote>=50M. Rank by that mean only, ties symbol; select at most10. No future survival, returns rank, current metadata, or funding quality filter. Missing funding for a selected member blocks its total-return claim rather than silently changing the selection.",
+  "candidate_scope_limit": "Local liquid-perpetual opportunity set, not the original58 cross-asset futures. Existing historical announcement visibility assumptions remain unverified. The already viewed2025/2026 is diagnostic only.",
+  "return_definition": "For one normalized daily fully collateralized long position with quantity1/previousDailyClose, daily economic return = (close-previousClose-sum(markPrice*fundingRate for exact events in that UTC day))/previousClose. Compound daily returns over12calendar months. Cash yield assumed0. This locally defined perpetual index includes funding; it is not the original rolled-futures index, not a tradable net-of-fee account, and not a claim of actual customer cashflows. Price-only cumulative return is a diagnostic reference, not the adopted full-return definition.",
+  "boundary_policy": "Daily bar labeledD is available atD+1day. An event atD00:00 belongs to dayD and its mark/time remain exact; compare only events with timestamp strictly before each decision. No time flooring for cash. All return factors must be finite and positive or the series is unknown; do not clip.",
+  "next_method_if_ready": "One monthly sign(12month local economic index) candidate, COM60 centered daily economic-return population variance with explicit finite-history normalization,365day scaling; keep local16percent nominal risk budget and gross<=.8,8percent stop/15percent persistent halt. Same-opportunity identical-magnitude long and cash controls. No EMA, alternate horizons, neural model or risk grid. This is a local adaptation; risk limits can shorten one-month holds. Freeze a financial plan and independent formula review before returns.",
+  "raw_capture": {
+    "connector": "Binance public USD-M funding-rate-history",
+    "start": "2024-01-01T00:00:00Z",
+    "end_exclusive": "2024-12-25T00:00:00Z",
+    "maximum_symbols": 50,
+    "maximum_api_calls": 100,
+    "maximum_pages_per_symbol": 3,
+    "page_limit": 1000,
+    "selection": "Only selected symbols whose first required12month window precedes the already sealed exact funding boundary. Reuse old exact events after boundary. Persist full raw response and request before deriving fields; preserve failed pages. No credentials, orders or account access.",
+    "stop": "Stop that symbol after the first short page. Do not replace missing/nonpositive marks, infer a zero event day, or use a nominal schedule to manufacture funding events. Escalate missing history/schedules as explicit evidence gaps."
+  },
+  "stopping": "This stage performs data/method readiness only. No financial returns until selected-member raw coverage, arithmetic and causality are reviewed. If a required mark or source is unavailable, keep that affected signal unknown and document the narrowest next evidence needed; do not optimize a price-only substitute for profit.",
+  "new_financial_accounts": 0,
+  "new_economic_variants": 0,
+  "new_economic_mechanisms": 0,
+  "orders_enabled": false,
+  "independent_oos": false,
+  "profit_goal_met": false
+}

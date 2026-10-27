@@ -1,0 +1,118 @@
+{
+  "daily_archive_monthly_tsmom_cap10000_slip3": {
+    "active_5m_intervals": 161932,
+    "mean_gross_when_active": 0.09056383006625124,
+    "first_halt_request": null,
+    "closed_exit_reasons": {
+      "stop": 139,
+      "rebalance": 10
+    },
+    "exit_fill_reasons": {
+      "stop": 139,
+      "rebalance": 27
+    },
+    "closed_by_direction": {
+      "-1": {
+        "closed_cycles": 67,
+        "closed_net_pnl": -316.6699081845502
+      },
+      "1": {
+        "closed_cycles": 82,
+        "closed_net_pnl": -662.058474130872
+      }
+    },
+    "open_campaigns": 2,
+    "gross_price_component_same_path": -672.1306212642273,
+    "mean_gross": 0.08375079027034178,
+    "mean_abs_net": 0.06640198466544583,
+    "open_campaign_net_pnl": 235.15699884293878,
+    "cash_identity": "closed netPnL + open campaign cash/PnL including exit reserve = total netPnL"
+  },
+  "daily_archive_monthly_tsmom_cap10000_slip10": {
+    "active_5m_intervals": 161930,
+    "mean_gross_when_active": 0.0905624055407842,
+    "first_halt_request": null,
+    "closed_exit_reasons": {
+      "stop": 139,
+      "rebalance": 10
+    },
+    "exit_fill_reasons": {
+      "stop": 139,
+      "rebalance": 27
+    },
+    "closed_by_direction": {
+      "-1": {
+        "closed_cycles": 67,
+        "closed_net_pnl": -329.5973795345676
+      },
+      "1": {
+        "closed_cycles": 82,
+        "closed_net_pnl": -675.0553657267952
+      }
+    },
+    "open_campaigns": 2,
+    "gross_price_component_same_path": -667.7072203950294,
+    "mean_gross": 0.08374843853241874,
+    "mean_abs_net": 0.06641712153666922,
+    "open_campaign_net_pnl": 234.07349111642907,
+    "cash_identity": "closed netPnL + open campaign cash/PnL including exit reserve = total netPnL"
+  },
+  "daily_archive_magnitude_long_cap10000_slip3": {
+    "active_5m_intervals": 146939,
+    "mean_gross_when_active": 0.12343163447299409,
+    "first_halt_request": null,
+    "closed_exit_reasons": {
+      "stop": 127,
+      "rebalance": 5
+    },
+    "exit_fill_reasons": {
+      "stop": 127,
+      "rebalance": 25
+    },
+    "closed_by_direction": {
+      "-1": {
+        "closed_cycles": 0,
+        "closed_net_pnl": 0.0
+      },
+      "1": {
+        "closed_cycles": 132,
+        "closed_net_pnl": -1015.294840547915
+      }
+    },
+    "open_campaigns": 8,
+    "gross_price_component_same_path": -222.20319936232113,
+    "mean_gross": 0.10357740177509082,
+    "mean_abs_net": 0.10357740177509082,
+    "open_campaign_net_pnl": 699.6467314371749,
+    "cash_identity": "closed netPnL + open campaign cash/PnL including exit reserve = total netPnL"
+  },
+  "daily_archive_magnitude_long_cap10000_slip10": {
+    "active_5m_intervals": 146925,
+    "mean_gross_when_active": 0.12345288516404279,
+    "first_halt_request": null,
+    "closed_exit_reasons": {
+      "stop": 127,
+      "rebalance": 5
+    },
+    "exit_fill_reasons": {
+      "stop": 127,
+      "rebalance": 25
+    },
+    "closed_by_direction": {
+      "-1": {
+        "closed_cycles": 0,
+        "closed_net_pnl": 0.0
+      },
+      "1": {
+        "closed_cycles": 132,
+        "closed_net_pnl": -1031.5961618637334
+      }
+    },
+    "open_campaigns": 8,
+    "gross_price_component_same_path": -215.85384267571314,
+    "mean_gross": 0.10358536394007586,
+    "mean_abs_net": 0.10358536394007586,
+    "open_campaign_net_pnl": 695.3475978985983,
+    "cash_identity": "closed netPnL + open campaign cash/PnL including exit reserve = total netPnL"
+  }
+}

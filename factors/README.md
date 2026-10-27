@@ -76,3 +76,5 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 `common/max_effect.py`集中保存MAX28正向延续、匹配普通28日动量、滞后60日BTC beta及共同资格规则，不改旧74列。24个周频永续账户与6次实际进程恢复完成；2026冷启动有正收益，连续账户仍因2025风险停机为负，未证明独立alpha。见[MAX对照完整结果](../docs/research/regime_program/max_effect_accounts_20261026/README.md)。股票不能直接继承加密MAX方向或UTC日历。
 
 `crypto/funding_cross_section.py`单独保存决策前7日实际已结算资金费排名及固定成本过滤，不改变旧74列。两种行情版本共30个新账户、6个动量和6个现金引用，8次新进程恢复完成；2026冷启动改善但跨年扣费损益仍负，尚无模块准入。两个变体属于同一资金费机制，股票不能直接继承其结算与日历。见[资金费与来源敏感性结果](../docs/research/regime_program/funding_cross_section_20261026_v002/README.md)。
+
+`common/monthly_tsmom.py`保存12个日历月经济收益方向及COM60有限历史风险数学；`crypto/perpetual_returns.py`从原始价格与逐事件mark×rate构造永续日收益输入。它们登记于`catalog.json.monthly_tsmom_research_registry`，不加入旧74列，也不代表两个独立alpha。此接口要求完整UTC自然日，股票须另适配实际交易日历、分红与公司行动。4条月度本地账户两成本均负，未获准入；原论文复现、价格信号、经济指数与净账户收益分别验收。见[完整结果](../docs/research/regime_program/monthly_tsmom_20261027_v002/README.md)。

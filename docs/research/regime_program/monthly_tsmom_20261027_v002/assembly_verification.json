@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "source_sha256": "0eb869dbb9a945479d607228213c9e07c142f01bb486db507a6b56a9beafe33c",
+  "TON_registry_sha256": "30d5131a7c284c4b4fe7ae343ebb45a6f765a028bd107cec12f9513d37e198d6",
+  "cash_reserves_separated_and_reconciled": true,
+  "cash_and_future_gap_claims_separate": true,
+  "no_incomplete_month_partial_total_published": true,
+  "financial_accounts_unchanged": true,
+  "capacity_not_triggered": true
+}

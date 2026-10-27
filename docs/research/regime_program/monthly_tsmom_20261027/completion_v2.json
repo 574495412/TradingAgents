@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "manifest": {
+    "metrics.json": "01736c9e0963dc4c6a6620eeea97d737e41d7597b8c5b359d0757cdef2d8a567",
+    "manifest_repair.json": "942d527a7165ecb3f377f39e0c098904104f1eaa735a4c43429876cc1b95c34c",
+    "periods.json": "549a859a77434b89ca34c8a9ce62ec4e4d15a42a25af91ebf574d0ac64ed483a",
+    "source_style_monthly_payoffs.json": "26d9d012f92d02fdf88953ae99882e41bf2c38a76b465fc9768d584e9331655f",
+    "STATUS.md": "b3f22dacb855f3ac5a012b88a6afd786311671f8dcccd7143b4c692448f1ea86",
+    "comparisons.json": "55452d6b829e087b3eea9bae3b5a2d204a32863a325a4e996ee88faa7247d10e",
+    "verification.json": "132a9762fbd0c38ad2ab03ec058b119e7dc302a79b43f83a2a03da94af421f6e",
+    "account_attribution.json": "830d48ab3c90d8483cceb2bf98fa5af7bfd21810be3a977fd9525bcd3aa0d248",
+    "source_style_summary.json": "40667ef4cb6c0bc389fc5dcaa30a1a09688852c364e7eda76bcdaa04392076a2",
+    "completion.json": "0c067b4e97b73f89d6a506075ab5329887fcb7491f5652834befe5e1d64d8dc2"
+  },
+  "identity_seal_only": true,
+  "reporting_defect_repaired_by_other_directory": "monthly_tsmom_20261027_v002",
+  "original_bytes_preserved": true
+}

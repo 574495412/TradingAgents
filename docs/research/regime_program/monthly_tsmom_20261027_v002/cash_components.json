@@ -1,0 +1,38 @@
+{
+  "daily_archive_monthly_tsmom_cap10000_slip3": {
+    "price_component_before_paid_costs_and_exit_reserve": -671.8205740952185,
+    "funding_net": -35.407344850149364,
+    "paid_fees": 22.520945438973055,
+    "paid_slippage": 13.512471919224154,
+    "unpaid_exit_reserve": 0.31004716900888163,
+    "net_pnl": -743.5713834725739,
+    "scope": "Same actual path arithmetic only; no cost-free, no-stop or closed-inventory counterfactual. Earlier account_attribution gross_price_component_same_path retains the unpaid exit reserve; this file separates it explicitly."
+  },
+  "daily_archive_monthly_tsmom_cap10000_slip10": {
+    "price_component_before_paid_costs_and_exit_reserve": -667.1274125746226,
+    "funding_net": -35.401538551095946,
+    "paid_fees": 22.490516288240944,
+    "paid_slippage": 44.97997891052,
+    "unpaid_exit_reserve": 0.579807820406796,
+    "net_pnl": -770.5792541448864,
+    "scope": "Same actual path arithmetic only; no cost-free, no-stop or closed-inventory counterfactual. Earlier account_attribution gross_price_component_same_path retains the unpaid exit reserve; this file separates it explicitly."
+  },
+  "daily_archive_magnitude_long_cap10000_slip3": {
+    "price_component_before_paid_costs_and_exit_reserve": -220.33796703419534,
+    "funding_net": -62.507094253131044,
+    "paid_fees": 19.33627822770859,
+    "paid_slippage": 11.601537267569967,
+    "unpaid_exit_reserve": 1.865232328125787,
+    "net_pnl": -315.64810911073073,
+    "scope": "Same actual path arithmetic only; no cost-free, no-stop or closed-inventory counterfactual. Earlier account_attribution gross_price_component_same_path retains the unpaid exit reserve; this file separates it explicitly."
+  },
+  "daily_archive_magnitude_long_cap10000_slip10": {
+    "price_component_before_paid_costs_and_exit_reserve": -212.3636736552026,
+    "funding_net": -62.43733272526573,
+    "paid_fees": 19.319975902410008,
+    "paid_slippage": 38.63741266179702,
+    "unpaid_exit_reserve": 3.490169020510536,
+    "net_pnl": -336.2485639651859,
+    "scope": "Same actual path arithmetic only; no cost-free, no-stop or closed-inventory counterfactual. Earlier account_attribution gross_price_component_same_path retains the unpaid exit reserve; this file separates it explicitly."
+  }
+}

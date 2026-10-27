@@ -2,7 +2,7 @@
   "schema": "research-depth-goal-validation.v1",
   "version": "20261026_v003",
   "decision_contract_revision": "20261027",
-  "validated_scope": "深度目标、原始方法映射、BTC资格与方向对照，以及现有界面API/显示；盈利/外部/未见验证未完成",
+  "validated_scope": "深度目标、原始经济收益定义、月度本地适配账户与生命周期缺口，以及现有界面/API；盈利/外部/未见验证未完成",
   "checks": {
     "previous_goal_bytes_preserved": true,
     "portfolio_targets_unchanged": true,
@@ -19,11 +19,15 @@
     "original_method_vs_local_adaptation_separated": true,
     "intent_vs_realized_risk_distinguished": true,
     "BTC_role_and_direction_control_frozen_artifacts_verified": true,
-    "existing_interface_shows_latest_BTC_role_diagnostic": true
+    "raw_economic_vs_price_input_distinguished": true,
+    "source_monthly_factor_vs_net_account_distinguished": true,
+    "incomplete_horizon_not_filled_or_spliced": true,
+    "four_monthly_accounts_and_source_aliases_verified": true,
+    "existing_interface_shows_latest_monthly_diagnostic": true
   },
   "files_sha256": {
-    "docs/research/regime_program/targets.json": "20f9c2aec75a877a296d05c55fd8f68448a11076d26ed8100775edc62ae4b1e0",
-    "docs/research/regime_program/README.md": "a8958577f7dcdf64dd3ed6ca47817e36951a21fa7b16fa49575f191b8e20c68b",
+    "docs/research/regime_program/targets.json": "eab7b069df7adc3280a3a21812cfb74aa41de366e04cd94e1783f39eea490c26",
+    "docs/research/regime_program/README.md": "0ae66a12beaad988dd5c5079ed5c64ef9322b49132ff7f972edba6b0611076cd",
     "docs/research/regime_program/depth_sources.json": "c44bae71f68cf47262dbf1e784a1925f87ad281badffbbbe65d5a53ffbb85ab4",
     "docs/research/regime_program/protocol_archive/20261027_before_decision_contract/manifest.json": "d4c8eb6fb3de15d93b7bf535aca2c44134989d8b77393de6ed94b5454fb6d5be"
   },
@@ -31,5 +35,5 @@
   "third_party_review_performed": false,
   "independent_unseen_validation_completed": false,
   "orders_enabled": false,
-  "delivery_verification_sha256": "60e65e46a36c9cc2630d999a011f62bdfd51aca78cc4ab8b4763375d7cec3307"
+  "delivery_verification_sha256": "f6fd5810eec8c96dfaf6dd25db2bf701b940bf92daf88771d77e8335381bd218"
 }

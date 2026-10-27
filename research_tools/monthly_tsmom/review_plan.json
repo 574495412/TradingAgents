@@ -1,0 +1,12 @@
+{
+  "schema": "monthly-tsmom-posthoc-review.v1",
+  "registration_scope": "After all4financial results have been observed and sealed. This is descriptive attribution, not pre-registration of performance, a newOOS test, or an additional strategy search.",
+  "review": [
+    "Reconcile calendar-year netcash with the full608day account, complete-cycle losses, open campaigns, price/funding/fees/slippage and actual stop/lifecycle paths.",
+    "Use all20frozen monthly books, not just stopped trades, to compute their nextmonth source-derived economic-index payoff with the original start weights, and the same weights with direction replaced bylong. Report allmonthly rows and unknowns, mean paired differences only. This is a gross theoretical factor statistic with daily reinvestment inside the economic index, not executable netmonthly account PnL; no stop,capacity,fees or customercash validation. Do not attribute the entire factor/account discrepancy to stops, since reinvestment and execution differ too.",
+    "Do not feed these observed forward payoffs back into targets or select coins/months/horizons using them. No new financial counterfactual or parameter variant follows automatically."
+  ],
+  "source_variants": "If inputs are exactduplicates, report one canonical set and explicit aliases; duplicate sources are not extra observations.",
+  "new_financial_accounts": 0,
+  "profit_goal_met": false
+}

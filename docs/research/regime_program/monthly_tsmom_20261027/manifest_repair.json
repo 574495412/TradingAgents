@@ -1,0 +1,8 @@
+{
+  "previous_receipt_sha256": "0c067b4e97b73f89d6a506075ab5329887fcb7491f5652834befe5e1d64d8dc2",
+  "previous_receipt_defect": "The temporary sealing expression opened completion.json before building the manifest, so it included an empty-file self hash.",
+  "original_bytes_preserved": true,
+  "original_data_and_financial_accounts_unchanged": true,
+  "corrected_receipt": "completion_v2.json",
+  "repair_source_sha256": "6578243b2db439b109da1084d8a3659021ae990e27810ff89fa19b9f7b7bd4df"
+}

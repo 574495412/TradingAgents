@@ -1154,5 +1154,22 @@
     "old_74_columns_unchanged": true,
     "asset_class": "crypto",
     "stock_reuse": "Do not apply funding cashflows or UTC calendar to equities; common mathematics and independent account verification only."
+  },
+  "monthly_tsmom_research_registry": {
+    "module": "factors/common/monthly_tsmom.py",
+    "economic_index_adapter": "factors/crypto/perpetual_returns.py",
+    "protocol": "research_tools/monthly_tsmom/account_plan.json",
+    "source_paper": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+    "report": "../docs/research/regime_program/monthly_tsmom_20261027_v002/README.md",
+    "state": "4_audited_accounts_negative_no_admission",
+    "mathematics": "12calendar-month economic-index sign; COM60 finite-history population variance,365annualization; local16percent nominal sizing before .8gross overlay",
+    "scope": "This adapter requires complete UTC daily crypto observations; equity calendar/dividends/corporate actions need separate adaptation and account validation.",
+    "raw_price_is_economic_index": false,
+    "paper_replication": false,
+    "new_independent_mechanisms": 0,
+    "new_financial_accounts": 4,
+    "alpha_proven": false,
+    "production_eligible": false,
+    "old_74_columns_unchanged": true
   }
 }

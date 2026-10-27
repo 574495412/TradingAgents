@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "manifest": {
+    "assembly_verification.json": "0910c99f1e23d3ccf0a1bfb47c54b06ff5028249d7ebefa6123032fdb1398593",
+    "metrics.json": "01736c9e0963dc4c6a6620eeea97d737e41d7597b8c5b359d0757cdef2d8a567",
+    "source_style_gap.json": "b5db925990477928e9d2952557a222ccb66b412d4b983abf0ceab7434c238c5c",
+    "cash_components.json": "20270727a33f914558c4ad5404e8ae59ac2308b72c186c196e20369f62b498a3",
+    "periods.json": "549a859a77434b89ca34c8a9ce62ec4e4d15a42a25af91ebf574d0ac64ed483a",
+    "source_style_monthly_payoffs.json": "84f887d1802fbcd28f337f3e457a9e8cb65b9543b3e45bf02bc4847987945ddb",
+    "comparisons.json": "55452d6b829e087b3eea9bae3b5a2d204a32863a325a4e996ee88faa7247d10e",
+    "README.md": "ede15fe354207aa16e166e329ac302c944bcf2578a98ab0a9dcd294785e4cf09",
+    "win_rate_intervals.json": "0150928524f2bd12e2e65ed1902a384c17e75cfdd2fb5f89f6cbe8b0b0226620",
+    "verification.json": "3208f27bc3b2347d69c4bbc97d579e1f78d8be22de742621c61ee8f3a6cbf274",
+    "account_attribution.json": "830d48ab3c90d8483cceb2bf98fa5af7bfd21810be3a977fd9525bcd3aa0d248",
+    "source_style_summary.json": "40667ef4cb6c0bc389fc5dcaa30a1a09688852c364e7eda76bcdaa04392076a2"
+  },
+  "profit_goal_met": false
+}

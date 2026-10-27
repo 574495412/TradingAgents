@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "reporting_defect": "incomplete_month_partial_total_not_null",
+  "cash_and_financial_checks_passed": true,
+  "replaced_by": "monthly_tsmom_20261027_v002",
+  "manifest": {
+    "metrics.json": "01736c9e0963dc4c6a6620eeea97d737e41d7597b8c5b359d0757cdef2d8a567",
+    "periods.json": "549a859a77434b89ca34c8a9ce62ec4e4d15a42a25af91ebf574d0ac64ed483a",
+    "source_style_monthly_payoffs.json": "26d9d012f92d02fdf88953ae99882e41bf2c38a76b465fc9768d584e9331655f",
+    "STATUS.md": "b3f22dacb855f3ac5a012b88a6afd786311671f8dcccd7143b4c692448f1ea86",
+    "comparisons.json": "55452d6b829e087b3eea9bae3b5a2d204a32863a325a4e996ee88faa7247d10e",
+    "verification.json": "132a9762fbd0c38ad2ab03ec058b119e7dc302a79b43f83a2a03da94af421f6e",
+    "account_attribution.json": "830d48ab3c90d8483cceb2bf98fa5af7bfd21810be3a977fd9525bcd3aa0d248",
+    "source_style_summary.json": "40667ef4cb6c0bc389fc5dcaa30a1a09688852c364e7eda76bcdaa04392076a2",
+    "completion.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
