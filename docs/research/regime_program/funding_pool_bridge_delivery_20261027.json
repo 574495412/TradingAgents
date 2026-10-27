@@ -1,0 +1,74 @@
+{
+  "schema": "funding-bridge-delivery-verification.v1",
+  "scope": "现有界面数据、浏览器显示与本轮诊断交付；不证明盈利或外部复核",
+  "api_and_existing_ui": {
+    "url": "http://127.0.0.1:8794/research#factor-lab",
+    "title": "CZ · 因子与量化组合",
+    "stageVisible": true,
+    "newDiagnosticAccountCount": 1,
+    "errors": [],
+    "verifiedAt": "2026-10-27T02:16:04.219Z",
+    "tool": "bundled Playwright; Browser plugin unavailable"
+  },
+  "inline_chart": {
+    "surface": "standalone sandbox preview; native inline host not inspected",
+    "results": [
+      {
+        "viewport": 736,
+        "marks": 2,
+        "width": 704,
+        "overflow": false,
+        "overlaps": [],
+        "labels": [
+          "候选域",
+          "固定40域",
+          "+16.12%",
+          "时点域",
+          "-9.42%",
+          "-10",
+          "0",
+          "5",
+          "10",
+          "15",
+          "整段扣费收益（%）"
+        ],
+        "errors": []
+      },
+      {
+        "viewport": 320,
+        "marks": 2,
+        "width": 288,
+        "overflow": false,
+        "overlaps": [],
+        "labels": [
+          "候选域",
+          "固定40域",
+          "+16.12%",
+          "时点域",
+          "-9.42%",
+          "-10",
+          "0",
+          "10",
+          "整段扣费收益（%）"
+        ],
+        "errors": []
+      }
+    ]
+  },
+  "receipt_safe_payload_rendered": true,
+  "checks": {
+    "research_gate_still_open": true,
+    "stock_worktree_changes_untouched": true,
+    "sealed_failed_outputs_preserved": true,
+    "financial_replay_count_one": true
+  },
+  "bound_files_sha256": {
+    "docs/research/regime_program/targets.json": "daff2d230a7c3b3c94f3d5306c6835165daa2dc99c307ecc847ebd312243e70d",
+    "docs/research/regime_program/README.md": "3c6c6f97293e5618187bb5bdc403c882a4cc2a08b3b3d775cf6dae1872d6db16",
+    "docs/research/regime_program/funding_pool_bridge_20261027_v002/completion.json": "c1bcb8baadfd56845a10dbf563f5443524f6d7489d157ee37ed360e6e7e5c233"
+  },
+  "profit_goal_met": false,
+  "third_party_review": false,
+  "independent_unseen_evidence": false,
+  "orders_enabled": false
+}

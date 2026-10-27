@@ -1,0 +1,7 @@
+{
+  "status": "failed_report_check_only",
+  "reason": "NAV and cash bit-identical; exposure rounding error1.82e-12USDT fails overlystrict exactzero assertion. Registered tolerance already1e-8USDT.",
+  "failed_source_sha256": "d0e9dd5d548bd3b24b558f2a56d57a9a1ffea955cecc621efd7ab17dd85925bb",
+  "financial_accounts_computed": 0,
+  "recovery": "review_v2 uses registered tolerance and corrects prose; noaccount rerun"
+}

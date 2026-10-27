@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "financial_accounts_computed": 0,
+  "manifest": {
+    "execution_goal_snapshot.json": "e4de937d6d91732c7ef93733ece85040194647a274709cb2b7be05465ecbd75e",
+    "failure.json": "dc763e9db99ef3cb87eebcdc8bf051892f9e042e336213861cd38805257e5a9b"
+  },
+  "recovery_report": "../funding_pool_bridge_20261027_v002/README.md"
+}

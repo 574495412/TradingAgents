@@ -1,0 +1,44 @@
+{
+  "schema": "funding-pool-bridge-verification.v1",
+  "checks": {
+    "raw_source_numeric_and_quality_identity": true,
+    "all5832matched40_hourly_targets_identical": true,
+    "PIT_targets_reconstructed_from860raw_daily_assets": true,
+    "empty_old40_lifecycle_directives": true,
+    "all69985NAV_cash_and_exposure_rows_equal": true,
+    "all_three_account_internal_audits_bound": true,
+    "marked_open_positions_and_exit_reserve_included": true,
+    "periods_and_symbol_components_reconcile": true,
+    "postprocessing_failure_preserved_no_financial_rerun": true,
+    "one_new_account_no_new_hypothesis": true,
+    "no_external_or_unseen_claim": true
+  },
+  "source_hashes": {
+    "results/research/funding_cross_section_inputs_20261026_v002_independent_audit.json": "6c94445699913ce6e1b6ec9e25237e249234777f2f4b96c205095e9cc2a91e69",
+    "results/research/sparse_weekly_targets_20261026_v001_independent_audit.json": "3691058a91bd227bc9f7bd06d4cfd979622d0cb73d1e90fff164bbc73a967f9e",
+    "results/research/sparse_market_cohort_20261026_v003_independent_audit.json": "70f3e8a7914cb87f91b761d4ceb64f54c8b7dbe4b70903e1c796551824933f60",
+    "results/research/funding_cross_section_accounts_20261026_v001/accounts/archive_diagnostic2026_funding7_raw_cap10000_slip10/independent_audit.json": "7c759b745be8a8023a434d03ecf442a6333645d93cc907b1ce08fabc5f474628",
+    "results/research/sparse_family_accounts_20261026_v002/financial_audits.json": "be839a1fb6ca3007bd24701510ae8caa150067f2dd1f48608f3b264a8dfcba17",
+    "results/research/funding_pool_bridge_accounts_20261027_v001/accounts/B_execution/internal_cash_audit.json": "f9c1b16a6cf26b909b4d450aeee154e84b59edbe9447b2c5b3136730aa17aa55",
+    "results/research/funding_pool_bridge_inputs_20261027_v001/completion.json": "0bc2a4fe7ac2a270be31a1f319d46433001286bbb1f99c8293e79e85967dbede",
+    "results/research/funding_pool_bridge_accounts_20261027_v001/completion.json": "5fe5be1e66eb6f1fc25382643ff349201d3074d47a73d169999939f23f2ac471",
+    "results/research/funding_pool_bridge_publication_20261027_v001/completion.json": "746a05d942c397020c4d25cce86db9057cf21755ba861a3202bf98f844eca3a1",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/funding_pool_bridge/review_v2.py": "9f5cee8e70556a2af6e9d9c23a95d67881864e2e094e3755eb61fb037f959497"
+  },
+  "book_changes": 36,
+  "weekly_clocks": 36,
+  "mean_nonzero_name_overlap_out_of8": 0.6388888888888888,
+  "new_account_internal_audit": {
+    "id": "B_execution",
+    "passed": true,
+    "nav_rows": 69985,
+    "max_nav_error": 3.8198777474462986e-11,
+    "maximum_participation": 0.010000000000000002,
+    "funding_events": 4928,
+    "complete_lifecycles": 191,
+    "result_sha256": "fde131637ca6117af2c3cd763a747938a59f552a7147780362b9e4f5f07794b9"
+  },
+  "third_party_review": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

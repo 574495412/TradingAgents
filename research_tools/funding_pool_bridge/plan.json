@@ -1,0 +1,121 @@
+{
+  "schema": "funding-pool-controlled-bridge.v1",
+  "version": "20261027_v001",
+  "question": "Why did the old40 funding7_raw 2026 cold account return +16.12196% while identity-aware PIT account returned -9.41640%? Diagnose historical differences, not discover alpha.",
+  "hypothesis": "Opportunity-set and signal-construction changes explain the gap after execution, source and lifecycle differences are separately controlled.",
+  "null_and_alternatives": [
+    "No opportunity-set effect once inputs and execution are aligned.",
+    "Execution or source revisions explain the apparent gap.",
+    "Lifecycle/identity or feature qualification changes explain the gap within the same old40domain."
+  ],
+  "inputs": {
+    "old_inputs": "results/research/funding_cross_section_inputs_20261026_v002",
+    "old_run": "results/research/funding_cross_section_accounts_20261026_v001",
+    "old_market": "data/research/github_factor_market_20261025_v001",
+    "old_funding": "data/research/funding_cross_section_data_20261026_v001",
+    "pit_inputs": "results/research/sparse_weekly_targets_20261026_v001",
+    "pit_run": "results/research/sparse_family_accounts_20261026_v002",
+    "cohort": "results/research/sparse_market_cohort_20261026_v003",
+    "bundle": "data/research/sparse_market_bundle_20261026_v001",
+    "daily": "data/research/historical_perpetual_daily_20261026_v002"
+  },
+  "window": {
+    "id": "diagnostic2026",
+    "start": "2026-01-01",
+    "end": "2026-09-01"
+  },
+  "candidate": "funding7_raw",
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 10,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "ladder": [
+    {
+      "id": "A_legacy",
+      "target": "sealed_old40",
+      "market": "old",
+      "engine": "legacy",
+      "lifecycle": "none",
+      "reuse": "old_run"
+    },
+    {
+      "id": "B_execution",
+      "target": "sealed_old40",
+      "market": "old",
+      "engine": "sparse_v2",
+      "lifecycle": "none",
+      "change": "execution only; explicitly derive quality flags without changing numeric prices/quotes"
+    },
+    {
+      "id": "C_source",
+      "target": "sealed_old40",
+      "market": "shared",
+      "engine": "sparse_v2",
+      "lifecycle": "none",
+      "change": "execution source only; use bundle for common names, sameold source for14notinbundle"
+    },
+    {
+      "id": "D_lifecycle",
+      "target": "sealed_old40",
+      "market": "shared",
+      "engine": "sparse_v2",
+      "lifecycle": "frozen_pit",
+      "change": "lifecycle only; restrict directives to these40names"
+    },
+    {
+      "id": "E_matched40",
+      "target": "new_pipeline_old40",
+      "market": "shared",
+      "engine": "sparse_v2",
+      "lifecycle": "frozen_pit",
+      "change": "daily feature source, quality/episode rules as a declared signal construction block; domain stays40"
+    },
+    {
+      "id": "F_pit",
+      "target": "sealed_pit",
+      "market": "shared",
+      "engine": "sparse_v2",
+      "lifecycle": "frozen_pit",
+      "reuse": "pit_run",
+      "change": "opportunity domain only relative to E; same daily feature, funding, qualification and top30bookrules"
+    }
+  ],
+  "shared_source_rule": "All common names use unchanged PITbundle 5m/funding; old40names absentfrombundle reuseold5m/funding; no fills or normalization of missing records. Frozen PITtargets and account are reused only after reproducing every2026PITbook exactly.",
+  "quality_rule": "Olddense prices valid only when allOHLC finitepositive and internallyordered; execution additionally finitepositive quote and base volume. Record flags and exclusions; no numeric data modification.",
+  "max_new_financial_accounts": 4,
+  "new_parameters": 0,
+  "new_sources": 0,
+  "new_models": 0,
+  "selection_by_returns": false,
+  "decision_record": {
+    "registration_status": "before new bridge targets and accounts; old endpoints and all2025/2026 already seen",
+    "primary_effect": "Adjacent-node netPnL difference in USDT, identical initial10000 and243daycoldwindow",
+    "minimum_meaningful_diagnostic_effect_usdt": 1e-06,
+    "equality_tolerance_usdt": 1e-08,
+    "statistical_scope": "Deterministic historical reconciliation; no new significance, OOS or forward claim. Endpoint differences are path/order dependent, not general causal effects.",
+    "stopping": "Abort affected node on source hash mismatch, target reconstruction mismatch, unknown held mark/terminal cash, or unreconciled NAV. Preserve failures, no neweconomicvariants.",
+    "closeout": "Decompose old/new gap with explicit residual and scope; positive diagnostic does not qualify module.",
+    "external_review": "Not performed; freeze scripts, rawinput bindings, targets, curves, and cash audits so a nonauthor can reproduce.",
+    "unseen_validation": "None: historicaldiagnostic only."
+  },
+  "required_checks": [
+    "Exact oldandPITinputmanifest hashes and sourcebindings",
+    "Compare OHLCquote and actualfunding events per commonname overexecution andpriorhour",
+    "Reconstruct each newpipelinePITbook and compare sealedbook before anyreturns",
+    "Use sameformula, costs, risk, weeklyclocks andcapital throughout",
+    "Audit everynewaccount using separatecashandinventorypath",
+    "Compare reuse endpoints fromsealedaccountfiles",
+    "All adjacent changes and residual reconcile; never call all gap survivorship bias"
+  ],
+  "orders_enabled": false,
+  "production_eligible": false,
+  "profit_goal_met": false
+}

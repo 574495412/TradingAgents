@@ -2,7 +2,7 @@
   "schema": "research-depth-goal-validation.v1",
   "version": "20261026_v003",
   "decision_contract_revision": "20261027",
-  "validated_scope": "目标文本与机器契约的一致性；本次未重新验证界面、收益或外部复现",
+  "validated_scope": "深度目标、本轮受控历史诊断与现有界面API/显示；盈利、外部复现及未见验证未完成",
   "checks": {
     "previous_goal_bytes_preserved": true,
     "portfolio_targets_unchanged": true,
@@ -11,16 +11,19 @@
     "four_requested_dimensions_present": true,
     "pre_evaluation_decision_record_required": true,
     "research_and_investment_success_separated": true,
-    "portfolio_actuals_remain_unknown": true
+    "portfolio_actuals_remain_unknown": true,
+    "diagnostic_financial_account_separate_from_profit_goal": true,
+    "existing_interface_shows_controlled_bridge": true
   },
   "files_sha256": {
-    "docs/research/regime_program/targets.json": "c2b3de5d14c54c8fa07331b77120840bf9cf11f67d14f0b9306893b35826fcde",
-    "docs/research/regime_program/README.md": "763240febf9ff047066f1b71a2179bb84079fac341f54ece42510c6c76b6268b",
+    "docs/research/regime_program/targets.json": "daff2d230a7c3b3c94f3d5306c6835165daa2dc99c307ecc847ebd312243e70d",
+    "docs/research/regime_program/README.md": "3c6c6f97293e5618187bb5bdc403c882a4cc2a08b3b3d775cf6dae1872d6db16",
     "docs/research/regime_program/depth_sources.json": "c44bae71f68cf47262dbf1e784a1925f87ad281badffbbbe65d5a53ffbb85ab4",
     "docs/research/regime_program/protocol_archive/20261027_before_decision_contract/manifest.json": "d4c8eb6fb3de15d93b7bf535aca2c44134989d8b77393de6ed94b5454fb6d5be"
   },
   "profit_goal_met": false,
   "third_party_review_performed": false,
   "independent_unseen_validation_completed": false,
-  "orders_enabled": false
+  "orders_enabled": false,
+  "delivery_verification_sha256": "33a512344c3b0b1b0ca4b4bb023c9ba7b69e62e1c842161a54963f152c606ede"
 }

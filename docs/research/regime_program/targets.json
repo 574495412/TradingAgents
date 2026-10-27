@@ -596,19 +596,19 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "funding_price_hedge_exit_failure_cases",
-    "label": "资金费、基差与退出机制深查",
-    "status": "selected_case_replay_and_internal_audit_complete_no_net_edge",
-    "report": "carry_exit_cases_20261027/README.md",
-    "description": "BNX/HIFI两个已选历史案例完成8条模型路径和原始资金费核对，均亏损。压力情景BNX净亏4.66USDT；HIFI单根退出有残仓，原指令利用退市前缓冲后在下一根五分钟清仓，仍亏8.35USDT。不能把残仓说成无法退出，也不能把案例或内部复算说成策略盈利、第三方审计或未见验证。",
-    "new_financial_accounts": 0,
-    "modeled_case_paths": 8,
-    "selected_cases": 2,
-    "internal_new_process_restores": 8,
+    "mechanism": "funding_pool_controlled_bridge",
+    "label": "资金费候选域差异已解释，当前版本未获准入",
+    "status": "controlled_historical_diagnostic_complete_no_admitted_alpha",
+    "report": "funding_pool_bridge_20261027_v002/README.md",
+    "description": "2026冷启动窗口固定40域收益+16.12%，时点域-9.42%。仅新增1条执行诊断账户：69,985行净值和现金与旧引擎逐点相同，敞口误差低于事前容差；共同来源、旧域生命周期和5,832条旧域目标均等价。候选域改变使36/36周目标变化，历史路径净差-2553.84USDT；资金费反而多收933.66，价格风险吞噬收益。含旧账户8个期末持仓和退出准备；不把固定池收益称为可迁移alpha。",
+    "new_financial_accounts": 1,
+    "new_independent_hypotheses": 0,
+    "reused_endpoint_accounts": 2,
+    "exact_input_equivalent_nodes": 3,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "仅用冻结公式和已有数据做单变量反证，解释固定40币池与时点币池差异；先锁定共同信号、风险、成本与执行，区分候选池变化和执行修正。停止扩大高过去资金费分支，不在这两例上拟合门槛或新增模型。"
+    "next_action": "停止扩展过去7日资金费跨币多空分支；回到中低频趋势主线，先核对既有趋势/动量基线失败的价格暴露与时点候选域影响，再预登记单一时间序列趋势假设和最强对照。保持原完整账户、扣费、风险、容量及未见/外部验证要求。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -810,6 +810,37 @@
     "independent_oos": false,
     "customer_cash_certified": false,
     "capacity_certified": false,
+    "profit_goal_met": false
+  },
+  "previous_diagnostic_research_stage": {
+    "mechanism": "funding_price_hedge_exit_failure_cases",
+    "label": "资金费、基差与退出机制深查",
+    "status": "selected_case_replay_and_internal_audit_complete_no_net_edge",
+    "report": "carry_exit_cases_20261027/README.md",
+    "description": "BNX/HIFI两个已选历史案例完成8条模型路径和原始资金费核对，均亏损。压力情景BNX净亏4.66USDT；HIFI单根退出有残仓，原指令利用退市前缓冲后在下一根五分钟清仓，仍亏8.35USDT。不能把残仓说成无法退出，也不能把案例或内部复算说成策略盈利、第三方审计或未见验证。",
+    "new_financial_accounts": 0,
+    "modeled_case_paths": 8,
+    "selected_cases": 2,
+    "internal_new_process_restores": 8,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "仅用冻结公式和已有数据做单变量反证，解释固定40币池与时点币池差异；先锁定共同信号、风险、成本与执行，区分候选池变化和执行修正。停止扩大高过去资金费分支，不在这两例上拟合门槛或新增模型。"
+  },
+  "diagnostic_study_evidence": {
+    "kind": "controlled_historical_reconciliation",
+    "report": "funding_pool_bridge_20261027_v002/README.md",
+    "inputs": "results/research/funding_pool_bridge_inputs_20261027_v001",
+    "financial_run": "results/research/funding_pool_bridge_accounts_20261027_v001",
+    "publication": "results/research/funding_pool_bridge_publication_20261027_v001",
+    "verification_sha256": "621c7690d6652a1238dceb6d17f8a19a24f29099de75481507455eb783d0de6e",
+    "new_financial_accounts": 1,
+    "new_independent_hypotheses": 0,
+    "internal_audit_passed": true,
+    "third_party_review_performed": false,
+    "independent_unseen_validation_completed": false,
+    "financial_path_computed_once": true,
+    "postprocessing_failures_preserved": true,
     "profit_goal_met": false
   }
 }

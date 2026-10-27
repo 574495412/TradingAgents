@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "manifest": {
+    "README.md": "531025404986a9cf5333c8ee352a2a0d97fd860d8006c945f1d58c75587611d5",
+    "execution_goal_snapshot.json": "e4de937d6d91732c7ef93733ece85040194647a274709cb2b7be05465ecbd75e",
+    "verification.json": "621c7690d6652a1238dceb6d17f8a19a24f29099de75481507455eb783d0de6e"
+  },
+  "profit_goal_met": false
+}
