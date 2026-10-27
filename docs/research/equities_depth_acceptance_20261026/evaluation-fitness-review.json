@@ -1,0 +1,196 @@
+{
+  "schema": "equity-evaluation-fitness-review.v1",
+  "source_account_count": 8,
+  "financial_replays_executed": 0,
+  "existing_scenario_records": {
+    "disclosed_equal": {
+      "5": {
+        "net_cagr": 0.17738706627993794,
+        "close_max_drawdown": 0.26571427432551353,
+        "fees_usd": 16.11,
+        "slippage_usd": 6.209380058287852,
+        "mean_account_exposure": 0.6971073231562204,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 0
+      },
+      "15": {
+        "net_cagr": 0.17618170619146412,
+        "close_max_drawdown": 0.26587978919369826,
+        "fees_usd": 16.11,
+        "slippage_usd": 18.6273001556398,
+        "mean_account_exposure": 0.6977574866646292,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 0
+      }
+    },
+    "french_mom_12_2": {
+      "5": {
+        "net_cagr": 0.07213803313589051,
+        "close_max_drawdown": 0.28355594698173303,
+        "fees_usd": 39.57,
+        "slippage_usd": 35.45158725452134,
+        "mean_account_exposure": 0.5259222267656163,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 14
+      },
+      "15": {
+        "net_cagr": 0.06802185144115636,
+        "close_max_drawdown": 0.2815181861099475,
+        "fees_usd": 38.57,
+        "slippage_usd": 105.01727157640572,
+        "mean_account_exposure": 0.5245105343693397,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 15
+      }
+    },
+    "gross_profitability": {
+      "5": {
+        "net_cagr": -0.07524238949089823,
+        "close_max_drawdown": 0.4211723939195202,
+        "fees_usd": 23.29,
+        "slippage_usd": 17.31612508439872,
+        "mean_account_exposure": 0.8005788052846688,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 9
+      },
+      "15": {
+        "net_cagr": -0.07762480128233362,
+        "close_max_drawdown": 0.4197747113861846,
+        "fees_usd": 22.26,
+        "slippage_usd": 50.12565030384066,
+        "mean_account_exposure": 0.7918654676811233,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 9
+      }
+    },
+    "stock_blend_equal": {
+      "5": {
+        "net_cagr": 0.003982965934984373,
+        "close_max_drawdown": 0.31802030173683105,
+        "fees_usd": 37.48,
+        "slippage_usd": 24.33079892635145,
+        "mean_account_exposure": 0.639636506977713,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 3
+      },
+      "15": {
+        "net_cagr": 0.00016370325503500816,
+        "close_max_drawdown": 0.32010585636979316,
+        "fees_usd": 37.48,
+        "slippage_usd": 72.97409677934681,
+        "mean_account_exposure": 0.6409913500988819,
+        "capacity_restricted_requests": 0,
+        "halted_sessions": 0,
+        "dividend_ledger_entries": 0,
+        "buy_requests_not_fully_filled": 3
+      }
+    }
+  },
+  "existing_cost_sensitivity": {
+    "disclosed_equal": {
+      "net_cagr_5bps": 0.17738706627993794,
+      "net_cagr_15bps": 0.17618170619146412,
+      "difference_percentage_points": 0.1205360088473828
+    },
+    "french_mom_12_2": {
+      "net_cagr_5bps": 0.07213803313589051,
+      "net_cagr_15bps": 0.06802185144115636,
+      "difference_percentage_points": 0.41161816947341556
+    },
+    "gross_profitability": {
+      "net_cagr_5bps": -0.07524238949089823,
+      "net_cagr_15bps": -0.07762480128233362,
+      "difference_percentage_points": 0.23824117914353904
+    },
+    "stock_blend_equal": {
+      "net_cagr_5bps": 0.003982965934984373,
+      "net_cagr_15bps": 0.00016370325503500816,
+      "difference_percentage_points": 0.38192626799493645
+    }
+  },
+  "previous_confirmed_implementation_correction": {
+    "disclosed_equal": {
+      "old_cagr": 0.026430324250791726,
+      "corrected_cagr": 0.17618170619146412,
+      "cagr_change_percentage_points": 14.975138194067238,
+      "economic_curve_exactly_unchanged": false
+    },
+    "french_mom_12_2": {
+      "old_cagr": 0.06802185144115636,
+      "corrected_cagr": 0.06802185144115636,
+      "cagr_change_percentage_points": 0.0,
+      "economic_curve_exactly_unchanged": true
+    },
+    "gross_profitability": {
+      "old_cagr": -0.15783743797037697,
+      "corrected_cagr": -0.07762480128233362,
+      "cagr_change_percentage_points": 8.021263668804334,
+      "economic_curve_exactly_unchanged": false
+    },
+    "stock_blend_equal": {
+      "old_cagr": -0.04219994555925832,
+      "corrected_cagr": 0.00016370325503500816,
+      "cagr_change_percentage_points": 4.236364881429333,
+      "economic_curve_exactly_unchanged": false
+    }
+  },
+  "findings": [
+    {
+      "kind": "corrected_error",
+      "finding": "Missing pre-account volume context was a real implementation error. The equal baseline changed materially; momentum did not. Old outcomes cannot be used as current outcomes."
+    },
+    {
+      "kind": "scope_mismatch",
+      "finding": "Fixed ten-stock ARK cohort, top-three positive ranks and long cash are adaptations, not the original broad-market size-by-momentum value-weighted long-short factor. No matching original-paper reproduction has been demonstrated."
+    },
+    {
+      "kind": "uncalibrated_assumptions",
+      "finding": "Three exchange-session sale-cash lock is a conservative model, not the US statutory T+2/T+1 schedule. Broker cash usability and its return effect remain unverified. A 5% account-NAV no-trade band is 18.75% of a 26.67% slot or 62.5% of an 8% equal slot before integer rounding; these are rules, not separately measured loss attribution."
+    },
+    {
+      "kind": "not_identified_as_causes_in_existing_paths",
+      "finding": "All eight corrected paths have zero volume-cap restrictions, dividend entries and halted sessions. These observations rule out actual activation of these features in these paths, not all possible interactions or all evaluator defects."
+    },
+    {
+      "kind": "risk_design_scope",
+      "finding": "The 15% threshold rejects raw stock paths; their policy identifiers do not enter continuous.py's finite_state halt branch. It is not an implemented 15% loss guarantee. A halt/stop would still not guarantee a drawdown bound."
+    },
+    {
+      "kind": "limited_positive_control",
+      "finding": "Existing corrected equal and momentum paths show net gains, so this evaluator does detect positive accounts. This is not a matched public-strategy calibration or source/execution certification."
+    }
+  ],
+  "primary_references": [
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2024-62",
+      "supports": "Standard US settlement T+2 to T+1 on May28 2024; not broker-specific buying power."
+    },
+    {
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/det_mom_factor.html",
+      "supports": "Original monthly momentum construction differs from the local adaptation."
+    },
+    {
+      "url": "https://www.aqr.com/Insights/Research/Journal-Article/Fact-Fiction-and-Momentum-Investing",
+      "supports": "Long-run academic momentum evidence; not a promise of local account performance."
+    }
+  ],
+  "settlement_or_band_counterfactual_return_effect": null,
+  "full_original_strategy_calibration_completed": false,
+  "evaluation_fitness_for_local_numeric_diagnostics": "usable_with_source_and_model_caveats",
+  "evaluation_fitness_for_rejecting_external_strategy_families": "insufficient",
+  "profit_goal_met": false
+}
