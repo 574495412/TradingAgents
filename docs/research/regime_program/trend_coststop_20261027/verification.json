@@ -1,0 +1,43 @@
+{
+  "schema": "trend-stop-policy-review.v1",
+  "passed": true,
+  "checks": {
+    "five_cash_and_actual_stop_trace_audits": true,
+    "complete_open_PnL_and_years_reconciled": true,
+    "metric_calculations_checked": true,
+    "legacy_execution_and_funding_bridge_bound": true,
+    "both_costs_reject_positive_increment_and_net_conditions": true,
+    "capacity_not_triggered_per_preregistration": true,
+    "actual_holding_JSON_resume_different_PID": true,
+    "retained_legacy_no_retroactive_stop_explanation": true
+  },
+  "maximum_internal_cash_NAV_error_usdt": 1.0732037480920553e-10,
+  "new_base_financial_accounts": 5,
+  "new_economic_variants": 1,
+  "internal_engineering_fixture_financial_accounts": 0,
+  "source_hashes": {
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/B_execution_stress/result.json": "e61b903ddf108bbf69f4d0f854fa3a1e587bbffd686ef89e0bc283ade66d2b1f",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/B_execution_stress/internal_cash_audit.json": "6a919ebff6cb51a7210fc09658521b2333fafa9a73e2620091756d7efe21f9d2",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/B_execution_stress/internal_stop_audit.json": "905b54723f09eece78f5868d493c55fff698489ff7f7ac67912dbcb6a02a4c5c",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/C_exact_base/result.json": "7abc8994bc7c067be1275316f0c007b84944559478bfd769f0f7bb51eaf46c1e",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/C_exact_base/internal_cash_audit.json": "c2d546ac252de08a0d399c8c8b91f41b1d07d7cdf391caff5217daca9fef9a84",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/C_exact_base/internal_stop_audit.json": "3a21300f42cfd813f1f053a86ec3b95708c38538abfcf9ccd7359867c084ee79",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/C_exact_stress/result.json": "32344f7e6917a5690b489774abed65c124987febb8074bb71197df4afd83e4dc",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/C_exact_stress/internal_cash_audit.json": "046c4564bc661a0f721d651bda327ed21dfb5a33f6d0f8720898f828c9c584e8",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/C_exact_stress/internal_stop_audit.json": "905b54723f09eece78f5868d493c55fff698489ff7f7ac67912dbcb6a02a4c5c",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/D_costanchor_base/result.json": "3ec3f6c023d6c135c24642a39f62d99e01b9fbfa271ce3140342cb681c3a5c71",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/D_costanchor_base/internal_cash_audit.json": "4654050ba7e63adcbe06a81e679870ca46ccff17ce0ed317ee6c3c26dd2fad81",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/D_costanchor_base/internal_stop_audit.json": "72516ab7c8865068edf13f98f3972731e66c37414f22c81f40c6e83a1c61b968",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/D_costanchor_stress/result.json": "48e40a474d4e3e861f34ea2dbb5ce421f4fca28a63ce33c8d773dbfe19bc2761",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/D_costanchor_stress/internal_cash_audit.json": "3185148dec82d05e0b8c2e9561af797bbd1ba1600b1bb6116cf818f9ee4ef7e0",
+    "results/research/trend_coststop_accounts_20261027_v001/accounts/D_costanchor_stress/internal_stop_audit.json": "c4e2be76450bba552d5f30bdd05b3a3ba8faa5091893ff50d04663b95c25fbdc",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/trend_stop_audit/review.py": "6ae4f9a96d7d5d1ccc37d01a4e399cb9a96d0f898e942bf2a6a97f2f6370127f",
+    "results/research/trend_coststop_inputs_20261027_v001/completion.json": "d8c4457e195dcdf7f2c0fb547427793f18045a538dec599da3f3addac3cab059",
+    "results/research/trend_coststop_accounts_20261027_v001/completion.json": "b60be68e79d6f0e8aeca6e79fffef35e2c184407dbd208e19971401bef69c1b3",
+    "results/research/forecast_sizing_accounts_20261026_v001/accounts/continuous2025_2026_trend_risk16_cap10000_slip10/result.json": "5d02abb4e94835ba6f7426cb63d8ead4210e88eaca8c3ad6f4e210c535581eb3"
+  },
+  "external_review": false,
+  "independent_unseen_evidence": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

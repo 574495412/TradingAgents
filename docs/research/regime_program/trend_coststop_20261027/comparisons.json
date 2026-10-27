@@ -1,0 +1,58 @@
+[
+  {
+    "cost": "base",
+    "D_minus_C_net_pnl": -1219.558247441324,
+    "D_minus_C_fees": -220.79679683385277,
+    "D_minus_C_funding": 1.9691220650900725,
+    "paired_uncertainty": {
+      "mean_daily_return_D_minus_C": -0.00023967403858628604,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.0009578499210692982,
+            0.0003797766226798475
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  },
+  {
+    "cost": "stress",
+    "D_minus_C_net_pnl": -939.367910250583,
+    "D_minus_C_fees": -218.26073027019635,
+    "D_minus_C_funding": 12.496762805225629,
+    "paired_uncertainty": {
+      "mean_daily_return_D_minus_C": -0.00019492122201201123,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.0009023030982992685,
+            0.00041790668895363135
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  }
+]

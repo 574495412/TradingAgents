@@ -1,0 +1,146 @@
+{
+  "schema": "trend-stop-policy-controlled-study.v1",
+  "version": "20261027_v001",
+  "question": "Does per-addition one-way stop ratcheting materially truncate the existing EWMAC32/128 risk16 trend lifecycle? First correct exact funding/event execution, then change stopanchor only.",
+  "economic_mechanism": "Own-price persistence after gradual information adjustment; the current fixed forecast and volatility budget are held fixed. This is one bounded implementation/risk-policy test inside the price-persistence mechanism, not a new factor or independent mechanism.",
+  "payer_and_failure": "Trend followers may receive compensation from slowly adjusting or hedging flows, but competing fast participants and mean reversion can remove it. No current input identifies counterparties, so payer explanation remains a hypothesis. Whipsaw, crowded reversals, funding drag and forced exits can falsify the netedge.",
+  "null": "The alternative stop anchor does not improve complete continuous net economic performance after all costs and risk/quantity constraints.",
+  "alternative_explanations": [
+    "Any difference from the legacy account may come from corrected execution/funding rather than stop policy; bridge those first.",
+    "More holding time or market exposure can raise returns without predictive alpha.",
+    "A stop-classified exit can be profitable; stop counts alone do not prove harmful truncation."
+  ],
+  "inputs": {
+    "targets": "results/research/forecast_sizing_inputs_20261026_v001",
+    "legacy_run": "results/research/forecast_sizing_accounts_20261026_v001",
+    "old_market": "data/research/github_factor_market_20261025_v001",
+    "exact_funding": "data/research/funding_cross_section_data_20261026_v001"
+  },
+  "window": {
+    "id": "continuous2025_2026",
+    "start": "2025-01-01",
+    "end": "2026-09-01"
+  },
+  "signal": "Reuse byte-identical trend_risk16 targets: EWMAC32/128, robust35day vol, frozen2024normalization, source16percent riskbudget, top10selection, same threshold. Only add explicit daily rebalance flags to adapter; no formula fitting.",
+  "universe_scope": "Existing fixed40 only, intentionally retained for controlled diagnosis. No historical PIT or independent alpha claim. Even a positive result requires later PIT check before admission.",
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "ladder": [
+    {
+      "id": "A_legacy_stress",
+      "reuse": "continuous2025_2026_trend_risk16_cap10000_slip10",
+      "engine": "sizing_portfolio",
+      "funding": "legacy_floor",
+      "stop": "newfill_one_way_ratchet"
+    },
+    {
+      "id": "B_execution_stress",
+      "engine": "sparse_calendar_v2",
+      "funding": "legacy_floor",
+      "stop": "newfill_one_way_ratchet",
+      "change": "execution/timing bundle only; exact same old funding records"
+    },
+    {
+      "id": "C_exact_base",
+      "engine": "sparse_calendar_v2",
+      "funding": "exact",
+      "stop": "newfill_one_way_ratchet",
+      "slippage_bps": 3
+    },
+    {
+      "id": "C_exact_stress",
+      "engine": "sparse_calendar_v2",
+      "funding": "exact",
+      "stop": "newfill_one_way_ratchet",
+      "slippage_bps": 10,
+      "change": "actual funding timestamps and marks only relative B"
+    },
+    {
+      "id": "D_costanchor_base",
+      "engine": "sparse_coststop_v1",
+      "funding": "exact",
+      "stop": "weighted_cost_8percent",
+      "slippage_bps": 3
+    },
+    {
+      "id": "D_costanchor_stress",
+      "engine": "sparse_coststop_v1",
+      "funding": "exact",
+      "stop": "weighted_cost_8percent",
+      "slippage_bps": 10,
+      "change": "stop anchor only relative matched C"
+    }
+  ],
+  "stop_variant": "At initial entry and same-side addition, stop=updated weighted entry cost*(1-side*0.08), replacing max/min of previousstop and newfill8percent. Partial reductions leave costbasis/stop unchanged. This may move a stop away from the market after an addition; it is an explicit risk-policy alternative, not a bugfix. Account15percent halt,0.8gross, noleverage, fees/capacity and state continuity stay active.",
+  "decision_record": {
+    "registered_before": "new targets, new counterfactual accounts; oldresults already observed",
+    "primary_effect": "D minus C full608day netPnL at BOTH cost assumptions, complete/open lifecycle reconciliation and realised risk/exposure side by side",
+    "minimum_useful_effect_usdt": 0,
+    "success_scope": "Positive incremental AND positive total net/complete PnL at bothcosts, without halt/DD>15percent, is provisional diagnostic evidence only. Never choose an anchor based on just one period or lowercost.",
+    "statistics": "Report samecalendar daily paired differences and dependence-aware uncertainty; descriptive knownhistory only. Fullhistorical search ledger incomplete so no claimed corrected significance or freshOOS.",
+    "stop_rule": "On unknown heldsource, input hash mismatch or audit failure preserve outputs and suspend that financial case. If either cost fails net/riskconditions, stop this anchorbranch; no stopwidth/EMA/risk grid.",
+    "external_and_unseen": "None: do not claim external verification, forward validation, or production readiness.",
+    "scope_limit": "Even if D improves economics, fixed40 and lack of independent search correction block alpha admission."
+  },
+  "max_new_base_accounts": 5,
+  "economic_variants": 1,
+  "new_models": 0,
+  "new_market_sources": 0,
+  "new_formula_parameters": 0,
+  "capacity_followup": {
+    "max_accounts": 4,
+    "capitals": [
+      100000,
+      1000000
+    ],
+    "costs": [
+      3,
+      10
+    ],
+    "candidate": "D only if positive incremental/net/closedPnL bothcosts, DD<=0.15 and nohalt; else none. Capacity is five-minute quote participation proxy, not orderbook certification."
+  },
+  "required_checks": [
+    "Exact raw/parquet funding calendar and mark comparison",
+    "Source/cash/position/fees/funding audits on each newaccount",
+    "Stop anchor replay from fill ledger and actual preceding-bar trigger on each firststoprequest",
+    "Newengine baselineflag false matches oldengine on real synthetic boundary paths",
+    "Actual different-process JSON resume while holding costanchorstop state",
+    "Whole608day and years/90daysegments, complete winrate,DD,Sharpe, exposure and capacities",
+    "Do not sum bridge nodes into independent discoveries"
+  ],
+  "references": [
+    {
+      "url": "https://www.aqr.com/Insights/Research/Journal-Article/Time-Series-Momentum",
+      "version": "2012 paper; landingpage read2026-10-27",
+      "use": "Own time-series trend differs from cross-sectional rank; 12month multiasset result is not reproduced by EWMAC32 or a crypto account."
+    },
+    {
+      "url": "https://www.nber.org/papers/w24877",
+      "version": "2018 workingpaper abstract read2026-10-27; PDF access403",
+      "use": "Historical cryptocurrency ownmomentum motivation only; no currentedge or implementation inference from unread PDF."
+    },
+    {
+      "source": "data/research/forecast_sizing_sources_20261026_v001/source_review.json",
+      "commit": "164328bd76d2937d3dd61491377704c488283bc2",
+      "use": "Previously pinned PST forecast/risk math; local fixedstop execution is our explicit deviation, no sourceprofit inheritance."
+    }
+  ],
+  "orders_enabled": false,
+  "production_eligible": false,
+  "profit_goal_met": false,
+  "independent_oos": false
+}

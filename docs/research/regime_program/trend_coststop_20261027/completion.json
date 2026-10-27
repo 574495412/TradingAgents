@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "manifest": {
+    "bridge.json": "47adad3d7f3c94de5f066240a08547ec1123fcc3336aaff5fb7aab34baf1e13a",
+    "periods.json": "1600a29650bb4ad6387555810cea7fa6478fd3c5edc5617e12a818d98fe81cb8",
+    "comparisons.json": "9a909794ec17c0e9238048461f6ef5eb195726586d866e275bc2b66331ace32b",
+    "README.md": "14ea9936a5e3c1c3056e4e41d81f7dda97cfa848c6c90343b11c0d9b7336978a",
+    "exposure.json": "dc33b5cf4765e7facea68b57724212efddae3190d2d91aad6b597d0fdebe4404",
+    "verification.json": "a3a8ae82f5643fdec285e8ccb62205e4db11604eaa4d55fa3275378929aa756a"
+  },
+  "profit_goal_met": false
+}

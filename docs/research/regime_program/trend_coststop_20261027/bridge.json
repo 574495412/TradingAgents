@@ -1,0 +1,8 @@
+{
+  "legacy_net_pnl": -171.064804961361,
+  "new_engine_legacy_funding_net_pnl": -171.04486934099077,
+  "new_engine_exact_funding_net_pnl": -171.06592640461713,
+  "execution_bundle_delta_usdt": 0.019935620370233664,
+  "funding_record_delta_usdt": -0.021057063626358286,
+  "total_delta_usdt": -0.0011214432561246213
+}

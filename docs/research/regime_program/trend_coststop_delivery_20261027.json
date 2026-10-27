@@ -1,0 +1,138 @@
+{
+  "schema": "trend-coststop-delivery-verification.v1",
+  "scope": "本轮研究与现有界面交付，不是盈利、实盘或外部复核",
+  "browser": {
+    "chart": {
+      "surface": "standalone sandbox preview; native inline host not inspected",
+      "results": [
+        {
+          "viewport": 736,
+          "appearance": "light",
+          "marks": 4,
+          "width": 704,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "规则／成本bps",
+            "逐次收紧／8",
+            "+1.44%",
+            "成本锚点／8",
+            "-10.75%",
+            "逐次收紧／15",
+            "-1.71%",
+            "成本锚点／15",
+            "-11.10%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(26, 28, 31)",
+          "markFill": "rgb(51, 156, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 736,
+          "appearance": "dark",
+          "marks": 4,
+          "width": 704,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "规则／成本bps",
+            "逐次收紧／8",
+            "+1.44%",
+            "成本锚点／8",
+            "-10.75%",
+            "逐次收紧／15",
+            "-1.71%",
+            "成本锚点／15",
+            "-11.10%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(255, 255, 255)",
+          "markFill": "rgb(131, 195, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 320,
+          "appearance": "light",
+          "marks": 4,
+          "width": 288,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "规则／成本bps",
+            "逐次收紧／8",
+            "+1.44%",
+            "成本锚点／8",
+            "-10.75%",
+            "逐次收紧／15",
+            "-1.71%",
+            "成本锚点／15",
+            "-11.10%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(26, 28, 31)",
+          "markFill": "rgb(51, 156, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 320,
+          "appearance": "dark",
+          "marks": 4,
+          "width": 288,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "规则／成本bps",
+            "逐次收紧／8",
+            "+1.44%",
+            "成本锚点／8",
+            "-10.75%",
+            "逐次收紧／15",
+            "-1.71%",
+            "成本锚点／15",
+            "-11.10%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(255, 255, 255)",
+          "markFill": "rgb(131, 195, 255)",
+          "errors": []
+        }
+      ]
+    },
+    "existingUI": {
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "newStageVisible": true,
+      "newFinancialAccounts": 5,
+      "errors": []
+    },
+    "testedAt": "2026-10-27T02:56:02.053Z",
+    "tool": "bundled Playwright; Browser plugin unavailable"
+  },
+  "freqtrade_local_commit": "4ef4cf930",
+  "bound_files_sha256": {
+    "docs/research/regime_program/targets.json": "82126a7968e23150a75de92b739de411a967d50ddbc09c31febf04d2632d57c5",
+    "docs/research/regime_program/README.md": "49562af8cb90d68ce064581d95325dc95780c5e71d7b238a0c2a89a57aef19d4",
+    "docs/research/regime_program/trend_coststop_20261027/completion.json": "1f46d213213b1c2c3fa6ef9c158fcedc769e45115b3408121e1918dd17eb60ef"
+  },
+  "checks": {
+    "fixed_signal_and_one_policy_variant": true,
+    "five_internal_financial_and_stop_audits_passed": true,
+    "capacity_gate_not_triggered": true,
+    "failed_pre_replay_fixture_preserved": true,
+    "CZ_build_artifacts_untouched": true
+  },
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

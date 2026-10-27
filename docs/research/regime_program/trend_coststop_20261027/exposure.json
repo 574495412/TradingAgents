@@ -1,0 +1,27 @@
+{
+  "B_execution_stress": {
+    "active_5m_intervals": 171911,
+    "mean_gross_when_active": 0.3329152867353128,
+    "first_halt_request": "2026-08-21T21:45:00+00:00"
+  },
+  "C_exact_base": {
+    "active_5m_intervals": 171969,
+    "mean_gross_when_active": 0.33297771886504773,
+    "first_halt_request": "2026-08-22T02:25:00+00:00"
+  },
+  "C_exact_stress": {
+    "active_5m_intervals": 171911,
+    "mean_gross_when_active": 0.33291570085761646,
+    "first_halt_request": "2026-08-21T21:45:00+00:00"
+  },
+  "D_costanchor_base": {
+    "active_5m_intervals": 61543,
+    "mean_gross_when_active": 0.267468096637488,
+    "first_halt_request": "2025-08-02T16:35:00+00:00"
+  },
+  "D_costanchor_stress": {
+    "active_5m_intervals": 58833,
+    "mean_gross_when_active": 0.2561572587394195,
+    "first_halt_request": "2025-07-24T06:45:00+00:00"
+  }
+}
