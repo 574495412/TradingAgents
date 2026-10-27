@@ -1,0 +1,65 @@
+{
+  "schema": "source-fidelity-and-known-cash-review.v1",
+  "decision": "evaluation_scope_requires_separation_no_basic_cash_error_in_tested_controls",
+  "source_fidelity_problem_confirmed": true,
+  "permanent_halt_is_local_policy_confirmed": true,
+  "arithmetic_bug_found_in_tested_controls": false,
+  "market_engine_globally_certified": false,
+  "original_GitHub_positive_strategy_reproduced": false,
+  "synthetic_cash_cases": 21,
+  "synthetic_halt_policy_cases": 1,
+  "pytest_command": "/Users/chrise/GitHub/freqtrade/.venv/bin/python -m pytest --confcutdir=tests/research_mainline tests/research_mainline/test_evaluation_known_cash.py -q",
+  "pytest_observed_output": "22 passed in 0.54s",
+  "pytest_exit_code": 0,
+  "source_plan_sha256": "c8eb3ca9af9480e7676c7638f9c74a229321534655ca80cc6f95d605a40415c1",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/evaluation_review/known_cash.py": "0a752c68e91a0b9276621e66689099ed6518d932938a97c567b045c35b073ac6",
+    "/Users/chrise/GitHub/TradingAgents/tests/research_mainline/test_evaluation_known_cash.py": "c9f71150c512d0bc579fd2af01e4f50edc4c7fa487fe26e2e11c55778f9e26d5",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/sparse_calendar_v2.py": "b7d01f158e9cedb150456e2555753ba3ed7235178995ac3e2223c3e8dfbaba7f",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/sparse_sources_v2.py": "059b38ad537c6ef6c244527cba42c1cbfb6f06644db551a5835ae12872323857"
+  },
+  "actual_market_accounts": 0,
+  "new_economic_variants": 0,
+  "module_admitted": false,
+  "profit_goal_met": false,
+  "external_review_performed": false,
+  "unseen_validation_performed": false,
+  "source_observations": [
+    {
+      "url": "https://kernc.github.io/backtesting.py/doc/examples/Quick%20Start%20User%20Guide.html",
+      "read_on_shanghai": "2026-10-27",
+      "author_reported_not_reproduced": {
+        "data": "GOOG 2004-08-19 to 2013-03-01",
+        "rule": "SMA10/20 long/short cross, next-bar open, maximum position",
+        "initial_cash": 10000,
+        "commission_parameter": 0.002,
+        "return_percent": 462.64,
+        "cagr_percent": 22.44,
+        "max_drawdown_percent": 33.93,
+        "sharpe": 0.6
+      },
+      "limits": "Published tutorial table, not our replication, not crypto or proof of current live profitability. No source commit frozen in this review."
+    },
+    {
+      "url": "https://github.com/iterativv/NostalgiaForInfinity",
+      "read_on_shanghai": "2026-10-27",
+      "observed_requirements": "5m; recommended 40-80 stablecoin pairs, 6-12 open trades, unlimited stake; do not override strategy exit/timeframe settings. Backtest results referenced in commit comments.",
+      "limits": "Repository reviewed only, no strategy execution or verified return claim. Current README does not by itself provide a frozen full replication dataset or live cash evidence."
+    }
+  ],
+  "local_findings": [
+    {
+      "source": "trend_btc_role_20261027/original_method_mapping.json",
+      "finding": "Source 12-month signal/1-month holding and volatility matched comparator differ from local EMA32/128, daily timing, 8% stop, 15% permanent halt and crypto universe."
+    },
+    {
+      "source": "trend_btc_role_20261027/README.md",
+      "finding": "BTC eligible pressure account halted July2025; 2026 inherits halted account. Zero in 2026 is not a fresh strategy test or evidence of no opportunities."
+    },
+    {
+      "source": "Freqtrade research/crypto/sparse_calendar_v2.py",
+      "finding": "risk_halted persists in restored state, is set at drawdown breach, and suppresses all later targets. Synthetic shock/recovery confirms no reentry."
+    }
+  ],
+  "interpretation": "Existing constrained-account failures remain valid. They do not constitute exact source replication or reject all public strategies. Synthetic cash passes constrain only the tested identities; original signal, data, timing and fill-model fidelity remain unqualified."
+}

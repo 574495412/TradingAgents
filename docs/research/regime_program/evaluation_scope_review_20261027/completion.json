@@ -1,0 +1,10 @@
+{
+  "manifest": {
+    "summary.json": "45a1d57d981354a358e0a1808274d660af68a27b4a81e65f3e655b2c23df933c",
+    "README.md": "3f82ebe46086ff70dfddab93383dca930065c24b4f8bdce1a1195221955cba9f",
+    "prior_depth_contract_validation.json": "340201ebd215546bd39e6506325e0dff0ba22913d5556222bacca9eb54d72d04"
+  },
+  "original_strategies_executed": 0,
+  "new_financial_accounts": 0,
+  "profit_goal_met": false
+}

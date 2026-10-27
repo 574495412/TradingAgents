@@ -1,0 +1,24 @@
+{
+  "schema": "known-cash-evaluator-controls.v1",
+  "registered_at_utc": "2026-10-27T13:38:56.420937+00:00",
+  "question": "Can the frozen native engine produce hand-computable profits and losses without duplicate commission/slippage and with correct signed funding? Is the permanent halt an explicit policy?",
+  "synthetic_cases": 21,
+  "halt_policy_cases": 1,
+  "synthetic_only": true,
+  "new_economic_variants": 0,
+  "new_market_accounts": 0,
+  "max_source_strategy_reviews": 2,
+  "execution_budget": "22 bounded synthetic test cases, one run; repair only a demonstrated test/setup error, preserve failures. No strategy search, source execution or model fitting.",
+  "expected_formula": "q=40; closed_cash=10000+side*q*(P_exit-P_entry)-q*(P_entry+P_exit)*0.0005-side*q*100*funding_rate; slippage is already included in P_entry/P_exit, no second subtraction.",
+  "tolerance_absolute_cash": 1e-09,
+  "limitations": [
+    "Synthetic controls do not reproduce a GitHub strategy or validate market data, fill realism, original strategy fidelity, unseen profitability or live execution.",
+    "Permanent drawdown halt is a local policy; preserving its deployment constraint does not reproduce a source strategy without that policy."
+  ],
+  "source_sha256": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/evaluation_review/known_cash.py": "0a752c68e91a0b9276621e66689099ed6518d932938a97c567b045c35b073ac6",
+    "/Users/chrise/GitHub/TradingAgents/tests/research_mainline/test_evaluation_known_cash.py": "c9f71150c512d0bc579fd2af01e4f50edc4c7fa487fe26e2e11c55778f9e26d5",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/sparse_calendar_v2.py": "b7d01f158e9cedb150456e2555753ba3ed7235178995ac3e2223c3e8dfbaba7f",
+    "/Users/chrise/GitHub/freqtrade/research/crypto/sparse_sources_v2.py": "059b38ad537c6ef6c244527cba42c1cbfb6f06644db551a5835ae12872323857"
+  }
+}

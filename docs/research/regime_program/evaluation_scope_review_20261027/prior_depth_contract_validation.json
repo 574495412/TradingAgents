@@ -1,0 +1,37 @@
+{
+  "schema": "research-depth-goal-validation.v1",
+  "version": "20261027_v007",
+  "validated_at_utc": "2026-10-27T13:28:29.028251+00:00",
+  "validated_scope": "Goal and acceptance contract rewrite only; original economic results, thresholds, risk budget, stage and unfinished external evidence preserved.",
+  "prior_validation": "docs/research/regime_program/protocol_archive/20261027_before_depth_v007/depth_contract_validation.json",
+  "checks": {
+    "four_user_requirements_mapped": true,
+    "one_mechanism_and_at_most_one_economic_variant": true,
+    "original_financial_thresholds_risk_budget_and_evidence_preserved": true,
+    "no_new_financial_results_or_changed_stage": true,
+    "external_and_unseen_evidence_not_claimed": true,
+    "finite_unknown_closeout_defined": true,
+    "three_explicit_decision_outcomes": true,
+    "no_profit_or_production_claim": true,
+    "original_documents_archived_byte_exact": true,
+    "current_readme_local_links_resolve": true,
+    "readme_shorter_than_predecessor": true,
+    "canonical_and_contract_version_match": true,
+    "existing_API_reads_new_objective_and_contract": true
+  },
+  "files_sha256": {
+    "docs/research/regime_program/README.md": "79d18104c4bc86724310ac0562afac0dd5fb7fcff0719ce3a485b4ac2e550b2a",
+    "docs/research/regime_program/targets.json": "24f00140669eae76e93f6a94036fad000678b93a976668dab97c9f47ae41ee70",
+    "docs/research/regime_program/depth_sources.json": "c39e1b534278edd4a22097141f49215b40704e6bb83379889dfa9d4e13d5d08c",
+    "docs/research/regime_program/protocol_archive/20261027_before_depth_v007/manifest.json": "2b564cfb32f17dfebc9df3c901dacd863cdf7291f64087efff51bc1db783a076"
+  },
+  "new_financial_accounts": 0,
+  "new_economic_variants_evaluated": 0,
+  "profit_goal_met": false,
+  "third_party_review_performed": false,
+  "independent_unseen_validation_completed": false,
+  "orders_enabled": false,
+  "frontend_rebuilt": false,
+  "rendered_UI_retested_this_round": false,
+  "validation_kind": "structural_and_API_checks_only_not_economic_validation"
+}
