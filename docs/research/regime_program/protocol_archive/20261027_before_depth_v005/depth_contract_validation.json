@@ -1,0 +1,53 @@
+{
+  "schema": "research-depth-goal-validation.v1",
+  "version": "20261027_v004",
+  "validated_at_utc": "2026-10-27T07:01:42.616590+00:00",
+  "validated_scope": "下一机制的原始方法、线性计价、原始CSV/Decimal核验及现有界面；未生成账户收益，未完成历史截止/费用/保证金、容量或外部/未见验收。",
+  "checks": {
+    "v004_economic_targets_and_scope_preserved": true,
+    "all_old_factor_registry_entries_preserved": true,
+    "old_monthly_gate_results_preserved": true,
+    "six_raw_archives_not_strategy_accounts": true,
+    "independent_internal_raw_reconstruction_complete": true,
+    "official_Postman_blob_verified": true,
+    "guessed_endpoint_failure_not_overwritten": true,
+    "no_annualization_from_unverified_maturity": true,
+    "precise_historical_cutoff_and_fee_and_margin_still_unknown": true,
+    "reference_and_account_metrics_separated": true,
+    "no_new_independent_return_source_claimed": true,
+    "portfolio_actuals_and_profit_status_preserved": true,
+    "permissions_external_and_unseen_not_promoted": true,
+    "R06_R07_R08_remain_in_progress": true,
+    "existing_API_stage_and_protocol_hash_current": true,
+    "existing_UI_desktop_mobile_actual_interaction_passed": true,
+    "input_and_report_seals_verified": true
+  },
+  "previous_financial_research_commit": "b69732e",
+  "files_sha256": {
+    "docs/research/regime_program/targets.json": "64420e950c11da2b1e1deefbe8257de944cc89827c81f06282a76752d0b43abb",
+    "docs/research/regime_program/README.md": "5453081193340c9661fb97ec2b6b859eef21ade58b39daead772b0f9c8dd586d",
+    "docs/research/regime_program/depth_sources.json": "8e50db36762403cc52e795abb17ef0e560fca7081ab4a6f8e0f5288593400667",
+    "docs/research/regime_program/dated_carry_delivery_20261027.json": "c23c5eb4b7fa1f2dad9121b72f7a885e2470ebbbcdc095e296be69df799b634d",
+    "factors/catalog.json": "0d591dfd4dad1a6d64cec34a6b4203ef9a45dd93889396b222d67d19b9fb2c77",
+    "factors/common/dated_carry.py": "a367859e76e1b0d97edbf2822d1f77e79cfa162d2e4cc0fc59818f8c144efb74",
+    "data/research/dated_carry_sources_20261027_v001/completion.json": "1fbdc8c3d197c5fa1b26c8db80c2ce8879741ac93c947b8a98f4419f4c81bdb4",
+    "data/research/dated_carry_source_followup_20261027_v001/completion.json": "0cf6d648434263e47a1204806c3746a93b3e5700cb82b4c3507986cbeb74df41",
+    "data/research/dated_carry_pilot_20261027_v001/completion.json": "66f82907dcd05818fd83db1359af0a1697652d840e44ab8820c698a08e9b3417",
+    "data/research/dated_carry_settlement_route_20261027_v001/completion.json": "7015dc8dbfac8d45501c9ca60b18f173b7e00c3621267eef7d47e2160a1ad387",
+    "results/research/dated_carry_raw_audit_20261027_v001/completion.json": "8a09dc4bb7be9f6d654041b898d9f42da19d9111271e5e032a48034ceef02a28",
+    "docs/research/regime_program/dated_carry_feasibility_20261027/completion.json": "bbe69ea51963659a292ca096939d713faca9864892fc95d0a7fa8850533a90b3",
+    "docs/research/regime_program/dated_carry_feasibility_20261027/verification.json": "2747c5685510c8040878e396c9fd31da45f14f06dab03563005b91b4ad63f17a"
+  },
+  "tests": {
+    "counterexample_tests": 11,
+    "module_gate_regressions": 8,
+    "total_passed": 19,
+    "command": "python -m pytest -q --confcutdir=tests/research_mainline tests/research_mainline/test_dated_carry_units.py tests/research_mainline/test_module_gate.py",
+    "scope": "Mathematics and existing admission separation only; tests are not strategy trials or proof of economic profitability."
+  },
+  "new_financial_accounts": 0,
+  "profit_goal_met": false,
+  "third_party_review_performed": false,
+  "independent_unseen_validation_completed": false,
+  "orders_enabled": false
+}

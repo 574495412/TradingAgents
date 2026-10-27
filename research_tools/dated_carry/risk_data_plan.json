@@ -1,0 +1,24 @@
+{
+  "schema": "dated-carry-rules-and-mark-evidence.v1",
+  "version": "20261027_v001",
+  "purpose": "Resolve legal-clock/source-price distinctions and actual mark-OHLC coverage before any dated-carry economic account. Preserve every prior raw source and unknown metric.",
+  "parents": ["data/research/dated_carry_pilot_20261027_v001", "results/research/dated_carry_raw_audit_20261027_v001"],
+  "documents": [
+    {"id":"f2338846942d48daa4f9395173727f4c", "role":"0328 original listing", "claimed_published":"2024-09-20T05:00:00Z"},
+    {"id":"03d4fc147cd5421681219eac7ac8eea9", "role":"0328 expiry confirmation", "claimed_published":"2025-03-21T02:00:00Z"},
+    {"id":"3ae441db4ae740e19af3fe9228eb6619", "role":"USDT linear specification and fee type", "claimed_published":"2021-02-03T02:41:00Z"},
+    {"id":"a3401595e1734084959c61491bc0dbe3", "role":"delivery timing, reduce-only and cash realization; inverse formula not adopted", "claimed_published":"2020-09-09T09:22:00Z"}
+  ],
+  "availability_limit": "Current captured article body with claimed publication plus5minutes is a research availability assumption; originals and revision history are not certified. A2026FAQ legal update cannot be retroactively used as2025binding terms. Entry relies on prior listing/generic calendar; Marchconfirmation only becomes available in March.",
+  "contracts": ["BTCUSDT_250328", "ETHUSDT_250328"],
+  "additional_trade_months": ["2024-12"],
+  "mark_months": ["2024-12", "2025-01", "2025-02", "2025-03"],
+  "mark_template": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/{contract}/5m/{contract}-5m-{month}.zip",
+  "trade_template": "https://data.binance.vision/data/futures/um/monthly/klines/{contract}/5m/{contract}-5m-{month}.zip",
+  "checks": ["official SHA256 and complete raw response receipts", "raw CSV/Decimal timestamps/OHLC and observed gaps", "exclude fills at/after expiry even if archive reports a bar", "retain actual mark prices, never substitute perpetual or trade close", "settlement price from raw correct API record, exact clock from separate evidence"],
+  "budget": {"maximum_read_only_HTTP_requests":24, "maximum_new_market_archives":10, "maximum_response_bytes":50000000, "new_financial_accounts":0, "new_model_fits":0},
+  "if_missing": "Seal unresolved coverage and preserve failed responses. Do not compute financial returns with imputed marks or inferred terminal cash.",
+  "profit_goal_met":false,
+  "production_eligible":false,
+  "orders_enabled":false
+}

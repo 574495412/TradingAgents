@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hold_to_delivery_slip3",
+    "necessary_economic_screen": true,
+    "paid_friction": 4.750414585189884,
+    "registered_25_percent_friction_buffer": 1.187603646297471,
+    "sample_sufficient": false,
+    "module_admitted": false
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "necessary_economic_screen": true,
+    "paid_friction": 7.350925668975027,
+    "registered_25_percent_friction_buffer": 1.8377314172437567,
+    "sample_sufficient": false,
+    "module_admitted": false
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "necessary_economic_screen": true,
+    "paid_friction": 5.153707832572627,
+    "registered_25_percent_friction_buffer": 1.2884269581431567,
+    "sample_sufficient": false,
+    "module_admitted": false
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "necessary_economic_screen": true,
+    "paid_friction": 8.596374368835182,
+    "registered_25_percent_friction_buffer": 2.1490935922087955,
+    "sample_sufficient": false,
+    "module_admitted": false
+  }
+]

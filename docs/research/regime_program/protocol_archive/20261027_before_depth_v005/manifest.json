@@ -1,0 +1,10 @@
+{
+  "schema": "depth-v005-predecessor",
+  "files_sha256": {
+    "targets.json": "64420e950c11da2b1e1deefbe8257de944cc89827c81f06282a76752d0b43abb",
+    "README.md": "5453081193340c9661fb97ec2b6b859eef21ade58b39daead772b0f9c8dd586d",
+    "depth_contract_validation.json": "8d8026df66bff8b81eb0287bdf912e8a8fc06910f3ff244d1655b6fe72305c99",
+    "depth_sources.json": "8e50db36762403cc52e795abb17ef0e560fca7081ab4a6f8e0f5288593400667"
+  },
+  "economic_results_rewritten": false
+}

@@ -1,0 +1,54 @@
+{
+  "original_four_financial_audits_passed": true,
+  "four_new_financial_paths_total": 4,
+  "full_financial_replays_in_repair_or_report": 0,
+  "restart_checks": [
+    {
+      "name": "held_entry",
+      "split": "2025-01-01T00:05:00+00:00",
+      "positions": 2,
+      "future_base_quantity": 0.01764156055619978,
+      "spot_base_quantity": 0.01764156055619978,
+      "parent_pid": 35768,
+      "child_pid": 35655,
+      "reused_original_child": true,
+      "money_ledger_requests_final_state_bit_exact": true,
+      "complete_prefix_plus_child_curve_bit_exact": true,
+      "initial_interval_diagnostics_owned_by_prefix": [
+        "margin_envelope_balance",
+        "stress_nav_envelope"
+      ]
+    },
+    {
+      "name": "at_delivery",
+      "split": "2025-03-28T08:00:00+00:00",
+      "positions": 2,
+      "future_base_quantity": 0.0,
+      "spot_base_quantity": 0.01764156055619978,
+      "parent_pid": 35768,
+      "child_pid": 35802,
+      "reused_original_child": false,
+      "money_ledger_requests_final_state_bit_exact": true,
+      "complete_prefix_plus_child_curve_bit_exact": true,
+      "initial_interval_diagnostics_owned_by_prefix": [
+        "margin_envelope_balance",
+        "stress_nav_envelope"
+      ]
+    }
+  ],
+  "wallet_component_and_monthly_pnl_identity_passed": true,
+  "plan_sha256": "cfaf222e939e7f3241a7a3ffb522328a50b933007e0fec6dc99942dddbce3b3d",
+  "source_sha256": "1c3735fddba1f1fa154ed38a7a9c7f1ce1a6389b3ddd10e1b7d82000dad4d0e0",
+  "original_failed_checker_completion": "f1e3d1f4c8b3a4345e18b93f5eff353e0f0d637201557d250b80894c61c634c8",
+  "technical_repair_completion": "105d4224d235fd55a7797e5039491041db95a171202c178dc66b9895901ef1da",
+  "all_necessary_economic_screens_passed": true,
+  "sample_sufficient": false,
+  "capacity_certified": false,
+  "original_historical_article_versions_certified": false,
+  "historical_client_fees_lots_ticks_margin_tiers_and_cash_certified": false,
+  "external_review_performed": false,
+  "independent_unseen_validation_completed": false,
+  "module_admitted": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

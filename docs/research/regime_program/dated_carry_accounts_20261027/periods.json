@@ -1,0 +1,122 @@
+[
+  {
+    "id": "hold_to_delivery_slip3",
+    "period": "2025-01",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 13.291088655469139,
+    "net_return": 0.0013291088655469352,
+    "within_period_drawdown": 0.0014844506812164981,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "hold_to_delivery_slip3",
+    "period": "2025-02",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 17.085442842460907,
+    "net_return": 0.0017062764570798805,
+    "within_period_drawdown": 0.0003969246947735927,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "hold_to_delivery_slip3",
+    "period": "2025-03_partial_through_28",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 7.643250164526762,
+    "net_return": 0.0007620102934844386,
+    "within_period_drawdown": 0.0004486928206992591,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "period": "2025-01",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 9.545607025498612,
+    "net_return": 0.0009545607025498448,
+    "within_period_drawdown": 0.0015120326825903696,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "period": "2025-02",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 17.440915200166273,
+    "net_return": 0.0017424282664664226,
+    "within_period_drawdown": 0.0004078222539669607,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "period": "2025-03_partial_through_28",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 8.433633362707042,
+    "net_return": 0.0008410935173805978,
+    "within_period_drawdown": 0.00045093588110312055,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "period": "2025-01",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 13.291088655469139,
+    "net_return": 0.0013291088655469352,
+    "within_period_drawdown": 0.0014844506812164981,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "period": "2025-02",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 17.085442842460907,
+    "net_return": 0.0017062764570798805,
+    "within_period_drawdown": 0.0003969246947735927,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "period": "2025-03_partial_through_28",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 5.496806677956556,
+    "net_return": 0.0005480159853117339,
+    "within_period_drawdown": 0.00031050281557409853,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "period": "2025-01",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 9.545607025498612,
+    "net_return": 0.0009545607025498448,
+    "within_period_drawdown": 0.0015120326825903696,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "period": "2025-02",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 17.440915200166273,
+    "net_return": 0.0017424282664664226,
+    "within_period_drawdown": 0.0004078222539669607,
+    "source": "continuous account; includes carried inventory, not restarted"
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "period": "2025-03_partial_through_28",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 5.445034423657489,
+    "net_return": 0.000543037971736382,
+    "within_period_drawdown": 0.0003112472058854898,
+    "source": "continuous account; includes carried inventory, not restarted"
+  }
+]

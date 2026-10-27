@@ -1210,14 +1210,30 @@
     "source_review": "../docs/research/regime_program/dated_carry_feasibility_20261027/source_method_mapping.json",
     "data_protocol": "research_tools/dated_carry/data_plan.json",
     "report": "../docs/research/regime_program/dated_carry_feasibility_20261027/README.md",
-    "state": "reference_basis_unit_audit_only_no_financial_accounts",
+    "state": "reference_units_with_separate_one_quarter_model_accounts_no_admission",
     "scope": "Matched underlying and quote, linear prices only; spot base-fee net inventory retained; inverse/USD-USDT mismatches rejected. Unverified maturity keeps annualization unknown. Equity reuse requires separate contract/calendar/account adaptation.",
     "raw_rows_audited": 49730,
-    "new_financial_accounts": 0,
+    "new_financial_accounts": 4,
     "new_independent_mechanisms_proven": 0,
     "reference_basis_is_profit": false,
     "alpha_proven": false,
     "production_eligible": false,
-    "old_74_columns_unchanged": true
+    "old_74_columns_unchanged": true,
+    "account_research": {
+      "adapter": "factors/crypto/dated_carry_schedule.py",
+      "engine": "../freqtrade/research/crypto/spot_dated_account_v1.py",
+      "plan": "research_tools/dated_carry/account_plan_v002.json",
+      "report": "../docs/research/regime_program/dated_carry_accounts_20261027/README.md",
+      "state": "positive_model_necessary_screen_one_quarter_insufficient_no_admission",
+      "new_financial_accounts": 4,
+      "completed_campaigns_per_account": 2,
+      "independent_quarter_clusters": 1,
+      "client_execution_certified": false,
+      "capacity_certified": false,
+      "new_independent_mechanisms_proven": 0,
+      "alpha_proven": false,
+      "production_eligible": false
+    },
+    "reference_stage_financial_accounts": 0
   }
 }

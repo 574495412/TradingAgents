@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "manifest": {
+    "metrics.json": "0e600f25c8f9ea9ce942cadeea592bcd61cf309709469ad97ea9ce122a8ecbab",
+    "summary.json": "79177327bc0f97f8a78604d4d64f5a4cb3841dc997d2bff0ef83f70e03e28c40",
+    "periods.json": "b5062dba05cbc0fed1eb409933b5beff9e61112d76da17a69bb5072e706feefa",
+    "settlement_witnesses.json": "b38cbabfb35391540e4c4bb3a11c158e2a8c2239bd3eee4c982885cac8b4e571",
+    "README.md": "b62975c112adebc125f89db74da4ea30bf4ce3d1421f3206bbf220fc4e90af7b",
+    "screens.json": "b52828f4299e4eb10afc1029e97282ad3286149e74317fb335edbf29f9a43ce6",
+    "components.json": "68f3884056fc932b5165d9f29449d8b1b844bd18e6866f49118e3d8c06579dba",
+    "verification.json": "68fd4de5ef8d9f4004face9774928c62343d9642d5ce2b3af81b7fdfbb996088"
+  },
+  "module_admitted": false,
+  "profit_goal_met": false
+}
