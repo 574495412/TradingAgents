@@ -1,0 +1,1472 @@
+{
+  "daily_archive_conditional_trend_cap10000_slip3": {
+    "active_5m_intervals": 26784,
+    "mean_gross_when_active": 0.15553654257290953,
+    "first_halt_request": null,
+    "mean_gross_exposure": 0.023790815546516714,
+    "mean_absolute_net_exposure": 0.013440974989662981,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "unpaid_exit_reserve": 0.0,
+    "price_component_before_paid_costs_and_exit_reserve": 24.650158308267706,
+    "funding_net": 2.2881846896233355,
+    "fees": 4.517018228085307,
+    "slippage_cost": 2.710213155365137,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": 21.81872046905136,
+      "basis_filled_plus_reserved_exit_notional": 9034.036456170614,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 31.0,
+    "exit_reasons": {
+      "rebalance": 30
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 36.56930815041437
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -7.990146341721427
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 32.00758936882724
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 26.676304919733845
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 19.961641355469673
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -27.257196380905825
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 9.27663122947307
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -45.095933791370776
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 19.764684610619017
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -4.761754829149958
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -22.18844454633369
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -29.916998197396335
+        },
+        {
+          "key": "ZECUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 12.66542606680936
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-03",
+          "closed_cycles": 10,
+          "net_pnl": -90.28508856393097
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 10,
+          "net_pnl": 47.079578761337345
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 10,
+          "net_pnl": 62.916621417062196
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 30,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 4573.3043020952755,
+      "filled_entry_notional": 4566.4255954397095,
+      "filled_request_ratio": 0.9984959000754849,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 3.456079866737127e-11
+  },
+  "daily_archive_conditional_trend_cap10000_slip10": {
+    "active_5m_intervals": 26784,
+    "mean_gross_when_active": 0.15557015180550757,
+    "first_halt_request": null,
+    "mean_gross_exposure": 0.023795956403065106,
+    "mean_absolute_net_exposure": 0.013443868075552912,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "unpaid_exit_reserve": 0.0,
+    "price_component_before_paid_costs_and_exit_reserve": 24.61272428716162,
+    "funding_net": 2.2876262036421,
+    "fees": 4.5160505603939844,
+    "slippage_cost": 9.032125733511759,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": 14.783021157908738,
+      "basis_filled_plus_reserved_exit_notional": 9032.10112078797,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 31.0,
+    "exit_reasons": {
+      "rebalance": 30
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 36.082323431948254
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -8.30440079521268
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 30.999226622892486
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 25.461338387929416
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 19.400288249757676
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -28.011274909186167
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 9.191993254329507
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -45.24469847307348
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 19.70006607857371
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -5.352622675247505
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -22.651457224755426
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -30.479256084407687
+        },
+        {
+          "key": "ZECUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 12.56064833334653
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-03",
+          "closed_cycles": 10,
+          "net_pnl": -92.40321181816151
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 10,
+          "net_pnl": 45.020572262049136
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 10,
+          "net_pnl": 60.734813753007
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 30,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 4572.339244923812,
+      "filled_entry_notional": 4566.315986946846,
+      "filled_request_ratio": 0.9986826747416757,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 3.456079866737127e-11
+  },
+  "daily_archive_conditional_long_cap10000_slip3": {
+    "active_5m_intervals": 26784,
+    "mean_gross_when_active": 0.15532844642135113,
+    "first_halt_request": null,
+    "mean_gross_exposure": 0.023758985231429542,
+    "mean_absolute_net_exposure": 0.023758985231429542,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "unpaid_exit_reserve": 0.0,
+    "price_component_before_paid_costs_and_exit_reserve": -99.14228101132711,
+    "funding_net": -5.135702784127055,
+    "fees": 4.513546808387518,
+    "slippage_cost": 2.708119162226925,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": -123.51666494171388,
+      "basis_filled_plus_reserved_exit_notional": 9027.093616775035,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 31.0,
+    "exit_reasons": {
+      "rebalance": 30
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 8.721847706321592
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 2,
+          "net_pnl": 6.950421731463585
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 31.85716118117505
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 8.67216256845141
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -36.95584980783734
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 25.149214032702876
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -9.4899591899101
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -45.095933791370776
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -19.791843808162422
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -25.663557520619612
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -38.575440871771946
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -29.981690677387547
+        },
+        {
+          "key": "ZECUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 12.703818680896598
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-03",
+          "closed_cycles": 10,
+          "net_pnl": -145.51760166252058
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 10,
+          "net_pnl": 132.4940507132482
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 10,
+          "net_pnl": -98.47609881677626
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 30,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 4570.372446546624,
+      "filled_entry_notional": 4564.472008474285,
+      "filled_request_ratio": 0.9987089809109984,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 3.637978807091713e-11
+  },
+  "daily_archive_conditional_long_cap10000_slip10": {
+    "active_5m_intervals": 26784,
+    "mean_gross_when_active": 0.15536197075453317,
+    "first_halt_request": null,
+    "mean_gross_exposure": 0.023764113101792727,
+    "mean_absolute_net_exposure": 0.023764113101792727,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "unpaid_exit_reserve": 0.0,
+    "price_component_before_paid_costs_and_exit_reserve": -99.13328657895863,
+    "funding_net": -5.13345475726684,
+    "fees": 4.512621361904613,
+    "slippage_cost": 9.025143590522118,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": -130.52779841352697,
+      "basis_filled_plus_reserved_exit_notional": 9025.242723809228,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 31.0,
+    "exit_reasons": {
+      "rebalance": 30
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 8.24689103542564
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 2,
+          "net_pnl": 6.63685939150475
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 30.850085596121975
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 7.465326559127406
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -37.492868947867244
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 3,
+          "net_pnl": 24.37017029651931
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -9.566981213079531
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -45.24469847307348
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -19.847660787954116
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -26.245313868552707
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -39.031351995398374
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -30.543694385492884
+        },
+        {
+          "key": "ZECUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 12.59873050406334
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-03",
+          "closed_cycles": 10,
+          "net_pnl": -147.63574438543986
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 10,
+          "net_pnl": 130.42808173664918
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 10,
+          "net_pnl": -100.59684363986526
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 30,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 4569.406270721808,
+      "filled_entry_notional": 4566.700576989354,
+      "filled_request_ratio": 0.9994078675494908,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 3.637978807091713e-11
+  },
+  "disabled_monthly_tsmom_cap10000_slip3": {
+    "active_5m_intervals": 175104,
+    "mean_gross_when_active": 0.1648145483197025,
+    "first_halt_request": null,
+    "mean_gross_exposure": 0.1648136070870231,
+    "mean_absolute_net_exposure": 0.10179588806147626,
+    "open_campaigns": 10,
+    "open_campaign_net_pnl": 176.2428417106013,
+    "unpaid_exit_reserve": 2.026519789960051,
+    "price_component_before_paid_costs_and_exit_reserve": -489.3293331731231,
+    "funding_net": 3.0338498207952296,
+    "fees": 8.88107448741209,
+    "slippage_cost": 5.328751192817163,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": -247.60996915930815,
+      "basis_filled_plus_reserved_exit_notional": 20295.29871227424,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 31.0,
+    "exit_reasons": {
+      "rebalance": 53,
+      "contract_exit": 1
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000BONKUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -12.791357169485654
+        },
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 6,
+          "net_pnl": 8.22086632338351
+        },
+        {
+          "key": "AAVEUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -7.302764436362791
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 4,
+          "net_pnl": 5.15581471687203
+        },
+        {
+          "key": "AUCTIONUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 13.382297228510227
+        },
+        {
+          "key": "AVAXUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -56.97814939299579
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -82.41482846242397
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -36.458665315109904
+        },
+        {
+          "key": "DASHUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -15.379763336427915
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -83.2309980575795
+        },
+        {
+          "key": "ENAUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -28.192264776410223
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 5,
+          "net_pnl": -149.15392820195657
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 8.642405509216621
+        },
+        {
+          "key": "LINKUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -66.44088546380875
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -43.480901047673186
+        },
+        {
+          "key": "NEARUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 37.014849094070044
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 19.176040774638413
+        },
+        {
+          "key": "PIPPINUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -29.020288947990935
+        },
+        {
+          "key": "SIRENUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 8.755411316889914
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 7,
+          "net_pnl": -116.74722014531521
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -32.926039025132845
+        },
+        {
+          "key": "TAOUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -24.434753721003133
+        },
+        {
+          "key": "TONUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 16.831732113044534
+        },
+        {
+          "key": "WIFUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -49.961498321723354
+        },
+        {
+          "key": "WLDUSDT",
+          "closed_cycles": 2,
+          "net_pnl": 48.67661628622808
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -9.716398074511421
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-01",
+          "closed_cycles": 10,
+          "net_pnl": -452.68243631282616
+        },
+        {
+          "key": "2025-02",
+          "closed_cycles": 1,
+          "net_pnl": -43.58312746259752
+        },
+        {
+          "key": "2025-03",
+          "closed_cycles": 4,
+          "net_pnl": -117.30556522407151
+        },
+        {
+          "key": "2025-04",
+          "closed_cycles": 4,
+          "net_pnl": -32.77173855210137
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 5,
+          "net_pnl": 69.95797991484835
+        },
+        {
+          "key": "2025-06",
+          "closed_cycles": 3,
+          "net_pnl": 13.255455586460267
+        },
+        {
+          "key": "2025-07",
+          "closed_cycles": 2,
+          "net_pnl": 8.25251212182003
+        },
+        {
+          "key": "2025-08",
+          "closed_cycles": 4,
+          "net_pnl": -97.14763135519664
+        },
+        {
+          "key": "2025-09",
+          "closed_cycles": 3,
+          "net_pnl": -67.66291213259855
+        },
+        {
+          "key": "2025-10",
+          "closed_cycles": 3,
+          "net_pnl": -135.89359637737078
+        },
+        {
+          "key": "2025-11",
+          "closed_cycles": 2,
+          "net_pnl": 29.965883377770048
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 3,
+          "net_pnl": 124.2567811749244
+        },
+        {
+          "key": "2026-01",
+          "closed_cycles": 1,
+          "net_pnl": 17.68697626807816
+        },
+        {
+          "key": "2026-02",
+          "closed_cycles": 1,
+          "net_pnl": -15.379763336427915
+        },
+        {
+          "key": "2026-03",
+          "closed_cycles": 1,
+          "net_pnl": -29.020288947990935
+        },
+        {
+          "key": "2026-04",
+          "closed_cycles": 3,
+          "net_pnl": -20.88143108102701
+        },
+        {
+          "key": "2026-05",
+          "closed_cycles": 1,
+          "net_pnl": -3.3141218208613523
+        },
+        {
+          "key": "2026-06",
+          "closed_cycles": 2,
+          "net_pnl": 53.84658120711458
+        },
+        {
+          "key": "2026-07",
+          "closed_cycles": 1,
+          "net_pnl": 19.645772418996085
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 162,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 10544.376966709557,
+      "filled_entry_notional": 10536.319404148346,
+      "filled_request_ratio": 0.9992358427068142,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 8.36735125631094e-11
+  },
+  "disabled_monthly_tsmom_cap10000_slip10": {
+    "active_5m_intervals": 175104,
+    "mean_gross_when_active": 0.16482698232323204,
+    "first_halt_request": null,
+    "mean_gross_exposure": 0.16482604101954382,
+    "mean_absolute_net_exposure": 0.10180418545879215,
+    "open_campaigns": 10,
+    "open_campaign_net_pnl": 172.485970841217,
+    "unpaid_exit_reserve": 3.7944234297608435,
+    "price_component_before_paid_costs_and_exit_reserve": -489.0828393593165,
+    "funding_net": 3.0086463078686574,
+    "fees": 8.87441433945502,
+    "slippage_cost": 17.75000992923583,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": -254.70052492228004,
+      "basis_filled_plus_reserved_exit_notional": 20278.444298750605,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 31.0,
+    "exit_reasons": {
+      "rebalance": 53,
+      "contract_exit": 1
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000BONKUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -12.891900374507562
+        },
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 6,
+          "net_pnl": 7.1215969049151004
+        },
+        {
+          "key": "AAVEUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -7.468502776290231
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 4,
+          "net_pnl": 4.389885577099005
+        },
+        {
+          "key": "AUCTIONUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 13.302075623832955
+        },
+        {
+          "key": "AVAXUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -57.09666324084345
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -83.58609823368421
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -36.97165037477319
+        },
+        {
+          "key": "DASHUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -15.437442093720756
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -83.794597943824
+        },
+        {
+          "key": "ENAUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -28.30109779686972
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 5,
+          "net_pnl": -150.51393436063705
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 8.559703698924144
+        },
+        {
+          "key": "LINKUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -66.85055606909492
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -43.61537955102143
+        },
+        {
+          "key": "NEARUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 36.79537910138807
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 19.109818335601854
+        },
+        {
+          "key": "PIPPINUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -29.015170657187408
+        },
+        {
+          "key": "SIRENUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 8.720271847033413
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 7,
+          "net_pnl": -118.16439095464551
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -33.42923004643893
+        },
+        {
+          "key": "TAOUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -24.738857554018267
+        },
+        {
+          "key": "TONUSDT",
+          "closed_cycles": 1,
+          "net_pnl": 16.659622207896827
+        },
+        {
+          "key": "WIFUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -50.16930472365099
+        },
+        {
+          "key": "WLDUSDT",
+          "closed_cycles": 2,
+          "net_pnl": 48.44266926386679
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -10.035257400492018
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-01",
+          "closed_cycles": 10,
+          "net_pnl": -455.1461568570274
+        },
+        {
+          "key": "2025-02",
+          "closed_cycles": 1,
+          "net_pnl": -43.67916841128522
+        },
+        {
+          "key": "2025-03",
+          "closed_cycles": 4,
+          "net_pnl": -118.33754069370363
+        },
+        {
+          "key": "2025-04",
+          "closed_cycles": 4,
+          "net_pnl": -33.33182398842855
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 5,
+          "net_pnl": 69.08446618334526
+        },
+        {
+          "key": "2025-06",
+          "closed_cycles": 3,
+          "net_pnl": 12.784773405698704
+        },
+        {
+          "key": "2025-07",
+          "closed_cycles": 2,
+          "net_pnl": 7.851214880281331
+        },
+        {
+          "key": "2025-08",
+          "closed_cycles": 4,
+          "net_pnl": -97.84949841303903
+        },
+        {
+          "key": "2025-09",
+          "closed_cycles": 3,
+          "net_pnl": -68.12643008501489
+        },
+        {
+          "key": "2025-10",
+          "closed_cycles": 3,
+          "net_pnl": -136.58848711359238
+        },
+        {
+          "key": "2025-11",
+          "closed_cycles": 2,
+          "net_pnl": 29.543159906018197
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 3,
+          "net_pnl": 123.57463928660364
+        },
+        {
+          "key": "2026-01",
+          "closed_cycles": 1,
+          "net_pnl": 17.475685659718813
+        },
+        {
+          "key": "2026-02",
+          "closed_cycles": 1,
+          "net_pnl": -15.437442093720756
+        },
+        {
+          "key": "2026-03",
+          "closed_cycles": 1,
+          "net_pnl": -29.015170657187408
+        },
+        {
+          "key": "2026-04",
+          "closed_cycles": 3,
+          "net_pnl": -21.27215370093468
+        },
+        {
+          "key": "2026-05",
+          "closed_cycles": 1,
+          "net_pnl": -3.4909507444038987
+        },
+        {
+          "key": "2026-06",
+          "closed_cycles": 2,
+          "net_pnl": 53.455001309284896
+        },
+        {
+          "key": "2026-07",
+          "closed_cycles": 1,
+          "net_pnl": 19.5268705362455
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 162,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 10536.139620834645,
+      "filled_entry_notional": 10528.753107147344,
+      "filled_request_ratio": 0.999298935477972,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 6.366462912410498e-11
+  },
+  "disabled_magnitude_long_cap10000_slip3": {
+    "active_5m_intervals": 115445,
+    "mean_gross_when_active": 0.1582207846035013,
+    "first_halt_request": "2026-02-05T20:25:00+00:00",
+    "mean_gross_exposure": 0.10431340326404848,
+    "mean_absolute_net_exposure": 0.10431340326404848,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "unpaid_exit_reserve": 0.0,
+    "price_component_before_paid_costs_and_exit_reserve": -1198.8205341328194,
+    "funding_net": -43.75273808292514,
+    "fees": 4.747095249303246,
+    "slippage_cost": 2.8481492557335795,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": -1316.7721006907063,
+      "basis_filled_plus_reserved_exit_notional": 9494.190498606493,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 59.0,
+    "exit_reasons": {
+      "rebalance": 19,
+      "risk_halt": 10
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000BONKUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -13.110722188679233
+        },
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -110.61903431133166
+        },
+        {
+          "key": "AAVEUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -7.347737199606028
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -11.924557799730154
+        },
+        {
+          "key": "AUCTIONUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -13.47785038351182
+        },
+        {
+          "key": "AVAXUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -58.56701731775328
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -58.04518765165638
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -135.6921548790519
+        },
+        {
+          "key": "DASHUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -13.719131717134674
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -144.08723778426486
+        },
+        {
+          "key": "ENAUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -29.00820248060332
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -79.00583952878203
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -8.933866737929396
+        },
+        {
+          "key": "LINKUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -67.44101864262795
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -43.480901047673186
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -19.324505535789623
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -100.94797439505189
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -153.87564738591945
+        },
+        {
+          "key": "WIFUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -37.4236740010276
+        },
+        {
+          "key": "WLDUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -30.05853709947201
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -83.92084721888924
+        },
+        {
+          "key": "ZECUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -30.156871414282353
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-01",
+          "closed_cycles": 10,
+          "net_pnl": -770.2170477784614
+        },
+        {
+          "key": "2025-02",
+          "closed_cycles": 1,
+          "net_pnl": -43.58312746259752
+        },
+        {
+          "key": "2025-03",
+          "closed_cycles": 2,
+          "net_pnl": -9.883158188938872
+        },
+        {
+          "key": "2025-04",
+          "closed_cycles": 1,
+          "net_pnl": -13.47785038351182
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 1,
+          "net_pnl": -19.324505535789623
+        },
+        {
+          "key": "2025-06",
+          "closed_cycles": 1,
+          "net_pnl": 6.159453461569918
+        },
+        {
+          "key": "2025-07",
+          "closed_cycles": 1,
+          "net_pnl": -7.347737199606028
+        },
+        {
+          "key": "2025-08",
+          "closed_cycles": 2,
+          "net_pnl": -42.11892466928255
+        },
+        {
+          "key": "2025-09",
+          "closed_cycles": 1,
+          "net_pnl": -10.754193701548617
+        },
+        {
+          "key": "2025-10",
+          "closed_cycles": 3,
+          "net_pnl": -172.2307493907636
+        },
+        {
+          "key": "2025-11",
+          "closed_cycles": 3,
+          "net_pnl": -126.63542292573722
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 1,
+          "net_pnl": -8.933866737929396
+        },
+        {
+          "key": "2026-01",
+          "closed_cycles": 1,
+          "net_pnl": -18.102254491036593
+        },
+        {
+          "key": "2026-02",
+          "closed_cycles": 1,
+          "net_pnl": -13.719131717134674
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 106,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 5346.4466811934235,
+      "filled_entry_notional": 5347.929590997514,
+      "filled_request_ratio": 1.0002773636197115,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 4.18367562815547e-11
+  },
+  "disabled_magnitude_long_cap10000_slip10": {
+    "active_5m_intervals": 115445,
+    "mean_gross_when_active": 0.1582302961125811,
+    "first_halt_request": "2026-02-05T20:25:00+00:00",
+    "mean_gross_exposure": 0.10431967410820323,
+    "mean_absolute_net_exposure": 0.10431967410820323,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "unpaid_exit_reserve": 0.0,
+    "price_component_before_paid_costs_and_exit_reserve": -1198.1389183601912,
+    "funding_net": -43.73701679178805,
+    "fees": 4.745718132482095,
+    "slippage_cost": 9.490238126045234,
+    "cost_sensitivity": {
+      "extra_fee_equivalent_bps_to_zero_same_fixed_path": -1323.4160314042267,
+      "basis_filled_plus_reserved_exit_notional": 9491.436264964188,
+      "scope": "Net PnL divided by retained executed-plus-reserved notional. Signed extra fee-equivalent allowance only; no resizing, execution-price or funding-response rerun, no certified capacity/cost ceiling."
+    },
+    "cycle_holding_median_days": 59.0,
+    "exit_reasons": {
+      "rebalance": 19,
+      "risk_halt": 10
+    },
+    "concentration": {
+      "symbol": [
+        {
+          "key": "1000BONKUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -13.216316434973326
+        },
+        {
+          "key": "1000PEPEUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -111.05552278128886
+        },
+        {
+          "key": "AAVEUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -7.515775638695528
+        },
+        {
+          "key": "ADAUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -12.438018496687302
+        },
+        {
+          "key": "AUCTIONUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -13.549286637101254
+        },
+        {
+          "key": "AVAXUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -58.70513024759092
+        },
+        {
+          "key": "BNBUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -59.16769075214507
+        },
+        {
+          "key": "BTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -136.16855404437567
+        },
+        {
+          "key": "DASHUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -13.78238120228732
+        },
+        {
+          "key": "DOGEUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -144.37493295259384
+        },
+        {
+          "key": "ENAUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -29.12825125465216
+        },
+        {
+          "key": "ETHUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -79.46161052241443
+        },
+        {
+          "key": "FILUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -9.004818961650823
+        },
+        {
+          "key": "LINKUSDT",
+          "closed_cycles": 3,
+          "net_pnl": -67.86990878254184
+        },
+        {
+          "key": "LTCUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -43.61537955102143
+        },
+        {
+          "key": "OMUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -19.376961965151192
+        },
+        {
+          "key": "SOLUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -101.27645599631329
+        },
+        {
+          "key": "SUIUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -154.15717498536128
+        },
+        {
+          "key": "WIFUSDT",
+          "closed_cycles": 2,
+          "net_pnl": -37.6377434089949
+        },
+        {
+          "key": "WLDUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -30.13921825864737
+        },
+        {
+          "key": "XRPUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -84.22643045739676
+        },
+        {
+          "key": "ZECUSDT",
+          "closed_cycles": 1,
+          "net_pnl": -30.244328078508268
+        }
+      ],
+      "entry_month": [
+        {
+          "key": "2025-01",
+          "closed_cycles": 10,
+          "net_pnl": -773.3908501853999
+        },
+        {
+          "key": "2025-02",
+          "closed_cycles": 1,
+          "net_pnl": -43.67916841128522
+        },
+        {
+          "key": "2025-03",
+          "closed_cycles": 2,
+          "net_pnl": -10.413243655970724
+        },
+        {
+          "key": "2025-04",
+          "closed_cycles": 1,
+          "net_pnl": -13.549286637101254
+        },
+        {
+          "key": "2025-05",
+          "closed_cycles": 1,
+          "net_pnl": -19.376961965151192
+        },
+        {
+          "key": "2025-06",
+          "closed_cycles": 1,
+          "net_pnl": 6.041425002290319
+        },
+        {
+          "key": "2025-07",
+          "closed_cycles": 1,
+          "net_pnl": -7.515775638695528
+        },
+        {
+          "key": "2025-08",
+          "closed_cycles": 2,
+          "net_pnl": -42.344567689625485
+        },
+        {
+          "key": "2025-09",
+          "closed_cycles": 1,
+          "net_pnl": -10.921135891215712
+        },
+        {
+          "key": "2025-10",
+          "closed_cycles": 3,
+          "net_pnl": -172.8619834469335
+        },
+        {
+          "key": "2025-11",
+          "closed_cycles": 3,
+          "net_pnl": -127.02931749415839
+        },
+        {
+          "key": "2025-12",
+          "closed_cycles": 1,
+          "net_pnl": -9.004818961650823
+        },
+        {
+          "key": "2026-01",
+          "closed_cycles": 1,
+          "net_pnl": -18.28382523320805
+        },
+        {
+          "key": "2026-02",
+          "closed_cycles": 1,
+          "net_pnl": -13.78238120228732
+        }
+      ]
+    },
+    "capacity_proxy": {
+      "entry_requests": 105,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 5344.308602384356,
+      "filled_entry_notional": 5349.532710725155,
+      "filled_request_ratio": 1.0009775087348938,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "maximum_internal_NAV_error_usdt": 1.3460521586239338e-10
+  }
+}

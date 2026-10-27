@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "manifest": {
+    "metrics.json": "8258086088a85d46b0c655a77350e589d7618f565ec1146bc59b77a9a0d7e850",
+    "periods.json": "9c9fc524401d7cf4fd543a8ceb30ab41bdbcc884c45db0c52b845d7f6e2934cc",
+    "original_verification.json": "d5b33738043ee858c660657c66fc29c86862d166dd5a580470b7da1de37e8d65",
+    "holding_costs_and_concentration.json": "b238c382694ee01c2dd68d2d0600c884cb84b39378ee710e1e1a16076fcfd1b0",
+    "comparisons.json": "1db19159134833aa162c0aa90240345758fcd36c3717dcdf68b5f4b3af955cc9",
+    "README.md": "39bd3553a678cea23771b8f5e3d8f53c3c4a376e718561f6b34dbc2d7b561233",
+    "calendar_carry_correction.json": "ea4cd7bee43f0a3fdc16561e211195ec35874b326a818946494b9156cf47a62a",
+    "state_attribution.json": "418ff29c30cd921bebcab08109da2f6121079166c4e8006ec884c8eba52d28dd",
+    "verification.json": "4ebae64f9ce615514f03e00ef3efd75c1abccfee96556c454f9cf69fd27ed9a9",
+    "monthly_decisions.json": "4455e1a8e0cf3772b0206f5985f7587a33cd61e8fb2308acc569ee53a1b9bd82"
+  },
+  "profit_goal_met": false
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "financial_reruns": 0,
+  "prose_claim_corrected": true,
+  "original_report": "docs/research/regime_program/monthly_state_domain_20261027",
+  "original_completion_sha256": "a20bba77c89458613f341ed207a13e5137c335d354cc9ff11130c4bafb2b7cf1",
+  "cases": [
+    {
+      "id": "daily_archive_conditional_trend_cap10000_slip3",
+      "2026_new_entries": 0,
+      "carry_exits": 10,
+      "exit_at": "2026-01-01T00:05:00+00:00",
+      "2026_marked_nav_change": -1.490154032715509,
+      "2026_closed_campaign_pnl_includes_December": 62.916621417062196,
+      "distinct_measures_not_interchangeable": true
+    },
+    {
+      "id": "daily_archive_conditional_trend_cap10000_slip10",
+      "2026_new_entries": 0,
+      "carry_exits": 10,
+      "exit_at": "2026-01-01T00:05:00+00:00",
+      "2026_marked_nav_change": -1.4907959802621917,
+      "2026_closed_campaign_pnl_includes_December": 60.734813753007,
+      "distinct_measures_not_interchangeable": true
+    }
+  ]
+}

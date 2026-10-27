@@ -1,0 +1,178 @@
+{
+  "chart": {
+    "surface": "standalone sandbox preview; native inline host not inspected",
+    "results": [
+      {
+        "viewport": 736,
+        "appearance": "light",
+        "marks": 4,
+        "width": 704,
+        "overflow": false,
+        "overlaps": [],
+        "labels": [
+          "持有域／成本bps",
+          "全月／8",
+          "-5.03%",
+          "趋势月／8",
+          "+0.20%",
+          "全月／15",
+          "-5.16%",
+          "趋势月／15",
+          "+0.13%",
+          "-5",
+          "-2",
+          "0",
+          "608日扣费收益（%）"
+        ],
+        "foreground": "rgb(26, 28, 31)",
+        "markFill": "rgb(51, 156, 255)",
+        "marksInsideFrame": true,
+        "errors": []
+      },
+      {
+        "viewport": 736,
+        "appearance": "dark",
+        "marks": 4,
+        "width": 704,
+        "overflow": false,
+        "overlaps": [],
+        "labels": [
+          "持有域／成本bps",
+          "全月／8",
+          "-5.03%",
+          "趋势月／8",
+          "+0.20%",
+          "全月／15",
+          "-5.16%",
+          "趋势月／15",
+          "+0.13%",
+          "-5",
+          "-2",
+          "0",
+          "608日扣费收益（%）"
+        ],
+        "foreground": "rgb(255, 255, 255)",
+        "markFill": "rgb(131, 195, 255)",
+        "marksInsideFrame": true,
+        "errors": []
+      },
+      {
+        "viewport": 320,
+        "appearance": "light",
+        "marks": 4,
+        "width": 288,
+        "overflow": false,
+        "overlaps": [],
+        "labels": [
+          "持有域／成本bps",
+          "全月／8",
+          "-5.03%",
+          "趋势月／8",
+          "+0.20%",
+          "全月／15",
+          "-5.16%",
+          "趋势月／15",
+          "+0.13%",
+          "-5",
+          "-2",
+          "0",
+          "608日扣费收益（%）"
+        ],
+        "foreground": "rgb(26, 28, 31)",
+        "markFill": "rgb(51, 156, 255)",
+        "marksInsideFrame": true,
+        "errors": []
+      },
+      {
+        "viewport": 320,
+        "appearance": "dark",
+        "marks": 4,
+        "width": 288,
+        "overflow": false,
+        "overlaps": [],
+        "labels": [
+          "持有域／成本bps",
+          "全月／8",
+          "-5.03%",
+          "趋势月／8",
+          "+0.20%",
+          "全月／15",
+          "-5.16%",
+          "趋势月／15",
+          "+0.13%",
+          "-5",
+          "-2",
+          "0",
+          "608日扣费收益（%）"
+        ],
+        "foreground": "rgb(255, 255, 255)",
+        "markFill": "rgb(131, 195, 255)",
+        "marksInsideFrame": true,
+        "errors": []
+      }
+    ]
+  },
+  "sources": {
+    "surface": "standalone sandbox preview",
+    "checks": [
+      {
+        "width": 736,
+        "appearance": "light",
+        "opened": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "width": 736,
+        "appearance": "dark",
+        "opened": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "appearance": "light",
+        "opened": true,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "appearance": "dark",
+        "opened": true,
+        "overflow": false,
+        "errors": []
+      }
+    ]
+  },
+  "existingUI": [
+    {
+      "width": 1280,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "newStageVisible": true,
+      "newFinancialAccounts": 4,
+      "nonblank": true,
+      "frameworkOverlay": false,
+      "overflow": false,
+      "errors": [],
+      "consoleErrors": []
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "newStageVisible": true,
+      "newFinancialAccounts": 4,
+      "nonblank": true,
+      "frameworkOverlay": false,
+      "overflow": false,
+      "errors": [],
+      "consoleErrors": []
+    }
+  ],
+  "testedAt": "2026-10-27T06:19:17.282Z",
+  "tool": "bundled Playwright; Browser plugin not available; no dependency installation or app rebuild",
+  "finance_scope": "UI and previews only, not financial proof; Browser plugin unavailable, bundled Playwright used without installing dependencies.",
+  "initial_source_check_failure": "Preview used a shadow-root component; document.body.innerText was empty. Actual scoped article showed all caveats; corrected selector and reran the same preview checks. No source content changed."
+}

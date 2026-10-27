@@ -374,9 +374,11 @@
         "monthly_tsmom_20261027_v002/README.md",
         "monthly_tsmom_20261027_v002/verification.json",
         "monthly_hold_policy_20261027/README.md",
-        "monthly_hold_policy_20261027/verification.json"
+        "monthly_hold_policy_20261027/verification.json",
+        "monthly_state_domain_20261027_v002/README.md",
+        "monthly_state_domain_20261027_v002/verification.json"
       ],
-      "outcome": "一次止损开/关反证完成：关闭后仍净亏，压力回撤与实际暴露增大，无模块准入；先核对已冻结因果状态的适用域，不强求所有行情通用。"
+      "outcome": "固定趋势门控两成本小幅正收益，但3个活跃月不足，实际风险显著减少；无模块准入，不构建共享组合或扩大模型。"
     },
     {
       "id": "R07",
@@ -421,9 +423,11 @@
         "monthly_tsmom_20261027_v002/README.md",
         "monthly_tsmom_20261027_v002/verification.json",
         "monthly_hold_policy_20261027/README.md",
-        "monthly_hold_policy_20261027/verification.json"
+        "monthly_hold_policy_20261027/verification.json",
+        "monthly_state_domain_20261027_v002/README.md",
+        "monthly_state_domain_20261027_v002/verification.json"
       ],
-      "outcome": "本轮4新政策账户、2精确桥接、1选定退出病例内部核验完成；真实恢复金额/账本/风险状态精确，敞口非bit一致但独立求和界通过。外部复现、真正未见、客户现金及盘口容量未完成。"
+      "outcome": "4新账户、1216日时点内部复算、完整年度/90日/状态归因与真实持仓跨进程恢复通过；经济区间跨零，外部、未见和容量未完成。"
     },
     {
       "id": "R08",
@@ -433,7 +437,7 @@
       "depends_on": [
         "R07"
       ],
-      "done_when": "沿用现有界面展示v003目标、每层证据的状态/缺口和失败；数据量、账户数与代码检查不展示为盈利或第三方认证。只有相应证据通过才提高资格。",
+      "done_when": "沿用现有界面展示v004目标、每层证据的状态/缺口和失败；数据量、账户数与代码检查不展示为盈利或第三方认证。只有相应证据通过才提高资格。",
       "evidence": [
         "sizing_20261026/README.md",
         "sizing_20261026/summary.json",
@@ -468,7 +472,9 @@
         "monthly_tsmom_20261027_v002/README.md",
         "monthly_tsmom_20261027_v002/verification.json",
         "monthly_hold_policy_20261027/README.md",
-        "monthly_hold_policy_20261027/verification.json"
+        "monthly_hold_policy_20261027/verification.json",
+        "monthly_state_domain_20261027_v002/README.md",
+        "monthly_state_domain_20261027_v002/verification.json"
       ],
       "outcome": "已有结果与目标界面可用；收益与外部验证未达标，交接资格仍未完成。"
     },
@@ -620,23 +626,26 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "monthly_holding_price_stop_counterfactual",
-    "label": "月度持有反证完成：亏损收窄，仍未准入",
-    "status": "one_policy_counterfactual_audited_economic_admission_failed",
-    "report": "monthly_hold_policy_20261027/README.md",
-    "description": "只关闭8%单仓价格止损，保留15%账户停机。趋势8/15bps成本下亏5.03%/5.16%，压力回撤从10.63%升至12.79%，平均实际总敞口约翻倍；同幅度多头触发账户停机，不能把相对领先当盈利。4条新政策账户、2条旧路径精确桥接、1条TON提前退出病例；原始净值/现金与真实恢复状态精确一致，敞口浮点差另经独立求和界核验，未重跑收益。无新模块或容量准入。",
+    "mechanism": "monthly_existing_trend_domain_gate",
+    "label": "趋势行情门控：小幅正收益，样本不足未准入",
+    "status": "known_history_positive_necessary_screen_insufficient_month_clusters_no_admission",
+    "report": "monthly_state_domain_20261027_v002/README.md",
+    "description": "既有月初趋势状态门控在8/15bps每边成本下608日净赚19.71/13.35USDT（0.1971%/0.1335%），压力回撤2.69%、日夏普0.046、完整周期胜率53.33%。4条新账户内部核验通过；30个周期仅来自3个活跃月，低于冻结4个月底线，配对差区间跨零。平均实际总敞口从16.48%降至2.38%，不称同风险改善。无模块、容量、外部或未见准入。",
     "new_financial_accounts": 4,
-    "bridge_account_replays": 2,
-    "selected_case_paths": 1,
-    "actual_account_and_case_computations": 7,
     "logical_source_domain_cost_cases": 8,
     "source_duplicate_cases_reused": 4,
     "new_economic_variants": 1,
     "new_independent_mechanisms": 0,
+    "new_state_thresholds": 0,
+    "new_model_fits": 0,
+    "observed_active_monthly_clusters": 3,
+    "required_minimum_monthly_clusters": 4,
+    "economic_necessary_screen_passed": true,
+    "statistical_sufficiency_established": false,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "关闭当前月度实现的止损微调分支。仅核对既有、决策时可观察的行情状态与月度仓位/损失的适用域，先对齐原始来源、时间和成员；不按2026正收益反选年份或未来状态，不重训更大模型。没有可支持的条件机制则结束分支后再登记另一收益机制。外部复现、未见与总账户目标继续未完成。"
+    "next_action": "冻结这一门控，不再选其他状态子集、阈值、时钟或放大风险。仅接受真正未见的同合同机会补证；当前3个月不足不能通过重新切分历史解决。下一项可行动研究须先登记不同经济机制及其最强替代解释和原始事实需求，不能基于这点弱正收益训练更复杂配置。外部复现、未见与总账户目标继续未完成。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -834,7 +843,7 @@
         "说明来源、有效日、身份和资格规则相对原始研究命题的变化"
       ],
       "rule": "不机械复用另一机制的共同池定义；不同策略的适用域可以不同，跨域比较先保持合同一致。",
-      "current_limit": "本轮月度候选的价格止损开/关均未获整段净收益准入；只关闭该具体解释，不外推所有条件性趋势。下一步先对齐已有因果行情状态，不按未来年份或收益挑选适用域。"
+      "current_limit": "月初既有trend_up/trend_down门控两成本小幅盈利，但仅3个活跃月、相关周期与配对区间跨零，不能准入。固定这一合同，禁止看归因后改选状态或时钟；旧模型广度域不同，不直接迁移已验效力。"
     },
     "method_mapping_contract": {
       "required_before_local_adaptation": [
@@ -874,23 +883,52 @@
     "profit_goal_met": false
   },
   "previous_diagnostic_research_stage": {
-    "mechanism": "monthly_economic_return_tsmom",
-    "label": "月度趋势完成：两成本未获准入",
-    "status": "known_history_local_adaptation_audited_economic_screen_failed",
-    "report": "monthly_tsmom_20261027_v002/README.md",
-    "description": "先补原始资金费并复算200个唯一币月，其中5个方向与纯价格不同；4条实际连续账户完成。月度趋势8/15bps每边成本下亏7.44%/7.71%，多头对照亏3.16%/3.36%；未触发账户停机或容量。139/149个趋势完整周期止损，不能据此断言止损致亏。TON终止导致一个纯月末源指数未知，不能填平。内部现金与真实持仓跨进程恢复通过；没有独立未见/外部证据。",
+    "mechanism": "monthly_holding_price_stop_counterfactual",
+    "label": "月度持有反证完成：亏损收窄，仍未准入",
+    "status": "one_policy_counterfactual_audited_economic_admission_failed",
+    "report": "monthly_hold_policy_20261027/README.md",
+    "description": "只关闭8%单仓价格止损，保留15%账户停机。趋势8/15bps成本下亏5.03%/5.16%，压力回撤从10.63%升至12.79%，平均实际总敞口约翻倍；同幅度多头触发账户停机，不能把相对领先当盈利。4条新政策账户、2条旧路径精确桥接、1条TON提前退出病例；原始净值/现金与真实恢复状态精确一致，敞口浮点差另经独立求和界核验，未重跑收益。无新模块或容量准入。",
     "new_financial_accounts": 4,
+    "bridge_account_replays": 2,
+    "selected_case_paths": 1,
+    "actual_account_and_case_computations": 7,
     "logical_source_domain_cost_cases": 8,
     "source_duplicate_cases_reused": 4,
-    "new_economic_candidates": 1,
-    "new_economic_variants": 0,
+    "new_economic_variants": 1,
     "new_independent_mechanisms": 0,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "停止此固定月度实现的经济准入，不扫窗口或扩大模型。先审查月度预测/持有时钟与8%止损及生命周期退出的兼容性，核对TON已知终止前真实成交窗口，区分信号失效、日内路径与强制退出；缺失纯月末回报保持未知，不拼接19个月。外部复现、未见与总账户目标继续未完成。"
+    "next_action": "关闭当前月度实现的止损微调分支。仅核对既有、决策时可观察的行情状态与月度仓位/损失的适用域，先对齐原始来源、时间和成员；不按2026正收益反选年份或未来状态，不重训更大模型。没有可支持的条件机制则结束分支后再登记另一收益机制。外部复现、未见与总账户目标继续未完成。"
   },
   "diagnostic_study_evidence": {
+    "kind": "single_frozen_monthly_trend_domain_known_history",
+    "report": "monthly_state_domain_20261027_v002/README.md",
+    "inputs": "results/research/monthly_state_inputs_20261027_v001",
+    "financial_run": "results/research/monthly_state_accounts_20261027_v001",
+    "verification_sha256": "4ebae64f9ce615514f03e00ef3efd75c1abccfee96556c454f9cf69fd27ed9a9",
+    "new_financial_accounts": 4,
+    "same_source_aliases": 4,
+    "new_domain_variants": 1,
+    "new_state_parameters_or_models": 0,
+    "new_independent_mechanisms": 0,
+    "observed_active_monthly_clusters": 3,
+    "minimum_monthly_clusters": 4,
+    "internal_state_audit_cases": 1216,
+    "positive_necessary_economic_screen": true,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "actual_nonflat_process_restart": true,
+    "restore_NAV_cash_ledger_inventory_risk_exact": true,
+    "restore_exposure_bit_exact": true,
+    "exposure_independent_binary64_bound_passed": true,
+    "same_realized_risk": false,
+    "third_party_review_performed": false,
+    "independent_unseen_validation_completed": false,
+    "profit_goal_met": false,
+    "prose_calendar_carry_corrected_without_financial_rerun": true
+  },
+  "previous_diagnostic_study_evidence": {
     "kind": "single_monthly_holding_policy_counterfactual_known_history",
     "report": "monthly_hold_policy_20261027/README.md",
     "contract": "results/research/monthly_hold_contract_20261027_v002",
@@ -910,29 +948,6 @@
     "capacity_triggered": false,
     "paper_replication": false,
     "same_realized_risk": false,
-    "third_party_review_performed": false,
-    "independent_unseen_validation_completed": false,
-    "profit_goal_met": false
-  },
-  "previous_diagnostic_study_evidence": {
-    "kind": "monthly_economic_return_local_adaptation_known_history",
-    "report": "monthly_tsmom_20261027_v002/README.md",
-    "inputs": "results/research/monthly_tsmom_inputs_20261027_v001",
-    "targets": "results/research/monthly_tsmom_targets_20261027_v001",
-    "financial_run": "results/research/monthly_tsmom_accounts_20261027_v001",
-    "verification_sha256": "3208f27bc3b2347d69c4bbc97d579e1f78d8be22de742621c61ee8f3a6cbf274",
-    "new_financial_accounts": 4,
-    "logical_source_cases": 8,
-    "new_economic_candidates": 1,
-    "new_economic_variants": 0,
-    "new_independent_mechanisms": 0,
-    "internal_audit_passed": true,
-    "actual_holding_process_restore_passed": true,
-    "capacity_triggered": false,
-    "unique_coin_month_inputs": 200,
-    "economic_vs_price_direction_differences": 5,
-    "paper_replication": false,
-    "independent_source_evidence": false,
     "third_party_review_performed": false,
     "independent_unseen_validation_completed": false,
     "profit_goal_met": false

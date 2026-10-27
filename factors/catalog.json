@@ -1185,6 +1185,23 @@
       "source_aliases": 4,
       "alpha_proven": false,
       "production_eligible": false
+    },
+    "conditional_state_domain": {
+      "context_adapter": "factors/crypto/market_state_sessions.py",
+      "protocol": "research_tools/monthly_state_domain/plan.json",
+      "report": "../docs/research/regime_program/monthly_state_domain_20261027_v002/README.md",
+      "state": "positive_necessary_screen_three_month_clusters_insufficient_no_admission",
+      "new_formula_parameters": 0,
+      "new_domain_variants": 1,
+      "new_independent_mechanisms": 0,
+      "new_financial_accounts": 4,
+      "same_source_aliases": 4,
+      "active_monthly_clusters": 3,
+      "minimum_monthly_clusters": 4,
+      "alpha_proven": false,
+      "production_eligible": false,
+      "old_HMM_MLP_new_feature_domain_validated": false,
+      "old_74_columns_unchanged": true
     }
   }
 }

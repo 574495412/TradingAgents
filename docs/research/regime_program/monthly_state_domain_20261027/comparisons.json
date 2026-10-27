@@ -1,0 +1,202 @@
+[
+  {
+    "variant": "daily_archive",
+    "slippage_bps": 3,
+    "conditional_trend_minus_long_net_pnl": 131.2107613805092,
+    "conditional_minus_unconditional_net_pnl": 522.2429404369577,
+    "direction_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 1.9203268250643174e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -5.794143287840054e-05,
+            0.00010157596925977977
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    },
+    "gate_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 8.215247223006444e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.00018394704764065353,
+            0.00033520266618484236
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  },
+  {
+    "variant": "daily_archive",
+    "slippage_bps": 10,
+    "conditional_trend_minus_long_net_pnl": 131.15668048555017,
+    "conditional_minus_unconditional_net_pnl": 529.8452149467976,
+    "direction_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 1.9205331185084683e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -5.7960663046894666e-05,
+            0.00010158868428358096
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    },
+    "gate_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 8.352739670610044e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.0001815792788975172,
+            0.0003361524149670508
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  },
+  {
+    "variant": "daily_with_complete_5m_reconciliation",
+    "slippage_bps": 3,
+    "conditional_trend_minus_long_net_pnl": 131.2107613805092,
+    "conditional_minus_unconditional_net_pnl": 522.2429404369577,
+    "direction_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 1.9203268250643174e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -5.794143287840054e-05,
+            0.00010157596925977977
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    },
+    "gate_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 8.215247223006444e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.00018394704764065353,
+            0.00033520266618484236
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  },
+  {
+    "variant": "daily_with_complete_5m_reconciliation",
+    "slippage_bps": 10,
+    "conditional_trend_minus_long_net_pnl": 131.15668048555017,
+    "conditional_minus_unconditional_net_pnl": 529.8452149467976,
+    "direction_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 1.9205331185084683e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -5.7960663046894666e-05,
+            0.00010158868428358096
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    },
+    "gate_paired_uncertainty": {
+      "mean_daily_return_D_minus_C": 8.352739670610044e-05,
+      "paired_calendar_days": 608,
+      "intervals": [
+        {
+          "block_days": 32,
+          "full_block_equivalents": 19,
+          "mean_daily_return_difference95": [
+            -0.0001815792788975172,
+            0.0003361524149670508
+          ],
+          "insufficient_if_less_than8blocks": false
+        },
+        {
+          "block_days": 128,
+          "full_block_equivalents": 4,
+          "mean_daily_return_difference95": null,
+          "insufficient_if_less_than8blocks": true
+        }
+      ],
+      "scope": "Fixed32/128day circular blocks,seed17,2000replications. Knownhistory, haltedzero days retained; no search-bias correction, significance or future claim."
+    }
+  }
+]

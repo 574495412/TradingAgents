@@ -1,0 +1,66 @@
+{
+  "schema": "monthly-state-domain-review.v1",
+  "passed": true,
+  "scope": "Internal evidence chain and arithmetic only; module admission, statistical confidence and external/unseen evidence not established.",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/monthly_state_domain/review.py": "38ccec244e9cf14423bc5a91f222dd5914800d721505a89ba4f48e1d14d4f8ae",
+    "research_tools/trend_stop_audit/review.py": "6ae4f9a96d7d5d1ccc37d01a4e399cb9a96d0f898e942bf2a6a97f2f6370127f",
+    "results/research/monthly_state_accounts_20261027_v001/completion.json": "e258576ba680e0d498353977ec1b0777f871a4b2a48f22bbd88cd3f0befe3f30",
+    "results/research/monthly_state_inputs_20261027_v001/completion.json": "5a31a56f7602f45b83bb128db0b775ae36cc18f4c26160ecfdf430de40e3ba1d",
+    "results/research/monthly_hold_finalization_20261027_v001/completion.json": "7ecaf2de9a1ce1d03303db6639d3bfbc2df4552464ee35eecfcb2a4b8c6fff1b",
+    "results/research/sparse_family_accounts_20261026_v002/accounts/cash_continuous2025_2026_cash_cap10000_slip10/result.json": "d80ebc212430cb376741471997bc0522aa1ebea864ff9394115db64ee8a38caa"
+  },
+  "new_financial_accounts": 4,
+  "same_source_aliases": 4,
+  "new_domain_variants": 1,
+  "new_state_thresholds_or_models": 0,
+  "minimum_active_monthly_anchors": 4,
+  "observed_active_monthly_anchors": 3,
+  "closed_trend_cycles": [
+    30,
+    30
+  ],
+  "cash_control": {
+    "id": "cash_continuous2025_2026_cash_cap10000_slip10",
+    "net_return": 0,
+    "net_pnl": 0,
+    "equity_rows": 175105
+  },
+  "account_arithmetic_and_cash_checks": 8,
+  "maximum_internal_NAV_error_usdt": 1.3460521586239338e-10,
+  "all_year_and_state_cashflow_partitions_reconciled": true,
+  "same_realized_risk": false,
+  "restart": {
+    "performed": true,
+    "passed": true,
+    "split": "2025-03-01T00:05:00+00:00",
+    "parent_pid": 32300,
+    "worker_pid": 32406,
+    "held_positions": 10,
+    "NAV_cash_ledger_requests_inventory_risk_exact": true,
+    "exposure_independent_binary64_bound_passed": true
+  },
+  "exposure_precision": {
+    "passed": true,
+    "rows": 158112,
+    "maximum_pair_difference_usdt": {
+      "gross_exposure": 0.0,
+      "net_exposure": 0.0
+    },
+    "maximum_reference_difference_usdt": {
+      "gross_exposure": 6.821210263296962e-13,
+      "net_exposure": 4.547473508864641e-13
+    },
+    "maximum_fraction_of_derived_sum_bound": 0.39116095777046794,
+    "method": "Rebuild inventory from checkpoint and exact child fills; price every held quantity from the retained preceding actual5m close; use math.fsum for canonical gross and net. Require each full/resumed exposure within gamma_(N+1)*gross with u=2^-53, including cancellation in net; no arbitrary relaxed NAV tolerance.",
+    "scope": "Exposure arithmetic only. NAV,cash,events,requests,positions and final risk state are required exactly equal."
+  },
+  "economic_necessary_screen_passed": true,
+  "module_admitted": false,
+  "capacity_triggered": false,
+  "independent_unseen_evidence": false,
+  "third_party_review": false,
+  "profit_goal_met": false,
+  "orders_enabled": false,
+  "production_eligible": false
+}
