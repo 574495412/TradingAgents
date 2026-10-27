@@ -781,7 +781,22 @@
       "falsified_with_reason",
       "unknown_with_missing_evidence"
     ],
-    "next_mechanism_condition": "当前机制形成可反驳结论或明确缺口后，才登记下一经济机制；达到总账户收益目标仍需至少两个有效且不同的机制。"
+    "next_mechanism_condition": "当前机制形成可反驳结论或明确缺口后，才登记下一经济机制；达到总账户收益目标仍需至少两个有效且不同的机制。",
+    "decision_record": {
+      "required_before_economic_evaluation": true,
+      "fields": [
+        "唯一经济假设、支付者、适用域与零假设",
+        "最强替代解释及保持其他条件一致的反证设计",
+        "原始记录、资产身份、可用时点和无法观测的部分",
+        "冻结公式、执行和费用假设；基线及唯一经济变体",
+        "最小有用净效应、风险/容量边界、依赖处理和样本充分性设计",
+        "事先约定的推翻、停止与证据不足条件",
+        "外部复现材料及真正未见验证方案；二者缺失时的结论上限"
+      ],
+      "closeout": "支持且限定适用范围、反驳并终止分支、或未知并列出决定性缺口；研究结题与投资目标达成分别判断。",
+      "no_retroactive_registration": "已观察的结果只能登记为历史诊断，不以事后补表宣称预登记或新样本外。"
+    },
+    "decision_contract_revision": "20261027"
   },
   "diagnostic_case_evidence": {
     "source": "carry_exit_cases_20261027/verification.json",

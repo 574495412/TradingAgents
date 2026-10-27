@@ -1,0 +1,27 @@
+{
+  "schema": "research-depth-goal-validation.v1",
+  "validated_scope": "goal revision and existing interface API only",
+  "version": "20261026_v003",
+  "checks": {
+    "previous_protocol_exactly_preserved": true,
+    "portfolio_metrics_unchanged_and_unproven": true,
+    "no_trading_or_certification_permission_change": true,
+    "unmet_research_tasks_remain_open": true,
+    "all_four_requested_dimensions_defined": true,
+    "depth_before_expansion": true,
+    "internal_audit_not_promoted_to_third_party": true,
+    "module_allocation_portfolio_levels_preserved": true,
+    "existing_interface_api_serves_v003": true
+  },
+  "api": "http://127.0.0.1:8794/api/research/factor-lab/program",
+  "files_sha256": {
+    "docs/research/regime_program/targets.json": "2ae983ee2562fc276d3ef313bc2f38d3da3c990bdaf578f5e6682111525a66d8",
+    "docs/research/regime_program/README.md": "7d31f1c316d334d744453e7c718f2f19445ed31a8be7f489c13d239831ae2905",
+    "docs/research/regime_program/depth_sources.json": "c44bae71f68cf47262dbf1e784a1925f87ad281badffbbbe65d5a53ffbb85ab4",
+    "docs/research/regime_program/protocol_archive/20261026_before_depth_v003/completion.json": "eb1e7c88576d87e40fb1e44050174899f7a26ea26c25905a2135f709e2984e36"
+  },
+  "profit_goal_met": false,
+  "third_party_review_performed": false,
+  "independent_unseen_validation_completed": false,
+  "orders_enabled": false
+}
