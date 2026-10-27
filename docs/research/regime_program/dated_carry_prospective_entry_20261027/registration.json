@@ -1,0 +1,17 @@
+{
+  "registered_wall_ns": 1793096037512873000,
+  "registered_at_utc": "2026-10-27T10:13:57.512874+00:00",
+  "source_hashes": {
+    "research_tools/dated_carry/prospective_entry_plan_v001.json": "de0a40d615a2b309d6f24e41fe4df67d45ec759c2880a3648791a1288d725a0b",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/run_prospective_entry_v1.py": "1a80214a6310ffeea5322b09b86e160897a1054002c85317a13e90fbb99f9db0",
+    "../freqtrade/research/crypto/dated_forward_paper_v1.py": "74de7cdf5d81061928304b8fb815c9ccd276ea0189854d0f62ad096bd0234854",
+    "research_tools/dated_carry/prospective_entry_source_plan_v001.json": "9c63ed909564b4eff322fabc0debcadbe2e4c4a1cc100bf8e694a19921ed2ed8",
+    "research_tools/dated_carry/collect_prospective_entry_sources_v1.py": "96512515ec49072582a7f4996dbc67ef35ff050a8ce2450c98fe0f48a542a7ee",
+    "research_tools/dated_carry/audit_prospective_probe.py": "077494478bd2c7c768699c7c2bc07ffa4a4f38a0b0b76cf19ae8ba2ae2263b43",
+    "research_tools/dated_carry/audit_depth_witness.py": "db80dfd3e894757364c56b4f6a54b92d2c6e114d83a31b1fb396987c467726ae"
+  },
+  "plan_sha256": "32755cc0191813bdb78087cefcaaf77bc93fdf7409684a5745c0721289ab3dfe",
+  "before_new_quotes": true,
+  "prospective_preregistered_replay_not_real_time_broker_signals": true,
+  "orders_enabled": false
+}

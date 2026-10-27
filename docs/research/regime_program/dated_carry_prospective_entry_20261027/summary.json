@@ -1,0 +1,84 @@
+{
+  "schema": "dated-carry-prospective-entry-result.v1",
+  "strategy_registered_before_new_reference_and_quote_data": true,
+  "prospective_preregistered_replay_not_real_time_signals": true,
+  "new_conditional_paper_accounts": 1,
+  "new_complete_carry_lifecycles": 0,
+  "open_asset_states": {},
+  "entry_screens": [
+    {
+      "asset": "BTC",
+      "time_ns": 1793096046326502000,
+      "target": {
+        "gross": "0.01502000",
+        "short": "0.015",
+        "cash_cap": "1250.00"
+      },
+      "screen": {
+        "eligible": false,
+        "reason": "below_useful_cost_stress_floor",
+        "gross_basis_cash": "5.9872130788000000000",
+        "entry_future_fee": "0.6010266372345",
+        "terminal_cost_scenario": "8.95496730583455000000",
+        "net_terminal_scenario": "-3.56878086426905000000",
+        "terminal_price_scenario": "238894.68603000000",
+        "future_entry_price": "80136.8849646",
+        "spot_entry_price": "79631.56201000000",
+        "future_profit_or_margin_safety_proven": false
+      }
+    },
+    {
+      "asset": "ETH",
+      "time_ns": 1793096046326502000,
+      "target": {
+        "gross": "0.54260000",
+        "short": "0.542",
+        "cash_cap": "1250.00"
+      },
+      "screen": {
+        "eligible": false,
+        "reason": "below_useful_cost_stress_floor",
+        "gross_basis_cash": "3.961220501660000000000000",
+        "entry_future_fee": "0.62683642855755",
+        "terminal_cost_scenario": "9.358727924276631305860670845",
+        "net_terminal_scenario": "-6.024343851174181305860670845",
+        "terminal_price_scenario": "6909.574105861260597124953927",
+        "future_entry_price": "2313.049551872878228782287823",
+        "spot_entry_price": "2303.191368620420199041651309",
+        "future_profit_or_margin_safety_proven": false
+      }
+    }
+  ],
+  "last_observation": {
+    "time_ns": 1793096056326502000,
+    "quote_cash": "3000.00",
+    "future_cash": "7000.00",
+    "spot_value": "0",
+    "future_unrealized": "0",
+    "noncash_exit_reserve": "0",
+    "equity_after_exit_reserve": "10000.00"
+  },
+  "win_rate": null,
+  "full_lifecycle_return": null,
+  "full_drawdown": null,
+  "sharpe": null,
+  "full_forward_strategy_validation_completed": false,
+  "continuous_risk_monitoring": false,
+  "orders_enabled": false,
+  "third_party_review_performed": false,
+  "capacity_certified": false,
+  "profit_goal_met": false,
+  "report_status": "one_prospective_opportunity_rejected_under_frozen_cost_stress",
+  "native_messages": 7410,
+  "local_registration_before_reference_queries": true,
+  "new_financial_accounts": 1,
+  "actual_or_paper_fills": 0,
+  "source_observability_passed": true,
+  "module_admitted": false,
+  "portfolio_actual": null,
+  "paper_cash_balance_usdt": "10000.00",
+  "cash_control_usdt": "10000",
+  "source_capture_finished": true,
+  "recorder_still_running": false,
+  "new_independent_mechanisms": 0
+}

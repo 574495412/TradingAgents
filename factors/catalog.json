@@ -1272,6 +1272,18 @@
         "recorder_still_running": false,
         "historical_2025_rule_backfill_permitted": false,
         "production_eligible": false
+      },
+      "prospective_entry": {
+        "engine": "../freqtrade/research/crypto/dated_forward_paper_v1.py",
+        "plan": "research_tools/dated_carry/prospective_entry_plan_v001.json",
+        "report": "../docs/research/regime_program/dated_carry_prospective_entry_20261027/README.md",
+        "state": "preregistered_new_opportunity_cost_stress_rejected_stay_cash",
+        "new_financial_accounts": 1,
+        "fills": 0,
+        "complete_lifecycles": 0,
+        "new_independent_mechanisms_proven": 0,
+        "full_forward_strategy_validated": false,
+        "production_eligible": false
       }
     },
     "reference_stage_financial_accounts": 0

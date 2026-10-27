@@ -1,0 +1,83 @@
+{
+  "quote_cash": "3000.00",
+  "future_cash": "7000.00",
+  "positions": {},
+  "events": [
+    {
+      "asset": "BTC",
+      "type": "stay_cash",
+      "time_ns": 1793096046326502000,
+      "reason": "below_useful_cost_stress_floor"
+    },
+    {
+      "asset": "ETH",
+      "type": "stay_cash",
+      "time_ns": 1793096046326502000,
+      "reason": "below_useful_cost_stress_floor"
+    }
+  ],
+  "decisions": [
+    {
+      "asset": "BTC",
+      "time_ns": 1793096046326502000,
+      "target": {
+        "gross": "0.01502000",
+        "short": "0.015",
+        "cash_cap": "1250.00"
+      },
+      "screen": {
+        "eligible": false,
+        "reason": "below_useful_cost_stress_floor",
+        "gross_basis_cash": "5.9872130788000000000",
+        "entry_future_fee": "0.6010266372345",
+        "terminal_cost_scenario": "8.95496730583455000000",
+        "net_terminal_scenario": "-3.56878086426905000000",
+        "terminal_price_scenario": "238894.68603000000",
+        "future_entry_price": "80136.8849646",
+        "spot_entry_price": "79631.56201000000",
+        "future_profit_or_margin_safety_proven": false
+      }
+    },
+    {
+      "asset": "ETH",
+      "time_ns": 1793096046326502000,
+      "target": {
+        "gross": "0.54260000",
+        "short": "0.542",
+        "cash_cap": "1250.00"
+      },
+      "screen": {
+        "eligible": false,
+        "reason": "below_useful_cost_stress_floor",
+        "gross_basis_cash": "3.961220501660000000000000",
+        "entry_future_fee": "0.62683642855755",
+        "terminal_cost_scenario": "9.358727924276631305860670845",
+        "net_terminal_scenario": "-6.024343851174181305860670845",
+        "terminal_price_scenario": "6909.574105861260597124953927",
+        "future_entry_price": "2313.049551872878228782287823",
+        "spot_entry_price": "2303.191368620420199041651309",
+        "future_profit_or_margin_safety_proven": false
+      }
+    }
+  ],
+  "observations": [
+    {
+      "time_ns": 1793096056326502000,
+      "quote_cash": "3000.00",
+      "future_cash": "7000.00",
+      "spot_value": "0",
+      "future_unrealized": "0",
+      "noncash_exit_reserve": "0",
+      "equity_after_exit_reserve": "10000.00"
+    }
+  ],
+  "cash_control": "10000",
+  "complete_lifecycles": 0,
+  "win_rate": null,
+  "orders_enabled": false,
+  "capture_completed": true,
+  "continuous_risk_monitoring": false,
+  "lifecycle_validation_completed": false,
+  "profit_goal_met": false,
+  "actual_order_eligibility_certified": false
+}

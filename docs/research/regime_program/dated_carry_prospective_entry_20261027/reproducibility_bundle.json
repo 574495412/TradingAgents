@@ -1,0 +1,20 @@
+{
+  "archive": "results/research/dated_carry_prospective_entry_export_20261027_v001/reproduction.tar.gz",
+  "sha256": "dd4b9b9f8c2aa4904cefa2a2b2959efb0a6011ddc3a4933cc53ff15e36b4883a",
+  "archive_bytes": 824717,
+  "members": 108,
+  "extracted_root": "/var/folders/td/0bj9m2sn36185yz2jpyly9c40000gn/T/dated-entry-offline-f_gva4qi",
+  "all_export_file_hashes_match": true,
+  "fresh_directory_reproduction": {
+    "offline_reproduction_passed": true,
+    "manifest_and_strategy_files_verified": 92,
+    "raw_receipt_books_rebuilt_exactly": 16,
+    "account_replay_exact": true,
+    "network_calls": 0,
+    "new_financial_opportunities": 0,
+    "external_review_performed": false,
+    "profit_goal_met": false
+  },
+  "external_review_performed": false,
+  "profit_goal_met": false
+}

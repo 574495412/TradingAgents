@@ -1,0 +1,146 @@
+[
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "phase": "decision",
+    "clock_ns": 1793096046326502000,
+    "known_at_ns": 1793096046248284000,
+    "book_age_ms": 78.218,
+    "update_id": 101958117610
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "phase": "decision",
+    "clock_ns": 1793096046326502000,
+    "known_at_ns": 1793096046267313000,
+    "book_age_ms": 59.189,
+    "update_id": 11936212403269
+  },
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "phase": "arrival",
+    "clock_ns": 1793096047326502000,
+    "known_at_ns": 1793096047247694000,
+    "book_age_ms": 78.808,
+    "update_id": 101958117982
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "phase": "arrival",
+    "clock_ns": 1793096047326502000,
+    "known_at_ns": 1793096047230349000,
+    "book_age_ms": 96.153,
+    "update_id": 11936212519716
+  },
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "phase": "unwind",
+    "clock_ns": 1793096048326502000,
+    "known_at_ns": 1793096048248465000,
+    "book_age_ms": 78.037,
+    "update_id": 101958118157
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "phase": "unwind",
+    "clock_ns": 1793096048326502000,
+    "known_at_ns": 1793096048258105000,
+    "book_age_ms": 68.397,
+    "update_id": 11936212630073
+  },
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "phase": "mark",
+    "clock_ns": 1793096056326502000,
+    "known_at_ns": 1793096056248059000,
+    "book_age_ms": 78.443,
+    "update_id": 101958119492
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "phase": "mark",
+    "clock_ns": 1793096056326502000,
+    "known_at_ns": 1793096056237890000,
+    "book_age_ms": 88.612,
+    "update_id": 11936213417249
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "phase": "decision",
+    "clock_ns": 1793096046326502000,
+    "known_at_ns": 1793096046249194000,
+    "book_age_ms": 77.308,
+    "update_id": 82541401534
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "phase": "decision",
+    "clock_ns": 1793096046326502000,
+    "known_at_ns": 1793096046319773000,
+    "book_age_ms": 6.729,
+    "update_id": 11936212403631
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "phase": "arrival",
+    "clock_ns": 1793096047326502000,
+    "known_at_ns": 1793096047249236000,
+    "book_age_ms": 77.266,
+    "update_id": 82541402243
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "phase": "arrival",
+    "clock_ns": 1793096047326502000,
+    "known_at_ns": 1793096047261881000,
+    "book_age_ms": 64.621,
+    "update_id": 11936212525103
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "phase": "unwind",
+    "clock_ns": 1793096048326502000,
+    "known_at_ns": 1793096048250770000,
+    "book_age_ms": 75.732,
+    "update_id": 82541402466
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "phase": "unwind",
+    "clock_ns": 1793096048326502000,
+    "known_at_ns": 1793096048285621000,
+    "book_age_ms": 40.881,
+    "update_id": 11936212630823
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "phase": "mark",
+    "clock_ns": 1793096056326502000,
+    "known_at_ns": 1793096056249386000,
+    "book_age_ms": 77.116,
+    "update_id": 82541404082
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "phase": "mark",
+    "clock_ns": 1793096056326502000,
+    "known_at_ns": 1793096056278817000,
+    "book_age_ms": 47.685,
+    "update_id": 11936213421998
+  }
+]

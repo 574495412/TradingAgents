@@ -1,0 +1,40 @@
+{
+  "files_sha256": {
+    "/Users/chrise/GitHub/TradingAgents/results/research/dated_carry_prospective_entry_20261027_v001/completion.json": "5ea17cb9d39930f8fc5852799edefd6c4b79f39f31ed3cee86d8dc3983d24f2d",
+    "/Users/chrise/GitHub/TradingAgents/data/research/dated_carry_prospective_entry_sources_20261027_v001/completion.json": "48b0844eab0c0253a29ea4f9db824d9cf156d833192fa64a96dc747a9b5725a9",
+    "/Users/chrise/GitHub/TradingAgents/results/research/dated_carry_prospective_entry_audit_20261027_v001/completion.json": "07c58ded2100a4cf47b773226222c896632bfd9ac60ff44127d8d81dd697edd0",
+    "/Users/chrise/GitHub/TradingAgents/results/research/dated_carry_prospective_entry_sources_audit_20261027_v001/completion.json": "b125e1042a54d402bb5db5e3e6bcf91448770866dfbde7f02ccd9124ef6c4944",
+    "/Users/chrise/GitHub/TradingAgents/data/research/dated_carry_forward_docs_20261027_v001/completion.json": "c091c3987175a8d96967e086709577b61a779db396537ee6b392b55107a0b56f",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/audit_prospective_entry_v1.py": "ea55e0acd331ccab3b628d4cc97614e07b7a62e233202a3e2cedaae89ae2be2e",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/reproduce_prospective_entry_v1.py": "5179f0e434758658a31d84741a73bbdc9bcf814a9397db17fa4d2dfa1194c841",
+    "/Users/chrise/GitHub/TradingAgents/tests/research_mainline/test_dated_prospective_entry.py": "9c3fb3f801348b41192cca3123b81ebce360898da874d1d576853e4113a2fc86"
+  },
+  "frozen_strategy_sources_verified": {
+    "research_tools/dated_carry/prospective_entry_plan_v001.json": "de0a40d615a2b309d6f24e41fe4df67d45ec759c2880a3648791a1288d725a0b",
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/run_prospective_entry_v1.py": "1a80214a6310ffeea5322b09b86e160897a1054002c85317a13e90fbb99f9db0",
+    "../freqtrade/research/crypto/dated_forward_paper_v1.py": "74de7cdf5d81061928304b8fb815c9ccd276ea0189854d0f62ad096bd0234854",
+    "research_tools/dated_carry/prospective_entry_source_plan_v001.json": "9c63ed909564b4eff322fabc0debcadbe2e4c4a1cc100bf8e694a19921ed2ed8",
+    "research_tools/dated_carry/collect_prospective_entry_sources_v1.py": "96512515ec49072582a7f4996dbc67ef35ff050a8ce2450c98fe0f48a542a7ee",
+    "research_tools/dated_carry/audit_prospective_probe.py": "077494478bd2c7c768699c7c2bc07ffa4a4f38a0b0b76cf19ae8ba2ae2263b43",
+    "research_tools/dated_carry/audit_depth_witness.py": "db80dfd3e894757364c56b4f6a54b92d2c6e114d83a31b1fb396987c467726ae"
+  },
+  "preregistration_precedes_first_new_reference_and_quotes": true,
+  "public_references_and_execution_rules_present": true,
+  "actual_client_commissions_or_acceptance_verified": false,
+  "causal_book_states": 16,
+  "economic_identities_exact_in_this_case": true,
+  "paper_ledger_contains_no_fills": true,
+  "complete_lifecycles": 0,
+  "tests_passed": 15,
+  "new_tests_passed": 7,
+  "tests_scope": "Synthetic failure/lot/fee/causality plus source checks; not live fills or profitability.",
+  "test_command": "/Users/chrise/GitHub/freqtrade/.venv/bin/python -m pytest --confcutdir=tests/research_mainline -q tests/research_mainline/test_dated_prospective_entry.py tests/research_mainline/test_prospective_source_probe.py tests/research_mainline/test_prospective_probe_audit.py",
+  "root_conftest_attempt": "Unrelated global conftest import failed on missing dotenv before tests; scoped suite uses no credentials or dependency install.",
+  "offline_reproduction_executed": true,
+  "offline_reproduction_is_not_another_opportunity": true,
+  "external_review_performed": false,
+  "full_forward_strategy_validation_completed": false,
+  "capacity_certified": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

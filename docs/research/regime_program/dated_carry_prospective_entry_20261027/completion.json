@@ -1,0 +1,16 @@
+{
+  "manifest": {
+    "summary.json": "1448acce325705c16e267866d5a04b70a42e394b02e3012432215fbd355f428c",
+    "causal_books.json": "57801b49a477598b385955d2802ac896f4e054c9db0e643e3bbed0f3ec472615",
+    "registration.json": "e4c212dd75b28bdf354f0afc1551327edddab3b23b56b4c8d8344f9c8aeb2f70",
+    "README.md": "88bb708de193a1d92ccb168f398cf4ea92113adb214573f607261daff6edec17",
+    "account.json": "125bff330c0aa20c5e36a9ec8307b4b342d85647b33e53c7230dc8c826bb5944",
+    "reproducibility_bundle.json": "69a5436055dc5bab489bf8c1dcc714f37b35247b9579a78d4f83c5adef9d1e76",
+    "verification.json": "fcf2f081b6d98444a58c3a8d79218e13da13a572412be8ce73e90d458088e2c5"
+  },
+  "new_opportunities": 1,
+  "new_conditional_paper_accounts": 1,
+  "fills": 0,
+  "full_strategy_forward_validated": false,
+  "profit_goal_met": false
+}
