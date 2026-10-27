@@ -1,0 +1,46 @@
+{
+  "local_daily21": {
+    "signal": "21 completed UTC-day price change, momentum-only ablation of carry ranking",
+    "formation": "daily",
+    "weights": "5long/5short equal, gross0.8",
+    "market": "40 retrospectively selected liquid USDT perpetuals, prior liquidity top30",
+    "profit_status": "negative_known_history"
+  },
+  "local_weekly28": {
+    "signal": "28 completed-day price change",
+    "formation": "Monday/cold-start, with intraperiod risk exits",
+    "weights": "4long/4short equal; optional60day BTC hedge; gross0.8",
+    "market": "same retrospective40, excludesBTCfromrank, not point-in-time capitalization weighting",
+    "profit_status": "negative_known_history"
+  },
+  "sentinel_pinned_config": {
+    "commit": "ca647c099755ae9770f92205d5fc413e8e7c6c95",
+    "signal": "14day momentum plus funding ranks",
+    "venue": "Hyperliquid",
+    "weights": "8long/8short equal, keep_buffer4, gross1.0",
+    "formation": "daily14UTC per pinned configuration",
+    "upstream_search_disclosed": "7lookbacks; source commentary is not independently verified profit",
+    "locally_replicated_complete_strategy": false
+  },
+  "author_pdf_2019": {
+    "date": "2019-04-15",
+    "provider": "Coinmarketcap",
+    "sample": "2014-2018",
+    "calendar": "52year-date-label weeks; final8/9dates",
+    "portfolio_tests": "weekly quintiles; multiple momentum horizons; market-cap-weighted",
+    "named_CMOM_factor": "three-week signal;30/40/30rankgroups; top-minus-bottom value-weighted",
+    "is_published_2022_final_version": false
+  },
+  "authors_arxiv_v4": {
+    "date": "2026-03-21",
+    "version": "2510.14435v4",
+    "provider": "CoinGecko, active and inactive, USD spot aggregation",
+    "sample_end": "2025-09-06",
+    "calendar": "52year-date-label weeks; final8/9dates",
+    "signal": "past2source-calendar-week return",
+    "weights": "outer quintile market-cap weights; source spread gross2",
+    "account_scaling": "gross0.8 requires multiplying spread weights by0.4 before costs, not inheriting spread return",
+    "execution_claim": "weekly factor return; not a funded perpetual-account execution result"
+  },
+  "new_module_scope": "formation math/strict input gates only; date-label convention, lexical ties and integer-rank quintiles explicitly local; no author-code exact replication, performance clipping, costs or returns validated"
+}

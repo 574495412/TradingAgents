@@ -92,3 +92,5 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 当前原始规则与原生盘口的[受限前向采样](../docs/research/regime_program/dated_carry_prospective_sources_20261027/README.md)已复核四份盘口及报告规则，未增加因子、策略或收益账户。采样已结束；当前261225规则不回填250328，采样协议冻结也不等于前向策略验证通过。下一次策略必须在新报价前另冻结完整合同。
 
 事前冻结的[新机会入场判定](../docs/research/regime_program/dated_carry_prospective_entry_20261027/README.md)仅初始化一条条件纸面账户。BTC/ETH未过费用压力情景门槛，保持1万USDT现金；成交及完整周期均0，没有新增alpha列或独立收益机制。完整策略前向、容量及外部复核继续未完成。
+
+`common/year52_momentum.py`保存来源每年52周日期标签、两个完整来源周端点、市值加权外侧五分位与gross2价差到资金账户的精确权重映射；严格拒绝缺市值、未知身份/分类和未来可知记录。它只验证形成数学，未取得原始历史市值/停用身份面板、未接收益账户，不是新准入alpha。股票不能继承加密日期标签，需另适配交易日与公司行动。见[动量命题及数据核对](../docs/research/regime_program/cross_sectional_momentum_fidelity_20261027/README.md)。

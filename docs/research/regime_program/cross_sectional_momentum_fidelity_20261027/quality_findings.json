@@ -1,0 +1,37 @@
+[
+  {
+    "id": "method_mismatch",
+    "severity": "high",
+    "evidence": "daily21/weekly28 equal-weight perpetual policies differ in calendar, weighting, domain, holdings and execution from original spot cross-section papers",
+    "risk": "Old losses do not refute every source proposition, and source results do not validate local policy.",
+    "action": "Freeze method mapping before proposing any new economic contract."
+  },
+  {
+    "id": "fees_not_complete_explanation",
+    "severity": "high",
+    "evidence": "Every retained local policy/period/cost fixed-fill price component is negative, independently summed from sealed event ledgers.",
+    "risk": "Changing only fees or weekly churn cannot be assumed to restore edge; comparison is accounting, not causal attribution.",
+    "action": "Keep old policies closed, no zero-cost replay or parameter grid."
+  },
+  {
+    "id": "old_universe_not_full_historical_market",
+    "severity": "high",
+    "evidence": "Both old books use a retrospective40coin pool; the prior native-archive universe review selected105different2025names and107in2026, about49.94%/42% old40slotcoverage.",
+    "risk": "Survivorship/eligibility and spot/perpetual identity differences limit external conclusions.",
+    "action": "Use time-valid native identity and tradable universe evidence; no current-list backfill."
+  },
+  {
+    "id": "necessary_market_caps_missing",
+    "severity": "high",
+    "evidence": "Public2025-01-07 BTC history query returned401/error10012, not a numeric market-cap record. Inactive IDs documented as Analyst-or-above.",
+    "risk": "Cannot implement or certify the original value weighting/full historic universe from present authorized public path.",
+    "action": "Keep economic evaluation unknown. Inspect any available authorized original exports/author data or explicitly re-register a separately sourced identity-audited local adaptation; no billing or invented caps."
+  },
+  {
+    "id": "calendar_and_denominator",
+    "severity": "high",
+    "evidence": "Source2weeks can span15/16calendar days across year-end; source +1/-1 spread is gross2.",
+    "risk": "A14day Monday signal and capital return inferred directly from factor spread change the tested proposition.",
+    "action": "Use year52label math, actual availability and account-gross mapping; newmodule tests only formation semantics."
+  }
+]

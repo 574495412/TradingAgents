@@ -1,0 +1,23 @@
+{
+  "schema": "cross-sectional-momentum-source-fidelity.v1",
+  "version": "20261027_v001",
+  "question": "Do failed local daily21/weekly28 equal-weight perpetual policies test the same proposition as the authors' year52week market-cap-weighted momentum portfolios? Can the necessary original-provider market-cap and identity history be obtained through the currently authorized public route?",
+  "economic_evaluation_allowed": false,
+  "new_financial_accounts": 0,
+  "new_models": 0,
+  "formation_data_not_unseen_results": true,
+  "sources": [
+    {"id": "author_2019", "url": "https://economics.yale.edu/sites/default/files/2022-10/LiuTsyvinskiWu2019%20COMMON%20RISK%20FACTORS.pdf", "extension": "pdf"},
+    {"id": "authors_2026_v4", "url": "https://arxiv.org/html/2510.14435v4", "extension": "html"},
+    {"id": "provider_history_docs", "url": "https://docs.coingecko.com/reference/coins-id-history", "extension": "html"},
+    {"id": "provider_identity_docs", "url": "https://docs.coingecko.com/reference/coins-list", "extension": "html"},
+    {"id": "public_historical_cap_probe", "url": "https://api.coingecko.com/api/v3/coins/bitcoin/history", "params": {"date": "07-01-2025", "localization": "false"}, "extension": "json"}
+  ],
+  "budget": {"maximum_requests": 5, "maximum_raw_response_bytes_each": 8388608, "maximum_decoded_bytes_each": 16777216, "automatic_retries": 0},
+  "identity_contract": "Provider ID plus native chain/contract identity and effective dates; ticker equality or today's active list does not establish historical coverage or map all exchange aliases. Original provider market cap is a derived vendor observation, not a blockchain-native fact. Preserve version/receipt times and do not certify past availability from a current historical download.",
+  "failure": "Preserve original errors. No credentials, billing, paid endpoints, challenge bypass, provider substitution, clipping source returns, current-cap backfill, or zero/volume proxy for missing market cap.",
+  "local_comparisons": ["daily21 rank ablation", "weekly28 ordinary momentum and BTC-beta controls"],
+  "result_scope": "Method mapping and necessary-input quality only; no choice of profitable horizon or inherited published returns.",
+  "orders_enabled": false,
+  "profit_goal_met": false
+}

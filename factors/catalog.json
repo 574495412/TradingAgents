@@ -1287,5 +1287,19 @@
       }
     },
     "reference_stage_financial_accounts": 0
+  },
+  "year52_momentum_research_registry": {
+    "module": "factors/common/year52_momentum.py",
+    "source_version": "arXiv2510.14435v4",
+    "source": "https://arxiv.org/html/2510.14435v4",
+    "report": "../docs/research/regime_program/cross_sectional_momentum_fidelity_20261027/README.md",
+    "state": "formation_math_only_original_cap_history_missing_no_economic_account",
+    "source_spread_gross": 2,
+    "account_gross_example": 0.8,
+    "stock_calendar_and_corporate_actions_validated": false,
+    "new_financial_accounts": 0,
+    "old_74_columns_unchanged": true,
+    "alpha_proven": false,
+    "production_eligible": false
   }
 }
