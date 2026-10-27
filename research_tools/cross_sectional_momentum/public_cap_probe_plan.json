@@ -1,0 +1,16 @@
+{
+  "schema": "alternate-public-capitalization-source-probe.v1",
+  "version": "20261027_v001",
+  "question": "Can the documented no-key Community route supply an original-provider historical price/supply/capitalization observation? This does not reproduce the authors' CoinGecko universe or certify historical availability.",
+  "asset_ids": ["btc", "eth"],
+  "date": "2025-01-07",
+  "metrics": ["PriceUSD", "SplyCur", "CapMrktCurUSD"],
+  "documentation": "https://raw.githubusercontent.com/coinmetrics/product-docs/master/docs/packages/coin-metrics-community-data.md",
+  "provider_endpoint": "https://api.coinmetrics.io/v4/timeseries/asset-metrics",
+  "params": {"assets": "btc,eth", "metrics": "PriceUSD,SplyCur,CapMrktCurUSD", "frequency": "1d", "start_time": "2025-01-07T00:00:00Z", "end_time": "2025-01-07T00:00:00Z", "page_size": 10},
+  "budget": {"maximum_requests": 2, "maximum_bytes_each": 8388608, "retries": 0},
+  "limits": "A different provider's current-supply capitalization is a separately defined derived input, not the original authors' circulating-cap source. Do not mix aliases, treat receipt date as historical knowledge, extrapolate two-assets to a universe, or evaluate returns in this probe. No credentials, endpoint escalation, paid access or retries.",
+  "new_financial_accounts": 0,
+  "orders_enabled": false,
+  "profit_goal_met": false
+}

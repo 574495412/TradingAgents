@@ -1,0 +1,83 @@
+{
+  "schema": "author-crypto-benchmark-profile.v1",
+  "source_kind": "author_published_derived_weekly_factor_returns",
+  "sheets": 1,
+  "sheet_name": "Sheet1",
+  "used_range": "A1:D485",
+  "headers": [
+    "yyww",
+    "cmkt",
+    "csize",
+    "cmom"
+  ],
+  "data_rows": 479,
+  "first_yyww": 201404,
+  "last_yyww": 202314,
+  "first_nominal_week_label": "2014-01-28",
+  "last_nominal_week_label": "2023-04-08",
+  "year_rows": {
+    "2014": 49,
+    "2015": 52,
+    "2016": 52,
+    "2017": 52,
+    "2018": 52,
+    "2019": 52,
+    "2020": 52,
+    "2021": 52,
+    "2022": 52,
+    "2023": 14
+  },
+  "duplicate_week_keys": 0,
+  "interior_week_gaps": [],
+  "missing_numeric_cells": 0,
+  "formula_cells": 0,
+  "notes": [
+    {
+      "cell": "A1",
+      "text": "Citation: LIU, Y., TSYVINSKI, A. and WU, X. (2022), Common Risk Factors in Cryptocurrency. The Journal of Finance, 77: 1133-1177. https://doi.org/10.1111/jofi.13119"
+    },
+    {
+      "cell": "A2",
+      "text": "Weeks are defined as in Liu, Tsyvinski, and Wu (2022): 52 weeks a year with last week more than 7 days."
+    },
+    {
+      "cell": "A3",
+      "text": "Updated through 2022 and data are from coingecko since mid-2020."
+    }
+  ],
+  "units_explicit_in_workbook": false,
+  "update_note_matches_last_row_year": false,
+  "raw_coin_ids_present": false,
+  "raw_coin_market_caps_present": false,
+  "original_raw_input_gap_resolved": false,
+  "existing_account_overlap": {
+    "screen2025": {
+      "expected_nominal_week_labels": 52,
+      "overlap_rows": 0,
+      "first_overlap_label": null,
+      "last_overlap_label": null,
+      "all_nominal_week_labels_covered": false,
+      "publication_time_or_return_units_certified": false
+    },
+    "diagnostic2026": {
+      "expected_nominal_week_labels": 34,
+      "overlap_rows": 0,
+      "first_overlap_label": null,
+      "last_overlap_label": null,
+      "all_nominal_week_labels_covered": false,
+      "publication_time_or_return_units_certified": false
+    },
+    "continuous2025_2026": {
+      "expected_nominal_week_labels": 86,
+      "overlap_rows": 0,
+      "first_overlap_label": null,
+      "last_overlap_label": null,
+      "all_nominal_week_labels_covered": false,
+      "publication_time_or_return_units_certified": false
+    }
+  },
+  "new_financial_accounts": 0,
+  "external_review_performed": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

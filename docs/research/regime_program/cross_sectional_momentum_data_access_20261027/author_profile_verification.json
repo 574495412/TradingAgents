@@ -1,0 +1,9 @@
+{
+  "source_workbook_sha256_before_and_after": "a251b99a138dc20a4743948fbf5c511bc3cc38b73f3fe99dbd04a59cd38e95e6",
+  "artifact_tool_and_OOXML_sheet_range_agree": true,
+  "all_original_numeric_lexemes_preserved_no_unit_conversion": true,
+  "read_only_no_export_or_recalculation": true,
+  "profile_source_sha256": "0b825bd415106c33800d71dce63dadc03651f1edacff2596a7ad8a4137413290",
+  "reference_contract_sha256": "b777a82a37798eeb1a3536e46d0cad3c43a329f9b03275748266c6969226cb7c",
+  "no_external_third_party_review": true
+}

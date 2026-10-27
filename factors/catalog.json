@@ -1301,5 +1301,21 @@
     "old_74_columns_unchanged": true,
     "alpha_proven": false,
     "production_eligible": false
+  },
+  "author_crypto_risk_factor_reference": {
+    "module": "factors/reference/crypto_risk_benchmark.py",
+    "source": "https://xiwuacademic.com/data-and-code/",
+    "citation": "Liu, Tsyvinski, Wu(2022), Journal of Finance77(2),1133-1177, doi10.1111/jofi.13119",
+    "report": "../docs/research/regime_program/cross_sectional_momentum_data_access_20261027/README.md",
+    "kind": "ex_post_weekly_benchmark_not_raw_inputs_or_predictor",
+    "rows": 479,
+    "first_yyww": 201404,
+    "last_yyww": 202314,
+    "current_strategy_window_overlap": 0,
+    "return_units_explicitly_verified": false,
+    "new_financial_accounts": 0,
+    "old_74_columns_unchanged": true,
+    "alpha_proven": false,
+    "production_eligible": false
   }
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "btc",
+    "time": "2025-01-07T00:00:00.000000000Z",
+    "CapMrktCurUSD": "1920785694384.26005019124414392",
+    "CapMrktEstUSD": "1920752806505.6413551018",
+    "PriceUSD": "96974.9957857978",
+    "SplyCur": "19807020.1377164",
+    "current_supply_product_error": "0E-17",
+    "current_minus_estimated_usd": "32887878.61869508944414392",
+    "estimated_to_current_ratio": "0.9999828779031857388710523597865102776034474648610738793723843969865714999448945214872771432072843888",
+    "two_cap_definitions_equal": false,
+    "historical_publication_time_certified": false,
+    "full_universe_or_coin_identity_history_certified": false,
+    "independent_circulating_supply_verification": false
+  },
+  {
+    "asset": "eth",
+    "time": "2025-01-07T00:00:00.000000000Z",
+    "CapMrktCurUSD": "407533453442.94050522417315040145393887936",
+    "CapMrktEstUSD": "407509137794.44236321979642512",
+    "PriceUSD": "3382.56745979544",
+    "SplyCur": "120480510.229819924536489544",
+    "current_supply_product_error": "0E-29",
+    "current_minus_estimated_usd": "24315648.49814200437672528145393887936",
+    "estimated_to_current_ratio": "0.9999403345951290193107195834219800427593952168827224274943787437399917221584413268217148543512759653",
+    "two_cap_definitions_equal": false,
+    "historical_publication_time_certified": false,
+    "full_universe_or_coin_identity_history_certified": false,
+    "independent_circulating_supply_verification": false
+  }
+]

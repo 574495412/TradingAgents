@@ -1,0 +1,15 @@
+{
+  "schema": "crypto-momentum-author-data-availability.v1",
+  "version": "20261027_v001",
+  "question": "What does the authors' public three-factor workbook actually contain, does it supply coin-level historical capitalization and identity inputs, and does its date coverage overlap the frozen2025/2026accounts?",
+  "author_page": "https://xiwuacademic.com/data-and-code/",
+  "workbook_url": "https://www.dropbox.com/scl/fi/ho9gakmnxb483sxnyn1ws/LTW_3factor.xlsx?rlkey=aaaws7otlt3wbdbzggo67v5x5&dl=1",
+  "provenance": "Download link reached from the original coauthor's data page. The separate coauthor research page timed out in browser; no second author endorsement or separate dataset is inferred.",
+  "budget": {"maximum_native_requests": 5, "maximum_redirects": 3, "maximum_body_bytes_each": 8388608},
+  "redirect_hosts": ["www.dropbox.com", "dl.dropboxusercontent.com"],
+  "checks": ["preserve native response bytes/redirect receipts and author's usage terms", "read sheets, column labels, dates, uniqueness/missingness, formulas, units and notes without modifying the workbook", "derived factor returns do not replace raw capitalization/coin identities or tradable-account cash", "no regression or return calculation before comparable periods and declared units are established"],
+  "source_only": true,
+  "new_financial_accounts": 0,
+  "orders_enabled": false,
+  "profit_goal_met": false
+}

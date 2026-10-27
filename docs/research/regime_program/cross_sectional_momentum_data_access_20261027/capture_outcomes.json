@@ -1,0 +1,30 @@
+[
+  {
+    "capture": "data/research/cross_sectional_momentum_author_data_20261027_v001",
+    "outcome": "native_author_HTTP403; no workbook request"
+  },
+  {
+    "capture": "data/research/cross_sectional_momentum_author_data_20261027_v002",
+    "outcome": "decoded page lacked resolved filename; zero native requests; add actual link-resolution receipt"
+  },
+  {
+    "capture": "data/research/cross_sectional_momentum_author_data_20261027_v003",
+    "outcome": "public download302 to named CDN subdomain outside original exact-host list; stopped before CDN"
+  },
+  {
+    "capture": "data/research/cross_sectional_momentum_author_data_20261027_v004",
+    "outcome": "one explicitly inspected public CDN request200, unmodified24077byte workbook"
+  },
+  {
+    "capture": "data/research/cross_sectional_momentum_public_cap_20261027_v001",
+    "outcome": "official Community summary doc root directed to unified endpoint; historical API401"
+  },
+  {
+    "capture": "data/research/cross_sectional_momentum_public_cap_20261027_v002",
+    "outcome": "separate official API README documented Community hostname; identical historical query200, two rows"
+  },
+  {
+    "capture": "data/research/cross_sectional_momentum_public_estimated_cap_20261027_v001",
+    "outcome": "additional documented estimated-circulating-cap metric200, same two asset-date observations"
+  }
+]

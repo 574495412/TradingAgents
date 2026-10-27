@@ -1,0 +1,14 @@
+{
+  "manifest": {
+    "summary.json": "ddd2d03cfaa80c814d77c52b9c178cfef37a5ea10e0086a43a3e0164e053df8e",
+    "author_profile_verification.json": "ff83c2f7a1ff83e4d03a8324dd8e0c9e62668ca839e3623716bb62d6bfca5366",
+    "public_capitalization_rows.json": "78e89bd1655a5d003a0d45dd9d925c7e35625c732c04d076e4d9211b4e2002ce",
+    "README.md": "6a0f3066f72deacf0264c9c6ad482c6930bf408a8ab03f428fdb17a7ddb3ab5f",
+    "author_workbook_profile.json": "3a7b21d9c8e8d9379e88eb57419bc54debf971ac439f170b118dc86487626e6c",
+    "verification.json": "84d97a57ed968444dc90add903320b92fd3fd897f136e8b48e0945f1c5340527",
+    "capture_outcomes.json": "d320409f06ace87ad5b8d2223cd737fe55bfd60424b7a80cfbc19abd67685433",
+    "public_cap_verification.json": "1e8dbb47e18535adf5b9061f2d1f85314ace0fc9a3ef433d32dce6fab090dffa"
+  },
+  "new_financial_accounts": 0,
+  "profit_goal_met": false
+}
