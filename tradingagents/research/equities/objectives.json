@@ -1,6 +1,6 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261027_depth_v014",
+  "version": "20261027_depth_v015",
   "title": "股票优先 · 原始证据与独立验证",
   "program_status": "research_closed_with_limitations",
   "profit_goal_status": "not_met",
@@ -567,8 +567,8 @@
   },
   "research_closeout": {
     "schema": "equity-research-closeout.v1",
-    "basis": "用户本次明确要求：尽快完成研究，降低要求。",
-    "interpretation": "先完成本轮研究结题；未给出新的收益或回撤数值，因此保留原挑战数值。",
+    "basis": "用户明确要求降低研究结题要求，并已选择：按此执行，先完成研究结题。",
+    "interpretation": "用户已确认先完成研究结题；外部审计、容量及长期真实前向要求后置到相应准入/收益认证。50%年化、15%最大回撤保留为未达成的挑战，不能将研究报告完成解释为策略成功。",
     "status": "completed_with_limitations",
     "near_term_objective": "用已封存的数据、纠正后的结果、原始来源、方法、失败与未解项完成可复核研究结论，不再以外部独立审计、完整容量认证或12个月真实前向为本轮研究结题前提。",
     "required_for_research_closeout": [
@@ -599,6 +599,14 @@
     "external_attestation_received": false,
     "new_financial_accounts_for_closeout": 0,
     "future_performance_guaranteed": false,
-    "report": "docs/research/equities_depth_acceptance_20261026/README.md"
+    "report": "docs/research/equities_depth_acceptance_20261026/README.md",
+    "user_confirmation": {
+      "date_shanghai": "2026-10-27",
+      "choice": "按此执行，先完成研究结题",
+      "research_closeout_relaxation_confirmed": true,
+      "challenge_cagr": 0.5,
+      "max_drawdown": 0.15,
+      "challenge_retained_as_unmet": true
+    }
   }
 }
