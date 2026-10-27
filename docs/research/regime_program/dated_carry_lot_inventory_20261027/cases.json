@@ -1,0 +1,140 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "inputs": {
+      "spot_step": "0.00001",
+      "future_base_step": "0.001",
+      "base_fee_rate": "0.001",
+      "gross_spot_cap": "0.013344781233983596",
+      "short_base_cap": "0.013331436452749612"
+    },
+    "original_spot_entry_event": {
+      "type": "entry",
+      "market": "spot",
+      "symbol": "BTCUSDT",
+      "position_id": 1,
+      "time": "2025-01-01T00:05:00+00:00",
+      "submitted_at": "2025-01-01T00:00:00+00:00",
+      "quantity": 0.013331436452749612,
+      "gross_quantity": 0.013344781233983596,
+      "price": 93754.86119999998,
+      "fee": 1.2511381123365304,
+      "cash_delta": -1251.1381123364965,
+      "notional": 1251.1381123364965,
+      "slippage_cost": 1.2498882241122207
+    },
+    "original_future_entry_event": {
+      "type": "entry",
+      "market": "perp",
+      "symbol": "BTCUSDT",
+      "position_id": 1,
+      "time": "2025-01-01T00:05:00+00:00",
+      "submitted_at": "2025-01-01T00:00:00+00:00",
+      "quantity": 0.013331436452749612,
+      "gross_quantity": 0.013331436452749612,
+      "price": 96658.4448,
+      "fee": 0.6442979572364032,
+      "cash_delta": -0.6442979572364032,
+      "notional": 1288.5959144728063,
+      "slippage_cost": 1.289885800273074
+    },
+    "minimum_exact_pair": {
+      "spot_lots": 100000,
+      "future_lots": 999,
+      "gross_spot": "1",
+      "net_spot": "0.999",
+      "short_base": "0.999",
+      "base_fee": "0.001",
+      "ratio_a": 999,
+      "ratio_b": 100000,
+      "venue_order_eligibility_certified": false
+    },
+    "bounded_cover": {
+      "spot_lots": 1302,
+      "future_lots": 13,
+      "gross_spot": "0.01302",
+      "base_fee": "0.00001302",
+      "net_spot": "0.01300698",
+      "short_base": "0.013",
+      "unhedged_long_base": "0.00000698",
+      "spot_sell_on_same_grid": "0.013",
+      "retained_exit_dust_base": "0.00000698",
+      "matched_exactly": false,
+      "nonzero_discrete_pair": true,
+      "spot_cap_not_exceeded": true,
+      "future_cap_not_exceeded": true,
+      "actual_hedge_fill_or_venue_order_eligibility_certified": false
+    },
+    "historical_order_rules_certified": false,
+    "new_financial_account": false
+  },
+  {
+    "symbol": "ETHUSDT",
+    "inputs": {
+      "spot_step": "0.0001",
+      "future_base_step": "0.001",
+      "base_fee_rate": "0.001",
+      "gross_spot_cap": "0.004314438541992159",
+      "short_base_cap": "0.004310124103450167"
+    },
+    "original_spot_entry_event": {
+      "type": "entry",
+      "market": "spot",
+      "symbol": "ETHUSDT",
+      "position_id": 2,
+      "time": "2025-01-01T00:05:00+00:00",
+      "submitted_at": "2025-01-01T00:00:00+00:00",
+      "quantity": 0.004310124103450167,
+      "gross_quantity": 0.004314438541992159,
+      "price": 3343.6002599999997,
+      "fee": 0.014425757830757927,
+      "cash_delta": -14.425757830759002,
+      "notional": 14.425757830759002,
+      "slippage_cost": 0.014411346484272525
+    },
+    "original_future_entry_event": {
+      "type": "entry",
+      "market": "perp",
+      "symbol": "ETHUSDT",
+      "position_id": 2,
+      "time": "2025-01-01T00:05:00+00:00",
+      "submitted_at": "2025-01-01T00:00:00+00:00",
+      "quantity": 0.004310124103450167,
+      "gross_quantity": 0.004310124103450167,
+      "price": 3439.8766800000003,
+      "fee": 0.007413147695682069,
+      "cash_delta": -0.007413147695682069,
+      "notional": 14.82629539136414,
+      "slippage_cost": 0.014841136527891416
+    },
+    "minimum_exact_pair": {
+      "spot_lots": 10000,
+      "future_lots": 999,
+      "gross_spot": "1",
+      "net_spot": "0.999",
+      "short_base": "0.999",
+      "base_fee": "0.001",
+      "ratio_a": 999,
+      "ratio_b": 10000,
+      "venue_order_eligibility_certified": false
+    },
+    "bounded_cover": {
+      "spot_lots": 41,
+      "future_lots": 4,
+      "gross_spot": "0.0041",
+      "base_fee": "0.0000041",
+      "net_spot": "0.0040959",
+      "short_base": "0.004",
+      "unhedged_long_base": "0.0000959",
+      "spot_sell_on_same_grid": "0.004",
+      "retained_exit_dust_base": "0.0000959",
+      "matched_exactly": false,
+      "nonzero_discrete_pair": true,
+      "spot_cap_not_exceeded": true,
+      "future_cap_not_exceeded": true,
+      "actual_hedge_fill_or_venue_order_eligibility_certified": false
+    },
+    "historical_order_rules_certified": false,
+    "new_financial_account": false
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "schema": "dated-carry-integer-inventory-diagnostic.v1",
+  "hypothesis": "Under the explicitly assumed base-fee model, exact equal-net quantity across two discrete grids may require more capital/liquidity than allowed. A capped minimal covering spot purchase can leave unhedged long and unsellable dust which must remain owned inventory.",
+  "parents": ["docs/research/regime_program/dated_carry_execution_witness_20261027", "data/research/dated_carry_order_metadata_20261027_v001"],
+  "original_accounts": "results/research/dated_carry_accounts_20261027_v001",
+  "cases": ["BTCUSDT", "ETHUSDT"],
+  "original_reference_policy": "hold_to_delivery_slip10",
+  "spot_step_assumptions": {"BTCUSDT": "0.00001", "ETHUSDT": "0.0001"},
+  "future_base_step_assumption": "0.001",
+  "step_basis": "Observed first-bar native trade quantity GCD only, not certified historical market-order filters. Do not import spot/perpetual/inverse rules as dated contract proof.",
+  "base_fee_rate": "0.001",
+  "fee_basis": "Same10bps base-asset spot-entry fee assumed by the old account; actual fee asset/rate/rounding unverified. No switch to BNB or quote fee to improve outcome.",
+  "caps": "Use each original event's gross spot quantity and net short quantity as hard maximums. No larger cash/liquidity budget, retries, alternative fee/step grid or price selection.",
+  "method": "Fraction/GCD coprime proof of minimum exact pair; floor max short lots under both caps, then ceil the smallest gross spot lots to cover. Retain net-minus-short and net-minus-sellable as distinct owned residuals. Cash/order filters are separate, unknown gates.",
+  "outputs": ["minimum exactly matched pair and whether it fits both original quantity caps", "largest capped future lots and smallest covering spot lots; exact base-fee conservation", "unhedged base inventory and exit-grid dust, no automatic conversion", "entry notional thresholds above which the diagnostic orders would be rejected; actual minimum-notional values remain unknown", "independent integer-unit reconstruction without importing factor implementation"],
+  "stopping": "Only arithmetic/constraint diagnosis, not a new financial return path or repaired quarter. Do not mark matched hedge or closed account when residual inventory survives.",
+  "budget": {"new_financial_accounts": 0, "new_economic_variants": 0, "new_model_fits": 0, "new_HTTP_requests": 0},
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

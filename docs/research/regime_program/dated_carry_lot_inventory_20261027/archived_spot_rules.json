@@ -1,0 +1,156 @@
+[
+  {
+    "symbol": "BTC/USDT",
+    "fixture_source": {
+      "name": "binance.json",
+      "path": "ts/src/test/static/markets/binance.json",
+      "commit": "f2724b09c422fd8d44ca29b753e482ceb63820ba",
+      "commit_date": "2024-09-10T10:26:40Z",
+      "body_available": true,
+      "exact_contract_strings_present": {
+        "BTCUSDT_250328": false,
+        "ETHUSDT_250328": false
+      },
+      "historical_order_filters_certified": false
+    },
+    "original_info": {
+      "symbol": "BTCUSDT",
+      "baseAsset": "BTC",
+      "quoteAsset": "USDT",
+      "baseCommissionPrecision": "8",
+      "filters": [
+        {
+          "filterType": "PRICE_FILTER",
+          "minPrice": "0.01000000",
+          "maxPrice": "1000000.00000000",
+          "tickSize": "0.01000000"
+        },
+        {
+          "filterType": "LOT_SIZE",
+          "minQty": "0.00001000",
+          "maxQty": "9000.00000000",
+          "stepSize": "0.00001000"
+        },
+        {
+          "filterType": "ICEBERG_PARTS",
+          "limit": "10"
+        },
+        {
+          "filterType": "MARKET_LOT_SIZE",
+          "minQty": "0.00000000",
+          "maxQty": "129.23128204",
+          "stepSize": "0.00000000"
+        },
+        {
+          "filterType": "TRAILING_DELTA",
+          "minTrailingAboveDelta": "10",
+          "maxTrailingAboveDelta": "2000",
+          "minTrailingBelowDelta": "10",
+          "maxTrailingBelowDelta": "2000"
+        },
+        {
+          "filterType": "PERCENT_PRICE_BY_SIDE",
+          "bidMultiplierUp": "5",
+          "bidMultiplierDown": "0.2",
+          "askMultiplierUp": "5",
+          "askMultiplierDown": "0.2",
+          "avgPriceMins": "5"
+        },
+        {
+          "filterType": "NOTIONAL",
+          "minNotional": "5.00000000",
+          "applyMinToMarket": true,
+          "maxNotional": "9000000.00000000",
+          "applyMaxToMarket": false,
+          "avgPriceMins": "5"
+        },
+        {
+          "filterType": "MAX_NUM_ORDERS",
+          "maxNumOrders": "200"
+        },
+        {
+          "filterType": "MAX_NUM_ALGO_ORDERS",
+          "maxNumAlgoOrders": "5"
+        }
+      ]
+    },
+    "whole_quarter_rules_certified": false
+  },
+  {
+    "symbol": "ETH/USDT",
+    "fixture_source": {
+      "name": "binance.json",
+      "path": "ts/src/test/static/markets/binance.json",
+      "commit": "f2724b09c422fd8d44ca29b753e482ceb63820ba",
+      "commit_date": "2024-09-10T10:26:40Z",
+      "body_available": true,
+      "exact_contract_strings_present": {
+        "BTCUSDT_250328": false,
+        "ETHUSDT_250328": false
+      },
+      "historical_order_filters_certified": false
+    },
+    "original_info": {
+      "symbol": "ETHUSDT",
+      "baseAsset": "ETH",
+      "quoteAsset": "USDT",
+      "baseCommissionPrecision": "8",
+      "filters": [
+        {
+          "filterType": "PRICE_FILTER",
+          "minPrice": "0.01000000",
+          "maxPrice": "1000000.00000000",
+          "tickSize": "0.01000000"
+        },
+        {
+          "filterType": "LOT_SIZE",
+          "minQty": "0.00010000",
+          "maxQty": "9000.00000000",
+          "stepSize": "0.00010000"
+        },
+        {
+          "filterType": "ICEBERG_PARTS",
+          "limit": "10"
+        },
+        {
+          "filterType": "MARKET_LOT_SIZE",
+          "minQty": "0.00000000",
+          "maxQty": "3426.90362291",
+          "stepSize": "0.00000000"
+        },
+        {
+          "filterType": "TRAILING_DELTA",
+          "minTrailingAboveDelta": "10",
+          "maxTrailingAboveDelta": "2000",
+          "minTrailingBelowDelta": "10",
+          "maxTrailingBelowDelta": "2000"
+        },
+        {
+          "filterType": "PERCENT_PRICE_BY_SIDE",
+          "bidMultiplierUp": "5",
+          "bidMultiplierDown": "0.2",
+          "askMultiplierUp": "5",
+          "askMultiplierDown": "0.2",
+          "avgPriceMins": "5"
+        },
+        {
+          "filterType": "NOTIONAL",
+          "minNotional": "5.00000000",
+          "applyMinToMarket": true,
+          "maxNotional": "9000000.00000000",
+          "applyMaxToMarket": false,
+          "avgPriceMins": "5"
+        },
+        {
+          "filterType": "MAX_NUM_ORDERS",
+          "maxNumOrders": "200"
+        },
+        {
+          "filterType": "MAX_NUM_ALGO_ORDERS",
+          "maxNumAlgoOrders": "5"
+        }
+      ]
+    },
+    "whole_quarter_rules_certified": false
+  }
+]

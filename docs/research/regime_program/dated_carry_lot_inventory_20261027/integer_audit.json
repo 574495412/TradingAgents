@@ -1,0 +1,24 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "passed": true,
+    "integer_base_decimals": 18,
+    "minimum_exact_pair_coprime_proof": true,
+    "maximum_capped_short_and_minimum_covering_spot_proved": true,
+    "base_fee_and_inventory_conservation_exact": true,
+    "residual_and_dust_retained_not_written_off": true,
+    "factor_module_imported": false,
+    "actual_historical_filters_or_client_cash_certified": false
+  },
+  {
+    "symbol": "ETHUSDT",
+    "passed": true,
+    "integer_base_decimals": 18,
+    "minimum_exact_pair_coprime_proof": true,
+    "maximum_capped_short_and_minimum_covering_spot_proved": true,
+    "base_fee_and_inventory_conservation_exact": true,
+    "residual_and_dust_retained_not_written_off": true,
+    "factor_module_imported": false,
+    "actual_historical_filters_or_client_cash_certified": false
+  }
+]

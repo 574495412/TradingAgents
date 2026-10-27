@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "manifest": {
+    "summary.json": "275d002cb04afd8eefc9bd806042a10d931fced16566fc35649afc4bb371b486",
+    "historical_source_review.json": "63f55f3ebbcd3d99c17296ed2fbc471d13ed1fd8b7f75dc4c6d4347e52101ca8",
+    "archived_spot_rules.json": "572c2993035f2dbeec526364f6212b1d0a6ca38addaf5deec0ead3874089a442",
+    "inventory_value_diagnostics.json": "feade476f3c6f7ce29ea0326b65a0678f238fb59eea998606c71ed6d19cde34e",
+    "README.md": "fb07de811cba3af76be9c5627957434af50efaf3c27fc9dfad72c4c9de12477c",
+    "cases.json": "90ec11a0b60f96c9a4cbdd421f77206be745bad337831dff5dec115dcc91df63",
+    "verification.json": "dd7c03831223dbbf126293fdde22eeb481d5f32ed28882ba7b1f6cd17e7c7fbc",
+    "integer_audit.json": "e71834aaac392ae48dd4275ebddb8c3b0b175e080b0bfd50866740a906113e50"
+  },
+  "profit_goal_met": false
+}

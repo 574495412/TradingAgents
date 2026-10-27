@@ -1240,6 +1240,16 @@
         "baseline_3bps_quote_counterexample": true,
         "historical_order_filters_and_full_execution_certified": false,
         "module_admitted": false
+      },
+      "inventory_contract": {
+        "module": "factors/common/lot_inventory.py",
+        "report": "../docs/research/regime_program/dated_carry_lot_inventory_20261027/README.md",
+        "role": "shared_discrete_inventory_arithmetic_not_new_alpha_column",
+        "state": "conditional_arithmetic_proved_historical_dated_filters_unknown",
+        "new_financial_accounts": 0,
+        "legacy_engine_updated": false,
+        "actual_historical_venue_rules_certified": false,
+        "production_eligible": false
       }
     },
     "reference_stage_financial_accounts": 0

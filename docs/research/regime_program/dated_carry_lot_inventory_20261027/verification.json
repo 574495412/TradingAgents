@@ -1,0 +1,19 @@
+{
+  "files_sha256": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/review_lot_inventory.py": "0e0ccd3dba50f08a2a6e9d7c40f0a655eb431c9d6a88e570b8422dde3463c116",
+    "factors/common/lot_inventory.py": "a8caa11653d33b0d5f200e36ef9ab72891612711c894c2c8da277b3b20318913",
+    "research_tools/dated_carry/audit_lot_inventory.py": "af90996df43b7132cd8c07861662c76e3574d0b057b11bfa5c67bb76ca9666e2",
+    "tests/research_mainline/test_lot_inventory.py": "4c8939b403dda723a6466acf3bde7f93f435ff63cf5cce15d6ffd1ff2b061b9f",
+    "data/research/dated_carry_order_metadata_20261027_v001/completion.json": "71819e8e95dcb88ef78597ae2d967d7b5cad62a2dc9a48afef7668ff66f6dfd8",
+    "results/research/dated_carry_lot_inventory_20261027_v001/completion.json": "4aa560e0f3d4578c8f71b32987e011e63c2af4052318014fb239bce1c4387360",
+    "docs/research/regime_program/dated_carry_execution_witness_20261027/completion.json": "78671a64d40540d1fc581ed07e52a152a0dfe2504b6b5c9797b64aa87b542202",
+    "results/research/dated_carry_accounts_20261027_v001/completion.json": "f1e3d1f4c8b3a4345e18b93f5eff353e0f0d637201557d250b80894c61c634c8"
+  },
+  "historical_rules_unknown_not_backfilled_from_perpetual": true,
+  "integer_audit_not_external_review": true,
+  "two_inventory_times_not_summed_as_distinct_dust": true,
+  "new_tests_passed": 12,
+  "test_scope": "exact lattice, capped cover, fee/quantity conservation, zero caps, stock integer-lot arithmetic, decimal-context invariance and rejected dust writeoff; not profitability proof",
+  "financial_accounts_replayed": 0,
+  "profit_goal_met": false
+}

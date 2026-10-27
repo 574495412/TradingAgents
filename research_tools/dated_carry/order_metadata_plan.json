@@ -1,0 +1,16 @@
+{
+  "schema": "dated-carry-order-metadata-search.v1",
+  "purpose": "Locate a pre-entry archived exchangeInfo fixture for the same BTC/ETH250328 contracts. Do not substitute current rules, COIN-M or perpetual quantities for historical dated order filters.",
+  "parent": "docs/research/regime_program/dated_carry_execution_witness_20261027",
+  "repository": "ccxt/ccxt",
+  "initial_directory": "ts/src/test/static",
+  "target_market_files": ["binance.json", "binanceusdm.json"],
+  "cutoff": "2024-12-31T23:59:59Z",
+  "contracts": ["BTCUSDT_250328", "ETHUSDT_250328"],
+  "budget": {"read_only_HTTP_requests_max": 7, "response_bytes_max": 12000000, "new_financial_accounts": 0, "new_model_fits": 0},
+  "method": "Discover paths from public repository listings, then request the last commit touching each file before cutoff and read that exact raw commit. Preserve HTTP failures and commits/dates. Match original info.symbol and retain full raw filters, not just normalized precision.",
+  "evidence_limit": "A Git fixture and commit history are historical source artifacts, not signed exchange responses, proof that rules remained unchanged for the whole quarter, actual client fees or historical access latency. Missing exact contract remains unknown.",
+  "permissions": "Read-only anonymous public GitHub calls, no credentials, subscription or orders.",
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

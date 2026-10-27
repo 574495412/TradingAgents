@@ -80,3 +80,9 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 `common/monthly_tsmom.py`保存12个日历月经济收益方向及COM60有限历史风险数学；`crypto/perpetual_returns.py`从原始价格与逐事件mark×rate构造永续日收益输入。它们登记于`catalog.json.monthly_tsmom_research_registry`，不加入旧74列，也不代表两个独立alpha。此接口要求完整UTC自然日，股票须另适配实际交易日历、分红与公司行动。4条月度本地账户两成本均负，未获准入；原论文复现、价格信号、经济指数与净账户收益分别验收。见[完整结果](../docs/research/regime_program/monthly_tsmom_20261027_v002/README.md)。
 
 该月度信号的[持有政策反证](../docs/research/regime_program/monthly_hold_policy_20261027/README.md)复用完全相同目标，只在Freqtrade新版本中显式关闭8%单仓止损并保留15%账户停机；不是新因子或同风险改进。4条新政策账户仍负，无模块准入；2条默认开启路径精确复现旧结果，1条TON已知退出病例单列，不混为独立alpha。
+
+## 跨资产整手与收费后库存约束
+
+`common/lot_inventory.py`保存Fraction精确的最小配对格点、两个数量上限内的最大整手空头/最小覆盖现货，以及净库存、残余敞口和同网格可售量/余币；不是新增alpha列。基础币收费与报价币费用分开，后者由独立现金账本核算，不能为消除余币改变收费合同。股票可复用整数手数数学，但本模块不认证交易日历、券商手数或任何实际订单资格。
+
+现有季度账户引擎尚未接入此约束。BTC/ETH两条观察格点病例证明完全相等数量不在原上限内，保留余币的覆盖方案也不是历史可成交订单；原收益不重写。原始数据、历史快照限制、整数反证及12项测试见[库存约束报告](../docs/research/regime_program/dated_carry_lot_inventory_20261027/README.md)。

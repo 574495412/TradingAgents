@@ -1,0 +1,19 @@
+{
+  "inventory_cases": 2,
+  "independent_integer_proofs": 2,
+  "minimum_exact_gross_spot_one_base_coin_under_assumptions": true,
+  "exact_pairs_fit_original_caps": false,
+  "both_bounded_plans_have_owned_residual_and_dust": true,
+  "metadata_commit": "f2724b09c422fd8d44ca29b753e482ceb63820ba",
+  "metadata_commit_date": "2024-09-10T10:26:40Z",
+  "exact_250328_historical_rules_obtained": false,
+  "new_financial_accounts": 0,
+  "original_quarter_returns_changed": false,
+  "new_strategy_or_model": false,
+  "actual_execution_or_capacity_certified": false,
+  "module_admitted": false,
+  "external_review_performed": false,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

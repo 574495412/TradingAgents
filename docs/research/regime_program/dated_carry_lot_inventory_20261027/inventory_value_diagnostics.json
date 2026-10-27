@@ -1,0 +1,24 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "minimum_exact_pair_fits_original_caps": false,
+    "spot_gross_notional_at_entry_ask": "1219.4689542000000",
+    "future_notional_at_entry_bid": "1257.7578",
+    "residual_or_dust_value_at_entry_bid": "0.6537551760000000",
+    "minimum_exact_pair_spot_notional_at_entry_ask": "93661.21000000",
+    "price_reference": "Indicative entry BBO only; not actual venue market-order minimum-notional reference or terminal liquidation value.",
+    "actual_minimum_notional_status": "unknown",
+    "actual_historical_dated_filters_certified": false
+  },
+  {
+    "symbol": "ETHUSDT",
+    "minimum_exact_pair_fits_original_caps": false,
+    "spot_gross_notional_at_entry_ask": "13.695189000000",
+    "future_notional_at_entry_bid": "13.76752",
+    "residual_or_dust_value_at_entry_bid": "0.320332852000000",
+    "minimum_exact_pair_spot_notional_at_entry_ask": "3340.29000000",
+    "price_reference": "Indicative entry BBO only; not actual venue market-order minimum-notional reference or terminal liquidation value.",
+    "actual_minimum_notional_status": "unknown",
+    "actual_historical_dated_filters_certified": false
+  }
+]
