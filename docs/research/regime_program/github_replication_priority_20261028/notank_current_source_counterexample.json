@@ -1,0 +1,16 @@
+{
+  "schema": "notank-current-source-prefix-counterexample.v1",
+  "decision_index": 249,
+  "decision_close": 751.0,
+  "unchanged_information_through_decision": true,
+  "prefix_minima": 0.0,
+  "with_future_minima": 1.0,
+  "prefix_minima_check": 1.0,
+  "with_future_minima_check": 0.0,
+  "prefix_minima_full_send_branch": false,
+  "with_future_minima_full_send_branch": true,
+  "causal_invariance_violated": true,
+  "current_source_only_not_original_report_identity": true,
+  "historical_PnL_evaluated": false,
+  "source_sha256": "c34c93051a13c2a1ca0014ab2f18ca984d18bec98ce4438ef774af8d5ec78094"
+}

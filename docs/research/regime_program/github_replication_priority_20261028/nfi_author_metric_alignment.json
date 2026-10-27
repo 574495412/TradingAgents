@@ -1,0 +1,95 @@
+{
+  "metrics": [
+    {
+      "metric": "backtest_start",
+      "author": "2025-01-01 00:00:00",
+      "local": "2025-01-01 00:00:00",
+      "match": true
+    },
+    {
+      "metric": "backtest_end",
+      "author": "2025-02-01 00:00:00",
+      "local": "2025-02-01 00:00:00",
+      "match": true
+    },
+    {
+      "metric": "starting_balance",
+      "author": 10000,
+      "local": 10000,
+      "match": true
+    },
+    {
+      "metric": "final_balance",
+      "author": 18188.637361229998,
+      "local": 18188.637361229998,
+      "match": true
+    },
+    {
+      "metric": "profit_total",
+      "author": 0.8188637361229999,
+      "local": 0.8188637361229999,
+      "match": true
+    },
+    {
+      "metric": "profit_total_abs",
+      "author": 8188.637361229999,
+      "local": 8188.637361229999,
+      "match": true
+    },
+    {
+      "metric": "total_trades",
+      "author": 72,
+      "local": 72,
+      "match": true
+    },
+    {
+      "metric": "wins",
+      "author": 70,
+      "local": 70,
+      "match": true
+    },
+    {
+      "metric": "losses",
+      "author": 2,
+      "local": 2,
+      "match": true
+    },
+    {
+      "metric": "max_drawdown_account",
+      "author": 0.013912372679660966,
+      "local": 0.013912372679660966,
+      "match": true
+    },
+    {
+      "metric": "sharpe",
+      "author": 36.773758776572386,
+      "local": 36.773758776572386,
+      "match": true
+    },
+    {
+      "metric": "max_open_trades",
+      "author": 6,
+      "local": 6,
+      "match": true
+    },
+    {
+      "metric": "stake_amount",
+      "author": "unlimited",
+      "local": "unlimited",
+      "match": true
+    },
+    {
+      "metric": "stoploss",
+      "author": -0.99,
+      "local": -0.99,
+      "match": true
+    }
+  ],
+  "all_metrics_match": true,
+  "all_trade_order_fields_match": true,
+  "closed_trade_and_full_equity_metrics_are_separate": true,
+  "source_sha256": {
+    "/Users/chrise/GitHub/TradingAgents/data/research/nfi_original_author_artifact_20261027_v001/text/backtest-result-2026-10-22_12-14-52.json": "4baefb32b3dd2cab75d0cdbd7d57f90b947656a1008045252cfd8180d287bbfd",
+    "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/A_original_observed_v003/native_results/backtest-result-2026-10-27_15-32-06.zip": "49d51f76cc8587955e33af2331353042b9623d1edefaa78200709f122c98c5c1"
+  }
+}

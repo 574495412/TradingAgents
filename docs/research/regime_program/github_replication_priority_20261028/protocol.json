@@ -1,0 +1,65 @@
+{
+  "schema": "github-strategy-replication-first.v1",
+  "effective_date": "2026-10-28",
+  "user_instruction": "先不要自研，优先对齐GitHub策略收益口径，寻找高收益策略，复刻后再优化。",
+  "self_developed_factors_allowed": false,
+  "new_model_or_strategy_design_allowed": false,
+  "custom_risk_overlays_before_replication": false,
+  "threshold_search_before_replication": false,
+  "reuse_existing_projects_and_UI": true,
+  "original_NFI_baseline_preserved": true,
+  "scope": "先覆盖已有加密币种研究与Freqtrade生态；港美股保持独立账户，收益不混排。",
+  "stage_order": [
+    "作者原版口径与逐笔一致性",
+    "公开源码与报告候选池",
+    "作者披露收益线索排序并追溯原件",
+    "选定候选按原版引擎/数据/配置逐笔复现",
+    "可比条件下按真实账户净收益比较",
+    "通过后才登记优化"
+  ],
+  "required_original_contract": [
+    "repository+commit+license",
+    "strategy_version+parameters+dependencies",
+    "original_engine+data_identity",
+    "exchange+spot_or_futures+timeframe+period",
+    "pairlist+missing_or_delisted_policy",
+    "initial_capital+cash_flows+stake_mode+slots+leverage+compounding",
+    "fees+slippage+funding+force_exit",
+    "full_closed_and_open_inventory+trade_and_order_exports",
+    "reported_metric_formulas+annualization+drawdown_and_sharpe_scope"
+  ],
+  "metric_contract": {
+    "primary_return": "固定本金无外部划转：final_settled_equity / initial_capital - 1；有现金流须明确TWR或MWR，未明确则不混排。",
+    "author_report_replication": "保留原版各字段、原版已平仓回撤与夏普；先核对这些字段，不用全持仓指标替换后声称不一致。",
+    "parallel_account_view": "另列完整持仓净值、退出准备、资金费、实际敞口及对应回撤/日夏普，标明参考价格/可成交价格。",
+    "not_equivalent": [
+      "累计每笔收益百分比",
+      "单笔平均收益",
+      "每笔名义额收益",
+      "账户总收益",
+      "短窗外推CAGR",
+      "不同本金、周期、币池、杠杆和现货/合约的宣传收益"
+    ]
+  },
+  "ranking_contract": {
+    "claim_leader": "收录范围内作者披露的最高数字，仅作取证优先级，注明单位/周期/杠杆/已知偏差。",
+    "verified_leader": "同可比条件、原版逐笔复现通过的账户净收益最高者；未完成共同条件不得宣布跨策略冠军。",
+    "global_GitHub_highest_claim_allowed": false,
+    "source_gaps": "unknown，保留报告与错误原件，不自行补参数冒充作者原版。",
+    "risk_constraints": "自定义gross/止损/停机不作为原版复现准入条件；数学泄漏、错分母和缺失现金另行核验。",
+    "optimizer_gate": [
+      "selected original report and local result reconciled",
+      "highest-return claim traceable and source-contract complete",
+      "comparison cohort and chosen objective explicit",
+      "baseline frozen and optimization variant registered separately"
+    ]
+  },
+  "orders_enabled": false,
+  "production_eligible": false,
+  "allowed_pre_replication_diagnostics": [
+    "源码/报告身份核对",
+    "指标公式与分母核对",
+    "只读因果性合成反例；不计为金融账户或自研收益因子"
+  ],
+  "legacy_portfolio_gates_deferred_during_original_replication": true
+}

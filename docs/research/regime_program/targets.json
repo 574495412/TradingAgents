@@ -1,11 +1,11 @@
 {
   "schema": "multi-regime-research-program.v1",
-  "version": "20261027_v007",
-  "effective_date_shanghai": "2026-10-27",
-  "title": "多行情量化研发：以资本决策为终点的深度目标",
+  "version": "20261028_v008",
+  "effective_date_shanghai": "2026-10-28",
+  "title": "GitHub公开策略：先对齐收益口径、复现，再优化",
   "program_status": "active",
   "profit_goal_status": "not_met",
-  "objective": "在既有三项目与统一factors目录内，每轮只判定一个收益机制是否值得在明确行情和资金约束下投入资本。以流动性充足币种的中低频趋势／动量为起点，优先查原始论文、源码与基金披露，再核对本地偏离；已有反证和已看历史完整保留。结果评估前登记经济假设、最强替代解释、适用／禁用域、必要原始记录及其可用时点、唯一规则变体、完整成交与现金合同、简单对照、最小有用净效应、证据充分性和有限补证预算。从原始记录重建连续扣费账户，报告净收益、完整周期胜率、回撤、夏普、资本占用、容量边界及分时段表现，区分市场暴露、尾部风险补偿和可执行增量。用未参与开发者复算、规则冻结后的真正未见结果及另获授权后的原始成交账单分别检验实现、泛化与已发生经济收益；缺失层级保持未完成。每轮交付支持、反驳或未知的机制判定和继续、终止或封存决定。至少两个不同机制各自取得准入证据后，才检验共享资金、切换成本与共同容量下的组合；总账户以原本金、扣费年化20%／挑战30%、最大回撤15%、夏普至少1作待验证研发参照；杠杆、仓位、止损和停机预算本身也要检验收益代价、尾部损失及恢复能力。不得通过扩大搜索、事后路由、拼接短窗或隐瞒风险预算变化宣称达标。",
+  "objective": "暂停自研因子、模型与新策略。先以GitHub公开策略的原版commit、数据、引擎和配置复现作者披露的完整账户，逐笔对齐净收益、成交、费用、资金费、持仓、回撤和夏普口径；保留作者口径并另列全持仓口径。搜集有源码与可追溯业绩的高收益候选，披露收益仅作取证顺序；在可比市场、周期、资本、币池、成本和杠杆层级下确定本候选池中已复现的最高账户收益策略，再以冻结原版为基线优化。未对齐前不改信号、参数或加自定义风险覆盖。长期盈利、容量与实盘证据分别验证；不声称已找到GitHub全网最高或未来必然盈利。",
   "target_basis": "20%基础/30%挑战年化、最大回撤15%、日夏普至少1仍是多策略总账户的待验证研发目标，不是保证收益、行业标准、单策略门槛或统计显著性证明。研究结果允许支持、反驳或证据不足；否定一个假设是有效研究进展，不等于总收益目标完成。 用户已要求重新检验风险约束：gross 0.8、止损、15%永久停机不是跨策略公理；旧计划按原合同保留，后续对照其收益代价、回撤改善及恢复表现，数值暂作参照且未指定替换值。",
   "ownership": {
     "TradingAgents": "目标、来源、统一因子、行情识别、训练编排与独立审计",
@@ -342,7 +342,7 @@
       "id": "R06",
       "title": "验证分层协议下共享账户多策略组合",
       "owner": "Freqtrade + TradingAgents",
-      "status": "in_progress",
+      "status": "planned",
       "depends_on": [
         "R02",
         "R03",
@@ -390,13 +390,16 @@
         "options_vrp_feasibility_20261027/README.md",
         "options_vrp_feasibility_20261027/verification.json"
       ],
-      "outcome": "既有金融拒绝及共同亏损诊断保留；新的期权风险溢价只完成原始方法/单分钟数据与单位核验，尚无合格资金合同或新账户，没有新机制或共享资金组合。"
+      "outcome": "既有金融拒绝及共同亏损诊断保留；新的期权风险溢价只完成原始方法/单分钟数据与单位核验，尚无合格资金合同或新账户，没有新机制或共享资金组合。",
+      "prior_status_before_replication_first": "in_progress",
+      "execution_state": "deferred_by_user_replication_first",
+      "defer_reason": "先复现GitHub策略，当前不继续自研组合、分配或风险变体。"
     },
     {
       "id": "R07",
       "title": "收益、分行情稳定性与容量独立验收",
       "owner": "TradingAgents",
-      "status": "in_progress",
+      "status": "planned",
       "depends_on": [
         "R06"
       ],
@@ -445,7 +448,10 @@
         "options_vrp_feasibility_20261027/README.md",
         "options_vrp_feasibility_20261027/verification.json"
       ],
-      "outcome": "期权34状态历史序列可重建；跨渠道接收差异、BTC/USD/forward计价及条件手数失败保留。完整生命周期、费用/保证金/钱包、容量、第三方和真正未见仍未完成。"
+      "outcome": "期权34状态历史序列可重建；跨渠道接收差异、BTC/USD/forward计价及条件手数失败保留。完整生命周期、费用/保证金/钱包、容量、第三方和真正未见仍未完成。",
+      "prior_status_before_replication_first": "in_progress",
+      "execution_state": "deferred_by_user_replication_first",
+      "defer_reason": "先复现GitHub策略，当前不继续自研组合、分配或风险变体。"
     },
     {
       "id": "R08",
@@ -513,6 +519,57 @@
         "fund_methods_20261026/sources.json",
         "protocol_archive/20261026_before_fund_review_v001/completion.json"
       ]
+    },
+    {
+      "id": "G01",
+      "title": "原版收益与成交口径逐笔对齐",
+      "owner": "Freqtrade + TradingAgents",
+      "status": "done",
+      "depends_on": [],
+      "done_when": "NFI原版报告及本地72笔交易217笔成交、净收益、费用与资金费逐字段一致。",
+      "evidence": [
+        "nfi_original_reproduction_20261027/original_audit.json"
+      ]
+    },
+    {
+      "id": "G02",
+      "title": "搜集高收益GitHub策略及原始业绩合同",
+      "owner": "TradingAgents",
+      "status": "in_progress",
+      "depends_on": [
+        "G01"
+      ],
+      "done_when": "候选每条保留commit/源码/报告/口径/缺失字段，披露数字与可比净收益分开。"
+    },
+    {
+      "id": "G03",
+      "title": "复现披露收益领先且原件齐备的候选",
+      "owner": "Freqtrade + TradingAgents",
+      "status": "planned",
+      "depends_on": [
+        "G02"
+      ],
+      "done_when": "按选定原版逐笔复现，并解释全部收益差异；缺原件不自补参数。"
+    },
+    {
+      "id": "G04",
+      "title": "在共同可比条件确定已复现收益领先策略",
+      "owner": "Freqtrade + TradingAgents",
+      "status": "planned",
+      "depends_on": [
+        "G03"
+      ],
+      "done_when": "按冻结比较合同给出净收益排名，分列资本、成本、回撤、杠杆和各时间段；不作全网最高主张。"
+    },
+    {
+      "id": "G05",
+      "title": "原版复现和可比排名后才优化",
+      "owner": "Freqtrade + TradingAgents",
+      "status": "planned",
+      "depends_on": [
+        "G04"
+      ],
+      "done_when": "冻结原版与优化目标后，一次一个有明确增量目标的变体；保留失败，未见与真实执行另验。"
     }
   ],
   "production_eligible": false,
@@ -675,23 +732,22 @@
     "latest_diagnostic_source": "shared_failure_attribution_20261027/verification.json"
   },
   "current_research_stage": {
-    "mechanism": "nfi_original_reproduction_and_cost_risk_attribution",
-    "label": "NFI原版逐笔复现及七项成本/风控对照完成",
-    "status": "original_reproduced_controls_audited_known_month_only",
-    "report": "nfi_original_reproduction_20261027/README.md",
-    "description": "原版72交易217成交逐笔一致；原版已知月份净收益81.89%、全持仓参考回撤13.61%。七项原生账户现金审计通过，风险规则作为假设逐项比较，完整结果见报告；长期、未见、容量与实盘仍未建立。",
-    "new_financial_accounts": 7,
-    "registered_economic_conditions": 7,
+    "mechanism": "github_replication_first",
+    "label": "暂停自研：原版口径已对齐，高收益候选取证中",
+    "status": "baseline_metrics_aligned_first_source_triage_complete_new_candidate_replication_pending",
+    "report": "github_replication_priority_20261028/README.md",
+    "description": "NFI原版72交易217成交及作者原生收益/回撤/夏普逐字段一致。首轮归档公开测量账表和报告卡，详查24份候选/基线；最高披露项存在来源指纹与当前源码因果性问题，尚无新候选复刻结果或共同条件冠军。当前不启动自研、参数搜索、风险覆盖或优化。",
+    "new_financial_accounts": 0,
     "module_admitted": false,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "historical_original_month_profitable": true,
     "third_party_review_performed": false,
     "independent_oos": false,
     "capacity_verified": false,
-    "next_action": "以原版NFI为研发基线，根据每条约束的实际触发、收益代价和尾部保护证据选择风险预算；固定后补连续长历史、策略偏差检查、真实执行容量与冻结后未见验证，不扩展新因子。",
-    "completed_economic_conditions": 7
+    "next_action": "优先追溯披露收益领先候选的实际被测源码、引擎、数据和完整账本；原版复现通过后再做可比排名与优化，缺原件保持未知。",
+    "source_candidates_inspected": 24,
+    "new_candidate_financial_replays_started": 0
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -1742,5 +1798,100 @@
     "same_known_month_conditions": 7,
     "long_history_validated": false,
     "live_orders_enabled": false
+  },
+  "execution_priority": {
+    "schema": "github-strategy-replication-first.v1",
+    "effective_date": "2026-10-28",
+    "user_instruction": "先不要自研，优先对齐GitHub策略收益口径，寻找高收益策略，复刻后再优化。",
+    "self_developed_factors_allowed": false,
+    "new_model_or_strategy_design_allowed": false,
+    "custom_risk_overlays_before_replication": false,
+    "threshold_search_before_replication": false,
+    "reuse_existing_projects_and_UI": true,
+    "original_NFI_baseline_preserved": true,
+    "scope": "先覆盖已有加密币种研究与Freqtrade生态；港美股保持独立账户，收益不混排。",
+    "stage_order": [
+      "作者原版口径与逐笔一致性",
+      "公开源码与报告候选池",
+      "作者披露收益线索排序并追溯原件",
+      "选定候选按原版引擎/数据/配置逐笔复现",
+      "可比条件下按真实账户净收益比较",
+      "通过后才登记优化"
+    ],
+    "required_original_contract": [
+      "repository+commit+license",
+      "strategy_version+parameters+dependencies",
+      "original_engine+data_identity",
+      "exchange+spot_or_futures+timeframe+period",
+      "pairlist+missing_or_delisted_policy",
+      "initial_capital+cash_flows+stake_mode+slots+leverage+compounding",
+      "fees+slippage+funding+force_exit",
+      "full_closed_and_open_inventory+trade_and_order_exports",
+      "reported_metric_formulas+annualization+drawdown_and_sharpe_scope"
+    ],
+    "metric_contract": {
+      "primary_return": "固定本金无外部划转：final_settled_equity / initial_capital - 1；有现金流须明确TWR或MWR，未明确则不混排。",
+      "author_report_replication": "保留原版各字段、原版已平仓回撤与夏普；先核对这些字段，不用全持仓指标替换后声称不一致。",
+      "parallel_account_view": "另列完整持仓净值、退出准备、资金费、实际敞口及对应回撤/日夏普，标明参考价格/可成交价格。",
+      "not_equivalent": [
+        "累计每笔收益百分比",
+        "单笔平均收益",
+        "每笔名义额收益",
+        "账户总收益",
+        "短窗外推CAGR",
+        "不同本金、周期、币池、杠杆和现货/合约的宣传收益"
+      ]
+    },
+    "ranking_contract": {
+      "claim_leader": "收录范围内作者披露的最高数字，仅作取证优先级，注明单位/周期/杠杆/已知偏差。",
+      "verified_leader": "同可比条件、原版逐笔复现通过的账户净收益最高者；未完成共同条件不得宣布跨策略冠军。",
+      "global_GitHub_highest_claim_allowed": false,
+      "source_gaps": "unknown，保留报告与错误原件，不自行补参数冒充作者原版。",
+      "risk_constraints": "自定义gross/止损/停机不作为原版复现准入条件；数学泄漏、错分母和缺失现金另行核验。",
+      "optimizer_gate": [
+        "selected original report and local result reconciled",
+        "highest-return claim traceable and source-contract complete",
+        "comparison cohort and chosen objective explicit",
+        "baseline frozen and optimization variant registered separately"
+      ]
+    },
+    "orders_enabled": false,
+    "production_eligible": false,
+    "allowed_pre_replication_diagnostics": [
+      "源码/报告身份核对",
+      "指标公式与分母核对",
+      "只读因果性合成反例；不计为金融账户或自研收益因子"
+    ],
+    "legacy_portfolio_gates_deferred_during_original_replication": true
+  },
+  "previous_nfi_reproduction_stage": {
+    "mechanism": "nfi_original_reproduction_and_cost_risk_attribution",
+    "label": "NFI原版逐笔复现及七项成本/风控对照完成",
+    "status": "original_reproduced_controls_audited_known_month_only",
+    "report": "nfi_original_reproduction_20261027/README.md",
+    "description": "原版72交易217成交逐笔一致；原版已知月份净收益81.89%、全持仓参考回撤13.61%。七项原生账户现金审计通过，风险规则作为假设逐项比较，完整结果见报告；长期、未见、容量与实盘仍未建立。",
+    "new_financial_accounts": 7,
+    "registered_economic_conditions": 7,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "historical_original_month_profitable": true,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "capacity_verified": false,
+    "next_action": "以原版NFI为研发基线，根据每条约束的实际触发、收益代价和尾部保护证据选择风险预算；固定后补连续长历史、策略偏差检查、真实执行容量与冻结后未见验证，不扩展新因子。",
+    "completed_economic_conditions": 7
+  },
+  "github_source_selection": {
+    "registry": "github_replication_priority_20261028/candidate_registry.json",
+    "metric_alignment": "github_replication_priority_20261028/nfi_author_metric_alignment.json",
+    "claim_leader": "NOTankAi_15_Cleaned_v2",
+    "claim_leader_locally_verified": false,
+    "common_condition_winner": null,
+    "global_highest_claim": false,
+    "new_factors": 0,
+    "optimizations_started": 0,
+    "new_candidate_financial_replays_started": 0
   }
 }
