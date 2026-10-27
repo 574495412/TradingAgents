@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_sha256": "f361d7547dbde0722744a215ab150fe0e514ad015ce8a0717b701f192e95960e",
+  "known_history_scope_only": true,
+  "cash_and_exposure_precision_claims_separate": true,
+  "all_economic_accounts_negative": true,
+  "capacity_not_triggered": true
+}

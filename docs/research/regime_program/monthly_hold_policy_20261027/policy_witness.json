@@ -1,0 +1,15 @@
+{
+  "symbol": "1000PEPEUSDT",
+  "original_stop_submitted_at": "2025-01-08T02:55:00+00:00",
+  "original_stop_fill_at": "2025-01-08T03:00:00+00:00",
+  "disabled_held_at_same_clock": {
+    "q": 4482.743669553415,
+    "side": 1,
+    "stop": 0.018421807404,
+    "opened_at": "2025-01-01T00:05:00+00:00"
+  },
+  "preceding_actual_low": 0.0184189,
+  "preceding_actual_high": 0.0185238,
+  "disabled_still_held_after_original_exit": true,
+  "scope": "One concrete recorded-policy witness, not a population stop-effect estimate or a new strategy trial."
+}

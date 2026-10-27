@@ -1,0 +1,82 @@
+{
+  "disabled_monthly_tsmom_cap10000_slip3": {
+    "active_5m_intervals": 175104,
+    "mean_gross_when_active": 0.1648145483197025,
+    "first_halt_request": null,
+    "mean_gross": 0.1648136070870231,
+    "mean_abs_net": 0.10179588806147626,
+    "complete_cycle_median_days": 31.0,
+    "complete_cycle_exit_reasons": {
+      "rebalance": 53,
+      "contract_exit": 1
+    },
+    "price_component_before_paid_costs_and_exit_reserve": -489.3293331731231,
+    "funding_net": 3.0338498207952296,
+    "paid_fees": 8.88107448741209,
+    "paid_slippage": 5.328751192817163,
+    "unpaid_exit_reserve": 2.0265197899600507,
+    "open_campaigns": 10,
+    "open_campaign_net_pnl": 176.2428417106013,
+    "same_path_arithmetic_not_zero_cost_rerun": true
+  },
+  "disabled_monthly_tsmom_cap10000_slip10": {
+    "active_5m_intervals": 175104,
+    "mean_gross_when_active": 0.16482698232323204,
+    "first_halt_request": null,
+    "mean_gross": 0.16482604101954382,
+    "mean_abs_net": 0.10180418545879215,
+    "complete_cycle_median_days": 31.0,
+    "complete_cycle_exit_reasons": {
+      "rebalance": 53,
+      "contract_exit": 1
+    },
+    "price_component_before_paid_costs_and_exit_reserve": -489.0828393593165,
+    "funding_net": 3.0086463078686574,
+    "paid_fees": 8.87441433945502,
+    "paid_slippage": 17.75000992923583,
+    "unpaid_exit_reserve": 3.7944234297608435,
+    "open_campaigns": 10,
+    "open_campaign_net_pnl": 172.485970841217,
+    "same_path_arithmetic_not_zero_cost_rerun": true
+  },
+  "disabled_magnitude_long_cap10000_slip3": {
+    "active_5m_intervals": 115445,
+    "mean_gross_when_active": 0.1582207846035013,
+    "first_halt_request": "2026-02-05T20:25:00+00:00",
+    "mean_gross": 0.10431340326404848,
+    "mean_abs_net": 0.10431340326404848,
+    "complete_cycle_median_days": 59.0,
+    "complete_cycle_exit_reasons": {
+      "rebalance": 19,
+      "risk_halt": 10
+    },
+    "price_component_before_paid_costs_and_exit_reserve": -1198.8205341328194,
+    "funding_net": -43.75273808292514,
+    "paid_fees": 4.747095249303246,
+    "paid_slippage": 2.8481492557335795,
+    "unpaid_exit_reserve": 0.0,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "same_path_arithmetic_not_zero_cost_rerun": true
+  },
+  "disabled_magnitude_long_cap10000_slip10": {
+    "active_5m_intervals": 115445,
+    "mean_gross_when_active": 0.1582302961125811,
+    "first_halt_request": "2026-02-05T20:25:00+00:00",
+    "mean_gross": 0.10431967410820323,
+    "mean_abs_net": 0.10431967410820323,
+    "complete_cycle_median_days": 59.0,
+    "complete_cycle_exit_reasons": {
+      "rebalance": 19,
+      "risk_halt": 10
+    },
+    "price_component_before_paid_costs_and_exit_reserve": -1198.1389183601912,
+    "funding_net": -43.73701679178805,
+    "paid_fees": 4.745718132482095,
+    "paid_slippage": 9.490238126045234,
+    "unpaid_exit_reserve": 0.0,
+    "open_campaigns": 0,
+    "open_campaign_net_pnl": 0.0,
+    "same_path_arithmetic_not_zero_cost_rerun": true
+  }
+}

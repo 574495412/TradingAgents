@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "rows": 166176,
+  "maximum_pair_difference_usdt": {
+    "gross_exposure": 4.547473508864641e-13,
+    "net_exposure": 4.547473508864641e-13
+  },
+  "maximum_reference_difference_usdt": {
+    "gross_exposure": 9.094947017729282e-13,
+    "net_exposure": 6.821210263296962e-13
+  },
+  "maximum_fraction_of_derived_sum_bound": 0.3542130247309334,
+  "method": "Rebuild inventory from checkpoint and exact child fills; price every held quantity from the retained preceding actual5m close; use math.fsum for canonical gross and net. Require each full/resumed exposure within gamma_(N+1)*gross with u=2^-53, including cancellation in net; no arbitrary relaxed NAV tolerance.",
+  "scope": "Exposure arithmetic only. NAV,cash,events,requests,positions and final risk state are required exactly equal."
+}

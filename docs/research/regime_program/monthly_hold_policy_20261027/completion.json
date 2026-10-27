@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "manifest": {
+    "metrics.json": "5b2b5cb4c8ae35398209a2c0714d5ce4d1ac0216dfaaf29ac6e6e40ec9abd56e",
+    "selected_TON_exit_case.json": "db5332b4e81d501f5329090531e32e614b02ed151e2fc16dcab04245c525c029",
+    "periods.json": "88856aac80120c7978100f870e04d975d4a955268873c849e76f890ab0b9116d",
+    "attribution_and_holding.json": "dd45b5e4e95c098551f3e6aad050076c5bcd7d9f0ef60be156c0558b013b5bfd",
+    "policy_witness.json": "3022514b12c402152c1acdedcb56a2ff978313c9f5a515cdbfb09c91d655e420",
+    "exposure_summation_audit.json": "7fd70c7256b99278bd35899db1d3b8fea6c20b558e2d13743d9814affdb7370c",
+    "comparisons.json": "42b1f23a8bb69830a0e4dc5d8a0e2d516d907b77da9cfb36cfd11d6d5b3b349c",
+    "seal_verification.json": "29cd9b6cb45df56993dc97b6521929691c14e3b3a313f60e9089c36fbc8a8419",
+    "README.md": "16075107f17fd6efecdaaa144c46b58fe91b3bcd8ea8846563e4575d1c7a0d6d",
+    "verification.json": "381c3b815c7f723cbc5e6caefcde4b33d07c024e0a6b5820e6b0b107e61dc4f0",
+    "restart_verification.json": "4a9bfd640b6a6c0dc2b7b5ee174b7ac91420f969cb52c1ca0c110a780a45dcc5"
+  },
+  "profit_goal_met": false
+}

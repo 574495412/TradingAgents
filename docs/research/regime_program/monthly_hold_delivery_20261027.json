@@ -1,0 +1,173 @@
+{
+  "schema": "monthly-hold-delivery-validation.v1",
+  "passed": true,
+  "sealed_manifests_verified": {
+    "results/research/monthly_hold_contract_20261027_v002": 7,
+    "results/research/monthly_hold_accounts_20261027_v002": 82,
+    "results/research/monthly_hold_finalization_20261027_v001": 5,
+    "docs/research/regime_program/monthly_hold_policy_20261027": 11
+  },
+  "source_only_registered_engine_edits": true,
+  "exact_old_bridge_paths": 2,
+  "new_policy_accounts": 4,
+  "selected_case_paths": 1,
+  "source_aliases": 4,
+  "frozen_financial_results_preserved_after_checker_failure": true,
+  "zero_financial_replays_during_finalization": true,
+  "same_goal_targets_and_gates": true,
+  "old_factor_definitions_unchanged": true,
+  "goal_sha256": "eb991a6883e3e5a22e1b3554f39e850fee2ddc4fc7f759d51aee97c64f7a1650",
+  "existing_UI_and_inline_previews": {
+    "chart": {
+      "surface": "standalone sandbox preview; native inline host not inspected",
+      "results": [
+        {
+          "viewport": 736,
+          "appearance": "light",
+          "marks": 4,
+          "width": 704,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "止损／成本bps",
+            "8%／8",
+            "-7.44%",
+            "关闭／8",
+            "-5.03%",
+            "8%／15",
+            "-7.71%",
+            "关闭／15",
+            "-5.16%",
+            "-8",
+            "-4",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(26, 28, 31)",
+          "markFill": "rgb(51, 156, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 736,
+          "appearance": "dark",
+          "marks": 4,
+          "width": 704,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "止损／成本bps",
+            "8%／8",
+            "-7.44%",
+            "关闭／8",
+            "-5.03%",
+            "8%／15",
+            "-7.71%",
+            "关闭／15",
+            "-5.16%",
+            "-8",
+            "-4",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(255, 255, 255)",
+          "markFill": "rgb(131, 195, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 320,
+          "appearance": "light",
+          "marks": 4,
+          "width": 288,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "止损／成本bps",
+            "8%／8",
+            "-7.44%",
+            "关闭／8",
+            "-5.03%",
+            "8%／15",
+            "-7.71%",
+            "关闭／15",
+            "-5.16%",
+            "-8",
+            "-4",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(26, 28, 31)",
+          "markFill": "rgb(51, 156, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 320,
+          "appearance": "dark",
+          "marks": 4,
+          "width": 288,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "止损／成本bps",
+            "8%／8",
+            "-7.44%",
+            "关闭／8",
+            "-5.03%",
+            "8%／15",
+            "-7.71%",
+            "关闭／15",
+            "-5.16%",
+            "-8",
+            "-4",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(255, 255, 255)",
+          "markFill": "rgb(131, 195, 255)",
+          "errors": []
+        }
+      ]
+    },
+    "sources": {
+      "surface": "standalone sandbox preview",
+      "checks": [
+        {
+          "width": 736,
+          "opened": true,
+          "overflow": false,
+          "errors": []
+        },
+        {
+          "width": 320,
+          "opened": true,
+          "overflow": false,
+          "errors": []
+        }
+      ]
+    },
+    "existingUI": {
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "newStageVisible": true,
+      "newFinancialAccounts": 4,
+      "errors": []
+    },
+    "testedAt": "2026-10-27T05:39:24.394Z",
+    "tool": "bundled Playwright; dedicated Browser plugin unavailable"
+  },
+  "source_receipt_QA": "Initial check expected a visible title; single-finding receipt uses the title as its article accessible name. Rechecked that article and content without changing the component.",
+  "existing_server": {
+    "PID": 20954,
+    "command": "Python scripts/research_server.py --port 8794"
+  },
+  "Freqtrade_commit": "68d1ef158bd72f9761e154349d19272662ed0d10",
+  "checks": {
+    "ruff": "passed for all newstudy and engine source",
+    "compileall": "passed",
+    "diff_check": "passed",
+    "internal_cash_and_actual_restore": "passed; exact monetary state plus independently bounded exposure summation"
+  },
+  "profit_goal_met": false,
+  "external_review": false,
+  "independent_unseen_evidence": false,
+  "capacity_triggered": false,
+  "orders_enabled": false
+}

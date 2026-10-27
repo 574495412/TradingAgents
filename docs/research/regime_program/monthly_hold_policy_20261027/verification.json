@@ -1,0 +1,27 @@
+{
+  "schema": "monthly-hold-policy-review.v1",
+  "passed": true,
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/monthly_hold_audit/review.py": "2e62cb318ce09f94bb6f7a33b196d74795cdd8aed489795b62110def631c3a40",
+    "research_tools/trend_stop_audit/review.py": "6ae4f9a96d7d5d1ccc37d01a4e399cb9a96d0f898e942bf2a6a97f2f6370127f",
+    "results/research/monthly_hold_accounts_20261027_v002/completion.json": "fe32230475aebc88ab21ff62a7c104ec6c0436135390dd28da03acee10754e91",
+    "results/research/monthly_hold_finalization_20261027_v001/completion.json": "7ecaf2de9a1ce1d03303db6639d3bfbc2df4552464ee35eecfcb2a4b8c6fff1b",
+    "results/research/monthly_hold_contract_20261027_v002/completion.json": "0b3f894f09c3cf6bd1f45d8afc43b9b5b2e5ff1f9eb9b2d1ea9671c39dab8ec0"
+  },
+  "maximum_internal_NAV_error_usdt": 1.3460521586239338e-10,
+  "new_policy_accounts": 4,
+  "exact_bridge_replays": 2,
+  "selected_case_paths": 1,
+  "source_alias_cases": 4,
+  "actual_financial_computations": 7,
+  "no_financial_replay_to_resolve_checker": true,
+  "NAV_cash_and_final_state_bit_exact_after_restore": true,
+  "exposure_sums_bit_exact_after_restore": false,
+  "exposure_sums_independently_within_binary64_bound": true,
+  "capacity_triggered": false,
+  "profit_goal_met": false,
+  "third_party_review": false,
+  "independent_unseen_validation": false,
+  "orders_enabled": false,
+  "production_eligible": false
+}

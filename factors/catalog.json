@@ -1170,6 +1170,21 @@
     "new_financial_accounts": 4,
     "alpha_proven": false,
     "production_eligible": false,
-    "old_74_columns_unchanged": true
+    "old_74_columns_unchanged": true,
+    "holding_policy_counterfactual": {
+      "engine": "../freqtrade/research/crypto/monthly_hold_v1.py",
+      "protocol": "research_tools/monthly_hold_audit/plan.json",
+      "report": "../docs/research/regime_program/monthly_hold_policy_20261027/README.md",
+      "state": "4_new_policy_accounts_negative_no_admission",
+      "new_factor_formulas": 0,
+      "new_policy_variants": 1,
+      "new_independent_mechanisms": 0,
+      "exact_reference_bridge_replays": 2,
+      "selected_lifecycle_case_paths": 1,
+      "same_realized_risk": false,
+      "source_aliases": 4,
+      "alpha_proven": false,
+      "production_eligible": false
+    }
   }
 }

@@ -372,9 +372,11 @@
         "trend_btc_role_20261027/README.md",
         "trend_btc_role_20261027/verification.json",
         "monthly_tsmom_20261027_v002/README.md",
-        "monthly_tsmom_20261027_v002/verification.json"
+        "monthly_tsmom_20261027_v002/verification.json",
+        "monthly_hold_policy_20261027/README.md",
+        "monthly_hold_policy_20261027/verification.json"
       ],
-      "outcome": "月度趋势本地适配已完成4账户及现金/持仓恢复审计；两成本净收益和方向增量失败，无模块准入，继续先核验收益命题与持有/退出约束。"
+      "outcome": "一次止损开/关反证完成：关闭后仍净亏，压力回撤与实际暴露增大，无模块准入；先核对已冻结因果状态的适用域，不强求所有行情通用。"
     },
     {
       "id": "R07",
@@ -417,9 +419,11 @@
         "trend_btc_role_20261027/README.md",
         "trend_btc_role_20261027/verification.json",
         "monthly_tsmom_20261027_v002/README.md",
-        "monthly_tsmom_20261027_v002/verification.json"
+        "monthly_tsmom_20261027_v002/verification.json",
+        "monthly_hold_policy_20261027/README.md",
+        "monthly_hold_policy_20261027/verification.json"
       ],
-      "outcome": "病例原始CSV/Decimal、钱包、库存、资金费和净值完成内部复核，8次真实非空持仓新进程恢复通过；没有外部第三方审计、未见验证、客户现金到账或盘口容量认证。"
+      "outcome": "本轮4新政策账户、2精确桥接、1选定退出病例内部核验完成；真实恢复金额/账本/风险状态精确，敞口非bit一致但独立求和界通过。外部复现、真正未见、客户现金及盘口容量未完成。"
     },
     {
       "id": "R08",
@@ -462,7 +466,9 @@
         "trend_btc_role_20261027/README.md",
         "trend_btc_role_20261027/verification.json",
         "monthly_tsmom_20261027_v002/README.md",
-        "monthly_tsmom_20261027_v002/verification.json"
+        "monthly_tsmom_20261027_v002/verification.json",
+        "monthly_hold_policy_20261027/README.md",
+        "monthly_hold_policy_20261027/verification.json"
       ],
       "outcome": "已有结果与目标界面可用；收益与外部验证未达标，交接资格仍未完成。"
     },
@@ -536,14 +542,14 @@
       "new_financial_accounts": 0
     }
   },
-  "representative_actual": "最新月度趋势4条实际账户均负、两成本弱于同幅度多头，无模块准入；历史54案等结果完整保留。多策略总账户尚未构建，目标实际值保持未知。",
+  "representative_actual": "最新月度持有反证的4条新政策账户均负，无模块准入；关闭单仓止损增加回撤和实际持有风险，不能以胜率提升或相对多头领先代替盈利。多策略总账户未构建，目标实际值继续未知。",
   "account_evidence": {
     "date": "2026-10-26",
     "accounts": 54,
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "sparse_accounts_20261026/verification.json",
-    "next_action": "停止此固定月度实现的经济准入，不扫窗口或扩大模型。先审查月度预测/持有时钟与8%止损及生命周期退出的兼容性，核对TON已知终止前真实成交窗口，区分信号失效、日内路径与强制退出；缺失纯月末回报保持未知，不拼接19个月。外部复现、未见与总账户目标继续未完成。",
+    "next_action": "关闭当前月度实现的止损微调分支。仅核对既有、决策时可观察的行情状态与月度仓位/损失的适用域，先对齐原始来源、时间和成员；不按2026正收益反选年份或未来状态，不重训更大模型。没有可支持的条件机制则结束分支后再登记另一收益机制。外部复现、未见与总账户目标继续未完成。",
     "rounds": [
       {
         "name": "regime",
@@ -614,21 +620,23 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "monthly_economic_return_tsmom",
-    "label": "月度趋势完成：两成本未获准入",
-    "status": "known_history_local_adaptation_audited_economic_screen_failed",
-    "report": "monthly_tsmom_20261027_v002/README.md",
-    "description": "先补原始资金费并复算200个唯一币月，其中5个方向与纯价格不同；4条实际连续账户完成。月度趋势8/15bps每边成本下亏7.44%/7.71%，多头对照亏3.16%/3.36%；未触发账户停机或容量。139/149个趋势完整周期止损，不能据此断言止损致亏。TON终止导致一个纯月末源指数未知，不能填平。内部现金与真实持仓跨进程恢复通过；没有独立未见/外部证据。",
+    "mechanism": "monthly_holding_price_stop_counterfactual",
+    "label": "月度持有反证完成：亏损收窄，仍未准入",
+    "status": "one_policy_counterfactual_audited_economic_admission_failed",
+    "report": "monthly_hold_policy_20261027/README.md",
+    "description": "只关闭8%单仓价格止损，保留15%账户停机。趋势8/15bps成本下亏5.03%/5.16%，压力回撤从10.63%升至12.79%，平均实际总敞口约翻倍；同幅度多头触发账户停机，不能把相对领先当盈利。4条新政策账户、2条旧路径精确桥接、1条TON提前退出病例；原始净值/现金与真实恢复状态精确一致，敞口浮点差另经独立求和界核验，未重跑收益。无新模块或容量准入。",
     "new_financial_accounts": 4,
+    "bridge_account_replays": 2,
+    "selected_case_paths": 1,
+    "actual_account_and_case_computations": 7,
     "logical_source_domain_cost_cases": 8,
     "source_duplicate_cases_reused": 4,
-    "new_economic_candidates": 1,
-    "new_economic_variants": 0,
+    "new_economic_variants": 1,
     "new_independent_mechanisms": 0,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "停止此固定月度实现的经济准入，不扫窗口或扩大模型。先审查月度预测/持有时钟与8%止损及生命周期退出的兼容性，核对TON已知终止前真实成交窗口，区分信号失效、日内路径与强制退出；缺失纯月末回报保持未知，不拼接19个月。外部复现、未见与总账户目标继续未完成。"
+    "next_action": "关闭当前月度实现的止损微调分支。仅核对既有、决策时可观察的行情状态与月度仓位/损失的适用域，先对齐原始来源、时间和成员；不按2026正收益反选年份或未来状态，不重训更大模型。没有可支持的条件机制则结束分支后再登记另一收益机制。外部复现、未见与总账户目标继续未完成。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -824,7 +832,7 @@
         "说明来源、有效日、身份和资格规则相对原始研究命题的变化"
       ],
       "rule": "不机械复用另一机制的共同池定义；不同策略的适用域可以不同，跨域比较先保持合同一致。",
-      "current_limit": "月度候选按各自完整12月与历史流动性选域，BTC可交易；两成本阴性只覆盖此次本地实现。纯满月源指数在TON已知终止月份不可构造，不能补平或推广为所有时序趋势失效。"
+      "current_limit": "本轮月度候选的价格止损开/关均未获整段净收益准入；只关闭该具体解释，不外推所有条件性趋势。下一步先对齐已有因果行情状态，不按未来年份或收益挑选适用域。"
     },
     "method_mapping_contract": {
       "required_before_local_adaptation": [
@@ -841,6 +849,11 @@
       "reference": "monthly_tsmom_20261027_v002/README.md",
       "missing_horizon": "标的终止、停牌或缺记录导致名义持有期不可得时，不补平价格/零资金费；若采用提前退出，须明确当时已知时点、可成交价格和结算规则。",
       "posthoc_scope": "事后源指数毛因子与实际连续账户的差额只能定位问题，不能全部归因于止损，也不能用缺失月份的部分合计或删月均值冒充完整结果。"
+    },
+    "execution_contract_changes": {
+      "rule": "持有、止损或生命周期退出的改变必须预登记为独立政策变体，保持信号、市场与成本对照，明确实际风险变化；名义目标相同不能称同风险改善。",
+      "restore": "净值、现金、账本、请求、库存和风险状态逐项精确复核；敞口加总若受机器求和顺序影响，必须从持仓和实际价格独立重建并使用数学误差界，保留原失败，不凭观察到的盈亏放宽容差。",
+      "reference": "monthly_hold_policy_20261027/README.md"
     }
   },
   "diagnostic_case_evidence": {
@@ -858,23 +871,47 @@
     "profit_goal_met": false
   },
   "previous_diagnostic_research_stage": {
-    "mechanism": "trend_btc_role_and_direction_control",
-    "label": "BTC角色对照完成，旧EMA解释关闭",
-    "status": "controlled_known_history_diagnostic_complete_no_admitted_alpha",
-    "report": "trend_btc_role_20261027/README.md",
-    "description": "BTC按同资格进入前30名竞争，保持EMA与风险规则；608日趋势账户在8/15bps每边成本下亏10.12%/10.46%，均停机。压力成本比同绝对目标权重多头少0.46USDT；实际风险路径不同。4条新账户内部现金、数学及真实持仓续跑通过；两套同源日档目标相同，不计独立证据。原论文12个月方向/1个月持有与本地EMA日频不同，不能继承原文业绩。",
+    "mechanism": "monthly_economic_return_tsmom",
+    "label": "月度趋势完成：两成本未获准入",
+    "status": "known_history_local_adaptation_audited_economic_screen_failed",
+    "report": "monthly_tsmom_20261027_v002/README.md",
+    "description": "先补原始资金费并复算200个唯一币月，其中5个方向与纯价格不同；4条实际连续账户完成。月度趋势8/15bps每边成本下亏7.44%/7.71%，多头对照亏3.16%/3.36%；未触发账户停机或容量。139/149个趋势完整周期止损，不能据此断言止损致亏。TON终止导致一个纯月末源指数未知，不能填平。内部现金与真实持仓跨进程恢复通过；没有独立未见/外部证据。",
     "new_financial_accounts": 4,
     "logical_source_domain_cost_cases": 8,
     "source_duplicate_cases_reused": 4,
-    "reused_reference_accounts": 2,
-    "new_economic_variants": 1,
+    "new_economic_candidates": 1,
+    "new_economic_variants": 0,
     "new_independent_mechanisms": 0,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "关闭仅因排除BTC才失败的解释，不再调旧EMA权重、止损或窗口。先为原文12个月/1个月命题登记最小本地适配与偏离，再核验原始收益、精确资金费及资产历史是否充分；与同机会集多头及现金比较，缺证据记未知。外部复现、未见验证与总账户目标继续未完成。"
+    "next_action": "停止此固定月度实现的经济准入，不扫窗口或扩大模型。先审查月度预测/持有时钟与8%止损及生命周期退出的兼容性，核对TON已知终止前真实成交窗口，区分信号失效、日内路径与强制退出；缺失纯月末回报保持未知，不拼接19个月。外部复现、未见与总账户目标继续未完成。"
   },
   "diagnostic_study_evidence": {
+    "kind": "single_monthly_holding_policy_counterfactual_known_history",
+    "report": "monthly_hold_policy_20261027/README.md",
+    "contract": "results/research/monthly_hold_contract_20261027_v002",
+    "financial_run": "results/research/monthly_hold_accounts_20261027_v002",
+    "finalization": "results/research/monthly_hold_finalization_20261027_v001",
+    "verification_sha256": "381c3b815c7f723cbc5e6caefcde4b33d07c024e0a6b5820e6b0b107e61dc4f0",
+    "new_financial_accounts": 4,
+    "bridge_replays": 2,
+    "selected_case_paths": 1,
+    "new_economic_variants": 1,
+    "new_independent_mechanisms": 0,
+    "internal_cash_audit_passed": true,
+    "actual_process_restore_passed": true,
+    "restore_money_and_risk_state_bit_exact": true,
+    "restore_exposure_bit_exact": false,
+    "restore_exposure_independent_binary64_bound_passed": true,
+    "capacity_triggered": false,
+    "paper_replication": false,
+    "same_realized_risk": false,
+    "third_party_review_performed": false,
+    "independent_unseen_validation_completed": false,
+    "profit_goal_met": false
+  },
+  "previous_diagnostic_study_evidence": {
     "kind": "monthly_economic_return_local_adaptation_known_history",
     "report": "monthly_tsmom_20261027_v002/README.md",
     "inputs": "results/research/monthly_tsmom_inputs_20261027_v001",
@@ -893,27 +930,6 @@
     "economic_vs_price_direction_differences": 5,
     "paper_replication": false,
     "independent_source_evidence": false,
-    "third_party_review_performed": false,
-    "independent_unseen_validation_completed": false,
-    "profit_goal_met": false
-  },
-  "previous_diagnostic_study_evidence": {
-    "kind": "BTC_eligibility_and_direction_removal_known_history",
-    "report": "trend_btc_role_20261027/README.md",
-    "inputs": "results/research/trend_btc_inputs_20261027_v001",
-    "financial_run": "results/research/trend_btc_accounts_20261027_v001",
-    "verification_sha256": "44e85affd45bc1ec6c583b66b4fb90678d77fd590d2408b45eef102475eda232",
-    "new_financial_accounts": 4,
-    "logical_source_cases": 8,
-    "source_duplicate_cases_reused": 4,
-    "new_economic_variants": 1,
-    "new_independent_mechanisms": 0,
-    "independent_source_evidence": false,
-    "internal_audit_passed": true,
-    "actual_holding_process_restore_passed": true,
-    "capacity_triggered": false,
-    "BTC_tradable": true,
-    "paper_replication": false,
     "third_party_review_performed": false,
     "independent_unseen_validation_completed": false,
     "profit_goal_met": false

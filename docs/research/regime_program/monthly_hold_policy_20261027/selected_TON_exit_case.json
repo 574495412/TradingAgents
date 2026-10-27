@@ -1,0 +1,99 @@
+{
+  "case": {
+    "symbol": "TONUSDT",
+    "start": "2026-06-01",
+    "end": "2026-06-24",
+    "slippage_bps": 10,
+    "maximum_case_paths": 1,
+    "target": "Only the original June01TON monthlytrend target, no other asset or newweight; preserve raw lifecycle directives and account halt. This selected known-history case checks actual preterminal forced liquidation with price stops disabled, not strategy profitability or a full-month source index. It is additional to the6base/bridge computations and must remain separately counted."
+  },
+  "receipt": {
+    "metrics": {
+      "net_return": 0.0017347475209603669,
+      "net_pnl": 17.347475209604454,
+      "ending_equity": 10017.347475209604,
+      "cagr": 0.02788761586617028,
+      "calendar_days": 23.0,
+      "annual_volatility": 0.011843677910687023,
+      "sharpe": 2.3281579172018905,
+      "sortino": 3.819778450608088,
+      "calmar": 10.960276641724194,
+      "max_drawdown": 0.0025444262747900126,
+      "recovery_days": 17.805555555555557,
+      "closed_trades": 1,
+      "win_rate": 1.0,
+      "profit_factor": null,
+      "payoff_ratio": null,
+      "expectancy": 17.347475209606404,
+      "closed_net_pnl": 17.347475209606404,
+      "beta": -0.009225192002706094,
+      "alpha_annual": 0.0050887067266449666,
+      "information_ratio": 5.1311363663774925,
+      "tracking_error": 0.480390319491621,
+      "benchmark_return": -0.14875796299414012,
+      "var95_daily": 0.0008228233683599262,
+      "cvar95_daily": 0.0010653478094242996,
+      "fees": 0.1127721636386764,
+      "funding_net": -0.11497704364725775,
+      "slippage_cost": 0.22556212806387704,
+      "turnover": 0.022530303346451903,
+      "mean_gross_exposure": 0.010693717077119266,
+      "max_gross_exposure": 0.01453869059116061,
+      "open_pnl_with_exit_reserve": 0.0,
+      "sampled_return_frequency": "UTC daily,365; short representative windows, zero risk-free rate",
+      "open_campaign_net_pnl": 0.0,
+      "mean_absolute_net_exposure": 0.010693717077119266
+    },
+    "capacity": {
+      "entry_requests": 1,
+      "unavailable_entry_requests": 0,
+      "partially_filled_entries": 0,
+      "partial_exit_intervals": 0,
+      "max_exit_delay_minutes": 5.0,
+      "requested_entry_notional": 121.42496182107028,
+      "filled_entry_notional": 121.55977584712257,
+      "filled_request_ratio": 1.0011102661596958,
+      "participation_cap": 0.01,
+      "actual_order_book_verified": false
+    },
+    "risk_halted": false,
+    "financial_audit_passed": true,
+    "stop_audit_passed": true,
+    "result_sha256": "3480d0fb67a73bd2c0e159c5e64a06ade231351d1461c05103fa58bf0504704a",
+    "lifecycle_uncertainty": {
+      "by_symbol": {
+        "clusters": 1,
+        "sufficient": false,
+        "win_rate95": null,
+        "expectancy95": null
+      },
+      "by_entry_month": {
+        "clusters": 1,
+        "sufficient": false,
+        "win_rate95": null,
+        "expectancy95": null
+      }
+    }
+  },
+  "exits": [
+    {
+      "type": "exit",
+      "time": "2026-06-23T08:35:00+00:00",
+      "submitted_at": "2026-06-23T08:30:00+00:00",
+      "symbol": "TONUSDT",
+      "position_id": 1,
+      "side": -1,
+      "quantity": 64.12387083917949,
+      "price": 1.6216199999999998,
+      "fee": 0.05199227571511512,
+      "slippage_cost": 0.10388067075945363,
+      "notional": 103.98455143023023,
+      "quote_volume": 250954.305,
+      "cash_delta": 17.523232141177225,
+      "reason": "contract_exit"
+    }
+  ],
+  "residual_positions": {},
+  "selected_known_case_not_strategy_account": true,
+  "terminal_settlement_invented": false
+}

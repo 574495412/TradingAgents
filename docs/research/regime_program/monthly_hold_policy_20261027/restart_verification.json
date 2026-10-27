@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "actual_new_process": true,
+  "split": "2025-02-01T00:05:00+00:00",
+  "parent_pid": 29913,
+  "worker_pid": 29951,
+  "exact_full_NAV_cash_ledger_requests_inventory_and_risk": true,
+  "exposure_bit_exact": false,
+  "exposure_independently_within_binary64_sum_bound": true,
+  "wrong_flag_and_engine_state_rejected": [
+    "Resume account configuration or market universe differs",
+    "Resume engine version differs"
+  ],
+  "new_financial_replays": 0
+}
