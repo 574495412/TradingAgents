@@ -1,0 +1,244 @@
+[
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "symbol": "BTCUSDT",
+    "native_filters": [
+      {
+        "filterType": "PRICE_FILTER",
+        "minPrice": "0.01000000",
+        "maxPrice": "1000000.00000000",
+        "tickSize": "0.01000000"
+      },
+      {
+        "filterType": "LOT_SIZE",
+        "minQty": "0.00001000",
+        "maxQty": "9000.00000000",
+        "stepSize": "0.00001000"
+      },
+      {
+        "filterType": "ICEBERG_PARTS",
+        "limit": 100
+      },
+      {
+        "filterType": "MARKET_LOT_SIZE",
+        "minQty": "0.00000000",
+        "maxQty": "139.65572000",
+        "stepSize": "0.00000000"
+      },
+      {
+        "filterType": "TRAILING_DELTA",
+        "minTrailingAboveDelta": 10,
+        "maxTrailingAboveDelta": 2000,
+        "minTrailingBelowDelta": 10,
+        "maxTrailingBelowDelta": 2000
+      },
+      {
+        "filterType": "PERCENT_PRICE_BY_SIDE",
+        "bidMultiplierUp": "1.2",
+        "bidMultiplierDown": "0.5",
+        "askMultiplierUp": "2",
+        "askMultiplierDown": "0.8",
+        "avgPriceMins": 5
+      },
+      {
+        "filterType": "NOTIONAL",
+        "minNotional": "5.00000000",
+        "applyMinToMarket": true,
+        "maxNotional": "9000000.00000000",
+        "applyMaxToMarket": false,
+        "avgPriceMins": 5
+      },
+      {
+        "filterType": "MAX_NUM_ORDERS",
+        "maxNumOrders": 200
+      },
+      {
+        "filterType": "MAX_NUM_ORDER_LISTS",
+        "maxNumOrderLists": 20
+      },
+      {
+        "filterType": "MAX_NUM_ALGO_ORDERS",
+        "maxNumAlgoOrders": 5
+      },
+      {
+        "filterType": "MAX_NUM_ORDER_AMENDS",
+        "maxNumOrderAmends": 10
+      }
+    ],
+    "pre_rule_sha256": "56a6f9936af21800d537f81bf7d994f3062896e0c93ed8a0e16fccf41eb4d2aa",
+    "post_rule_sha256": "56a6f9936af21800d537f81bf7d994f3062896e0c93ed8a0e16fccf41eb4d2aa",
+    "before_quotes": true,
+    "unchanged_through_probe": true,
+    "actual_client_fees_or_order_acceptance_certified": false
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "symbol": "ETHUSDT",
+    "native_filters": [
+      {
+        "filterType": "PRICE_FILTER",
+        "minPrice": "0.01000000",
+        "maxPrice": "1000000.00000000",
+        "tickSize": "0.01000000"
+      },
+      {
+        "filterType": "LOT_SIZE",
+        "minQty": "0.00010000",
+        "maxQty": "9000.00000000",
+        "stepSize": "0.00010000"
+      },
+      {
+        "filterType": "ICEBERG_PARTS",
+        "limit": 100
+      },
+      {
+        "filterType": "MARKET_LOT_SIZE",
+        "minQty": "0.00000000",
+        "maxQty": "3694.94560791",
+        "stepSize": "0.00000000"
+      },
+      {
+        "filterType": "TRAILING_DELTA",
+        "minTrailingAboveDelta": 10,
+        "maxTrailingAboveDelta": 2000,
+        "minTrailingBelowDelta": 10,
+        "maxTrailingBelowDelta": 2000
+      },
+      {
+        "filterType": "PERCENT_PRICE_BY_SIDE",
+        "bidMultiplierUp": "1.2",
+        "bidMultiplierDown": "0.5",
+        "askMultiplierUp": "2",
+        "askMultiplierDown": "0.8",
+        "avgPriceMins": 5
+      },
+      {
+        "filterType": "NOTIONAL",
+        "minNotional": "5.00000000",
+        "applyMinToMarket": true,
+        "maxNotional": "9000000.00000000",
+        "applyMaxToMarket": false,
+        "avgPriceMins": 5
+      },
+      {
+        "filterType": "MAX_NUM_ORDERS",
+        "maxNumOrders": 200
+      },
+      {
+        "filterType": "MAX_NUM_ORDER_LISTS",
+        "maxNumOrderLists": 20
+      },
+      {
+        "filterType": "MAX_NUM_ALGO_ORDERS",
+        "maxNumAlgoOrders": 5
+      },
+      {
+        "filterType": "MAX_NUM_ORDER_AMENDS",
+        "maxNumOrderAmends": 10
+      }
+    ],
+    "pre_rule_sha256": "36a6f3710eecd686b713a7cb967ca9e791273a44dac78d9fc313453f4edae210",
+    "post_rule_sha256": "36a6f3710eecd686b713a7cb967ca9e791273a44dac78d9fc313453f4edae210",
+    "before_quotes": true,
+    "unchanged_through_probe": true,
+    "actual_client_fees_or_order_acceptance_certified": false
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "symbol": "BTCUSDT_261225",
+    "native_filters": [
+      {
+        "filterType": "PRICE_FILTER",
+        "tickSize": "0.1",
+        "minPrice": "576.3",
+        "maxPrice": "1000000"
+      },
+      {
+        "minQty": "0.001",
+        "maxQty": "500",
+        "stepSize": "0.001",
+        "filterType": "LOT_SIZE"
+      },
+      {
+        "filterType": "MARKET_LOT_SIZE",
+        "maxQty": "1",
+        "stepSize": "0.001",
+        "minQty": "0.001"
+      },
+      {
+        "filterType": "MAX_NUM_ORDERS",
+        "limit": 200
+      },
+      {
+        "filterType": "MIN_NOTIONAL",
+        "notional": "5"
+      },
+      {
+        "multiplierUp": "1.0500",
+        "filterType": "PERCENT_PRICE",
+        "multiplierDecimal": "4",
+        "multiplierDown": "0.9500"
+      },
+      {
+        "filterType": "POSITION_RISK_CONTROL",
+        "positionControlSide": "NONE"
+      }
+    ],
+    "pre_rule_sha256": "bb9d83fb133f0e91b06eeb3208298db67e354a01b6319c3b895c807575053a91",
+    "post_rule_sha256": "bb9d83fb133f0e91b06eeb3208298db67e354a01b6319c3b895c807575053a91",
+    "before_quotes": true,
+    "unchanged_through_probe": true,
+    "actual_client_fees_or_order_acceptance_certified": false
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "symbol": "ETHUSDT_261225",
+    "native_filters": [
+      {
+        "minPrice": "41.10",
+        "filterType": "PRICE_FILTER",
+        "maxPrice": "100000",
+        "tickSize": "0.01"
+      },
+      {
+        "minQty": "0.001",
+        "filterType": "LOT_SIZE",
+        "maxQty": "10000",
+        "stepSize": "0.001"
+      },
+      {
+        "filterType": "MARKET_LOT_SIZE",
+        "minQty": "0.001",
+        "maxQty": "10",
+        "stepSize": "0.001"
+      },
+      {
+        "limit": 200,
+        "filterType": "MAX_NUM_ORDERS"
+      },
+      {
+        "notional": "5",
+        "filterType": "MIN_NOTIONAL"
+      },
+      {
+        "multiplierUp": "1.0500",
+        "multiplierDown": "0.9500",
+        "filterType": "PERCENT_PRICE",
+        "multiplierDecimal": "4"
+      },
+      {
+        "filterType": "POSITION_RISK_CONTROL",
+        "positionControlSide": "NONE"
+      }
+    ],
+    "pre_rule_sha256": "21f4cad02657f48a4d61818c6258c121c3bbfb4d32ec4d55634ecc460d35f365",
+    "post_rule_sha256": "21f4cad02657f48a4d61818c6258c121c3bbfb4d32ec4d55634ecc460d35f365",
+    "before_quotes": true,
+    "unchanged_through_probe": true,
+    "actual_client_fees_or_order_acceptance_certified": false
+  }
+]

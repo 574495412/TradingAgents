@@ -1,0 +1,77 @@
+[
+  {
+    "capture": "data/research/dated_carry_prospective_probe_20261027_v001",
+    "summary": {
+      "pre_clock_valid": {
+        "spot": true,
+        "future": true
+      },
+      "selection_frozen": false,
+      "native_HTTP_requests": 4,
+      "stream_results": {},
+      "failures": [
+        {
+          "stage": "pre_quote_barrier",
+          "type": "ValueError",
+          "error": "Both raw metadata bodies required"
+        }
+      ],
+      "post_clock_valid": {
+        "spot": null,
+        "future": null
+      },
+      "source_observability_audited": false,
+      "forward_strategy_validation_completed": false,
+      "new_financial_accounts": 0,
+      "orders_enabled": false,
+      "profit_goal_met": false
+    }
+  },
+  {
+    "capture": "data/research/dated_carry_prospective_probe_20261027_v002",
+    "summary": {
+      "pre_clock_valid": {
+        "spot": true,
+        "future": true
+      },
+      "selection_frozen": true,
+      "native_HTTP_requests": 8,
+      "stream_results": {
+        "spot": {
+          "market": "spot",
+          "url": "wss://stream.binance.com:9443/stream?streams=btcusdt@bookTicker/btcusdt@depth@100ms/ethusdt@bookTicker/ethusdt@depth@100ms",
+          "selection_sha256": "711b8e5d3f0d4a8a376f34edab42886b1c8b87c8a0f1aadf1898922b322c350c",
+          "messages": 0,
+          "bytes": 0,
+          "attempted_wall_ns": 1793092673007763000,
+          "connected": false,
+          "error_type": "ImportError",
+          "error": "connecting through a SOCKS proxy requires python-socks",
+          "finished_wall_ns": 1793092673008584000
+        },
+        "future": {
+          "market": "future",
+          "url": "wss://fstream.binance.com/public/stream?streams=btcusdt_261225@bookTicker/btcusdt_261225@depth@100ms/ethusdt_261225@bookTicker/ethusdt_261225@depth@100ms",
+          "selection_sha256": "711b8e5d3f0d4a8a376f34edab42886b1c8b87c8a0f1aadf1898922b322c350c",
+          "messages": 0,
+          "bytes": 0,
+          "attempted_wall_ns": 1793092673007970000,
+          "connected": false,
+          "error_type": "ImportError",
+          "error": "connecting through a SOCKS proxy requires python-socks",
+          "finished_wall_ns": 1793092673008528000
+        }
+      },
+      "failures": [],
+      "post_clock_valid": {
+        "spot": true,
+        "future": true
+      },
+      "source_observability_audited": false,
+      "forward_strategy_validation_completed": false,
+      "new_financial_accounts": 0,
+      "orders_enabled": false,
+      "profit_goal_met": false
+    }
+  }
+]

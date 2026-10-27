@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "manifest": {
+    "summary.json": "8e81a10e7da21e6a9928766fbf350b64f1fffa1d4d19ebf5f7598759d1616d93",
+    "prior_capture_failures.json": "a7febfd7a088afd8434eff67dffe47383ab3864134b0944f54e1ff36bf711119",
+    "clock_proofs.json": "1cd3b49fca8cd57a10018ef22a6df33c567a7700e457d686bf8ddb5bc436fa5e",
+    "README.md": "39d22c6003306c5044c9e2099757535239cf4e39c0e5b33b06392d8f3677014d",
+    "asof_quotes.json": "9be0be31330705e198a2f43eb983125e17895cb72693fb517f1bb071712ef5b1",
+    "native_ages.json": "0a90b27e2c3254ed5780e2b1d6f8bc2dc90ff62f2f5f50443af4200c4507ff5b",
+    "verification.json": "d1c8690c3c5450346c81317daee53072f35b239abd00f03b02192b60a430dfef",
+    "book_proofs.json": "45fd69842b4d62cc863e9476ce8b6d229099a79041cdf1edfb5018bf6d08e511",
+    "reported_rule_epochs.json": "49ac9899b2357a061a099f9bd828725ba7d0689f706e4263a5db5335600136b5"
+  },
+  "profit_goal_met": false
+}

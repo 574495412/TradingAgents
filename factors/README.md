@@ -88,3 +88,5 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 新Freqtrade研究引擎v2已通过上游冻结目标接入此库存约束，原分数引擎不改。BTC/ETH两条观察格点病例证明完全相等数量不在原上限内，保留余币的覆盖方案也不是历史可成交订单；原收益不重写。原始数据、历史快照限制、整数反证及12项测试见[库存约束报告](../docs/research/regime_program/dated_carry_lot_inventory_20261027/README.md)。
 
 新Freqtrade研究引擎v2已通过上游冻结目标接入该库存契约，原分数引擎不改。4条条件性87日账户保留余币并计全额非现金退出准备；闭合周期0、胜率未知，三处实际异进程恢复通过。历史订单过滤器与原3bps盘口反例仍限制结论，见[新账户报告](../docs/research/regime_program/dated_carry_lot_accounts_20261027/README.md)。
+
+当前原始规则与原生盘口的[受限前向采样](../docs/research/regime_program/dated_carry_prospective_sources_20261027/README.md)已复核四份盘口及报告规则，未增加因子、策略或收益账户。采样已结束；当前261225规则不回填250328，采样协议冻结也不等于前向策略验证通过。下一次策略必须在新报价前另冻结完整合同。

@@ -1,0 +1,31 @@
+{
+  "source_observability_passed": true,
+  "captured_native_messages": 9806,
+  "reported_rule_epochs": 4,
+  "valid_book_sequences": 4,
+  "BBO_exact_comparisons": 4,
+  "selected_contracts": {
+    "BTC": "BTCUSDT_261225",
+    "ETH": "ETHUSDT_261225"
+  },
+  "common_watermark_ns": 1793092891305287000,
+  "source_failures": [],
+  "new_financial_accounts": 0,
+  "forward_strategy_validation_completed": false,
+  "historical_2025_rules_certified": false,
+  "real_execution_or_capacity_certified": false,
+  "external_review_performed": false,
+  "profit_goal_met": false,
+  "orders_enabled": false,
+  "source_probe_finished": true,
+  "recorder_still_running": false,
+  "successful_public_WS_connections": 2,
+  "native_REST_requests_across_three_versions": 24,
+  "new_forward_raw_observations": true,
+  "new_forward_strategy_signals": 0,
+  "prospective_financial_outcomes_evaluated": false,
+  "global_proxy_settings_changed": false,
+  "dependencies_installed": false,
+  "module_admitted": false,
+  "production_eligible": false
+}

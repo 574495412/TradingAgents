@@ -1261,6 +1261,17 @@
         "win_rate": null,
         "hypothetical_rules_not_certified_venue_filters": true,
         "production_eligible": false
+      },
+      "prospective_source_probe": {
+        "report": "../docs/research/regime_program/dated_carry_prospective_sources_20261027/README.md",
+        "state": "current_rule_and_native_book_source_observability_passed_no_strategy_returns",
+        "native_messages": 9806,
+        "source_observability_passed": true,
+        "forward_strategy_validation_completed": false,
+        "new_financial_accounts": 0,
+        "recorder_still_running": false,
+        "historical_2025_rule_backfill_permitted": false,
+        "production_eligible": false
       }
     },
     "reference_stage_financial_accounts": 0

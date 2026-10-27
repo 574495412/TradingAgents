@@ -1,0 +1,64 @@
+{
+  "schema": "dated-carry-prospective-source-probe.v1",
+  "purpose": "Before any prospective strategy signal or return, obtain current raw metadata, independent clock endpoints, native stream receipt times and matching snapshots. Prove only source observability, never fills, profit or historical rule truth.",
+  "parent": "docs/research/regime_program/dated_carry_lot_accounts_20261027",
+  "assets": [
+    "BTC",
+    "ETH"
+  ],
+  "quote": "USDT",
+  "spot_rest": "https://api.binance.com",
+  "future_rest": "https://fapi.binance.com",
+  "spot_stream": "wss://stream.binance.com:9443/stream?streams={streams}",
+  "future_stream": "wss://fstream.binance.com/public/stream?streams={streams}",
+  "spot_endpoints": {
+    "time": "/api/v3/time",
+    "metadata": "/api/v3/exchangeInfo",
+    "depth": "/api/v3/depth"
+  },
+  "future_endpoints": {
+    "time": "/fapi/v1/time",
+    "metadata": "/fapi/v1/exchangeInfo",
+    "depth": "/fapi/v1/depth"
+  },
+  "selection": "Before accessing any new quotes, choose each asset's nearest still-trading dated USDT-linear contract with USDT margin and deliveryDate at least10minutes ahead of independently checked server clock. Exact native symbol/pair/date/quote identity required; no price, basis or return ranking. Preserve every reported filter, not normalized precision only.",
+  "channels": [
+    "bookTicker",
+    "depth@100ms"
+  ],
+  "clock": {
+    "maximum_server_vs_client_interval_error_ms": 5000,
+    "maximum_request_rtt_ms": 5000,
+    "metadata_serverTime_not_a_clock_probe": true
+  },
+  "checks": [
+    "Capture both /time and metadata first; invalid clock or missing side prevents stream/snapshot eligibility, no borrowed old metadata.",
+    "Freeze selected raw symbol metadata and source hashes before opening quote feeds.",
+    "Capture one native application-message stream for each market, plus monotonic and wall-clock receive times; no reconnects or synthetic messages.",
+    "Get snapshots only after both streams open. Require native sequence overlap and continuity for reconstruction; missing snapshot or stream remains unknown.",
+    "Repeat clocks and selected metadata afterwards. Changed rules invalidate the observation interval; don't select a more favorable version.",
+    "Compare event clocks with independent /time receipt brackets, report staleness, RTT, source gaps and clock uncertainty. No quote freshness from exchangeInfo.serverTime.",
+    "No signals, paper fills, orders or economic returns in this probe; observed new raw data alone is not completed forward strategy validation."
+  ],
+  "budget": {
+    "maximum_native_REST_requests": 12,
+    "maximum_HTTP_response_bytes": 8388608,
+    "maximum_decoded_HTTP_bytes": 33554432,
+    "maximum_WS_connections": 2,
+    "stream_seconds": 30,
+    "maximum_stream_bytes_each": 16777216,
+    "maximum_messages_each": 50000,
+    "financial_workers": 0,
+    "new_financial_accounts": 0,
+    "new_models": 0,
+    "maximum_native_REST_requests_across_original_and_repair": 16
+  },
+  "provenance": "MCP futures metadata discovery preceded this registration; spot calls returned transport/challenge errors. Preserve those tool outputs as exploratory decoded metadata, not raw HTTP or freshness proof. All native quotes and any future financial decisions remain after this registration. Current metadata cannot repair2025rules.",
+  "failure": "Preserve errors, partial streams and all original responses. No challenge solving, credential access, endpoint substitution, billing, automatic retries or return computation from missing/stale inputs.",
+  "orders_enabled": false,
+  "production_eligible": false,
+  "profit_goal_met": false,
+  "version": "20261027_v002",
+  "technical_parent": "data/research/dated_carry_prospective_probe_20261027_v001",
+  "technical_repair": "Preserve v001pre-quote400response. Encode symbol arrays as compactJSON without whitespace, matching the public API syntax. No assets, clocks, budgets, criteria or economic decisions changed."
+}

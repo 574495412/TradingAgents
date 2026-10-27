@@ -1,0 +1,47 @@
+{
+  "testedAt": "2026-10-27T09:38:52.127Z",
+  "tool": "bundled Playwright; Browser plugin not available",
+  "noAppRebuildOrNewDependencies": true,
+  "checks": [
+    {
+      "width": 1280,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "stageVisible": true,
+      "newFinancialAccounts": 0,
+      "originalFinancialAccountsPreserved": 4,
+      "sourceObservabilityPassed": true,
+      "forwardStrategyValidationCompleted": false,
+      "recorderStillRunning": false,
+      "meaningful": true,
+      "overflow": false,
+      "frameworkOverlay": false,
+      "errors": [],
+      "consoleErrors": [],
+      "screenshot": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9/dated-carry-prospective-ui-1280.png"
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "stageVisible": true,
+      "newFinancialAccounts": 0,
+      "originalFinancialAccountsPreserved": 4,
+      "sourceObservabilityPassed": true,
+      "forwardStrategyValidationCompleted": false,
+      "recorderStillRunning": false,
+      "meaningful": true,
+      "overflow": false,
+      "frameworkOverlay": false,
+      "errors": [],
+      "consoleErrors": [],
+      "screenshot": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9/dated-carry-prospective-ui-390.png"
+    }
+  ],
+  "native_Codex_host_visual_inspected": false,
+  "screenshots_visually_inspected": [
+    390
+  ],
+  "protocol_sha256": "1beb2945b8b2593bcbf3e4cbe4ea8f7b5e08a5cf7809a45a24179f09ba364ea1",
+  "report_sha256": "39d22c6003306c5044c9e2099757535239cf4e39c0e5b33b06392d8f3677014d"
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "symbol": "btcusdt",
+    "bid": "79835.96000000",
+    "bid_quantity": "9.41214000",
+    "ask": "79835.97000000",
+    "ask_quantity": "2.28172000",
+    "watermark_ns": 1793092891305287000,
+    "source_is_not_a_fill_or_signal": true
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "symbol": "ethusdt",
+    "bid": "2315.96000000",
+    "bid_quantity": "42.06240000",
+    "ask": "2315.97000000",
+    "ask_quantity": "24.16900000",
+    "watermark_ns": 1793092891305287000,
+    "source_is_not_a_fill_or_signal": true
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "symbol": "btcusdt_261225",
+    "bid": "80540.5",
+    "bid_quantity": "0.005",
+    "ask": "80540.6",
+    "ask_quantity": "0.003",
+    "watermark_ns": 1793092891305287000,
+    "source_is_not_a_fill_or_signal": true
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "symbol": "ethusdt_261225",
+    "bid": "2331.72",
+    "bid_quantity": "0.070",
+    "ask": "2331.85",
+    "ask_quantity": "0.051",
+    "watermark_ns": 1793092891305287000,
+    "source_is_not_a_fill_or_signal": true
+  }
+]

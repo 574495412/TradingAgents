@@ -1,0 +1,44 @@
+[
+  {
+    "market": "spot",
+    "observed_messages": 5254,
+    "messages_before_common_watermark": 5207,
+    "native_channel_counts": {
+      "btcusdt@depth@100ms": 299,
+      "ethusdt@depth@100ms": 294,
+      "ethusdt@bookTicker": 2046,
+      "btcusdt@bookTicker": 2615
+    },
+    "event_time_known_messages": 576,
+    "apparent_event_to_receive_ms": {
+      "min": 34.8779296875,
+      "p50": 36.695068359375,
+      "p99": 40.3497314453125,
+      "max": 74.31005859375
+    },
+    "within_registered_coarse_clock_limit": true,
+    "wall_minus_monotonic_elapsed_ms": -1.8015830000003916,
+    "spot_bookTicker_event_time_unknown_not_inferred": true
+  },
+  {
+    "market": "future",
+    "observed_messages": 4552,
+    "messages_before_common_watermark": 4552,
+    "native_channel_counts": {
+      "ethusdt_261225@bookTicker": 1376,
+      "btcusdt_261225@bookTicker": 2700,
+      "ethusdt_261225@depth@100ms": 237,
+      "btcusdt_261225@depth@100ms": 239
+    },
+    "event_time_known_messages": 4552,
+    "apparent_event_to_receive_ms": {
+      "min": 35.601806640625,
+      "p50": 38.3375244140625,
+      "p99": 80.57085693359367,
+      "max": 104.673095703125
+    },
+    "within_registered_coarse_clock_limit": true,
+    "wall_minus_monotonic_elapsed_ms": -1.7996249999996508,
+    "spot_bookTicker_event_time_unknown_not_inferred": false
+  }
+]

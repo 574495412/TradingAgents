@@ -1,0 +1,26 @@
+{
+  "files_sha256": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/review_prospective_probe.py": "9dacc18535d5ae82f7c7b4c7d48682c2f6986c993693c5b0c3f7e2fc809f8740",
+    "research_tools/dated_carry/audit_prospective_probe.py": "077494478bd2c7c768699c7c2bc07ffa4a4f38a0b0b76cf19ae8ba2ae2263b43",
+    "tests/research_mainline/test_prospective_source_probe.py": "06520cdfcb3bb045fb435b48541ab84f82b4594781f5d4a214bbdbdea1a92ac8",
+    "tests/research_mainline/test_prospective_probe_audit.py": "c611eeb7340c53cf759ba4196d119ab980cff98beb3fb357fc8c505e951ba5e9",
+    "data/research/dated_carry_prospective_probe_20261027_v001/completion.json": "5d8d8eaccae921697d30e927ed470e09809eb5e6fe5eaef3cc67660c6b2c633c",
+    "data/research/dated_carry_prospective_probe_20261027_v002/completion.json": "f3a82af8c1999536c3002a2bf4445cb4bc55f6898c54e276dc3c61fbe6aaec89",
+    "data/research/dated_carry_prospective_probe_20261027_v003/completion.json": "c3284beb028f28c9df3a62b878d1a5cd2ba1822ec21059a33b1e9d87f79e0e42",
+    "results/research/dated_carry_prospective_probe_audit_20261027_v001/completion.json": "8d260a4a974d225ff9df5c0883946f9b1b62603fe9d7d2b536d20c1a8f7f76f0",
+    "docs/research/regime_program/dated_carry_lot_accounts_20261027/completion.json": "70edb369904900773237b334a66e84562eeedffef03c1eab42220460de8ad7e5"
+  },
+  "source_rule_registration_before_native_quote_access": true,
+  "dedicated_time_not_metadata_clock_used": true,
+  "current_rules_not_backfilled_into_old_quarter": true,
+  "four_receipt_causal_native_book_chains_and_update_id_aligned_BBO_match": true,
+  "five_collector_barrier_and_proxy_tests_plus_three_independent_book_tests_passed": true,
+  "both_original_failed_attempts_and_all_raw_messages_preserved": true,
+  "capture_command_terminal_success_not_an_ongoing_monitor": true,
+  "new_financial_accounts": 0,
+  "forward_strategy_validation_completed": false,
+  "real_execution_or_capacity_certified": false,
+  "external_review_performed": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "asset": "BTC",
+    "market": "spot",
+    "symbol": "btcusdt",
+    "snapshot_id": 101957108630,
+    "depth_update_id": 101957119437,
+    "deltas_applied": 286,
+    "sequence_valid": true,
+    "common_watermark_ns": 1793092891305287000,
+    "state_known_at_ns": 1793092891249478000,
+    "book_age_at_watermark_ms": 55.809,
+    "update_id_aligned_BBO_exact": true,
+    "BBO_update_id": 101957119430,
+    "different_channels_same_collector_not_independent_venue": true
+  },
+  {
+    "asset": "ETH",
+    "market": "spot",
+    "symbol": "ethusdt",
+    "snapshot_id": 82540368371,
+    "depth_update_id": 82540381817,
+    "deltas_applied": 284,
+    "sequence_valid": true,
+    "common_watermark_ns": 1793092891305287000,
+    "state_known_at_ns": 1793092891250364000,
+    "book_age_at_watermark_ms": 54.923,
+    "update_id_aligned_BBO_exact": true,
+    "BBO_update_id": 82540381796,
+    "different_channels_same_collector_not_independent_venue": true
+  },
+  {
+    "asset": "BTC",
+    "market": "future",
+    "symbol": "btcusdt_261225",
+    "snapshot_id": 11935878928375,
+    "depth_update_id": 11935882364271,
+    "deltas_applied": 229,
+    "sequence_valid": true,
+    "common_watermark_ns": 1793092891305287000,
+    "state_known_at_ns": 1793092891267127000,
+    "book_age_at_watermark_ms": 38.16,
+    "update_id_aligned_BBO_exact": true,
+    "BBO_update_id": 11935882364204,
+    "different_channels_same_collector_not_independent_venue": true
+  },
+  {
+    "asset": "ETH",
+    "market": "future",
+    "symbol": "ethusdt_261225",
+    "snapshot_id": 11935878893981,
+    "depth_update_id": 11935882337444,
+    "deltas_applied": 228,
+    "sequence_valid": true,
+    "common_watermark_ns": 1793092891305287000,
+    "state_known_at_ns": 1793092890902945000,
+    "book_age_at_watermark_ms": 402.342,
+    "update_id_aligned_BBO_exact": true,
+    "BBO_update_id": 11935882337444,
+    "different_channels_same_collector_not_independent_venue": true
+  }
+]

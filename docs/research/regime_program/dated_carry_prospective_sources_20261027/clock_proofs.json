@@ -1,0 +1,50 @@
+[
+  {
+    "market": "spot",
+    "phase": "pre",
+    "valid": true,
+    "rtt_ms": 152.239917,
+    "server_minus_client_offset_interval_ms": [
+      -43.571044921875,
+      108.669189453125
+    ],
+    "dedicated_time_endpoint": true,
+    "third_party_clock_certification": false
+  },
+  {
+    "market": "spot",
+    "phase": "post",
+    "valid": true,
+    "rtt_ms": 149.365875,
+    "server_minus_client_offset_interval_ms": [
+      -39.1669921875,
+      110.194091796875
+    ],
+    "dedicated_time_endpoint": true,
+    "third_party_clock_certification": false
+  },
+  {
+    "market": "future",
+    "phase": "pre",
+    "valid": true,
+    "rtt_ms": 153.881417,
+    "server_minus_client_offset_interval_ms": [
+      -44.205078125,
+      109.676025390625
+    ],
+    "dedicated_time_endpoint": true,
+    "third_party_clock_certification": false
+  },
+  {
+    "market": "future",
+    "phase": "post",
+    "valid": true,
+    "rtt_ms": 166.334125,
+    "server_minus_client_offset_interval_ms": [
+      -43.680908203125,
+      122.64599609375
+    ],
+    "dedicated_time_endpoint": true,
+    "third_party_clock_certification": false
+  }
+]
