@@ -1,0 +1,61 @@
+{
+  "historical_records": [
+    {
+      "contract": "BTCUSDT_250328",
+      "settlement_record": {
+        "deliveryTime": 1743120000000,
+        "deliveryPrice": 85302.8
+      },
+      "recorded_date_label": "2025-03-28T00:00:00+00:00",
+      "observed_last_open": "2025-03-28T08:00:00+00:00",
+      "observed_last_completion": "2025-03-28T08:05:00+00:00",
+      "last_reported_close": 85200.0,
+      "last_reported_close_is_settlement_price": false,
+      "raw_rows_on_date_label_day": 97,
+      "raw_rows_at_or_after_midnight_label": 97,
+      "positive_volume_rows_at_or_after_midnight_label": 97,
+      "midnight_label_certifies_exact_trading_cutoff": false,
+      "delivery_fee_or_customer_cash_certified": false
+    },
+    {
+      "contract": "ETHUSDT_250328",
+      "settlement_record": {
+        "deliveryTime": 1743120000000,
+        "deliveryPrice": 1911.06
+      },
+      "recorded_date_label": "2025-03-28T00:00:00+00:00",
+      "observed_last_open": "2025-03-28T08:00:00+00:00",
+      "observed_last_completion": "2025-03-28T08:05:00+00:00",
+      "last_reported_close": 1911.37,
+      "last_reported_close_is_settlement_price": false,
+      "raw_rows_on_date_label_day": 97,
+      "raw_rows_at_or_after_midnight_label": 97,
+      "positive_volume_rows_at_or_after_midnight_label": 96,
+      "midnight_label_certifies_exact_trading_cutoff": false,
+      "delivery_fee_or_customer_cash_certified": false
+    }
+  ],
+  "current_metadata_only": [
+    {
+      "symbol": "BTCUSDT_261225",
+      "current_deliveryDate": "2026-12-25T08:00:00+00:00",
+      "current_onboardDate": "2026-06-26T08:00:00+00:00"
+    },
+    {
+      "symbol": "ETHUSDT_261225",
+      "current_deliveryDate": "2026-12-25T08:00:00+00:00",
+      "current_onboardDate": "2026-06-26T08:00:00+00:00"
+    },
+    {
+      "symbol": "BTCUSDT_270326",
+      "current_deliveryDate": "2027-03-26T08:00:00+00:00",
+      "current_onboardDate": "2026-09-25T08:00:00+00:00"
+    },
+    {
+      "symbol": "ETHUSDT_270326",
+      "current_deliveryDate": "2027-03-26T08:00:00+00:00",
+      "current_onboardDate": "2026-09-25T08:00:00+00:00"
+    }
+  ],
+  "interpretation": "Historical deliveryTime values are midnight date labels while current deliveryDate values are08UTC. Do not equate these fields to a verified historical trading cutoff. Archive bars, settlement reference prices and actual client cash are distinct evidence."
+}

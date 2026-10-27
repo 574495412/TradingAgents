@@ -1203,5 +1203,21 @@
       "old_HMM_MLP_new_feature_domain_validated": false,
       "old_74_columns_unchanged": true
     }
+  },
+  "dated_carry_research_registry": {
+    "module": "factors/common/dated_carry.py",
+    "source_paper": "https://www.bis.org/publications/working-paper-1087-crypto-carry.pdf",
+    "source_review": "../docs/research/regime_program/dated_carry_feasibility_20261027/source_method_mapping.json",
+    "data_protocol": "research_tools/dated_carry/data_plan.json",
+    "report": "../docs/research/regime_program/dated_carry_feasibility_20261027/README.md",
+    "state": "reference_basis_unit_audit_only_no_financial_accounts",
+    "scope": "Matched underlying and quote, linear prices only; spot base-fee net inventory retained; inverse/USD-USDT mismatches rejected. Unverified maturity keeps annualization unknown. Equity reuse requires separate contract/calendar/account adaptation.",
+    "raw_rows_audited": 49730,
+    "new_financial_accounts": 0,
+    "new_independent_mechanisms_proven": 0,
+    "reference_basis_is_profit": false,
+    "alpha_proven": false,
+    "production_eligible": false,
+    "old_74_columns_unchanged": true
   }
 }

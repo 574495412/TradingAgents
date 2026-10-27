@@ -1,0 +1,31 @@
+{
+  "schema": "dated-carry-feasibility-review.v1",
+  "passed": true,
+  "proof_scope": "Source/method mapping, exact independent CSV conversion and explicit unit/settlement counterexamples only.",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/dated_carry/review_feasibility.py": "a6115c7e7ebabd170cde9f0e895ae9a8826ab1555591f323f4efda1a228fcfd7",
+    "factors/common/dated_carry.py": "a367859e76e1b0d97edbf2822d1f77e79cfa162d2e4cc0fc59818f8c144efb74",
+    "tests/research_mainline/test_dated_carry_units.py": "7c5c43132ef8fea4d756622a4929552b9f9e71932f42bfbfff274bb452115db3",
+    "data/research/dated_carry_sources_20261027_v001/completion.json": "1fbdc8c3d197c5fa1b26c8db80c2ce8879741ac93c947b8a98f4419f4c81bdb4",
+    "data/research/dated_carry_source_followup_20261027_v001/completion.json": "0cf6d648434263e47a1204806c3746a93b3e5700cb82b4c3507986cbeb74df41",
+    "data/research/dated_carry_pilot_20261027_v001/completion.json": "66f82907dcd05818fd83db1359af0a1697652d840e44ab8820c698a08e9b3417",
+    "data/research/dated_carry_settlement_route_20261027_v001/completion.json": "7015dc8dbfac8d45501c9ca60b18f173b7e00c3621267eef7d47e2160a1ad387",
+    "results/research/dated_carry_raw_audit_20261027_v001/completion.json": "8a09dc4bb7be9f6d654041b898d9f42da19d9111271e5e032a48034ceef02a28"
+  },
+  "new_financial_accounts": 0,
+  "new_market_archives": 6,
+  "raw_rows_independently_reconstructed": 49730,
+  "current_USDT_linear_metadata_confirmed": true,
+  "historical_precise_cutoff_confirmed": false,
+  "historical_margin_tiers_confirmed": false,
+  "delivery_fee_confirmed": false,
+  "client_cash_confirmed": false,
+  "annualized_reference_basis_inferred": false,
+  "financial_metrics_stay_unknown": true,
+  "independent_source_audit": false,
+  "third_party_review": false,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}

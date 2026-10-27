@@ -1,0 +1,28 @@
+{
+  "schema": "dated-carry-raw-data-pilot.v1",
+  "version": "20261027_v001",
+  "purpose": "Validate linear units, completed-bar timestamps, actual dated-contract coverage and the settlement-source boundary before a financial account is designed. Basis references are not executable returns.",
+  "selection": "BTC and ETH fixed before new price data. Use the first quarter in the existing 2025 research calendar, not a quarter selected by basis or payoff. This pilot cannot be used to optimize maturity or market selection.",
+  "contracts": ["BTCUSDT_250328", "ETHUSDT_250328"],
+  "months": ["2025-01", "2025-02", "2025-03"],
+  "interval": "5m",
+  "archive_template": "https://data.binance.vision/data/futures/um/monthly/klines/{contract}/5m/{contract}-5m-{month}.zip",
+  "checksums_required": true,
+  "spot_parent": "data/research/spot_perpetual_feasibility_20261026_v001",
+  "source_parent": "data/research/dated_carry_sources_20261027_v001",
+  "source_followup": "data/research/dated_carry_source_followup_20261027_v001",
+  "settlement_endpoints": [
+    "https://fapi.binance.com/fapi/v1/deliveryPrice?pair=BTCUSDT",
+    "https://fapi.binance.com/fapi/v1/deliveryPrice?pair=ETHUSDT"
+  ],
+  "endpoint_limit": "Direct read-only response is evidence only for the records it actually returns. Do not infer a missing historical settlement price, past trading status, delivery fee or margin tier from today's metadata or from a filename.",
+  "units": "UM kline timestamps are milliseconds and volumes are base-asset units/USDT quote turnover; source fixed Binance public-data README. Existing spot source was separately verified with its 2025 microsecond parser. Inverse COIN-M contracts are excluded.",
+  "time_rule": "A row at opening time t becomes an observation at t+5minutes only if its close-time is exactly t+5minutes-1millisecond and OHLC/volumes are valid. Preserve partial final bars or days; do not manufacture continuity after trading ends.",
+  "diagnostics": ["official zip SHA256 and independent CSV/Decimal values", "exact bar grain, duplicates, gaps and observed first/last boundary", "same underlying, quote numeraire and historical qualification limitations", "spot-vs-dated same completed-bar reference basis", "settlement endpoint coverage without guessed terminal cash"],
+  "budget": {"maximum_read_only_http_requests": 14, "maximum_new_market_archives": 6, "maximum_response_bytes": 50000000, "new_financial_accounts": 0, "new_model_fits": 0},
+  "financial_design_required_after_data_audit": ["fully specified opportunity/entry/exit clocks and minimally useful net effect", "spot and dated futures wallets, margin and free-cash risk", "separate fills, base-fee quantity loss and emergency unwind", "past-known maturity and explicit early-exit versus settlement policy", "both-leg costs, cash/static controls, complete closed/open accounting, restart and capacity gates"],
+  "new_independent_mechanisms_proven": 0,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "manifest": {
+    "summary.json": "89b9a322f95e7e7e30776cbc6dbdfb4d4d95abf1d81dc3b6a586d596d128cdf6",
+    "source_method_mapping.json": "197011837dea349c4a28320e11fe577cbc6dd3a951bd7df9e0cd84bd54ff9e23",
+    "README.md": "211e3eda54dce0232dc2db9d694bc895ab1bfe4aa544e76a4b0d4d04eab9d861",
+    "settlement_boundaries.json": "46b9e5d446eb939bd829001c0e1b7e8f17cd47709f056715e1167024eb60acad",
+    "verification.json": "2747c5685510c8040878e396c9fd31da45f14f06dab03563005b91b4ad63f17a",
+    "financial_metrics.json": "ce425e7792eedce9f290f52e9688f095f63f767855e8cb6019e82b55eedda3cc"
+  },
+  "profit_goal_met": false
+}

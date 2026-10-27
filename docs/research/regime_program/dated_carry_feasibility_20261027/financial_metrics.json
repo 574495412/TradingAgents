@@ -1,0 +1,9 @@
+{
+  "net_return": null,
+  "cagr": null,
+  "win_rate": null,
+  "max_drawdown": null,
+  "sharpe": null,
+  "capacity": null,
+  "reason": "No continuous dated-carry account yet; a reference basis is not a realizable payoff or annualized account return."
+}

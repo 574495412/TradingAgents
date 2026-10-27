@@ -1,0 +1,43 @@
+{
+  "paper": {
+    "title": "Crypto Carry",
+    "authors": [
+      "Maik Schmeling",
+      "Andreas Schrimpf",
+      "Karamfil Todorov"
+    ],
+    "version": "March24,2023; BISWorkingPaper1087 April2023",
+    "url": "https://www.bis.org/publications/working-paper-1087-crypto-carry.pdf",
+    "raw_file": "data/research/dated_carry_source_followup_20261027_v001/paper.raw",
+    "sha256": "cd7d395e06a2edc3ac1da196f15603a44ed487ed8723b16e2cf1094fadd20639"
+  },
+  "mapping": [
+    {
+      "paper_location": "printedpp1-2,6-7;PDFpp4-5,9-10",
+      "source_method": "BTC/ETH,March2019-Jan2022;Skew constant1/3month annualized bases across venues, with borrowing/lending and CFTC positioning context.",
+      "local_difference": "One actual USDT-linear March2025 contract per asset, raw5m exchange archives and real spot; no interpolation, borrowed financing, option/CFTC reconstruction or source-return inheritance."
+    },
+    {
+      "paper_location": "printedp5;PDFp8;visually inspected",
+      "source_method": "Hedged price exposure does not remove funding-until-convergence/margin risk; spot gains may be unavailable to the futures wallet.",
+      "local_difference": "No financial account is yet generated. Require separate wallet/free-cash/mark-price stress and both-leg fills; current metadata does not certify historical tiers."
+    }
+  ],
+  "mechanism": "Leveraged directional demand and constrained arbitrage capital are a source-supported explanation, not observed counterparty behavior or a certified local cash premium.",
+  "relation_to_prior_work": "Different payoff from trend and floating funding extrapolation; same broad structural-carry/capital-constraint family as prior spot-perp research. No new independent return source proven.",
+  "official_api_source": {
+    "collection_blob_sha": "80edc431f323c30397ab086b9ccb5cb51c6e5a3f",
+    "request": {
+      "name": "Quarterly Contract Settlement Price",
+      "raw": "{{url}}/futures/data/delivery-price",
+      "description": null
+    },
+    "base_url": "https://fapi.binance.com"
+  },
+  "failed_sources_preserved": "Initial BISPDF URL redirected to an HTML publication page; follow its observed PDF link. Three developer docs returned202empty, and guessed delivery route404. Official Postman source supplied /futures/data/delivery-price. All original responses retained.",
+  "direct_public_HTTP_requests": 34,
+  "separate_tool_failures": "Search/connector transport429 attempts yielded no usable data, not included as successful exchange evidence.",
+  "raw_archives_downloaded": 6,
+  "current_metadata_only": true,
+  "external_source_independence": "BIS is independent literature, not independent verification of local market prices. Exchange archive, API and its official SDK/Postman remain same-provider evidence."
+}

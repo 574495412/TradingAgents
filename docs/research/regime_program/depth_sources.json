@@ -1,7 +1,7 @@
 {
   "schema": "research-depth-method-sources.v1",
   "verified_read_at_utc": "2026-10-26T14:46:27Z",
-  "scope": "目标设计所用原始研究与原始记录入口；核对网页不代表已采集数据、验证盈利或完成第三方复核。",
+  "scope": "目标及当前机制所用原始研究、原始记录入口与本地映射；网页/数据核验不代表盈利、外部复核或实际现金认证。",
   "sources": [
     {
       "id": "aqr-trading-costs",
@@ -50,5 +50,6 @@
       "verified_on": "2026-10-27",
       "use": "趋势原始研究的机制、样本和方法；不把该期货样本的收益继承到本地加密适配。"
     }
-  ]
+  ],
+  "dated_carry_source_review": "dated_carry_feasibility_20261027/source_method_mapping.json"
 }

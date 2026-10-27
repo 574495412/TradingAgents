@@ -1,0 +1,25 @@
+{
+  "schema": "dated-carry-source-feasibility.v1",
+  "version": "20261027_v001",
+  "phase": "original_method_contract_and_archive_feasibility_before_financial_design",
+  "hypothesis": "A positive fixed-maturity futures premium may compensate for demand for leveraged upside and constrained arbitrage capital; genuine spot-long/dated-future-short convergence can differ from directional trend and from extrapolated floating funding. Net edge, exchange/collateral risk and independence from prior carry are unproven.",
+  "strongest_alternatives": ["apparent basis is mismatched USD/USDT units or index/spot assets", "inverse collateral is incorrectly treated as a free independent hedge or double-counted cash", "terminal settlement or product migration is assumed rather than observed", "higher quoted basis is entirely fees, capital occupation, insolvency/margin risk or non-executable prices"],
+  "zero_hypothesis": "There is no implementable positive net payoff after valid units, both legs, fees, basis/settlement and capital constraints, or essential evidence is unavailable.",
+  "assets_fixed_without_new_payoff_ranking": ["BTC", "ETH"],
+  "candidate_product_priority": "Check USDT-linear dated contracts first for compatibility with existing cash/linear account; COIN-M data is a separate inverse contract, never alias it to the linear engine.",
+  "scope": "Only original paper, official contract/API/source specifications and exact historical archive prefix metadata in this phase. No new financial accounts, no factor/maturity/market grid and no performance-based symbol selection.",
+  "paper": "https://www.bis.org/publ/work1087.pdf",
+  "official_documents": [
+    "https://developers.binance.com/docs/derivatives/usds-margined-futures/market-data/Exchange-Information",
+    "https://developers.binance.com/docs/derivatives/coin-margined-futures/market-data/Exchange-Information",
+    "https://developers.binance.com/docs/derivatives/usds-margined-futures/market-data/Delivery-Price",
+    "https://raw.githubusercontent.com/binance/binance-public-data/d571690eb66760763b0bd6e27e8cd35603c7e244/README.md"
+  ],
+  "archive_prefixes": ["data/futures/um/monthly/klines/BTCUSDT_", "data/futures/um/monthly/klines/ETHUSDT_", "data/futures/cm/monthly/klines/BTCUSD_", "data/futures/cm/monthly/klines/ETHUSD_"],
+  "budget": {"maximum_read_only_http_requests": 16, "maximum_new_market_archive_downloads": 0, "new_financial_accounts": 0, "new_model_fits": 0, "maximum_actual_data_bytes": 12000000},
+  "completion": "Map source formula, collateral/settlement/currency and raw availability. If incompatible or missing, state the exact gap and do not produce strategy returns. Financial rules and minimally useful effect must be separately frozen before any new payoff evaluation.",
+  "existing_limits": "All 2025/2026 calendar history has already been accessed; a new contract/source is not fresh independent OOS. Public documentation/current metadata is not a historical trading-state or client-cash certificate.",
+  "profit_goal_met": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}

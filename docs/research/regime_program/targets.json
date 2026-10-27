@@ -212,6 +212,12 @@
       "url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
       "local": "trend_btc_role_20261027/original_method_mapping.json",
       "use": "原文公式/持有期/风险及多头对照核验；本地EMA不是完整复现，不继承原文收益。"
+    },
+    {
+      "name": "BIS Crypto Carry 原论文",
+      "url": "https://www.bis.org/publications/working-paper-1087-crypto-carry.pdf",
+      "local": "dated_carry_feasibility_20261027/source_method_mapping.json",
+      "use": "核对期限、计价、保证金与套利资本约束；参考基差不是本地可执行或扣费收益，不继承原文表现。"
     }
   ],
   "workflow": [
@@ -376,9 +382,11 @@
         "monthly_hold_policy_20261027/README.md",
         "monthly_hold_policy_20261027/verification.json",
         "monthly_state_domain_20261027_v002/README.md",
-        "monthly_state_domain_20261027_v002/verification.json"
+        "monthly_state_domain_20261027_v002/verification.json",
+        "dated_carry_feasibility_20261027/README.md",
+        "dated_carry_feasibility_20261027/verification.json"
       ],
-      "outcome": "固定趋势门控两成本小幅正收益，但3个活跃月不足，实际风险显著减少；无模块准入，不构建共享组合或扩大模型。"
+      "outcome": "旧趋势门控冻结且未准入。期限基差仅完成原始方法/计价及数据核验；尚未建立双腿经济账户，没有新合格收益源或多策略总账户。"
     },
     {
       "id": "R07",
@@ -425,9 +433,11 @@
         "monthly_hold_policy_20261027/README.md",
         "monthly_hold_policy_20261027/verification.json",
         "monthly_state_domain_20261027_v002/README.md",
-        "monthly_state_domain_20261027_v002/verification.json"
+        "monthly_state_domain_20261027_v002/verification.json",
+        "dated_carry_feasibility_20261027/README.md",
+        "dated_carry_feasibility_20261027/verification.json"
       ],
-      "outcome": "4新账户、1216日时点内部复算、完整年度/90日/状态归因与真实持仓跨进程恢复通过；经济区间跨零，外部、未见和容量未完成。"
+      "outcome": "期限基差49,730行内部原始复算完成；历史截止/收费/保证金、净收益、容量、外部复现及真正未见仍未完成，参考基差不冒充收益。"
     },
     {
       "id": "R08",
@@ -474,9 +484,11 @@
         "monthly_hold_policy_20261027/README.md",
         "monthly_hold_policy_20261027/verification.json",
         "monthly_state_domain_20261027_v002/README.md",
-        "monthly_state_domain_20261027_v002/verification.json"
+        "monthly_state_domain_20261027_v002/verification.json",
+        "dated_carry_feasibility_20261027/README.md",
+        "dated_carry_feasibility_20261027/verification.json"
       ],
-      "outcome": "已有结果与目标界面可用；收益与外部验证未达标，交接资格仍未完成。"
+      "outcome": "现有界面已通过1280/390宽度的实际浏览器交互核验，显示当前原始核验阶段、新增收益账户0及金融指标未知；交接资格继续未完成。"
     },
     {
       "id": "R09",
@@ -626,26 +638,21 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "monthly_existing_trend_domain_gate",
-    "label": "趋势行情门控：小幅正收益，样本不足未准入",
-    "status": "known_history_positive_necessary_screen_insufficient_month_clusters_no_admission",
-    "report": "monthly_state_domain_20261027_v002/README.md",
-    "description": "既有月初趋势状态门控在8/15bps每边成本下608日净赚19.71/13.35USDT（0.1971%/0.1335%），压力回撤2.69%、日夏普0.046、完整周期胜率53.33%。4条新账户内部核验通过；30个周期仅来自3个活跃月，低于冻结4个月底线，配对差区间跨零。平均实际总敞口从16.48%降至2.38%，不称同风险改善。无模块、容量、外部或未见准入。",
-    "new_financial_accounts": 4,
-    "logical_source_domain_cost_cases": 8,
-    "source_duplicate_cases_reused": 4,
-    "new_economic_variants": 1,
-    "new_independent_mechanisms": 0,
-    "new_state_thresholds": 0,
+    "mechanism": "linear_spot_dated_carry_raw_feasibility",
+    "label": "期限基差原始核验：结算边界待补，尚无收益账户",
+    "status": "raw_units_verified_precise_historical_boundary_and_economic_account_not_established",
+    "report": "dated_carry_feasibility_20261027/README.md",
+    "description": "下一候选限定BTC、ETH的USDT线性季度合约；6个官方归档共49,730行已CSV/Decimal逐值复核，数学反例纳入统一factors/。历史结算接口的零点时间戳与当前合约08UTC元数据语义尚未对齐，最后报告收盘也不同于结算参考价。当前仅有参考价差，历史截止、费率、保证金及双腿账户尚未完成；收益、胜率、回撤、夏普、容量全部未知，本阶段新增收益账户0。",
+    "new_financial_accounts": 0,
+    "new_market_archives": 6,
+    "audited_raw_rows": 49730,
     "new_model_fits": 0,
-    "observed_active_monthly_clusters": 3,
-    "required_minimum_monthly_clusters": 4,
-    "economic_necessary_screen_passed": true,
-    "statistical_sufficiency_established": false,
+    "new_independent_mechanisms": 0,
+    "historical_cutoff_confirmed": false,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "冻结这一门控，不再选其他状态子集、阈值、时钟或放大风险。仅接受真正未见的同合同机会补证；当前3个月不足不能通过重新切分历史解决。下一项可行动研究须先登记不同经济机制及其最强替代解释和原始事实需求，不能基于这点弱正收益训练更复杂配置。外部复现、未见与总账户目标继续未完成。"
+    "next_action": "补充历史交易截止与收费原始条款，并核查标记价/保证金和两钱包现金约束；再冻结提前退出或交割合同、最小有用净效应、两档成本与完整双腿连续账户。不能把当前规则回填过去、把末根K线当结算现金、把高年化参考基差当收益。旧趋势门控保持冻结，不选其他状态或放大仓位。外部、未见与总账户目标继续未完成。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -883,23 +890,26 @@
     "profit_goal_met": false
   },
   "previous_diagnostic_research_stage": {
-    "mechanism": "monthly_holding_price_stop_counterfactual",
-    "label": "月度持有反证完成：亏损收窄，仍未准入",
-    "status": "one_policy_counterfactual_audited_economic_admission_failed",
-    "report": "monthly_hold_policy_20261027/README.md",
-    "description": "只关闭8%单仓价格止损，保留15%账户停机。趋势8/15bps成本下亏5.03%/5.16%，压力回撤从10.63%升至12.79%，平均实际总敞口约翻倍；同幅度多头触发账户停机，不能把相对领先当盈利。4条新政策账户、2条旧路径精确桥接、1条TON提前退出病例；原始净值/现金与真实恢复状态精确一致，敞口浮点差另经独立求和界核验，未重跑收益。无新模块或容量准入。",
+    "mechanism": "monthly_existing_trend_domain_gate",
+    "label": "趋势行情门控：小幅正收益，样本不足未准入",
+    "status": "known_history_positive_necessary_screen_insufficient_month_clusters_no_admission",
+    "report": "monthly_state_domain_20261027_v002/README.md",
+    "description": "既有月初趋势状态门控在8/15bps每边成本下608日净赚19.71/13.35USDT（0.1971%/0.1335%），压力回撤2.69%、日夏普0.046、完整周期胜率53.33%。4条新账户内部核验通过；30个周期仅来自3个活跃月，低于冻结4个月底线，配对差区间跨零。平均实际总敞口从16.48%降至2.38%，不称同风险改善。无模块、容量、外部或未见准入。",
     "new_financial_accounts": 4,
-    "bridge_account_replays": 2,
-    "selected_case_paths": 1,
-    "actual_account_and_case_computations": 7,
     "logical_source_domain_cost_cases": 8,
     "source_duplicate_cases_reused": 4,
     "new_economic_variants": 1,
     "new_independent_mechanisms": 0,
+    "new_state_thresholds": 0,
+    "new_model_fits": 0,
+    "observed_active_monthly_clusters": 3,
+    "required_minimum_monthly_clusters": 4,
+    "economic_necessary_screen_passed": true,
+    "statistical_sufficiency_established": false,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "关闭当前月度实现的止损微调分支。仅核对既有、决策时可观察的行情状态与月度仓位/损失的适用域，先对齐原始来源、时间和成员；不按2026正收益反选年份或未来状态，不重训更大模型。没有可支持的条件机制则结束分支后再登记另一收益机制。外部复现、未见与总账户目标继续未完成。"
+    "next_action": "冻结这一门控，不再选其他状态子集、阈值、时钟或放大风险。仅接受真正未见的同合同机会补证；当前3个月不足不能通过重新切分历史解决。下一项可行动研究须先登记不同经济机制及其最强替代解释和原始事实需求，不能基于这点弱正收益训练更复杂配置。外部复现、未见与总账户目标继续未完成。"
   },
   "diagnostic_study_evidence": {
     "kind": "single_frozen_monthly_trend_domain_known_history",
@@ -951,5 +961,28 @@
     "third_party_review_performed": false,
     "independent_unseen_validation_completed": false,
     "profit_goal_met": false
+  },
+  "mechanism_feasibility_evidence": {
+    "kind": "dated_carry_original_method_and_raw_unit_feasibility",
+    "report": "dated_carry_feasibility_20261027/README.md",
+    "verification_sha256": "2747c5685510c8040878e396c9fd31da45f14f06dab03563005b91b4ad63f17a",
+    "source": "data/research/dated_carry_sources_20261027_v001",
+    "source_followup": "data/research/dated_carry_source_followup_20261027_v001",
+    "raw_pilot": "data/research/dated_carry_pilot_20261027_v001",
+    "route_correction": "data/research/dated_carry_settlement_route_20261027_v001",
+    "raw_audit": "results/research/dated_carry_raw_audit_20261027_v001",
+    "new_financial_accounts": 0,
+    "official_archives": 6,
+    "independent_internal_CSV_Decimal_rows": 49730,
+    "source_math_is_profit_proof": false,
+    "historical_precise_cutoff_confirmed": false,
+    "delivery_fee_confirmed": false,
+    "margin_tiers_confirmed": false,
+    "client_cash_confirmed": false,
+    "independent_oos": false,
+    "third_party_review": false,
+    "profit_goal_met": false,
+    "historical_publication_latency_verified": false,
+    "reference_clock_assumption": "Completed5m bar timestamp is the earliest modeled observation, not certified historical publication/receipt latency."
   }
 }

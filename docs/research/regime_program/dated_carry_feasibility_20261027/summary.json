@@ -1,0 +1,128 @@
+{
+  "schema": "dated-carry-raw-data-audit.v1",
+  "passed": true,
+  "scope": "Raw data/units/arithmetic references only; actual historical qualification, cutoff clock, fee, margin, fills and net advantage unresolved.",
+  "rows": [
+    {
+      "contract": "BTCUSDT_250328",
+      "source_rows": 24865,
+      "daily_observations": 86,
+      "first_observation": "2025-01-01T00:05:00+00:00",
+      "last_observation": "2025-03-28T08:05:00+00:00",
+      "nonpositive_volume_rows": 5,
+      "pandas_vs_decimal_representation": {
+        "open": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "high": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "low": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "close": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "volume": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "quote_volume": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "taker_base": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "taker_quote": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "ignore": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "reference_basis_bps_quantiles": {
+        "0": -21.346354617458005,
+        "0.25": 32.057101492304746,
+        "0.5": 89.94292340716007,
+        "0.75": 218.04124508619367,
+        "1": 351.24612599976274
+      },
+      "annualized_basis_unknown": true,
+      "financial_returns_computed": false
+    },
+    {
+      "contract": "ETHUSDT_250328",
+      "source_rows": 24865,
+      "daily_observations": 86,
+      "first_observation": "2025-01-01T00:05:00+00:00",
+      "last_observation": "2025-03-28T08:05:00+00:00",
+      "nonpositive_volume_rows": 4,
+      "pandas_vs_decimal_representation": {
+        "open": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "high": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "low": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "close": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "volume": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "quote_volume": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "taker_base": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "taker_quote": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        },
+        "ignore": {
+          "differing_binary64_values": 0,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "reference_basis_bps_quantiles": {
+        "0": -21.196284907305408,
+        "0.25": 32.05903701911444,
+        "0.5": 81.55773026254425,
+        "0.75": 202.9079495988033,
+        "1": 327.81511703124414
+      },
+      "annualized_basis_unknown": true,
+      "financial_returns_computed": false
+    }
+  ],
+  "independent_CSV_Decimal_rows": 49730,
+  "official_archives": 6,
+  "source_conversions_preserved": true,
+  "basis_is_executable_profit": false,
+  "annualized_basis_estimated_from_filename": false,
+  "new_financial_accounts": 0,
+  "payoff_identity_tests_are_strategy_trials": false,
+  "production_eligible": false,
+  "independent_oos": false,
+  "third_party_review": false,
+  "profit_goal_met": false
+}

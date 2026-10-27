@@ -1,0 +1,35 @@
+{
+  "testedAt": "2026-10-27T06:56:19.638Z",
+  "tool": "bundled Playwright; Browser plugin not available",
+  "noAppRebuildOrNewDependencies": true,
+  "checks": [
+    {
+      "width": 1280,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "stageVisible": true,
+      "newFinancialAccounts": 0,
+      "financialValuesExplicitlyUnknown": true,
+      "meaningful": true,
+      "overflow": false,
+      "frameworkOverlay": false,
+      "errors": [],
+      "consoleErrors": [],
+      "screenshot": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9/dated-carry-ui-1280.png"
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "stageVisible": true,
+      "newFinancialAccounts": 0,
+      "financialValuesExplicitlyUnknown": true,
+      "meaningful": true,
+      "overflow": false,
+      "frameworkOverlay": false,
+      "errors": [],
+      "consoleErrors": [],
+      "screenshot": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9/dated-carry-ui-390.png"
+    }
+  ]
+}
