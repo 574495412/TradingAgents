@@ -1,0 +1,1721 @@
+{
+  "schema": "multi-regime-research-program.v1",
+  "version": "20261027_v007",
+  "effective_date_shanghai": "2026-10-27",
+  "title": "多行情量化研发：以资本决策为终点的深度目标",
+  "program_status": "active",
+  "profit_goal_status": "not_met",
+  "objective": "在既有三项目与统一factors目录内，每轮只判定一个收益机制是否值得在明确行情和资金约束下投入资本。以流动性充足币种的中低频趋势／动量为起点，优先查原始论文、源码与基金披露，再核对本地偏离；已有反证和已看历史完整保留。结果评估前登记经济假设、最强替代解释、适用／禁用域、必要原始记录及其可用时点、唯一规则变体、完整成交与现金合同、简单对照、最小有用净效应、证据充分性和有限补证预算。从原始记录重建连续扣费账户，报告净收益、完整周期胜率、回撤、夏普、资本占用、容量边界及分时段表现，区分市场暴露、尾部风险补偿和可执行增量。用未参与开发者复算、规则冻结后的真正未见结果及另获授权后的原始成交账单分别检验实现、泛化与已发生经济收益；缺失层级保持未完成。每轮交付支持、反驳或未知的机制判定和继续、终止或封存决定。至少两个不同机制各自取得准入证据后，才检验共享资金、切换成本与共同容量下的组合；总账户仍以原本金和风险预算验证扣费年化20%／挑战30%、最大回撤15%、夏普至少1，不能靠扩大搜索、事后路由、拼接短窗或加杠杆达标。",
+  "target_basis": "20%基础/30%挑战年化、最大回撤15%、日夏普至少1仍是多策略总账户的待验证研发目标，不是保证收益、行业标准、单策略门槛或统计显著性证明。研究结果允许支持、反驳或证据不足；否定一个假设是有效研究进展，不等于总收益目标完成。",
+  "ownership": {
+    "TradingAgents": "目标、来源、统一因子、行情识别、训练编排与独立审计",
+    "Freqtrade": "加密连续账户、撮合、资金费和容量研究",
+    "CZ-Agent": "已有界面展示研究进度；生产策略独立"
+  },
+  "canonical_factor_root": "factors/",
+  "default_market": "流动性充足的加密USDT永续；跨资产因子复用，股票账户单独验收",
+  "targets": [
+    {
+      "id": "net_cagr",
+      "label": "连续扣费年化",
+      "base": 0.2,
+      "stretch": 0.3,
+      "operator": ">=",
+      "format": "percent",
+      "scope": "多策略总账户，8与15bps/边均验证；1万USDT、连续至少365日，含所有库存/切换与费用",
+      "definition": "(期末含退出准备权益/期初本金)^(365/自然日)-1；禁止短窗均值年化",
+      "actual": null,
+      "status": "not_evaluated"
+    },
+    {
+      "id": "max_drawdown",
+      "label": "最大观察回撤",
+      "base": 0.15,
+      "stretch": 0.15,
+      "operator": "<=",
+      "format": "percent",
+      "scope": "多策略总账户，8与15bps/边均验证；1万USDT、连续至少365日，含所有库存/切换与费用",
+      "definition": "完整5分钟含浮亏净值相对历史高点的最大跌幅；延迟超限仍判失败",
+      "actual": null,
+      "status": "not_evaluated"
+    },
+    {
+      "id": "sharpe",
+      "label": "日净值夏普",
+      "base": 1,
+      "stretch": 1.5,
+      "operator": ">=",
+      "format": "number",
+      "scope": "多策略总账户，8与15bps/边均验证；1万USDT、连续至少365日，含所有库存/切换与费用",
+      "definition": "UTC日净值收益均值/样本标准差×sqrt(365)，无风险0；股票另用252",
+      "actual": null,
+      "status": "not_evaluated"
+    }
+  ],
+  "gates": {
+    "complete_lifecycles": 100,
+    "closed_profit_factor": 1.15,
+    "closed_net_pnl_positive": true,
+    "sample_sufficiency": "组合至少100个完整生命周期；单收益源至少30个，另报告按币/月份聚类的不确定区间，不能将相关交易当独立样本",
+    "win_rate": "完整生命周期扣全部成本后盈利数/完整生命周期数；报告Wilson区间和盈亏比，不设统一50%门槛",
+    "attribution": "手续费、滑点、资金费、平仓PnL、开放PnL与退出准备分列；不以开放浮盈代替闭合收益",
+    "capacity": {
+      "capitals_usdt": [
+        10000,
+        100000,
+        1000000
+      ],
+      "minimum_target_usdt": 100000,
+      "at_target": "两档成本净收益>0、回撤<=15%；披露成交/请求、退出延迟、实际净敞口和低成交状态。100万仅探索，未通过不得宣称该容量",
+      "proxy_participation": 0.01,
+      "orderbook_verified": false,
+      "scope": "多策略总账户共同成交与容量，非每个子策略独立承担总本金。"
+    },
+    "strategy_diversity": "至少2个不同经济机制在适用环境下成本后有效；仅改参数不算独立收益源，现金不算alpha",
+    "allocation_increment": "与同一批合格收益模块的静态分散、风险分配基线以及现金比较，另列冻结最佳静态对照；同风险下CAGR提高>=5个百分点且回撤不增加，或回撤相对下降>=20%且CAGR不下降。通过移除模块的消融检查贡献；切换、净额化、冲突与容量均计入一个总账户。",
+    "stability": "完整报告各自然年、90日块、行情和事件分组；2025/2026均已查看，只能作历史诊断。样本不足标未知，不要求每个分组盈利",
+    "no_oracle": "状态、权重、标签、标准化和训练仅用决策时已知且已成熟资料；禁止未来行情标注用于交易、整段HMM平滑或拼接赢家账户",
+    "out_of_sample": "新的历史留出须先登记截止与来源访问记录；已看过的月份不得重新命名为独立样本外",
+    "forward": "未见证据与历史研究分层验收；不设固定30/60天或最低研发天数。没有真正未见/前向证据时，该项保持未完成，不冒充已验证泛化或实盘。",
+    "restart": "持仓、已结资金费、账户高水位、停机与未成交单恢复一致；跨年/切换不得重置",
+    "leverage": "基准gross=0.8，无杠杆放大；任何新风险预算必须作为另一个预登记实验，不能借此达成本轮收益目标",
+    "complete_lifecycles_scope": "多策略总账户至少100个完整周期；单模块最低30个另按module_acceptance验收，失败对冲不填充匹配配对门槛。",
+    "source_revision_sensitivity": "已知来源冲突不得按最高收益选版；新正收益候选须在固定归档与API修订版本分别核验，数据一致性未通过不得冒充通过。当前正文不等于原始历史可用版本，终止后记录不等于实际成交/资金费现金。",
+    "research_depth": "按depth_contract的四项判定解决一个投资问题；必要原始事实、事前反证、完整扣费效应与外部检验各有验收。只完成数据入口或工程检查时，经济及准入项仍未完成。",
+    "statistical_sufficiency": "按经济机制预登记最小有用效应、相关性和区间；报告历史搜索数量及DSR适用限制。原30/100完整周期只是最低样本描述，达到数量不代表统计充分。"
+  },
+  "regimes": [
+    {
+      "id": "trend_up",
+      "label": "上涨趋势",
+      "strategy": "中低频多头趋势、横截面相对动量",
+      "risk": "波动缩放与单币上限",
+      "status": "planned"
+    },
+    {
+      "id": "trend_down",
+      "label": "下跌趋势",
+      "strategy": "双向趋势或已验证的相对多空组合",
+      "risk": "做空需真实资金费/成交；没有有效策略则现金",
+      "status": "planned"
+    },
+    {
+      "id": "range",
+      "label": "低趋势震荡",
+      "strategy": "价差／价格回归候选",
+      "risk": "须证明扣换手成本后有效；区间标签不能事后确定",
+      "status": "planned"
+    },
+    {
+      "id": "volatility_breakout",
+      "label": "波动扩张",
+      "strategy": "突破与加速候选",
+      "risk": "按波动率缩仓、显式滑点压力",
+      "status": "planned"
+    },
+    {
+      "id": "event_shock",
+      "label": "外部事件冲击",
+      "strategy": "降低风险、暂停或退出的覆盖层",
+      "risk": "公开时点+延迟可用；预告时点与实际发布时间分开存证，未知新闻不能当无事件",
+      "status": "planned"
+    },
+    {
+      "id": "liquidity_stress",
+      "label": "流动性不足／状态不确定",
+      "strategy": "减少敞口或现金",
+      "risk": "缺数据不补零；不能强行路由至盈利策略",
+      "status": "planned"
+    }
+  ],
+  "method_sources": [
+    {
+      "name": "已封存13个GitHub来源及22份代码/配置",
+      "url": "https://github.com/pst-group/pysystemtrade",
+      "local": "../github_factor_study_20261025/source_catalog.json",
+      "use": "复用固定commit来源，保留作者声明与本地收益差异"
+    },
+    {
+      "name": "hmmlearn API",
+      "url": "https://hmmlearn.readthedocs.io/en/stable/api.html",
+      "use": "HMM为统计基线，不是神经网络；只允许过去数据拟合和当时可用的过滤状态"
+    },
+    {
+      "name": "NeuralForecast temporal cross-validation",
+      "url": "https://nixtlaverse.nixtla.io/neuralforecast/docs/capabilities/cross_validation.html",
+      "use": "参考滚动时序验证；先固定小型MLP对照，只有增益成立才升级TCN/TFT，不继承框架收益"
+    },
+    {
+      "name": "ARK投资流程",
+      "url": "https://www.ark-invest.com/investment-process",
+      "use": "主题/公司论点与失效纪律；主动主题研究不等于通用量化择时"
+    },
+    {
+      "name": "ARK FAQ",
+      "url": "https://www.ark-invest.com/faq",
+      "use": "管理人明确risk-on/risk-off适用性，不能要求每种行情都盈利"
+    },
+    {
+      "name": "Man AHL",
+      "url": "https://www.man.com/ahl",
+      "use": "多机制/多市场、效率和风险管理"
+    },
+    {
+      "name": "AQR风格溢价",
+      "url": "https://www.aqr.com/insights/research/journal-article/understanding-style-premia",
+      "use": "价值/动量/Carry/防御组合"
+    },
+    {
+      "name": "AQR择时与分散化",
+      "url": "https://www.aqr.com/insights/research/white-papers/tactical-tilts-and-foregone-diversification",
+      "use": "择时有分散化代价，不能默认全仓切换最好"
+    },
+    {
+      "name": "Two Sigma投资管理",
+      "url": "https://www.twosigma.com/businesses/investment-management/",
+      "use": "预测、成本和风险共同决定组合；预测准确率不等于账户增量"
+    },
+    {
+      "name": "桥水All Weather",
+      "url": "https://www.bridgewater.com/research-and-insights/the-all-weather-story",
+      "use": "按环境风险结构分散，不等于精准预测后切换"
+    },
+    {
+      "name": "OctopusTakopi/funding-rate-alpha",
+      "url": "https://github.com/OctopusTakopi/funding-rate-alpha/tree/cf9f87c01d3165bbc3bf34438baee289d248ffca",
+      "local": "historical_universe_20261026/source_review.json",
+      "use": "静态审阅历史合约覆盖与截尾／未来成员／缺失持仓问题，不采纳收益声明"
+    },
+    {
+      "name": "bryanvine/alpha-research",
+      "url": "https://github.com/bryanvine/alpha-research/tree/17b8b5e1c79af194f733544517d82e3cf12c2259",
+      "local": "historical_universe_20261026/source_review.json",
+      "use": "纯资金费方向假设与价格代理、分位重叠反例；未引入源码或采纳盈利结论"
+    },
+    {
+      "name": "Trading Costs",
+      "url": "https://www.aqr.com/insights/research/working-paper/trading-costs",
+      "use": "真实执行成本与冲击应由真实成交数据校准；股票样本结论和数值不能迁移为加密成本认证。"
+    },
+    {
+      "name": "The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting and Non-Normality",
+      "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+      "use": "控制多重搜索与收益非正态造成的业绩膨胀；需完整试验历史及适用假设，不把账户数当独立试验数。"
+    },
+    {
+      "name": "The Probability of Backtest Overfitting",
+      "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+      "use": "PBO/CSCV用于适用试验集合的选择稳定性诊断，不能把已看的历史转换成新的未见证据。"
+    },
+    {
+      "name": "Time series momentum, 原始已发表论文(2012)",
+      "url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+      "local": "trend_btc_role_20261027/original_method_mapping.json",
+      "use": "原文公式/持有期/风险及多头对照核验；本地EMA不是完整复现，不继承原文收益。"
+    },
+    {
+      "name": "BIS Crypto Carry 原论文",
+      "url": "https://www.bis.org/publications/working-paper-1087-crypto-carry.pdf",
+      "local": "dated_carry_feasibility_20261027/source_method_mapping.json",
+      "use": "核对期限、计价、保证金与套利资本约束；参考基差不是本地可执行或扣费收益，不继承原文表现。"
+    }
+  ],
+  "workflow": [
+    "提出唯一投资判断、最强替代解释与决定性反证",
+    "检索原始论文、源码或基金披露；固定所采用版本与本地偏离",
+    "只取得决定该判断所需的原始记录；核对身份与决策时可用性",
+    "看结果前冻结规则、执行、预算、对照、最小有用效应及停止判据",
+    "复现方法并构建完整连续账户；技术正确性与经济证据分别验收",
+    "估计扣费增量、依赖与搜索偏差；检验风险、退出和容量失效边界",
+    "给出支持、反驳或未知结论；决定继续、终止或暂停补证",
+    "以外部复算和真正未见数据检验准入；缺证据保持未完成",
+    "合格独立机制形成后才验证组合；实际执行另经授权与原始对账验收"
+  ],
+  "budget": {
+    "source_repository_shortlist_max": 12,
+    "formula_versions_per_family_max": 2,
+    "neural_models_first_round_max": 1,
+    "neural_architecture": "单个小型MLP，HMM为单独统计对照",
+    "screen_accounts": 24,
+    "followup_accounts": 24,
+    "capacity_accounts": 12,
+    "total_accounts_max": 60,
+    "design": "一次做透一个收益机制，基线加至多一个经济变体；仅为明确反证登记有限消融。原账户和来源数量均为上限而非交付目标，不要求凑满；模型和市场扩展依证据决定。",
+    "selection": "子策略按预登记适用域的成本优势、风险和样本证据分级，不按全年20%一刀切；组合候选在后续评估前固定，不依据已观察的2026收益反选。",
+    "stopping": "核心经济假设被原始证据反驳且无新解释时停止该分支，记录反证后才切换机制；缺证据记未知。不得靠增加搜索量、改变风险预算或追溯改写旧结果求达标。",
+    "active_mechanisms_max": 1,
+    "new_economic_variants_per_round_max": 1
+  },
+  "tasks": [
+    {
+      "id": "R00",
+      "title": "冻结研发目标与验收口径",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [],
+      "done_when": "v006正式目标明确专家主动反证、必要原始输入、具体方法工具、独立检验和继续/终止/未知判据；一次一个机制，保留旧协议与结果。目标制定完成不代表收益目标完成。",
+      "evidence": [
+        "README.md",
+        "targets.json",
+        "depth_contract_validation.json",
+        "protocol_archive/20261026_before_depth_v003/completion.json"
+      ]
+    },
+    {
+      "id": "R01",
+      "title": "补充行情识别、震荡与模型公开来源",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R00"
+      ],
+      "done_when": "每一采用版本记录commit/许可证/具体公式/参数/收益口径；先复用已有13仓库，最多新增12个候选来源",
+      "evidence": [
+        "preparation_20261026/source_review.json",
+        "preparation_20261026/provenance.json"
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "实现因果行情分类与可用性检查",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R01"
+      ],
+      "done_when": "趋势方向、波动、流动性与不确定状态可逐时复算；前缀一致性通过；不以未来收益判定当时行情",
+      "evidence": [
+        "preparation_20261026/states_summary.json",
+        "preparation_20261026/independent_audit.json"
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "统一五类收益策略及现金接口",
+      "owner": "TradingAgents + Freqtrade",
+      "status": "done",
+      "depends_on": [
+        "R01"
+      ],
+      "done_when": "趋势、相对动量、资金费组合、震荡回归、波动突破有版本、适用状态、失效条件和独立账户；不因数量不足伪造有效收益源",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R04",
+      "title": "核实事件时点并实现风险覆盖层",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R02"
+      ],
+      "done_when": "至少完成已有FOMC公开时点回放；预告/发布时间/首次可用分开，缺失事件覆盖显式标注；有无事件覆盖层同账户比较",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R05",
+      "title": "HMM与固定小型神经网络对照",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R02",
+        "R03"
+      ],
+      "done_when": "HMM与MLP分别对照规则/线性；过去拟合、成熟标签、相同信息与执行预算、无随机时间切分；预测改善与账户改善分别验收",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json"
+      ],
+      "outcome": "实现与有限评估已完成，经济筛查未通过"
+    },
+    {
+      "id": "R06",
+      "title": "验证分层协议下共享账户多策略组合",
+      "owner": "Freqtrade + TradingAgents",
+      "status": "in_progress",
+      "depends_on": [
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "done_when": "每轮先交付一个机制的投资判定：最强替代解释、事前有用效应、完整成本/风险/资本占用及失效边界；至少两个经济独立且合格模块后，才验证共享资金、库存与容量的组合。",
+      "evidence": [
+        "accounts_20261026/README.md",
+        "accounts_20261026/summary.json",
+        "accounts_20261026/selection.json",
+        "pair_accounts_20261026/README.md",
+        "pair_accounts_20261026/summary.json",
+        "module_domains_20261026/README.md",
+        "domain_accounts_20261026/README.md",
+        "domain_accounts_20261026/summary.json",
+        "domain_accounts_20261026/selection.json",
+        "spot_perpetual_feasibility_20261026/README.md",
+        "spot_carry_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/verification.json",
+        "historical_universe_20261026/README.md",
+        "historical_universe_20261026/verification.json",
+        "historical_universe_20261026/source_review.json",
+        "historical_execution_20261026/README.md",
+        "historical_execution_20261026/verification.json",
+        "expanded_market_inputs_20261026/README.md",
+        "expanded_market_inputs_20261026/verification.json",
+        "sparse_accounts_20261026/README.md",
+        "matched_carry_feasibility_20261026/README.md",
+        "carry_exit_cases_20261027/README.md",
+        "carry_exit_cases_20261027/verification.json",
+        "trend_btc_role_20261027/README.md",
+        "trend_btc_role_20261027/verification.json",
+        "monthly_tsmom_20261027_v002/README.md",
+        "monthly_tsmom_20261027_v002/verification.json",
+        "monthly_hold_policy_20261027/README.md",
+        "monthly_hold_policy_20261027/verification.json",
+        "monthly_state_domain_20261027_v002/README.md",
+        "monthly_state_domain_20261027_v002/verification.json",
+        "dated_carry_feasibility_20261027/README.md",
+        "dated_carry_feasibility_20261027/verification.json",
+        "shared_failure_attribution_20261027/README.md",
+        "shared_failure_attribution_20261027/verification.json",
+        "options_vrp_feasibility_20261027/README.md",
+        "options_vrp_feasibility_20261027/verification.json"
+      ],
+      "outcome": "既有金融拒绝及共同亏损诊断保留；新的期权风险溢价只完成原始方法/单分钟数据与单位核验，尚无合格资金合同或新账户，没有新机制或共享资金组合。"
+    },
+    {
+      "id": "R07",
+      "title": "收益、分行情稳定性与容量独立验收",
+      "owner": "TradingAgents",
+      "status": "in_progress",
+      "depends_on": [
+        "R06"
+      ],
+      "done_when": "逐项区分内部算术、历史经济、第三方复现、未见数据和实际执行；核验全部现金流、选择偏差、分状态效应/不确定性及真实执行支持的容量。外部或未见验证缺失保持未完成，收益未达标不完成。",
+      "evidence": [
+        "sizing_20261026/README.md",
+        "sizing_20261026/summary.json",
+        "sizing_20261026/control_reproduction.json",
+        "pair_formation_20261026/README.md",
+        "pair_formation_20261026/summary.json",
+        "pair_formation_20261026/independent_audit.json",
+        "fund_methods_20261026/README.md",
+        "pair_accounts_20261026/README.md",
+        "pair_accounts_20261026/summary.json",
+        "module_domains_20261026/README.md",
+        "domain_accounts_20261026/README.md",
+        "domain_accounts_20261026/summary.json",
+        "domain_accounts_20261026/selection.json",
+        "spot_perpetual_feasibility_20261026/README.md",
+        "spot_carry_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/verification.json",
+        "historical_universe_20261026/README.md",
+        "historical_universe_20261026/verification.json",
+        "historical_universe_20261026/source_review.json",
+        "historical_execution_20261026/README.md",
+        "historical_execution_20261026/verification.json",
+        "expanded_market_inputs_20261026/README.md",
+        "expanded_market_inputs_20261026/verification.json",
+        "sparse_accounts_20261026/README.md",
+        "matched_carry_feasibility_20261026/README.md",
+        "carry_exit_cases_20261027/README.md",
+        "carry_exit_cases_20261027/verification.json",
+        "trend_btc_role_20261027/README.md",
+        "trend_btc_role_20261027/verification.json",
+        "monthly_tsmom_20261027_v002/README.md",
+        "monthly_tsmom_20261027_v002/verification.json",
+        "monthly_hold_policy_20261027/README.md",
+        "monthly_hold_policy_20261027/verification.json",
+        "monthly_state_domain_20261027_v002/README.md",
+        "monthly_state_domain_20261027_v002/verification.json",
+        "dated_carry_feasibility_20261027/README.md",
+        "dated_carry_feasibility_20261027/verification.json",
+        "shared_failure_attribution_20261027/README.md",
+        "shared_failure_attribution_20261027/verification.json",
+        "options_vrp_feasibility_20261027/README.md",
+        "options_vrp_feasibility_20261027/verification.json"
+      ],
+      "outcome": "期权34状态历史序列可重建；跨渠道接收差异、BTC/USD/forward计价及条件手数失败保留。完整生命周期、费用/保证金/钱包、容量、第三方和真正未见仍未完成。"
+    },
+    {
+      "id": "R08",
+      "title": "现有界面持续显示证据与交接资格",
+      "owner": "CZ-Agent",
+      "status": "in_progress",
+      "depends_on": [
+        "R07"
+      ],
+      "done_when": "沿用现有界面展示v006目标、每层证据的状态/缺口和失败；数据量、账户数与代码检查不展示为盈利或第三方认证。只有相应证据通过才提高资格。",
+      "evidence": [
+        "sizing_20261026/README.md",
+        "sizing_20261026/summary.json",
+        "sizing_20261026/control_reproduction.json",
+        "pair_formation_20261026/README.md",
+        "pair_formation_20261026/summary.json",
+        "pair_formation_20261026/independent_audit.json",
+        "fund_methods_20261026/README.md",
+        "pair_accounts_20261026/README.md",
+        "pair_accounts_20261026/summary.json",
+        "module_domains_20261026/README.md",
+        "domain_accounts_20261026/README.md",
+        "domain_accounts_20261026/summary.json",
+        "domain_accounts_20261026/selection.json",
+        "spot_perpetual_feasibility_20261026/README.md",
+        "spot_carry_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/README.md",
+        "max_effect_accounts_20261026/verification.json",
+        "historical_universe_20261026/README.md",
+        "historical_universe_20261026/verification.json",
+        "historical_universe_20261026/source_review.json",
+        "historical_execution_20261026/README.md",
+        "historical_execution_20261026/verification.json",
+        "expanded_market_inputs_20261026/README.md",
+        "expanded_market_inputs_20261026/verification.json",
+        "sparse_accounts_20261026/README.md",
+        "matched_carry_feasibility_20261026/README.md",
+        "carry_exit_cases_20261027/README.md",
+        "carry_exit_cases_20261027/verification.json",
+        "trend_btc_role_20261027/README.md",
+        "trend_btc_role_20261027/verification.json",
+        "monthly_tsmom_20261027_v002/README.md",
+        "monthly_tsmom_20261027_v002/verification.json",
+        "monthly_hold_policy_20261027/README.md",
+        "monthly_hold_policy_20261027/verification.json",
+        "monthly_state_domain_20261027_v002/README.md",
+        "monthly_state_domain_20261027_v002/verification.json",
+        "dated_carry_feasibility_20261027/README.md",
+        "dated_carry_feasibility_20261027/verification.json"
+      ],
+      "outcome": "现有界面已通过1280/390宽度的实际浏览器交互核验，显示当前原始核验阶段、新增收益账户0及金融指标未知；交接资格继续未完成。"
+    },
+    {
+      "id": "R09",
+      "title": "基金公开方法研究与目标层级纠偏",
+      "owner": "TradingAgents",
+      "status": "done",
+      "depends_on": [
+        "R00",
+        "R01"
+      ],
+      "done_when": "核实ARK、Man AHL、AQR、Two Sigma与桥水官方方法，区分公开流程/管理人预期/可复制代码/本地收益；归档旧协议，明确子策略、配置和总账户不同完成判据",
+      "evidence": [
+        "fund_methods_20261026/README.md",
+        "fund_methods_20261026/sources.json",
+        "protocol_archive/20261026_before_fund_review_v001/completion.json"
+      ]
+    }
+  ],
+  "production_eligible": false,
+  "orders_enabled": false,
+  "independent_oos": false,
+  "preparation_evidence": {
+    "date": "2026-10-26",
+    "title": "因果行情与策略输入已生成，账户收益尚未计算",
+    "source_records": 13,
+    "forecast_days": 608,
+    "monthly_fits": 20,
+    "hmm_forecast_days": 608,
+    "linear_forecast_days": 608,
+    "mlp_forecast_days": 608,
+    "independent_probability_max_error": 2.220446049250313e-16,
+    "prefix_cut_checks": 3,
+    "verified_official_releases": 22,
+    "warning_summary": "336个NumPy数组shape弃用警告，未出现优化未收敛警告；完整警告保留在拟合回执",
+    "profit_verified": false,
+    "states_2025": {
+      "range": 237,
+      "trend_up": 59,
+      "volatility_breakout": 42,
+      "trend_down": 27
+    },
+    "historical_universe": {
+      "source": "historical_universe_20261026/README.md",
+      "symbols": 860,
+      "daily_rows": 636990,
+      "monthly_archives": 21357,
+      "membership_arithmetic_passed": true,
+      "historical_trading_status_verified": false,
+      "new_financial_accounts": 0,
+      "independent_oos": false
+    },
+    "historical_execution": {
+      "source": "historical_execution_20261026/README.md",
+      "crosschecked_contract_days": 143,
+      "api_reference_days": 4,
+      "api_disagreement_days": 3,
+      "known_terminal_cases": 3,
+      "changed_preview_decisions": 1,
+      "all_sources_concordant": false,
+      "terminal_settlement_values_verified": false,
+      "financial_accounts": 0
+    },
+    "expanded_market": {
+      "source": "expanded_market_inputs_20261026/README.md",
+      "symbols": 175,
+      "market_rows": 27386202,
+      "funding_events": 473223,
+      "historical_tradability_certified": false,
+      "new_financial_accounts": 0
+    }
+  },
+  "representative_actual": "固定原文arXiv2410.15195v2与作者commit1ffbd14c3c5f844b356c685bf70cdff654356f5c；私有原始面板/完整代码复现缺口保留。官方历史合约与两条DVOL样本可得，空成交响应不证明无成交。独立采集者提供80条原生历史消息、34盘口、序列缺口0；24个跨渠道差异由同事件后到book解释，后到数据不能用于先前决策。按当前返回最小量及1:1USD对照作必要检查，参考名义9337.02USD超过8000USD；mark较bid演示多7.469616USD。原始历史手数/费用、完整生命周期/钱包/保证金未认证，新收益账户0，无原法或收益准入。 既有金融拒绝不变，多策略总账户未建立，目标实际值继续为空。",
+  "account_evidence": {
+    "date": "2026-10-27",
+    "accounts": 4,
+    "audit_passed": true,
+    "profit_goal_met": false,
+    "source": "max_lottery_accounts_20261027/verification.json",
+    "next_action": "先限定一个期权产品/风险单位/钱包合同，依据权威最小量、计价、保证金和结算资料判断能否满足原本金与风险预算。保留所检BTC逆向合约的条件性手数检查失败；不把最小量改小、不放大本金/gross或按权利金假装低风险。只有具体完整生命周期的期权与对冲原始行情/可用时点、费用和资本约束方案明确后才登记一个经济试验；否则该产品域封存未知。当前80条源采样仅数据协议，不能回标未见策略收益；不扩大仓库/报价目录或编造DVOL、mark与历史过滤器。原亏损、组合、容量、外部与完整未见任务仍未完成。",
+    "rounds": [
+      {
+        "name": "regime",
+        "accounts": 56,
+        "passed": false
+      },
+      {
+        "name": "forecast_sizing",
+        "accounts": 56,
+        "passed": false,
+        "repeated_controls": true
+      },
+      {
+        "name": "cointegrated_pairs",
+        "accounts": 26,
+        "passed": false,
+        "sample_sufficiency": "2/5个匹配周期，不足以确认条件性优势",
+        "legacy_gate": "v001全年单策略筛查保留，不追溯重判"
+      },
+      {
+        "name": "conditional_domains",
+        "accounts": 10,
+        "reused_references": 12,
+        "passed": false,
+        "research_followups": [],
+        "reason": "两成本净收益与闭合PnL不能同时为正；不是按全年20%淘汰"
+      },
+      {
+        "name": "segregated_spot_perpetual_carry",
+        "accounts": 20,
+        "reused_cash_references": 6,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 4,
+        "passed": false,
+        "reason": "2/7完整周期，容量退出未过；同一资金费机制，不是两个独立收益源"
+      },
+      {
+        "name": "max_effect_matched_momentum",
+        "accounts": 24,
+        "reused_cash_references": 6,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 6,
+        "passed": false,
+        "reason": "2026冷启动正收益不能覆盖2025连续停机；两种MAX连续账户负收益且未触发容量，无独立机制准入"
+      },
+      {
+        "name": "pure_funding_source_sensitive",
+        "accounts": 30,
+        "reused_momentum_references": 6,
+        "reused_cash_references": 6,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 8,
+        "passed": false,
+        "reason": "2026冷启动改善，但2025和608日连续扣费PnL负；源版本期末收益相同仍有32个中间净值差异；容量未触发，不是按单策略20%淘汰"
+      },
+      {
+        "name": "sparse_identity_pit_cohort",
+        "accounts": 54,
+        "strategy_accounts": 48,
+        "cash_accounts": 6,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 16,
+        "nonflat_process_restarts": 8,
+        "passed": false,
+        "research_followups": [],
+        "reason": "48个策略账户均为负，资金费正贡献被价格腿亏损吞噬；两源24组目标与净值相同，仍保留122个原始来源差异日。未触发容量，不以全年20%淘汰模块。"
+      },
+      {
+        "name": "dated_carry_one_quarter_pilot",
+        "accounts": 4,
+        "reused_cash_references": 1,
+        "financial_audit_passed": true,
+        "actual_process_restarts": 2,
+        "passed": false,
+        "reason": "必要经济初筛为正；只有2相关周期和1季度，历史交易约束未认证，样本与外部/未见证据不足，无容量或独立收益源准入"
+      },
+      {
+        "name": "dated_carry_conditional_integer_inventory_full_dust_reserve",
+        "accounts": 4,
+        "financial_cash_integer_audit_passed": true,
+        "actual_process_restarts": 3,
+        "passed": false,
+        "reason": "模型净值小幅正收益但闭合周期0、胜率未知；持有余币全额非现金准备，历史过滤器/成交价格假设与样本不足，无模块/容量或独立收益源准入"
+      },
+      {
+        "name": "weekly_max7_lottery_reversal_and_matched_ordinary7_control",
+        "accounts": 4,
+        "logical_source_cost_policy_cases": 8,
+        "source_targets_exactly_equal_before_returns": true,
+        "financial_audit_passed": true,
+        "passed": false,
+        "reason": "MAX7两成本绝对扣费亏损、相对增量低于事前2个百分点、回撤超过15%并停机；反向原始文献不是本地账户收益证明。"
+      }
+    ],
+    "accounts_scope": "本轮实际策略/成本账户，不是累计账户数或独立试验数",
+    "latest_diagnostic_accounts_inspected": 12,
+    "latest_diagnostic_source": "shared_failure_attribution_20261027/verification.json"
+  },
+  "current_research_stage": {
+    "mechanism": "source_fidelity_and_evaluation_scope_review",
+    "label": "评估口径核查：现金对照通过，原版策略复现待完成",
+    "status": "synthetic_cash_controls_passed_source_strategy_replication_not_completed",
+    "report": "evaluation_scope_review_20261027/README.md",
+    "description": "确认原论文与本地政策存在信号/周期/风险偏离；永久15%回撤停机使后续现金期不能作为原策略当期信号评估。21条可手算现金路径和1条停机路径通过，未发现所测手续费/滑点/资金费基础算账错误，不能全局认证引擎。公开教程盈利为作者披露、未本地复现；NFI仅核对配置。既有阴性结果保留。",
+    "synthetic_controls_passed": 22,
+    "new_financial_accounts": 0,
+    "new_economic_variants_evaluated": 0,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "capacity_verified": false,
+    "next_action": "先固定一个NFI commit及对应作者报告/原始数据/原引擎/配置的有界复现合同；逐笔解释差异，再只迁移一个条件，最后验原预算和风险门槛。缺少决定性原件则封存未知，不跑参数网格或改变既有风险规则求通过。原版复现完成前不依据本地变体失败否定原策略。期权扩展暂列后续，不以数据入口或合成控制当盈利进展。"
+  },
+  "acceptance_version": "module-allocation-portfolio.v2",
+  "target_scope": "multi_strategy_total_account",
+  "objective_levels": [
+    {
+      "id": "module",
+      "label": "收益模块及风险覆盖层",
+      "criterion": "先登记经济机制、可观察适用域/禁用域、持有周期、失效条件和风险限额；在该机会集中验证扣费优势。不要求单策略全年20%或每种行情都盈利；样本不足标未知。"
+    },
+    {
+      "id": "allocation",
+      "label": "配置、事件与模型增量",
+      "criterion": "同模块/同风险比较静态分散、风险分配及有限状态调权；共享资金/库存/容量并扣切换成本，检查移除模块的消融结果。风险层按总账户减损与收益代价评价。"
+    },
+    {
+      "id": "portfolio",
+      "label": "多策略总账户",
+      "criterion": "至少两个有证据的不同收益机制；总账户再验20%年化、15%回撤、夏普1和容量，不以加杠杆、拼接短窗或事后赢家路由达标。"
+    }
+  ],
+  "module_acceptance": {
+    "minimum_cagr": null,
+    "minimum_sharpe": null,
+    "fixed_annual_hurdle_applies": false,
+    "minimum_complete_lifecycles": 30,
+    "minimum_cluster_groups": 4,
+    "cluster_note": "分别报告币/币对与入场时间块；不足为证据不足，达到最低数仍不等于独立或统计充分。不要求新增等待日数。",
+    "required": "预登记适用域内两成本净期望、闭合损益、PF、尾部风险、成交和容量；真实资金费与退出费用齐全，正收益还须报告不确定区间及相关性。",
+    "off_domain": "现金或事前规定的降风险；禁用域不能按未来收益事后选择。",
+    "risk_overlay": "按相同机会集总账户减损/收益代价验收，不要求覆盖层具有独立正PnL。",
+    "insufficient_evidence_status": "unknown",
+    "research_candidate_is_admitted": false,
+    "capacity_scope": "按模块拟分配资金袖套验收；总账户10万共同成交容量另验，不要求每个子策略都独立承载全部本金。",
+    "statistical_sufficiency": "最低周期数与聚类组数只是必要描述；还需按预登记效应量、依赖与搜索历史判断证据充分性。"
+  },
+  "previous_financial_research_stage": {
+    "mechanism": "sparse_identity_pit_funding_max_momentum_accounts",
+    "status": "financial_audit_and_process_restoration_complete_no_economic_admission",
+    "report": "sparse_accounts_20261026/README.md",
+    "decisions": 89,
+    "symbols": 172,
+    "market_rows": 27354334,
+    "funding_events": 476658,
+    "daily_source_conflict_days": 122,
+    "new_financial_accounts": 54,
+    "strategy_accounts": 48,
+    "cash_accounts": 6,
+    "actual_process_restarts": 16,
+    "nonflat_process_restarts": 8,
+    "source_pairs": 24,
+    "all_strategy_accounts_negative": true,
+    "admitted_modules": [],
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "historical_tradability_certified": false,
+    "payable_cashflows_certified": false,
+    "source_agreement_passed": false,
+    "next_action": "优先预登记逐币现货多头/永续空头的资金费机制，核验真实现货与同资产身份，再独立双腿成交、基差、隔离钱包及容量验证；对旧固定池差距做有限同配置消融。没有合格收益源前不训练更复杂调权、不增加杠杆。",
+    "profit_proven": false,
+    "label": "历史时点池账户验证",
+    "description": "54个账户已独立复算及真实进程恢复；48个策略案均亏损，容量未触发，无新模块准入。"
+  },
+  "depth_contract": {
+    "schema": "research-depth-contract.v1",
+    "status": "active",
+    "active_mechanisms_max": 1,
+    "new_economic_variants_per_round_max": 1,
+    "progress_measure": "以一个机制的资本投入判断因何证据改变为进展。来源、因子、回测、模型和测试数量只记工作量；若没有改变支持、反驳或未知的判断，不据此扩大研究范围。",
+    "expert_work": [
+      "先写可证伪的收益机制：谁可能支付、为什么不能轻易套利、承担什么风险、何时失效；交易对手行为未经观测只能记解释假说，不能由价格规律证明。零假设为完整成本后无可利用优势。",
+      "主动寻找最强替代解释：方向收益是否只是市场多头暴露，状态筛选是否只是减少持仓，优势是否来自少数币/月、隐含杠杆、终止资产缺失或遗漏费用；用同机会集对照、实际敞口和集中度检查逐项排除。损益归因不冒充因果识别。",
+      "先审数据生成过程与可用时点：含退市的历史名单、资产身份、修订与接收延迟、缺失和不可成交窗口；信号时点与下单/成交时点分开，原始文件保留，派生因子可从零重建。",
+      "看结果前冻结唯一机制、基线与至多一个经济变体、最小有用净效应、盈亏平衡成本、风险/容量边界、相关性处理与停止条件；记录全部失败和访问过的时间段，不能换阈值或删年份把阴性结果调成阳性。",
+      "先准备外部复算与未见检验的反对意见清单，再评价结果；内部算术、历史经济有效性、外部复现、未见泛化和实际成交分别验收。缺失任何一层，只允许该层之前的结论。"
+    ],
+    "raw_inputs": [
+      {
+        "scope": "加密价量与可成交性",
+        "records": "交易所原始逐笔成交/成交ID、必要交易窗口的买卖报价、盘口快照与增量/序列号；原始ZIP/CSV/CHECKSUM；历史上线、退市、合约规格和资产更名原文。",
+        "question": "当时是否存在且可交易？信号价格是否可成交？只为当前机制收集必要粒度；低频筛查可用原始K线，盘口容量认证另需报价和真实执行证据。",
+        "availability": "分别保存事件发生、交易所发布、本地首次接收及修订时点，时区/单位/资产身份明确；今日接口不能自动代表历史可得版本。"
+      },
+      {
+        "scope": "合约现金流与账户",
+        "records": "实际资金费事件、标记/指数价格、费率与收费档位、保证金和最小数量规则；另获账户数据授权后读取原始委托回报、成交、手续费、资金费收入、划转及余额。",
+        "question": "收益能否落实为现金？公开费率不是客户到账凭证，K线成交量不是可用容量；退出、部分成交、基差、残仓和资本占用必须入账。"
+      },
+      {
+        "scope": "事件事实",
+        "records": "央行、交易所及公司原始发布全文/附件、首发和修订版本、预告/实际发布/首次接收时间；只研究预登记机制确实需要的事件。",
+        "question": "事件在决策时是否已知？不以新闻摘要、情绪分数或事后事件标签替代原文；缺少历史版本时披露无法识别的部分。"
+      },
+      {
+        "scope": "港美股复用边界",
+        "records": "历史上市/退市及指数成份变更、原始未复权成交/报价、股息/拆并股/整手/停牌原公告；SEC EDGAR、HKEX原始申报全文与附件、受理和修订时间。",
+        "question": "财报什么时候真正可用，收益与持仓如何受公司行动影响？标准化财务表仅作索引，须回到具体申报和当时版本；由独立港美股任务执行，USD/HKD账户独立验收。"
+      }
+    ],
+    "methods": [
+      {
+        "method": "机制预登记与强对照",
+        "tools": "现有Git、JSON试验台账与factors/；原论文公式映射；同机会集方向移除/现金基线，状态策略另与静态配置比较；逐币、逐月和市场暴露归因。",
+        "acceptance": "预先定义最小有用净效应和推翻条件；实际风险不匹配就披露并限制结论，不能把目标权重匹配称实际风险匹配。"
+      },
+      {
+        "method": "时点重建与连续现金账本",
+        "tools": "现有Python、Parquet/JSON、Freqtrade研究引擎；按原始时间顺序连接资格/事件与信号；csv/Decimal独立重读，核对现金、持仓、资金费、退出和恢复状态。",
+        "acceptance": "能从原始记录追到每项输入和现金流；前缀截断/未来扰动不改变过去决策；缺失事实不补零、不伪造成交。"
+      },
+      {
+        "method": "依赖校正与历史搜索控制",
+        "tools": "冻结walk-forward；仅在标签重叠时purging/embargo；NumPy/SciPy时间块/资产聚类区间；完整试验台账后按原文适用条件使用DSR，必要时PBO/CSCV。",
+        "acceptance": "报告效应量、区间、依赖与全部搜索历史；少数相关交易或已看历史不足以证明泛化，不能把最低交易数量当统计充分性保证。"
+      },
+      {
+        "method": "成本与容量的失效边界",
+        "tools": "既有基础/压力成本账户；分列费用、滑点、资金费、价差/基差和未付退出准备；计算盈亏平衡成本；有净优势后才用必要报价/成交及资金规模检验容量。",
+        "acceptance": "报告优势在什么成本、退出延迟和本金下消失；K线参与率只能称容量代理，不继承论文或股票市场的冲击参数。"
+      },
+      {
+        "method": "适用域与模型增量",
+        "tools": "既有、决策时可观察的行情定义；每轮基线加至多一个经济变体；规则/线性优先，HMM/MLP只有在相同信息、执行和账户约束下检验增量。",
+        "acceptance": "先支持各机制的条件净优势，再验证总账户分配；不强求每种行情都有策略，不按事后赢家切换，不以预测准确率代替扣费账户改善。"
+      }
+    ],
+    "independent_evidence": [
+      {
+        "level": "原始事实",
+        "required": "数据持有方的原始时间戳/序列与凭证，必要时另一独立供应方对同市场同事件交叉核对；差异需解释。",
+        "limit": "同一交易所的归档与API只是同源渠道对照；SHA256证明文件未变，不证明经济事实正确。",
+        "current_status": "partial_source_checks_only"
+      },
+      {
+        "level": "独立复现",
+        "required": "未参与开发的合格研究者使用冻结数据/代码/依赖与预期输出，从零复算并提交异议及差异记录。",
+        "limit": "此前第二条审计代码路径和新进程恢复属于内部工程证据，不能称第三方审计；当前未取得外部复核。",
+        "current_status": "external_review_not_performed"
+      },
+      {
+        "level": "未见结果",
+        "required": "冻结规则与决策时间后，在真正未访问的历史留出或新增前向数据上按原规则评估，保存事前信号、实际可见报价和完整失败。",
+        "limit": "不设固定30/60天等待；证据不足时不声称泛化已验证。纸面成交仍有执行模型假设。",
+        "current_status": "independent_unseen_evidence_not_established"
+      },
+      {
+        "level": "执行与经济现金",
+        "required": "在另获明确实盘授权后，交易所/券商原始委托回报、成交和账户账单对账；独立方核查费用/滑点/资金费/权益。",
+        "limit": "当前不启用下单或读取凭证；历史回测、测试数和纸面收益不能代替实盘经济结果，实盘过去收益也不保证未来。",
+        "current_status": "live_validation_not_authorized_or_established"
+      }
+    ],
+    "expansion_rule": "仅新增能区分当前最强替代解释或改变当前资本决策的证据／方法。每轮一个机制、基线加至多一个经济变体；不同机制可有不同适用域，允许无合格策略时持有现金。",
+    "claim_levels": [
+      "内部算术复核",
+      "历史经济证据",
+      "独立第三方复现",
+      "未见数据验证",
+      "实际执行对账"
+    ],
+    "forbidden_substitutions": [
+      "代码/测试/审计通过代替净收益",
+      "哈希一致代替事实真实",
+      "同源双接口代替独立来源",
+      "两条自己编写的代码代替第三方审计",
+      "历史重新切分代替未见数据",
+      "过往/前向纸面收益代替未来盈利保证"
+    ],
+    "decision_outcomes": [
+      "supported_with_scope",
+      "falsified_with_reason",
+      "unknown_with_missing_evidence"
+    ],
+    "next_mechanism_condition": "当前机制形成可反驳结论或明确缺口后，才登记下一经济机制；达到总账户收益目标仍需至少两个有效且不同的机制。",
+    "decision_record": {
+      "required_before_economic_evaluation": true,
+      "fields": [
+        "唯一经济假设、可能的支付者与未证实解释、适用域、零假设",
+        "最强替代解释：市场暴露/降低持仓/集中度/遗漏成本；固定其他条件的基线与反证",
+        "原始记录和身份、事件/发布/首次接收/修订时点、无法观测的部分",
+        "冻结公式、候选/信号/持有/成交时钟、执行和费用；基线及唯一经济变体",
+        "最小有用净效应、盈亏平衡成本、风险/容量边界、相关性与样本充分性设计",
+        "支持、推翻、停止及证据不足的事前判据；全部试验和已访问数据记录",
+        "原始证据至结果的复算包、外部评审异议与未见检验方案；未完成层级及结论上限"
+      ],
+      "closeout": "支持且限定适用范围、反驳并终止分支、或未知并列出决定性缺口；须解释证据如何改变继续/终止/暂停补证决定。历史回测、外部复现、未见验证与实盘的结论上限分别报告。研究结题与投资目标达成分别判断。",
+      "no_retroactive_registration": "已观察的结果只能登记为历史诊断，不以事后补表宣称预登记或新样本外。",
+      "per_round_deliverable": "一份简短机制判定记录及可从零复算的证据包：唯一问题、最强替代解释、事前判据、必要原始记录、完整净效应与不确定性、失效边界、独立验证状态和下一步决定；附件只保留支持该判断所需证据。",
+      "decision_requirements": [
+        {
+          "question": "优势到底来自什么？",
+          "before_results": "写出唯一经济命题、可能支付者、适用域和最强替代解释；对手动机未经直接观测只记假说。",
+          "decisive_evidence": "同机会集的现金/简单静态基线及必要消融，分开报告实际风险、持仓时间、集中度与净收益。",
+          "decision": "只有收益增量不能被当前最强替代解释充分说明，且证据满足事前判据，才支持该机制；归因不等于因果证明。"
+        },
+        {
+          "question": "当时能知道、能交易、能兑现吗？",
+          "before_results": "指定必要原始记录、历史可用时点、两腿/拒单/费用/整手/残仓及退出契约；不能观测的约束显式列为未知。",
+          "decisive_evidence": "原始时间戳/序列与有效规则，信号到持仓再到现金的连续账本及失败病例；条件模型与真实执行分层。",
+          "decision": "发生前视或不可成交假设时限制或推翻对应结论；决定性事实缺失则为未知，不能补造或反复采集无关数据求通过。"
+        },
+        {
+          "question": "优势是否值得承担风险与占用资本？",
+          "before_results": "相对事前基线，以明确单位登记最小有用扣费增量、资本占用、相关性/区间方法、成本压力、风险/容量边界；数值由本轮机制合同给出，不能看结果再定。",
+          "decisive_evidence": "效应量及依赖校正区间、完整搜索史、盈亏平衡成本、尾部/退出损失与资金规模下的可执行性；小样本高夏普单独标限。",
+          "decision": "按事前判据区分有用、已排除有用效应、或仍不确定；不把未显著直接称为无效，也不把少量正收益直接称为有效。"
+        },
+        {
+          "question": "什么独立事实可以反驳我们？",
+          "before_results": "指定复算材料、外部复核问题、未见数据边界和冻结记录；对应主张要求对应级别证据。",
+          "decisive_evidence": "未参与开发者的复算/异议、冻结后的未见结果；实盘主张另须交易所/券商成交与账单核对。",
+          "decision": "按实际已取得的证据层级给结论；内部双实现、哈希或纸面记录不能升级为第三方认证或实盘盈利。"
+        }
+      ],
+      "missing_evidence_exit": "未知结题须列出唯一下一项决定性缺口、合法可得渠道及本轮资源上限；上限内无法取得则封存为未决，待新证据再开。不得为维持进行中而无限补材料，也不得把未知改为机制无效或总收益目标完成。"
+    },
+    "decision_contract_revision": "20261027_v007",
+    "opportunity_set_contract": {
+      "required_before_evaluation": [
+        "逐机制声明交易标的范围，以及基准是否也可交易",
+        "分别声明候选域更新、信号更新、成交与持有时钟",
+        "说明来源、有效日、身份和资格规则相对原始研究命题的变化"
+      ],
+      "rule": "不机械复用另一机制的共同池定义；不同策略的适用域可以不同，跨域比较先保持合同一致。",
+      "current_limit": "月初既有trend_up/trend_down门控两成本小幅盈利，但仅3个活跃月、相关周期与配对区间跨零，不能准入。固定这一合同，禁止看归因后改选状态或时钟；旧模型广度域不同，不直接迁移已验效力。"
+    },
+    "method_mapping_contract": {
+      "required_before_local_adaptation": [
+        "从原始论文/源码/基金原始披露核对预测对象、收益定义、估计窗口与持有期",
+        "逐项记录风险估计、交易日历、资产样本及执行/账户约束的本地偏离",
+        "分别验收原方法复现、本地市场适配、成本后经济优势，不能继承来源业绩"
+      ],
+      "directional_controls": "方向策略预登记同机会集及同目标仓位幅度的方向移除对照和现金；实际敞口/持有期/停机另报，不把意图匹配称实现风险匹配。",
+      "reference": "trend_btc_role_20261027/original_method_mapping.json",
+      "paper_verified_local_alpha_verified": false
+    },
+    "payoff_definition_contract": {
+      "required": "明确预测输入是价格、含资金费/展期的经济收益，还是已扣交易成本的账户收益；三者分别命名、核对时点与现金，不相互代替。",
+      "reference": "monthly_tsmom_20261027_v002/README.md",
+      "missing_horizon": "标的终止、停牌或缺记录导致名义持有期不可得时，不补平价格/零资金费；若采用提前退出，须明确当时已知时点、可成交价格和结算规则。",
+      "posthoc_scope": "事后源指数毛因子与实际连续账户的差额只能定位问题，不能全部归因于止损，也不能用缺失月份的部分合计或删月均值冒充完整结果。"
+    },
+    "execution_contract_changes": {
+      "rule": "持有、止损或生命周期退出的改变必须预登记为独立政策变体，保持信号、市场与成本对照，明确实际风险变化；名义目标相同不能称同风险改善。",
+      "restore": "净值、现金、账本、请求、库存和风险状态逐项精确复核；敞口加总若受机器求和顺序影响，必须从持仓和实际价格独立重建并使用数学误差界，保留原失败，不凭观察到的盈亏放宽容差。",
+      "reference": "monthly_hold_policy_20261027/README.md"
+    },
+    "revision": "20261027_v007",
+    "user_request_alignment": [
+      {
+        "requirement": "专家会主动补做什么",
+        "contract_fields": [
+          "expert_work",
+          "decision_acceptance_contract.depth_checks"
+        ],
+        "acceptance": "主动检验替代解释、尾部／资金约束、搜索偏差和可成交性；先写会让自己放弃的条件。"
+      },
+      {
+        "requirement": "从哪些原始数据入手",
+        "contract_fields": [
+          "raw_inputs",
+          "decision_acceptance_contract.preregistration_required"
+        ],
+        "acceptance": "逐记录说明用途、资产身份和当时可用时点；仅采决定性数据，不用聚合表替代历史原件。"
+      },
+      {
+        "requirement": "具体方法与工具",
+        "contract_fields": [
+          "methods",
+          "decision_acceptance_contract.economic_decision_rule"
+        ],
+        "acceptance": "工具对应明确反证任务，阈值和区间在看结果前登记；先进模型仅验同约束下的账户增量。"
+      },
+      {
+        "requirement": "除你我之外如何验证",
+        "contract_fields": [
+          "independent_evidence",
+          "decision_acceptance_contract.review_contract"
+        ],
+        "acceptance": "原始凭证、外部复现、真正未见结果和授权后成交对账各验对应主张；不能承诺证明未来盈利。"
+      }
+    ],
+    "decision_acceptance_contract": {
+      "purpose": "有限、可复核的机制决策；不以必须找到阳性结果作为研究结题条件。",
+      "preregistration_required": [
+        "唯一经济假设、可能支付者及其尚未证实部分；趋势／动量等规律不能直接证明支付者动机",
+        "最强替代解释与能区分它的简单对照；行情条件必须在决策时可观察，含禁用和退出条件",
+        "必要原始数据及逐项用途、资产身份、事件／发布／首次接收／修订时点，缺失时允许的结论上限",
+        "信号、资格、仓位、成交、费用、资金费、失败腿、保证金、整手、残仓和原生币种／换汇现金合同；固定本金和风险",
+        "相对基线的最小有用净增量及单位、区间水平／方法、相关性和多重搜索处理；冻结支持／反驳／未知判据",
+        "决定性缺口、合法来源、最多访问／计算次数与停止条件；外部复算和未见数据的边界"
+      ],
+      "economic_decision_rule": {
+        "support": "完整成本与风险／交易资格通过，且预登记的净增量不确定区间支持最小有用效应，强对照未解释该增量时，只支持所检适用域。未见和外部证据仍分别验收。",
+        "falsify": "有效区间排除了最小有用效应，或直接违反事前必要经济／风险／可交易条件时，停止本合同分支并写明被反驳的主张；不泛化为整个领域无效。",
+        "unknown": "区间跨越决策边界、样本依赖无法估计，或决定性原始事实缺失时，保持未知；达到补证上限即封存，只有具体新证据才重开。",
+        "limitation": "支持和反驳规则须在看经济结果前数值化；这里是未来合同要求，不追溯将已有诊断称为预登记。"
+      },
+      "depth_checks": [
+        "剥离市场beta、现金比例、集中币／月份及隐含杠杆；描述性归因不能声称因果",
+        "识别收益是否补偿尾部、流动性或交易对手风险，检查保证金、抵押资产价格、结算和急迫退出",
+        "按原始时间顺序核对策略可知性；前缀截断／未来扰动不改变过去决策",
+        "完整搜索台账包括失败、人工换窗／换方向／删数据；有假设条件时才使用DSR等校正",
+        "成本、退出延迟及规模的盈亏平衡边界；正收益不能被报价假设或残仓核销制造"
+      ],
+      "one_closeout_record": [
+        "唯一问题与原登记版本",
+        "决定性原始证据及保留的反例",
+        "相对基线净效应、不确定性与完整账户",
+        "适用／失效边界及未完成的独立证据",
+        "支持／反驳／未知、下一步决定和资源使用"
+      ],
+      "claim_boundaries": {
+        "research_closed": "完成可复算判断可以结题为反驳或未知。",
+        "economic_goal_met": "只能按原总账户阈值、准入、容量和相应证据验收；目标修订、数据入口、代码或研究结题不能替代。",
+        "future_profit": "有限样本、独立复现及过去实盘都不能证明未来持续盈利。"
+      },
+      "review_contract": {
+        "reviewer": "未参与开发且能核查统计、账户和执行假设的研究者；本轮没有开展外部联系。",
+        "materials": "原始记录与许可说明、时点／身份字典、冻结代码和依赖、全部试验台账、运行命令、预期账本／指标及事前数值容差。",
+        "required_output": "独立环境复算结果、原始记录抽查、未解释差异及异议处理；不以口头认同或内部第二实现代替。",
+        "current_external_review_completed": false,
+        "current_unseen_validation_completed": false
+      }
+    }
+  },
+  "diagnostic_case_evidence": {
+    "source": "carry_exit_cases_20261027/verification.json",
+    "selected_cases": 2,
+    "modeled_case_paths": 8,
+    "cash_control_paths": 4,
+    "financial_strategy_accounts": 0,
+    "all_case_paths_negative": true,
+    "nonflat_new_process_restores": 8,
+    "external_third_party_review": false,
+    "independent_oos": false,
+    "customer_cash_certified": false,
+    "capacity_certified": false,
+    "profit_goal_met": false
+  },
+  "previous_diagnostic_research_stage": {
+    "mechanism": "monthly_existing_trend_domain_gate",
+    "label": "趋势行情门控：小幅正收益，样本不足未准入",
+    "status": "known_history_positive_necessary_screen_insufficient_month_clusters_no_admission",
+    "report": "monthly_state_domain_20261027_v002/README.md",
+    "description": "既有月初趋势状态门控在8/15bps每边成本下608日净赚19.71/13.35USDT（0.1971%/0.1335%），压力回撤2.69%、日夏普0.046、完整周期胜率53.33%。4条新账户内部核验通过；30个周期仅来自3个活跃月，低于冻结4个月底线，配对差区间跨零。平均实际总敞口从16.48%降至2.38%，不称同风险改善。无模块、容量、外部或未见准入。",
+    "new_financial_accounts": 4,
+    "logical_source_domain_cost_cases": 8,
+    "source_duplicate_cases_reused": 4,
+    "new_economic_variants": 1,
+    "new_independent_mechanisms": 0,
+    "new_state_thresholds": 0,
+    "new_model_fits": 0,
+    "observed_active_monthly_clusters": 3,
+    "required_minimum_monthly_clusters": 4,
+    "economic_necessary_screen_passed": true,
+    "statistical_sufficiency_established": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "冻结这一门控，不再选其他状态子集、阈值、时钟或放大风险。仅接受真正未见的同合同机会补证；当前3个月不足不能通过重新切分历史解决。下一项可行动研究须先登记不同经济机制及其最强替代解释和原始事实需求，不能基于这点弱正收益训练更复杂配置。外部复现、未见与总账户目标继续未完成。"
+  },
+  "diagnostic_study_evidence": {
+    "kind": "one_quarter_conditional_integer_inventory_full_dust_reserve",
+    "report": "dated_carry_lot_accounts_20261027/README.md",
+    "inputs": "results/research/dated_carry_lot_inputs_20261027_v001",
+    "financial_run": "results/research/dated_carry_lot_accounts_20261027_v001",
+    "verification_sha256": "217793b148e829e57c03fdca8d70e0f051ccd695c6572bb25af29dbe92a79648",
+    "new_financial_accounts": 4,
+    "new_economic_variants": 0,
+    "net_marked_pnl_positive": true,
+    "positive_necessary_economic_screen": false,
+    "complete_campaigns": 0,
+    "remaining_owned_campaigns": 2,
+    "common_quarter_clusters": 1,
+    "internal_cash_integer_audit_passed": true,
+    "actual_nonflat_process_restarts": 3,
+    "whole_curve_money_ledger_integer_inventory_risk_bit_exact": true,
+    "original_fractional_accounts_changed": false,
+    "new_integer_engine_integrated": true,
+    "hypothetical_rules_not_historical_causal_execution": true,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "third_party_review_performed": false,
+    "independent_unseen_validation_completed": false,
+    "profit_goal_met": false
+  },
+  "previous_diagnostic_study_evidence": {
+    "kind": "one_frozen_dated_carry_quarter_known_history",
+    "report": "dated_carry_accounts_20261027/README.md",
+    "inputs": "results/research/dated_carry_execution_inputs_20261027_v002",
+    "financial_run": "results/research/dated_carry_accounts_20261027_v001",
+    "finalization": "results/research/dated_carry_accounts_20261027_v002",
+    "verification_sha256": "68fd4de5ef8d9f4004face9774928c62343d9642d5ce2b3af81b7fdfbb996088",
+    "new_financial_accounts": 4,
+    "new_economic_variants": 1,
+    "new_independent_mechanisms": 0,
+    "new_model_fits": 0,
+    "positive_necessary_economic_screen": true,
+    "complete_campaigns": 2,
+    "common_quarter_clusters": 1,
+    "internal_cash_audit_passed": true,
+    "actual_nonflat_process_restarts": 2,
+    "complete_prefix_plus_child_curve_bit_exact": true,
+    "full_financial_replays_in_repair": 0,
+    "same_realized_risk": false,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "third_party_review_performed": false,
+    "independent_unseen_validation_completed": false,
+    "profit_goal_met": false
+  },
+  "mechanism_feasibility_evidence": {
+    "kind": "dated_carry_original_method_and_raw_unit_feasibility",
+    "report": "dated_carry_feasibility_20261027/README.md",
+    "verification_sha256": "2747c5685510c8040878e396c9fd31da45f14f06dab03563005b91b4ad63f17a",
+    "source": "data/research/dated_carry_sources_20261027_v001",
+    "source_followup": "data/research/dated_carry_source_followup_20261027_v001",
+    "raw_pilot": "data/research/dated_carry_pilot_20261027_v001",
+    "route_correction": "data/research/dated_carry_settlement_route_20261027_v001",
+    "raw_audit": "results/research/dated_carry_raw_audit_20261027_v001",
+    "new_financial_accounts": 0,
+    "official_archives": 6,
+    "independent_internal_CSV_Decimal_rows": 49730,
+    "source_math_is_profit_proof": false,
+    "historical_precise_cutoff_confirmed": false,
+    "delivery_fee_confirmed": false,
+    "margin_tiers_confirmed": false,
+    "client_cash_confirmed": false,
+    "independent_oos": false,
+    "third_party_review": false,
+    "profit_goal_met": false,
+    "historical_publication_latency_verified": false,
+    "reference_clock_assumption": "Completed5m bar timestamp is the earliest modeled observation, not certified historical publication/receipt latency."
+  },
+  "prior_raw_feasibility_stage": {
+    "mechanism": "linear_spot_dated_carry_raw_feasibility",
+    "label": "期限基差原始核验：结算边界待补，尚无收益账户",
+    "status": "raw_units_verified_precise_historical_boundary_and_economic_account_not_established",
+    "report": "dated_carry_feasibility_20261027/README.md",
+    "description": "下一候选限定BTC、ETH的USDT线性季度合约；6个官方归档共49,730行已CSV/Decimal逐值复核，数学反例纳入统一factors/。历史结算接口的零点时间戳与当前合约08UTC元数据语义尚未对齐，最后报告收盘也不同于结算参考价。当前仅有参考价差，历史截止、费率、保证金及双腿账户尚未完成；收益、胜率、回撤、夏普、容量全部未知，本阶段新增收益账户0。",
+    "new_financial_accounts": 0,
+    "new_market_archives": 6,
+    "audited_raw_rows": 49730,
+    "new_model_fits": 0,
+    "new_independent_mechanisms": 0,
+    "historical_cutoff_confirmed": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "补充历史交易截止与收费原始条款，并核查标记价/保证金和两钱包现金约束；再冻结提前退出或交割合同、最小有用净效应、两档成本与完整双腿连续账户。不能把当前规则回填过去、把末根K线当结算现金、把高年化参考基差当收益。旧趋势门控保持冻结，不选其他状态或放大仓位。外部、未见与总账户目标继续未完成。"
+  },
+  "diagnostic_study_history": [
+    {
+      "kind": "single_frozen_monthly_trend_domain_known_history",
+      "report": "monthly_state_domain_20261027_v002/README.md",
+      "inputs": "results/research/monthly_state_inputs_20261027_v001",
+      "financial_run": "results/research/monthly_state_accounts_20261027_v001",
+      "verification_sha256": "4ebae64f9ce615514f03e00ef3efd75c1abccfee96556c454f9cf69fd27ed9a9",
+      "new_financial_accounts": 4,
+      "same_source_aliases": 4,
+      "new_domain_variants": 1,
+      "new_state_parameters_or_models": 0,
+      "new_independent_mechanisms": 0,
+      "observed_active_monthly_clusters": 3,
+      "minimum_monthly_clusters": 4,
+      "internal_state_audit_cases": 1216,
+      "positive_necessary_economic_screen": true,
+      "module_admitted": false,
+      "capacity_triggered": false,
+      "actual_nonflat_process_restart": true,
+      "restore_NAV_cash_ledger_inventory_risk_exact": true,
+      "restore_exposure_bit_exact": true,
+      "exposure_independent_binary64_bound_passed": true,
+      "same_realized_risk": false,
+      "third_party_review_performed": false,
+      "independent_unseen_validation_completed": false,
+      "profit_goal_met": false,
+      "prose_calendar_carry_corrected_without_financial_rerun": true
+    },
+    {
+      "kind": "single_monthly_holding_policy_counterfactual_known_history",
+      "report": "monthly_hold_policy_20261027/README.md",
+      "contract": "results/research/monthly_hold_contract_20261027_v002",
+      "financial_run": "results/research/monthly_hold_accounts_20261027_v002",
+      "finalization": "results/research/monthly_hold_finalization_20261027_v001",
+      "verification_sha256": "381c3b815c7f723cbc5e6caefcde4b33d07c024e0a6b5820e6b0b107e61dc4f0",
+      "new_financial_accounts": 4,
+      "bridge_replays": 2,
+      "selected_case_paths": 1,
+      "new_economic_variants": 1,
+      "new_independent_mechanisms": 0,
+      "internal_cash_audit_passed": true,
+      "actual_process_restore_passed": true,
+      "restore_money_and_risk_state_bit_exact": true,
+      "restore_exposure_bit_exact": false,
+      "restore_exposure_independent_binary64_bound_passed": true,
+      "capacity_triggered": false,
+      "paper_replication": false,
+      "same_realized_risk": false,
+      "third_party_review_performed": false,
+      "independent_unseen_validation_completed": false,
+      "profit_goal_met": false
+    },
+    {
+      "kind": "one_frozen_dated_carry_quarter_known_history",
+      "report": "dated_carry_accounts_20261027/README.md",
+      "inputs": "results/research/dated_carry_execution_inputs_20261027_v002",
+      "financial_run": "results/research/dated_carry_accounts_20261027_v001",
+      "finalization": "results/research/dated_carry_accounts_20261027_v002",
+      "verification_sha256": "68fd4de5ef8d9f4004face9774928c62343d9642d5ce2b3af81b7fdfbb996088",
+      "new_financial_accounts": 4,
+      "new_economic_variants": 1,
+      "new_independent_mechanisms": 0,
+      "new_model_fits": 0,
+      "positive_necessary_economic_screen": true,
+      "complete_campaigns": 2,
+      "common_quarter_clusters": 1,
+      "internal_cash_audit_passed": true,
+      "actual_nonflat_process_restarts": 2,
+      "complete_prefix_plus_child_curve_bit_exact": true,
+      "full_financial_replays_in_repair": 0,
+      "same_realized_risk": false,
+      "module_admitted": false,
+      "capacity_triggered": false,
+      "third_party_review_performed": false,
+      "independent_unseen_validation_completed": false,
+      "profit_goal_met": false
+    }
+  ],
+  "prior_dated_carry_account_stage": {
+    "mechanism": "linear_spot_dated_carry_segregated_accounts",
+    "label": "期限基差账户：87日小幅盈利，单季度未准入",
+    "status": "known_history_positive_necessary_screen_insufficient_one_quarter_no_admission",
+    "report": "dated_carry_accounts_20261027/README.md",
+    "description": "BTC/ETH一期USDT季度合约；4条预登记连续双钱包路径，持有交割与提前24小时退出、滑点3/10bps。87日净收益0.3802%/0.3542%与0.3587%/0.3243%；压力回撤0.1512%，保守区间压力回撤0.5810%。仅2个相关完整周期、同一季度，100%胜率区间宽，压力交割约98.90%利润来自BTC。现金/交割复算与2项真实异进程恢复通过；技术边界检查修复未重跑四条金融收益。历史客户费用、手数、保证金及原正文版本未认证，无模块、容量、外部或未见准入。",
+    "new_financial_accounts": 4,
+    "new_market_archives": 10,
+    "new_raw_rows_audited": 87552,
+    "new_model_fits": 0,
+    "new_economic_variants": 1,
+    "new_independent_mechanisms": 0,
+    "economic_necessary_screen_passed": true,
+    "historical_expiry_clock_notice_obtained": true,
+    "historical_original_body_version_certified": false,
+    "observed_completed_campaigns": 2,
+    "observed_entry_month_clusters": 1,
+    "internal_cash_audits_passed": true,
+    "actual_process_restarts": 2,
+    "full_financial_replays_in_technical_repair": 0,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "冻结已登记一期合约、两档成本与退出变体，不搜索阈值/时钟/钱包/风险。优先补原历史正文和合约交易约束；仅事前登记且未访问的同合同独立季度机会可补泛化证据。已看历史不得重切成样本外；得不到记录则保留模型结论和未知项，不扩大模型数量或杠杆。旧趋势门控保持冻结；外部复现、未见、容量与总账户目标继续未完成。"
+  },
+  "execution_witness_evidence": {
+    "report": "dated_carry_execution_witness_20261027/README.md",
+    "verification_sha256": "7dae42ae14de7db9ad64bd56020e18c3128e9510118862874012009221a4ec99",
+    "raw_capture": "data/research/dated_carry_execution_witness_20261027_v001",
+    "raw_audit": "results/research/dated_carry_execution_witness_audit_20261027_v001",
+    "depth_capture": "data/research/dated_carry_depth_witness_20261027_v001",
+    "depth_audit": "results/research/dated_carry_depth_witness_audit_20261027_v001",
+    "new_financial_accounts": 0,
+    "original_financial_paths_changed": false,
+    "entry_bars_exact": 4,
+    "native_depth_chains_valid": 2,
+    "baseline_3bps_execution_reference_challenged": true,
+    "same_venue_separate_collector_not_external_review": true,
+    "historical_metadata_access_denials": 2,
+    "module_admitted": false,
+    "capacity_certified": false,
+    "independent_oos": false,
+    "third_party_review": false,
+    "profit_goal_met": false
+  },
+  "prior_dated_carry_execution_witness_stage": {
+    "mechanism": "linear_spot_dated_carry_execution_witness",
+    "label": "期限基差核验：成交假设出现反例",
+    "status": "raw_entry_bars_crosschecked_one_execution_price_assumption_challenged_no_admission",
+    "report": "dated_carry_execution_witness_20261027/README.md",
+    "description": "同一交易所另一采集方的原生记录：14,048笔重建四个首5分钟K线，OHLC/价量/笔数精确吻合；两条深度序列无断链并与BBO相符。BTC扫两档可覆盖原分数数量；ETH3bps卖价优于可见买盘约1.1825bps。10bps压力入场价格相容仅限该时点，非全账户执行认证。原87日4条模型收益不变，本轮新增收益账户0，无模块或容量准入；历史手数/费用/退出执行与外部、未见证据仍缺。",
+    "new_financial_accounts": 0,
+    "prior_frozen_financial_accounts": 4,
+    "new_native_feed_responses": 3,
+    "native_messages": 86334,
+    "exactly_reconciled_first_bar_trades": 14048,
+    "raw_bars_exact": 4,
+    "native_depth_chains_checked": 2,
+    "new_models_or_economic_variants": 0,
+    "baseline_3bps_execution_reference_challenged": true,
+    "actual_execution_certified": false,
+    "historical_order_filters_certified": false,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "保持原4条收益曲线冻结。先取得可追溯的历史手数/最小名义约束，设计收费后余币与期货整数手数一致、失败腿和残仓显式保留的执行协议；观察格点只能另登记为假设压力检验，不能认证历史过滤器。退出盘口、真实费用、客户端时延、独立季度和外部复算仍缺。不得调整滑点到刚好通过、换入场时钟、放大本金或增加模型来消除此反例。"
+  },
+  "lot_inventory_evidence": {
+    "report": "dated_carry_lot_inventory_20261027/README.md",
+    "verification_sha256": "dd7c03831223dbbf126293fdde22eeb481d5f32ed28882ba7b1f6cd17e7c7fbc",
+    "metadata": "data/research/dated_carry_order_metadata_20261027_v001",
+    "diagnostic": "results/research/dated_carry_lot_inventory_20261027_v001",
+    "public_module": "factors/common/lot_inventory.py",
+    "conditional_cases": 2,
+    "independent_internal_integer_audits": 2,
+    "original_financial_paths_changed": false,
+    "new_financial_accounts": 0,
+    "legacy_engine_updated": false,
+    "actual_historical_dated_filters_certified": false,
+    "inventory_is_not_closed_profit": true,
+    "module_admitted": false,
+    "capacity_certified": false,
+    "third_party_review": false,
+    "independent_oos": false,
+    "profit_goal_met": false
+  },
+  "prior_dated_carry_lot_contract_stage": {
+    "mechanism": "linear_spot_dated_carry_lot_fee_inventory_contract",
+    "label": "期限基差手数核验：保留收费后余币",
+    "status": "conditional_integer_inventory_proved_historical_dated_filters_unknown_no_new_returns",
+    "report": "dated_carry_lot_inventory_20261027/README.md",
+    "description": "固定CCXT历史快照早于250328上市，未取得这两份合约历史过滤器，不套永续或当前规则。观察格点+原10bps基础币收费假设下，两资产最小完全匹配均需买1币，超原数量上限；预算内覆盖留下BTC0.00000698/ETH0.0000959，不能视为已清仓。公共整数算术与两条独立内部单位复核通过，12项测试通过；现有账户引擎尚未接入，原4条87日收益不变，本阶段新增收益账户0，无模块/容量/外部或未见准入。",
+    "new_financial_accounts": 0,
+    "prior_frozen_financial_accounts": 4,
+    "conditional_inventory_cases": 2,
+    "internal_integer_audits_passed": 2,
+    "new_predictive_model_fits": 0,
+    "new_economic_variants": 0,
+    "historical_exact_dated_order_filters_obtained": false,
+    "legacy_engine_updated": false,
+    "raw_source_captures": 4,
+    "conditional_exact_hedge_fit_original_caps": false,
+    "residual_inventory_retained_in_diagnostic": true,
+    "actual_execution_certified": false,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "保持原4条收益曲线与3bps盘口反例冻结。下一版连续账户须先登记整手、收费币种/精度、独立拒单/失败腿、未对冲库存和余币归属/估值/退出准备；不能把主仓平仓视作全部资产消失。优先取得当时完整过滤器；历史原件缺失时明确保持条件性诊断，并转向交易前捕获完整元数据的前向研究，不能无止境猜补旧规则或重切已看历史为样本外。旧预算与总账户目标不变，不加仓凑最小名义、不调费率求通过。"
+  },
+  "previous_integer_account_stage": {
+    "mechanism": "linear_spot_dated_conditional_integer_accounts",
+    "label": "期限基差整手账户：余币仍未闭合",
+    "status": "conditional_grid_accounts_audited_owned_dust_no_full_lifecycles_no_admission",
+    "report": "dated_carry_lot_accounts_20261027/README.md",
+    "description": "新Freqtrade v2接入整手、基础币收费后实际库存及全额非现金余币退出准备。4条预登记87日路径净收益0.3063%—0.3608%；压力持有交割赚33.55USDT、回撤0.1474%、日夏普4.451。两资产仍持余币，完整闭合周期0、胜率未知；不能继续报100%。现金/整数复算与3个真实异进程恢复逐位一致，12项新测试通过。原分数版本收益不变；历史过滤器和可用时点、原3bps成交反例、真实退出/费用及外部/未见证据仍缺，无模块或容量准入。",
+    "new_financial_accounts": 4,
+    "new_predictive_model_fits": 0,
+    "new_economic_variants": 0,
+    "new_engine": "../freqtrade/research/crypto/spot_dated_account_v2.py",
+    "legacy_fractional_engine_unchanged": true,
+    "new_integer_engine_integrated": true,
+    "internal_cash_integer_audits_passed": 4,
+    "actual_process_restarts": 3,
+    "complete_campaigns_per_account": 0,
+    "win_rate": null,
+    "remaining_owned_campaigns_per_account": 2,
+    "terminal_dust_value_usdt": 0.7711948824,
+    "terminal_noncash_dust_exit_reserve_usdt": 0.7711948824,
+    "hypothetical_grid_rules": true,
+    "historical_rules_available_at_original_entry_certified": false,
+    "original_3bps_price_counterexample_repaired": false,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "冻结本轮4条整手与全额余币准备路径，不调步长/费率/时钟/预算。已接入库存约束不等于历史订单资格通过：优先核实当时完整过滤器、最小名义检查价与客户收费精度；无法补原件时，转为交易前冻结完整元数据和报价的前向研究。余币处置、归属与完整周期标准须先登记，不得改变关闭定义把本轮算成已完成。原3bps盘口反例、外部复算、独立季度、容量与总账户目标继续未完成。"
+  },
+  "prospective_source_evidence": {
+    "report": "dated_carry_prospective_sources_20261027/README.md",
+    "verification_sha256": "d1c8690c3c5450346c81317daee53072f35b239abd00f03b02192b60a430dfef",
+    "source": "data/research/dated_carry_prospective_probe_20261027_v003",
+    "audit": "results/research/dated_carry_prospective_probe_audit_20261027_v001",
+    "original_failed_captures": [
+      "data/research/dated_carry_prospective_probe_20261027_v001",
+      "data/research/dated_carry_prospective_probe_20261027_v002"
+    ],
+    "raw_messages": 9806,
+    "current_native_rule_records": 4,
+    "book_sequences_valid": 4,
+    "BBO_channels_exact": 4,
+    "new_financial_accounts": 0,
+    "forward_strategy_validation_completed": false,
+    "historical_2025_rules_certified": false,
+    "recorder_still_running": false,
+    "global_proxy_settings_changed": false,
+    "dependencies_installed": false,
+    "third_party_review_performed": false,
+    "profit_goal_met": false
+  },
+  "previous_prospective_source_stage": {
+    "mechanism": "dated_carry_prospective_source_observability",
+    "label": "前向数据链：规则与盘口复核通过",
+    "status": "current_source_probe_audited_no_forward_strategy_returns",
+    "report": "dated_carry_prospective_sources_20261027/README.md",
+    "description": "报价前按到期日冻结BTC/ETH261225合约及原生规则，原始/time前后探针通过；两条公开WS取得9,806条消息，四个现货/期货盘口序列及ID对齐BBO价量复核一致，前后报告规则相同。8项相关测试通过。仅沿用已有HTTP代理，未改系统网络或安装依赖；400参数和SOCKS依赖失败两版保留。采样已结束，本轮新收益账户0、前向策略信号0；这段已看报价不能事后算作未见策略收益，当前规则也不认证2025。无模块/容量/真实执行或外部准入。",
+    "new_financial_accounts": 0,
+    "new_predictive_model_fits": 0,
+    "new_economic_variants": 0,
+    "raw_native_messages": 9806,
+    "reported_rule_epochs_checked": 4,
+    "native_book_sequences_valid": 4,
+    "update_id_aligned_BBO_exact": 4,
+    "source_observability_passed": true,
+    "new_forward_raw_observations": true,
+    "forward_strategy_signals": 0,
+    "forward_strategy_validation_completed": false,
+    "source_probe_finished": true,
+    "recorder_still_running": false,
+    "historical_2025_rules_certified": false,
+    "actual_execution_certified": false,
+    "global_proxy_settings_changed": false,
+    "dependencies_installed": false,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "先冻结下一次真正前向策略的代码、合约选择/入场时钟、数据访问截止、费用假设、最小有用效应、拒单/缺源退出、余币归属和现金对照，再接收其后的新数据。09:21这段已查看的采样只作数据准备，不反标成未见策略收益。当前报告规则不得补给2025；实际客户费用、账户权限与执行仍未知。本次采样已结束，没有前向账户在运行；不设额外固定30/60日门槛，不通过改预算/步长或闭合定义求通过。"
+  },
+  "prospective_entry_evidence": {
+    "report": "dated_carry_prospective_entry_20261027/README.md",
+    "trial": "results/research/dated_carry_prospective_entry_20261027_v001",
+    "source": "data/research/dated_carry_prospective_entry_sources_20261027_v001",
+    "audit": "results/research/dated_carry_prospective_entry_audit_20261027_v001",
+    "local_pre_registration": true,
+    "new_opportunities": 1,
+    "new_conditional_paper_accounts": 1,
+    "economic_screens_rejected": 2,
+    "fills": 0,
+    "complete_lifecycles": 0,
+    "new_independent_mechanisms": 0,
+    "internal_audit_passed": true,
+    "external_review_performed": false,
+    "full_strategy_forward_validation_completed": false,
+    "capacity_certified": false,
+    "profit_goal_met": false,
+    "report_completion_sha256": "1a0c1390269f0a38c0c62807e99ea241aa067cf05ed1cb907e14d7deb850d7d6",
+    "verification_sha256": "fcf2f081b6d98444a58c3a8d79218e13da13a572412be8ce73e90d458088e2c5",
+    "reproduction_bundle": "results/research/dated_carry_prospective_entry_export_20261027_v001/reproduction.tar.gz",
+    "reproduction_bundle_sha256": "dd4b9b9f8c2aa4904cefa2a2b2959efb0a6011ddc3a4933cc53ff15e36b4883a",
+    "portable_offline_reproduction_passed": true
+  },
+  "previous_prospective_entry_stage": {
+    "mechanism": "dated_carry_preregistered_prospective_entry",
+    "label": "前向入场判定：两币扣费门槛未过",
+    "status": "one_new_opportunity_rejected_stay_cash_no_strategy_admission",
+    "report": "dated_carry_prospective_entry_20261027/README.md",
+    "description": "策略代码与每币5USDT门槛先冻结，再取7,410条新原生消息及当期参考价/执行规则。BTC/ETH的到期费用压力情景净额−3.5688/−6.0243USDT，均拒绝入场；1条条件纸面账户保留10,000USDT，成交0、完整周期0。15项相关测试、16份因果盘口及内部现金/经济恒等式复核通过；情景金额尚未赚取。采集已结束，无持续持仓监控。不是完整前向策略、实盘或容量准入；总账户收益/回撤/夏普仍未知。",
+    "new_financial_accounts": 1,
+    "new_conditional_paper_accounts": 1,
+    "new_complete_lifecycles": 0,
+    "native_messages": 7410,
+    "paper_fills": 0,
+    "paper_cash_balance_usdt": 10000,
+    "strategy_registered_before_new_data": true,
+    "prospective_preregistered_replay_not_real_time_signals": true,
+    "full_forward_strategy_validation_completed": false,
+    "continuous_risk_monitoring": false,
+    "module_admitted": false,
+    "capacity_triggered": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "next_action": "固定本次不入场结论，不换时钟/阈值重跑；回到趋势／动量主线，先核对既有相对动量阴性结果与原始方法差异，只有明确的新经济命题才登记新研究。旧EMA微调分支保持关闭。外部复核、完整未见策略、独立收益机制、容量与总账户目标继续未完成。"
+  },
+  "cross_sectional_momentum_fidelity_evidence": {
+    "report": "cross_sectional_momentum_fidelity_20261027/README.md",
+    "study": "results/research/cross_sectional_momentum_fidelity_20261027_v001",
+    "source": "data/research/cross_sectional_momentum_sources_20261027_v001",
+    "report_completion_sha256": "6e4abee81345b32f9f385bed482bf7a928e1d1bfed8227de0b4a213c5952d828",
+    "verification_sha256": "cde9448cb9ec96b2f954206194b0f4cc6c413aa13b5760b538d1328faea450ab",
+    "existing_account_count": 18,
+    "existing_event_count": 35869,
+    "method_mapping_confirmed": true,
+    "source_cap_history_obtained": false,
+    "new_financial_accounts": 0,
+    "literal_paper_replication_completed": false,
+    "module_admitted": false,
+    "independent_oos": false,
+    "external_review_performed": false,
+    "profit_goal_met": false
+  },
+  "previous_momentum_fidelity_stage": {
+    "mechanism": "cross_sectional_momentum_method_fidelity",
+    "label": "动量命题核对：旧政策亏损，原法数据未齐",
+    "status": "legacy_losses_reconciled_source_method_distinct_required_market_caps_missing",
+    "report": "cross_sectional_momentum_fidelity_20261027/README.md",
+    "description": "重读18条既有动量/对冲账户35,869条事件，固定成交路径去摩擦价格损益全部为负；不把亏损只归于费用。原始论文的来源周/市值权重与本地等权永续不同；固定Sentinel配置已是14日并注明7窗口搜索，不能直接换窗继承收益。已实现年52周和资本权重的数学契约，7项测试通过；公开历史市值探针401/10012，必要身份/市值面板未取得。原法复现封存为未知，新增收益账户0、无模块或未见准入。",
+    "new_financial_accounts": 0,
+    "existing_accounts_diagnosed": 18,
+    "existing_events_reconciled": 35869,
+    "new_economic_variants_evaluated": 0,
+    "new_model_fits": 0,
+    "source_capitalization_history_obtained": false,
+    "formation_math_implemented": true,
+    "source_literal_replication_completed": false,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "next_action": "旧21/28日阴性政策及窗口微调分支保持关闭；原法复制因必要身份/历史市值数据不足封存为未知。先检查已授权原始导出或作者公开数据，只有解决该决定性缺口才重开；若采用其他供应商/仅流动性可交易池，须另登记来源身份和方法偏离。无原始证据不回填今日市值、删除停用币或加模型。总账户、容量、外部复算和完整未见验证继续未完成。"
+  },
+  "momentum_data_access_evidence": {
+    "report": "cross_sectional_momentum_data_access_20261027/README.md",
+    "report_completion_sha256": "21c27fdfc2fcd5deea390b33983356f4b0a1eeab8109eddd39b3aa9dd8a3f3cb",
+    "verification_sha256": "84d97a57ed968444dc90add903320b92fd3fd897f136e8b48e0945f1c5340527",
+    "author_profile": "results/research/cross_sectional_momentum_author_data_audit_20261027_v001",
+    "public_cap_audit": "results/research/cross_sectional_momentum_public_cap_audit_20261027_v001",
+    "author_reference_overlap_2025_2026": 0,
+    "public_unique_asset_dates": 2,
+    "no_keys_or_paid_access": true,
+    "raw_panel_qualified": false,
+    "new_financial_accounts": 0,
+    "module_admitted": false,
+    "external_review_performed": false,
+    "profit_goal_met": false
+  },
+  "previous_momentum_data_access_stage": {
+    "mechanism": "cross_sectional_momentum_necessary_data_access",
+    "label": "动量数据补证：公开流通市值样本可得",
+    "status": "author_benchmark_no_current_overlap_public_circulating_cap_sample_available_panel_unqualified",
+    "report": "cross_sectional_momentum_data_access_20261027/README.md",
+    "description": "作者公开三因子工作簿已只读核对：479周、2014W04—2023W14，缺逐币输入且与2025/2026账户重叠0，不作当前归因或信号。官方无密钥Community路径实际取得BTC/ETH在2025-01-07的价格、供给、当前及估计流通市值；Decimal100位恒等式精确，两种市值均不相等。仅两条唯一资产/日期样本，完整身份/形成日期覆盖与历史可用时点未验收。14项相关测试通过，新增收益账户0、无原法或经济准入。",
+    "new_financial_accounts": 0,
+    "new_models": 0,
+    "new_economic_variants_evaluated": 0,
+    "author_reference_rows": 479,
+    "author_reference_current_overlap": 0,
+    "public_valid_unique_asset_date_observations": 2,
+    "full_original_author_raw_panel_obtained": false,
+    "full_formation_universe_ready": false,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "next_action": "先登记公开估计流通市值源的历史身份/覆盖合同，与既有原生可交易池逐形成时点核对，必要日期采集并报告缺失及选择偏差。仅在数据足够、时点和口径明确后登记一个本地动量经济合同及完整费用对照；不能把供应商替换当原法复现，不能用作者已实现因子或今日身份回填。旧亏损分支保持冻结，总账户、容量、外部与完整未见验证继续未完成。"
+  },
+  "previous_provider_catalog_stage": {
+    "mechanism": "cross_sectional_momentum_provider_identity_coverage",
+    "label": "动量数据补证：目录可得，历史身份未验收",
+    "status": "catalog_available_historical_identity_and_actual_formation_coverage_unknown",
+    "report": "cross_sectional_momentum_coverage_catalog_20261027/README.md",
+    "description": "有限三次官方公开请求均200且无后续分页：当前资产参考6347、市值日频目录850、价格日频目录1145。参考仅含asset/full_name，无历史生效时点或合约地址；目录区间不是逐形成日期的实际非缺失数据。目录数量不代表本地历史币池覆盖率，未自动匹配同名/换币身份。新增金融账户和经济变体0，无收益或容量准入。",
+    "provider_asset_reference_rows": 6347,
+    "provider_estimated_cap_catalog_rows": 850,
+    "provider_price_catalog_rows": 1145,
+    "historical_identities_certified": false,
+    "actual_formation_slot_coverage": null,
+    "full_formation_universe_ready": false,
+    "new_financial_accounts": 0,
+    "new_models": 0,
+    "new_economic_variants_evaluated": 0,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "next_action": "仅登记并离线检查必要历史身份候选及52周形成时钟的原生资格分母；上限860个原生符号、一次审阅产物、下一轮网络请求0。当前同名只能作候选，1000前缀、PUMP/LIT新旧身份不自动拼接，未匹配槽位保留。若决定性身份缺口仍不可合法取得，封存为未知，停止追加目录或回测；有明确原始证据渠道时才单独登记有限补证。身份/实际日期面板足够后才登记唯一经济合同。"
+  },
+  "momentum_offline_coverage_evidence": {
+    "report": "cross_sectional_momentum_offline_coverage_20261027/README.md",
+    "result_completion_sha256": "9e8206f93ddf4c601b71199a9389b1ff4fe73ca024d7e5255979e162a241e24a",
+    "internal_audit_sha256": "d40469e0628578d2f8d7a974b0028bc66dce1f68804cbb99076df7f5891585f1",
+    "historical_identity_or_alpha_admitted": false,
+    "data_branch_closed_unknown": true
+  },
+  "previous_momentum_offline_coverage_stage": {
+    "mechanism": "cross_sectional_momentum_offline_identity_denominator",
+    "label": "动量分母已核对，原始身份分支封存未知",
+    "status": "bounded_offline_review_complete_data_branch_closed_unknown",
+    "report": "cross_sectional_momentum_offline_coverage_20261027/README.md",
+    "description": "860原生符号、每源86个年52周形成时点，完整资格与前30均保留。前30同名候选目录区间必要条件通过2025年1392/1560、2026年832/1020；不是实际日期覆盖或历史身份认证。两源集合一致，内部前缀复算147920符号时点/10480合格槽位通过；初版只读数组错误保留，v2仅技术修复。网络/新金融账户/经济变体0，分支未知封存，无经济或原法准入。",
+    "native_symbols": 860,
+    "formations_per_source": 86,
+    "source_variant_selected_membership_changes": 0,
+    "selected_catalog_interval_candidate_slots_2025": 1392,
+    "selected_native_slots_2025": 1560,
+    "selected_catalog_interval_candidate_slots_2026": 832,
+    "selected_native_slots_2026": 1020,
+    "historical_identities_certified": false,
+    "actual_formation_slot_coverage": null,
+    "full_formation_universe_ready": false,
+    "data_branch_closed_unknown": true,
+    "network_requests": 0,
+    "new_financial_accounts": 0,
+    "new_models": 0,
+    "new_economic_variants_evaluated": 0,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "next_action": "本次原始身份/市值数据分支封存未知，停止目录扩张与供应商覆盖子样本回测。重开须先提出具体合法原始身份/类型及必要日期来源，并登记有限采集与可用时点合同；未知不等于动量被反驳。总研发继续优先核对已有阴性结果对应的原始经济机制及最强替代解释，只有新的可反驳命题才登记一个经济变体；不靠翻方向、窗口、风险预算或删币求阳性。"
+  },
+  "weekly_lottery_evidence": {
+    "source": "max_lottery_accounts_20261027/original_method_mapping.json",
+    "report": "max_lottery_accounts_20261027/README.md",
+    "input_completion_sha256": "4231cd3052251d223e0835cd8541d58b851ad8c8fa68205d8f7652a7cd1d3094",
+    "account_completion_sha256": "2593e961515c074fa425dd65cf49559bd6866c1598d11387295ae92bbde260f0",
+    "actual_accounts": 4,
+    "new_economic_variants": 1,
+    "economic_gate_passed": false,
+    "third_party_review_performed": false
+  },
+  "previous_weekly_lottery_account_stage": {
+    "mechanism": "weekly_lottery_max7_reversal",
+    "label": "MAX7彩票型反转：完整扣费阴性，分支终止",
+    "status": "four_continuous_accounts_audited_no_net_edge_current_domain",
+    "report": "max_lottery_accounts_20261027/README.md",
+    "description": "先核对相反方向原始已发表全文，再冻结MAX7彩票型反转与普通7日反转同机会集对照。352个真实形成书/6组未来扰动、5项测试通过；两源目标事前相同，8个逻辑条件只运行4条实际账户。MAX7两成本608日净收益−8.06%/−8.16%、胜率27.72%/28.71%、回撤15.22%/15.10%，均2025停机；普通反转−9.47%/−9.51%。固定路径价格腿本身为负，四条内部现金审计通过；未见、第三方、容量和新策略进程恢复未完成。按事前门槛拒绝，不作原法盈利或跨市场准入。",
+    "new_financial_accounts": 4,
+    "logical_source_policy_cost_cases": 8,
+    "new_economic_variants_evaluated": 1,
+    "new_control_policies": 1,
+    "new_models": 0,
+    "source_variants_exact_targets_equal": true,
+    "all_accounts_internal_cash_audited": true,
+    "candidate_net_return_low_cost": -0.08057226395737216,
+    "candidate_net_return_pressure_cost": -0.08164575150998077,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "branch_closed": true,
+    "recorder_still_running": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "new_process_restoration_executed": false,
+    "capacity_verified": false,
+    "next_action": "终止MAX7彩票型反转与普通7日反转在当前本地域的参数/方向/跳日搜索；价格腿固定路径在两成本均负，不靠减费、重置2026、删币/年份或加杠杆求阳性。保留本轮原始反向文献与完整亏损账本。下一轮先以原始研究和现有失败证据提出一个不同经济问题及最强替代解释，再事前冻结必要数据、执行、实用效应和停止条件；没有新可反驳命题不新增账户。总账户、容量、独立外部和完整未见验证继续未完成。"
+  },
+  "shared_failure_attribution_evidence": {
+    "report": "shared_failure_attribution_20261027/README.md",
+    "source_completion_sha256": "89b02ba6869399a40c1451939df751b0051a95f1ce8fb4d79f5ff0c3c198a199",
+    "existing_accounts": 12,
+    "new_financial_accounts": 0,
+    "new_economic_variants": 0,
+    "benchmark_residuals_are_not_hedged_returns": true,
+    "external_review_performed": false
+  },
+  "previous_shared_failure_diagnostic_stage": {
+    "mechanism": "shared_loss_benchmark_diagnostic",
+    "label": "共同亏损归因：beta解释部分，成本后缺稳定剩余",
+    "status": "ex_post_fixed_path_diagnostic_complete_no_executable_edge_established",
+    "report": "shared_failure_attribution_20261027/README.md",
+    "description": "12条既有连续条件模型路径：价格分量及单位入场名义BTC参照后均负。两份日档的入场前60日beta参照有3条费用前残差为正，但保留原费用/资金费后的参照净差额11/12负，唯一正值普通7日反转低成本+61.73USDT，压力−179.04；六政策无两成本共同正值。11/12最差经济净值周同为2025-W03，仅同期描述。原始参考价、净值及准备金三路对账最大差3.15e-11USDT；无新账户、对冲执行或因果证明。",
+    "existing_financial_accounts_inspected": 12,
+    "new_financial_accounts": 0,
+    "new_economic_variants_evaluated": 0,
+    "new_models": 0,
+    "source_beta_variants": 2,
+    "price_negative_accounts": 12,
+    "unit_btc_relative_negative_accounts": 12,
+    "prior_beta_gross_residual_positive_accounts": 3,
+    "fixed_path_net_minus_beta_negative_accounts": 11,
+    "policies_positive_at_both_costs": 0,
+    "funded_hedge_simulated": false,
+    "causal_attribution_proven": false,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "capacity_verified": false,
+    "next_action": "保留全部原经济拒绝；当前12条固定路径没有一个政策在两成本的保留费用/资金费后BTC-beta参照净差额同时为正，不把算术减亏当可交易对冲收益。停止价格排序方向/窗口与低成本赢家搜索。下一命题须引入不同原始信息或有依据的风险溢价机制；若研究风险中性政策，先明确可反驳的经济理由、资金/费用/库存/停机及实用效应合同，再新评价，不能直接使用本表残差。两种日档原件、亏损周及未知身份历史均保留，不删周/币求正。共享资金组合、容量、独立外部和真正未见验证继续未完成。"
+  },
+  "options_vrp_source_evidence": {
+    "report": "options_vrp_feasibility_20261027/README.md",
+    "new_financial_accounts": 0,
+    "source_replication_or_alpha_admitted": false,
+    "author_commit": "1ffbd14c3c5f844b356c685bf70cdff654356f5c",
+    "native_primary_completion_sha256": "919fecd54efc3ad62231b3eb38df82ff3bbdd638285fa8c140899692c1e53c13",
+    "native_witness_completion_sha256": "fbb31ca14129e3299e0c568fadb5929c9a172d0f5fb95629a33544fa69c83b04",
+    "book_audit_completion_sha256": "1deb60556ae0a2aaadaa023a0df11b5cdaad0e78ea76b19026ac21b43e9c551a"
+  },
+  "previous_options_vrp_source_stage": {
+    "mechanism": "option_variance_risk_premium_source_feasibility",
+    "label": "期权波动率溢价：原生盘口可得，资金合同未合格",
+    "status": "primary_source_and_one_minute_native_window_verified_no_economic_account",
+    "report": "options_vrp_feasibility_20261027/README.md",
+    "description": "固定原文arXiv2410.15195v2与作者commit1ffbd14c3c5f844b356c685bf70cdff654356f5c；私有原始面板/完整代码复现缺口保留。官方历史合约与两条DVOL样本可得，空成交响应不证明无成交。独立采集者提供80条原生历史消息、34盘口、序列缺口0；24个跨渠道差异由同事件后到book解释，后到数据不能用于先前决策。按当前返回最小量及1:1USD对照作必要检查，参考名义9337.02USD超过8000USD；mark较bid演示多7.469616USD。原始历史手数/费用、完整生命周期/钱包/保证金未认证，新收益账户0，无原法或收益准入。",
+    "paper_version": "2410.15195v2",
+    "author_commit": "1ffbd14c3c5f844b356c685bf70cdff654356f5c",
+    "native_historical_messages": 80,
+    "valid_native_book_states": 34,
+    "book_sequence_gaps": 0,
+    "subsequent_same_event_book_explanations": 24,
+    "sample_only_not_full_lifecycle": true,
+    "conditional_minimum_notional_USD": 9337.02,
+    "conditional_stable_USD_conversion_assumption": "1:1 comparison only",
+    "historical_original_size_rules_certified": false,
+    "full_wallet_margin_fee_contract_qualified": false,
+    "new_financial_accounts": 0,
+    "new_economic_variants_evaluated": 0,
+    "new_models": 0,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "capacity_verified": false,
+    "next_action": "先限定一个期权产品/风险单位/钱包合同，依据权威最小量、计价、保证金和结算资料判断能否满足原本金与风险预算。保留所检BTC逆向合约的条件性手数检查失败；不把最小量改小、不放大本金/gross或按权利金假装低风险。只有具体完整生命周期的期权与对冲原始行情/可用时点、费用和资本约束方案明确后才登记一个经济试验；否则该产品域封存未知。当前80条源采样仅数据协议，不能回标未见策略收益；不扩大仓库/报价目录或编造DVOL、mark与历史过滤器。原亏损、组合、容量、外部与完整未见任务仍未完成。",
+    "cross_channel_current_received_book_mismatches": 24
+  },
+  "evaluation_scope_review_evidence": {
+    "report": "evaluation_scope_review_20261027/README.md",
+    "summary_sha256": "45a1d57d981354a358e0a1808274d660af68a27b4a81e65f3e655b2c23df933c",
+    "synthetic_only": true,
+    "controls_passed": 22,
+    "market_strategy_reproduction_completed": false,
+    "new_financial_accounts": 0,
+    "profit_goal_met": false
+  }
+}

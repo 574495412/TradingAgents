@@ -1,0 +1,37 @@
+{
+  "A_original_observed_v003": {
+    "source_hashes_checked": 357,
+    "all_match": true,
+    "native_run_completed": true
+  },
+  "B_cost8_v001": {
+    "source_hashes_checked": 360,
+    "all_match": true,
+    "native_run_completed": true
+  },
+  "C_cost15_v001": {
+    "source_hashes_checked": 360,
+    "all_match": true,
+    "native_run_completed": true
+  },
+  "D_leverage1_v001": {
+    "source_hashes_checked": 360,
+    "all_match": true,
+    "native_run_completed": true
+  },
+  "E_grosscap_v001": {
+    "source_hashes_checked": 360,
+    "all_match": true,
+    "native_run_completed": true
+  },
+  "F_stop8_v001": {
+    "source_hashes_checked": 360,
+    "all_match": true,
+    "native_run_completed": true
+  },
+  "G_halt15_v001": {
+    "source_hashes_checked": 360,
+    "all_match": true,
+    "native_run_completed": true
+  }
+}

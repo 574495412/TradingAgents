@@ -5,8 +5,8 @@
   "title": "多行情量化研发：以资本决策为终点的深度目标",
   "program_status": "active",
   "profit_goal_status": "not_met",
-  "objective": "在既有三项目与统一factors目录内，每轮只判定一个收益机制是否值得在明确行情和资金约束下投入资本。以流动性充足币种的中低频趋势／动量为起点，优先查原始论文、源码与基金披露，再核对本地偏离；已有反证和已看历史完整保留。结果评估前登记经济假设、最强替代解释、适用／禁用域、必要原始记录及其可用时点、唯一规则变体、完整成交与现金合同、简单对照、最小有用净效应、证据充分性和有限补证预算。从原始记录重建连续扣费账户，报告净收益、完整周期胜率、回撤、夏普、资本占用、容量边界及分时段表现，区分市场暴露、尾部风险补偿和可执行增量。用未参与开发者复算、规则冻结后的真正未见结果及另获授权后的原始成交账单分别检验实现、泛化与已发生经济收益；缺失层级保持未完成。每轮交付支持、反驳或未知的机制判定和继续、终止或封存决定。至少两个不同机制各自取得准入证据后，才检验共享资金、切换成本与共同容量下的组合；总账户仍以原本金和风险预算验证扣费年化20%／挑战30%、最大回撤15%、夏普至少1，不能靠扩大搜索、事后路由、拼接短窗或加杠杆达标。",
-  "target_basis": "20%基础/30%挑战年化、最大回撤15%、日夏普至少1仍是多策略总账户的待验证研发目标，不是保证收益、行业标准、单策略门槛或统计显著性证明。研究结果允许支持、反驳或证据不足；否定一个假设是有效研究进展，不等于总收益目标完成。",
+  "objective": "在既有三项目与统一factors目录内，每轮只判定一个收益机制是否值得在明确行情和资金约束下投入资本。以流动性充足币种的中低频趋势／动量为起点，优先查原始论文、源码与基金披露，再核对本地偏离；已有反证和已看历史完整保留。结果评估前登记经济假设、最强替代解释、适用／禁用域、必要原始记录及其可用时点、唯一规则变体、完整成交与现金合同、简单对照、最小有用净效应、证据充分性和有限补证预算。从原始记录重建连续扣费账户，报告净收益、完整周期胜率、回撤、夏普、资本占用、容量边界及分时段表现，区分市场暴露、尾部风险补偿和可执行增量。用未参与开发者复算、规则冻结后的真正未见结果及另获授权后的原始成交账单分别检验实现、泛化与已发生经济收益；缺失层级保持未完成。每轮交付支持、反驳或未知的机制判定和继续、终止或封存决定。至少两个不同机制各自取得准入证据后，才检验共享资金、切换成本与共同容量下的组合；总账户以原本金、扣费年化20%／挑战30%、最大回撤15%、夏普至少1作待验证研发参照；杠杆、仓位、止损和停机预算本身也要检验收益代价、尾部损失及恢复能力。不得通过扩大搜索、事后路由、拼接短窗或隐瞒风险预算变化宣称达标。",
+  "target_basis": "20%基础/30%挑战年化、最大回撤15%、日夏普至少1仍是多策略总账户的待验证研发目标，不是保证收益、行业标准、单策略门槛或统计显著性证明。研究结果允许支持、反驳或证据不足；否定一个假设是有效研究进展，不等于总收益目标完成。 用户已要求重新检验风险约束：gross 0.8、止损、15%永久停机不是跨策略公理；旧计划按原合同保留，后续对照其收益代价、回撤改善及恢复表现，数值暂作参照且未指定替换值。",
   "ownership": {
     "TradingAgents": "目标、来源、统一因子、行情识别、训练编排与独立审计",
     "Freqtrade": "加密连续账户、撮合、资金费和容量研究",
@@ -675,23 +675,23 @@
     "latest_diagnostic_source": "shared_failure_attribution_20261027/verification.json"
   },
   "current_research_stage": {
-    "mechanism": "source_fidelity_and_evaluation_scope_review",
-    "label": "评估口径核查：现金对照通过，原版策略复现待完成",
-    "status": "synthetic_cash_controls_passed_source_strategy_replication_not_completed",
-    "report": "evaluation_scope_review_20261027/README.md",
-    "description": "确认原论文与本地政策存在信号/周期/风险偏离；永久15%回撤停机使后续现金期不能作为原策略当期信号评估。21条可手算现金路径和1条停机路径通过，未发现所测手续费/滑点/资金费基础算账错误，不能全局认证引擎。公开教程盈利为作者披露、未本地复现；NFI仅核对配置。既有阴性结果保留。",
-    "synthetic_controls_passed": 22,
-    "new_financial_accounts": 0,
-    "new_economic_variants_evaluated": 0,
+    "mechanism": "nfi_original_reproduction_and_cost_risk_attribution",
+    "label": "NFI原版逐笔复现及七项成本/风控对照完成",
+    "status": "original_reproduced_controls_audited_known_month_only",
+    "report": "nfi_original_reproduction_20261027/README.md",
+    "description": "原版72交易217成交逐笔一致；原版已知月份净收益81.89%、全持仓参考回撤13.61%。七项原生账户现金审计通过，风险规则作为假设逐项比较，完整结果见报告；长期、未见、容量与实盘仍未建立。",
+    "new_financial_accounts": 7,
+    "registered_economic_conditions": 7,
     "module_admitted": false,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "recorder_still_running": false,
+    "historical_original_month_profitable": true,
     "third_party_review_performed": false,
     "independent_oos": false,
     "capacity_verified": false,
-    "next_action": "先固定一个NFI commit及对应作者报告/原始数据/原引擎/配置的有界复现合同；逐笔解释差异，再只迁移一个条件，最后验原预算和风险门槛。缺少决定性原件则封存未知，不跑参数网格或改变既有风险规则求通过。原版复现完成前不依据本地变体失败否定原策略。期权扩展暂列后续，不以数据入口或合成控制当盈利进展。"
+    "next_action": "以原版NFI为研发基线，根据每条约束的实际触发、收益代价和尾部保护证据选择风险预算；固定后补连续长历史、策略偏差检查、真实执行容量与冻结后未见验证，不扩展新因子。",
+    "completed_economic_conditions": 7
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -1717,5 +1717,30 @@
     "market_strategy_reproduction_completed": false,
     "new_financial_accounts": 0,
     "profit_goal_met": false
+  },
+  "risk_constraint_review": {
+    "requested_by_user": true,
+    "status": "fixed_known_month_comparison_completed_long_history_and_stress_unknown",
+    "prior_numbers_retained_for_comparison": true,
+    "arbitrary_local_gate_does_not_falsify_original_strategy": true,
+    "required_evidence": [
+      "收益与回撤同口径比较",
+      "停止/减仓后的错失收益和恢复表现",
+      "规则实际触发与尾部风险",
+      "成本、杠杆与风险规则分开归因"
+    ],
+    "no_new_numeric_portfolio_target_authorized": true,
+    "scope_exception": "用户明确要求原版复现后逐项迁移成本与风控；本轮登记7个累计对照条件，不新增信号或网格搜索，不追溯改写旧阴性结果。"
+  },
+  "nfi_original_reproduction": {
+    "source": "nfi_original_reproduction_20261027/comparison.json",
+    "completion": "nfi_original_reproduction_20261027/completion.json",
+    "original_net_return": 0.8188637361229999,
+    "original_full_reference_dd": 0.1361069392619928,
+    "original_trades": 72,
+    "original_filled_orders": 217,
+    "same_known_month_conditions": 7,
+    "long_history_validated": false,
+    "live_orders_enabled": false
   }
 }

@@ -1,30 +1,26 @@
 {
   "schema": "research-depth-goal-validation.v1",
   "version": "20261027_v007",
-  "validated_at_utc": "2026-10-27T13:41:36.430249+00:00",
-  "validated_scope": "Source fidelity review and synthetic cash controls only; no market strategy replication or profitable candidate.",
-  "prior_validation": "docs/research/regime_program/evaluation_scope_review_20261027/prior_depth_contract_validation.json",
+  "validated_at_utc": "2026-10-27T15:50:53.701345+00:00",
+  "validated_scope": "One known author month; exact original and six registered cumulative controls.",
+  "prior_validation": "docs/research/regime_program/nfi_original_reproduction_20261027/prior_depth_contract_validation.json",
   "checks": {
-    "all_original_goals_risk_gates_and_financial_results_unchanged": true,
-    "previous_options_source_stage_preserved": true,
-    "registered_source_hashes_unchanged_after_execution": true,
-    "21_exact_cash_cases_and_one_permanent_halt_case_passed": true,
-    "synthetic_controls_not_counted_as_financial_accounts": true,
-    "original_source_strategy_reproduction_still_unfinished": true,
-    "no_live_or_external_or_unseen_claim": true
+    "original_72_trades_217_orders_match": true,
+    "observer_preserves_original_financial_results": true,
+    "all_seven_order_cash_ledgers_pass": true,
+    "risk_constraints_are_hypotheses": true,
+    "source_hashes_verified_after_runs": true,
+    "no_unseen_live_capacity_or_external_review_claim": true
   },
   "files_sha256": {
-    "docs/research/regime_program/targets.json": "3375731b261e8f4d1b0cb65bbb9af6d9e2eb7b5855480715ade668792c7e56f6",
-    "docs/research/regime_program/evaluation_scope_review_20261027/completion.json": "519887e2832b38c48b741aef7debddd5c0ee003fc8c5a639202286a5db86f940",
-    "research_tools/evaluation_review/plan.json": "c8eb3ca9af9480e7676c7638f9c74a229321534655ca80cc6f95d605a40415c1",
-    "docs/research/regime_program/README.md": "8b438c25442de3cbb65f9bca79ae06decf17573cc907061c5a50d59ac3667532"
+    "docs/research/regime_program/targets.json": "d6305c5e5acd88f5b7cb399731a490d82af5dc22d875d757c561ad7cc1567585",
+    "docs/research/regime_program/nfi_original_reproduction_20261027/completion.json": "57c37483b683db3a6509e698f419dcf79a326725f16693f400e96fe4ca8979dc",
+    "docs/research/regime_program/nfi_original_reproduction_20261027/README.md": "9632176f4b664e1d7215cac2163822031e95693d84da24230f2e0114fb9bcd3c",
+    "docs/research/regime_program/README.md": "8739ae1708699a3aec47caebc2a2b4336c85e9dc8ea50cf66fe56a0a0ee9b92d"
   },
-  "tests_passed": 22,
-  "new_financial_accounts": 0,
-  "new_economic_variants_evaluated": 0,
+  "tests_passed": 8,
+  "new_financial_accounts": 7,
   "profit_goal_met": false,
-  "third_party_review_performed": false,
-  "independent_unseen_validation_completed": false,
   "orders_enabled": false,
   "frontend_rebuilt": false,
   "rendered_UI_retested_this_round": false

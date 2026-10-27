@@ -1,0 +1,27 @@
+{
+  "schema": "nfi-reproduction-and-controls-completion.v1",
+  "completed_at_utc": "2026-10-27T15:50:53.698977+00:00",
+  "scope": "One known author month; exact original and six registered cumulative controls.",
+  "original_trade_order_match": true,
+  "all_seven_closed_cash_audits_passed": true,
+  "unique_economic_conditions": 7,
+  "native_worker_invocations": 9,
+  "native_runs_completed": 8,
+  "preserved_technical_failures": 1,
+  "maximum_financial_workers": 1,
+  "new_factor_variants": 0,
+  "risk_constraints_presumed_valid": false,
+  "profit_goal_met": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "unseen_validation_performed": false,
+  "third_party_review_performed": false,
+  "files_sha256": {
+    "docs/research/regime_program/nfi_original_reproduction_20261027/README.md": "9632176f4b664e1d7215cac2163822031e95693d84da24230f2e0114fb9bcd3c",
+    "docs/research/regime_program/nfi_original_reproduction_20261027/comparison.json": "33ba9d50e85bc6682cd622cababcf617b5fc50da6d126ba8e3ff21b1179779dc",
+    "docs/research/regime_program/nfi_original_reproduction_20261027/cash_audit.json": "192c4febf6698c1abac95f51f7ce707c2a88bd9db41166d6e55cc4222f73cfd7",
+    "docs/research/regime_program/nfi_original_reproduction_20261027/original_audit.json": "ff99c3b4ec9801aa5737b505a4765101b316e6059668f94603dc726c90e82641",
+    "research_tools/nfi_reproduction/compare_controls.py": "d21c1604713910ff9e73bcf3b51119de6c0864208106b1723217038597724fb3",
+    "docs/research/regime_program/nfi_original_reproduction_20261027/post_run_source_verification.json": "94f04007001c53b91c0490f2c2e6f2e68910944b09f1443910ffb0c73df077de"
+  }
+}

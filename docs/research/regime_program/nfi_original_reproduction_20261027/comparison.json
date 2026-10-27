@@ -1,0 +1,528 @@
+{
+  "schema": "nfi-fixed-cumulative-cost-risk-comparison.v1",
+  "period": "20250101-20250201",
+  "capital_USDT": 10000,
+  "cases": [
+    {
+      "case": "A",
+      "label": "原版：单边5bps，3x",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/A_original_observed_v003",
+      "trades": 72,
+      "filled_orders": 217,
+      "net_pnl_USDT": 8188.637361229999,
+      "net_return": 0.8188637361229999,
+      "win_rate": 0.9722222222222222,
+      "profit_factor": 33.116518301374505,
+      "closed_trade_dd": 0.013912372679660966,
+      "full_reference_dd": 0.1361069392619928,
+      "observed_hourly_mark_dd": 0.10604140700260345,
+      "daily_reference_sharpe_365_descriptive_31days": 7.742138925957558,
+      "max_gross_to_reference_NAV": 2.7042635364038468,
+      "commission_plus_cost_proxy_USDT": 359.2339336917,
+      "model_funding_USDT": 15.272124699100626,
+      "long_short_net_pnl_USDT": {
+        "long": 7799.26345406,
+        "short": 389.37390716999994
+      },
+      "native_stoploss": -0.99,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 3,
+      "native_stop_exits": 0,
+      "risk_policy": null,
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.020343082274000057,
+          "reference_dd": 0.011593457193952106
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.047166514916039626,
+          "reference_dd": 0.024890999396702806
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.423524124799203,
+          "reference_dd": 0.12082948933860871
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.1958407864898175,
+          "reference_dd": 0.07314008526665261
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "1.766249734E-8",
+        "total_cash_error_USDT": "2.259837340E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/A_original_observed_v003/native_results/backtest-result-2026-10-27_15-32-06.zip": "49d51f76cc8587955e33af2331353042b9623d1edefaa78200709f122c98c5c1",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/A_original_observed_v003/registered_plan.json": "5a33f8af370806159b39318707856b7e0654948f16036cea700cd0719a91a311",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/A_original_observed_v003/reference_equity.parquet": "b76b5416caba428849c337bce22e49e7c7c8e7513f737cbc637681682b892689",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/A_original_observed_v003/observer_receipt.json": "0c3ac68b6b87dc6ae856ae0543e57df6ebf4bea6f1860a02bc740f7d50cf49d8"
+      }
+    },
+    {
+      "case": "B",
+      "label": "单边8bps成本代理，3x",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/B_cost8_v001",
+      "trades": 72,
+      "filled_orders": 217,
+      "net_pnl_USDT": 7574.242375150001,
+      "net_return": 0.7574242375150001,
+      "win_rate": 0.9722222222222222,
+      "profit_factor": 29.650031257352687,
+      "closed_trade_dd": 0.014910173602811445,
+      "full_reference_dd": 0.13682839415311399,
+      "observed_hourly_mark_dd": 0.10676360414665298,
+      "daily_reference_sharpe_365_descriptive_31days": 7.916962587134813,
+      "max_gross_to_reference_NAV": 2.7096398207597123,
+      "commission_plus_cost_proxy_USDT": 564.34468559008,
+      "model_funding_USDT": 15.426913953426242,
+      "long_short_net_pnl_USDT": {
+        "long": 7207.74315307,
+        "short": 366.49922208
+      },
+      "native_stoploss": -0.99,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 3,
+      "native_stop_exits": 0,
+      "risk_policy": null,
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.019905997442000167,
+          "reference_dd": 0.011886604594623429
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.045368873804197296,
+          "reference_dd": 0.024911186588812972
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.38355392768285457,
+          "reference_dd": 0.12141066254232225
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.19138138417467454,
+          "reference_dd": 0.07338286991738852
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "2.418379015E-8",
+        "total_cash_error_USDT": "1.3345240966E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/B_cost8_v001/native_results/backtest-result-2026-10-27_15-41-00.zip": "c64456489fcaa230d7ff6397266f95dedb4a4b9ce4df0d3ef97400df47e49c6b",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/B_cost8_v001/registered_plan.json": "d9b70a49ca3d2b4f184c78ee7ad97bf81d621e01bfad6ab58a7d29d58b66549a",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/B_cost8_v001/reference_equity.parquet": "adeb9fd0284d1b0d70b490d28f85dfb9ea441706c07df49761f38b60d8a68c54",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/B_cost8_v001/observer_receipt.json": "dcec550ae1a73fabee4c45a343c2b53e0e3201a1a6f0ca754cb7bde0ca5507b8"
+      },
+      "incremental_net_return_pp": -6.14394986079998,
+      "incremental_reference_dd_pp": 0.07214548911211871
+    },
+    {
+      "case": "C",
+      "label": "单边15bps成本代理，3x",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/C_cost15_v001",
+      "trades": 70,
+      "filled_orders": 211,
+      "net_pnl_USDT": 7555.16562433,
+      "net_return": 0.755516562433,
+      "win_rate": 0.9714285714285714,
+      "profit_factor": 26.986518946603063,
+      "closed_trade_dd": 0.01638162492367201,
+      "full_reference_dd": 0.130663350964895,
+      "observed_hourly_mark_dd": 0.09943608067361254,
+      "daily_reference_sharpe_365_descriptive_31days": 7.420058370854158,
+      "max_gross_to_reference_NAV": 2.7230197011296613,
+      "commission_plus_cost_proxy_USDT": 1026.1359271257,
+      "model_funding_USDT": 23.97636161384596,
+      "long_short_net_pnl_USDT": {
+        "long": 7244.68829554,
+        "short": 310.47732879000006
+      },
+      "native_stoploss": -0.99,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 3,
+      "native_stop_exits": 0,
+      "risk_policy": null,
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.014827448392999987,
+          "reference_dd": 0.012570375261016564
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.0528497111843198,
+          "reference_dd": 0.026210980841515186
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.39376501595831326,
+          "reference_dd": 0.12119304407373332
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.17884521296692912,
+          "reference_dd": 0.07334101559007666
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "1.20975649E-8",
+        "total_cash_error_USDT": "4.1854039901E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/C_cost15_v001/native_results/backtest-result-2026-10-27_15-42-51.zip": "5aff39eb472b0cb8ff9017712b219cf4648abb205a80d865fa5f5602329762e5",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/C_cost15_v001/registered_plan.json": "2d94a74faa34bc2a08fbabb4ee6442d1cdd320c3594b44c4afca9e85d445bdc2",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/C_cost15_v001/reference_equity.parquet": "ad4e1e2efa409ccdc670eb9b33aa45620a4eb67f10bf0aede9e0d5fb7569502a",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/C_cost15_v001/observer_receipt.json": "f8bc33800b7697dc3b0bbcb825fc82184ea6181d544876c9d3c48f24ed4a057a"
+      },
+      "incremental_net_return_pp": -0.1907675082000071,
+      "incremental_reference_dd_pp": -0.6165043188218977
+    },
+    {
+      "case": "D",
+      "label": "C + 杠杆降为1x",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/D_leverage1_v001",
+      "trades": 73,
+      "filled_orders": 171,
+      "net_pnl_USDT": 2436.26499354,
+      "net_return": 0.243626499354,
+      "win_rate": 0.9863013698630136,
+      "profit_factor": 81.22100970766765,
+      "closed_trade_dd": 0.0024412734014668835,
+      "full_reference_dd": 0.037788113999949746,
+      "observed_hourly_mark_dd": 0.03081014355436784,
+      "daily_reference_sharpe_365_descriptive_31days": 8.116790007354428,
+      "max_gross_to_reference_NAV": 0.961375457886083,
+      "commission_plus_cost_proxy_USDT": 294.529694322,
+      "model_funding_USDT": 9.109560678310144,
+      "long_short_net_pnl_USDT": {
+        "long": 2278.90981258,
+        "short": 157.35518096
+      },
+      "native_stoploss": -0.99,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 2,
+      "native_stop_exits": 0,
+      "risk_policy": null,
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.004931351098000025,
+          "reference_dd": 0.004197906418919373
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.01770269274126024,
+          "reference_dd": 0.008773270708164693
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.14486489968770955,
+          "reference_dd": 0.034356065111052714
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.062131791012895565,
+          "reference_dd": 0.02564241656626154
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "5.00E-9",
+        "total_cash_error_USDT": "1.6310144703E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/D_leverage1_v001/native_results/backtest-result-2026-10-27_15-44-31.zip": "c060fd1bfc24f00980864a4b7440c67a3f3e7062451706b295bb532ff45c181c",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/D_leverage1_v001/registered_plan.json": "d17cb2817e11205fdc2fa96559203cae8552d6d81745504d1928f26d74572a9a",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/D_leverage1_v001/reference_equity.parquet": "7a450415765a0d5ed7ec2867ff6c365acf3802477f2ad4bf662bafe23544c00c",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/D_leverage1_v001/observer_receipt.json": "1d6c831d01a56874d6f58c3762d06166c0198265fc2035659b6ae752e0c4cfe3"
+      },
+      "incremental_net_return_pp": -51.1890063079,
+      "incremental_reference_dd_pp": -9.287523696494526
+    },
+    {
+      "case": "E",
+      "label": "D + 新增仓位总敞口上限0.8x",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/E_grosscap_v001",
+      "trades": 73,
+      "filled_orders": 171,
+      "net_pnl_USDT": 2318.96691625,
+      "net_return": 0.23189669162499998,
+      "win_rate": 0.9863013698630136,
+      "profit_factor": 78.28599583128722,
+      "closed_trade_dd": 0.002434953431245178,
+      "full_reference_dd": 0.037788113999949746,
+      "observed_hourly_mark_dd": 0.03081014355436784,
+      "daily_reference_sharpe_365_descriptive_31days": 8.426450523132335,
+      "max_gross_to_reference_NAV": 0.8180020628890066,
+      "commission_plus_cost_proxy_USDT": 282.8311666128,
+      "model_funding_USDT": 9.27239728658808,
+      "long_short_net_pnl_USDT": {
+        "long": 2162.09886424,
+        "short": 156.86805201
+      },
+      "native_stoploss": -0.99,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 2,
+      "native_stop_exits": 0,
+      "risk_policy": {
+        "gross_cap": 0.8,
+        "cap_scope": "new entries and positive additions; market drift can exceed the cap",
+        "drawdown_halt": null,
+        "halted": false,
+        "halted_at": null,
+        "valuation": "5m OPEN reference NAV from actual order basis, not certified executable marks",
+        "counters": {
+          "stake_clamps": 6,
+          "addition_clamps": 0,
+          "entry_rejections": 0
+        },
+        "risk_rule_validity_established": false
+      },
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.004931351098000025,
+          "reference_dd": 0.004197906418919373
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.01770269274126024,
+          "reference_dd": 0.008773270708164693
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.1340329170916048,
+          "reference_dd": 0.034356065111052714
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.06216334321092254,
+          "reference_dd": 0.02564510227665784
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "9.1488972E-9",
+        "total_cash_error_USDT": "2.3788079579E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/E_grosscap_v001/native_results/backtest-result-2026-10-27_15-46-09.zip": "dd47a218c0fefe4c467512a0a5889044aee5ba75827afde1579f3b9fb0f03699",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/E_grosscap_v001/registered_plan.json": "105a0e32576de29e5dc8a9fc1073266442f1147246775f9d59736b834acf0394",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/E_grosscap_v001/reference_equity.parquet": "e01a8ee73831bad2cbf17f7c095eee9c0dc43d0ca9c2d62ccb9b6d34a8d22853",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/E_grosscap_v001/observer_receipt.json": "16ffba4536c2197a5a8610e1d82efeca262ce069a758b8e4e8c2546eb63b8e9b"
+      },
+      "incremental_net_return_pp": -1.1729807729000008,
+      "incremental_reference_dd_pp": 0.0
+    },
+    {
+      "case": "F",
+      "label": "E + 原生8%止损",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/F_stop8_v001",
+      "trades": 73,
+      "filled_orders": 171,
+      "net_pnl_USDT": 2318.96691625,
+      "net_return": 0.23189669162499998,
+      "win_rate": 0.9863013698630136,
+      "profit_factor": 78.28599583128722,
+      "closed_trade_dd": 0.002434953431245178,
+      "full_reference_dd": 0.037788113999949746,
+      "observed_hourly_mark_dd": 0.03081014355436784,
+      "daily_reference_sharpe_365_descriptive_31days": 8.426450523132335,
+      "max_gross_to_reference_NAV": 0.8180020628890066,
+      "commission_plus_cost_proxy_USDT": 282.8311666128,
+      "model_funding_USDT": 9.27239728658808,
+      "long_short_net_pnl_USDT": {
+        "long": 2162.09886424,
+        "short": 156.86805201
+      },
+      "native_stoploss": -0.08,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 2,
+      "native_stop_exits": 0,
+      "risk_policy": {
+        "gross_cap": 0.8,
+        "cap_scope": "new entries and positive additions; market drift can exceed the cap",
+        "drawdown_halt": null,
+        "halted": false,
+        "halted_at": null,
+        "valuation": "5m OPEN reference NAV from actual order basis, not certified executable marks",
+        "counters": {
+          "stake_clamps": 6,
+          "addition_clamps": 0,
+          "entry_rejections": 0
+        },
+        "risk_rule_validity_established": false
+      },
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.004931351098000025,
+          "reference_dd": 0.004197906418919373
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.01770269274126024,
+          "reference_dd": 0.008773270708164693
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.1340329170916048,
+          "reference_dd": 0.034356065111052714
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.06216334321092254,
+          "reference_dd": 0.02564510227665784
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "9.1488972E-9",
+        "total_cash_error_USDT": "2.3788079579E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/F_stop8_v001/native_results/backtest-result-2026-10-27_15-47-44.zip": "5bdddb98cdd5a05ea9bd3c80b1859bde8a1ebfe55dc8c64c0a33d053a6c95d4b",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/F_stop8_v001/registered_plan.json": "6752800b6e4959944ba89337849cd713d0080abac6cd129147fdd898253ab8fe",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/F_stop8_v001/reference_equity.parquet": "e01a8ee73831bad2cbf17f7c095eee9c0dc43d0ca9c2d62ccb9b6d34a8d22853",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/F_stop8_v001/observer_receipt.json": "16ffba4536c2197a5a8610e1d82efeca262ce069a758b8e4e8c2546eb63b8e9b"
+      },
+      "incremental_net_return_pp": 0.0,
+      "incremental_reference_dd_pp": 0.0
+    },
+    {
+      "case": "G",
+      "label": "F + 15%回撤永久停机",
+      "directory": "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/G_halt15_v001",
+      "trades": 73,
+      "filled_orders": 171,
+      "net_pnl_USDT": 2318.96691625,
+      "net_return": 0.23189669162499998,
+      "win_rate": 0.9863013698630136,
+      "profit_factor": 78.28599583128722,
+      "closed_trade_dd": 0.002434953431245178,
+      "full_reference_dd": 0.037788113999949746,
+      "observed_hourly_mark_dd": 0.03081014355436784,
+      "daily_reference_sharpe_365_descriptive_31days": 8.426450523132335,
+      "max_gross_to_reference_NAV": 0.8180020628890066,
+      "commission_plus_cost_proxy_USDT": 282.8311666128,
+      "model_funding_USDT": 9.27239728658808,
+      "long_short_net_pnl_USDT": {
+        "long": 2162.09886424,
+        "short": 156.86805201
+      },
+      "native_stoploss": -0.08,
+      "clock_contract": "Raw native00:05..Feb1 inclusive plus same-time post-force-close; derived daily/slice boundaries seed initial10000 cash and retain settled end cash. All raw rows retained for max5m drawdown.",
+      "force_exits": 2,
+      "native_stop_exits": 0,
+      "risk_policy": {
+        "gross_cap": 0.8,
+        "cap_scope": "new entries and positive additions; market drift can exceed the cap",
+        "drawdown_halt": 0.15,
+        "halted": false,
+        "halted_at": null,
+        "valuation": "5m OPEN reference NAV from actual order basis, not certified executable marks",
+        "counters": {
+          "stake_clamps": 6,
+          "addition_clamps": 0,
+          "entry_rejections": 0
+        },
+        "risk_rule_validity_established": false
+      },
+      "time_slices": [
+        {
+          "start": "2025-01-01",
+          "end_exclusive": "2025-01-08",
+          "reference_return": 0.004931351098000025,
+          "reference_dd": 0.004197906418919373
+        },
+        {
+          "start": "2025-01-08",
+          "end_exclusive": "2025-01-15",
+          "reference_return": 0.01770269274126024,
+          "reference_dd": 0.008773270708164693
+        },
+        {
+          "start": "2025-01-15",
+          "end_exclusive": "2025-01-22",
+          "reference_return": 0.1340329170916048,
+          "reference_dd": 0.034356065111052714
+        },
+        {
+          "start": "2025-01-22",
+          "end_exclusive": "2025-02-01",
+          "reference_return": 0.06216334321092254,
+          "reference_dd": 0.02564510227665784
+        }
+      ],
+      "audit": {
+        "max_trade_cash_error_USDT": "9.1488972E-9",
+        "total_cash_error_USDT": "2.3788079579E-8",
+        "max_quantity_residual": "0.0",
+        "passed": true
+      },
+      "source_sha256": {
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/G_halt15_v001/native_results/backtest-result-2026-10-27_15-49-29.zip": "3e1ffb854d0e0a3c03ef1e37e7462de2627184e99b048fa109ed36ceab91f103",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/G_halt15_v001/registered_plan.json": "3a257e6c2e2f4702f310767e258729b0f35b08ae0983efdd3e80341e364a44f2",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/G_halt15_v001/reference_equity.parquet": "e01a8ee73831bad2cbf17f7c095eee9c0dc43d0ca9c2d62ccb9b6d34a8d22853",
+        "/Users/chrise/GitHub/freqtrade/user_data/crypto_quant/nfi_original_20261027_v001/G_halt15_v001/observer_receipt.json": "16ffba4536c2197a5a8610e1d82efeca262ce069a758b8e4e8c2546eb63b8e9b"
+      },
+      "incremental_net_return_pp": 0.0,
+      "incremental_reference_dd_pp": 0.0
+    }
+  ],
+  "author_trade_order_match_audited_separately": true,
+  "limitations": [
+    "Known historical author month, not unseen or live evidence.",
+    "Cost increments are fee-equivalent proxies, not realized bid/ask slippage.",
+    "5m OPEN reference NAV includes all held positions, accrued modeled funding and exit fee reserve; hourly marks are separately observed.",
+    "Gross cap constrains new entries/additions; market drift can exceed it.",
+    "Cumulative effects depend on the registered order and native path feedback.",
+    "No demonstrated historical point-in-time universe, executable capacity, actual customer funding, or independent external review.",
+    "A nonbinding risk rule has no demonstrated economic benefit.",
+    "Short-window Sharpe is descriptive; no annual return extrapolation."
+  ],
+  "orders_enabled": false,
+  "production_eligible": false,
+  "unseen_validation_performed": false,
+  "third_party_review_performed": false
+}
