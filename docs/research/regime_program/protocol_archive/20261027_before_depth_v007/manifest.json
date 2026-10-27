@@ -1,0 +1,11 @@
+{
+  "schema": "research-depth-predecessor.v1",
+  "previous_commit": "6772b71cd3c1bf672cbaa7cf470a906abf994749",
+  "files_sha256": {
+    "README.md": "bdc9dd8f93bda13670d8aabcf9ae05445d1b876cf5782d8e8eac2bd9afdcfd67",
+    "targets.json": "9bb1a273640e13895139ff52aec9f26b8970939c0f0ce9961b8938ba11957b5a",
+    "depth_sources.json": "92534144e8ae2ac34f62df38286ed08fcb81a151d16c9ef440cd662f2cd13cf0",
+    "depth_contract_validation.json": "c870289d61f9f48bb0f259b90d33d737128e8566b9f99420b5abd3f44f74aff8"
+  },
+  "economic_results_rewritten": false
+}

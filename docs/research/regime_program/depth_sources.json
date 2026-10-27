@@ -28,7 +28,7 @@
       "use": "PBO/CSCV用于适用试验集合的选择稳定性诊断，不能把已看的历史转换成新的未见证据。"
     }
   ],
-  "goal_revision": "20261027_v006",
+  "goal_revision": "20261027_v007",
   "current_revision_source_checks": [
     {
       "url": "https://data.binance.vision/",
@@ -53,20 +53,20 @@
   ],
   "dated_carry_source_review": "dated_carry_feasibility_20261027/source_method_mapping.json",
   "goal_rewrite_review": {
-    "checked_on_utc": "2026-10-27T10:00:19.378793+00:00",
-    "scope": "仅复核目标方法依据；未获取新策略收益、第三方复核或账户记录。",
+    "checked_on_utc": "2026-10-27T13:27:33.093952+00:00",
+    "scope": "本轮只修订研究目标与证据要求；没有新增金融试验、第三方复现或未见收益。",
     "primary_sources": [
       {
-        "url": "https://www.aqr.com/insights/research/working-paper/trading-costs",
-        "supports": "执行成本应以真实成交校准；该股票研究参数不可直接移植加密。"
+        "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+        "supports": "多重搜索和非正态会膨胀报告业绩；完整搜索历史与适用假设是校正前提。"
       },
       {
-        "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
-        "supports": "多重尝试和非正态会膨胀报告夏普；使用校正需要试验史及适用假设。"
+        "url": "https://github.com/binance/binance-public-data",
+        "supports": "逐笔、聚合成交与K线结构、时间单位及原始归档入口；不是所有历史交易规则或盘口容量的认证。"
       },
       {
         "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
-        "supports": "区分原始申报历史和跨申报聚合XBRL；股票任务仍独立执行。"
+        "supports": "申报历史与跨申报聚合XBRL有不同含义；股票需定位原申报／修订和可用时点。"
       }
     ]
   }
