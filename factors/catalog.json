@@ -1336,5 +1336,22 @@
     "actual_accounts": 4,
     "source_aliases_not_independent_trials": true,
     "legacy74_columns_unchanged": true
+  },
+  "option_contract_unit_research_registry": {
+    "module": "factors/common/option_units.py",
+    "protocol": "research_tools/options_vrp/source_plan.json",
+    "role": "settlement_currency_and_premium_vs_underlying_notional_math_only",
+    "reference": "../docs/research/regime_program/options_vrp_feasibility_20261027/README.md",
+    "state": "historical_source_window_available_economic_wallet_contract_unqualified",
+    "asset_classes_math_only": [
+      "crypto",
+      "equity"
+    ],
+    "inverse_coin_branch_scope": "DeribitBTCsource-only example; native quantity already underlyingBTC, do not multiply contract_size again",
+    "account_returns_verified": false,
+    "independent_alpha_proven": false,
+    "original_author_exact_replication": false,
+    "new_financial_accounts": 0,
+    "legacy74_columns_unchanged": true
   }
 }

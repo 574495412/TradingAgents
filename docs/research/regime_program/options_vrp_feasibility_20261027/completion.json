@@ -1,0 +1,14 @@
+{
+  "manifest": {
+    "original_method_mapping.json": "876b6563b276dd9801fa08752dd9c7c62556616305a7e1334da928202ce3af7b",
+    "summary.json": "868232734ba7d0bb41912fed0d1eacde2c17cca32941a79da6aabe58bea38b65",
+    "channel_timing_differences.json": "09c7ac1c582c2c8e82f1232118f46cbc8c8b961dff6d2543c424e7ef18da22fa",
+    "historical_book_summary.json": "26e287d9620f1646342988c22f97f6a01b511bd13cb341cc92e43409b1e8c0ad",
+    "README.md": "a82a21750d8bd88c1c04b9c2c7a366280df3151d473a254ac23da0d5c1a41064",
+    "source_outcomes.json": "506e6a8c1ad83808fb044d8128b018665f4037b2fb4e01e1bfa239c736277d6e",
+    "verification.json": "2b8d9251b72a7d8334964cfaffbdf626a38d37fae6dc557ffdac5ea63963bd22",
+    "first_observation_units.json": "5661a31ea112bce50f6b2b94e0b6c9e40423317ca6355030f787b5b24926a4b7"
+  },
+  "native_witness_completion_sha256": "fbb31ca14129e3299e0c568fadb5929c9a172d0f5fb95629a33544fa69c83b04",
+  "profit_goal_met": false
+}

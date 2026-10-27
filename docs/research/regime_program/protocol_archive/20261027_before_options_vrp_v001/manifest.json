@@ -1,0 +1,10 @@
+{
+  "manifest": {
+    "factors_README.md": "f28eec63db4a29b602cc7afd6822ff06b12bb60204d5c2db7361973038141952",
+    "targets.json": "38043652eb8f10fc3b4512e29c4ff2d6cdc6c8454537b84b6729364506006136",
+    "depth_contract_validation.json": "4e8da8246c4a7d7ab07773b7766a645992b563aa08355b0da5dad4d83ac1d3a7",
+    "README.md": "fa9218d1872211c96ede6e23840fb00f5281201d3e5784a3a2c4088b8cfea3cc",
+    "factors_catalog.json": "fefe261d4014fd12e2bb4cf575d2c6563d8e8136456cca6383c837ad15631b2c"
+  },
+  "purpose": "Preserve prior shared-loss diagnosis, all goal thresholds and existing factor catalog before option source review"
+}

@@ -1,0 +1,23 @@
+{
+  "messages": 80,
+  "counts": {
+    "book": 34,
+    "snapshots": 1,
+    "ticker": 27,
+    "quote": 19
+  },
+  "disconnects": 0,
+  "sequence_gaps": 0,
+  "valid_book_states": 34,
+  "causally_comparable_bbo_checks": 46,
+  "exact_bbo_matches": 22,
+  "bbo_mismatches": 24,
+  "same_exchange_timestamp_complete_trios": 19,
+  "source_only": true,
+  "independent_collector_same_exchange": true,
+  "third_party_strategy_review": false,
+  "full_lifecycle_or_option_chain_qualified": false,
+  "new_financial_accounts": 0,
+  "economic_evaluation_allowed": false,
+  "profit_goal_met": false
+}

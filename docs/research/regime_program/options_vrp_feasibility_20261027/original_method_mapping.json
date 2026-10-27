@@ -1,0 +1,68 @@
+{
+  "paper_id": "arXiv2410.15195v2",
+  "paper_version": "1Aug2025",
+  "paper_native_pdf": "data/research/options_vrp_primary_sources_20261027_v001/paper_v2.body",
+  "paper_sha256": "a609d29d837377fd661c2fbee13f514d4e3973e6e0414bc2f17dc136f59a8ba5",
+  "author_repository": {
+    "repository": "https://github.com/ratmir-miftachov/BTC-premia.git",
+    "commit": "1ffbd14c3c5f844b356c685bf70cdff654356f5c",
+    "basis": "normal public Git HEAD read; not necessarily the exact paper-era code version",
+    "private_raw_data_obtained": false
+  },
+  "scope": "Risk-neutral vs physical distributions/variance premia over2017-2022 and retrospective market-regime analysis; not a demonstrated net strategy.",
+  "version_separation": "v1search summaries use downside concern;v2abstract says variance and upside concern in low-vol regime. Do not merge versions.",
+  "raw_inputs_required": [
+    "Timestamped native option trades, full bid/ask/depth and size, contract identity/strike/expiry/settlement denomination",
+    "Underlying index AND actual hedge instrument quotes/funding/mark data, option/futures wallet currencies and cash FX",
+    "Applicable fee/minimum size/ticks/margin/settlement rules and original publication/revisions",
+    "Continuous chain/inventory marks and terminal settlement evidence, including missing/untradable intervals"
+  ],
+  "native_sample_limits": {
+    "option_quote_currency": "BTC",
+    "settlement_currency": "BTC",
+    "index_and_strike_currency": "USD",
+    "ticker_forward_distinct_from_cash_index": true,
+    "original_historical_rules_certified": false,
+    "empty_current_REST_trade_response_is_not_absence_of_trades": true,
+    "two_DVOL_candles_not_full_variance_panel": true
+  },
+  "paper_method": [
+    "BVIX-like variance from option price surface and27day monthly horizon, not a directly traded DVOL position",
+    "Physical variance and density are sample-estimated; implied-minus-realized difference is not a cash PnL",
+    "RND CLR transform and full-pair Ward clustering are retrospective; any trading state classifier needs past-only fit/assignment",
+    "PaperUSDprice conversion, carry/interest assumptions and native inverse/BTC cash economics require local mapping"
+  ],
+  "paper_data_count_conflict": {
+    "body_page8_days": 1992,
+    "body_page8_transactions": 5384537,
+    "table1_page9_days": 1301,
+    "table1_page9_total_transactions": 7832590,
+    "table1_page9_call_transactions": 3940541,
+    "table1_page9_put_transactions": 3468020,
+    "call_plus_put": 7408561,
+    "unresolved": "Visually inspected table1; original underlying raw panel not obtained, counts not reconciled."
+  },
+  "author_code_limits": {
+    "readme_explicitly_missing_private_raw_and_large_intermediates": true,
+    "readme_says_Q_from_IV_R_missing": true,
+    "readme_says_MATLAB_manual_stages": true,
+    "scope": "These are the pinned authors README statements, not a claimed full checkout execution audit.",
+    "config_clustering_tenors": [
+      5,
+      9,
+      14,
+      27
+    ],
+    "paper_data_clustering_tenors": [
+      9,
+      27,
+      45
+    ],
+    "paper_era_exact_code_match": false,
+    "license": "MIT; no third-party code imported or executed"
+  },
+  "other_dataset": "UWA Hoang/Baur2020forecast data is a different paper; metadata200, exactCSVprefix403 preserved. No dataset or complete raw panel obtained.",
+  "author_exact_replication_completed": false,
+  "new_financial_accounts": 0,
+  "economic_strategy_admitted": false
+}

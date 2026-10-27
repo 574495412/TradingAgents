@@ -386,9 +386,11 @@
         "dated_carry_feasibility_20261027/README.md",
         "dated_carry_feasibility_20261027/verification.json",
         "shared_failure_attribution_20261027/README.md",
-        "shared_failure_attribution_20261027/verification.json"
+        "shared_failure_attribution_20261027/verification.json",
+        "options_vrp_feasibility_20261027/README.md",
+        "options_vrp_feasibility_20261027/verification.json"
       ],
-      "outcome": "MAX7与普通7日反转完整扣费失败；既有12条路径归因显示共同BTC-beta暴露有影响，但没有一个政策在两成本的固定路径参照净差额都为正，无新合格机制或共享资金组合。"
+      "outcome": "既有金融拒绝及共同亏损诊断保留；新的期权风险溢价只完成原始方法/单分钟数据与单位核验，尚无合格资金合同或新账户，没有新机制或共享资金组合。"
     },
     {
       "id": "R07",
@@ -439,9 +441,11 @@
         "dated_carry_feasibility_20261027/README.md",
         "dated_carry_feasibility_20261027/verification.json",
         "shared_failure_attribution_20261027/README.md",
-        "shared_failure_attribution_20261027/verification.json"
+        "shared_failure_attribution_20261027/verification.json",
+        "options_vrp_feasibility_20261027/README.md",
+        "options_vrp_feasibility_20261027/verification.json"
       ],
-      "outcome": "新增既有12条路径的原始参考价/账本/净值内部归因，三路核算差3.15e-11USDT；没有可交易对冲、因果、容量、第三方或真正未见认证。"
+      "outcome": "期权34状态历史序列可重建；跨渠道接收差异、BTC/USD/forward计价及条件手数失败保留。完整生命周期、费用/保证金/钱包、容量、第三方和真正未见仍未完成。"
     },
     {
       "id": "R08",
@@ -564,14 +568,14 @@
       "new_financial_accounts": 0
     }
   },
-  "representative_actual": "12条既有连续条件模型路径：价格分量及单位入场名义BTC参照后均负。两份日档的入场前60日beta参照有3条费用前残差为正，但保留原费用/资金费后的参照净差额11/12负，唯一正值普通7日反转低成本+61.73USDT，压力−179.04；六政策无两成本共同正值。11/12最差经济净值周同为2025-W03，仅同期描述。原始参考价、净值及准备金三路对账最大差3.15e-11USDT；无新账户、对冲执行或因果证明。 最近4条MAX7/普通反转金融账户仍全负；总账户实际指标继续为空。",
+  "representative_actual": "固定原文arXiv2410.15195v2与作者commit1ffbd14c3c5f844b356c685bf70cdff654356f5c；私有原始面板/完整代码复现缺口保留。官方历史合约与两条DVOL样本可得，空成交响应不证明无成交。独立采集者提供80条原生历史消息、34盘口、序列缺口0；24个跨渠道差异由同事件后到book解释，后到数据不能用于先前决策。按当前返回最小量及1:1USD对照作必要检查，参考名义9337.02USD超过8000USD；mark较bid演示多7.469616USD。原始历史手数/费用、完整生命周期/钱包/保证金未认证，新收益账户0，无原法或收益准入。 既有金融拒绝不变，多策略总账户未建立，目标实际值继续为空。",
   "account_evidence": {
     "date": "2026-10-27",
     "accounts": 4,
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "max_lottery_accounts_20261027/verification.json",
-    "next_action": "保留全部原经济拒绝；当前12条固定路径没有一个政策在两成本的保留费用/资金费后BTC-beta参照净差额同时为正，不把算术减亏当可交易对冲收益。停止价格排序方向/窗口与低成本赢家搜索。下一命题须引入不同原始信息或有依据的风险溢价机制；若研究风险中性政策，先明确可反驳的经济理由、资金/费用/库存/停机及实用效应合同，再新评价，不能直接使用本表残差。两种日档原件、亏损周及未知身份历史均保留，不删周/币求正。共享资金组合、容量、独立外部和真正未见验证继续未完成。",
+    "next_action": "先限定一个期权产品/风险单位/钱包合同，依据权威最小量、计价、保证金和结算资料判断能否满足原本金与风险预算。保留所检BTC逆向合约的条件性手数检查失败；不把最小量改小、不放大本金/gross或按权利金假装低风险。只有具体完整生命周期的期权与对冲原始行情/可用时点、费用和资本约束方案明确后才登记一个经济试验；否则该产品域封存未知。当前80条源采样仅数据协议，不能回标未见策略收益；不扩大仓库/报价目录或编造DVOL、mark与历史过滤器。原亏损、组合、容量、外部与完整未见任务仍未完成。",
     "rounds": [
       {
         "name": "regime",
@@ -671,23 +675,25 @@
     "latest_diagnostic_source": "shared_failure_attribution_20261027/verification.json"
   },
   "current_research_stage": {
-    "mechanism": "shared_loss_benchmark_diagnostic",
-    "label": "共同亏损归因：beta解释部分，成本后缺稳定剩余",
-    "status": "ex_post_fixed_path_diagnostic_complete_no_executable_edge_established",
-    "report": "shared_failure_attribution_20261027/README.md",
-    "description": "12条既有连续条件模型路径：价格分量及单位入场名义BTC参照后均负。两份日档的入场前60日beta参照有3条费用前残差为正，但保留原费用/资金费后的参照净差额11/12负，唯一正值普通7日反转低成本+61.73USDT，压力−179.04；六政策无两成本共同正值。11/12最差经济净值周同为2025-W03，仅同期描述。原始参考价、净值及准备金三路对账最大差3.15e-11USDT；无新账户、对冲执行或因果证明。",
-    "existing_financial_accounts_inspected": 12,
+    "mechanism": "option_variance_risk_premium_source_feasibility",
+    "label": "期权波动率溢价：原生盘口可得，资金合同未合格",
+    "status": "primary_source_and_one_minute_native_window_verified_no_economic_account",
+    "report": "options_vrp_feasibility_20261027/README.md",
+    "description": "固定原文arXiv2410.15195v2与作者commit1ffbd14c3c5f844b356c685bf70cdff654356f5c；私有原始面板/完整代码复现缺口保留。官方历史合约与两条DVOL样本可得，空成交响应不证明无成交。独立采集者提供80条原生历史消息、34盘口、序列缺口0；24个跨渠道差异由同事件后到book解释，后到数据不能用于先前决策。按当前返回最小量及1:1USD对照作必要检查，参考名义9337.02USD超过8000USD；mark较bid演示多7.469616USD。原始历史手数/费用、完整生命周期/钱包/保证金未认证，新收益账户0，无原法或收益准入。",
+    "paper_version": "2410.15195v2",
+    "author_commit": "1ffbd14c3c5f844b356c685bf70cdff654356f5c",
+    "native_historical_messages": 80,
+    "valid_native_book_states": 34,
+    "book_sequence_gaps": 0,
+    "subsequent_same_event_book_explanations": 24,
+    "sample_only_not_full_lifecycle": true,
+    "conditional_minimum_notional_USD": 9337.02,
+    "conditional_stable_USD_conversion_assumption": "1:1 comparison only",
+    "historical_original_size_rules_certified": false,
+    "full_wallet_margin_fee_contract_qualified": false,
     "new_financial_accounts": 0,
     "new_economic_variants_evaluated": 0,
     "new_models": 0,
-    "source_beta_variants": 2,
-    "price_negative_accounts": 12,
-    "unit_btc_relative_negative_accounts": 12,
-    "prior_beta_gross_residual_positive_accounts": 3,
-    "fixed_path_net_minus_beta_negative_accounts": 11,
-    "policies_positive_at_both_costs": 0,
-    "funded_hedge_simulated": false,
-    "causal_attribution_proven": false,
     "module_admitted": false,
     "portfolio_built": false,
     "portfolio_actual": null,
@@ -696,7 +702,8 @@
     "third_party_review_performed": false,
     "independent_oos": false,
     "capacity_verified": false,
-    "next_action": "保留全部原经济拒绝；当前12条固定路径没有一个政策在两成本的保留费用/资金费后BTC-beta参照净差额同时为正，不把算术减亏当可交易对冲收益。停止价格排序方向/窗口与低成本赢家搜索。下一命题须引入不同原始信息或有依据的风险溢价机制；若研究风险中性政策，先明确可反驳的经济理由、资金/费用/库存/停机及实用效应合同，再新评价，不能直接使用本表残差。两种日档原件、亏损周及未知身份历史均保留，不删周/币求正。共享资金组合、容量、独立外部和真正未见验证继续未完成。"
+    "next_action": "先限定一个期权产品/风险单位/钱包合同，依据权威最小量、计价、保证金和结算资料判断能否满足原本金与风险预算。保留所检BTC逆向合约的条件性手数检查失败；不把最小量改小、不放大本金/gross或按权利金假装低风险。只有具体完整生命周期的期权与对冲原始行情/可用时点、费用和资本约束方案明确后才登记一个经济试验；否则该产品域封存未知。当前80条源采样仅数据协议，不能回标未见策略收益；不扩大仓库/报价目录或编造DVOL、mark与历史过滤器。原亏损、组合、容量、外部与完整未见任务仍未完成。",
+    "cross_channel_current_received_book_mismatches": 24
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -1602,5 +1609,42 @@
     "new_economic_variants": 0,
     "benchmark_residuals_are_not_hedged_returns": true,
     "external_review_performed": false
+  },
+  "previous_shared_failure_diagnostic_stage": {
+    "mechanism": "shared_loss_benchmark_diagnostic",
+    "label": "共同亏损归因：beta解释部分，成本后缺稳定剩余",
+    "status": "ex_post_fixed_path_diagnostic_complete_no_executable_edge_established",
+    "report": "shared_failure_attribution_20261027/README.md",
+    "description": "12条既有连续条件模型路径：价格分量及单位入场名义BTC参照后均负。两份日档的入场前60日beta参照有3条费用前残差为正，但保留原费用/资金费后的参照净差额11/12负，唯一正值普通7日反转低成本+61.73USDT，压力−179.04；六政策无两成本共同正值。11/12最差经济净值周同为2025-W03，仅同期描述。原始参考价、净值及准备金三路对账最大差3.15e-11USDT；无新账户、对冲执行或因果证明。",
+    "existing_financial_accounts_inspected": 12,
+    "new_financial_accounts": 0,
+    "new_economic_variants_evaluated": 0,
+    "new_models": 0,
+    "source_beta_variants": 2,
+    "price_negative_accounts": 12,
+    "unit_btc_relative_negative_accounts": 12,
+    "prior_beta_gross_residual_positive_accounts": 3,
+    "fixed_path_net_minus_beta_negative_accounts": 11,
+    "policies_positive_at_both_costs": 0,
+    "funded_hedge_simulated": false,
+    "causal_attribution_proven": false,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "recorder_still_running": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "capacity_verified": false,
+    "next_action": "保留全部原经济拒绝；当前12条固定路径没有一个政策在两成本的保留费用/资金费后BTC-beta参照净差额同时为正，不把算术减亏当可交易对冲收益。停止价格排序方向/窗口与低成本赢家搜索。下一命题须引入不同原始信息或有依据的风险溢价机制；若研究风险中性政策，先明确可反驳的经济理由、资金/费用/库存/停机及实用效应合同，再新评价，不能直接使用本表残差。两种日档原件、亏损周及未知身份历史均保留，不删周/币求正。共享资金组合、容量、独立外部和真正未见验证继续未完成。"
+  },
+  "options_vrp_source_evidence": {
+    "report": "options_vrp_feasibility_20261027/README.md",
+    "new_financial_accounts": 0,
+    "source_replication_or_alpha_admitted": false,
+    "author_commit": "1ffbd14c3c5f844b356c685bf70cdff654356f5c",
+    "native_primary_completion_sha256": "919fecd54efc3ad62231b3eb38df82ff3bbdd638285fa8c140899692c1e53c13",
+    "native_witness_completion_sha256": "fbb31ca14129e3299e0c568fadb5929c9a172d0f5fb95629a33544fa69c83b04",
+    "book_audit_completion_sha256": "1deb60556ae0a2aaadaa023a0df11b5cdaad0e78ea76b19026ac21b43e9c551a"
   }
 }

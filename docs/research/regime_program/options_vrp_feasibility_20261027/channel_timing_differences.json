@@ -1,0 +1,218 @@
+[
+  {
+    "channel": "quote",
+    "line": 5,
+    "exchange_timestamp_ms": 1735689601472,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0168,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 6,
+    "exchange_timestamp_ms": 1735689601472,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0078,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 8,
+    "exchange_timestamp_ms": 1735689601665,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 5.5832,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 11,
+    "exchange_timestamp_ms": 1735689601679,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0185,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 14,
+    "exchange_timestamp_ms": 1735689601767,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.006,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 15,
+    "exchange_timestamp_ms": 1735689601767,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0005,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 17,
+    "exchange_timestamp_ms": 1735689601771,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0115,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 19,
+    "exchange_timestamp_ms": 1735689601780,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 4.079,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 25,
+    "exchange_timestamp_ms": 1735689605971,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 5.3165000000000004,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 28,
+    "exchange_timestamp_ms": 1735689606543,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 2.7763,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 29,
+    "exchange_timestamp_ms": 1735689606543,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 2.7709,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 31,
+    "exchange_timestamp_ms": 1735689610791,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0072,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 32,
+    "exchange_timestamp_ms": 1735689610791,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0065,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 40,
+    "exchange_timestamp_ms": 1735689622039,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0298,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 45,
+    "exchange_timestamp_ms": 1735689626571,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0191,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 51,
+    "exchange_timestamp_ms": 1735689630359,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 5.6454,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 52,
+    "exchange_timestamp_ms": 1735689630359,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.005699999999999999,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 54,
+    "exchange_timestamp_ms": 1735689630367,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0123,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 57,
+    "exchange_timestamp_ms": 1735689633652,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.005,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 62,
+    "exchange_timestamp_ms": 1735689642013,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.005699999999999999,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 65,
+    "exchange_timestamp_ms": 1735689642043,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0178,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 66,
+    "exchange_timestamp_ms": 1735689642043,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.011,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "quote",
+    "line": 77,
+    "exchange_timestamp_ms": 1735689658389,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0126,
+    "not_available_for_a_past_trade_decision": true
+  },
+  {
+    "channel": "ticker",
+    "line": 78,
+    "exchange_timestamp_ms": 1735689658389,
+    "same_native_timestamp_and_bbo_found": true,
+    "only_received_after_this_quote": true,
+    "later_book_delay_ms": 0.0122,
+    "not_available_for_a_past_trade_decision": true
+  }
+]

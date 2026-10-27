@@ -98,3 +98,5 @@ Freqtrade 的历史冻结实验与其旧源码身份保留，不通过修改旧�
 `reference/crypto_risk_benchmark.py`限定作者公开三因子表的YYYYWW日历与用途，拒绝把已实现收益当原始市值/身份或实时特征；归因须先确认单位和完整重叠窗口。作者表479周至2023W14，当前账户重叠0；另取得无密钥公开流通市值的两条单日样本，仍待完整身份/覆盖核验。见[数据入口判定](../docs/research/regime_program/cross_sectional_momentum_data_access_20261027/README.md)。没有新增alpha列或收益账户。
 
 `common/weekly_lottery.py`集中保存前7个完整日的MAX对数收益、普通7日累计收益反转和两端五分位数学；原始相反方向论文与本地永续适配分开。4条608日扣费账户全部为负，无新增alpha或容量准入，两源目标相同不计重复独立试验。见[完整原始方法与反证](../docs/research/regime_program/max_lottery_accounts_20261027/README.md)。股票需独立交易日历、方向与账户验收，旧74列和既有因子原件不改。
+
+`common/option_units.py`集中保存现金/币本位期权到期支付、BTC权利金转换及底层名义量的精确单位检查，不是定价器、保证金或交易策略。原始期权风险溢价与作者代码版本固定，历史80条原生消息重建34盘口，但资金/手数/历史费用及完整生命周期未合格，无收益账户或alpha。见[原始方法与执行输入边界](../docs/research/regime_program/options_vrp_feasibility_20261027/README.md)。股票仅共享支付数学，需单独验证合约乘数、交易日历和账户。

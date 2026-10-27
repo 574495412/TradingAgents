@@ -1,0 +1,24 @@
+{
+  "schema": "option-variance-premium-primary-feasibility.v1",
+  "version": "20261027_v001",
+  "question": "Can a BTC option variance-risk-premium mechanism be studied with source-faithful rules and executable evidence, rather than treating an implied-vs-realized statistic as trading profit?",
+  "paper": {"url":"https://arxiv.org/pdf/2410.15195v2","version":"2410.15195v2,1Aug2025","warning":"Search summaries ofv1andv2differ on upside/downside interpretation. Use the fixedv2text; source statistical premium and volatility-regime clustering are not causal trade policy or funded account returns."},
+  "author_repository":"ratmir-miftachov/BTC-premia",
+  "repository_files_max":["README.md","config/parameters.yaml","LICENSE"],
+  "document_sources":[
+    {"id":"options_collection_doc","url":"https://docs.deribit.com/articles/options-data-collection-best-practices"},
+    {"id":"dvol_method_doc","url":"https://docs.deribit.com/api-reference/market-data/public-get_volatility_index_data"},
+    {"id":"uwa_dataset_metadata","url":"https://research-repository.uwa.edu.au/en/datasets/deribits-options-data/"}
+  ],
+  "public_read_only_market_requests":[
+    {"id":"historical_contract_reference","path":"public/get_instrument","params":{"instrument_name":"BTC-31JAN25-100000-C"}},
+    {"id":"historical_option_print_sample","path":"public/get_last_trades_by_instrument_and_time","params":{"instrument_name":"BTC-31JAN25-100000-C","start_timestamp":1736208000000,"end_timestamp":1736211600000,"count":5,"sorting":"asc"}},
+    {"id":"historical_dvol_sample","path":"public/get_volatility_index_data","params":{"currency":"BTC","start_timestamp":1736208000000,"end_timestamp":1736211600000,"resolution":"3600"}}
+  ],
+  "production_public_root":"https://www.deribit.com/api/v2/",
+  "sample_selection":"One predeclared monthlyBTC100000call and2025Jan7 00-01UTC window, chosen for identity/data-schema feasibility only, not option return or IV level. Retain empty/errors; do not choose a successful/profitable alternative instrument. This is not full market or date coverage.",
+  "data_classification":"Native trades with prices/IV are not bid-ask quotes or attainable fills; DVOL is an index, not a directly funded variance position. Current contract reference is not historical fee/margin certification. UWA2020forecast dataset is a different paper's source and does not replace raw inputs of2410.15195v2.",
+  "budget":{"maximum_native_HTTP_requests":12,"maximum_bytes_each":5242880,"automatic_retries":0,"redirects":false,"author_repositories":1,"workers":1,"new_financial_accounts":0},
+  "stopping":"One bounded source/data feasibility review. If executable options/hedge quotes and applicable funding/settlement/currency/margin facts are missing, economic validation remains unknown; no IV-minus-realized profit proxy or synthetic account fabricated. Further acquisition needs a specific source and bounded protocol, not repeated directory expansion.",
+  "economic_evaluation_allowed":false,"orders_enabled":false,"production_eligible":false
+}

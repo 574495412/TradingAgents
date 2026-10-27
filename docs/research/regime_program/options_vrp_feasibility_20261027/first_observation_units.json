@@ -1,0 +1,87 @@
+{
+  "exchange_timestamp_ms": 1735689600484,
+  "first_raw_trio": {
+    "book": {
+      "line": 1,
+      "local_timestamp": "2025-01-01T00:00:00.5540133Z",
+      "exchange_timestamp_ms": 1735689600484,
+      "change_id": 83976779664,
+      "bbo": [
+        "0.0425",
+        "50.9",
+        "0.0435",
+        "5.0"
+      ]
+    },
+    "ticker": {
+      "line": 2,
+      "local_timestamp": "2025-01-01T00:00:00.5752664Z",
+      "data": {
+        "timestamp": 1735689600484,
+        "state": "open",
+        "stats": {
+          "high": "0.055",
+          "low": "0.04",
+          "price_change": "8.1928",
+          "volume": "286.2",
+          "volume_usd": "1165587.56"
+        },
+        "greeks": {
+          "delta": "0.39727",
+          "gamma": "0.000020",
+          "vega": "104.90084",
+          "theta": "-101.06105",
+          "rho": "27.75702"
+        },
+        "index_price": "93370.2",
+        "instrument_name": "BTC-31JAN25-100000-C",
+        "last_price": "0.0449",
+        "settlement_price": "0.04197352",
+        "min_price": "0.0165",
+        "max_price": "0.092",
+        "open_interest": "2696.0",
+        "mark_price": "0.0433",
+        "best_ask_price": "0.0435",
+        "best_bid_price": "0.0425",
+        "interest_rate": "0.0",
+        "mark_iv": "58.45",
+        "bid_iv": "57.72",
+        "ask_iv": "59.07",
+        "underlying_price": "94358.41",
+        "underlying_index": "BTC-31JAN25",
+        "estimated_delivery_price": "93370.2",
+        "best_ask_amount": "5.0",
+        "best_bid_amount": "50.9"
+      }
+    },
+    "quote": {
+      "line": 3,
+      "local_timestamp": "2025-01-01T00:00:00.5932654Z",
+      "data": {
+        "timestamp": 1735689600484,
+        "instrument_name": "BTC-31JAN25-100000-C",
+        "best_ask_price": "0.0435",
+        "best_bid_price": "0.0425",
+        "best_ask_amount": "5.0",
+        "best_bid_amount": "50.9"
+      }
+    }
+  },
+  "native_index_price_USD_per_BTC": "93370.2",
+  "distinct_forward_underlying_price_USD": "94358.41",
+  "native_amount_BTC_current_archived_reference": "0.1",
+  "bid_premium_cash_USD": 396.82335,
+  "ask_premium_cash_USD": 406.16037,
+  "model_mark_cash_USD": 404.292966,
+  "mark_minus_bid_USD": 7.469616,
+  "spread_USD": 9.33702,
+  "minimum_underlying_notional_USD": 9337.02,
+  "illustrative_cash_budget_USD": 10000,
+  "illustrative_underlying_gross_cap": 0.8,
+  "underlying_notional_necessary_check_pass": false,
+  "USD_USDT_conversion_assumption_for_comparison_only": "1:1; no funded account or verified FX conversion",
+  "historical_original_minimum_size_certified": false,
+  "fee_or_margin_history_certified": false,
+  "order_submitted": false,
+  "no_strategy_price_or_underlying_notional_definition_adopted": true
+}

@@ -1,0 +1,1340 @@
+{
+  "schema": "cross-asset-factor-catalog.v1",
+  "active_factors": [
+    {
+      "id": "mom_4",
+      "name": "4期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-5]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mom_12",
+      "name": "12期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-13]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mom_24",
+      "name": "24期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-25]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mom_72",
+      "name": "72期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-73]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mom_168",
+      "name": "168期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-169]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mom_336",
+      "name": "336期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-337]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mom_720",
+      "name": "720期动量",
+      "family": "trend",
+      "definition": "close[t-1]/close[t-721]-1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "ema_gap_12",
+      "name": "EMA12偏离",
+      "family": "trend",
+      "definition": "completed close / EMA -1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "ema_gap_48",
+      "name": "EMA48偏离",
+      "family": "trend",
+      "definition": "completed close / EMA -1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "ema_gap_168",
+      "name": "EMA168偏离",
+      "family": "trend",
+      "definition": "completed close / EMA -1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "efficiency_24",
+      "name": "24期路径效率",
+      "family": "trend",
+      "definition": "signed displacement / absolute path",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "channel_24",
+      "name": "24期通道位置",
+      "family": "trend",
+      "definition": "position within completed high/low range -0.5",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "efficiency_72",
+      "name": "72期路径效率",
+      "family": "trend",
+      "definition": "signed displacement / absolute path",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "channel_72",
+      "name": "72期通道位置",
+      "family": "trend",
+      "definition": "position within completed high/low range -0.5",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "efficiency_168",
+      "name": "168期路径效率",
+      "family": "trend",
+      "definition": "signed displacement / absolute path",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "channel_168",
+      "name": "168期通道位置",
+      "family": "trend",
+      "definition": "position within completed high/low range -0.5",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "accel_4_24",
+      "name": "短期动量加速度",
+      "family": "trend",
+      "definition": "4h mean return -24h mean return",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "accel_24_168",
+      "name": "中期动量加速度",
+      "family": "trend",
+      "definition": "24h mean return -168h mean return",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "vol_24",
+      "name": "24期波动率",
+      "family": "risk",
+      "definition": "sample standard deviation of hourly returns",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "vol_72",
+      "name": "72期波动率",
+      "family": "risk",
+      "definition": "sample standard deviation of hourly returns",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "vol_168",
+      "name": "168期波动率",
+      "family": "risk",
+      "definition": "sample standard deviation of hourly returns",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "downvol_24",
+      "name": "24期下行波动",
+      "family": "risk",
+      "definition": "root mean squared negative hourly return",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "downvol_168",
+      "name": "168期下行波动",
+      "family": "risk",
+      "definition": "root mean squared negative hourly return",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "vol_shock",
+      "name": "波动率冲击",
+      "family": "risk",
+      "definition": "12h volatility /168h volatility",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "skew_72",
+      "name": "收益偏度",
+      "family": "risk",
+      "definition": "72h return skewness",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "close_location",
+      "name": "收盘位置",
+      "family": "price",
+      "definition": "close location within completed hour",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "upper_wick",
+      "name": "上影线比例",
+      "family": "price",
+      "definition": "upper wick / full range",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "lower_wick",
+      "name": "下影线比例",
+      "family": "price",
+      "definition": "lower wick / full range",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "rsi14",
+      "name": "RSI(14)",
+      "family": "technical",
+      "definition": "TA-Lib RSI14 /100 -0.5",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "macd_hist",
+      "name": "MACD柱",
+      "family": "technical",
+      "definition": "MACD12/26/9 histogram / close",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "macd_line",
+      "name": "MACD线",
+      "family": "technical",
+      "definition": "MACD12/26 line /close",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "atr14",
+      "name": "ATR(14)比例",
+      "family": "technical",
+      "definition": "ATR14 /completed close",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "adx14",
+      "name": "ADX(14)",
+      "family": "technical",
+      "definition": "directional strength, not directional prediction",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "cci20",
+      "name": "CCI(20)",
+      "family": "technical",
+      "definition": "TA-Lib CCI20 /100",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "mfi14",
+      "name": "MFI(14)",
+      "family": "technical",
+      "definition": "money-flow index from completed OHLCV",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "boll_z20",
+      "name": "布林标准分",
+      "family": "technical",
+      "definition": "(close -20h SMA)/population std",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "boll_width20",
+      "name": "布林带宽",
+      "family": "technical",
+      "definition": "4*20h std /SMA",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "willr14",
+      "name": "Williams %R",
+      "family": "technical",
+      "definition": "TA-Lib WILLR14 /100",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "obv_change24",
+      "name": "OBV变化",
+      "family": "technical",
+      "definition": "24h OBV change /24h base volume",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "rel_volume_24",
+      "name": "24期相对成交额",
+      "family": "liquidity",
+      "definition": "current completed quote turnover /trailing mean -1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "amihud_24",
+      "name": "24期非流动性",
+      "family": "liquidity",
+      "definition": "mean absolute return /quote turnover, scaled1e6",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "rel_volume_168",
+      "name": "168期相对成交额",
+      "family": "liquidity",
+      "definition": "current completed quote turnover /trailing mean -1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "amihud_168",
+      "name": "168期非流动性",
+      "family": "liquidity",
+      "definition": "mean absolute return /quote turnover, scaled1e6",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "price_signed_flow_24",
+      "name": "24期价格签名成交额",
+      "family": "liquidity",
+      "definition": "price-signed quote turnover proxy; not actual taker flow",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "price_signed_flow_72",
+      "name": "72期价格签名成交额",
+      "family": "liquidity",
+      "definition": "price-signed quote turnover proxy; not actual taker flow",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "log_quote",
+      "name": "成交额对数",
+      "family": "liquidity",
+      "definition": "log(1+completed hourly quote turnover)",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "turnover_shock",
+      "name": "成交额冲击",
+      "family": "liquidity",
+      "definition": "4h /168h mean quote turnover -1",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "price_volume_corr",
+      "name": "量价相关",
+      "family": "liquidity",
+      "definition": "72h correlation of returns and log quote turnover",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "funding_last",
+      "name": "最近已结算资金费",
+      "family": "carry",
+      "definition": "last settled rate strictly before decision hour; not next funding forecast",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "funding_change",
+      "name": "资金费变化",
+      "family": "carry",
+      "definition": "last settled rate minus rate known8h earlier",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "funding_z",
+      "name": "资金费标准分",
+      "family": "carry",
+      "definition": "168h completed settled funding zscore",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "funding_pressure",
+      "name": "方向融资压力",
+      "family": "carry",
+      "definition": "settled rate times24h momentum sign",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "xs_rank_24",
+      "name": "24期横截面排名",
+      "family": "market",
+      "definition": "rank within fixed six-name pool",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "xs_relative_24",
+      "name": "24期相对动量",
+      "family": "market",
+      "definition": "asset momentum minus same-time pool mean",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "benchmark_mom_24",
+      "name": "基准 24期动量",
+      "family": "market",
+      "definition": "completed benchmark momentum, common market state",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "xs_rank_168",
+      "name": "168期横截面排名",
+      "family": "market",
+      "definition": "rank within fixed six-name pool",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "xs_relative_168",
+      "name": "168期相对动量",
+      "family": "market",
+      "definition": "asset momentum minus same-time pool mean",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "benchmark_mom_168",
+      "name": "基准 168期动量",
+      "family": "market",
+      "definition": "completed benchmark momentum, common market state",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "beta_benchmark168",
+      "name": "基准滚动Beta",
+      "family": "market",
+      "definition": "168h covariance /benchmark variance",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "residual24",
+      "name": "基准残差动量",
+      "family": "market",
+      "definition": "sum of returns residualized with preceding-hour beta",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "breadth24",
+      "name": "市场上涨广度",
+      "family": "market",
+      "definition": "fraction of six contracts with positive24h returns",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "dispersion24",
+      "name": "市场收益分散度",
+      "family": "market",
+      "definition": "cross-sectional24h return dispersion",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_attention24",
+      "name": "FOMC事件衰减",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_age_days",
+      "name": "距官方新闻天数",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_hawkish",
+      "name": "声明鹰鸽词典分数",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_uncertainty",
+      "name": "声明不确定性词频",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_inflation",
+      "name": "声明通胀关注度",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "policy_rate",
+      "name": "政策利率中点",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "policy_rate_change",
+      "name": "已公布政策利率变化",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_count7d",
+      "name": "七日官方事件数",
+      "family": "macro_news",
+      "definition": "official statement available after declared publication latency; no pre-release content",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "news_trend_interaction",
+      "name": "事件×动量",
+      "family": "interaction",
+      "definition": "predeclared product of two already available inputs",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "policy_volume_interaction",
+      "name": "政策变化×成交额",
+      "family": "interaction",
+      "definition": "predeclared product of two already available inputs",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "funding_macd_interaction",
+      "name": "资金费×MACD",
+      "family": "interaction",
+      "definition": "predeclared product of two already available inputs",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    },
+    {
+      "id": "uncertainty_vol_interaction",
+      "name": "新闻不确定性×波动",
+      "family": "interaction",
+      "definition": "predeclared product of two already available inputs",
+      "availability": "preceding completed market bar or officially released event +5min",
+      "asset_classes": [
+        "crypto",
+        "equity"
+      ],
+      "window_unit": "observed bars; use a market calendar, do not fill closed sessions",
+      "independent_alpha_proven": false
+    }
+  ],
+  "legacy_sources": "origins.json",
+  "risk_periods": {
+    "equity": 252,
+    "crypto": 365
+  },
+  "discovery_registry": {
+    "source": "common/mechanisms.py",
+    "regime_source": "common/regime.py",
+    "registered_factors": [
+      {
+        "id": "trend_consensus",
+        "name": "多尺度波动归一趋势",
+        "definition": "mean tanh(log(close/lag_n)/(std168(log-return)*sqrt(n))), n168/504/1512; completed hourly bars",
+        "asset_classes": [
+          "crypto",
+          "equity"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "aggressor24",
+        "name": "真实主动买卖净额24期",
+        "definition": "sum24(2*taker_buy_quote_volume-quote_volume)/sum24(quote_volume)",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "aggressor72",
+        "name": "真实主动买卖净额72期",
+        "definition": "sum72(2*taker_buy_quote_volume-quote_volume)/sum72(quote_volume)",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "aggressor_surprise24",
+        "name": "主动成交异常",
+        "definition": "(aggressor24-prior168mean)/prior168sample_std; clipped +/-5",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "absorption24",
+        "name": "资金流与价格响应偏离",
+        "definition": "aggressor_surprise24-return_z24; positive flow without commensurate price response is only an absorption proxy",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      },
+      {
+        "id": "flow_trend_agreement",
+        "name": "主动资金流趋势确认",
+        "definition": "trend_consensus * clip(aggressor_surprise24,-3,3); interaction, not independent alpha",
+        "asset_classes": [
+          "crypto",
+          "equity_with_aggressor_feed"
+        ],
+        "status": "research_unproven_portfolios_rejected",
+        "independent_alpha_proven": false,
+        "availability": "preceding completed hourly bar; settled funding delayed5min; stock inputs preserve supplied session bars"
+      }
+    ],
+    "report": "../docs/research/factor_discovery_20261025/README.md",
+    "core74_panel_unchanged": true,
+    "production_eligible": false
+  },
+  "github_research_registry": {
+    "source": "common/github_formulas.py",
+    "frequency": "completed daily observations; next decision only",
+    "factor_ids": [
+      "pst_ewmac32",
+      "pst_accel4",
+      "pst_breakout10",
+      "qlib_corr20",
+      "qlib_resi20"
+    ],
+    "portfolio_ids": [
+      "sentinel_champion",
+      "sentinel_carry21",
+      "sentinel_carry14_buffer"
+    ],
+    "upstream_commits": {
+      "pst-group/pysystemtrade": "164328bd76d2937d3dd61491377704c488283bc2",
+      "microsoft/qlib": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "adensvaz/sentinel-hyperliquid": "ca647c099755ae9770f92205d5fc413e8e7c6c95"
+    },
+    "evidence": "13source survey and46local accounts; all admission gates currently failed; source claims are separate",
+    "report": "../docs/research/github_factor_study_20261025/README.md",
+    "independent_alpha_proven": false,
+    "production_eligible": false,
+    "active74_unchanged": true
+  },
+  "regime_research_registry": {
+    "source": "factors/common/market_states.py",
+    "strategy_source": "factors/common/regime_books.py",
+    "portfolio_source": "factors/portfolio/regime_allocation.py",
+    "protocol": "research_tools/regime_program/plan.json",
+    "feature_columns": [
+      "trend_z",
+      "efficiency",
+      "volatility_ratio",
+      "breadth",
+      "eligible_count"
+    ],
+    "state_clock": "preceding complete daily/observed session only; parameters and native quote-unit thresholds supplied per market",
+    "strategy_market": "crypto USDT perpetual research; equity factor calendar compatibility is not a validated stock strategy",
+    "families": [
+      "trend",
+      "relative_momentum",
+      "carry_momentum",
+      "mean_reversion",
+      "breakout"
+    ],
+    "alpha_proven": false,
+    "production_eligible": false,
+    "source_sizing": "factors/portfolio/source_sizing.py",
+    "sizing_protocol": "research_tools/regime_program/sizing_plan.json",
+    "pair_formation_source": "factors/portfolio/cointegrated_pairs.py",
+    "pair_protocol": "research_tools/regime_program/pair_plan.json",
+    "pair_status": "account_audited_net_edge_or_sample_capacity_not_proven",
+    "pair_report": "../docs/research/regime_program/pair_accounts_20261026/README.md",
+    "module_domain_cards": "factors/portfolio/module_domains.json",
+    "module_domain_protocol": "research_tools/regime_program/domain_plan.json",
+    "acceptance_version": "module-allocation-portfolio.v2",
+    "module_domain_status": "10audited_conditional_accounts_no_two_cost_net_edge",
+    "module_domain_report": "../docs/research/regime_program/domain_accounts_20261026/README.md"
+  },
+  "structural_carry_research_registry": {
+    "module": "factors/crypto/spot_perpetual_carry.py",
+    "protocol": "research_tools/carry_feasibility/account_plan.json",
+    "mechanism": "existing_funding_family_cost_condition_diagnostic",
+    "market_scope": "hybrid_spot_perpetual_research_only",
+    "legacy_hold": "../freqtrade/research/crypto/hedged_hold_plan.json",
+    "changes": "segregated5mexecution_and_actual_marks; no new independent alpha claim",
+    "state": "20_audited_accounts_evidence_insufficient",
+    "independent_alpha_proven": false,
+    "report": "../docs/research/regime_program/spot_carry_accounts_20261026/README.md",
+    "actual_process_restarts": 4
+  },
+  "max_effect_research_registry": {
+    "module": "factors/common/max_effect.py",
+    "protocol": "research_tools/max_effect/plan.json",
+    "mechanism": "positive_extreme_return_continuation_overlapping_momentum",
+    "state": "24_audited_accounts_continuous_net_edge_failed",
+    "market_scope": "retrospective_liquid_crypto_perpetual_pool",
+    "independent_alpha_proven": false,
+    "report": "../docs/research/regime_program/max_effect_accounts_20261026/README.md",
+    "actual_process_restarts": 6,
+    "legacy74_columns_unchanged": true
+  },
+  "pure_funding_research_registry": {
+    "module": "factors/crypto/funding_cross_section.py",
+    "protocol": "research_tools/funding_cross_section/plan.json",
+    "variants": [
+      "funding7_raw",
+      "funding7_cost_floor"
+    ],
+    "controls": [
+      "momentum28_control",
+      "cash"
+    ],
+    "report": "../docs/research/regime_program/funding_cross_section_20261026_v002/README.md",
+    "new_accounts": 30,
+    "reused_references": 12,
+    "source_variants": [
+      "archive",
+      "api_revision"
+    ],
+    "financial_audit_passed": true,
+    "actual_process_restarts": 8,
+    "alpha_proven": false,
+    "production_eligible": false,
+    "old_74_columns_unchanged": true,
+    "asset_class": "crypto",
+    "stock_reuse": "Do not apply funding cashflows or UTC calendar to equities; common mathematics and independent account verification only."
+  },
+  "monthly_tsmom_research_registry": {
+    "module": "factors/common/monthly_tsmom.py",
+    "economic_index_adapter": "factors/crypto/perpetual_returns.py",
+    "protocol": "research_tools/monthly_tsmom/account_plan.json",
+    "source_paper": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+    "report": "../docs/research/regime_program/monthly_tsmom_20261027_v002/README.md",
+    "state": "4_audited_accounts_negative_no_admission",
+    "mathematics": "12calendar-month economic-index sign; COM60 finite-history population variance,365annualization; local16percent nominal sizing before .8gross overlay",
+    "scope": "This adapter requires complete UTC daily crypto observations; equity calendar/dividends/corporate actions need separate adaptation and account validation.",
+    "raw_price_is_economic_index": false,
+    "paper_replication": false,
+    "new_independent_mechanisms": 0,
+    "new_financial_accounts": 4,
+    "alpha_proven": false,
+    "production_eligible": false,
+    "old_74_columns_unchanged": true,
+    "holding_policy_counterfactual": {
+      "engine": "../freqtrade/research/crypto/monthly_hold_v1.py",
+      "protocol": "research_tools/monthly_hold_audit/plan.json",
+      "report": "../docs/research/regime_program/monthly_hold_policy_20261027/README.md",
+      "state": "4_new_policy_accounts_negative_no_admission",
+      "new_factor_formulas": 0,
+      "new_policy_variants": 1,
+      "new_independent_mechanisms": 0,
+      "exact_reference_bridge_replays": 2,
+      "selected_lifecycle_case_paths": 1,
+      "same_realized_risk": false,
+      "source_aliases": 4,
+      "alpha_proven": false,
+      "production_eligible": false
+    },
+    "conditional_state_domain": {
+      "context_adapter": "factors/crypto/market_state_sessions.py",
+      "protocol": "research_tools/monthly_state_domain/plan.json",
+      "report": "../docs/research/regime_program/monthly_state_domain_20261027_v002/README.md",
+      "state": "positive_necessary_screen_three_month_clusters_insufficient_no_admission",
+      "new_formula_parameters": 0,
+      "new_domain_variants": 1,
+      "new_independent_mechanisms": 0,
+      "new_financial_accounts": 4,
+      "same_source_aliases": 4,
+      "active_monthly_clusters": 3,
+      "minimum_monthly_clusters": 4,
+      "alpha_proven": false,
+      "production_eligible": false,
+      "old_HMM_MLP_new_feature_domain_validated": false,
+      "old_74_columns_unchanged": true
+    }
+  },
+  "dated_carry_research_registry": {
+    "module": "factors/common/dated_carry.py",
+    "source_paper": "https://www.bis.org/publications/working-paper-1087-crypto-carry.pdf",
+    "source_review": "../docs/research/regime_program/dated_carry_feasibility_20261027/source_method_mapping.json",
+    "data_protocol": "research_tools/dated_carry/data_plan.json",
+    "report": "../docs/research/regime_program/dated_carry_feasibility_20261027/README.md",
+    "state": "reference_units_with_separate_one_quarter_model_accounts_no_admission",
+    "scope": "Matched underlying and quote, linear prices only; spot base-fee net inventory retained; inverse/USD-USDT mismatches rejected. Unverified maturity keeps annualization unknown. Equity reuse requires separate contract/calendar/account adaptation.",
+    "raw_rows_audited": 49730,
+    "new_financial_accounts": 4,
+    "new_independent_mechanisms_proven": 0,
+    "reference_basis_is_profit": false,
+    "alpha_proven": false,
+    "production_eligible": false,
+    "old_74_columns_unchanged": true,
+    "account_research": {
+      "adapter": "factors/crypto/dated_carry_schedule.py",
+      "engine": "../freqtrade/research/crypto/spot_dated_account_v1.py",
+      "plan": "research_tools/dated_carry/account_plan_v002.json",
+      "report": "../docs/research/regime_program/dated_carry_accounts_20261027/README.md",
+      "state": "positive_model_necessary_screen_one_quarter_insufficient_no_admission",
+      "new_financial_accounts": 4,
+      "completed_campaigns_per_account": 2,
+      "independent_quarter_clusters": 1,
+      "client_execution_certified": false,
+      "capacity_certified": false,
+      "new_independent_mechanisms_proven": 0,
+      "alpha_proven": false,
+      "production_eligible": false,
+      "execution_witness": {
+        "report": "../docs/research/regime_program/dated_carry_execution_witness_20261027/README.md",
+        "state": "entry_raw_inputs_crosschecked_baseline_execution_assumption_challenged",
+        "new_financial_accounts": 0,
+        "baseline_3bps_quote_counterexample": true,
+        "historical_order_filters_and_full_execution_certified": false,
+        "module_admitted": false
+      },
+      "inventory_contract": {
+        "module": "factors/common/lot_inventory.py",
+        "report": "../docs/research/regime_program/dated_carry_lot_inventory_20261027/README.md",
+        "role": "shared_discrete_inventory_arithmetic_not_new_alpha_column",
+        "state": "conditional_arithmetic_proved_historical_dated_filters_unknown",
+        "new_financial_accounts": 0,
+        "legacy_engine_updated": false,
+        "actual_historical_venue_rules_certified": false,
+        "production_eligible": false
+      },
+      "integer_accounts": {
+        "engine": "../freqtrade/research/crypto/spot_dated_account_v2.py",
+        "plan": "research_tools/dated_carry/lot_account_plan.json",
+        "report": "../docs/research/regime_program/dated_carry_lot_accounts_20261027/README.md",
+        "state": "conditional_integer_accounts_audited_unclosed_dust_no_admission",
+        "new_financial_accounts": 4,
+        "complete_campaigns_per_account": 0,
+        "win_rate": null,
+        "hypothetical_rules_not_certified_venue_filters": true,
+        "production_eligible": false
+      },
+      "prospective_source_probe": {
+        "report": "../docs/research/regime_program/dated_carry_prospective_sources_20261027/README.md",
+        "state": "current_rule_and_native_book_source_observability_passed_no_strategy_returns",
+        "native_messages": 9806,
+        "source_observability_passed": true,
+        "forward_strategy_validation_completed": false,
+        "new_financial_accounts": 0,
+        "recorder_still_running": false,
+        "historical_2025_rule_backfill_permitted": false,
+        "production_eligible": false
+      },
+      "prospective_entry": {
+        "engine": "../freqtrade/research/crypto/dated_forward_paper_v1.py",
+        "plan": "research_tools/dated_carry/prospective_entry_plan_v001.json",
+        "report": "../docs/research/regime_program/dated_carry_prospective_entry_20261027/README.md",
+        "state": "preregistered_new_opportunity_cost_stress_rejected_stay_cash",
+        "new_financial_accounts": 1,
+        "fills": 0,
+        "complete_lifecycles": 0,
+        "new_independent_mechanisms_proven": 0,
+        "full_forward_strategy_validated": false,
+        "production_eligible": false
+      }
+    },
+    "reference_stage_financial_accounts": 0
+  },
+  "year52_momentum_research_registry": {
+    "module": "factors/common/year52_momentum.py",
+    "source_version": "arXiv2510.14435v4",
+    "source": "https://arxiv.org/html/2510.14435v4",
+    "report": "../docs/research/regime_program/cross_sectional_momentum_fidelity_20261027/README.md",
+    "state": "formation_math_only_original_cap_history_missing_no_economic_account",
+    "source_spread_gross": 2,
+    "account_gross_example": 0.8,
+    "stock_calendar_and_corporate_actions_validated": false,
+    "new_financial_accounts": 0,
+    "old_74_columns_unchanged": true,
+    "alpha_proven": false,
+    "production_eligible": false
+  },
+  "author_crypto_risk_factor_reference": {
+    "module": "factors/reference/crypto_risk_benchmark.py",
+    "source": "https://xiwuacademic.com/data-and-code/",
+    "citation": "Liu, Tsyvinski, Wu(2022), Journal of Finance77(2),1133-1177, doi10.1111/jofi.13119",
+    "report": "../docs/research/regime_program/cross_sectional_momentum_data_access_20261027/README.md",
+    "kind": "ex_post_weekly_benchmark_not_raw_inputs_or_predictor",
+    "rows": 479,
+    "first_yyww": 201404,
+    "last_yyww": 202314,
+    "current_strategy_window_overlap": 0,
+    "return_units_explicitly_verified": false,
+    "new_financial_accounts": 0,
+    "old_74_columns_unchanged": true,
+    "alpha_proven": false,
+    "production_eligible": false
+  },
+  "weekly_lottery_research_registry": {
+    "module": "factors/common/weekly_lottery.py",
+    "protocol": "research_tools/max_lottery/economic_plan.json",
+    "mechanism": "weekly_lottery_overpricing_reversal_vs_ordinary7_reversal",
+    "state": "four_audited_continuous_accounts_no_net_edge_current_domain",
+    "asset_classes_math_only": [
+      "crypto",
+      "equity"
+    ],
+    "validated_account_scope": "conditional_native_liquid_USDT_perpetual",
+    "window_unit": "seven complete crypto calendar days; equities require a separately verified session adapter and direction/account",
+    "independent_alpha_proven": false,
+    "original_author_exact_replication": false,
+    "report": "../docs/research/regime_program/max_lottery_accounts_20261027/README.md",
+    "new_economic_variants": 1,
+    "actual_accounts": 4,
+    "source_aliases_not_independent_trials": true,
+    "legacy74_columns_unchanged": true
+  }
+}

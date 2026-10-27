@@ -1,0 +1,17 @@
+{
+  "schema":"options-native-history-witness.v1",
+  "version":"20261027_v001",
+  "question":"Does an independent collector preserve exchange-native historical option book/quote/ticker evidence for the same contract, beyond an empty current REST trade sample?",
+  "parent":"data/research/options_vrp_primary_sources_20261027_v001",
+  "authority":["https://docs.tardis.dev/historical-data-details/deribit","https://docs.tardis.dev/api/http-api-reference"],
+  "requests":[
+    {"id":"deribit_capture_doc","url":"https://docs.tardis.dev/historical-data-details/deribit.md"},
+    {"id":"raw_history_api_doc","url":"https://docs.tardis.dev/api/http-api-reference.md"},
+    {"id":"one_minute_option_witness","url":"https://api.tardis.dev/v1/data-feeds/deribit","params":{"from":"2025-01-01","offset":0,"sliceSize":1,"filters":"[{\"channel\":\"book\",\"symbols\":[\"BTC-31JAN25-100000-C\"]},{\"channel\":\"quote\",\"symbols\":[\"BTC-31JAN25-100000-C\"]},{\"channel\":\"ticker\",\"symbols\":[\"BTC-31JAN25-100000-C\"]}]"}}
+  ],
+  "selection":"Same predetermined contract. Jan1is chosen solely because first day of each month is documented no-key public access, not from option returns; one minute from00UTC preserves initial orderbook snapshot. Jan1is already known underlying-history, not a newly frozen strategy holdout.",
+  "representation":"Preserve complete HTTP compressed bytes and headers plus decoded exchange-native NDJSON with collector-local timestamps. Independent collector, same underlying exchange; not independent venue, third-party strategy review or proof of execution/whole lifecycle.",
+  "budget":{"maximum_HTTP_requests":3,"maximum_wire_bytes_each":5242880,"maximum_decoded_bytes":52428800,"automatic_retries":0,"redirects":false,"workers":1,"new_financial_accounts":0},
+  "stopping":"Single bounded witness. Empty/failure remains explicit. Valid source only supports observed book/quote window, not a whole option-chain, pricing kernel, index-to-return strategy, full-cost performance, capacity or historical fee/margin qualification.",
+  "economic_evaluation_allowed":false,"orders_enabled":false
+}

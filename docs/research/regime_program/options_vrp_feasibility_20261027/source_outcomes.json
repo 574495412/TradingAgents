@@ -1,0 +1,122 @@
+[
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/author_commit.receipt.json",
+    "status": 403,
+    "bytes": 281,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "f23bbe4430d20fe1a0cdbfdb056f162264cf96609cb40f53c4f1b0aa16ff15ec"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/dvol_method_doc.receipt.json",
+    "status": 200,
+    "bytes": 477522,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "15fcfa9fe77f14ff2b5dcf18e59d3009d29ca731c3f11006268a4350a25d057c"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/historical_contract_reference.receipt.json",
+    "status": 200,
+    "bytes": 973,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "436cc78c0f3369e5951bbb5af5c1edeca67a3ebc2d0a22617d8bac2d72167297"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/historical_dvol_sample.receipt.json",
+    "status": 200,
+    "bytes": 216,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "ebfbea61d522e90c65caee8d69d1f0239dd55d7f8268d1a9c9424d2c121b8f0d"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/historical_option_print_sample.receipt.json",
+    "status": 200,
+    "bytes": 135,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "a7d11e2fbdf0cc63390d1b58c9faa0b173b9c1b87857b0aa3190d40de4bcc348"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/options_collection_doc.receipt.json",
+    "status": 200,
+    "bytes": 488447,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "2bb460c20dbf365d4c0a60f67326da0eef54533761dd357a59f89b702e930273"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/paper_v2.receipt.json",
+    "status": 200,
+    "bytes": 1306580,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "a609d29d837377fd661c2fbee13f514d4e3973e6e0414bc2f17dc136f59a8ba5"
+  },
+  {
+    "source": "data/research/options_vrp_primary_sources_20261027_v001/uwa_dataset_metadata.receipt.json",
+    "status": 200,
+    "bytes": 24063,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "92e1b1a7d03c399932c213a9cacd7d41ad88a30ce1b45d96dec910ce9e60cb6f"
+  },
+  {
+    "source": "data/research/options_vrp_public_source_completion_20261027_v002/author_file_0.receipt.json",
+    "status": 200,
+    "bytes": 5060,
+    "error_type": null,
+    "representation": "full_response_body",
+    "sha256": "1cb923b222150687206981fa33884350398739d980c69c285e49ce8c29e2236f"
+  },
+  {
+    "source": "data/research/options_vrp_public_source_completion_20261027_v002/author_file_1.receipt.json",
+    "status": 200,
+    "bytes": 3142,
+    "error_type": null,
+    "representation": "full_response_body",
+    "sha256": "d1bd3eaffcee1205a79fea6cd5975dac517c434025a071afb6245f0c017f1530"
+  },
+  {
+    "source": "data/research/options_vrp_public_source_completion_20261027_v002/author_file_2.receipt.json",
+    "status": 200,
+    "bytes": 1115,
+    "error_type": null,
+    "representation": "full_response_body",
+    "sha256": "4c75da22dd425b366b3f14380c89bd18c011f4a65a80a32ddfcc368a558af9e4"
+  },
+  {
+    "source": "data/research/options_vrp_public_source_completion_20261027_v002/uwa_csv_prefix.receipt.json",
+    "status": 403,
+    "bytes": 5652,
+    "error_type": null,
+    "representation": "bounded_first65536bytes_only_not_complete_dataset",
+    "sha256": "00f79edc40ff3308a9d9612cc2ac3f103af76baac67e13afe900bdd81b4a6bc8"
+  },
+  {
+    "source": "data/research/options_vrp_historical_witness_20261027_v001/deribit_capture_doc.receipt.json",
+    "status": 200,
+    "bytes": 3649,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "a0ef892f635795fcfa1c01984e9821f93b2bcaa6258d6768c4d85b10d7d7889b"
+  },
+  {
+    "source": "data/research/options_vrp_historical_witness_20261027_v001/one_minute_option_witness.receipt.json",
+    "status": 200,
+    "bytes": 3098,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "9d5be49cd99815f052be3f2a556330e90ba2c7ea9f24c7b692e90a48f82e367f"
+  },
+  {
+    "source": "data/research/options_vrp_historical_witness_20261027_v001/raw_history_api_doc.receipt.json",
+    "status": 200,
+    "bytes": 7072,
+    "error_type": null,
+    "representation": "raw_response",
+    "sha256": "42691e228074b5644eadbe4a165ff7d2d09fe66a0b4e2de585bc6a665a94b7e6"
+  }
+]

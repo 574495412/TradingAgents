@@ -1,0 +1,12 @@
+{
+  "schema":"options-vrp-public-source-completion.v1",
+  "version":"20261027_v002",
+  "parent":"data/research/options_vrp_primary_sources_20261027_v001",
+  "reason":"Parent's public GitHub REST commit query returned API rate limit exceeded. Use one normal anonymous Git read of the same public author repository; no REST retry, credentials, proxy change or authentication. Also inspect one bounded prefix of the already identified UWA CSV to distinguish quotes from derived IV.",
+  "repository":"https://github.com/ratmir-miftachov/BTC-premia.git",
+  "known_files":["README.md","config/parameters.yaml","LICENSE"],
+  "csv_prefix":{"url":"https://research-repository.uwa.edu.au/files/78305486/Deribit_w_IV.csv","range":"bytes=0-65535","maximum_saved_bytes":65536,"source":"Exact link extracted from retained official UWA metadata HTML; different2020forecast dataset, not the paper's private raw input."},
+  "budget":{"git_read_commands":1,"native_HTTP_requests_max":4,"max_full_file_bytes":1048576,"retries":0,"redirects":false,"new_financial_accounts":0},
+  "claim_limit":"Source pin and CSV header prefix only. No source execution or import, no packages installed, no strategy or economic evaluation. Record any complete/partial/blocked response accurately.",
+  "orders_enabled":false
+}
