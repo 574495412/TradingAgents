@@ -1,0 +1,262 @@
+[
+  {
+    "market": "binance",
+    "symbol": "btcusdt",
+    "archive": "data/research/spot_perpetual_feasibility_20261026_v001/archives/BTCUSDT-5m-2025-01.zip",
+    "archive_sha256": "4ed2edba26630a98b6ac6102b41dad00e1542640336f0d571c5a7394b39df983",
+    "native": {
+      "open": "93576.00000000",
+      "high": "93702.15000000",
+      "low": "93537.50000000",
+      "close": "93661.20000000",
+      "volume": "45.94160000",
+      "quote_volume": "4301907.4838205000000000",
+      "count": 7448
+    },
+    "official": {
+      "open": "93576.00000000",
+      "high": "93702.15000000",
+      "low": "93537.50000000",
+      "close": "93661.20000000",
+      "volume": "45.94160000",
+      "quote_volume": "4301907.48382050",
+      "count": 7448,
+      "archive_timestamp_unit": "us",
+      "raw": [
+        "1735689600000000",
+        "93576.00000000",
+        "93702.15000000",
+        "93537.50000000",
+        "93661.20000000",
+        "45.94160000",
+        "1735689899999999",
+        "4301907.48382050",
+        "7448",
+        "16.87967000",
+        "1580504.06031420",
+        "0"
+      ]
+    },
+    "native_minus_official": {
+      "open": "0E-8",
+      "high": "0E-8",
+      "low": "0E-8",
+      "close": "0E-8",
+      "volume": "0E-8",
+      "quote_volume": "0E-16",
+      "count": "0"
+    },
+    "all_fields_decimal_exact": true,
+    "first_trade_id": 4359935386,
+    "last_trade_id": 4359942833,
+    "missing_interior_trade_ids": 0,
+    "trade_type_counts": {
+      "not_provided": 7448
+    },
+    "sample_quantity_gcd": "0.00001",
+    "sample_gcd_is_certified_filter": false,
+    "receipt_minus_trade_ms": {
+      "min": 1.9988,
+      "p50": 3.5667999999999997,
+      "p99": 39.998048999999995,
+      "max": 49.252
+    },
+    "last_bar_trade_received_at": "2025-01-01T00:04:59.8162828Z",
+    "bar_complete_by_modeled_fill_clock": true
+  },
+  {
+    "market": "binance",
+    "symbol": "ethusdt",
+    "archive": "data/research/spot_perpetual_feasibility_20261026_v001/archives/ETHUSDT-5m-2025-01.zip",
+    "archive_sha256": "356e860d31d3bf5cc7e26c1601716052acaee1352bf7cf01492d4da7b2bdaeb6",
+    "native": {
+      "open": "3337.78000000",
+      "high": "3343.02000000",
+      "low": "3335.84000000",
+      "close": "3340.26000000",
+      "volume": "707.44280000",
+      "quote_volume": "2362700.6398990000000000",
+      "count": 6308
+    },
+    "official": {
+      "open": "3337.78000000",
+      "high": "3343.02000000",
+      "low": "3335.84000000",
+      "close": "3340.26000000",
+      "volume": "707.44280000",
+      "quote_volume": "2362700.63989900",
+      "count": 6308,
+      "archive_timestamp_unit": "us",
+      "raw": [
+        "1735689600000000",
+        "3337.78000000",
+        "3343.02000000",
+        "3335.84000000",
+        "3340.26000000",
+        "707.44280000",
+        "1735689899999999",
+        "2362700.63989900",
+        "6308",
+        "334.53330000",
+        "1117431.19994300",
+        "0"
+      ]
+    },
+    "native_minus_official": {
+      "open": "0E-8",
+      "high": "0E-8",
+      "low": "0E-8",
+      "close": "0E-8",
+      "volume": "0E-8",
+      "quote_volume": "0E-16",
+      "count": "0"
+    },
+    "all_fields_decimal_exact": true,
+    "first_trade_id": 2010047664,
+    "last_trade_id": 2010053971,
+    "missing_interior_trade_ids": 0,
+    "trade_type_counts": {
+      "not_provided": 6308
+    },
+    "sample_quantity_gcd": "0.0001",
+    "sample_gcd_is_certified_filter": false,
+    "receipt_minus_trade_ms": {
+      "min": 2.7192,
+      "p50": 4.3017,
+      "p99": 20.432679,
+      "max": 28.8412
+    },
+    "last_bar_trade_received_at": "2025-01-01T00:04:59.5204866Z",
+    "bar_complete_by_modeled_fill_clock": true
+  },
+  {
+    "market": "binance-futures",
+    "symbol": "btcusdt_250328",
+    "archive": "data/research/dated_carry_pilot_20261027_v001/BTCUSDT_250328-5m-2025-01.zip",
+    "archive_sha256": "c4e99fa721e2f894045a2d0f4456c7f9d455d2bfb80f341d31bbf89c258e0903",
+    "native": {
+      "open": "96656.5",
+      "high": "96790.4",
+      "low": "96615.2",
+      "close": "96755.2",
+      "volume": "3.579",
+      "quote_volume": "346095.8904",
+      "count": 188
+    },
+    "official": {
+      "open": "96656.5",
+      "high": "96790.4",
+      "low": "96615.2",
+      "close": "96755.2",
+      "volume": "3.579",
+      "quote_volume": "346095.8904",
+      "count": 188,
+      "archive_timestamp_unit": "ms",
+      "raw": [
+        "1735689600000",
+        "96656.5",
+        "96790.4",
+        "96615.2",
+        "96755.2",
+        "3.579",
+        "1735689899999",
+        "346095.8904",
+        "188",
+        "2.742",
+        "265129.3636",
+        "0"
+      ]
+    },
+    "native_minus_official": {
+      "open": "0.0",
+      "high": "0.0",
+      "low": "0.0",
+      "close": "0.0",
+      "volume": "0.000",
+      "quote_volume": "0.0000",
+      "count": "0"
+    },
+    "all_fields_decimal_exact": true,
+    "first_trade_id": 3500318,
+    "last_trade_id": 3500505,
+    "missing_interior_trade_ids": 0,
+    "trade_type_counts": {
+      "MARKET": 188
+    },
+    "sample_quantity_gcd": "0.001",
+    "sample_gcd_is_certified_filter": false,
+    "receipt_minus_trade_ms": {
+      "min": 1.8258,
+      "p50": 2.9907000000000004,
+      "p99": 173.22895399999996,
+      "max": 224.132
+    },
+    "last_bar_trade_received_at": "2025-01-01T00:04:56.3870634Z",
+    "bar_complete_by_modeled_fill_clock": true
+  },
+  {
+    "market": "binance-futures",
+    "symbol": "ethusdt_250328",
+    "archive": "data/research/dated_carry_pilot_20261027_v001/ETHUSDT_250328-5m-2025-01.zip",
+    "archive_sha256": "49bd224b1270c52f714ce3d6c1c633870d2bcdbcefbb2d2d4fa94ff94587fcaa",
+    "native": {
+      "open": "3437.20",
+      "high": "3444.07",
+      "low": "3437.20",
+      "close": "3443.32",
+      "volume": "40.749",
+      "quote_volume": "140228.68371",
+      "count": 104
+    },
+    "official": {
+      "open": "3437.20",
+      "high": "3444.07",
+      "low": "3437.20",
+      "close": "3443.32",
+      "volume": "40.749",
+      "quote_volume": "140228.68371",
+      "count": 104,
+      "archive_timestamp_unit": "ms",
+      "raw": [
+        "1735689600000",
+        "3437.20",
+        "3444.07",
+        "3437.20",
+        "3443.32",
+        "40.749",
+        "1735689899999",
+        "140228.68371",
+        "104",
+        "7.488",
+        "25744.17057",
+        "0"
+      ]
+    },
+    "native_minus_official": {
+      "open": "0.00",
+      "high": "0.00",
+      "low": "0.00",
+      "close": "0.00",
+      "volume": "0.000",
+      "quote_volume": "0.00000",
+      "count": "0"
+    },
+    "all_fields_decimal_exact": true,
+    "first_trade_id": 4068249,
+    "last_trade_id": 4068352,
+    "missing_interior_trade_ids": 0,
+    "trade_type_counts": {
+      "MARKET": 104
+    },
+    "sample_quantity_gcd": "0.001",
+    "sample_gcd_is_certified_filter": false,
+    "receipt_minus_trade_ms": {
+      "min": 2.4997,
+      "p50": 3.8076,
+      "p99": 12.466383,
+      "max": 16.2656
+    },
+    "last_bar_trade_received_at": "2025-01-01T00:04:53.0208979Z",
+    "bar_complete_by_modeled_fill_clock": true
+  }
+]

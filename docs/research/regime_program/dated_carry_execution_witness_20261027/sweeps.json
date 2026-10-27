@@ -1,0 +1,108 @@
+[
+  {
+    "symbol": "btcusdt_250328",
+    "slippage_bps": 3,
+    "case_aliases": [
+      "hold_to_delivery_slip3",
+      "early_exit_24h_slip3"
+    ],
+    "original_model_price": "96726.17344",
+    "quantity": "0.013331436452749612",
+    "unfilled": "0E-18",
+    "displayed_depth_sufficient": true,
+    "vwap": "96750.57501067147147146004615",
+    "levels": [
+      {
+        "price": "96750.6",
+        "available": "0.010",
+        "taken": "0.010"
+      },
+      {
+        "price": "96750.5",
+        "available": "0.100",
+        "taken": "0.003331436452749612"
+      }
+    ],
+    "model_price_compatible_with_displayed_sweep": true,
+    "optimistic_shortfall_bps": -2.5221111780245242,
+    "optimistic_gross_cash_difference": -0.3253079887540006,
+    "indicative_fractional_snapshot_only_not_actual_execution": true
+  },
+  {
+    "symbol": "btcusdt_250328",
+    "slippage_bps": 10,
+    "case_aliases": [
+      "hold_to_delivery_slip10",
+      "early_exit_24h_slip10"
+    ],
+    "original_model_price": "96658.4448",
+    "quantity": "0.013331436452749612",
+    "unfilled": "0E-18",
+    "displayed_depth_sufficient": true,
+    "vwap": "96750.57501067147147146004615",
+    "levels": [
+      {
+        "price": "96750.6",
+        "available": "0.010",
+        "taken": "0.010"
+      },
+      {
+        "price": "96750.5",
+        "available": "0.100",
+        "taken": "0.003331436452749612"
+      }
+    ],
+    "model_price_compatible_with_displayed_sweep": true,
+    "optimistic_shortfall_bps": -9.522445800586675,
+    "optimistic_gross_cash_difference": -1.228228048945156,
+    "indicative_fractional_snapshot_only_not_actual_execution": true
+  },
+  {
+    "symbol": "ethusdt_250328",
+    "slippage_bps": 3,
+    "case_aliases": [
+      "hold_to_delivery_slip3",
+      "early_exit_24h_slip3"
+    ],
+    "original_model_price": "3442.2870040000003",
+    "quantity": "0.004310124103450167",
+    "unfilled": "0E-18",
+    "displayed_depth_sufficient": true,
+    "vwap": "3441.88",
+    "levels": [
+      {
+        "price": "3441.88",
+        "available": "0.129",
+        "taken": "0.004310124103450167"
+      }
+    ],
+    "model_price_compatible_with_displayed_sweep": false,
+    "optimistic_shortfall_bps": 1.1825049101081386,
+    "optimistic_gross_cash_difference": 0.0017542377506019249,
+    "indicative_fractional_snapshot_only_not_actual_execution": true
+  },
+  {
+    "symbol": "ethusdt_250328",
+    "slippage_bps": 10,
+    "case_aliases": [
+      "hold_to_delivery_slip10",
+      "early_exit_24h_slip10"
+    ],
+    "original_model_price": "3439.8766800000003",
+    "quantity": "0.004310124103450167",
+    "unfilled": "0E-18",
+    "displayed_depth_sufficient": true,
+    "vwap": "3441.88",
+    "levels": [
+      {
+        "price": "3441.88",
+        "available": "0.129",
+        "taken": "0.004310124103450167"
+      }
+    ],
+    "model_price_compatible_with_displayed_sweep": true,
+    "optimistic_shortfall_bps": -5.820423721918544,
+    "optimistic_gross_cash_difference": -0.008634557818922495,
+    "indicative_fractional_snapshot_only_not_actual_execution": true
+  }
+]

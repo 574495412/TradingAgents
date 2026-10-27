@@ -1,0 +1,178 @@
+"""Seal a narrow raw execution challenge, without altering account returns."""
+
+import argparse
+from pathlib import Path
+
+from research_tools.factor_lab.io import read, save, sha
+from research_tools.max_effect.run_accounts import verify_manifest
+
+
+def run(output):
+    output.mkdir(parents=True, exist_ok=False)
+    roots = {
+        "native_capture": Path("data/research/dated_carry_execution_witness_20261027_v001"),
+        "native_audit": Path("results/research/dated_carry_execution_witness_audit_20261027_v001"),
+        "depth_capture": Path("data/research/dated_carry_depth_witness_20261027_v001"),
+        "depth_audit": Path("results/research/dated_carry_depth_witness_audit_20261027_v001"),
+        "original_accounts": Path("results/research/dated_carry_accounts_20261027_v001"),
+        "original_report": Path("docs/research/regime_program/dated_carry_accounts_20261027"),
+    }
+    for root in roots.values():
+        verify_manifest(root)
+    native = read(roots["native_audit"] / "verification.json")
+    depth = read(roots["depth_audit"] / "verification.json")
+    assert (
+        native["all_native_bars_exactly_match_official"] and depth["successful_native_chains"] == 2
+    )
+    assert depth["both_bbo_channels_match"] and depth["optimistic_model_cases"] == 1
+    counts = read(roots["native_audit"] / "feed_counts.json")
+    bars = read(roots["native_audit"] / "trade_aggregation.json")
+    sweeps = read(roots["depth_audit"] / "sweeps.json")
+    for name, value in [
+        ("trade_aggregation", bars),
+        ("feed_counts", counts),
+        ("quote_witnesses", read(roots["native_audit"] / "quote_witnesses.json")),
+        ("chain_proofs", read(roots["depth_audit"] / "chain_proofs.json")),
+        ("sweeps", sweeps),
+    ]:
+        save(output / (name + ".json"), value)
+    counter = next(s for s in sweeps if s["model_price_compatible_with_displayed_sweep"] is False)
+    summary = {
+        "native_trade_messages": sum(c["trades"] for c in counts),
+        "native_quote_messages": sum(c["quotes"] for c in counts),
+        "bar_trade_messages_exactly_reconciled": sum(b["native"]["count"] for b in bars),
+        "native_depth_messages_and_snapshots": sum(depth["feed_counts"].values()),
+        "exact_raw_bars": 4,
+        "all_native_interior_trade_ids_contiguous": all(
+            b["missing_interior_trade_ids"] == 0 for b in bars
+        ),
+        "unique_entry_cases": native["unique_model_entry_cases"],
+        "same_entry_policy_aliases": native["case_aliases_total"],
+        "successful_depth_chains": 2,
+        "both_channels_same_bbo": True,
+        "counterexample": counter,
+        "entry_only_not_full_account_validation": True,
+        "baseline_3bps_execution_reference_challenged": True,
+        "stress_10bps_entry_price_compatible_with_observed_futures_depth": all(
+            s["model_price_compatible_with_displayed_sweep"]
+            for s in sweeps
+            if s["slippage_bps"] == 10
+        ),
+        "metadata_access_denials": 2,
+        "official_protocol_raw_capture_status": read(
+            roots["depth_capture"] / "protocol.receipt.json"
+        )["status"],
+        "original_financial_paths_changed": False,
+        "new_financial_accounts": 0,
+        "new_models_or_strategy_variants": 0,
+        "module_admitted": False,
+        "capacity_certified": False,
+        "external_audit_performed": False,
+        "independent_oos": False,
+        "profit_goal_met": False,
+        "orders_enabled": False,
+    }
+    save(output / "summary.json", summary)
+    save(
+        output / "verification.json",
+        {
+            "parents_sha256": {
+                str(root / "completion.json"): sha(root / "completion.json")
+                for root in roots.values()
+            },
+            "source_sha256": sha(Path(__file__)),
+            "native_audit": native,
+            "depth_audit": depth,
+            "raw_source_identity": "Same Binance venue; separately collected native stream, not independent venue, client execution or external review.",
+            "official_protocol": {
+                "url": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/websocket-market-streams/How-to-manage-a-local-order-book-correctly",
+                "web_read_at_utc_date": "2026-10-27",
+                "web_read_succeeded": True,
+                "direct_capture_status": 202,
+                "direct_capture_body_bytes": 0,
+                "original_historical_legal_terms_certified": False,
+            },
+            "tests": {
+                "execution_witness_counterexamples_passed": 4,
+                "depth_counterexamples_passed": 4,
+                "profitability_claim": False,
+            },
+            "new_financial_accounts": 0,
+            "goal_complete": False,
+        },
+    )
+    bt = "\n".join(
+        f"| {b['symbol']} | {b['native']['count']} | {b['native']['volume']} | {b['native']['quote_volume']} | {b['sample_quantity_gcd']} |"
+        for b in bars
+    )
+    st = "\n".join(
+        f"| {s['symbol']} | {s['slippage_bps']} | {float(s['original_model_price']):.6f} | {float(s['vwap']):.6f} | {len(s['levels'])} | {s['optimistic_shortfall_bps']:.4f} |"
+        for s in sweeps
+    )
+    (output / "README.md").write_text(f"""# 期限基差执行反证：原始记录吻合，3bps成交假设有缺口
+
+2026-10-27。本轮只核对原一期BTC/ETH季度基差账户的2025-01-01入场，不增加策略、模型或收益账户。**四个首个5分钟K线与另一采集方逐笔记录精确一致，但ETH期货3bps模型卖价优于当时已接收盘口；原正收益只能保留为原模型结果，执行资格未获证明。**
+
+## 原始记录与可用时间
+
+匿名获取Tardis保存的原生交易所消息，含采集方接收时间；依据[该方API说明](https://docs.tardis.dev/api/http-api-reference)，月首日可公开访问，无密钥或购买。固定窗口00:00—00:06，覆盖原00:05撮合边界。保存15,441条逐笔、62,540条买卖报价，另8,353条深度消息/快照；3份供应方原说明、全部HTTP状态/原始压缩体和解析源码均留存。总计9个只读HTTP请求。
+
+这是**同一交易所的另一采集方**，增加采集链和时点对照，不能称独立交易场所、真实账户成交或第三方审计。2025已经看过，本轮新取得的微观数据不使旧收益成为样本外。原有4条金融路径及哈希不变。
+
+## 原始成交重建
+
+按交易发生时间聚合00:00—00:05，Decimal重算OHLC、基础成交量、计价成交额和笔数，14,048笔与官方原ZIP逐项精确一致，四组交易ID无内部缺号；未挑掉任何成交类别。期货均为MARKET类别，现货原消息未提供该类别。
+
+| 市场原生代码 | 首5分钟笔数 | 基础成交量 | 计价成交额 | 样本数量GCD |
+| --- | ---: | ---: | ---: | ---: |
+{bt}
+
+官方2025年1月现货归档为微秒时间，期货归档和原生交易时间为毫秒；明确转换，未混用。原始成交发生和采集接收时间分别保留。最后一笔被采集方接收的时点均早于模型00:05边界，但这不认证官方K线发布时延、我们自身行情/下单链路或交易所最终执行延迟。
+
+## 从最佳档疑点到完整深度
+
+第一次BBO比较发现BTC模型数量0.013331436…大于最佳买价一档0.010，不能仅凭成交额1%上限宣称能成交。因此在观察完整盘口前追加登记，只抓原两合约同一6分钟的depth/depthSnapshot，检查快照重叠、pu/u连续、绝对数量与零量删除；不改入场时钟或数量。
+
+按[交易所原生序列规则](https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/websocket-market-streams/How-to-manage-a-local-order-book-correctly)重建00:05前已接收的订单簿。该官方网页工具读取成功，直接HTTP留存为202空正文；两种访问结果分别保留，不宣称取得了2025法律条款历史原件。[采集说明](https://docs.tardis.dev/historical-data-details/binance-futures)明确初始快照为其REST采集的generated消息。快照约00:00:01收到，不能提前填到00:00；缓存原生增量在快照可知后才衔接。
+
+BTC/ETH分别应用3,289/3,822条有效增量，均无序列断链；边界最后深度消息距00:05约197.3262/115.6006ms，和分别接收的bookTicker四个最佳价量字段完全相同。这是同采集方两个通道对照，仍不证明报价在委托到达时存在。
+
+按原分数数量扫显示买盘，保留每档价量：
+
+| 合约 | 原滑点bps | 原模型卖价 | 显示深度VWAP | 消耗档数 | 模型乐观差bps |
+| --- | ---: | ---: | ---: | ---: | ---: |
+{st}
+
+正差表示模型卖价优于可见扫单价，负差表示模型更保守。BTC最佳96750.6档0.010，再取96750.5档0.003331436…即足够；不把“超过第一档”错误判为没有足够深度。ETH3bps卖价3442.287004，高于买盘3441.88约1.1825bps；对应原数量的价差约0.00175424USDT（未含额外手续费变化）。这是一笔执行假设的窄反例，**不是整段收益已被推翻，也不是可以把这点价差从原收益扣掉就称修正账户通过**。10bps压力档的期货入场价格与所见深度相容，仅限这一时点，不外推到所有退出、真实费用、整数手数或容量。
+
+扫单沿用原模型分数数量仅为必要诊断；不能把同一时刻的历史显示深度当成真实成交承诺，未建实际委托延迟、撤单竞争、撮合队列或全生命周期盘口。
+
+## 手数和费用仍未知
+
+首5分钟样本数量GCD为现货BTC0.00001、ETH0.0001，季度期货均0.001；原分数订单有非零余数。观察到的成交格点不能认证最小量/最小名义或所有历史订单过滤器，不能直接四舍五入后抹掉残余风险。现货基础币收费会使净库存与期货整数手数不完全一致，任何修复须保留余币、最小量和处置成本。
+
+尝试两个合约的匿名历史元数据均401，原响应保留，没有读凭证、购买或重试访问拒绝。供应方[元数据说明](https://docs.tardis.dev/api/instruments-metadata-api)亦明确：除乘数外变更历史尽力记录，费率仅示例。即使取得其数据也不能自动认证客户历史费率、全部规则变更或实际现金。
+
+## 判定与下一步
+
+原始价格输入在本窗口得到更强采集交叉支持；固定3bps成交假设出现反例；BTC第一档不足疑点被完整盘口解析为两档足够。账本数学正确与实际可执行是两项结论，分开保留。
+
+继续冻结原账户。下一项必须先取得可追溯的历史数量/最小名义约束，并设计收费后余币与整数手数一致的执行协议；若只使用观察格点，必须另标假设压力检验，不能称历史交易规则已认证。退出盘口、真实费用、客户端时延、独立季度和外部复算仍缺失。不得靠放大本金、调滑点到刚好通过、换入场时钟或增加模型数量消除此反例。
+
+完整账表见[逐笔重建](trade_aggregation.json)、[BBO](quote_witnesses.json)、[序列证据](chain_proofs.json)、[扫单](sweeps.json)和[验收](verification.json)。原收益见[前轮报告](../dated_carry_accounts_20261027/README.md)；本轮新增金融账户0，模块/容量/总账户目标均未通过。
+""")
+    save(
+        output / "completion.json",
+        {
+            "passed": True,
+            "manifest": {p.name: sha(p) for p in output.iterdir() if p.is_file()},
+            "profit_goal_met": False,
+        },
+    )
+    print(summary, flush=True)
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--output", type=Path, required=True)
+    run(p.parse_args().output)

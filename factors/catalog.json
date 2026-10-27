@@ -1232,7 +1232,15 @@
       "capacity_certified": false,
       "new_independent_mechanisms_proven": 0,
       "alpha_proven": false,
-      "production_eligible": false
+      "production_eligible": false,
+      "execution_witness": {
+        "report": "../docs/research/regime_program/dated_carry_execution_witness_20261027/README.md",
+        "state": "entry_raw_inputs_crosschecked_baseline_execution_assumption_challenged",
+        "new_financial_accounts": 0,
+        "baseline_3bps_quote_counterexample": true,
+        "historical_order_filters_and_full_execution_certified": false,
+        "module_admitted": false
+      }
     },
     "reference_stage_financial_accounts": 0
   }

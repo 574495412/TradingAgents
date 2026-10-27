@@ -1,0 +1,63 @@
+{
+  "parents_sha256": {
+    "data/research/dated_carry_execution_witness_20261027_v001/completion.json": "cab5cba1bb5e140569eb4b45c260c831f4d335767eab251b34547d7f4bd4ce48",
+    "results/research/dated_carry_execution_witness_audit_20261027_v001/completion.json": "146b2d3265e8b6d5a98751cf23c4935a1dc6c2f9146aa9cfcea32d480847f35d",
+    "data/research/dated_carry_depth_witness_20261027_v001/completion.json": "0e38e1ba81b67340869c36719208ef7b84f801ae1f8e97b195d5f42fc3159009",
+    "results/research/dated_carry_depth_witness_audit_20261027_v001/completion.json": "109ef71b5d2fd17f8925f25bf47f4f5459dd9ba4e4b2f9644c1de5c072b744c1",
+    "results/research/dated_carry_accounts_20261027_v001/completion.json": "f1e3d1f4c8b3a4345e18b93f5eff353e0f0d637201557d250b80894c61c634c8",
+    "docs/research/regime_program/dated_carry_accounts_20261027/completion.json": "54101f768c2bf10714e618a4355bf3b382e60adc42fbc1856b30b6c3663e73c5"
+  },
+  "source_sha256": "84e17750f4d875ebb4eb2352781b9650ec28f83fbcd5ed7601a205e2abe0e7e2",
+  "native_audit": {
+    "native_markets_audited": 4,
+    "unique_model_entry_cases": 8,
+    "case_aliases_total": 16,
+    "all_native_bars_exactly_match_official": true,
+    "unfavorable_quote_comparisons": 1,
+    "insufficient_displayed_top_quantity": 2,
+    "missing_before_quotes": 0,
+    "historical_order_filters_certified": false,
+    "real_execution_certified": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "new_financial_accounts": 0,
+    "new_return_source_admitted": false,
+    "profit_goal_met": false,
+    "orders_enabled": false
+  },
+  "depth_audit": {
+    "feed_counts": {
+      "btcusdt_250328@depth@0ms": 3891,
+      "ethusdt_250328@depth@0ms": 4460,
+      "ethusdt_250328@depthSnapshot": 1,
+      "btcusdt_250328@depthSnapshot": 1
+    },
+    "successful_native_chains": 2,
+    "chain_failures": [],
+    "both_bbo_channels_match": true,
+    "sweeps": 4,
+    "optimistic_model_cases": 1,
+    "new_financial_accounts": 0,
+    "actual_execution_or_capacity_certified": false,
+    "external_review_performed": false,
+    "independent_oos": false,
+    "profit_goal_met": false,
+    "orders_enabled": false
+  },
+  "raw_source_identity": "Same Binance venue; separately collected native stream, not independent venue, client execution or external review.",
+  "official_protocol": {
+    "url": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/websocket-market-streams/How-to-manage-a-local-order-book-correctly",
+    "web_read_at_utc_date": "2026-10-27",
+    "web_read_succeeded": true,
+    "direct_capture_status": 202,
+    "direct_capture_body_bytes": 0,
+    "original_historical_legal_terms_certified": false
+  },
+  "tests": {
+    "execution_witness_counterexamples_passed": 4,
+    "depth_counterexamples_passed": 4,
+    "profitability_claim": false
+  },
+  "new_financial_accounts": 0,
+  "goal_complete": false
+}

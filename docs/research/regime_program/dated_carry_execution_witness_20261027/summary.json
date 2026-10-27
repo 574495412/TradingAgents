@@ -1,0 +1,50 @@
+{
+  "native_trade_messages": 15441,
+  "native_quote_messages": 62540,
+  "bar_trade_messages_exactly_reconciled": 14048,
+  "native_depth_messages_and_snapshots": 8353,
+  "exact_raw_bars": 4,
+  "all_native_interior_trade_ids_contiguous": true,
+  "unique_entry_cases": 8,
+  "same_entry_policy_aliases": 16,
+  "successful_depth_chains": 2,
+  "both_channels_same_bbo": true,
+  "counterexample": {
+    "symbol": "ethusdt_250328",
+    "slippage_bps": 3,
+    "case_aliases": [
+      "hold_to_delivery_slip3",
+      "early_exit_24h_slip3"
+    ],
+    "original_model_price": "3442.2870040000003",
+    "quantity": "0.004310124103450167",
+    "unfilled": "0E-18",
+    "displayed_depth_sufficient": true,
+    "vwap": "3441.88",
+    "levels": [
+      {
+        "price": "3441.88",
+        "available": "0.129",
+        "taken": "0.004310124103450167"
+      }
+    ],
+    "model_price_compatible_with_displayed_sweep": false,
+    "optimistic_shortfall_bps": 1.1825049101081386,
+    "optimistic_gross_cash_difference": 0.0017542377506019249,
+    "indicative_fractional_snapshot_only_not_actual_execution": true
+  },
+  "entry_only_not_full_account_validation": true,
+  "baseline_3bps_execution_reference_challenged": true,
+  "stress_10bps_entry_price_compatible_with_observed_futures_depth": true,
+  "metadata_access_denials": 2,
+  "official_protocol_raw_capture_status": 202,
+  "original_financial_paths_changed": false,
+  "new_financial_accounts": 0,
+  "new_models_or_strategy_variants": 0,
+  "module_admitted": false,
+  "capacity_certified": false,
+  "external_audit_performed": false,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

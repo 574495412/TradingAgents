@@ -1,0 +1,54 @@
+{
+  "testedAt": "2026-10-27T08:17:57.575Z",
+  "tool": "bundled Playwright; Browser plugin not available",
+  "noAppRebuildOrNewDependencies": true,
+  "checks": [
+    {
+      "width": 1280,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "stageVisible": true,
+      "newFinancialAccounts": 0,
+      "originalFinancialAccountsPreserved": 4,
+      "executionCounterexampleVisible": true,
+      "meaningful": true,
+      "overflow": false,
+      "frameworkOverlay": false,
+      "errors": [],
+      "consoleErrors": [],
+      "screenshot": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9/dated-carry-witness-ui-1280.png"
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "title": "CZ · 因子与量化组合",
+      "stageVisible": true,
+      "newFinancialAccounts": 0,
+      "originalFinancialAccountsPreserved": 4,
+      "executionCounterexampleVisible": true,
+      "meaningful": true,
+      "overflow": false,
+      "frameworkOverlay": false,
+      "errors": [],
+      "consoleErrors": [],
+      "screenshot": "/Users/chrise/.codex/visualizations/2026/10/25/01a17139-1f82-7922-83d5-2ffc22a459b9/dated-carry-witness-ui-390.png"
+    }
+  ],
+  "native_Codex_host_visual_inspected": false,
+  "screenshots_visually_inspected": [
+    390
+  ],
+  "protocol_sha256": "e55f77da8179d2e501ced1234a1b05a52935f26dc6bbeeaa069a5d5c48b923ee",
+  "server_pid": 20954,
+  "report_sha256": "7d1469309b73dcfdd54554513980e2c5473554eebfcfd7e2f978f42b96322d25",
+  "mobile_stage_title_shortened_after_visual_inspection": true,
+  "mobile_heading_text_bounds_verified": {
+    "text": "期限基差核验：成交假设出现反例",
+    "left": 47,
+    "right": 267.515625,
+    "width": 220.515625,
+    "header_client_width": 320,
+    "header_scroll_width": 320,
+    "within_visible_panel": true
+  }
+}

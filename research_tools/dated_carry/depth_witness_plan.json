@@ -1,0 +1,17 @@
+{
+  "schema": "dated-carry-depth-witness.v1",
+  "purpose": "Resolve the two dated-leg entry BBO questions at the same frozen clock. Reconstruct only receipt-causal depth for BTC/ETH250328. Do not change model fills, size, clocks or compute new strategy returns.",
+  "parent": "data/research/dated_carry_execution_witness_20261027_v001",
+  "parent_audit": "results/research/dated_carry_execution_witness_audit_20261027_v001",
+  "document": "https://developers.binance.com/en/docs/products/derivatives-trading-usds-futures/websocket-market-streams/How-to-manage-a-local-order-book-correctly",
+  "market": "binance-futures",
+  "symbols": ["btcusdt_250328", "ethusdt_250328"],
+  "channels": ["depth", "depthSnapshot"],
+  "capture_window": {"from": "2025-01-01T00:00:00.000Z", "sliceSize": 6},
+  "checks": ["Only snapshots and deltas received by00:05 may form the as-of book.", "Require snapshot overlap U<=lastUpdateId<=u, then pu=previous_u. Reset/invalidate on actual gaps; never bridge missing updates with a later snapshot as past knowledge.", "Absolute quantities; delete zero levels. Unknown initial book or broken chain means unknown sweep, not zero cost.", "Sweep full original fractional short quantity over bids at the frozen clock, preserve each consumed level and compare3/10bps model prices. This is an indicative snapshot test, not a new executable account or actual fill.", "Compare reconstructed BBO with separately captured bookTicker and report receipt ages/update identities; don't choose the more favorable feed.", "Retain quantity-filter and client-fee unknowns. No capacity admission from one entry book or same-exchange second collector."],
+  "budget": {"read_only_HTTP_requests_max": 2, "compressed_bytes_per_response_max": 33554432, "decompressed_bytes_per_response_max": 268435456, "new_financial_accounts": 0},
+  "authorization": "Anonymous public first-of-month feeds only. No subscriptions, credentials or orders.",
+  "document_scope": "Current stream protocol guide, not historical legal or fee certification. Actual2025sequence fields must independently satisfy the reconstruction checks.",
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

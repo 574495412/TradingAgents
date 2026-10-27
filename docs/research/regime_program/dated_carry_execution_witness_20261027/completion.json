@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "manifest": {
+    "summary.json": "dc8efc373e72372812b0749d53cf50eca23ca478c9b63b2c394413cc90ff19f6",
+    "sweeps.json": "986d4bac001cae925b7e62c68e2f6bc841bb85592a308c91c4a32bf407f94220",
+    "chain_proofs.json": "1ee4f970ceac4b56e70a5ee76c499048f5374938e7651c0aa11270b86021f340",
+    "quote_witnesses.json": "30cd75f8650fe990e1a20b4829b7cd1514ea3a3f969e92d24566ed8e3c6d8363",
+    "trade_aggregation.json": "796aff8f4deca7616c330d3a46475cc0d40631e581c0916e04229f0f48795c65",
+    "README.md": "7d1469309b73dcfdd54554513980e2c5473554eebfcfd7e2f978f42b96322d25",
+    "verification.json": "7dae42ae14de7db9ad64bd56020e18c3128e9510118862874012009221a4ec99",
+    "feed_counts.json": "aace7076ab786e884fee549fe162faac9a74ea51961c6a667243157315d706fd"
+  },
+  "profit_goal_met": false
+}

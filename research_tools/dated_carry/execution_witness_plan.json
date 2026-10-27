@@ -1,0 +1,31 @@
+{
+  "schema": "dated-carry-execution-witness.v1",
+  "version": "20261027_v001",
+  "purpose": "Challenge the existing one-quarter model entry fills using a separately recorded native exchange feed with collector receipt times. No new economic variant, financial account, parameter choice or unseen-return claim.",
+  "original_accounts": "results/research/dated_carry_accounts_20261027_v001",
+  "prepared_inputs": "results/research/dated_carry_execution_inputs_20261027_v002",
+  "capture_window": {"from": "2025-01-01T00:00:00.000Z", "sliceSize": 6},
+  "markets": {
+    "binance": ["btcusdt", "ethusdt"],
+    "binance-futures": ["btcusdt_250328", "ethusdt_250328"]
+  },
+  "channels": ["trade", "bookTicker"],
+  "documents": {
+    "http_api": "https://docs.tardis.dev/api/http-api-reference.md",
+    "instrument_metadata": "https://docs.tardis.dev/api/instruments-metadata-api.md",
+    "native_collection": "https://docs.tardis.dev/historical-data-details/binance-futures.md"
+  },
+  "metadata_symbols": ["BTCUSDT_250328", "ETHUSDT_250328"],
+  "comparisons": [
+    "Reaggregate native individual trades by exchange trade time for Jan1 00:00 to00:05; compare OHLC, count, volume and quote volume to preserved official ZIP without selecting a favorable channel or omitting off-book trades.",
+    "For each original side-specific modeled entry at00:05, use last collector-received best bid/ask at or before that boundary. Report staleness, displayed side depth and price shortfall; never use future-received quotes as if known.",
+    "Inspect first subsequent quote separately as a boundary-gap diagnostic, not as a fill or replacement. Quotes are indicative observations, not actual execution or full depth.",
+    "Native observed quantity lattice can refute an assumed precision but cannot certify historical order filters, fees or client-specific margin. Metadata changes best-effort and illustrative fees are not a certified historical fee schedule."
+  ],
+  "budget": {"read_only_HTTP_requests_max": 7, "compressed_bytes_per_response_max": 16777216, "total_compressed_bytes_max": 50331648, "decompressed_bytes_per_response_max": 134217728, "new_financial_accounts": 0, "new_model_fits": 0},
+  "authorization": "Anonymous public first-of-month access only. No API keys, subscriptions, credentials, billing or orders. Preserve errors and missing observations; do not retry access denials or fabricate data.",
+  "evidence_scope": "Independent collector of the same exchange, not independent venue/economic source or external audit. All2025already known history. Newly captured raw microdata does not turn the old return test into unseen evidence.",
+  "stop": "Freeze original economic paths. If witnessed execution assumptions contradict the model, mark execution qualification failed/unknown and register a separate evidence-led repair before evaluating any replacement account.",
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

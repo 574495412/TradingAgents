@@ -1,0 +1,30 @@
+[
+  {
+    "market": "binance",
+    "symbol": "btcusdt",
+    "trades": 7830,
+    "quotes": 20350,
+    "disconnect_markers": 0
+  },
+  {
+    "market": "binance",
+    "symbol": "ethusdt",
+    "trades": 7271,
+    "quotes": 20682,
+    "disconnect_markers": 0
+  },
+  {
+    "market": "binance-futures",
+    "symbol": "btcusdt_250328",
+    "trades": 224,
+    "quotes": 8925,
+    "disconnect_markers": 0
+  },
+  {
+    "market": "binance-futures",
+    "symbol": "ethusdt_250328",
+    "trades": 116,
+    "quotes": 12583,
+    "disconnect_markers": 0
+  }
+]
