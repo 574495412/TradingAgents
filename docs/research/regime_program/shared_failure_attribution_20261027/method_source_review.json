@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-27T12:24:31.728324+00:00",
+  "representation": "Primary landing/refresher web pages read through decoded browser tool; not native raw HTTP archive or full-book reproduction",
+  "sources": [
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-performance-evaluation",
+      "supports": "Distinguish measurement, attribution and appraisal; specify benchmark validity and limits."
+    },
+    {
+      "url": "https://rpc.cfainstitute.org/research/foundation/2019/performance-attribution",
+      "supports": "Explain performance relative to an explicit benchmark; holdings/transaction approaches have specific limits."
+    }
+  ],
+  "local_method": "Original transaction-timed BTC price comparison; not a full Brinson or causal model",
+  "third_party_review_performed": false
+}

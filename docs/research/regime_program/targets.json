@@ -384,9 +384,11 @@
         "monthly_state_domain_20261027_v002/README.md",
         "monthly_state_domain_20261027_v002/verification.json",
         "dated_carry_feasibility_20261027/README.md",
-        "dated_carry_feasibility_20261027/verification.json"
+        "dated_carry_feasibility_20261027/verification.json",
+        "shared_failure_attribution_20261027/README.md",
+        "shared_failure_attribution_20261027/verification.json"
       ],
-      "outcome": "既有多轮经济筛查未形成合格独立机制；期限基差有限前向机会被事前净效应门槛拒绝，当前动量原始身份/覆盖补证未形成新账户。共享资金组合未建立。"
+      "outcome": "MAX7与普通7日反转完整扣费失败；既有12条路径归因显示共同BTC-beta暴露有影响，但没有一个政策在两成本的固定路径参照净差额都为正，无新合格机制或共享资金组合。"
     },
     {
       "id": "R07",
@@ -435,9 +437,11 @@
         "monthly_state_domain_20261027_v002/README.md",
         "monthly_state_domain_20261027_v002/verification.json",
         "dated_carry_feasibility_20261027/README.md",
-        "dated_carry_feasibility_20261027/verification.json"
+        "dated_carry_feasibility_20261027/verification.json",
+        "shared_failure_attribution_20261027/README.md",
+        "shared_failure_attribution_20261027/verification.json"
       ],
-      "outcome": "已有内部原始/现金复算及离线包；当前目录不是历史身份或实际形成日期覆盖认证。完整容量、独立第三方、真正未见及实际执行仍未完成。"
+      "outcome": "新增既有12条路径的原始参考价/账本/净值内部归因，三路核算差3.15e-11USDT；没有可交易对冲、因果、容量、第三方或真正未见认证。"
     },
     {
       "id": "R08",
@@ -560,14 +564,14 @@
       "new_financial_accounts": 0
     }
   },
-  "representative_actual": "先核对相反方向原始已发表全文，再冻结MAX7彩票型反转与普通7日反转同机会集对照。352个真实形成书/6组未来扰动、5项测试通过；两源目标事前相同，8个逻辑条件只运行4条实际账户。MAX7两成本608日净收益−8.06%/−8.16%、胜率27.72%/28.71%、回撤15.22%/15.10%，均2025停机；普通反转−9.47%/−9.51%。固定路径价格腿本身为负，四条内部现金审计通过；未见、第三方、容量和新策略进程恢复未完成。按事前门槛拒绝，不作原法盈利或跨市场准入。 多策略总账户尚未构建，目标实际值继续为空。",
+  "representative_actual": "12条既有连续条件模型路径：价格分量及单位入场名义BTC参照后均负。两份日档的入场前60日beta参照有3条费用前残差为正，但保留原费用/资金费后的参照净差额11/12负，唯一正值普通7日反转低成本+61.73USDT，压力−179.04；六政策无两成本共同正值。11/12最差经济净值周同为2025-W03，仅同期描述。原始参考价、净值及准备金三路对账最大差3.15e-11USDT；无新账户、对冲执行或因果证明。 最近4条MAX7/普通反转金融账户仍全负；总账户实际指标继续为空。",
   "account_evidence": {
     "date": "2026-10-27",
     "accounts": 4,
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "max_lottery_accounts_20261027/verification.json",
-    "next_action": "终止MAX7彩票型反转与普通7日反转在当前本地域的参数/方向/跳日搜索；价格腿固定路径在两成本均负，不靠减费、重置2026、删币/年份或加杠杆求阳性。保留本轮原始反向文献与完整亏损账本。下一轮先以原始研究和现有失败证据提出一个不同经济问题及最强替代解释，再事前冻结必要数据、执行、实用效应和停止条件；没有新可反驳命题不新增账户。总账户、容量、独立外部和完整未见验证继续未完成。",
+    "next_action": "保留全部原经济拒绝；当前12条固定路径没有一个政策在两成本的保留费用/资金费后BTC-beta参照净差额同时为正，不把算术减亏当可交易对冲收益。停止价格排序方向/窗口与低成本赢家搜索。下一命题须引入不同原始信息或有依据的风险溢价机制；若研究风险中性政策，先明确可反驳的经济理由、资金/费用/库存/停机及实用效应合同，再新评价，不能直接使用本表残差。两种日档原件、亏损周及未知身份历史均保留，不删周/币求正。共享资金组合、容量、独立外部和真正未见验证继续未完成。",
     "rounds": [
       {
         "name": "regime",
@@ -662,34 +666,37 @@
         "reason": "MAX7两成本绝对扣费亏损、相对增量低于事前2个百分点、回撤超过15%并停机；反向原始文献不是本地账户收益证明。"
       }
     ],
-    "accounts_scope": "本轮实际策略/成本账户，不是累计账户数或独立试验数"
+    "accounts_scope": "本轮实际策略/成本账户，不是累计账户数或独立试验数",
+    "latest_diagnostic_accounts_inspected": 12,
+    "latest_diagnostic_source": "shared_failure_attribution_20261027/verification.json"
   },
   "current_research_stage": {
-    "mechanism": "weekly_lottery_max7_reversal",
-    "label": "MAX7彩票型反转：完整扣费阴性，分支终止",
-    "status": "four_continuous_accounts_audited_no_net_edge_current_domain",
-    "report": "max_lottery_accounts_20261027/README.md",
-    "description": "先核对相反方向原始已发表全文，再冻结MAX7彩票型反转与普通7日反转同机会集对照。352个真实形成书/6组未来扰动、5项测试通过；两源目标事前相同，8个逻辑条件只运行4条实际账户。MAX7两成本608日净收益−8.06%/−8.16%、胜率27.72%/28.71%、回撤15.22%/15.10%，均2025停机；普通反转−9.47%/−9.51%。固定路径价格腿本身为负，四条内部现金审计通过；未见、第三方、容量和新策略进程恢复未完成。按事前门槛拒绝，不作原法盈利或跨市场准入。",
-    "new_financial_accounts": 4,
-    "logical_source_policy_cost_cases": 8,
-    "new_economic_variants_evaluated": 1,
-    "new_control_policies": 1,
+    "mechanism": "shared_loss_benchmark_diagnostic",
+    "label": "共同亏损归因：beta解释部分，成本后缺稳定剩余",
+    "status": "ex_post_fixed_path_diagnostic_complete_no_executable_edge_established",
+    "report": "shared_failure_attribution_20261027/README.md",
+    "description": "12条既有连续条件模型路径：价格分量及单位入场名义BTC参照后均负。两份日档的入场前60日beta参照有3条费用前残差为正，但保留原费用/资金费后的参照净差额11/12负，唯一正值普通7日反转低成本+61.73USDT，压力−179.04；六政策无两成本共同正值。11/12最差经济净值周同为2025-W03，仅同期描述。原始参考价、净值及准备金三路对账最大差3.15e-11USDT；无新账户、对冲执行或因果证明。",
+    "existing_financial_accounts_inspected": 12,
+    "new_financial_accounts": 0,
+    "new_economic_variants_evaluated": 0,
     "new_models": 0,
-    "source_variants_exact_targets_equal": true,
-    "all_accounts_internal_cash_audited": true,
-    "candidate_net_return_low_cost": -0.08057226395737216,
-    "candidate_net_return_pressure_cost": -0.08164575150998077,
+    "source_beta_variants": 2,
+    "price_negative_accounts": 12,
+    "unit_btc_relative_negative_accounts": 12,
+    "prior_beta_gross_residual_positive_accounts": 3,
+    "fixed_path_net_minus_beta_negative_accounts": 11,
+    "policies_positive_at_both_costs": 0,
+    "funded_hedge_simulated": false,
+    "causal_attribution_proven": false,
     "module_admitted": false,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "branch_closed": true,
     "recorder_still_running": false,
     "third_party_review_performed": false,
     "independent_oos": false,
-    "new_process_restoration_executed": false,
     "capacity_verified": false,
-    "next_action": "终止MAX7彩票型反转与普通7日反转在当前本地域的参数/方向/跳日搜索；价格腿固定路径在两成本均负，不靠减费、重置2026、删币/年份或加杠杆求阳性。保留本轮原始反向文献与完整亏损账本。下一轮先以原始研究和现有失败证据提出一个不同经济问题及最强替代解释，再事前冻结必要数据、执行、实用效应和停止条件；没有新可反驳命题不新增账户。总账户、容量、独立外部和完整未见验证继续未完成。"
+    "next_action": "保留全部原经济拒绝；当前12条固定路径没有一个政策在两成本的保留费用/资金费后BTC-beta参照净差额同时为正，不把算术减亏当可交易对冲收益。停止价格排序方向/窗口与低成本赢家搜索。下一命题须引入不同原始信息或有依据的风险溢价机制；若研究风险中性政策，先明确可反驳的经济理由、资金/费用/库存/停机及实用效应合同，再新评价，不能直接使用本表残差。两种日档原件、亏损周及未知身份历史均保留，不删周/币求正。共享资金组合、容量、独立外部和真正未见验证继续未完成。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -1559,5 +1566,41 @@
     "new_economic_variants": 1,
     "economic_gate_passed": false,
     "third_party_review_performed": false
+  },
+  "previous_weekly_lottery_account_stage": {
+    "mechanism": "weekly_lottery_max7_reversal",
+    "label": "MAX7彩票型反转：完整扣费阴性，分支终止",
+    "status": "four_continuous_accounts_audited_no_net_edge_current_domain",
+    "report": "max_lottery_accounts_20261027/README.md",
+    "description": "先核对相反方向原始已发表全文，再冻结MAX7彩票型反转与普通7日反转同机会集对照。352个真实形成书/6组未来扰动、5项测试通过；两源目标事前相同，8个逻辑条件只运行4条实际账户。MAX7两成本608日净收益−8.06%/−8.16%、胜率27.72%/28.71%、回撤15.22%/15.10%，均2025停机；普通反转−9.47%/−9.51%。固定路径价格腿本身为负，四条内部现金审计通过；未见、第三方、容量和新策略进程恢复未完成。按事前门槛拒绝，不作原法盈利或跨市场准入。",
+    "new_financial_accounts": 4,
+    "logical_source_policy_cost_cases": 8,
+    "new_economic_variants_evaluated": 1,
+    "new_control_policies": 1,
+    "new_models": 0,
+    "source_variants_exact_targets_equal": true,
+    "all_accounts_internal_cash_audited": true,
+    "candidate_net_return_low_cost": -0.08057226395737216,
+    "candidate_net_return_pressure_cost": -0.08164575150998077,
+    "module_admitted": false,
+    "portfolio_built": false,
+    "portfolio_actual": null,
+    "profit_proven": false,
+    "branch_closed": true,
+    "recorder_still_running": false,
+    "third_party_review_performed": false,
+    "independent_oos": false,
+    "new_process_restoration_executed": false,
+    "capacity_verified": false,
+    "next_action": "终止MAX7彩票型反转与普通7日反转在当前本地域的参数/方向/跳日搜索；价格腿固定路径在两成本均负，不靠减费、重置2026、删币/年份或加杠杆求阳性。保留本轮原始反向文献与完整亏损账本。下一轮先以原始研究和现有失败证据提出一个不同经济问题及最强替代解释，再事前冻结必要数据、执行、实用效应和停止条件；没有新可反驳命题不新增账户。总账户、容量、独立外部和完整未见验证继续未完成。"
+  },
+  "shared_failure_attribution_evidence": {
+    "report": "shared_failure_attribution_20261027/README.md",
+    "source_completion_sha256": "89b02ba6869399a40c1451939df751b0051a95f1ce8fb4d79f5ff0c3c198a199",
+    "existing_accounts": 12,
+    "new_financial_accounts": 0,
+    "new_economic_variants": 0,
+    "benchmark_residuals_are_not_hedged_returns": true,
+    "external_review_performed": false
   }
 }

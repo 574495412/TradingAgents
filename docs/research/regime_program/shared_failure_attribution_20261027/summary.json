@@ -1,0 +1,73 @@
+{
+  "existing_accounts": 12,
+  "source_beta_variants": [
+    "daily_archive",
+    "daily_with_complete_5m_reconciliation"
+  ],
+  "new_financial_accounts": 0,
+  "new_economic_variants": 0,
+  "maximum_reconciliation_error_usdt": 3.149125404888764e-11,
+  "price_negative_accounts": 12,
+  "unit_btc_relative_negative_accounts": 12,
+  "lag_beta_sources": {
+    "daily_archive": {
+      "complete_accounts": 12,
+      "negative_complete_accounts": 9,
+      "unknown_entry_count": 0
+    },
+    "daily_with_complete_5m_reconciliation": {
+      "complete_accounts": 12,
+      "negative_complete_accounts": 9,
+      "unknown_entry_count": 0
+    }
+  },
+  "third_party_review_performed": false,
+  "causal_attribution_proven": false,
+  "funded_hedge_simulated": false,
+  "profit_goal_met": false,
+  "decision": "common_exposure_material_but_no_both_cost_fixed_path_net_residual_support",
+  "diagnostic_only": true,
+  "prior_beta_price_residual_positive_accounts": 3,
+  "fixed_path_net_minus_beta_negative_accounts": 11,
+  "policies_positive_at_both_costs": 0,
+  "policy_decisions": [
+    {
+      "candidate": "funding7_cost_floor",
+      "both_cost_fixed_path_net_minus_beta_positive": false,
+      "interpretation": "Even a positive diagnostic would not be an executable hedge or sufficient admission evidence."
+    },
+    {
+      "candidate": "funding7_raw",
+      "both_cost_fixed_path_net_minus_beta_positive": false,
+      "interpretation": "Even a positive diagnostic would not be an executable hedge or sufficient admission evidence."
+    },
+    {
+      "candidate": "max28",
+      "both_cost_fixed_path_net_minus_beta_positive": false,
+      "interpretation": "Even a positive diagnostic would not be an executable hedge or sufficient admission evidence."
+    },
+    {
+      "candidate": "max7_lottery_reversal",
+      "both_cost_fixed_path_net_minus_beta_positive": false,
+      "interpretation": "Even a positive diagnostic would not be an executable hedge or sufficient admission evidence."
+    },
+    {
+      "candidate": "momentum28_control",
+      "both_cost_fixed_path_net_minus_beta_positive": false,
+      "interpretation": "Even a positive diagnostic would not be an executable hedge or sufficient admission evidence."
+    },
+    {
+      "candidate": "ordinary7_reversal_control",
+      "both_cost_fixed_path_net_minus_beta_positive": false,
+      "interpretation": "Even a positive diagnostic would not be an executable hedge or sufficient admission evidence."
+    }
+  ],
+  "beta_source_differences_in_actual_attributions": 0,
+  "worst_net_week_counts": {
+    "2025-W03": 11,
+    "2025-W07": 1
+  },
+  "new_alpha_admitted": false,
+  "new_hedge_policy_registered": false,
+  "next_decision": "Retain existing economic rejections. Do not treat cost reduction or unit BTC neutralization as a demonstrated sufficient repair. A new risk-neutral policy requires an explicit funded/fee/capital/stops contract and new falsifiable economic reason; current arithmetic does not authorize hedge scaling or using only the positive low-cost path. Next research must bring a distinct raw-information or priced-risk mechanism, not a direction/window grid."
+}

@@ -1,0 +1,16 @@
+{
+  "manifest": {
+    "all_account_comparisons.csv": "f66c78a466d251cfd966c51dc34f3eb5c1603f53b8f81d432b5e5dc9fcb75f76",
+    "summary.json": "8be9ea1a44923f43542ccaefd1a0142896d47a2e2dd328c1de27a1bc24f29be6",
+    "side_comparisons.json": "1dec7b187a3589005b70494963cf291016db9f80733c06605625db2c0176bab5",
+    "all_account_benchmark_comparisons.json": "08c892622e512e114e1ae6a3483cfb9cf017d4284096b1d58bab0b9ff4b6929f",
+    "method_source_review.json": "0af978650360ad91aebf209b3a856c2f537b4c232e73f40bcd593d6334e1961f",
+    "source_comparison.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "README.md": "4af665a59bb31eef6becabd4224caf62394657d6c4b3d99270488faaf0620eef",
+    "worst_net_weeks.json": "7b54239030c5f6a4353c8aaa284a70b6832dbad8cf9c44d36802bd6c7d67ba75",
+    "verification.json": "96af827e77b209b2a132c6b9a296624f6e967c6943479c1dccfcf3da14ea3ec0",
+    "joint_active_correlations.json": "93a18f5156a4b15f21a5f5771be320582c1834ff7b9034783e778318851678ff"
+  },
+  "source_completion_sha256": "89b02ba6869399a40c1451939df751b0051a95f1ce8fb4d79f5ff0c3c198a199",
+  "profit_goal_met": false
+}

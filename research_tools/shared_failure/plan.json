@@ -1,0 +1,26 @@
+{
+  "schema": "shared-loss-fixed-path-attribution.v1",
+  "version": "20261027_v001",
+  "question": "Are the sealed liquid-perpetual losses predominantly compatible with common BTC price exposure, or do they remain after specific entry-notional benchmark comparisons?",
+  "purpose": "Diagnose strongest exposure/selection alternative before registering another economic strategy. Ex-post accounting only; no new signals, accounts, parameter search or portfolio admission.",
+  "runs": ["results/research/sparse_family_accounts_20261026_v002", "results/research/max_lottery_accounts_20261027_v001"],
+  "selection": "All8daily_archive continuous2025_2026 noncash accounts from the original frozen four-family sparse matrix, plus all4new MAX7/ordinary7 accounts. Both original cost cases, no source/outcome winner selection. These are12existing correlated policy/cost paths, not12independent mechanisms/trials.",
+  "cohort": "results/research/sparse_market_cohort_20261026_v003",
+  "daily": "data/research/historical_perpetual_daily_20261026_v002",
+  "bundle": "data/research/sparse_market_bundle_20261026_v001",
+  "accounting": "At each5m valuation: reference-price delta = NAV delta - actual funding cash + actual fees + modeled execution slippage + delta[(fee+slip)*actual gross marked exposure]. Full closed-path sum independently reconciles to sum of entry/exit reference-price PnL. This is fixed-path accounting, not a no-cost strategy replay.",
+  "benchmarks": [
+    "Entry-notional BTC price match: at actual entry fill t, buy/sell side*q*raw_alt_close[t-5m]/raw_BTC_close[t-5m] BTC shares; partial exits unwind pro rata, additions use fresh entry-notional match. No market move is earned before the actual entry close.",
+    "Entry-beta BTC price match: same construction multiplied by past60daily OLS beta available at entry SUBMISSION clock, current identity episode only. Compute separately from both retained daily-source variants. No fitted full-period beta; no backfill of missing coefficients. Any unknown active entry makes that benchmark interval and whole-account complete beta attribution unknown."
+  ],
+  "beta_rule": "Reuse frozen source-bound sparse feature_views/max_effect60d beta, with numerical variance floor1e-12, first partial day exclusion, no calendar compression and episode resets. Use submission day00UTC feature (shifted to prior complete daily close), never fill-day future data. A missing coefficient is not0or1.",
+  "limits": "BTC is a narrow benchmark, not proof of exposure to all crypto risks. A negative residual under these specified comparisons is not causal proof of selection failure or proof that a funded hedge would work; hedge costs/capital/stops/inventory paths would differ. Comparing matched fills does not match realized volatility. No return annualization, pruning bad coins/weeks, new hedge replay or changing old rules.",
+  "decision": "If both price and complete benchmark-adjusted price remain negative across the compared cases, retain evidence against merely repairingBTCdirection/cost as a sufficient explanation and require a different raw-information mechanism before another price-ranking trial. If benchmark matching reverses sign, investigate benchmark misfit/risk rather than declarealpha. If key attribution inputs are missing, report that component unknown. All prior financial rejections remain unchanged regardless of residual signs.",
+  "time_concentration": "Use5m NAV-based economic price increments for loss weeks, not date of final trade realization. Report net, reference-price and benchmark components; zero post-halt intervals stay in full-path series and are excluded from joint-active descriptive correlations only with sample counts disclosed.",
+  "budget": {"maximum_existing_accounts":12,"new_financial_accounts":0,"new_economic_variants":0,"new_market_data_requests":0,"workers":1,"maximum_output_reviews":1},
+  "method_sources": [
+    {"url":"https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/portfolio-performance-evaluation","use":"Benchmark validity, holdings/transaction-based attribution and limitations; no claim the local formula is a full Brinson or causal model."},
+    {"url":"https://rpc.cfainstitute.org/research/foundation/2019/performance-attribution","use":"Attribute against an explicitly specified benchmark; separate measurement, attribution and investment skill claims."}
+  ],
+  "orders_enabled":false,"production_eligible":false
+}

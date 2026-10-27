@@ -1,0 +1,8 @@
+{
+  "manifest": {
+    "targets.json": "065fb5b79ad47b938609af4d352614a420a13bb540823c5e4f32dfc864b383bc",
+    "depth_contract_validation.json": "b4f0a2b057737fb49d7e4257ec1b9d9495f41579bea95901bf72ca138e3a6887",
+    "README.md": "a82c99d33de87314f60db5202736c6bada85651c5ff1d3a520ab57b1c2235cd7"
+  },
+  "purpose": "Preserve previous MAX7 financial rejection and depth protocol before ex-post diagnostic"
+}

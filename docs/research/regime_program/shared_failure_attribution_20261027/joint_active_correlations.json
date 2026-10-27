@@ -1,0 +1,464 @@
+[
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.9994639525466199,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "joint_active_days": 22,
+    "price_pnl_dollar_correlation": 0.9526316317471191,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "joint_active_days": 22,
+    "price_pnl_dollar_correlation": 0.9526166055016031,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.74567975243542,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.746290833872937,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.6563917233817412,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.6786461741340215,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.6541733707440225,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.6570630816377899,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.7031193360122094,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.7078329832042592,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "joint_active_days": 22,
+    "price_pnl_dollar_correlation": 0.9542897097128488,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "joint_active_days": 22,
+    "price_pnl_dollar_correlation": 0.9542822022561608,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.7559207881625605,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.7565608116505496,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.656282387015341,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.679744817372953,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.6692033991910314,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.672093279566236,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.7206792940083897,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 30,
+    "price_pnl_dollar_correlation": 0.7251716726537755,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.9999967929634687,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.7049909258793488,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.7060874670792909,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.4573341395824954,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.4759249750627786,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.7850945791894537,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 22,
+    "price_pnl_dollar_correlation": 0.7293292228825862,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.8140313644598338,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.8269096505063304,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.7051674619449406,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.7062623891390416,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.4574557567387814,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.47606075116862495,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.7856099498301697,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 22,
+    "price_pnl_dollar_correlation": 0.7302042516452367,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.8141959833728074,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 23,
+    "price_pnl_dollar_correlation": 0.8271142541059812,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.9996496334850765,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.639114523813216,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.6381972496362583,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 34,
+    "price_pnl_dollar_correlation": 0.8667271451917852,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.7834146738421602,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.7363736390637562,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.7332059442943683,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.6400949816763243,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.6425576524193936,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 34,
+    "price_pnl_dollar_correlation": 0.8659114648810174,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.7818580169890269,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.7456039143982883,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.7425225598280751,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "right": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.9861707557862174,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 34,
+    "price_pnl_dollar_correlation": 0.5773640242415544,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.3883414502983236,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.5984961621460719,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.5919001121620332,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip3",
+    "joint_active_days": 34,
+    "price_pnl_dollar_correlation": 0.5941439330905348,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.4188928049719962,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.6364588298419774,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 48,
+    "price_pnl_dollar_correlation": 0.6315622691505842,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_ordinary7_reversal_control_slip3",
+    "right": "daily_archive_ordinary7_reversal_control_slip10",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.9971406337237435,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_ordinary7_reversal_control_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 34,
+    "price_pnl_dollar_correlation": 0.9219104228786683,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_ordinary7_reversal_control_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 34,
+    "price_pnl_dollar_correlation": 0.9211781485521188,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_ordinary7_reversal_control_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip3",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.8736547685672598,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_ordinary7_reversal_control_slip10",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 31,
+    "price_pnl_dollar_correlation": 0.8733193951604163,
+    "different_gross_risk_not_adjusted": true
+  },
+  {
+    "left": "daily_archive_max7_lottery_reversal_slip3",
+    "right": "daily_archive_max7_lottery_reversal_slip10",
+    "joint_active_days": 58,
+    "price_pnl_dollar_correlation": 0.9988553732731823,
+    "different_gross_risk_not_adjusted": true
+  }
+]

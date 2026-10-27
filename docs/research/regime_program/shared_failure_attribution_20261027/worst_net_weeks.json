@@ -1,0 +1,314 @@
+[
+  {
+    "id": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip3",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -588.829177929867
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -552.3825303114627
+      },
+      {
+        "week": "2025-W05",
+        "net_pnl": -313.5332191939324
+      },
+      {
+        "week": "2025-W44",
+        "net_pnl": 0.0
+      },
+      {
+        "week": "2026-W12",
+        "net_pnl": 0.0
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_funding7_raw_cap10000_slip10",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -599.1086646968379
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -563.3596772865167
+      },
+      {
+        "week": "2025-W05",
+        "net_pnl": -309.7551033460768
+      },
+      {
+        "week": "2025-W44",
+        "net_pnl": 0.0
+      },
+      {
+        "week": "2026-W12",
+        "net_pnl": 0.0
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip3",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -568.1892359644098
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -532.950869023005
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -331.9594906538623
+      },
+      {
+        "week": "2025-W05",
+        "net_pnl": -0.9805529156456032
+      },
+      {
+        "week": "2025-W01",
+        "net_pnl": 0.0
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_funding7_cost_floor_cap10000_slip10",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -577.0772047130013
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -542.5488476478567
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -340.5067364570332
+      },
+      {
+        "week": "2025-W05",
+        "net_pnl": -0.9767177672456455
+      },
+      {
+        "week": "2025-W01",
+        "net_pnl": 0.0
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_max28_cap10000_slip3",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -496.7191590735292
+      },
+      {
+        "week": "2025-W07",
+        "net_pnl": -333.5587925847012
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -316.39972559796115
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -239.43636490002973
+      },
+      {
+        "week": "2025-W08",
+        "net_pnl": -215.6389200375579
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_max28_cap10000_slip10",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -502.99172853622804
+      },
+      {
+        "week": "2025-W07",
+        "net_pnl": -333.0499909388982
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -320.85224548674523
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -248.45425661285117
+      },
+      {
+        "week": "2025-W08",
+        "net_pnl": -202.58665122680577
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip3",
+    "top5_negative_week_share": 0.9175345001900479,
+    "weeks": [
+      {
+        "week": "2025-W07",
+        "net_pnl": -442.5527100435156
+      },
+      {
+        "week": "2025-W03",
+        "net_pnl": -434.0248081072168
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -230.72326398384394
+      },
+      {
+        "week": "2025-W08",
+        "net_pnl": -137.00172263426612
+      },
+      {
+        "week": "2025-W02",
+        "net_pnl": -108.36045604245373
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_continuous2025_2026_momentum28_control_cap10000_slip10",
+    "top5_negative_week_share": 0.9497494463863473,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -443.6550996387723
+      },
+      {
+        "week": "2025-W07",
+        "net_pnl": -443.51633185516584
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -237.20900487416475
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -151.22726167529981
+      },
+      {
+        "week": "2025-W02",
+        "net_pnl": -115.56274958506037
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip3",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -635.0951971658196
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -504.2459446295179
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -331.6401133480085
+      },
+      {
+        "week": "2025-W44",
+        "net_pnl": 0.0
+      },
+      {
+        "week": "2026-W12",
+        "net_pnl": 0.0
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip10",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -644.5204261897015
+      },
+      {
+        "week": "2025-W05",
+        "net_pnl": -434.64765378354605
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -343.22649347128754
+      },
+      {
+        "week": "2025-W44",
+        "net_pnl": 0.0
+      },
+      {
+        "week": "2026-W12",
+        "net_pnl": 0.0
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip3",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -479.6260082295739
+      },
+      {
+        "week": "2025-W08",
+        "net_pnl": -427.5136113516546
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -409.1159371841877
+      },
+      {
+        "week": "2025-W09",
+        "net_pnl": -371.5230535181654
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -265.2679572551515
+      }
+    ]
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip10",
+    "top5_negative_week_share": 1.0,
+    "weeks": [
+      {
+        "week": "2025-W03",
+        "net_pnl": -481.53554030885425
+      },
+      {
+        "week": "2025-W08",
+        "net_pnl": -433.74668811560514
+      },
+      {
+        "week": "2025-W09",
+        "net_pnl": -367.41666234884906
+      },
+      {
+        "week": "2025-W06",
+        "net_pnl": -361.9750662273327
+      },
+      {
+        "week": "2025-W04",
+        "net_pnl": -269.82385318302477
+      }
+    ]
+  }
+]
