@@ -1,44 +1,36 @@
 {
   "schema": "research-depth-goal-validation.v1",
-  "version": "20261026_v003",
-  "decision_contract_revision": "20261027",
-  "validated_scope": "深度目标、单一持有政策反证、原路径桥接、TON明确提前退出与恢复浮点边界，以及现有界面/API；盈利/外部/未见验证未完成",
+  "version": "20261027_v004",
+  "validated_at_utc": "2026-10-27T06:05:04.754925+00:00",
+  "validated_scope": "本次仅核验目标修订、原件保全、模块/组合门槛区分与8794现有API；不重新核验旧金融账户、不声称本次完成浏览器渲染或外部审计。",
   "checks": {
     "previous_goal_bytes_preserved": true,
-    "portfolio_targets_unchanged": true,
-    "historical_results_unchanged": true,
-    "permissions_unchanged": true,
+    "only_goal_definition_changed": true,
+    "portfolio_economic_targets_unchanged": true,
+    "module_acceptance_unchanged": true,
+    "previous_research_stage_and_results_preserved": true,
     "four_requested_dimensions_present": true,
-    "pre_evaluation_decision_record_required": true,
-    "research_and_investment_success_separated": true,
-    "portfolio_actuals_remain_unknown": true,
-    "diagnostic_financial_account_separate_from_profit_goal": true,
-    "matched_domain_and_source_equivalence_counts_verified": true,
-    "benchmark_tradability_scope_explicit": true,
-    "baseline_plus_at_most_one_variant_explicit": true,
-    "original_method_vs_local_adaptation_separated": true,
-    "intent_vs_realized_risk_distinguished": true,
-    "BTC_role_and_direction_control_frozen_artifacts_verified": true,
-    "raw_economic_vs_price_input_distinguished": true,
-    "source_monthly_factor_vs_net_account_distinguished": true,
-    "incomplete_horizon_not_filled_or_spliced": true,
-    "four_monthly_accounts_and_source_aliases_verified": true,
-    "new_engine_has_only_registered_policy_edits": true,
-    "two_reference_paths_exactly_reproduced": true,
-    "four_policy_accounts_and_one_selected_case_separate": true,
-    "realized_risk_change_explicit": true,
-    "exact_money_restore_and_bounded_exposure_sums_separate": true,
-    "existing_interface_shows_latest_holding_policy_diagnostic": true
+    "one_mechanism_and_one_variant_ceiling": true,
+    "portfolio_actuals_unknown": true,
+    "profit_and_external_validation_incomplete": true,
+    "existing_api_exposes_revision": true,
+    "api_protocol_hash_matches_file": true
   },
+  "previous_validation": "protocol_archive/20261027_before_depth_v004/depth_contract_validation.json",
   "files_sha256": {
-    "docs/research/regime_program/targets.json": "eb991a6883e3e5a22e1b3554f39e850fee2ddc4fc7f759d51aee97c64f7a1650",
-    "docs/research/regime_program/README.md": "4d862fecf9479462aca4415fecaf839499f8ddf089507a2992a24334a0b28929",
-    "docs/research/regime_program/depth_sources.json": "c44bae71f68cf47262dbf1e784a1925f87ad281badffbbbe65d5a53ffbb85ab4",
-    "docs/research/regime_program/protocol_archive/20261027_before_decision_contract/manifest.json": "d4c8eb6fb3de15d93b7bf535aca2c44134989d8b77393de6ed94b5454fb6d5be"
+    "docs/research/regime_program/targets.json": "4d6d2a741effec0b3e4fd7078112c810ab13aa2cb1b0d020008f33a05ddcb2a2",
+    "docs/research/regime_program/README.md": "af873942c0b1fb4f0a2e41be0cd9a8bbb98c11428ec14c7199c9e047527c820b",
+    "docs/research/regime_program/depth_sources.json": "7a56cc59aee2e8a476e05eabe56a68344eb9c29a37735a047e14ad10e90b2f1e",
+    "docs/research/regime_program/protocol_archive/20261027_before_depth_v004/manifest.json": "cc266324b90d4a9232374ea4b1e69ea467cd253fa84379c44fbad471f87bb149"
   },
+  "existing_regression_tests": {
+    "command": "python -m pytest -q --confcutdir=tests/research_mainline tests/research_mainline/test_module_gate.py",
+    "passed": 8,
+    "initial_default_collection": "未执行测试：共享conftest所需dotenv未安装；限定本组纯模块测试的conftest范围后通过，未安装依赖或改变环境。"
+  },
+  "new_financial_experiments": 0,
   "profit_goal_met": false,
   "third_party_review_performed": false,
   "independent_unseen_validation_completed": false,
-  "orders_enabled": false,
-  "delivery_verification_sha256": "69017de7bc13343ea92cba009469220c68723b05eabead18f48c6ae05e7475bf"
+  "orders_enabled": false
 }

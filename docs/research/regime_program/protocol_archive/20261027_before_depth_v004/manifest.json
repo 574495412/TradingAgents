@@ -1,0 +1,10 @@
+{
+  "schema": "goal-revision-inputs.v1",
+  "files_sha256": {
+    "targets.json": "eb991a6883e3e5a22e1b3554f39e850fee2ddc4fc7f759d51aee97c64f7a1650",
+    "README.md": "4d862fecf9479462aca4415fecaf839499f8ddf089507a2992a24334a0b28929",
+    "depth_sources.json": "c44bae71f68cf47262dbf1e784a1925f87ad281badffbbbe65d5a53ffbb85ab4",
+    "depth_contract_validation.json": "02870cd12551faf7cc5550042c60816682e20c2901f4ba98fe0247a8e1b995b4"
+  },
+  "reason": "按用户四项要求收紧判定标准；保存旧目标及其验证记录，不重写历史研究结果。"
+}

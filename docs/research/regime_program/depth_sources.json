@@ -1,7 +1,7 @@
 {
   "schema": "research-depth-method-sources.v1",
   "verified_read_at_utc": "2026-10-26T14:46:27Z",
-  "scope": "仅为目标设计引用的三份原始研究，不是新增市场数据、盈利结果或安装依赖",
+  "scope": "目标设计所用原始研究与原始记录入口；核对网页不代表已采集数据、验证盈利或完成第三方复核。",
   "sources": [
     {
       "id": "aqr-trading-costs",
@@ -26,6 +26,29 @@
       "version": "2015-02-27",
       "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
       "use": "PBO/CSCV用于适用试验集合的选择稳定性诊断，不能把已看的历史转换成新的未见证据。"
+    }
+  ],
+  "goal_revision": "20261027_v004",
+  "current_revision_source_checks": [
+    {
+      "url": "https://data.binance.vision/",
+      "verified_on": "2026-10-27",
+      "use": "原始交易所归档入口；本次只核对入口，未下载新市场数据。"
+    },
+    {
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "verified_on": "2026-10-27",
+      "use": "申报历史与XBRL接口边界；财务聚合事实需回到具体申报和历史可用时点。"
+    },
+    {
+      "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+      "verified_on": "2026-10-27",
+      "use": "多重尝试和非正态的业绩膨胀；校正需完整试验史及适用假设。"
+    },
+    {
+      "url": "https://fairmodel.econ.yale.edu/ec439/mosk.pdf",
+      "verified_on": "2026-10-27",
+      "use": "趋势原始研究的机制、样本和方法；不把该期货样本的收益继承到本地加密适配。"
     }
   ]
 }
