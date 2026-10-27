@@ -28,7 +28,7 @@
       "use": "PBO/CSCV用于适用试验集合的选择稳定性诊断，不能把已看的历史转换成新的未见证据。"
     }
   ],
-  "goal_revision": "20261027_v004",
+  "goal_revision": "20261027_v006",
   "current_revision_source_checks": [
     {
       "url": "https://data.binance.vision/",
@@ -51,5 +51,23 @@
       "use": "趋势原始研究的机制、样本和方法；不把该期货样本的收益继承到本地加密适配。"
     }
   ],
-  "dated_carry_source_review": "dated_carry_feasibility_20261027/source_method_mapping.json"
+  "dated_carry_source_review": "dated_carry_feasibility_20261027/source_method_mapping.json",
+  "goal_rewrite_review": {
+    "checked_on_utc": "2026-10-27T10:00:19.378793+00:00",
+    "scope": "仅复核目标方法依据；未获取新策略收益、第三方复核或账户记录。",
+    "primary_sources": [
+      {
+        "url": "https://www.aqr.com/insights/research/working-paper/trading-costs",
+        "supports": "执行成本应以真实成交校准；该股票研究参数不可直接移植加密。"
+      },
+      {
+        "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+        "supports": "多重尝试和非正态会膨胀报告夏普；使用校正需要试验史及适用假设。"
+      },
+      {
+        "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+        "supports": "区分原始申报历史和跨申报聚合XBRL；股票任务仍独立执行。"
+      }
+    ]
+  }
 }

@@ -1,0 +1,11 @@
+{
+  "schema": "depth-v006-predecessor",
+  "previous_commit": "16f75b8",
+  "files_sha256": {
+    "targets.json": "1beb2945b8b2593bcbf3e4cbe4ea8f7b5e08a5cf7809a45a24179f09ba364ea1",
+    "README.md": "65f578e6d95a46a9be434f909e5b4e635b68f4e94f194bd8857bab98b5b7391c",
+    "depth_sources.json": "8e50db36762403cc52e795abb17ef0e560fca7081ab4a6f8e0f5288593400667",
+    "depth_contract_validation.json": "83a70f6c47bd697ef2fdd393f18a526c7b3cd0bd1272e0c1ff288c8ce4816f57"
+  },
+  "economic_results_rewritten": false
+}
