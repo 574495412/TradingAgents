@@ -1,0 +1,9 @@
+{
+  "manifest": {
+    "execution_goal_snapshot.json": "2ae983ee2562fc276d3ef313bc2f38d3da3c990bdaf578f5e6682111525a66d8",
+    "README.md": "ab7e33310092b5e5cb8dc1b6d4f2957c1072e51675318deb794366019cb19e24",
+    "verification.json": "0086a0eff97623bed91c396bbb353d278996f56dd38c04748be4a61b4c7e1ae4"
+  },
+  "financial_strategy_accounts": 0,
+  "profit_goal_met": false
+}

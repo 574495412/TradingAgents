@@ -1,0 +1,15 @@
+{
+  "schema":"carry-exit-buffer-counterfactual.v1",
+  "version":"20261027_v001",
+  "base_source":"data/research/carry_exit_cases_20261026_v003",
+  "base_run":"results/research/carry_exit_case_accounts_20261026_v001",
+  "base_input_review":"results/research/carry_exit_case_input_review_20261026_v002",
+  "purpose":"One finite execution counterfactual after observing HIFI terminal residual: keep the identical original entry, size, fees, risk and exit-submission clock; allow outstanding exits to consume the already-known pre-cessation buffer. Do not mistake a one-bar terminal protocol for proven impossibility of exit.",
+  "rule":"Request both legs at original case deadline minus5min, exactly as baseline. Hard replay end is the earliest actually known spot/perpetual market cessation minus5min. Stop before the last possible market bar rather than assume a fill at or after cessation. Use only clauses visible at original decision. No new entries, no future funding used in selection, no fee or risk optimization.",
+  "engine":"../freqtrade/research/crypto/spot_perpetual_account_v2.py",
+  "engine_change":"Only accept explicit signal exit_reason for scheduled buffer; all pricing, fee, funding, wallet and risk logic remains unchanged. Original frozen engine and all baseline outputs stay intact.",
+  "budget":{"new_http_requests":0,"new_archives":0,"case_paths":4,"cash_paths":2,"nonflat_process_restores":4,"parameter_grid":false},
+  "required_checks":["new source windows independently checked against same raw CSV and exact funding responses", "baseline and buffer cash/NAV prefix identical through original cutoff", "entry and full prefix source values unchanged", "residual versus actual delayed fills explicitly reported", "internal audit and actual new-process recovery"],
+  "interpretation":"This tests execution-window truncation in two selected cases, not strategy profitability, population capacity, new independent trials or unseen validation. Remaining one-leg risk and slippage during unwind must be retained.",
+  "financial_strategy_accounts":0,"profit_goal_met":false,"portfolio_actual":null,"independent_oos":false,"external_third_party_review":false,"orders_enabled":false,"production_eligible":false
+}

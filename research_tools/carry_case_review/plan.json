@@ -1,0 +1,30 @@
+{
+  "schema": "carry-exit-case-review.v1",
+  "version": "20261026_v001",
+  "purpose": "Deeply test the two already identified high-funding/known-exit cases using real spot/perpetual/mark bars and exact settlement events. These are deliberately selected diagnostic cases, not independent strategy samples, a multistrategy account, a new OOS test or an estimate of expected return.",
+  "formal_goal": "docs/research/regime_program/targets.json",
+  "parent_boundaries": "results/research/matched_carry_boundaries_20261026_v001",
+  "parent_horizon": "results/research/matched_carry_horizon_inputs_20261026_v001",
+  "parent_bundle": "data/research/sparse_market_bundle_20261026_v001",
+  "perpetual_raw": "data/research/expanded_5m_market_20261026_v001",
+  "funding_raw": "data/research/expanded_exact_funding_collection_20261026_v001/raw",
+  "engine": "../freqtrade/research/crypto/spot_perpetual_account.py",
+  "cases": [
+    {"symbol":"BNXUSDT","decision":"2025-03-17T00:00:00+00:00","exit_deadline":"2025-03-17T08:30:00+00:00","month":"2025-03","reason":"Known USD-M entry cutoff precedes spot cessation; request pair exit one5m interval before deadline, no automatic settlement."},
+    {"symbol":"HIFIUSDT","decision":"2025-09-15T00:00:00+00:00","exit_deadline":"2025-09-17T02:30:00+00:00","month":"2025-09","reason":"Known spot cessation minus30min; future perpetual end notice was not visible at decision and cannot alter this case."}
+  ],
+  "known_before_registration": "Past7day signals, daily spot feasibility, both exit schedules and funding record counts/first reported future events have already been inspected. Case selection is an explanatory diagnostic, not untouched evaluation. New spot5m and mark5m outcomes have not yet been acquired in this case study.",
+  "identity_scope": "Only the two named episodes: BinaryX(BNX) and Hifi Finance(HIFI). Use explicit market-specific official spot/perpetual clauses already sealed, not substring/ticker title matches. Current bodies at claimed publication+5min remain an assumption; historical original versions, client eligibility and payable customer cash are not certified. No token alias transfer.",
+  "single_slot_budget": "10000USDT reference cash account with one625USDT spot-budget slot and matched net base short, other slots remain cash. This is one quarter of the old25percent spot allocation, not increased leverage. Isolated futures wallet initially70percentNAV; remaining quote cash30percentNAV. No annualized return, Sharpe or population win-rate claim from these short cases.",
+  "account": {"capital":10000,"spot_fee_bps":10,"perpetual_fee_bps":5,"entry_slippage_buffer_bps":10,"initial_futures_wallet_fraction":0.7,"asset_spot_fraction":0.0625,"initial_gross_target":0.125,"gross_reduction_trigger":0.8,"gross_reduction_target":0.5,"participation":0.01,"drawdown_halt":0.15,"initial_margin_ratio":1.0,"maintenance_stress_ratio":0.05,"margin_exit_ratio":0.2,"rearm_hours":24},
+  "slippage_bps_each_leg_each_side": [3,10],
+  "execution": "Reuse frozen segregated-wallet dense engine only on complete real case windows. Submit at decision and fill next completed5m close independently per leg at1percent actual quote-volume cap; spot buy fee in base, spot sell fee in quote. Events paid only to inventory held before the exact settlement. End-unwind requested one5m interval before registered deadline; residual remains marked and disqualifies full-exit interpretation. Conservative intrabar envelopes are not exact tick drawdown.",
+  "counterfactual": "Compare actual modeled matched-case cash versus cash. Separately attribute the same executed perpetual leg price/funding/fees, actual spot leg and basis change; that leg attribution is not an independently executable unhedged strategy or a pure causal estimate. Report the earlier prorated forecast alongside actual reported held funding, without refitting the rule.",
+  "required_evidence": ["officialZIP/checksum and raw spot/perpetual/mark case-window CSV values", "independent Decimal millisecond funding reconstruction from original raw responses", "full event/wallet/inventory/NAV path reconciliation", "real disk checkpoint restored by a new Python process while nonflat", "case fees/slippage/funding/basis/price/open-loss and boundary audit"],
+  "source_repository_commit": "d571690eb66760763b0bd6e27e8cd35603c7e244",
+  "spot_archive": "https://data.binance.vision/data/spot/monthly/klines/{symbol}/5m/{symbol}-5m-{month}.zip",
+  "mark_archive": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/{symbol}/5m/{symbol}-5m-{month}.zip",
+  "budget": {"new_spot_archives":2,"new_mark_archives":2,"maximum_http_requests":16,"maximum_source_bytes":33554432,"case_paths":4,"cash_paths":2,"maximum_process_restore_cases":4,"parameter_grid":false},
+  "decision_rule": "Explain the observed forecast/exit/cost/basis failure or support in these two cases only. A positive case cannot qualify the mechanism, prove capacity or meet the20/30percent target. A negative case cannot reject the entire funding family. Stop broad source/model expansion and use the result to choose the next falsifiable question.",
+  "financial_strategy_accounts":0,"portfolio_actual":null,"profit_goal_met":false,"external_third_party_review":false,"independent_oos":false,"payable_customer_cash_certified":false,"orders_enabled":false,"production_eligible":false
+}

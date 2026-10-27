@@ -1,0 +1,260 @@
+{
+  "schema": "carry-exit-depth-review.v1",
+  "selected_cases": 2,
+  "case_paths": 8,
+  "cash_paths": 4,
+  "financial_strategy_accounts": 0,
+  "all_eight_case_paths_negative": true,
+  "cases": [
+    {
+      "symbol": "BNXUSDT",
+      "case_start": "2025-03-17T00:00:00+00:00",
+      "original_exit_cutoff": "2025-03-17T08:30:00+00:00",
+      "buffer_replay_end": "2025-03-17T08:55:00+00:00",
+      "actual_model_last_exit": "2025-03-17T08:30:00+00:00",
+      "onebar_net_by_slippage": {
+        "3": -2.66826644687535,
+        "10": -4.663834866543766
+      },
+      "buffer_net_by_slippage": {
+        "3": -2.66826644687535,
+        "10": -4.663834866543766
+      },
+      "onebar_residual_by_slippage": {
+        "3": {},
+        "10": {}
+      },
+      "buffer_residual_pairs": 0,
+      "buffer_had_hedge_failure": false,
+      "price_leg_net_pnl": -4.069655264056792,
+      "funding": 4.393513013801767,
+      "fees": 2.1367897044813713,
+      "cash_slippage": 2.8509029118067675,
+      "net_pnl": -4.663834866543163,
+      "paid_funding_events": 2,
+      "paid_rate_sum": 0.00569888,
+      "spot_gross_price_pnl": 187.0728629445481,
+      "perp_gross_price_pnl": -191.14251820860488,
+      "actual_entry_notionals": {
+        "spot": 618.5105935176091,
+        "perp": 618.4498882536715
+      },
+      "cash_baseline_pnl": 0,
+      "maximum_observed_case_drawdown": 0.0010266563319309974,
+      "capacity_proxy_only": {
+        "entry_requests": 1,
+        "hedge_failures": 0,
+        "partial_exit_intervals": 0,
+        "requested_notional": 1248.8590492571834,
+        "filled_notional": 1236.9604817712807,
+        "maximum_exit_delay_minutes": 5.0
+      },
+      "net_cash_identity_error": 6.03073146976385e-13,
+      "cagr": null,
+      "sharpe": null,
+      "population_win_rate": null,
+      "strategy_admitted": false
+    },
+    {
+      "symbol": "HIFIUSDT",
+      "case_start": "2025-09-15T00:00:00+00:00",
+      "original_exit_cutoff": "2025-09-17T02:30:00+00:00",
+      "buffer_replay_end": "2025-09-17T02:55:00+00:00",
+      "actual_model_last_exit": "2025-09-17T02:35:00+00:00",
+      "onebar_net_by_slippage": {
+        "3": -7.855934304532639,
+        "10": -9.198459054516206
+      },
+      "buffer_net_by_slippage": {
+        "3": -7.000785202351835,
+        "10": -8.345730730372452
+      },
+      "onebar_residual_by_slippage": {
+        "3": {
+          "HIFIUSDT": {
+            "id": 1,
+            "symbol": "HIFIUSDT",
+            "entry_time": "2025-09-15T00:05:00+00:00",
+            "spot_q": 407.7370372230191,
+            "perp_q": 0.0,
+            "perp_entry": 0.455833209,
+            "cash_flow": -55.09194387719117,
+            "fees": 1.3929871381376515,
+            "slippage": 0.561307627319656,
+            "hedge_failed": true,
+            "exit_request": {
+              "submitted_at": "2025-09-17T02:25:00+00:00",
+              "reason": "scheduled_terminal",
+              "remaining_q": 0.0
+            }
+          }
+        },
+        "10": {
+          "HIFIUSDT": {
+            "id": 1,
+            "symbol": "HIFIUSDT",
+            "entry_time": "2025-09-15T00:05:00+00:00",
+            "spot_q": 406.85193001849575,
+            "perp_q": 0.0,
+            "perp_entry": 0.45551402999999996,
+            "cash_flow": -56.298893288900786,
+            "fees": 1.3933262685533447,
+            "slippage": 1.8711280968349029,
+            "hedge_failed": true,
+            "exit_request": {
+              "submitted_at": "2025-09-17T02:25:00+00:00",
+              "reason": "scheduled_terminal",
+              "remaining_q": 0.0
+            }
+          }
+        }
+      },
+      "buffer_residual_pairs": 0,
+      "buffer_had_hedge_failure": true,
+      "price_leg_net_pnl": -5.277856012369853,
+      "funding": 0.2918618061893314,
+      "fees": 1.441327432275594,
+      "cash_slippage": 1.918409091917753,
+      "net_pnl": -8.34573073037387,
+      "paid_funding_events": 12,
+      "paid_rate_sum": 0.00066714,
+      "spot_gross_price_pnl": -572.7695158392829,
+      "perp_gross_price_pnl": 567.4916598269131,
+      "actual_entry_notionals": {
+        "spot": 768.9860701848379,
+        "perp": 761.1236138125201
+      },
+      "cash_baseline_pnl": 0,
+      "maximum_observed_case_drawdown": 0.0021964678064981813,
+      "capacity_proxy_only": {
+        "entry_requests": 1,
+        "hedge_failures": 1,
+        "partial_exit_intervals": 1,
+        "requested_notional": 1255.7735092392204,
+        "filled_notional": 1530.109683997358,
+        "maximum_exit_delay_minutes": 10.0
+      },
+      "net_cash_identity_error": -1.4175327578413999e-12,
+      "cagr": null,
+      "sharpe": null,
+      "population_win_rate": null,
+      "strategy_admitted": false
+    }
+  ],
+  "internal_audit_maximum_nav_error": 3.637978807091713e-12,
+  "internal_audited_nav_points": 2860,
+  "process_restores": [
+    {
+      "case": "BNXUSDT_3",
+      "first_pid": 20031,
+      "restored_pid": 20032,
+      "checkpoint_sha256": "73d4c86213f69478436b965034759072654b78c54a1098382e90c8810b378f38",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "BNXUSDT_10",
+      "first_pid": 20034,
+      "restored_pid": 20035,
+      "checkpoint_sha256": "8a2bab2f5d5a794fd830746ccfc7fe1ddd1e28adfd530ed85a519e0eee229a17",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "HIFIUSDT_3",
+      "first_pid": 20038,
+      "restored_pid": 20039,
+      "checkpoint_sha256": "9602001de273b46d4abbc0a79a9f275b289a5f17ea51e79aee1f28a8d8b3f3f1",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "HIFIUSDT_10",
+      "first_pid": 20041,
+      "restored_pid": 20042,
+      "checkpoint_sha256": "60c9c62627724d3332a01837b2dbd3fa8bedf3d3bc1b0dd094591f3431e346b0",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "BNXUSDT_3",
+      "first_pid": 20510,
+      "restored_pid": 20514,
+      "checkpoint_sha256": "57d7161b758c37e967f72c736bb1582ea85e8cc82f6a4f887bdc731f23d3ccf2",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "BNXUSDT_10",
+      "first_pid": 20516,
+      "restored_pid": 20517,
+      "checkpoint_sha256": "8bf6124cd11ba9716ec80edcf9c812f3c13e5638b98b199d9f52174a8aa5c4a5",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "HIFIUSDT_3",
+      "first_pid": 20520,
+      "restored_pid": 20523,
+      "checkpoint_sha256": "7cf61a080714d62561ecb734bdb93e3df765eb8c25f62863ece33c8e31c2d164",
+      "open_pairs_at_split": 1,
+      "passed": true
+    },
+    {
+      "case": "HIFIUSDT_10",
+      "first_pid": 20525,
+      "restored_pid": 20526,
+      "checkpoint_sha256": "5406c3624d3bebb0e4480e155c68297f44d385cdd2d0a00393d2ff846e8e3bdc",
+      "open_pairs_at_split": 1,
+      "passed": true
+    }
+  ],
+  "baseline_prefix_audits": [
+    {
+      "passed": true,
+      "nav_points": 103,
+      "baseline_result_sha256": "a05be31104b7f6408e0e7bd92fe1cd413db67c194e6466b7fc6f021977edbb45",
+      "entry_and_exit_submission_unchanged": true
+    },
+    {
+      "passed": true,
+      "nav_points": 103,
+      "baseline_result_sha256": "8729ed87ce321290a21995ce8ab03ac90fb4efedb6eef6ae022800705cfae38e",
+      "entry_and_exit_submission_unchanged": true
+    },
+    {
+      "passed": true,
+      "nav_points": 607,
+      "baseline_result_sha256": "7e096ccba28387b399aca115e86ee614fc63a7528fee0274b8e8c91058c451a4",
+      "entry_and_exit_submission_unchanged": true
+    },
+    {
+      "passed": true,
+      "nav_points": 607,
+      "baseline_result_sha256": "92e2921093d1a920ff55b648633c67587177782867c5f6f5025f852d7296f3a6",
+      "entry_and_exit_submission_unchanged": true
+    }
+  ],
+  "interpretation": "Selected diagnostic cases only. Single-bar residual does not prove inability to exit. Buffer clears HIFI but does not create net edge. Reported funding and the price/basis path must be evaluated together.",
+  "next_action": "Stop expanding this high-past-funding branch or fitting thresholds on these cases. Explain the fixed40 versus causal-pool result with one preregistered single-variable ablation, keeping the full selection/search history and all failures.",
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/carry_case_review/publish.py": "5048a28e8c7c2f787ca9f9b85ca310a61553ad272b8e5d0c5e88d4e524c0809b",
+    "results/research/carry_exit_case_accounts_20261026_v001/completion.json": "9f5be8d8342054f73a5cd619f31ba27f20d33faef184a007a4f6824533d58601",
+    "results/research/carry_exit_buffer_accounts_20261027_v001/completion.json": "a28a238f2c372eb911942478a015accf3049c8cba19837a1f256b98dee7a5184",
+    "data/research/carry_exit_cases_20261026_v003/completion.json": "babe0d52d63ac8658be24b16f586eb47caae595abf7e90f07e0f29b18bc12626",
+    "docs/research/regime_program/carry_exit_cases_20261027/execution_goal_snapshot.json": "2ae983ee2562fc276d3ef313bc2f38d3da3c990bdaf578f5e6682111525a66d8"
+  },
+  "engineering_compatibility": {
+    "v2_engine_legacy_cash_funding_partial_hedge_tests_passed": 7,
+    "command": "FQ .venv/bin/python -m pytest --noconftest -q /tmp/test_spot_account_v2_compatibility.py",
+    "scope": "Same frozen cash-conservation, exact-funding, partial-leg and restore tests loaded against v2; not economic proof"
+  },
+  "profit_goal_met": false,
+  "portfolio_actual": null,
+  "external_third_party_review": false,
+  "independent_oos": false,
+  "orderbook_capacity_certified": false,
+  "customer_paid_cashflows_certified": false,
+  "production_eligible": false,
+  "orders_enabled": false
+}

@@ -360,9 +360,11 @@
         "expanded_market_inputs_20261026/README.md",
         "expanded_market_inputs_20261026/verification.json",
         "sparse_accounts_20261026/README.md",
-        "matched_carry_feasibility_20261026/README.md"
+        "matched_carry_feasibility_20261026/README.md",
+        "carry_exit_cases_20261027/README.md",
+        "carry_exit_cases_20261027/verification.json"
       ],
-      "outcome": "54案财务复核完成但48策略案均负；逐币对冲的持有期限修正后成本过滤分支无数据候选。当前继续机制反证，尚无合格多策略总账户。"
+      "outcome": "54个策略/现金账户的原经济筛查未过；本轮只做2个选定资金费案例的8条模型路径，全部亏损。HIFI缓冲后能清仓但无净优势，不能推广为独立策略证据。"
     },
     {
       "id": "R07",
@@ -399,9 +401,11 @@
         "expanded_market_inputs_20261026/README.md",
         "expanded_market_inputs_20261026/verification.json",
         "sparse_accounts_20261026/README.md",
-        "matched_carry_feasibility_20261026/README.md"
+        "matched_carry_feasibility_20261026/README.md",
+        "carry_exit_cases_20261027/README.md",
+        "carry_exit_cases_20261027/verification.json"
       ],
-      "outcome": "内部复算与进程恢复已有证据；外部第三方复核、真正未见验证和实盘现金对账尚未取得。"
+      "outcome": "病例原始CSV/Decimal、钱包、库存、资金费和净值完成内部复核，8次真实非空持仓新进程恢复通过；没有外部第三方审计、未见验证、客户现金到账或盘口容量认证。"
     },
     {
       "id": "R08",
@@ -438,7 +442,9 @@
         "expanded_market_inputs_20261026/README.md",
         "expanded_market_inputs_20261026/verification.json",
         "sparse_accounts_20261026/README.md",
-        "matched_carry_feasibility_20261026/README.md"
+        "matched_carry_feasibility_20261026/README.md",
+        "carry_exit_cases_20261027/README.md",
+        "carry_exit_cases_20261027/verification.json"
       ],
       "outcome": "已有结果与目标界面可用；收益与外部验证未达标，交接资格仍未完成。"
     },
@@ -519,7 +525,7 @@
     "audit_passed": true,
     "profit_goal_met": false,
     "source": "sparse_accounts_20261026/verification.json",
-    "next_action": "优先预登记逐币现货多头/永续空头的资金费机制，核验真实现货与同资产身份，再独立双腿成交、基差、隔离钱包及容量验证；对旧固定池差距做有限同配置消融。没有合格收益源前不训练更复杂调权、不增加杠杆。",
+    "next_action": "仅用冻结公式和已有数据做单变量反证，解释固定40币池与时点币池差异；先锁定共同信号、风险、成本与执行，区分候选池变化和执行修正。停止扩大高过去资金费分支，不在这两例上拟合门槛或新增模型。",
     "rounds": [
       {
         "name": "regime",
@@ -590,27 +596,19 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "matched_short_slot_spot_perpetual_carry",
-    "label": "机制深查与独立验证设计",
-    "status": "depth_first_failure_mechanism_review",
-    "report": "matched_carry_feasibility_20261026/README.md",
-    "description": "本轮以收益支付来源、原始事实和独立可反驳证据验收。已有54案内部复算不等于第三方审计；逐币对冲的两个高费率时点按已知退出期限缩短后，均不能覆盖固定成本。没有新的财务账户或盈利准入结论。",
+    "mechanism": "funding_price_hedge_exit_failure_cases",
+    "label": "资金费、基差与退出机制深查",
+    "status": "selected_case_replay_and_internal_audit_complete_no_net_edge",
+    "report": "carry_exit_cases_20261027/README.md",
+    "description": "BNX/HIFI两个已选历史案例完成8条模型路径和原始资金费核对，均亏损。压力情景BNX净亏4.66USDT；HIFI单根退出有残仓，原指令利用退市前缓冲后在下一根五分钟清仓，仍亏8.35USDT。不能把残仓说成无法退出，也不能把案例或内部复算说成策略盈利、第三方审计或未见验证。",
     "new_financial_accounts": 0,
-    "daily_symbols": 88,
-    "requested_months": 1056,
-    "audited_months": 744,
-    "audited_daily_rows": 22547,
-    "unknown_months": 312,
-    "reviewed_boundary_symbols": 6,
+    "modeled_case_paths": 8,
+    "selected_cases": 2,
+    "internal_new_process_restores": 8,
     "portfolio_built": false,
     "portfolio_actual": null,
-    "historical_tradability_certified": false,
-    "payable_cashflows_certified": false,
-    "next_action": "先做透BNX/HIFI原始公告、逐事件可持有资金费、双腿退出和费用闭环，再用单变量消融解释固定池与时点池差异；案例用于反证执行假设，不代替全策略收益证明。仅补改变判断的关键证据，暂不扩大来源或模型清单。",
     "profit_proven": false,
-    "old_unclipped_guarded_data_slots": 2,
-    "horizon_adjusted_guarded_data_slots": 0,
-    "horizon_inputs": "results/research/matched_carry_horizon_inputs_20261026_v001"
+    "next_action": "仅用冻结公式和已有数据做单变量反证，解释固定40币池与时点币池差异；先锁定共同信号、风险、成本与执行，区分候选池变化和执行修正。停止扩大高过去资金费分支，不在这两例上拟合门槛或新增模型。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -784,5 +782,19 @@
       "unknown_with_missing_evidence"
     ],
     "next_mechanism_condition": "当前机制形成可反驳结论或明确缺口后，才登记下一经济机制；达到总账户收益目标仍需至少两个有效且不同的机制。"
+  },
+  "diagnostic_case_evidence": {
+    "source": "carry_exit_cases_20261027/verification.json",
+    "selected_cases": 2,
+    "modeled_case_paths": 8,
+    "cash_control_paths": 4,
+    "financial_strategy_accounts": 0,
+    "all_case_paths_negative": true,
+    "nonflat_new_process_restores": 8,
+    "external_third_party_review": false,
+    "independent_oos": false,
+    "customer_cash_certified": false,
+    "capacity_certified": false,
+    "profit_goal_met": false
   }
 }
