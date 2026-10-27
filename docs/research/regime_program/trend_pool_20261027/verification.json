@@ -1,0 +1,41 @@
+{
+  "schema": "trend-pool-publication-review.v1",
+  "passed": true,
+  "checks": {
+    "all_four_cash_and_stop_audits_bound": true,
+    "all_source_pairs_exact_before_returns": true,
+    "eight_logical_cases_four_actual_accounts": true,
+    "two_costs_and_two_sources_all_PIT_failed": true,
+    "periods_complete_openPnL_and_cash_components_reconcile": true,
+    "holding_restart_actual_different_process_bound": true,
+    "no_capacity_fabricated": true,
+    "BTC_role_and_scope_limit_explicit": true
+  },
+  "maximum_internal_NAV_error_usdt": 2.000888343900442e-10,
+  "independent_numpy_input_weight_error": 3.6637359812630166e-15,
+  "source_hashes": {
+    "/Users/chrise/GitHub/TradingAgents/research_tools/trend_pool_audit/review.py": "df3a6045361ea76f3da52a1d9d32b3350f04fbfa23ed80eaa73cc06e9f06d1b5",
+    "results/research/trend_pool_inputs_20261027_v002_independent_audit.json": "8c6df67931f732108501a42590a9003bbd99415ffdf36a35992b4c57d3ecb469",
+    "results/research/trend_pool_inputs_20261027_v002/completion.json": "1a9cdb886c34c9819156f48f3c623e5e621af15d62dc2ca4fed70d009d4149c5",
+    "results/research/trend_pool_accounts_20261027_v001/completion.json": "851a7939c36409e8439882be971fd30e9fce712b5c45d5a8cd71ed29b89ea39c",
+    "research_tools/trend_stop_audit/review.py": "6ae4f9a96d7d5d1ccc37d01a4e399cb9a96d0f898e942bf2a6a97f2f6370127f",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_fixed40_cap10000_slip3/result.json": "b661516187bea0deedd57854ac3b0203600e6be17bf989d75dff21af45dcda0d",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_fixed40_cap10000_slip3/internal_cash_audit.json": "8b63dc7676706ddba48f0a6c8383d86a1f41a910321b1b57d2a8a1571bebbbc0",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_fixed40_cap10000_slip3/internal_stop_audit.json": "c731bbcf8626edbe35aba4a7a057e0dfcb6afc8a51df74c77091b72d91447f5e",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_fixed40_cap10000_slip10/result.json": "8ffff4e810d111156a568711af0db86782b738e35101d88dfdc309b09dfc98fa",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_fixed40_cap10000_slip10/internal_cash_audit.json": "92c7a8d487c933c7d7d7cab1c3dd7b9aad5786663bd95fb5f6e402440716368a",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_fixed40_cap10000_slip10/internal_stop_audit.json": "29d292d3778a2be8b9021e78c4b388bfa7f082f610b31a7911d4a049a4672a67",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_pit_cap10000_slip3/result.json": "625663526bf82ff33cf4f0b96248e5b40daf0495474d6ac445d3835faad687f9",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_pit_cap10000_slip3/internal_cash_audit.json": "581b91d8c74bbad282a441b0f2d5f2508306b8cef047c8eb208a2b38230d1b6b",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_pit_cap10000_slip3/internal_stop_audit.json": "6afac88cc6312f92462fb43146db13fe2ee4d6f658cd47ed4c6430ad1e7fd062",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_pit_cap10000_slip10/result.json": "41937d6d8f843feb00ca9c8d736ac6e8687b0c870c31fec7dc169037d653a1b9",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_pit_cap10000_slip10/internal_cash_audit.json": "730f9f74d2ceb1dc07297428de8622e4872faea3db8654e01471fefac16ef4b0",
+    "results/research/trend_pool_accounts_20261027_v001/accounts/daily_archive_pit_cap10000_slip10/internal_stop_audit.json": "8709b2993b723fa011429cbe1945918690c47c6e0949cb028a28ee0ee1b1464c"
+  },
+  "new_financial_accounts": 4,
+  "new_economic_variants": 0,
+  "third_party_review": false,
+  "independent_unseen_evidence": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

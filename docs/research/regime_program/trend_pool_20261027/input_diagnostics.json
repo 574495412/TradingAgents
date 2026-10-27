@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "daily_archive",
+    "step": "raw_daily_legacy_eligibility",
+    "hourly_rows_changed": 0,
+    "max_target_change": 0.0
+  },
+  {
+    "variant": "daily_archive",
+    "step": "qualified_daily_domain",
+    "hourly_rows_changed": 12768,
+    "max_target_change": 0.1706784879871507
+  },
+  {
+    "variant": "daily_archive",
+    "step": "qualified_weekly_domain",
+    "hourly_rows_changed": 2016,
+    "max_target_change": 0.24420041018150238
+  },
+  {
+    "variant": "daily_with_complete_5m_reconciliation",
+    "step": "raw_daily_legacy_eligibility",
+    "hourly_rows_changed": 0,
+    "max_target_change": 0.0
+  },
+  {
+    "variant": "daily_with_complete_5m_reconciliation",
+    "step": "qualified_daily_domain",
+    "hourly_rows_changed": 12768,
+    "max_target_change": 0.1706784879871507
+  },
+  {
+    "variant": "daily_with_complete_5m_reconciliation",
+    "step": "qualified_weekly_domain",
+    "hourly_rows_changed": 2016,
+    "max_target_change": 0.24420041018150238
+  }
+]

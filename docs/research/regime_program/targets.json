@@ -596,19 +596,20 @@
     ]
   },
   "current_research_stage": {
-    "mechanism": "trend_stop_policy_controlled_test",
-    "label": "趋势止损锚点反证完成，未支持替换",
-    "status": "controlled_known_history_diagnostic_complete_stop_variant_rejected",
-    "report": "trend_coststop_20261027/README.md",
-    "description": "冻结EWMAC32/128和16%风险预算，完整608日只检验8%止损锚点。恢复精确资金费与执行时序后，原压力净PnL仅变-0.0011USDT。加权成本锚点在8/15bps成本下亏10.75%/11.10%，原规则为+1.44%/-1.71%；变体虽省费用却在2025年提前停机。5条账户内部现金及实际止损轨迹通过、真实持仓跨进程续跑一致；固定40域和全部已访问历史不支持alpha准入。",
-    "new_financial_accounts": 5,
-    "new_economic_variants": 1,
+    "mechanism": "trend_point_in_time_domain",
+    "label": "既有趋势时点池核验完成，未获准入",
+    "status": "matched_known_history_diagnostic_complete_no_admitted_alpha",
+    "report": "trend_pool_20261027/README.md",
+    "description": "相同EWMAC32/128、风险数学、周度候选池和日度信号，在608日连续账户中，时点共同池8/15bps成本下亏10.78%/10.72%并停机；匹配40域为+2.07%/-1.03%。两套同源日档解释的目标精确相同，8个情景复用为4条新账户。NumPy独立数学路径、现金/止损轨迹和真实持仓跨进程恢复通过；仅内部证据。共同池BTC只作基准不入场，不能外推所有主流币趋势。",
+    "new_financial_accounts": 4,
+    "logical_source_domain_cost_cases": 8,
+    "source_duplicate_cases_reused": 4,
+    "new_economic_variants": 0,
     "new_independent_mechanisms": 0,
-    "reused_legacy_endpoint_accounts": 1,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "停止止损锚点分支，不继续改变止损宽度、信号窗口或网络。下一项仅核验现有趋势公式在统一时点候选域的稳定性，保持信号与风险数学，区分原始日档/身份/有效日和候选域影响；未见验证、外部复现与总账户收益继续未完成。"
+    "next_action": "不在当前共同池上调EMA、止损或来源求盈利。先比对原始趋势研究与本地机会集/预测对象/持有频率，明确BTC基准能否交易，再决定是否预登记主流币可交易对照；不把本轮阴性外推为所有趋势失效。外部复现、未见验证与总账户目标仍未完成。"
   },
   "acceptance_version": "module-allocation-portfolio.v2",
   "target_scope": "multi_strategy_total_account",
@@ -796,7 +797,16 @@
       "closeout": "支持且限定适用范围、反驳并终止分支、或未知并列出决定性缺口；研究结题与投资目标达成分别判断。",
       "no_retroactive_registration": "已观察的结果只能登记为历史诊断，不以事后补表宣称预登记或新样本外。"
     },
-    "decision_contract_revision": "20261027"
+    "decision_contract_revision": "20261027",
+    "opportunity_set_contract": {
+      "required_before_evaluation": [
+        "逐机制声明交易标的范围，以及基准是否也可交易",
+        "分别声明候选域更新、信号更新、成交与持有时钟",
+        "说明来源、有效日、身份和资格规则相对原始研究命题的变化"
+      ],
+      "rule": "不机械复用另一机制的共同池定义；不同策略的适用域可以不同，跨域比较先保持合同一致。",
+      "current_limit": "本轮跨币共同池将BTC仅作基准；阴性结论不覆盖BTC可交易的独立时序趋势。"
+    }
   },
   "diagnostic_case_evidence": {
     "source": "carry_exit_cases_20261027/verification.json",
@@ -813,21 +823,39 @@
     "profit_goal_met": false
   },
   "previous_diagnostic_research_stage": {
-    "mechanism": "funding_pool_controlled_bridge",
-    "label": "资金费候选域差异已解释，当前版本未获准入",
-    "status": "controlled_historical_diagnostic_complete_no_admitted_alpha",
-    "report": "funding_pool_bridge_20261027_v002/README.md",
-    "description": "2026冷启动窗口固定40域收益+16.12%，时点域-9.42%。仅新增1条执行诊断账户：69,985行净值和现金与旧引擎逐点相同，敞口误差低于事前容差；共同来源、旧域生命周期和5,832条旧域目标均等价。候选域改变使36/36周目标变化，历史路径净差-2553.84USDT；资金费反而多收933.66，价格风险吞噬收益。含旧账户8个期末持仓和退出准备；不把固定池收益称为可迁移alpha。",
-    "new_financial_accounts": 1,
-    "new_independent_hypotheses": 0,
-    "reused_endpoint_accounts": 2,
-    "exact_input_equivalent_nodes": 3,
+    "mechanism": "trend_stop_policy_controlled_test",
+    "label": "趋势止损锚点反证完成，未支持替换",
+    "status": "controlled_known_history_diagnostic_complete_stop_variant_rejected",
+    "report": "trend_coststop_20261027/README.md",
+    "description": "冻结EWMAC32/128和16%风险预算，完整608日只检验8%止损锚点。恢复精确资金费与执行时序后，原压力净PnL仅变-0.0011USDT。加权成本锚点在8/15bps成本下亏10.75%/11.10%，原规则为+1.44%/-1.71%；变体虽省费用却在2025年提前停机。5条账户内部现金及实际止损轨迹通过、真实持仓跨进程续跑一致；固定40域和全部已访问历史不支持alpha准入。",
+    "new_financial_accounts": 5,
+    "new_economic_variants": 1,
+    "new_independent_mechanisms": 0,
+    "reused_legacy_endpoint_accounts": 1,
     "portfolio_built": false,
     "portfolio_actual": null,
     "profit_proven": false,
-    "next_action": "停止扩展过去7日资金费跨币多空分支；回到中低频趋势主线，先核对既有趋势/动量基线失败的价格暴露与时点候选域影响，再预登记单一时间序列趋势假设和最强对照。保持原完整账户、扣费、风险、容量及未见/外部验证要求。"
+    "next_action": "停止止损锚点分支，不继续改变止损宽度、信号窗口或网络。下一项仅核验现有趋势公式在统一时点候选域的稳定性，保持信号与风险数学，区分原始日档/身份/有效日和候选域影响；未见验证、外部复现与总账户收益继续未完成。"
   },
   "diagnostic_study_evidence": {
+    "kind": "matched_opportunity_domain_known_history",
+    "report": "trend_pool_20261027/README.md",
+    "inputs": "results/research/trend_pool_inputs_20261027_v002",
+    "financial_run": "results/research/trend_pool_accounts_20261027_v001",
+    "verification_sha256": "4b4d72be91fb4d058b4e541a69245e47b2fb959e9bdf442de2e98e1f8c3341f7",
+    "new_financial_accounts": 4,
+    "logical_source_cases": 8,
+    "independent_source_evidence": false,
+    "new_economic_variants": 0,
+    "internal_audit_passed": true,
+    "actual_holding_process_restore_passed": true,
+    "capacity_triggered": false,
+    "BTC_tradable": false,
+    "third_party_review_performed": false,
+    "independent_unseen_validation_completed": false,
+    "profit_goal_met": false
+  },
+  "previous_diagnostic_study_evidence": {
     "kind": "single_stop_policy_counterfactual_on_known_history",
     "report": "trend_coststop_20261027/README.md",
     "inputs": "results/research/trend_coststop_inputs_20261027_v001",
@@ -842,22 +870,6 @@
     "capacity_certified": false,
     "third_party_review_performed": false,
     "independent_unseen_validation_completed": false,
-    "profit_goal_met": false
-  },
-  "previous_diagnostic_study_evidence": {
-    "kind": "controlled_historical_reconciliation",
-    "report": "funding_pool_bridge_20261027_v002/README.md",
-    "inputs": "results/research/funding_pool_bridge_inputs_20261027_v001",
-    "financial_run": "results/research/funding_pool_bridge_accounts_20261027_v001",
-    "publication": "results/research/funding_pool_bridge_publication_20261027_v001",
-    "verification_sha256": "621c7690d6652a1238dceb6d17f8a19a24f29099de75481507455eb783d0de6e",
-    "new_financial_accounts": 1,
-    "new_independent_hypotheses": 0,
-    "internal_audit_passed": true,
-    "third_party_review_performed": false,
-    "independent_unseen_validation_completed": false,
-    "financial_path_computed_once": true,
-    "postprocessing_failures_preserved": true,
     "profit_goal_met": false
   }
 }

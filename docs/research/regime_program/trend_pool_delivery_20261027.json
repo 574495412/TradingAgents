@@ -1,0 +1,147 @@
+{
+  "schema": "trend-pool-delivery-verification.v1",
+  "scope": "本轮匹配候选域研究及现有界面交付；不证明盈利、外部复现或未见表现",
+  "browser": {
+    "chart": {
+      "surface": "standalone sandbox preview; native inline host not inspected",
+      "results": [
+        {
+          "viewport": 736,
+          "appearance": "light",
+          "marks": 4,
+          "width": 704,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "域／成本bps",
+            "匹配40／8",
+            "+2.07%",
+            "时点池／8",
+            "-10.78%",
+            "匹配40／15",
+            "-1.03%",
+            "时点池／15",
+            "-10.72%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(26, 28, 31)",
+          "markFill": "rgb(51, 156, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 736,
+          "appearance": "dark",
+          "marks": 4,
+          "width": 704,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "域／成本bps",
+            "匹配40／8",
+            "+2.07%",
+            "时点池／8",
+            "-10.78%",
+            "匹配40／15",
+            "-1.03%",
+            "时点池／15",
+            "-10.72%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(255, 255, 255)",
+          "markFill": "rgb(131, 195, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 320,
+          "appearance": "light",
+          "marks": 4,
+          "width": 288,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "域／成本bps",
+            "匹配40／8",
+            "+2.07%",
+            "时点池／8",
+            "-10.78%",
+            "匹配40／15",
+            "-1.03%",
+            "时点池／15",
+            "-10.72%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(26, 28, 31)",
+          "markFill": "rgb(51, 156, 255)",
+          "errors": []
+        },
+        {
+          "viewport": 320,
+          "appearance": "dark",
+          "marks": 4,
+          "width": 288,
+          "overflow": false,
+          "overlaps": [],
+          "labels": [
+            "域／成本bps",
+            "匹配40／8",
+            "+2.07%",
+            "时点池／8",
+            "-10.78%",
+            "匹配40／15",
+            "-1.03%",
+            "时点池／15",
+            "-10.72%",
+            "-10",
+            "-5",
+            "0",
+            "608日扣费收益（%）"
+          ],
+          "foreground": "rgb(255, 255, 255)",
+          "markFill": "rgb(131, 195, 255)",
+          "errors": []
+        }
+      ]
+    },
+    "existingUI": {
+      "url": "http://127.0.0.1:8794/research#factor-lab",
+      "newStageVisible": true,
+      "newFinancialAccounts": 4,
+      "errors": []
+    },
+    "testedAt": "2026-10-27T03:51:46.008Z",
+    "tool": "bundled Playwright; Browser plugin unavailable"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "executable": "/Users/chrise/GitHub/freqtrade/.venv/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "pyarrow": "26.0.0"
+  },
+  "checks": {
+    "same_signal_and_risk_math": true,
+    "benchmark_tradability_explicit": true,
+    "four_actual_eight_logical_cases": true,
+    "source_equivalence_checked_before_returns": true,
+    "actual_holding_different_process_resume": true,
+    "failed_pre_financial_tools_preserved": true,
+    "CZ_dist_and_stock_task_untouched": true
+  },
+  "bound_files_sha256": {
+    "docs/research/regime_program/targets.json": "7eacff62b1ed302395036f0475dce9242a6baa6e8bc9a1254810c137710fb036",
+    "docs/research/regime_program/README.md": "6f236a5d3acc892dd992648a4e793bd3faec75609ae9e3abaf76baa9c5f4703e",
+    "docs/research/regime_program/trend_pool_20261027/completion.json": "193df990c055c855cb87901ce360b7e889305385176e87b23e1fe4e76ddf2ac4"
+  },
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

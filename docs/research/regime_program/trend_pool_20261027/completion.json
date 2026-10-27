@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "manifest": {
+    "cash_components.json": "e3b2691787039e9c3e0664a3b1bd6fa45d9bd41867bcd1f7d96a96ab09bae2df",
+    "periods.json": "78c0a1c6c2a21d51a1c09cb41344050c52bc8b1fd020aa847948cfbeb411f3ca",
+    "input_diagnostics.json": "1ade01f59dae7a7eac8b68a36044a53b53ccc8a246a2f4cb184d3c86ace7e8f1",
+    "comparisons.json": "656cc89c8ea3bd40cfc0a0181b30a4c27e143a39451bd7bc8211c138fa13b915",
+    "README.md": "a16c9140d0abf6d667a29e721c0b995b4c56ae638ee89a7465487b6ba44b6de7",
+    "exposure.json": "e1c04500b61f3214b0cbcfcc6bab9d05a23967e0483cdf191428845f7b3bca27",
+    "verification.json": "4b4d72be91fb4d058b4e541a69245e47b2fb959e9bdf442de2e98e1f8c3341f7"
+  },
+  "profit_goal_met": false
+}

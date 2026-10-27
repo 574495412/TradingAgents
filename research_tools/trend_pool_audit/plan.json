@@ -1,0 +1,95 @@
+{
+  "schema": "trend-point-in-time-domain-study.v1",
+  "version": "20261027_v001",
+  "question": "Does the existing risk16 EWMAC32/128 trend survive a change from a fixed40 opportunity domain to the frozen historical point-in-time domain under the same feature, membership clock, execution and risk policy?",
+  "hypothesis": "A claimed price-persistence edge must remain economically credible on the point-in-time domain; an oldfixed40 result alone cannot support it.",
+  "null": "After source/eligibility/clock alignment, the PITtrend has no robust cost-positive advantage. A negative result rejects this implementation for admission, not all trend following.",
+  "alternatives": [
+    "The difference from the old account may be feature-source, validity/identity, or membership cadence rather than expanded domain.",
+    "Incomplete daily source reconciliation can change trend features without changing the earlier common cohorts.",
+    "Mean returns may reflect directional market exposure, early drawdown halts or selection history rather than incremental predictive skill."
+  ],
+  "inputs": {
+    "legacy_inputs": "results/research/forecast_sizing_inputs_20261026_v001",
+    "normalization": "results/research/regime_inputs_20261026_v001/normalization.json",
+    "legacy_eligibility": "results/research/regime_states_20261025_v002/eligible_daily.parquet",
+    "legacy_market": "data/research/github_factor_market_20261025_v001",
+    "legacy_funding": "data/research/funding_cross_section_data_20261026_v001",
+    "daily": "data/research/historical_perpetual_daily_20261026_v002",
+    "cohort": "results/research/sparse_market_cohort_20261026_v003",
+    "bundle": "data/research/sparse_market_bundle_20261026_v001",
+    "reference_run": "results/research/trend_coststop_accounts_20261027_v001"
+  },
+  "source_variants": [
+    "daily_archive",
+    "daily_with_complete_5m_reconciliation"
+  ],
+  "source_scope": "Reuse the two exact frozen daily interpretations and the already frozen replacement-day set; no newarchives, replacing dates, or best-source selection. They are same-exchange sensitivity cases, not independent evidence or full feed certification.",
+  "window": {
+    "id": "continuous2025_2026",
+    "start": "2025-01-01",
+    "end": "2026-09-01"
+  },
+  "formula": "Existing source_features and sized_intent risk output only: EWMAC32/128, robust35day price vol, prior500day5percent floor(min100), fixed2024 mean absolute scale,forecast10/cap20,16percent risk, existing threshold0.32,top10forecaststrength. Reuse exact frozen normalization; no retraining, inversion or new formula.",
+  "warmup": "All EWMfeature histories begin no earlier than the original40 feed2023-08-01. On qualified inputs, mask invalid/zero-volume days and firstobservedsource row, split on calendar gaps or visible episode start; require180consecutive valid complete days before a forecast. Never transfer EWMstate across reused ticker identities or gaps. Global normalization remains the old fixed2024 scalar, disclosed as a portability assumption.",
+  "membership": "For each source, fixed40 and PIT both use past-known weekly liquidity membership:180observations,28completevalidquote days>=50MUSDT,validbeta60,top30,minimum10domainmembers. PITmembership must exactly reproduce all89frozen source anchors before any financial returns. Trend-specific complete-history filtering occurs after common membership; invalid forecasts remain cash without substituting the next asset.",
+  "timing": "Decision uses only prior complete UTC days; weekly membership held until nextregisteredanchor, daily00UTC trendintents. Known lifecycle/type restrictions remain effective intraday through frozen execution directives.",
+  "account": {
+    "capital": 10000,
+    "fee_bps": 5,
+    "slippage_bps": 3,
+    "participation": 0.01,
+    "gross": 0.8,
+    "max_positions": 10,
+    "rebalance_hours": 24,
+    "threshold": 0.0032,
+    "stop_loss": 0.08,
+    "drawdown_halt": 0.15
+  },
+  "stop_policy": "Original same-side-addition newfill8percent one-way ratchet; no weighted-cost alternative. Unknown held marks/terminal cash abort; no reset of highwater or halt.",
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "execution_sources": "Use unchanged bundle on its172names; add old40-only14from their sealed5m/exactfunding. Same union/bars/rates/lifecycle across both principal domains. Compare every old40source row to sealed old reference. If values differ, run at most2registered oldtarget source-bridge accounts before economic interpretation.",
+  "principal_accounts": "2daily sources x2opportunity domains(fixed40,PIT) x2costs =8base accounts. Nodes with exactly identical target tables, shared universe/execution/lifecycle and config may reuse one calculation, with equivalence recorded before returns.",
+  "input_diagnostics_only": [
+    "Reconstruct the old hourly trend targets from its own dailyaggregated5m, oldeligibility and frozen scale.",
+    "Compare oldtargets with newrawdaily using oldeligibility and commonwarmup.",
+    "Then apply qualified daily views and identity/validity filters within old40.",
+    "Then freeze old40membership on the exact weekly clocks. Those inputcuts do not run separate new strategies and cannot assign financial causality to each block."
+  ],
+  "decision_record": {
+    "registration": "before newtrendtargets or accountreturns; existing2025/2026 alreadyconsumed",
+    "primary_effect": "PIT minus matched40 netPnL across both source versions and both costs; report absolute full608day netCAGR/DD/Sharpe/winrate, complete/open cash, yearly/90day slices and observed exposure.",
+    "minimum_useful_total_net_pnl_usdt": 0,
+    "minimum_useful_closed_net_pnl_usdt": 0,
+    "admission": "Provisional only if PIT positive net/closedPnL at bothcosts in bothsources, DD<=15percent and nohalt; separate same-opportunity benchmark, search-bias correction, unseen evidence and external review still required. A module is not required to make20percent; portfolio goal unchanged.",
+    "uncertainty": "Paired daily returns, circular32/128day blocks,seed17,2000resamples,minimum8blockequivalents. No freshOOS or corrected significance from incomplete trial history.",
+    "stopping": "If either source/cost fails, stop this fixed implementation for admission; do not tuneEMA, stop,volrisk, age or source version. If inputreconstruction/hash/sourceaudit fails, preserve and repair technical error without economicchanges; missing heldprice/settlement leaves caseunknown.",
+    "external": "No independentthirdparty review performed; freeze sourcebindings, tables and records for future review.",
+    "unseen": "None. Do not claim all2025/2026or source/control repetitions are independent trials."
+  },
+  "budget": {
+    "max_new_principal_accounts": 8,
+    "max_conditional_source_bridge_accounts": 2,
+    "max_total_new_base_accounts": 10,
+    "new_economic_variants": 0,
+    "new_models": 0,
+    "new_market_archives": 0,
+    "new_formula_parameters": 0
+  },
+  "capacity_followup": {
+    "candidate": "PITonly",
+    "condition": "Bothcosts and bothsources satisfy positive net/closedPnL,DD<=.15,nohalt. If triggered, evaluate samecandidate at100k/1m acrossbothcosts andsources (max8); neverpick sourceafterreturns.",
+    "capitals": [
+      100000,
+      1000000
+    ],
+    "max_accounts": 8
+  },
+  "profit_goal_met": false,
+  "orders_enabled": false,
+  "production_eligible": false,
+  "independent_oos": false
+}

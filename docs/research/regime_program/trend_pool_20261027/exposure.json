@@ -1,0 +1,22 @@
+{
+  "daily_archive_fixed40_cap10000_slip3": {
+    "active_5m_intervals": 171872,
+    "mean_gross_when_active": 0.3083035485003993,
+    "first_halt_request": "2026-08-22T03:20:00+00:00"
+  },
+  "daily_archive_fixed40_cap10000_slip10": {
+    "active_5m_intervals": 171799,
+    "mean_gross_when_active": 0.3082353108913968,
+    "first_halt_request": "2026-08-22T02:30:00+00:00"
+  },
+  "daily_archive_pit_cap10000_slip3": {
+    "active_5m_intervals": 58495,
+    "mean_gross_when_active": 0.17756615083052954,
+    "first_halt_request": "2025-07-23T13:45:00+00:00"
+  },
+  "daily_archive_pit_cap10000_slip10": {
+    "active_5m_intervals": 56551,
+    "mean_gross_when_active": 0.17368913732979338,
+    "first_halt_request": "2025-07-16T21:00:00+00:00"
+  }
+}
