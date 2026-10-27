@@ -1,0 +1,10 @@
+{
+  "manifest": {
+    "factors_README.md": "b136c19df407edffe394a61a8314496a4dd6e9bdf7b1ed9cfb9d97955a42b6c8",
+    "targets.json": "baa8352beb43ea4e63378086a3c9034db99d7dd5971c33918621ad6e5b25abc4",
+    "depth_contract_validation.json": "b4fdaa6a3e1427345640c16dce15b732aadf87bb3e7cf8e16fc3743fa25aa27b",
+    "README.md": "08bf626f524770adb70793d8a982026e716341e5259f3e532e424393f47471cd",
+    "factors_catalog.json": "1bcaeec00ad2b7672adcc49035b2824ea7c370df872973c109aeb147d0b79b92"
+  },
+  "purpose": "Preserve all old goals, stages and factor registry; no old account edits"
+}

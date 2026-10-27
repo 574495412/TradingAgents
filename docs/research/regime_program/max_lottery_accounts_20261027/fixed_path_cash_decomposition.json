@@ -1,0 +1,38 @@
+[
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip3",
+    "price_component_before_fees_slippage_funding_fixed_path": -903.6246291292689,
+    "funding_net": 25.46761219528662,
+    "fees": 43.112897605611934,
+    "slippage_cost": 25.86765723714813,
+    "net_pnl": -947.1375717767423,
+    "not_a_zero_cost_strategy_replay": true
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip10",
+    "price_component_before_fees_slippage_funding_fixed_path": -867.8809590574972,
+    "funding_net": 26.71071401965574,
+    "fees": 36.49668842745044,
+    "slippage_cost": 72.9925089739378,
+    "net_pnl": -950.6594424392297,
+    "not_a_zero_cost_strategy_replay": true
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip3",
+    "price_component_before_fees_slippage_funding_fixed_path": -698.7917390999233,
+    "funding_net": 0.9329480873807227,
+    "fees": 67.41494465777494,
+    "slippage_cost": 40.44890390340406,
+    "net_pnl": -805.7226395737216,
+    "not_a_zero_cost_strategy_replay": true
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip10",
+    "price_component_before_fees_slippage_funding_fixed_path": -615.6194131978941,
+    "funding_net": 0.9391614731291321,
+    "fees": 67.25929299815448,
+    "slippage_cost": 134.51797037688863,
+    "net_pnl": -816.457515099808,
+    "not_a_zero_cost_strategy_replay": true
+  }
+]

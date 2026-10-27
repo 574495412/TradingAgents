@@ -1,0 +1,40 @@
+{
+  "schema": "research-depth-goal-validation.v1",
+  "version": "20261027_v006",
+  "validated_at_utc": "2026-10-27T11:39:54.461004+00:00",
+  "validated_scope": "Frozen860-native-symbol denominator, unapproved provider candidates, source variants and internal prefix arithmetic. Data branch closed unknown; no new economic evidence or qualified identities.",
+  "prior_validation": "docs/research/regime_program/protocol_archive/20261027_before_offline_coverage_v001/depth_contract_validation.json",
+  "checks": {
+    "goals_gates_budget_and_depth_contract_preserved": true,
+    "previous_catalog_stage_preserved": true,
+    "raw_output_manifest_and_registered_inputs_match": true,
+    "bounded_offline_860_symbols_86_formations": true,
+    "full_denominator_and_missing_slots_retained": true,
+    "original_timing_and_local_universe_deviations_disclosed": true,
+    "internal_actual_prefix_audit_matches_output": true,
+    "failed_audit_preserved_and_repair_only_copy": true,
+    "full_rank_difference_kept_without_source_winner_selection": true,
+    "old_financial_results_and_ledgers_unchanged": true,
+    "unknown_branch_closed_no_subsample_economic_evaluation": true,
+    "profit_and_unfinished_gates_not_promoted": true,
+    "existing_API_exact_current_stage_and_depth_goal": true
+  },
+  "files_sha256": {
+    "docs/research/regime_program/targets.json": "baa8352beb43ea4e63378086a3c9034db99d7dd5971c33918621ad6e5b25abc4",
+    "docs/research/regime_program/README.md": "08bf626f524770adb70793d8a982026e716341e5259f3e532e424393f47471cd",
+    "docs/research/regime_program/cross_sectional_momentum_offline_coverage_20261027/completion.json": "a95bfd445adaf3475506acdc822a9ec6a7c6a982e29468ebaebd97465d960837",
+    "docs/research/regime_program/cross_sectional_momentum_offline_coverage_20261027/verification.json": "5f5dacc5db34a332172bfdfcb57bf1f5b7f39467ee50b764e4059587bc4a06ca",
+    "results/research/cross_sectional_momentum_offline_coverage_20261027_v001/completion.json": "9e8206f93ddf4c601b71199a9389b1ff4fe73ca024d7e5255979e162a241e24a"
+  },
+  "old_financial_files_verified": 36,
+  "tests_passed": 6,
+  "new_financial_accounts": 0,
+  "new_economic_variants_evaluated": 0,
+  "data_branch_closed_unknown": true,
+  "profit_goal_met": false,
+  "third_party_review_performed": false,
+  "independent_unseen_validation_completed": false,
+  "orders_enabled": false,
+  "frontend_rebuilt": false,
+  "rendered_UI_retested_this_round": false
+}

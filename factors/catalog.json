@@ -1317,5 +1317,24 @@
     "old_74_columns_unchanged": true,
     "alpha_proven": false,
     "production_eligible": false
+  },
+  "weekly_lottery_research_registry": {
+    "module": "factors/common/weekly_lottery.py",
+    "protocol": "research_tools/max_lottery/economic_plan.json",
+    "mechanism": "weekly_lottery_overpricing_reversal_vs_ordinary7_reversal",
+    "state": "four_audited_continuous_accounts_no_net_edge_current_domain",
+    "asset_classes_math_only": [
+      "crypto",
+      "equity"
+    ],
+    "validated_account_scope": "conditional_native_liquid_USDT_perpetual",
+    "window_unit": "seven complete crypto calendar days; equities require a separately verified session adapter and direction/account",
+    "independent_alpha_proven": false,
+    "original_author_exact_replication": false,
+    "report": "../docs/research/regime_program/max_lottery_accounts_20261027/README.md",
+    "new_economic_variants": 1,
+    "actual_accounts": 4,
+    "source_aliases_not_independent_trials": true,
+    "legacy74_columns_unchanged": true
   }
 }

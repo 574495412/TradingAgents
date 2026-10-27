@@ -1,0 +1,60 @@
+{
+  "question": "MAX方向冲突能否支持有经济增量的新命题？",
+  "published_negative_source": {
+    "authors": "Klaus Grobys; Juha Junttila",
+    "doi": "10.1016/j.intfin.2021.101289",
+    "source_url": "https://jyx.jyu.fi/bitstreams/323af8ba-f93c-453e-9ae1-a97f53de8178/download",
+    "local_original": "data/research/max_lottery_primary_sources_20261027_v001/GJ2021.body",
+    "sha256": "bc64bd2ab49d427b8ec444572bdb85d8a82eaf4efe4cc74706bac8626b66a384",
+    "status": 200,
+    "pages_with_repository_cover": 16,
+    "version": "Cover states Published version; current downloaded cover/PDF bytes, not certified historical publication bytes",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      11,
+      12
+    ],
+    "selection": "As of2016Jan2 market-cap ranks2..21,20assets excludingBTC; YbCoin replaced withMonaCoin due missing data. Not a2019winner list. Fixed cohort has coverage/selection limitations.",
+    "formation": "prior7daily log returns, weekly nonoverlapping groups, equal-weight quintiles; high-minus-low table1negative",
+    "economic_limits": "Author explicitly states original spot shorting constraint and leaves investable long-only profitability beyond paper scope. Arithmetic average of log returns and high-low log spread are not funded wealth returns; no paper return inherited.",
+    "inference": "Original reports random-block bootstrap and trimmed-tail robustness. Local cash never trims tails; no claim exact-author bootstrap or calibrated DSR.",
+    "observation_count_limit": {
+      "paper_daily_observations_claimed": 1463,
+      "nominal_2016_2019_calendar_days": 1461,
+      "paper_price_vector_length_claimed": 1456,
+      "paper_weekly_observations_claimed": 209,
+      "resolution": "Original panel and code unavailable; index/count ambiguities retained, exact reproduction not established."
+    }
+  },
+  "published_positive_comparator": {
+    "authors": "Ozdamar; Akdeniz; Sensoy",
+    "doi": "10.1186/s40854-021-00291-9",
+    "retained_HTML": "data/research/max_effect_sources_20261026_v001/MAX2021.html",
+    "sha256": "0b5bf0949d849fa0e046258854369300057318985abab4d95128692adf72b51b",
+    "definition": "prior28calendar-day maximum simple return, weekly portfolios; broad2014-2020CMC spot sample,6monthage,5MUSDcapfloor; value/equal-weight high-low positive",
+    "current_PDF_capture_status": 301,
+    "redirect_followed": false,
+    "direction_evidence": "Retained native200HTML plus current original-paper text; new publisher redirect receipt retained.",
+    "causal_limit": "Different samples, clocks, weighting and periods mean opposite signs do not identify horizon alone as cause."
+  },
+  "local_frozen_adaptation": {
+    "economic_plan": "research_tools/max_lottery/economic_plan.json",
+    "factor_module": "factors/common/weekly_lottery.py",
+    "candidate": "max7_lottery_reversal",
+    "control": "ordinary7_reversal_control",
+    "departures": [
+      "Dynamic native liquidUSDT perpetual cohort and actual funding rather than fixed2016USDspot20assets",
+      "Same frozen180day/top30/BTCexcluded eligibility, including inherited unused60beta/MAX28 completeness, to keep common opportunity set",
+      "Mon00UTC plus initialJan1 local clock rather than unverified original provider clock",
+      "2..6assets per outer quintile,max12positions,gross0.8,full costs/partial fills/lifecycle/stop/halt",
+      "Matched7day ordinary reversal isolates a strongest alternative explanation; actual risk can still differ",
+      "No marketcap-provider input, no current-survivor truncation, no retroactive fixed-point-in-time certification"
+    ]
+  },
+  "original_method_replication": false,
+  "original_strategy_profit_inherited": false,
+  "new_economic_variants": 1
+}

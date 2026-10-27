@@ -1,0 +1,174 @@
+[
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip3",
+    "kind": "year",
+    "label": "2025",
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2026-01-01T00:00:00+00:00",
+    "days": 365.0,
+    "net_return": -0.09471375717767427,
+    "local_observed_drawdown": 0.1509480540850372,
+    "full_account_highwater_drawdown": 0.1509480540850372,
+    "sharpe": -0.9961994975848326,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 66,
+      "win_rate": 0.2878787878787879,
+      "win_rate_wilson95": [
+        0.19271949979806713,
+        0.4063724940864655
+      ],
+      "profit_factor": 0.6049255911349775,
+      "closed_net_pnl": -947.1375717767461,
+      "expectancy": -14.350569269344637
+    }
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip3",
+    "kind": "year",
+    "label": "2026",
+    "start": "2026-01-01T00:00:00+00:00",
+    "end": "2026-09-01T00:00:00+00:00",
+    "days": 243.0,
+    "net_return": 0.0,
+    "local_observed_drawdown": 0.0,
+    "full_account_highwater_drawdown": 0.15092308045291036,
+    "sharpe": null,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 0,
+      "win_rate": null,
+      "win_rate_wilson95": null,
+      "profit_factor": null,
+      "closed_net_pnl": 0.0,
+      "expectancy": null
+    }
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip10",
+    "kind": "year",
+    "label": "2025",
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2026-01-01T00:00:00+00:00",
+    "days": 365.0,
+    "net_return": -0.095065944243923,
+    "local_observed_drawdown": 0.15030902642865307,
+    "full_account_highwater_drawdown": 0.15030902642865307,
+    "sharpe": -1.2963304350343163,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 55,
+      "win_rate": 0.23636363636363636,
+      "win_rate_wilson95": [
+        0.14366655869733186,
+        0.3634836618916773
+      ],
+      "profit_factor": 0.510878941267677,
+      "closed_net_pnl": -950.6594424392306,
+      "expectancy": -17.284717135258738
+    }
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip10",
+    "kind": "year",
+    "label": "2026",
+    "start": "2026-01-01T00:00:00+00:00",
+    "end": "2026-09-01T00:00:00+00:00",
+    "days": 243.0,
+    "net_return": 0.0,
+    "local_observed_drawdown": 0.0,
+    "full_account_highwater_drawdown": 0.15030902642865307,
+    "sharpe": null,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 0,
+      "win_rate": null,
+      "win_rate_wilson95": null,
+      "profit_factor": null,
+      "closed_net_pnl": 0.0,
+      "expectancy": null
+    }
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip3",
+    "kind": "year",
+    "label": "2025",
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2026-01-01T00:00:00+00:00",
+    "days": 365.0,
+    "net_return": -0.08057226395737216,
+    "local_observed_drawdown": 0.15223745943768907,
+    "full_account_highwater_drawdown": 0.15223745943768907,
+    "sharpe": -0.7106352689141802,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 101,
+      "win_rate": 0.27722772277227725,
+      "win_rate_wilson95": [
+        0.1993181504632866,
+        0.37146233555645136
+      ],
+      "profit_factor": 0.787623762715602,
+      "closed_net_pnl": -805.722639573747,
+      "expectancy": -7.977451876967792
+    }
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip3",
+    "kind": "year",
+    "label": "2026",
+    "start": "2026-01-01T00:00:00+00:00",
+    "end": "2026-09-01T00:00:00+00:00",
+    "days": 243.0,
+    "net_return": 0.0,
+    "local_observed_drawdown": 0.0,
+    "full_account_highwater_drawdown": 0.15223745943768907,
+    "sharpe": null,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 0,
+      "win_rate": null,
+      "win_rate_wilson95": null,
+      "profit_factor": null,
+      "closed_net_pnl": 0.0,
+      "expectancy": null
+    }
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip10",
+    "kind": "year",
+    "label": "2025",
+    "start": "2025-01-01T00:00:00+00:00",
+    "end": "2026-01-01T00:00:00+00:00",
+    "days": 365.0,
+    "net_return": -0.08164575150998077,
+    "local_observed_drawdown": 0.15101115609930993,
+    "full_account_highwater_drawdown": 0.15101115609930993,
+    "sharpe": -0.7426466160115807,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 101,
+      "win_rate": 0.2871287128712871,
+      "win_rate_wilson95": [
+        0.2079764185547036,
+        0.3818804903086015
+      ],
+      "profit_factor": 0.7834856828225907,
+      "closed_net_pnl": -816.4575150998049,
+      "expectancy": -8.083737773265396
+    }
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip10",
+    "kind": "year",
+    "label": "2026",
+    "start": "2026-01-01T00:00:00+00:00",
+    "end": "2026-09-01T00:00:00+00:00",
+    "days": 243.0,
+    "net_return": 0.0,
+    "local_observed_drawdown": 0.0,
+    "full_account_highwater_drawdown": 0.15101115609930993,
+    "sharpe": null,
+    "lifecycle_by_exit_clock": {
+      "complete_lifecycles": 0,
+      "win_rate": null,
+      "win_rate_wilson95": null,
+      "profit_factor": null,
+      "closed_net_pnl": 0.0,
+      "expectancy": null
+    }
+  }
+]

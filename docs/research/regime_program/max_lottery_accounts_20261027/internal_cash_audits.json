@@ -1,0 +1,42 @@
+[
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip3",
+    "passed": true,
+    "nav_rows": 175105,
+    "max_nav_error": 1.6370904631912708e-11,
+    "maximum_participation": 0.0021633515939864876,
+    "funding_events": 680,
+    "complete_lifecycles": 66,
+    "result_sha256": "07b0b57da1c9f447cbaf81f7b7e79edcd4e444f00fc08bf6b46c4c40f42912d5"
+  },
+  {
+    "id": "daily_archive_ordinary7_reversal_control_slip10",
+    "passed": true,
+    "nav_rows": 175105,
+    "max_nav_error": 1.6370904631912708e-11,
+    "maximum_participation": 0.00216183679343053,
+    "funding_events": 635,
+    "complete_lifecycles": 55,
+    "result_sha256": "2e8715e18b229975c24cc4ef3f9f67c573da350959c0667ec3605e786792a219"
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip3",
+    "passed": true,
+    "nav_rows": 175105,
+    "max_nav_error": 3.092281986027956e-11,
+    "maximum_participation": 0.0036535515968945972,
+    "funding_events": 1359,
+    "complete_lifecycles": 101,
+    "result_sha256": "b0020cff163cedff7c5fdc055528d1cf7e5c88efd2336d32e4258e613f94493f"
+  },
+  {
+    "id": "daily_archive_max7_lottery_reversal_slip10",
+    "passed": true,
+    "nav_rows": 175105,
+    "max_nav_error": 2.3646862246096134e-11,
+    "maximum_participation": 0.005069640844354178,
+    "funding_events": 1357,
+    "complete_lifecycles": 101,
+    "result_sha256": "6c2f4fe6ece88254899adb795476f78984a53fe5250614b00ef3df8f27dc782f"
+  }
+]

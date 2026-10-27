@@ -1,0 +1,364 @@
+{
+  "schema": "weekly-lottery-continuous-economic-decision.v1",
+  "decision": "falsified_in_registered_local_domain",
+  "new_economic_variants": 1,
+  "control_policies": 1,
+  "actual_accounts": 4,
+  "logical_source_policy_cost_cases": 8,
+  "source_targets_identical_before_returns": true,
+  "window": {
+    "id": "continuous2025_2026",
+    "start": "2025-01-01",
+    "end": "2026-09-01"
+  },
+  "rows": [
+    {
+      "id": "daily_archive_ordinary7_reversal_control_slip3",
+      "candidate": "ordinary7_reversal_control",
+      "slippage_bps": 3,
+      "source_aliases": [
+        "daily_archive",
+        "daily_with_complete_5m_reconciliation"
+      ],
+      "net_return": -0.09471375717767427,
+      "net_pnl": -947.1375717767423,
+      "ending_equity": 9052.862428223258,
+      "cagr": -0.057986043349354865,
+      "calendar_days": 608.0,
+      "annual_volatility": 0.0738159612445896,
+      "sharpe": -0.7718675226982528,
+      "sortino": -0.9274977861192553,
+      "calmar": -0.38414568310160657,
+      "max_drawdown": 0.1509480540850372,
+      "recovery_days": 599.4131944444445,
+      "closed_trades": 66,
+      "win_rate": 0.2878787878787879,
+      "profit_factor": 0.6049255911349775,
+      "payoff_ratio": 1.4963948833338918,
+      "expectancy": -14.350569269344637,
+      "closed_net_pnl": -947.1375717767461,
+      "beta": -0.015277824621522797,
+      "alpha_annual": -0.05712173941126051,
+      "information_ratio": -0.1055459855392842,
+      "tracking_error": 0.44953140054359747,
+      "benchmark_return": -0.16033646574144633,
+      "var95_daily": 0.0,
+      "cvar95_daily": 0.000425581265568669,
+      "fees": 43.112897605611934,
+      "funding_net": 25.46761219528662,
+      "slippage_cost": 25.86765723714813,
+      "turnover": 9.477179456987951,
+      "mean_gross_exposure": 0.022913389520643396,
+      "max_gross_exposure": 0.8299922944702112,
+      "open_pnl_with_exit_reserve": 0.0,
+      "sampled_return_frequency": "UTC daily,365; short representative windows, zero risk-free rate",
+      "open_campaign_net_pnl": 0.0,
+      "mean_actual_gross_exposure": 0.022913389520643396,
+      "mean_absolute_net_exposure": 0.013207109323619154,
+      "risk_halted": true,
+      "capacity": {
+        "entry_requests": 70,
+        "unavailable_entry_requests": 0,
+        "partially_filled_entries": 2,
+        "partial_exit_intervals": 0,
+        "max_exit_delay_minutes": 5.0,
+        "requested_entry_notional": 43848.23334790365,
+        "filled_entry_notional": 43594.042591596946,
+        "filled_request_ratio": 0.9942029418998506,
+        "participation_cap": 0.01,
+        "actual_order_book_verified": false
+      },
+      "lifecycle_uncertainty": {
+        "by_symbol": {
+          "clusters": 32,
+          "sufficient": true,
+          "win_rate95": [
+            0.18178092399403875,
+            0.3846428571428571
+          ],
+          "expectancy95": [
+            -28.585199496645355,
+            0.2316841478570693
+          ]
+        },
+        "by_entry_month": {
+          "clusters": 2,
+          "sufficient": false,
+          "win_rate95": null,
+          "expectancy95": null
+        }
+      },
+      "source_result_sha256": "07b0b57da1c9f447cbaf81f7b7e79edcd4e444f00fc08bf6b46c4c40f42912d5"
+    },
+    {
+      "id": "daily_archive_ordinary7_reversal_control_slip10",
+      "candidate": "ordinary7_reversal_control",
+      "slippage_bps": 10,
+      "source_aliases": [
+        "daily_archive",
+        "daily_with_complete_5m_reconciliation"
+      ],
+      "net_return": -0.095065944243923,
+      "net_pnl": -950.6594424392297,
+      "ending_equity": 9049.34055756077,
+      "cagr": -0.058206066243336574,
+      "calendar_days": 608.0,
+      "annual_volatility": 0.058036356893728686,
+      "sharpe": -1.0040338510620335,
+      "sortino": -1.209107710924292,
+      "calmar": -0.3872426535272993,
+      "max_drawdown": 0.15030902642865307,
+      "recovery_days": 599.4131944444445,
+      "closed_trades": 55,
+      "win_rate": 0.23636363636363636,
+      "profit_factor": 0.510878941267677,
+      "payoff_ratio": 1.6505319640955716,
+      "expectancy": -17.284717135258738,
+      "closed_net_pnl": -950.6594424392306,
+      "beta": -0.005580656349704136,
+      "alpha_annual": -0.05832365005767005,
+      "information_ratio": -0.11001024971114645,
+      "tracking_error": 0.4430547026424903,
+      "benchmark_return": -0.16033646574144633,
+      "var95_daily": 0.0,
+      "cvar95_daily": 0.0003524769966452504,
+      "fees": 36.49668842745044,
+      "funding_net": 26.71071401965574,
+      "slippage_cost": 72.9925089739378,
+      "turnover": 8.027860025745804,
+      "mean_gross_exposure": 0.021389081687371917,
+      "max_gross_exposure": 0.8290600668362909,
+      "open_pnl_with_exit_reserve": 0.0,
+      "sampled_return_frequency": "UTC daily,365; short representative windows, zero risk-free rate",
+      "open_campaign_net_pnl": 0.0,
+      "mean_actual_gross_exposure": 0.021389081687371917,
+      "mean_absolute_net_exposure": 0.011780129903842054,
+      "risk_halted": true,
+      "capacity": {
+        "entry_requests": 58,
+        "unavailable_entry_requests": 0,
+        "partially_filled_entries": 3,
+        "partial_exit_intervals": 0,
+        "max_exit_delay_minutes": 5.0,
+        "requested_entry_notional": 36722.24211868704,
+        "filled_entry_notional": 36549.13466671601,
+        "filled_request_ratio": 0.9952860326063004,
+        "participation_cap": 0.01,
+        "actual_order_book_verified": false
+      },
+      "lifecycle_uncertainty": {
+        "by_symbol": {
+          "clusters": 29,
+          "sufficient": true,
+          "win_rate95": [
+            0.13559322033898305,
+            0.35857085507828174
+          ],
+          "expectancy95": [
+            -30.82124776090139,
+            -2.1705527020385604
+          ]
+        },
+        "by_entry_month": {
+          "clusters": 1,
+          "sufficient": false,
+          "win_rate95": null,
+          "expectancy95": null
+        }
+      },
+      "source_result_sha256": "2e8715e18b229975c24cc4ef3f9f67c573da350959c0667ec3605e786792a219"
+    },
+    {
+      "id": "daily_archive_max7_lottery_reversal_slip3",
+      "candidate": "max7_lottery_reversal",
+      "slippage_bps": 3,
+      "source_aliases": [
+        "daily_archive",
+        "daily_with_complete_5m_reconciliation"
+      ],
+      "net_return": -0.08057226395737216,
+      "net_pnl": -805.7226395737216,
+      "ending_equity": 9194.277360426278,
+      "cagr": -0.049179449617533844,
+      "calendar_days": 608.0,
+      "annual_volatility": 0.0849670620579815,
+      "sharpe": -0.5507561098968591,
+      "sortino": -0.7073555958751411,
+      "calmar": -0.32304434006705846,
+      "max_drawdown": 0.15223745943768907,
+      "recovery_days": 599.4131944444445,
+      "closed_trades": 101,
+      "win_rate": 0.27722772277227725,
+      "profit_factor": 0.787623762715602,
+      "payoff_ratio": 2.0534476670799626,
+      "expectancy": -7.977451876967792,
+      "closed_net_pnl": -805.722639573747,
+      "beta": -0.013369903642940842,
+      "alpha_annual": -0.046923542525990736,
+      "information_ratio": -0.08268712770617824,
+      "tracking_error": 0.4506894986196448,
+      "benchmark_return": -0.16033646574144633,
+      "var95_daily": 0.00044332305249861106,
+      "cvar95_daily": 0.011137461586910825,
+      "fees": 67.41494465777494,
+      "funding_net": 0.9329480873807227,
+      "slippage_cost": 40.44890390340406,
+      "turnover": 14.533270568440791,
+      "mean_gross_exposure": 0.03897998860173864,
+      "max_gross_exposure": 0.8253873641586378,
+      "open_pnl_with_exit_reserve": 0.0,
+      "sampled_return_frequency": "UTC daily,365; short representative windows, zero risk-free rate",
+      "open_campaign_net_pnl": 0.0,
+      "mean_actual_gross_exposure": 0.03897998860173864,
+      "mean_absolute_net_exposure": 0.018457794197212236,
+      "risk_halted": true,
+      "capacity": {
+        "entry_requests": 105,
+        "unavailable_entry_requests": 0,
+        "partially_filled_entries": 4,
+        "partial_exit_intervals": 0,
+        "max_exit_delay_minutes": 5.0,
+        "requested_entry_notional": 68264.30183454613,
+        "filled_entry_notional": 68064.00141534276,
+        "filled_request_ratio": 0.997065810184526,
+        "participation_cap": 0.01,
+        "actual_order_book_verified": false
+      },
+      "lifecycle_uncertainty": {
+        "by_symbol": {
+          "clusters": 40,
+          "sufficient": true,
+          "win_rate95": [
+            0.17923783515392253,
+            0.3751249999999999
+          ],
+          "expectancy95": [
+            -24.33537102603727,
+            9.192954920299137
+          ]
+        },
+        "by_entry_month": {
+          "clusters": 2,
+          "sufficient": false,
+          "win_rate95": null,
+          "expectancy95": null
+        }
+      },
+      "source_result_sha256": "b0020cff163cedff7c5fdc055528d1cf7e5c88efd2336d32e4258e613f94493f"
+    },
+    {
+      "id": "daily_archive_max7_lottery_reversal_slip10",
+      "candidate": "max7_lottery_reversal",
+      "slippage_bps": 10,
+      "source_aliases": [
+        "daily_archive",
+        "daily_with_complete_5m_reconciliation"
+      ],
+      "net_return": -0.08164575150998077,
+      "net_pnl": -816.457515099808,
+      "ending_equity": 9183.542484900192,
+      "cagr": -0.04984605471466619,
+      "calendar_days": 608.0,
+      "annual_volatility": 0.08284365899180028,
+      "sharpe": -0.5755508330967151,
+      "sortino": -0.7411926619701833,
+      "calmar": -0.3300819356808697,
+      "max_drawdown": 0.15101115609930993,
+      "recovery_days": 599.4131944444445,
+      "closed_trades": 101,
+      "win_rate": 0.2871287128712871,
+      "profit_factor": 0.7834856828225907,
+      "payoff_ratio": 1.945205833214708,
+      "expectancy": -8.083737773265396,
+      "closed_net_pnl": -816.4575150998049,
+      "beta": -0.012887401163649547,
+      "alpha_annual": -0.04780355270263283,
+      "information_ratio": -0.08476275766736167,
+      "tracking_error": 0.4500895152444773,
+      "benchmark_return": -0.16033646574144633,
+      "var95_daily": 0.0004441714647539553,
+      "cvar95_daily": 0.011044652332098948,
+      "fees": 67.25929299815448,
+      "funding_net": 0.9391614731291321,
+      "slippage_cost": 134.51797037688863,
+      "turnover": 14.518385131404678,
+      "mean_gross_exposure": 0.03894193272277608,
+      "max_gross_exposure": 0.8262511099603475,
+      "open_pnl_with_exit_reserve": 0.0,
+      "sampled_return_frequency": "UTC daily,365; short representative windows, zero risk-free rate",
+      "open_campaign_net_pnl": 0.0,
+      "mean_actual_gross_exposure": 0.03894193272277608,
+      "mean_absolute_net_exposure": 0.018441319678625435,
+      "risk_halted": true,
+      "capacity": {
+        "entry_requests": 105,
+        "unavailable_entry_requests": 0,
+        "partially_filled_entries": 4,
+        "partial_exit_intervals": 0,
+        "max_exit_delay_minutes": 5.0,
+        "requested_entry_notional": 68106.19259982946,
+        "filled_entry_notional": 67879.76476012489,
+        "filled_request_ratio": 0.9966753707546833,
+        "participation_cap": 0.01,
+        "actual_order_book_verified": false
+      },
+      "lifecycle_uncertainty": {
+        "by_symbol": {
+          "clusters": 40,
+          "sufficient": true,
+          "win_rate95": [
+            0.19101123595505617,
+            0.38891666666666663
+          ],
+          "expectancy95": [
+            -24.65369492029034,
+            9.144132143188015
+          ]
+        },
+        "by_entry_month": {
+          "clusters": 2,
+          "sufficient": false,
+          "win_rate95": null,
+          "expectancy95": null
+        }
+      },
+      "source_result_sha256": "6c2f4fe6ece88254899adb795476f78984a53fe5250614b00ef3df8f27dc782f"
+    }
+  ],
+  "paired_decisions": [
+    {
+      "slippage_bps": 3,
+      "increment_vs_ordinary_reversal": 0.014141493220302115,
+      "gates": {
+        "net_return_at_least_5pct": false,
+        "increment_at_least_2pp": false,
+        "drawdown_at_most_15pct": false,
+        "no_risk_halt": false,
+        "closed_and_marked_pnl_positive": false,
+        "at_least30_complete_cycles": true
+      },
+      "all_necessary_gates_pass": false
+    },
+    {
+      "slippage_bps": 10,
+      "increment_vs_ordinary_reversal": 0.013420192733942238,
+      "gates": {
+        "net_return_at_least_5pct": false,
+        "increment_at_least_2pp": false,
+        "drawdown_at_most_15pct": false,
+        "no_risk_halt": false,
+        "closed_and_marked_pnl_positive": false,
+        "at_least30_complete_cycles": true
+      },
+      "all_necessary_gates_pass": false
+    }
+  ],
+  "module_admitted": false,
+  "capacity_followup_triggered": false,
+  "branch_closed": true,
+  "new_process_restoration_executed": false,
+  "third_party_review_performed": false,
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "orders_enabled": false
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "crypto-max-conflicting-mechanisms-source-review.v1",
+  "version": "20261027_v001",
+  "question": "Does published opposite-direction crypto MAX evidence establish a distinct, source-faithful falsifiable hypothesis, rather than justify reversing the old losing MAX28 account?",
+  "reuse": "data/research/max_effect_sources_20261026_v001/MAX2021.html",
+  "requests": [
+    {"id": "GJ2021", "url": "https://jyx.jyu.fi/bitstreams/323af8ba-f93c-453e-9ae1-a97f53de8178/download", "doi": "10.1016/j.intfin.2021.101289", "role": "University repository published paper, not the2020SSRN draft; inspect original sample, weekly logarithmic MAX, direction, portfolio and economic/execution limits."},
+    {"id": "OAS2021", "url": "https://jfin-swufe.springeropen.com/counter/pdf/10.1186/s40854-021-00291-9.pdf", "doi": "10.1186/s40854-021-00291-9", "role": "Publisher original table and direction; reuse existing HTML as separate retained source if PDF unavailable."}
+  ],
+  "budget": {"maximum_http_requests": 2, "maximum_bytes_each": 5242880, "automatic_retries": 0, "redirects": false},
+  "adoption_rule": "Read original formula, formation clock, sample/selection, weighting, risk controls and transaction feasibility before registering a local economic candidate. Source return is not attainable account return. A contrary abstract alone cannot authorize a direction flip. Keep known historical access and original failed accounts explicit.",
+  "new_financial_accounts": 0,
+  "economic_evaluation_allowed": false,
+  "orders_enabled": false
+}

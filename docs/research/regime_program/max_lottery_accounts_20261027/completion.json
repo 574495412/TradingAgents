@@ -1,0 +1,16 @@
+{
+  "manifest": {
+    "original_method_mapping.json": "da34369a222ca55abf2d3811fc8bd180596569e84846edcce4ebcc3d1d370da9",
+    "summary.json": "40a281acd50a8ae9255a0aa8408dd4c28f845e6f95474b7f2b5da7a793beae84",
+    "fixed_path_cash_decomposition.json": "1c22d4cf6343a9bfeb288a4179488ac071c8b60106a3386311222f10add3401e",
+    "internal_cash_audits.json": "9318e216cb735a2f5be3cc6903e87e0c07c9b6374a1e1540b766bff1a56da506",
+    "year_comparison.json": "6dc65f2948fc1ebb12e4138e99036cb138d6f58a13d4f93bfaccdf09b2feba1e",
+    "README.md": "d6bcc4d3336606ee60801495c8d017003a4f2ae3b73d75f471d56617fd0323da",
+    "period_and_regime_details.json": "b93e7128473c721dcc468067b235464f3103ca647b7940b68811dd98d663846f",
+    "verification.json": "2b7ec03b9c0a1e38f0d044ef27c45f651091f5a55d83687891d2c18a1d24dabd",
+    "all_accounts.csv": "2e79957b5d46b3ed15b3e4798f6cc36f69f06974920b9d47041ac76001b4fd34"
+  },
+  "input_completion_sha256": "4231cd3052251d223e0835cd8541d58b851ad8c8fa68205d8f7652a7cd1d3094",
+  "account_completion_sha256": "2593e961515c074fa425dd65cf49559bd6866c1598d11387295ae92bbde260f0",
+  "profit_goal_met": false
+}
