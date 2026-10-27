@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "manifest": {
+    "metrics.json": "34bb42c73a13a06a9dc3d17cf61be84f6c32c1b6cd119a0070daa515d590d0cb",
+    "summary.json": "4896a50798d5a35a3b9cd2aa429f2ab0478128fe78eaabd23800d7f22148f264",
+    "periods.json": "d411e53cbcc0b10320b127cd5a9d1868bf23d846a80a8bca01eda470bd74a5cf",
+    "README.md": "e5b4d695d72cecb80840329a777ac1a45fbf635bcf18e4bac5fe1237608ac5a6",
+    "inventory.json": "01cfd8d027cbead998fc7c35b017a78de147e167a7724bf15d4abf0300ced48a",
+    "verification.json": "217793b148e829e57c03fdca8d70e0f051ccd695c6572bb25af29dbe92a79648",
+    "attribution.json": "cf93069bd46d233419dc0b006138069032efbd97ce7636b8a16cb80164748864",
+    "original_comparisons.json": "72a670dcd7a4346cfc32a2e7ba03187f11f931164e231494401a45a36fe08423"
+  },
+  "profit_goal_met": false
+}

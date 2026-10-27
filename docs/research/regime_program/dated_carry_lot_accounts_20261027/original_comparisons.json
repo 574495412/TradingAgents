@@ -1,0 +1,50 @@
+[
+  {
+    "id": "hold_to_delivery_slip3",
+    "original_fractional_net_pnl": 38.01978166245681,
+    "new_integer_and_full_reserve_net_pnl": 36.07954340696233,
+    "new_minus_old_pnl": -1.940238255494478,
+    "original_mean_gross": 0.2518504560869484,
+    "new_mean_gross": 0.24560662082096382,
+    "same_realized_risk": false,
+    "attribution_is_not_one_parameter_alpha_effect": true,
+    "original_closed_campaigns": 2,
+    "new_closed_campaigns": 0
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "original_fractional_net_pnl": 35.42015558837193,
+    "new_integer_and_full_reserve_net_pnl": 33.54510069653952,
+    "new_minus_old_pnl": -1.8750548918324057,
+    "original_mean_gross": 0.25194073283605734,
+    "new_mean_gross": 0.2456924559064618,
+    "same_realized_risk": false,
+    "attribution_is_not_one_parameter_alpha_effect": true,
+    "original_closed_campaigns": 2,
+    "new_closed_campaigns": 0
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "original_fractional_net_pnl": 35.8733381758866,
+    "new_integer_and_full_reserve_net_pnl": 33.98781092333411,
+    "new_minus_old_pnl": -1.8855272525524924,
+    "original_mean_gross": 0.24917964419282201,
+    "new_mean_gross": 0.2430026463059241,
+    "same_realized_risk": false,
+    "attribution_is_not_one_parameter_alpha_effect": true,
+    "original_closed_campaigns": 2,
+    "new_closed_campaigns": 0
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "original_fractional_net_pnl": 32.431556649322374,
+    "new_integer_and_full_reserve_net_pnl": 30.63245363445094,
+    "new_minus_old_pnl": -1.7991030148714344,
+    "original_mean_gross": 0.2492690073483282,
+    "new_mean_gross": 0.24308761291879208,
+    "same_realized_risk": false,
+    "attribution_is_not_one_parameter_alpha_effect": true,
+    "original_closed_campaigns": 2,
+    "new_closed_campaigns": 0
+  }
+]

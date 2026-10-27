@@ -1,0 +1,127 @@
+{
+  "schema": "dated-carry-integer-conditional-accounts.v1",
+  "version": "20261027_v001",
+  "purpose": "Same frozen quarter, signals, budget and costs; isolate integer actual inventory and full noncash dust liquidation reserve. Explicit hypothetical rules, not a historically executable account or new alpha.",
+  "inputs": "results/research/dated_carry_lot_inputs_20261027_v001",
+  "risk_sources": "data/research/dated_carry_risk_sources_20261027_v001",
+  "raw_pilot": "data/research/dated_carry_pilot_20261027_v001",
+  "raw_audit": "results/research/dated_carry_raw_audit_20261027_v001",
+  "settlement_source": "data/research/dated_carry_settlement_route_20261027_v001",
+  "spot_source": "data/research/spot_perpetual_feasibility_20261026_v001",
+  "base_engine": "../freqtrade/research/crypto/spot_perpetual_account_v2.py",
+  "engine": "../freqtrade/research/crypto/spot_dated_account_v2.py",
+  "window": {
+    "id": "pilot_2025Q1_continuous",
+    "start": "2025-01-01T00:00:00Z",
+    "end": "2025-03-29T00:00:00Z"
+  },
+  "terminal_calendar": "Carry the full delivery day through the next UTCmidnight so daily Sharpe includes settlement/spot-unwind cash rather than omitting a terminal8hour stub. This is fixed before new account returns; capacity-limited residual, if any, remains marked at the boundary.",
+  "contracts": {
+    "BTCUSDT": {
+      "symbol": "BTCUSDT_250328",
+      "base": "BTC",
+      "quote": "USDT",
+      "style": "linear",
+      "expiry": "2025-03-28T08:00:00Z",
+      "entry_stop": "2025-03-28T07:50:00Z"
+    },
+    "ETHUSDT": {
+      "symbol": "ETHUSDT_250328",
+      "base": "ETH",
+      "quote": "USDT",
+      "style": "linear",
+      "expiry": "2025-03-28T08:00:00Z",
+      "entry_stop": "2025-03-28T07:50:00Z"
+    }
+  },
+  "rules": "Before-entry original0328listing plus generic quarterly clock; March2025expiry-confirming notice becomes modeled-known only after its claimed publication+5minutes. API midnight deliveryTime is a calendar-key only; actual event at08:00 comes from separate notices. Current original historical article versions are not certified.",
+  "profiles": [
+    "hold_to_delivery",
+    "early_exit_24h"
+  ],
+  "opportunity_clock": "One fixed January1 00UTC opportunity per asset, using December31 23:55 completed actual spot/trade prices. No retries after missing liquidity or hedge failure, no within-quarter reentry or outcome-selected assets/months.",
+  "entry_condition": "Past known F/S-1 exceeds1.25times stress four-leg reference roundtrip rate2*(spot10bps+future5bps+2*slip10bps)=87.5bps. This is a conservative eligibility proxy, not locked net cash or a future price forecast. Both profiles have identical entries and target amounts.",
+  "account": {
+    "capital": 10000,
+    "spot_fee_bps": 10,
+    "perpetual_fee_bps": 5,
+    "settlement_fee_bps": 5,
+    "entry_slippage_buffer_bps": 10,
+    "initial_futures_wallet_fraction": 0.7,
+    "asset_spot_fraction": 0.25,
+    "initial_gross_target": 0.5,
+    "gross_reduction_trigger": 0.8,
+    "gross_reduction_target": 0.5,
+    "participation": 0.01,
+    "drawdown_halt": 0.15,
+    "initial_margin_ratio": 1.0,
+    "maintenance_stress_ratio": 0.05,
+    "margin_exit_ratio": 0.2,
+    "rearm_hours": 24,
+    "pretrade_liquidity_cap": true,
+    "unliquidatable_dust_reserve_fraction": 1.0
+  },
+  "sizing": "Recompute original desired caps from capital and only the pre-entry completed spot/future bar, not old fills. Upstream common bounded_cover floors future lots and ceils smallest gross spot cover. Actual next-bar fills remain independent and quantized. Any shortfall against target is a hedge failure; planned residual remains owned and is not an exactly matched pair.",
+  "costs_slippage_bps": [
+    3,
+    10
+  ],
+  "cost_scope": "Spot10bps and dated taker5bps per side are explicit model assumptions, not actual client/historical fee certification. Fixed settlement fee5bps follows the same modeled taker rate, has no market-fill slippage; early-market exit pays actual modeled slippage. Zero funding only because the contract is fixed-maturity, and nonempty funding input must be rejected.",
+  "delivery": "At expiry, after checking old inventory margin risk on the preceding actual markOHLC, settle only the remaining dated quantity at the recorded official settlement reference, book q*(entry-settlement)-settlementFee to the futures wallet, and disable that future permanently. Request spot-only unwind at expiry; first eligible ordinary spot fill is next completed5m interval. No old-future fill at/after expiry and no last-close substitution or post-expiry mark ownership.",
+  "early_exit": "Only declared variant: request both legs at expiry minus24hours, with independent next5m fills and capacity, retaining any failed hedge and forced settlement of actual residual if needed. This is a different holding contract, not a repair making unknown historical terminal cash known.",
+  "risk": "Reuse segregated spot cash/assets and futures wallet model, conservative actual markOHLC high/spotlow envelope,20percent margin-warning exit and5percent maintenance-stress invalidation, persistent15percent account halt and downward-only gross control. Spot gains are never credited as available future margin. Risk flags invalidate qualification even if final modeled PnL is positive; these envelopes are not verified exchange liquidation/tier reconstruction.",
+  "controls": [
+    "same entries and size, one exit-policy variant",
+    "same-window sealed zero-interest cash",
+    "separate spot-price, future-price, settlement, fees, slippage and residual-inventory attribution; do not call differing realized risk matched"
+  ],
+  "minimum_useful_effect_design": "Execution/inventory repair diagnosis; no profit-based candidate selection. Report complete closed versus still-open campaigns and both reserve and cash. Incomplete campaigns cannot meet the existing closed-PnL/sample gate. Original portfolio targets unchanged.",
+  "known_sample_limit": "Only one common quarter/two correlated asset campaigns. Even if screen-positive, this cannot satisfy registered module cycle/cluster or365day total-account gates. No capacity followup is permitted from this pilot, no annual target comparison or freshOOS claim.",
+  "validation": "Independent cash/inventory/mark/settlement audit; pre-expiry decisions invariant to future settlement-price perturbation; strict late-source/no-old-future-fill checks; preserve observed nonzero post-expiry archive rows. Actual different-process JSON restoration before expiry and exactly at expiry while spot remains, with exact money/ledger/state and independently bounded exposure if floating summation differs.",
+  "budget": {
+    "actual_strategy_accounts_max": 4,
+    "new_economic_variants": 0,
+    "new_model_fits": 0,
+    "capacity_accounts": 0,
+    "new_HTTP_requests": 0,
+    "planned_process_restarts": [
+      "held_entry",
+      "at_delivery",
+      "dust_only"
+    ]
+  },
+  "stopping": "Seal all four paths before audit. No fee/grid/clock/quantity/risk search. Retain outputs on technical failures; versioned postprocessing only, no selective financial reruns. Module and total-account eligibility remain false regardless return.",
+  "independent_oos": false,
+  "profit_goal_met": false,
+  "production_eligible": false,
+  "orders_enabled": false,
+  "base_prepared_inputs": "results/research/dated_carry_execution_inputs_20261027_v002",
+  "quantity_rules": {
+    "BTCUSDT": {
+      "scope": "hypothetical_grid_stress",
+      "historical_rules_certified": false,
+      "inventory_unit": "0.00000001",
+      "spot_step": "0.00001",
+      "future_base_step": "0.001",
+      "historical_min_qty": null,
+      "historical_min_notional": null,
+      "historical_max_qty": null,
+      "availability_at_original_decision_certified": false,
+      "basis": "Observed Jan1 native trade GCD; exogenous retrospective scenario assumption, not a certified historical rule known at entry."
+    },
+    "ETHUSDT": {
+      "scope": "hypothetical_grid_stress",
+      "historical_rules_certified": false,
+      "inventory_unit": "0.00000001",
+      "spot_step": "0.0001",
+      "future_base_step": "0.001",
+      "historical_min_qty": null,
+      "historical_min_notional": null,
+      "historical_max_qty": null,
+      "availability_at_original_decision_certified": false,
+      "basis": "Observed Jan1 native trade GCD; exogenous retrospective scenario assumption, not a certified historical rule known at entry."
+    }
+  },
+  "valuation": "Retain all spot atoms. At each mark, reserve100percent of spot inventory modulo its assumed sell grid, plus unchanged fee/slip reserve on sellable spot and futures. Reserve is noncash and separately disclosed; no writeoff, sale, dust conversion, BNB fee switch or fake closed lifecycle. Minimum notional, client fee precision and true disposal remain unknown.",
+  "source_limits": "Retrospective hypothetical grids lack historical as-of certification. Original3bps ETH entry quote counterexample remains; this version repairs quantity/inventory only, not all price/latency assumptions. Do not promote to causal historical execution, new unseen data or capacity."
+}

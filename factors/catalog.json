@@ -1250,6 +1250,17 @@
         "legacy_engine_updated": false,
         "actual_historical_venue_rules_certified": false,
         "production_eligible": false
+      },
+      "integer_accounts": {
+        "engine": "../freqtrade/research/crypto/spot_dated_account_v2.py",
+        "plan": "research_tools/dated_carry/lot_account_plan.json",
+        "report": "../docs/research/regime_program/dated_carry_lot_accounts_20261027/README.md",
+        "state": "conditional_integer_accounts_audited_unclosed_dust_no_admission",
+        "new_financial_accounts": 4,
+        "complete_campaigns_per_account": 0,
+        "win_rate": null,
+        "hypothetical_rules_not_certified_venue_filters": true,
+        "production_eligible": false
       }
     },
     "reference_stage_financial_accounts": 0

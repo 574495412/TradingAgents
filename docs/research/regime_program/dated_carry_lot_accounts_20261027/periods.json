@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hold_to_delivery_slip3",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 11.977380435620944,
+    "net_return": 0.0011977380435621576,
+    "within_period_drawdown": 0.0014470765420804277,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "hold_to_delivery_slip3",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 16.652404077471147,
+    "net_return": 0.0016632482720158048,
+    "within_period_drawdown": 0.00038688529007557815,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "hold_to_delivery_slip3",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 7.449758893870239,
+    "net_return": 0.0007428491283401062,
+    "within_period_drawdown": 0.0004376300497231922,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 8.326242543429544,
+    "net_return": 0.0008326242543430507,
+    "within_period_drawdown": 0.0014739550456273065,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 16.998731443471115,
+    "net_return": 0.001698458966216787,
+    "within_period_drawdown": 0.00039750635585200644,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "hold_to_delivery_slip10",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 8.220126709638862,
+    "net_return": 0.0008199361847089914,
+    "within_period_drawdown": 0.00043985548425640175,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 11.977380435620944,
+    "net_return": 0.0011977380435621576,
+    "within_period_drawdown": 0.0014470765420804277,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 16.652404077471147,
+    "net_return": 0.0016632482720158048,
+    "within_period_drawdown": 0.00038688529007557815,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "early_exit_24h_slip3",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 5.358026410242019,
+    "net_return": 0.0005342730288555586,
+    "within_period_drawdown": 0.0003027614562023384,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "start": "2025-01-01",
+    "end": "2025-02-01",
+    "net_pnl": 8.326242543429544,
+    "net_return": 0.0008326242543430507,
+    "within_period_drawdown": 0.0014739550456273065,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "start": "2025-02-01",
+    "end": "2025-03-01",
+    "net_pnl": 16.998731443471115,
+    "net_return": 0.001698458966216787,
+    "within_period_drawdown": 0.00039750635585200644,
+    "inventory_carried_not_restarted": true
+  },
+  {
+    "id": "early_exit_24h_slip10",
+    "start": "2025-03-01",
+    "end": "2025-03-29",
+    "net_pnl": 5.307479647550281,
+    "net_return": 0.0005294072422910023,
+    "within_period_drawdown": 0.0003034850076207851,
+    "inventory_carried_not_restarted": true
+  }
+]

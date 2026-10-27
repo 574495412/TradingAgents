@@ -1,0 +1,86 @@
+{
+  "run_completion_sha256": "0da9b08aae5eb2c257c5b6d7fcf059bf8b12945b0e849c1ecb06c80fefa9270e",
+  "inputs_completion_sha256": "da3dc58ccb7eda12cf5ac025f00724a0f5b1c1ebcac4d1a630dd5b6062a56fc3",
+  "old_accounts_completion_sha256": "f1e3d1f4c8b3a4345e18b93f5eff353e0f0d637201557d250b80894c61c634c8",
+  "source_sha256": "aecbea946a1e3b93accc64eceefe093913bd527382250c4d2d2d47914dce32d8",
+  "all_four_cash_and_integer_audits_passed": true,
+  "actual_process_restarts": [
+    {
+      "name": "held_entry",
+      "split": "2025-01-01T00:05:00+00:00",
+      "parent_pid": 40117,
+      "child_pid": 40158,
+      "checkpoint_inventory": {
+        "BTCUSDT": {
+          "spot_atoms": 1300698,
+          "perp_atoms": 1300000
+        },
+        "ETHUSDT": {
+          "spot_atoms": 409590,
+          "perp_atoms": 400000
+        }
+      },
+      "whole_curve_money_ledger_requests_and_final_state_bit_exact": true,
+      "initial_interval_diagnostics_owned_by_prefix": true
+    },
+    {
+      "name": "at_delivery",
+      "split": "2025-03-28T08:00:00+00:00",
+      "parent_pid": 40117,
+      "child_pid": 40160,
+      "checkpoint_inventory": {
+        "BTCUSDT": {
+          "spot_atoms": 1300698,
+          "perp_atoms": 0
+        },
+        "ETHUSDT": {
+          "spot_atoms": 409590,
+          "perp_atoms": 0
+        }
+      },
+      "whole_curve_money_ledger_requests_and_final_state_bit_exact": true,
+      "initial_interval_diagnostics_owned_by_prefix": true
+    },
+    {
+      "name": "dust_only",
+      "split": "2025-03-28T08:05:00+00:00",
+      "parent_pid": 40117,
+      "child_pid": 40161,
+      "checkpoint_inventory": {
+        "BTCUSDT": {
+          "spot_atoms": 698,
+          "perp_atoms": 0
+        },
+        "ETHUSDT": {
+          "spot_atoms": 9590,
+          "perp_atoms": 0
+        }
+      },
+      "whole_curve_money_ledger_requests_and_final_state_bit_exact": true,
+      "initial_interval_diagnostics_owned_by_prefix": true
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4"
+  },
+  "cash_control": {
+    "source": "results/research/sparse_family_accounts_20261026_v002/accounts/cash_continuous2025_2026_cash_cap10000_slip10",
+    "result_sha256": "d80ebc212430cb376741471997bc0522aa1ebea864ff9394115db64ee8a38caa",
+    "calendar_days": 87,
+    "net_pnl": 0
+  },
+  "tests_passed": 12,
+  "test_scope": "10new integer-account lifecycle/source cases plus2independent synthetic cash-audit cases; not proof of profitability",
+  "new_financial_accounts": 4,
+  "baseline_fractional_accounts_rerun": 0,
+  "minimum_notional_and_client_commissions_unknown": true,
+  "retrospective_grid_availability_not_certified": true,
+  "original_3bps_price_counterexample_repaired": false,
+  "module_admitted": false,
+  "capacity_accounts": 0,
+  "external_review_performed": false,
+  "independent_oos": false,
+  "profit_goal_met": false
+}
