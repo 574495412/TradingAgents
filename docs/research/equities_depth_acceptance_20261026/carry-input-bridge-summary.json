@@ -1,0 +1,118 @@
+{
+  "schema": "equity-carry-input-bridge.v1",
+  "input_scope": "data/research/carry_exit_cases_20261026_v003",
+  "manifest_files_verified": 27,
+  "checks": [
+    {
+      "symbol": "BNXUSDT",
+      "decision": "2025-03-17T00:00:00+00:00",
+      "deadline": "2025-03-17T08:30:00+00:00",
+      "markets": [
+        {
+          "market": "spot",
+          "raw_epoch_unit": "microseconds",
+          "rows": 103,
+          "first_open": "2025-03-16T23:55:00+00:00",
+          "last_open": "2025-03-17T08:25:00+00:00",
+          "last_completion_boundary": "2025-03-17T08:30:00+00:00",
+          "raw_close_gap_microseconds": [
+            1
+          ],
+          "deadline_open_bar_excluded": true
+        },
+        {
+          "market": "perpetual",
+          "raw_epoch_unit": "milliseconds",
+          "rows": 103,
+          "first_open": "2025-03-16T23:55:00+00:00",
+          "last_open": "2025-03-17T08:25:00+00:00",
+          "last_completion_boundary": "2025-03-17T08:30:00+00:00",
+          "raw_close_gap_microseconds": [
+            1000
+          ],
+          "deadline_open_bar_excluded": true
+        },
+        {
+          "market": "mark",
+          "raw_epoch_unit": "milliseconds",
+          "rows": 103,
+          "first_open": "2025-03-16T23:55:00+00:00",
+          "last_open": "2025-03-17T08:25:00+00:00",
+          "last_completion_boundary": "2025-03-17T08:30:00+00:00",
+          "raw_close_gap_microseconds": [
+            1000
+          ],
+          "deadline_open_bar_excluded": true
+        }
+      ],
+      "reported_funding_events_after_decision_through_deadline": 2,
+      "future_events_are_not_decision_features": true,
+      "known_market_specific_earliest_cutoff_used": true,
+      "later_perpetual_stop_notice_available_at_decision": true,
+      "common_calendar_dates_with_frozen_stock_account": 0,
+      "source_available_clock_is_current_body_plus_five_minute_assumption": true,
+      "historical_notice_version_certified": false,
+      "customer_payable_cash_certified": false
+    },
+    {
+      "symbol": "HIFIUSDT",
+      "decision": "2025-09-15T00:00:00+00:00",
+      "deadline": "2025-09-17T02:30:00+00:00",
+      "markets": [
+        {
+          "market": "spot",
+          "raw_epoch_unit": "microseconds",
+          "rows": 607,
+          "first_open": "2025-09-14T23:55:00+00:00",
+          "last_open": "2025-09-17T02:25:00+00:00",
+          "last_completion_boundary": "2025-09-17T02:30:00+00:00",
+          "raw_close_gap_microseconds": [
+            1
+          ],
+          "deadline_open_bar_excluded": true
+        },
+        {
+          "market": "perpetual",
+          "raw_epoch_unit": "milliseconds",
+          "rows": 607,
+          "first_open": "2025-09-14T23:55:00+00:00",
+          "last_open": "2025-09-17T02:25:00+00:00",
+          "last_completion_boundary": "2025-09-17T02:30:00+00:00",
+          "raw_close_gap_microseconds": [
+            1000
+          ],
+          "deadline_open_bar_excluded": true
+        },
+        {
+          "market": "mark",
+          "raw_epoch_unit": "milliseconds",
+          "rows": 607,
+          "first_open": "2025-09-14T23:55:00+00:00",
+          "last_open": "2025-09-17T02:25:00+00:00",
+          "last_completion_boundary": "2025-09-17T02:30:00+00:00",
+          "raw_close_gap_microseconds": [
+            1000
+          ],
+          "deadline_open_bar_excluded": true
+        }
+      ],
+      "reported_funding_events_after_decision_through_deadline": 13,
+      "future_events_are_not_decision_features": true,
+      "known_market_specific_earliest_cutoff_used": true,
+      "later_perpetual_stop_notice_available_at_decision": false,
+      "common_calendar_dates_with_frozen_stock_account": 0,
+      "source_available_clock_is_current_body_plus_five_minute_assumption": true,
+      "historical_notice_version_certified": false,
+      "customer_payable_cash_certified": false
+    }
+  ],
+  "two_selected_cases_are_not_independent_strategy_samples": true,
+  "previous_2024_training_carry_date_overlap_not_overridden": true,
+  "admitted_crypto_modules_added": 0,
+  "new_financial_accounts": 0,
+  "financial_case_paths_executed_by_this_bridge": 0,
+  "unified_portfolio_evaluated": false,
+  "external_independent_attestation": false,
+  "profit_goal_met": false,
+  "scope": "Input-clock and evidence-scope check only; original notices are current-body captures, public rates are not customer receipts, bar-volume capacity is not actual execution. No profit or module admission follows."
+}

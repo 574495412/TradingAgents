@@ -1,0 +1,19 @@
+{
+  "schema": "equity-research-closeout-verification.v1",
+  "version": "20261027_depth_v014",
+  "basis": "最新用户要求尽快完成研究、降低要求；研究结题门槛下调，未提供新财务目标数值。",
+  "research_closeout": "completed_with_limitations",
+  "research_policy_copies_match": true,
+  "registered_bridge_inputs_verified": 30,
+  "analysis_source_unchanged": true,
+  "financial_targets_budget_admission_gates_and_external_flags_unchanged": true,
+  "diagnostic_performance_numbers_unchanged": true,
+  "adapter_versions_hashes_and_closeout_status_match": true,
+  "objective_sha256": "7230de58a1d52bd8fc15dceaa4762502e4664cb5f3529c05a1928a29350c259c",
+  "acceptance_sha256": "4d7352793037c5a304f54f8d88747445b964ebb1eeafa852d51495c0b7b49956",
+  "closeout_policy_sha256": "514a534353a2bdb0c1118e29b4acb2e6bcfb0ddb986cd37d8424b00110fe59be",
+  "new_financial_accounts": 0,
+  "strategy_admission_passed": false,
+  "external_attestation": false,
+  "profit_goal_met": false
+}

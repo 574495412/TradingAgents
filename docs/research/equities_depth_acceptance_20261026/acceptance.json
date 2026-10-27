@@ -1,12 +1,12 @@
 {
   "schema": "equity-expert-acceptance.v1",
-  "version": "20261027_depth_v013",
-  "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。",
+  "version": "20261027_depth_v014",
+  "user_direction": "更深入而不是更大；保留50%年化、最大回撤15%挑战；不能只靠自身回测和测试验收。 用户最新要求尽快完成研究并降低要求：本轮以可复核研究结论结题，外部/容量/真实前向要求后置至相应准入和收益认证。",
   "focal_scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。",
   "evaluation_levels": [
     {
       "id": "research_validity",
-      "criterion": "原始数据、因果时间、方法、反证和限制可由外部独立参与者复核。可信的负结论可以完成研究证据验收，但不获得策略准入或收益达标。"
+      "criterion": "已有原始来源、固定范围、时点假设、全成本诊断、实现纠正及反证/未解项完整可查，即可完成本轮研究结题。允许可信的否定或未知结论，不要求本轮取得外部签署、关闭全部源缺口或完成长期真实前向；不因此获得策略准入或收益达标。"
     },
     {
       "id": "strategy_admission",
@@ -75,7 +75,7 @@
       "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
       "status": "partial_internal",
       "independent_evidence": null,
-      "current_evidence_note": "20个实际消费年度原件及45项数值已有内部Arelle/原文核对，非外部认证。EXAS生命周期原件可追溯；后续取得64个缺口日候选，但6月26日开盘差0.025美元超既定容差，20个固定重叠日成交量差异未解释，候选0日准入，旧数值保留为待来源核实的诊断。不得改容差、选择性替换旧末日或将并购现金权利当可用资金。COIN六个IR元数据时钟继续隔离，四份原分发页只有分钟精度，首次公开仍未全面认证。外部独立重建尚缺。"
+      "current_evidence_note": "20个实际消费年度原件及45项数值已有内部Arelle/原文核对，非外部认证。EXAS生命周期原件可追溯；后续取得64个缺口日候选，但6月26日开盘差0.025美元超既定容差，20个固定重叠日成交量差异未解释，候选0日准入，旧数值保留为待来源核实的诊断。不得改容差、选择性替换旧末日或将并购现金权利当可用资金。COIN六个IR元数据时钟继续隔离，四份原分发页只有分钟精度，首次公开仍未全面认证。外部独立重建尚缺。 两例加密退出诊断的原始现货/永续/标记价输入已完成并核对时钟与截止窗；公告当时可得仍依赖当前正文发布时间+5分钟假设，没有认证历史公告版本或客户实际到账，也未解决EXAS差异。"
     },
     {
       "id": "G3",
@@ -119,7 +119,7 @@
       "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
       "status": "blocked",
       "independent_evidence": null,
-      "current_evidence_note": "原8与纠错8股票路径均未通过15%风险线。已有双腿20账户内部部分为正，但两变体均无组合资格，且同属一个机制；2024旧训练只有122个共同日期，未形成兼容同期PnL。USD/USDT和共享现金/结算仍未验证，不拼接净值。原8个预留容量名额已登记转用于必要纠错，累计24/24，无自动追加余额。"
+      "current_evidence_note": "原8与纠错8股票路径均未通过15%风险线。已有双腿20账户内部部分为正，但两变体均无组合资格，且同属一个机制；2024旧训练只有122个共同日期，未形成兼容同期PnL。USD/USDT和共享现金/结算仍未验证，不拼接净值。原8个预留容量名额已登记转用于必要纠错，累计24/24，无自动追加余额。 新完成的BNX/HIFI两例只补生命周期输入；事后选择、2025年短窗与当前股票区间无共同日期，不能充当两条获准机制或统一账户成绩。2024训练的122共同日期事实不受此两例结论影响。"
     },
     {
       "id": "G7",
@@ -156,12 +156,11 @@
     "external_attestation_received": false,
     "future_performance_guaranteed": false
   },
-  "fail_closed": "缺失、冲突、未核验或未取得的独立证据一律不视为通过。研究可信的否定结论可以交付；策略准入和收益目标必须分别判断。",
+  "fail_closed": "缺失或冲突不能视为策略准入或真实收益通过；本轮研究允许明确记录未解项后结题，不将未解决改写为通过。",
   "immediate_next_work": [
-    "冻结新增候选、扩池和参数搜索；先关闭当前机制的数据与证据缺口。",
-    "针对EXAS建立从原始公告、64个缺失交易日、终止持仓到现金可用的完整可复算案例。",
-    "完成已注册个股机制的风险暴露/费用/收益归因和完整试验史，写清拒绝条件。",
-    "准备第三方可独立重建的最小审计包及锁定前向协议；未取得外部证据不宣告验收。"
+    "本轮研究结题，不再追加实验、扩池或调参。",
+    "后续若进入策略准入，再解决原始来源、真实执行/容量与G7独立审计。",
+    "后续若申请收益达标认证，再按原G6/G8和财务口径验证；当前成绩不填造。"
   ],
   "orders_allowed": false,
   "deployment_allowed": false,
@@ -314,6 +313,34 @@
       "full_original_paper_replication": false,
       "new_financial_accounts": 0,
       "external_independent_attestation": null
+    },
+    "carry_exit_input_bridge": {
+      "source_inputs": "data/research/carry_exit_cases_20261026_v003",
+      "source_input_review": "results/research/carry_exit_case_input_review_20261026_v002",
+      "bridge_run": "results/research/equity_carry_input_bridge_20261027_v002",
+      "summary": "docs/research/equities_depth_acceptance_20261026/carry-input-bridge-summary.json",
+      "source_markets": [
+        "spot",
+        "perpetual",
+        "mark"
+      ],
+      "diagnostic_cases": [
+        "BNXUSDT",
+        "HIFIUSDT"
+      ],
+      "scope": "只核对两例原始输入时钟与组合证据边界；不计算案例收益、不准入机制、不构成独立核查。",
+      "six_case_market_windows_verified": true,
+      "common_dates_with_frozen_stock_account": [
+        0,
+        0
+      ],
+      "current_notice_body_and_publication_lag_assumption_retained": true,
+      "historical_notice_version_certified": false,
+      "customer_payable_cash_certified": false,
+      "admitted_crypto_modules_added": 0,
+      "new_financial_accounts": 0,
+      "external_attestation": null,
+      "profit_goal_met": false
     }
   },
   "decision_rules": {
@@ -337,7 +364,10 @@
     ],
     "missing_external_evidence_is_veto": true,
     "internal_checks_cannot_set_external_gate_passed": true,
-    "credible_negative_research": "可以交付完整、可独立复核的负结论；不因此准入，不将风险或收益门槛改写为通过。"
+    "credible_negative_research": "可以交付完整、可独立复核的负结论；不因此准入，不将风险或收益门槛改写为通过。",
+    "research_closeout_policy": "research_closeout",
+    "research_closeout_requires_external_attestation": false,
+    "missing_external_evidence_is_veto_scope": "策略准入及真实收益认证，不阻断本轮研究结题。"
   },
   "source_clock_policy": {
     "source_clock_string_alone_sufficient": false,
@@ -430,5 +460,42 @@
     "implementation_repair_replays_counted_in_budget": true,
     "preserve_all_legacy_results_and_no_result_based_parameter_choice": true,
     "repairs_do_not_certify_market_data_or_external_financial_results": true
-  }
+  },
+  "research_closeout": {
+    "schema": "equity-research-closeout.v1",
+    "basis": "用户本次明确要求：尽快完成研究，降低要求。",
+    "interpretation": "先完成本轮研究结题；未给出新的收益或回撤数值，因此保留原挑战数值。",
+    "status": "completed_with_limitations",
+    "near_term_objective": "用已封存的数据、纠正后的结果、原始来源、方法、失败与未解项完成可复核研究结论，不再以外部独立审计、完整容量认证或12个月真实前向为本轮研究结题前提。",
+    "required_for_research_closeout": [
+      "原始来源、固定范围、可得时间假设及已知缺口可查",
+      "既有全成本诊断结果及旧实现纠正/失败记录保留",
+      "股票、加密和总账户结论分开，负结果可结题",
+      "未证明的优势、数据和总账户成绩保持未知或未通过",
+      "交付研究结论与后续准入清单，停止追加实验和扩展范围"
+    ],
+    "not_required_for_research_closeout": [
+      "G7外部审计人签署",
+      "G8至少12个月真实前向",
+      "完整竞价/盘口级容量及盘中风险认证",
+      "关闭全部历史数据和事件源差异"
+    ],
+    "deferred_to_strategy_admission": [
+      "G1-G5经济/数据/样本/执行/风险证据",
+      "G7独立重建；完整容量和真实执行适用性"
+    ],
+    "deferred_to_profit_certification": [
+      "G6统一资本与组合增量",
+      "G8真实前向和外部账户记录",
+      "原50%净年化、15%最大回撤、净夏普1同时满足"
+    ],
+    "financial_targets_changed": false,
+    "profit_goal_met": false,
+    "strategy_admission_passed": false,
+    "external_attestation_received": false,
+    "new_financial_accounts_for_closeout": 0,
+    "future_performance_guaranteed": false,
+    "report": "docs/research/equities_depth_acceptance_20261026/README.md"
+  },
+  "research_closeout_status": "completed_with_limitations"
 }

@@ -1,0 +1,36 @@
+{
+  "schema": "equity-research-closeout.v1",
+  "basis": "用户本次明确要求：尽快完成研究，降低要求。",
+  "interpretation": "先完成本轮研究结题；未给出新的收益或回撤数值，因此保留原挑战数值。",
+  "status": "completed_with_limitations",
+  "near_term_objective": "用已封存的数据、纠正后的结果、原始来源、方法、失败与未解项完成可复核研究结论，不再以外部独立审计、完整容量认证或12个月真实前向为本轮研究结题前提。",
+  "required_for_research_closeout": [
+    "原始来源、固定范围、可得时间假设及已知缺口可查",
+    "既有全成本诊断结果及旧实现纠正/失败记录保留",
+    "股票、加密和总账户结论分开，负结果可结题",
+    "未证明的优势、数据和总账户成绩保持未知或未通过",
+    "交付研究结论与后续准入清单，停止追加实验和扩展范围"
+  ],
+  "not_required_for_research_closeout": [
+    "G7外部审计人签署",
+    "G8至少12个月真实前向",
+    "完整竞价/盘口级容量及盘中风险认证",
+    "关闭全部历史数据和事件源差异"
+  ],
+  "deferred_to_strategy_admission": [
+    "G1-G5经济/数据/样本/执行/风险证据",
+    "G7独立重建；完整容量和真实执行适用性"
+  ],
+  "deferred_to_profit_certification": [
+    "G6统一资本与组合增量",
+    "G8真实前向和外部账户记录",
+    "原50%净年化、15%最大回撤、净夏普1同时满足"
+  ],
+  "financial_targets_changed": false,
+  "profit_goal_met": false,
+  "strategy_admission_passed": false,
+  "external_attestation_received": false,
+  "new_financial_accounts_for_closeout": 0,
+  "future_performance_guaranteed": false,
+  "report": "docs/research/equities_depth_acceptance_20261026/README.md"
+}
