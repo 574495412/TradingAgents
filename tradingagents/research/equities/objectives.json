@@ -1,10 +1,10 @@
 {
   "schema": "equity-research-objectives.v1",
-  "version": "20261027_depth_v015",
-  "title": "股票优先 · 原始证据与独立验证",
-  "program_status": "research_closed_with_limitations",
+  "version": "20261027_cz_native_preparation_v018",
+  "title": "港美股 · 成熟方案直接采用优先",
+  "program_status": "native_strategy_integrated_broker_selection_pending",
   "profit_goal_status": "not_met",
-  "objective": "按用户降低本轮结题要求：以现有股票优先研究和加密证据完成可复核结论，停止追加实验；原始来源、全成本诊断、失败和未解项完整保留。外部独立审计与完整执行/容量认证留待策略准入，长期真实前向留待收益认证。50%净年化、最大回撤15%、净夏普1保留为未达成的挑战，不将研究结题或自身回测视为收益达标。",
+  "objective": "按用户最新纠正：自身限制未必正确，成熟方案优先。先直接采用维护完善、许可明确、可运行的原策略和原生框架，保留其股票池、参数、仓位、杠杆和风控；作者口径与本地差异持续对账，历史数字精确一致不作为本地采用的绝对前置条件。运行后按具体问题优化，暂停自创策略和为迎合旧限制改造原方案。",
   "user_confirmation": {
     "date_shanghai": "2026-10-26",
     "challenge_cagr": 0.5,
@@ -21,7 +21,9 @@
       "challenge": 0.5,
       "actual": null,
       "status": "not_met",
-      "definition": "无外部资金流时：(期末扣退出准备权益/期初全部本金)^(365.25/实际自然日)-1；有转入转出时先按单位净值消除外部资金流影响。闲置现金计入总本金，费用/税费/融资/资金费/FX和浮亏完整计入；至少12个月且满足事前功效要求的独立前向证据方可用于收益目标验收，短窗年化只作诊断。"
+      "definition": "无外部资金流时：(期末扣退出准备权益/期初全部本金)^(365.25/实际自然日)-1；有转入转出时先按单位净值消除外部资金流影响。闲置现金计入总本金，费用/税费/融资/资金费/FX和浮亏完整计入；至少12个月且满足事前功效要求的独立前向证据方可用于收益目标验收，短窗年化只作诊断。",
+      "role": "historical_challenge_reference",
+      "enforced_for_native_adoption": false
     },
     {
       "id": "max_drawdown",
@@ -29,7 +31,9 @@
       "limit": 0.15,
       "actual": null,
       "status": "not_certified",
-      "definition": "连续高水位含浮亏和退出成本；收盘、日低价包络、精确盘中分列。日线包络不能认证15%盘中上限"
+      "definition": "连续高水位含浮亏和退出成本；收盘、日低价包络、精确盘中分列。日线包络不能认证15%盘中上限",
+      "role": "historical_challenge_reference",
+      "enforced_for_native_adoption": false
     },
     {
       "id": "sharpe",
@@ -37,7 +41,9 @@
       "base": 1,
       "actual": null,
       "status": "not_evaluated",
-      "definition": "原币股票诊断252、加密365，频率/无风险假设与序列相关处理预登记。将来的24/7统一总账户用完整UTC日净收益及365日口径；不平均不同子账户夏普。点估计、HAC/分块区间和选择校正分别报告。"
+      "definition": "原币股票诊断252、加密365，频率/无风险假设与序列相关处理预登记。将来的24/7统一总账户用完整UTC日净收益及365日口径；不平均不同子账户夏普。点估计、HAC/分块区间和选择校正分别报告。",
+      "role": "historical_challenge_reference",
+      "enforced_for_native_adoption": false
     }
   ],
   "levels": [
@@ -69,7 +75,8 @@
     "implementation_repair_accounts_max": 8,
     "executed_implementation_repair_accounts": 8,
     "remaining_implementation_repair_accounts": 0,
-    "repair_reallocation_plan": "docs/research/equities_pit_stocks_20261026/volume-context-correction-plan.json"
+    "repair_reallocation_plan": "docs/research/equities_pit_stocks_20261026/volume-context-correction-plan.json",
+    "scope": "Closed historical experiment only; newly authorized mature native adoption is tracked separately."
   },
   "capital_and_risk": {
     "US": {
@@ -82,49 +89,37 @@
       "base": 100000,
       "capacity_reference": 1000000
     },
-    "initial_scope": "当前聚焦已封存个股机制及原始证据；不新增ETF或个股参数搜索。10倍资金仅原币容量参考，只有机制准入后才触发容量试验。",
+    "initial_scope": "旧24账户维持封存；当前GitHub复现使用作者原始资本/仓位/杠杆作隔离研究，原0.8现金规则不强加给作者版本；真实账户下单仍关闭。",
     "gross_limit": 0.8,
     "short_enabled": false,
     "leverage_enabled": false,
     "orders_enabled": false,
-    "gross_limit_scope": "0.8为既有实验下单目标，不是连续硬上限；已封存动量实际收盘最高0.8454184377，32日超0.8，保留原结果并判风险未通过。"
+    "gross_limit_scope": "0.8仅属于既有本地实验假设；不约束新采用的成熟原生方案。原生FinRL本次risk_on输出约100%持仓，保留原规则。"
   },
   "priority_queue": [
     {
-      "id": "faber10m",
-      "name": "Faber月末10月趋势",
+      "id": "mature_native_adoption",
+      "name": "直接采用成熟原生方案：FinRL-Trading",
       "priority": 0,
-      "status": "diagnostic_complete_insufficient"
+      "status": "native_source_integrated_in_CZ"
     },
     {
-      "id": "tsmom_relative",
-      "name": "AQR/PST趋势与横截面动量",
+      "id": "native_first_run",
+      "name": "保留原规则与配置，先跑通原版",
       "priority": 1,
-      "status": "stock_diagnostic_insufficient"
+      "status": "CZ_native_signal_and_order_preview_passed"
     },
     {
-      "id": "quality_value",
-      "name": "AQR质量/价值 + ARK公司论点",
-      "priority": 1,
-      "status": "stock_quality_failed_value_pending"
-    },
-    {
-      "id": "earnings_event",
-      "name": "盈余/公告后漂移与事件风险层",
+      "id": "return_reconciliation",
+      "name": "持续对账作者收益与本地数据/执行差异",
       "priority": 2,
-      "status": "filing_events_captured_release_pending"
+      "status": "diagnostic_not_adoption_blocker"
     },
     {
-      "id": "crypto_carry_momentum",
-      "name": "Sentinel资金费/动量及NFI多规则",
-      "priority": 1,
-      "status": "existing_economic_gate_not_passed"
-    },
-    {
-      "id": "pairs_reversion",
-      "name": "关系回归/币对和股票配对",
-      "priority": 2,
-      "status": "equity_short_borrow_and_sample_gated"
+      "id": "targeted_optimization",
+      "name": "原版运行后针对实证问题优化",
+      "priority": 3,
+      "status": "allowed_after_native_baseline"
     }
   ],
   "tasks": [
@@ -201,6 +196,13 @@
       "status": "done",
       "owner": "TradingAgents",
       "done_when": "既有结果、负结论、原始来源、局限及后续准入条件已交付；不宣称收益达标。"
+    },
+    {
+      "id": "GITHUB01",
+      "title": "成熟原生方案直接采用，收益对账与优化跟随实际运行",
+      "status": "CZ_native_integration_prepared_broker_and_capital_pending",
+      "owner": "TradingAgents",
+      "done_when": "成熟度与可复用性优先；原版先运行，收益口径差异保留诊断；不以旧自设门槛要求全部外部方案先重写。"
     }
   ],
   "evidence": {
@@ -411,9 +413,9 @@
       "profit_goal_met": false
     }
   },
-  "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
-  "execution_plan": "tradingagents/research/equities/stock_protocol.json",
-  "report": "docs/research/equities_depth_acceptance_20261026/README.md",
+  "source_catalog": "docs/research/equities_github_reference_20261027/catalog.json",
+  "execution_plan": "docs/research/equities_github_reference_20261027/adoption-plan.json",
+  "report": "docs/research/equities_github_reference_20261027/adoption.md",
   "production_eligible": false,
   "broker_verified": false,
   "independent_forward_oos": false,
@@ -558,12 +560,13 @@
     }
   ],
   "focus_policy": {
-    "mode": "depth_before_breadth",
-    "new_families_frozen": true,
-    "universe_expansion_frozen": true,
-    "parameter_search_frozen": true,
-    "remaining_8_capacity_accounts_conditional": true,
-    "scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。"
+    "mode": "mature_solution_adoption_first",
+    "proprietary_strategy_development_paused": true,
+    "parameter_search_frozen": false,
+    "scope": "成熟可复用方案高于我们的既定限制；原生代码与配置直接采用，指标对齐用于诊断，不强迫原方案符合80%仓位/15%回撤或旧账户预算。没有必要先重写一套策略。",
+    "original_return_parity_required_before_optimization": false,
+    "prior_focus_policy": "docs/research/equities_github_reference_20261027/prior-objectives.json",
+    "optimization_policy": "先运行原版；运行中有证据的集成修复和优化可推进，保留原版作对照，不开展无依据参数海选。"
   },
   "research_closeout": {
     "schema": "equity-research-closeout.v1",
@@ -608,5 +611,73 @@
       "max_drawdown": 0.15,
       "challenge_retained_as_unmet": true
     }
-  }
+  },
+  "github_reference": {
+    "plan": "docs/research/equities_github_reference_20261027/plan.json",
+    "report": "docs/research/equities_github_reference_20261027/README.md",
+    "source_catalog": "docs/research/equities_github_reference_20261027/sources.json",
+    "status": "partial_reproduction_original_inputs_missing",
+    "global_highest_return_certified": false,
+    "optimization_enabled": true,
+    "source_parity_before_local_adaptation": false,
+    "prior24_budget_unchanged": true,
+    "catalog_repositories": 10,
+    "source_engine_paths": 1,
+    "independent_replica_paths": 1,
+    "independent_strategy_trials": 1,
+    "original_headline_parity": false,
+    "same_input_engine_parity": true,
+    "author_curve_arithmetic_checks": 4,
+    "verification": "docs/research/equities_github_reference_20261027/verification.json",
+    "local_realistic_accounts": 0,
+    "parameter_searches": 0,
+    "optimization_policy": "native_baseline_first_then_evidence_based_improvement",
+    "exact_historical_headline_match_is_hard_gate": false
+  },
+  "adoption_policy": {
+    "user_direction": "我们的限制不一定是对的，成熟的方案优先级更高，我们更多的是直接采用再优化",
+    "priority": [
+      "mature_maintained_licensed_native_solution",
+      "native_end_to_end_run",
+      "accounting_and_execution_difference_diagnosis",
+      "targeted_optimization"
+    ],
+    "legacy_constraints_role": "historical_reference_not_universal_adoption_veto",
+    "legacy_targets_role": "50%年化/15%回撤/Sharpe1保留历史挑战参考，不作为外部方案筛选或本地采用硬门槛",
+    "original_strategy_changes_before_baseline": false,
+    "exact_headline_match_blocks_local_adoption": false,
+    "default_reimplementation": false,
+    "orders_enabled": false,
+    "primary_candidate": "AI4Finance-Foundation/FinRL-Trading",
+    "primary_scope": "US native AdaptiveRotation v1.2.2; do not infer HK support",
+    "source_commit": "4409abe925c904e570be78ebfb5e77ac3491dff8",
+    "license": "Apache-2.0",
+    "report": "docs/research/equities_github_reference_20261027/adoption.md",
+    "native_engine_executed": true,
+    "strategy_code_changed": false,
+    "strategy_configuration_changed": false,
+    "first_run_result": "results/research/equities_finrl_native_20261027_v001",
+    "full_historical_profit_evaluated": false,
+    "HK_native_adoption_completed": false,
+    "integration": {
+      "owner": "CZ-Agent",
+      "module": "cz.trading.equities",
+      "native_source_vendored": true,
+      "native_parameters_unchanged": true,
+      "native_output_matches_original_run": true,
+      "order_preview_implemented": true,
+      "broker_read_only_preflight_implemented": true,
+      "broker_authenticated": false,
+      "real_order_transport_implemented": false,
+      "continuous_position_risk_monitor_activated": false,
+      "broker_selection_pending": true,
+      "capital_allocation_pending": true,
+      "orders_enabled": false,
+      "live_deployed": false,
+      "preparation_release": "/Users/chrise/GitHub/CZ-Agent/artifacts/equities/finrl_release_20261027_v002/cz-equities-preparation.zip",
+      "report": "/Users/chrise/GitHub/CZ-Agent/docs/equities-native-readiness.md",
+      "verification": "/Users/chrise/GitHub/CZ-Agent/docs/equities-preparation-verification.json"
+    }
+  },
+  "acceptance_standard_scope": "原研究验收参考；不作为当前成熟方案本地直接采用或针对性优化的通用前置门槛。"
 }

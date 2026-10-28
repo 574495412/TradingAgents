@@ -1,0 +1,29 @@
+{
+  "schema": "equity-mature-native-adoption-policy.v1",
+  "date_shanghai": "2026-10-27",
+  "supersedes": "Earlier exact-headline-match-before-adoption/optimization workflow; earlier frozen reproduction receipts remain unchanged",
+  "user_direction": "我们的限制不一定是对的，成熟的方案优先级更高，我们更多的是直接采用再优化",
+  "objective": "Use maintained, licensed, runnable native solutions first. Preserve original rules/configuration and make practical integration work; optimize measured issues after a native baseline.",
+  "maturity_evidence": ["maintenance and real releases/source history", "clear permission to reuse", "complete runnable strategy and configuration", "documented data/execution/state interface", "test and operational evidence; popularity is only a supporting signal"],
+  "legacy_constraints": {
+    "80pct_exposure": "historical local assumption, not an adoption veto",
+    "15pct_drawdown": "historical challenge reference, not an external strategy screening veto",
+    "50pct_CAGR": "historical aspiration, not certified performance or a required maturity criterion",
+    "24_account_budget": "closed historical experiment budget, not a limit on newly authorized native adoption",
+    "exact_headline_CAGR_match": "reconciliation diagnostic, not a hard blocker for local use or measured improvement"
+  },
+  "baseline": {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "commit": "4409abe925c904e570be78ebfb5e77ac3491dff8",
+    "license": "Apache-2.0",
+    "strategy": "AdaptiveRotation v1.2.2",
+    "market": "US",
+    "code_or_strategy_parameter_changes": false,
+    "data_adapter": "captured Yahoo adjusted OHLC into native daily CSV format; upstream FMP snapshot not required for local adoption",
+    "entrypoint": "research_tools/github_equity_reference/use_finrl.py",
+    "first_native_execution": "2026-10-23 signal, not a full financial backtest"
+  },
+  "HK": "Native strategy candidate still to choose; US FinRL support does not establish HK compatibility. Keep the existing Vectaix source audit without claiming mature adoption.",
+  "optimization": "Keep the native baseline and optimize concrete integration, execution or economic issues; do not default to rewriting the strategy or conducting a parameter lottery.",
+  "orders_enabled": false
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "original-momentum-stock-input-contract.v1",
+  "status": "missing_licensed_raw_input",
+  "user_response": "暂无CRSP/WRDS合法导出或访问",
+  "reference_vintage": "202412 official FIZ archive for primary matched reconstruction; current CIZ files quarantined when vintages differ",
+  "evaluation_months": [
+    "202301",
+    "202405"
+  ],
+  "minimum_security_history": [
+    "202112",
+    "202405"
+  ],
+  "why_history_starts_202112": "January2023 portfolio requires endDecember2021 price and priorJanuary-November2022 returns; formation size and breakpoints are December2022.",
+  "mandatory_inputs": {
+    "security_month_history": [
+      "stable CRSP security ID and company ID",
+      "historical exchange/security type validity, including disappeared/delisted securities",
+      "monthly original price and quote/sign status",
+      "shares outstanding with explicit units and month-end ME",
+      "dividend-inclusive return and all original missing-return codes",
+      "delisting return/status with documented FIZ combination and no double counting",
+      "split/distribution/identity changes and coverage metadata"
+    ],
+    "vintage_and_legal": [
+      "source identity and lawful use/access statement",
+      "CRSP release stamp, FIZ/CIZ format and revision cutoff",
+      "same-vintage NYSE median-size and30/70prior-return breakpoints",
+      "full eligibility and exclusion reasons; no survivor-only ticker list"
+    ]
+  },
+  "must_not_substitute": [
+    "10ARK stocks",
+    "current index constituents",
+    "Yahoo available survivors",
+    "author precomputed portfolio returns as if they were raw constituents",
+    "zero-filled missing/dead stocks",
+    "current CIZ raw returns silently mixed with202412FIZ references"
+  ],
+  "unresolved_before_security_level_pass": [
+    "original missing-price return treatment must be preserved and resolved before compounding",
+    "same-vintage security coverage and corporate actions",
+    "individual portfolio weights and tie handling against original reference"
+  ],
+  "security_level_replication_passed": false,
+  "publisher_component_check_does_not_satisfy_contract": true,
+  "realized_strategy_return_or_cagr": null
+}

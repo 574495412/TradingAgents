@@ -1,0 +1,191 @@
+{
+  "schema": "equity-github-reference-result.v1",
+  "IBS": {
+    "configuration": {
+      "repo": "CazSyd/IBS-Strategy",
+      "commit": "c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5",
+      "ticker": "TQQQ",
+      "window": [
+        "2010-02-09",
+        "2026-08-01"
+      ],
+      "window_boundary": "README only identifies2010-02 through2026-07, exact original last session unavailable. Use full stated months, end exclusive; never scan dates to improve matching.",
+      "initial_cash": 10000,
+      "entry_threshold": 0.132,
+      "exit_threshold": 0.965,
+      "fills": "previous daily IBS, next daily open",
+      "sizing": "full whole adjusted-price units, cash remainder",
+      "cash_rate": 0,
+      "costs": 0,
+      "cash_rate_limit": "Original engine default0; headline exact cash-yield setting unknown. Do not search alternate settings.",
+      "data_vintage": "Fresh Yahoo OHLC adjusted by AdjClose/Close; original author raw snapshot not published",
+      "source_license": "No repository license detected; private local evaluation only, no vendoring/redistribution or live integration"
+    },
+    "source_engine_summary": {
+      "entry_threshold": 0.132,
+      "exit_threshold": 0.965,
+      "sharpe": 1.177037006398055,
+      "total_return": 2219.1739078974265,
+      "max_drawdown": -0.5684198740318354,
+      "win_rate": 0.7457627118644068,
+      "num_trades": 177,
+      "cagr": 0.596750601430527,
+      "exposure": 0.6228874939642685,
+      "final_capital": 22201739.078974266
+    },
+    "independent_replica": {
+      "start": "2010-02-11",
+      "end": "2026-07-31",
+      "rows": 4142,
+      "final_equity": 22201739.078974266,
+      "total_return": 2219.1739078974265,
+      "cagr": 0.596750601430527,
+      "max_drawdown": -0.5684198740318355,
+      "sharpe_252_zero_rf_ddof1": 1.177037006398055
+    },
+    "same_frozen_input_engine_parity": true,
+    "max_abs_error": {
+      "cash": 0.0,
+      "shares": 0.0,
+      "equity": 0.0
+    },
+    "trade_records_equal": true,
+    "causal_prefix_equal": true,
+    "closed_trades": 177,
+    "open_positions": 1,
+    "author_headline_cagr": 0.593,
+    "cagr_gap_percentage_points": 0.37506014305270785,
+    "within_headline_tolerance": false,
+    "author_original_input_snapshot_available": false,
+    "exact_author_window_available": false,
+    "headline_cash_yield_setting_available": false,
+    "author_headline_fully_reproduced": false,
+    "original_matching_status": "engine_parity_only_original_data_and_settings_missing",
+    "realistic_local_cost_account": null,
+    "optimization_allowed": false
+  },
+  "HK_published_curve_arithmetic": [
+    {
+      "model": "factor",
+      "rows": 644,
+      "start": "2024-02-01",
+      "end": "2026-09-16",
+      "errors": {
+        "total_return": 1.9999987777019612e-10,
+        "cagr": 6.66276062100124e-11,
+        "max_drawdown_daily": 1.6043649742059074e-10
+      },
+      "reconstructed": {
+        "total_return": 0.1601863589999999,
+        "cagr": 0.058283557376627604,
+        "max_drawdown_daily": -0.2137669251604365
+      },
+      "published": {
+        "total_return": 0.1601863588,
+        "cagr": 0.05828355731,
+        "max_drawdown_daily": -0.213766925
+      },
+      "arithmetic_passed": true,
+      "training_reproduced": false,
+      "full_trade_replay_reproduced": false,
+      "execution_validated": false,
+      "reference_valuation_days": 20,
+      "open_positions": 0,
+      "pending_sells": 0,
+      "realized_account_return_certified": false
+    },
+    {
+      "model": "linear",
+      "rows": 644,
+      "start": "2024-02-01",
+      "end": "2026-09-16",
+      "errors": {
+        "total_return": 3.9999997758499717e-10,
+        "cagr": 7.939848778448777e-11,
+        "max_drawdown_daily": 3.9053417444367966e-10
+      },
+      "reconstructed": {
+        "total_return": 0.389789787,
+        "cagr": 0.13370801147939848,
+        "max_drawdown_daily": -0.10360960639053418
+      },
+      "published": {
+        "total_return": 0.3897897866,
+        "cagr": 0.1337080114,
+        "max_drawdown_daily": -0.103609606
+      },
+      "arithmetic_passed": true,
+      "training_reproduced": false,
+      "full_trade_replay_reproduced": false,
+      "execution_validated": false,
+      "reference_valuation_days": 364,
+      "open_positions": 1,
+      "pending_sells": 1,
+      "realized_account_return_certified": false
+    },
+    {
+      "model": "lightgbm_small",
+      "rows": 644,
+      "start": "2024-02-01",
+      "end": "2026-09-16",
+      "errors": {
+        "total_return": 2.220446049250313e-16,
+        "cagr": 7.913281141469497e-11,
+        "max_drawdown_daily": 1.3506429308307588e-10
+      },
+      "reconstructed": {
+        "total_return": 1.2209189070000002,
+        "cagr": 0.3555642724208672,
+        "max_drawdown_daily": -0.2009997023649357
+      },
+      "published": {
+        "total_return": 1.220918907,
+        "cagr": 0.3555642725,
+        "max_drawdown_daily": -0.2009997025
+      },
+      "arithmetic_passed": true,
+      "training_reproduced": false,
+      "full_trade_replay_reproduced": false,
+      "execution_validated": false,
+      "reference_valuation_days": 169,
+      "open_positions": 1,
+      "pending_sells": 1,
+      "realized_account_return_certified": false
+    },
+    {
+      "model": "lightgbm_large",
+      "rows": 644,
+      "start": "2024-02-01",
+      "end": "2026-09-16",
+      "errors": {
+        "total_return": 2.220446049250313e-16,
+        "cagr": 2.3552049199793146e-11,
+        "max_drawdown_daily": 3.432584216866985e-10
+      },
+      "reconstructed": {
+        "total_return": 1.0829713870000002,
+        "cagr": 0.32282431132355205,
+        "max_drawdown_daily": -0.15493315074325842
+      },
+      "published": {
+        "total_return": 1.082971387,
+        "cagr": 0.3228243113,
+        "max_drawdown_daily": -0.1549331504
+      },
+      "arithmetic_passed": true,
+      "training_reproduced": false,
+      "full_trade_replay_reproduced": false,
+      "execution_validated": false,
+      "reference_valuation_days": 218,
+      "open_positions": 2,
+      "pending_sells": 2,
+      "realized_account_return_certified": false
+    }
+  ],
+  "executed_financial_paths": 2,
+  "independent_strategy_trials": 1,
+  "prior24_budget_unchanged": true,
+  "parameter_searches": 0,
+  "orders_enabled": false,
+  "production_eligible": false
+}

@@ -1,0 +1,19 @@
+{
+  "inputs_sha256": {
+    "docs/research/equities_french_calibration_20261027/execution-reference-plan.json": "568f9aa03ce6721e9c00b915dbf42e1fdd39c5dea96d6696c75623305a3dbf00",
+    "data/research/equity_french_calibration_20261027_v001/broker/commission.htm": "62d9d9b5d138e41e9f678f2907482d9d88b56bf33e1c01b749e8ec76826a3436",
+    "data/research/equity_french_calibration_20261027_v001/broker/commission.receipt.json": "89f63c8bfa3e616703cbfeb891bab5ad41bc806ebade0002446879986ab593e1",
+    "results/research/equities_pit_stocks_context_20261027_v001/completion.json": "b7731c0c171e35891d34e6f3fec48d12c1693901b7526ebee15fcf82a1c31373",
+    "results/research/equities_pit_stocks_context_20261027_v001/summary.json": "7d5cf0a6669433ebf57e66abdf145e66c9c220f69540ae1e960ec766dd79c7a0",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_disclosed_equal_10000_5bps/state.json": "fd85dc1faf52d3ef584adc46867f0714f529d467b55928a10383bb2e5d09f63a",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_disclosed_equal_10000_15bps/state.json": "5d3f63e899cb33fce2928650cdc0e7bc69ffec26f5f2085caa91c8595b30e870",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_french_mom_12_2_10000_5bps/state.json": "550100a62c9f0a959ccde36b4fcff8cfcfbe19bc4a23c6e707a363fa29707db6",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_french_mom_12_2_10000_15bps/state.json": "cfbe1efefb0efb0b4dccd1bf5c83d22d707c29b127e3ca3b2ed4ef2b3a1b887d",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_gross_profitability_10000_5bps/state.json": "30bc2e248590de87265436a2de406588be85485fe612d5990077da8f02db10b1",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_gross_profitability_10000_15bps/state.json": "ab8865703e5646c1c292c85c694b0d340443eb497149c808ae3ea4a35be8d4fa",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_stock_blend_equal_10000_5bps/state.json": "756536accac12bcd791ee2f9f4eb92f7c19ed491f756bc5468259c7000a387c7",
+    "results/research/equities_pit_stocks_context_20261027_v001/US_stock_blend_equal_10000_15bps/state.json": "c1462ed2c0b79e35be93e0045a7175c36e3f88fb5baf117694c1e304305b9f7c"
+  },
+  "analysis_sha256": "d43984dcc58596fbb2b22494c42d1929f7c7a733b745c62887a99dadedcbd170",
+  "external_attestation": false
+}

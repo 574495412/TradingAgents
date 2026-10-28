@@ -1,0 +1,612 @@
+{
+  "schema": "equity-research-objectives.v1",
+  "version": "20261027_depth_v015",
+  "title": "股票优先 · 原始证据与独立验证",
+  "program_status": "research_closed_with_limitations",
+  "profit_goal_status": "not_met",
+  "objective": "按用户降低本轮结题要求：以现有股票优先研究和加密证据完成可复核结论，停止追加实验；原始来源、全成本诊断、失败和未解项完整保留。外部独立审计与完整执行/容量认证留待策略准入，长期真实前向留待收益认证。50%净年化、最大回撤15%、净夏普1保留为未达成的挑战，不将研究结题或自身回测视为收益达标。",
+  "user_confirmation": {
+    "date_shanghai": "2026-10-26",
+    "challenge_cagr": 0.5,
+    "max_drawdown": 0.15,
+    "basis": "用户明确确认；可行性尚未证明，不是基金行业基准或盈利承诺"
+  },
+  "scope": "US/HK原币股票账户分别验收。加密是参考与独立原生验证分支；没有已验证FX和共同资本账户时不拼接USD/HKD/USDT收益。",
+  "targets": [
+    {
+      "id": "net_cagr",
+      "label": "含退出准备扣费年化",
+      "base": 0.2,
+      "intermediate": 0.3,
+      "challenge": 0.5,
+      "actual": null,
+      "status": "not_met",
+      "definition": "无外部资金流时：(期末扣退出准备权益/期初全部本金)^(365.25/实际自然日)-1；有转入转出时先按单位净值消除外部资金流影响。闲置现金计入总本金，费用/税费/融资/资金费/FX和浮亏完整计入；至少12个月且满足事前功效要求的独立前向证据方可用于收益目标验收，短窗年化只作诊断。"
+    },
+    {
+      "id": "max_drawdown",
+      "label": "最大回撤",
+      "limit": 0.15,
+      "actual": null,
+      "status": "not_certified",
+      "definition": "连续高水位含浮亏和退出成本；收盘、日低价包络、精确盘中分列。日线包络不能认证15%盘中上限"
+    },
+    {
+      "id": "sharpe",
+      "label": "净值夏普",
+      "base": 1,
+      "actual": null,
+      "status": "not_evaluated",
+      "definition": "原币股票诊断252、加密365，频率/无风险假设与序列相关处理预登记。将来的24/7统一总账户用完整UTC日净收益及365日口径；不平均不同子账户夏普。点估计、HAC/分块区间和选择校正分别报告。"
+    }
+  ],
+  "levels": [
+    {
+      "id": "research_validity",
+      "criterion": "已有原始来源、固定范围、时点假设、全成本诊断、实现纠正及反证/未解项完整可查，即可完成本轮研究结题。允许可信的否定或未知结论，不要求本轮取得外部签署、关闭全部源缺口或完成长期真实前向；不因此获得策略准入或收益达标。"
+    },
+    {
+      "id": "strategy_admission",
+      "criterion": "预登记适用域内扣全成本的优势及风险/容量/独立复算证据通过后才准入。30周期/4月簇是既有最低研究计数，统计功效不足仍不通过；不要求每个模块全年50%。"
+    },
+    {
+      "id": "profit_target",
+      "criterion": "至少两个获准机制在统一资本账户中，于事前冻结、未被查看/调参污染的前向期同时满足总本金净CAGR>=50%、同步可执行口径最大回撤<=15%、净Sharpe>=1；真实绩效须有外部账户记录和独立核对。至少12个月且达到事前功效与既有100完整周期下限，低相关有效样本不足继续未知。研究模拟/影子账本不等于真实绩效。"
+    }
+  ],
+  "budget": {
+    "strategy_families_max": 6,
+    "versions_per_family_max": 2,
+    "new_accounts_max": 24,
+    "first_screen_accounts": 8,
+    "followup_accounts_max": 8,
+    "capacity_accounts_max": 8,
+    "existing_accounts_reused_not_new": true,
+    "stopping": "原16账户保留，已按登记使用原剩余8名额完成同协议必要纠错，累计24/24。策略假设未新增、总上限不变；容量跟进未触发且无自动追加余额。后续不扩候选/扩池/调参或继续追加金融账户，先解决原始来源、机制反证和外部独立验收。",
+    "executed_new_accounts": 24,
+    "executed_stock_accounts": 16,
+    "remaining_capacity_accounts": 0,
+    "implementation_repair_accounts_max": 8,
+    "executed_implementation_repair_accounts": 8,
+    "remaining_implementation_repair_accounts": 0,
+    "repair_reallocation_plan": "docs/research/equities_pit_stocks_20261026/volume-context-correction-plan.json"
+  },
+  "capital_and_risk": {
+    "US": {
+      "base_currency": "USD",
+      "base": 10000,
+      "capacity_reference": 100000
+    },
+    "HK": {
+      "base_currency": "HKD",
+      "base": 100000,
+      "capacity_reference": 1000000
+    },
+    "initial_scope": "当前聚焦已封存个股机制及原始证据；不新增ETF或个股参数搜索。10倍资金仅原币容量参考，只有机制准入后才触发容量试验。",
+    "gross_limit": 0.8,
+    "short_enabled": false,
+    "leverage_enabled": false,
+    "orders_enabled": false,
+    "gross_limit_scope": "0.8为既有实验下单目标，不是连续硬上限；已封存动量实际收盘最高0.8454184377，32日超0.8，保留原结果并判风险未通过。"
+  },
+  "priority_queue": [
+    {
+      "id": "faber10m",
+      "name": "Faber月末10月趋势",
+      "priority": 0,
+      "status": "diagnostic_complete_insufficient"
+    },
+    {
+      "id": "tsmom_relative",
+      "name": "AQR/PST趋势与横截面动量",
+      "priority": 1,
+      "status": "stock_diagnostic_insufficient"
+    },
+    {
+      "id": "quality_value",
+      "name": "AQR质量/价值 + ARK公司论点",
+      "priority": 1,
+      "status": "stock_quality_failed_value_pending"
+    },
+    {
+      "id": "earnings_event",
+      "name": "盈余/公告后漂移与事件风险层",
+      "priority": 2,
+      "status": "filing_events_captured_release_pending"
+    },
+    {
+      "id": "crypto_carry_momentum",
+      "name": "Sentinel资金费/动量及NFI多规则",
+      "priority": 1,
+      "status": "existing_economic_gate_not_passed"
+    },
+    {
+      "id": "pairs_reversion",
+      "name": "关系回归/币对和股票配对",
+      "priority": 2,
+      "status": "equity_short_borrow_and_sample_gated"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "E00",
+      "title": "登记50%/15%挑战与分层验收",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "用户确认、原阶段目标保留、实际栏不造数"
+    },
+    {
+      "id": "E01",
+      "title": "官方基金与外部策略来源核查",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "固定来源、版本/许可、适用域和复现边界；作者声明不当本地收益"
+    },
+    {
+      "id": "E02",
+      "title": "首次8账户外部规则移植和风险消融",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "冻结后运行真实数据、独立财务复算、实际JSON恢复、完整分期及失败记录"
+    },
+    {
+      "id": "E03",
+      "title": "补当前历史个股身份、退市和现金原始证据",
+      "status": "research_closed_with_limitations",
+      "owner": "TradingAgents",
+      "done_when": "本轮已完成证据、诊断结论和未解项可复核交付；源缺口和外部认证转入后续准入，不将它们视为已解决。",
+      "progress": "已核查历史身份、原始财报/事件和生命周期；64日行情候选已取得但因源差异仍0日准入，真实并购资金可用时间未知。作为结题局限保留。",
+      "original_strict_done_when": "逐项关闭已知缺口并由外部独立者复核；先保留当前固定队列，不以扩池代替证据深度"
+    },
+    {
+      "id": "E04",
+      "title": "深入既有股票机制与原始财报口径",
+      "status": "research_closed_with_limitations",
+      "owner": "TradingAgents",
+      "done_when": "本轮已完成证据、诊断结论和未解项可复核交付；源缺口和外部认证转入后续准入，不将它们视为已解决。",
+      "progress": "实际消费的20年度原件45项输入经完整申报和Arelle核查；四个账户归因及372期BTC/USD风险对照完成。COIN七份业绩候选已分为六次完整结果、一次初步指引/重组；六个IR时钟隔离，四份分发原站交叉核对。首次公开与历史预期仍不充分，未复现PEAD。",
+      "original_strict_done_when": "可证伪机制、原始输入、经济归因、偏差/功效和独立核对完成；不新增因子凑收益"
+    },
+    {
+      "id": "E05",
+      "title": "同风险配置、容量与独立样本验收",
+      "status": "deferred_after_research_closeout",
+      "owner": "TradingAgents",
+      "done_when": "至少两个机制准入后，同风险统一资本、真实FX/资金和独立前向证据通过G6-G8；自有回测与测试不充分"
+    },
+    {
+      "id": "E06",
+      "title": "现有CZ界面显示目标与来源优先级",
+      "status": "done",
+      "owner": "CZ-Agent",
+      "done_when": "50%/15%、未达标、来源与任务可见，股票加密指标不混合"
+    },
+    {
+      "id": "E07",
+      "title": "核查目标并写入专家级独立验收标准",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "现有目标审计、原始数据/方法工具/外部证据和拒绝条件写入规范，收益实际值不变"
+    },
+    {
+      "id": "E08",
+      "title": "取得外部独立重建与前向证据",
+      "status": "deferred_after_research_closeout",
+      "owner": "独立核查方待确定",
+      "done_when": "G7、G8所需外部原始凭证、独立代码及签署差异结论可核验；本次不授权交易或联系第三方"
+    },
+    {
+      "id": "E09",
+      "title": "按降低后的标准完成本轮研究结题",
+      "status": "done",
+      "owner": "TradingAgents",
+      "done_when": "既有结果、负结论、原始来源、局限及后续准入条件已交付；不宣称收益达标。"
+    }
+  ],
+  "evidence": {
+    "prior_crypto_admitted_candidates": [],
+    "prior_crypto_status": "所查时点池48个非现金策略账户均负、6个现金对照、无容量队列；另查20个既有BTC/ETH现货永续账户有内部正收益，但两变体都不具组合测试资格且只属一个机制。2024归档训练有122个共同股票日期，账本/执行/范围不同，不能当获准同期PnL。仅评价这些研究包，不评价独立CZ生产策略。",
+    "prior_equity_selection": {
+      "US": "cash",
+      "HK": "cash"
+    },
+    "stock_baseline_cagr": {
+      "US": 0.05686160936989215,
+      "HK": 0.013666139583487835
+    },
+    "baseline_scope": "旧56账户中静态、基础原币资金、15bps滑点、2023-2026诊断，非挑战账户实际栏",
+    "external_run": "results/research/equities_external_20261026_v001",
+    "external_account_count": 8,
+    "external_audit_passed": true,
+    "external_restart_passed": true,
+    "first_execution_profit_goal_status": "not_met",
+    "pit_stock_run": "results/research/equities_pit_stocks_context_20261027_v001",
+    "pit_stock_accounts": 8,
+    "pit_stock_profit_goal_status": "not_met",
+    "pit_stock_full_window_available": false,
+    "combination_admission": "docs/research/equities_pit_stocks_20261026/combination-admission.json",
+    "independent_external_replication_received": false,
+    "verified_real_forward_account": null,
+    "depth_review": {
+      "report": "docs/research/equities_depth_review_20261026/README.md",
+      "verification": "docs/research/equities_depth_review_20261026/verification.json",
+      "new_economic_accounts": 0,
+      "external_attestation_received": false,
+      "original_input_review": "results/research/equity_arelle_review_20261026_v002",
+      "attribution": "results/research/equity_depth_attribution_20261026_v002",
+      "corrected_comparator_note": "原等权/质量/混合账户归因和配对比较仅属旧实现；纠正后动量曲线/成交逐项不变，原动量暴露与COIN核查仍保留各自限制。当前等权对照与配对比较见volume_context_correction。"
+    },
+    "external_audit_passed_scope": "旧external_audit_passed字段只表示外部规则账户的内部账本复算，不表示外部独立参与者验收。",
+    "exas_lifecycle_review": {
+      "report": "docs/research/equities_exas_lifecycle_20261027/README.md",
+      "input_contract": "docs/research/equities_exas_lifecycle_20261027/missing-input-contract.json",
+      "run": "results/research/equity_exas_lifecycle_20261027_v004",
+      "raw_filings": 3,
+      "raw_documents": 5,
+      "candidate_price_rows_acquired": 0,
+      "cash_spendable_at": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "crypto_exposure_review": {
+      "report": "docs/research/equities_crypto_exposure_20261027/README.md",
+      "run": "results/research/equity_crypto_exposure_20261027_v001",
+      "risk_factor": "Coinbase BTC-USD spot close-to-close",
+      "fixed_stock_return_observations": 372,
+      "raw_bound_stock_close_endpoints": 373,
+      "full_hourly_coverage_complete": false,
+      "missing_nonendpoint_hours": 3,
+      "source_amendment_explicit": true,
+      "existing_crypto_strategy_net_pnl_aligned": false,
+      "common_capital_account_executed": false,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "coin_event_review": {
+      "report": "docs/research/equities_coin_events_20261027/README.md",
+      "run": "results/research/equity_coin_events_20261027_v002",
+      "issuer": "0001679788",
+      "selected_filings": 7,
+      "regular_earnings_releases": 6,
+      "preliminary_financial_events": 1,
+      "quarantined_ir_publication_clocks": 6,
+      "original_wire_display_clock_crosschecks": 4,
+      "certified_absolute_first_public_clocks": 0,
+      "scope": "Only COIN fixed-window financial filings, not the entire stock universe or all COIN events.",
+      "new_economic_accounts": 0,
+      "PEAD_reproduced": false,
+      "external_independent_attestation": null
+    },
+    "exas_gap_review": {
+      "report": "docs/research/equities_exas_lifecycle_20261027/README.md",
+      "run": "results/research/equity_exas_gap_20261027_v001",
+      "summary": "docs/research/equities_exas_lifecycle_20261027/price-gap-summary.json",
+      "candidate_missing_session_rows_acquired": 64,
+      "contract_rows_observed": 84,
+      "admitted_gap_rows": 0,
+      "fixed_overlap_price_failures": [
+        "2024-06-26"
+      ],
+      "fixed_overlap_volume_differences": 20,
+      "frozen_accounts_modified": false,
+      "cash_spendable_at": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "market_semantics_review": {
+      "report": "docs/research/equities_exas_lifecycle_20261027/README.md",
+      "evidence": "docs/research/equities_exas_lifecycle_20261027/market-semantics-evidence.json",
+      "run": "results/research/equity_exas_market_semantics_20261027_v003",
+      "original_PDFs_bound": 3,
+      "historical_2024_rule_edition_verified": false,
+      "actual_EXAS_auction_records_acquired": false,
+      "EXAS_simulated_fills_with_calendar_assigned_clock": 16,
+      "price_volume_difference_causes_resolved": false,
+      "admitted_gap_rows": 0,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "selection_power_review": {
+      "report": "docs/research/equities_depth_review_20261026/README.md",
+      "run": "results/research/equity_selection_power_20261027_v002",
+      "lineage": "docs/research/equities_depth_review_20261026/selection-lineage.json",
+      "planning": "docs/research/equities_depth_review_20261026/power-planning.json",
+      "observed_completed_records": 180,
+      "prior_reused_records": 164,
+      "current_program_account_records": 16,
+      "cash_policy_records": 26,
+      "exact_distinct_curves": 160,
+      "independent_trial_count": null,
+      "complete_search_history_certified": false,
+      "stock_market_date_overlap_with_earlier_US_results": 372,
+      "stock_specific_prior_viewing_proven": false,
+      "incomplete_attempts_retained": 1,
+      "DSR": null,
+      "PBO": null,
+      "real_admission_minimum_effect": null,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null,
+      "snapshot_scope": "原v010的180条观察清单，不含后续8次执行上下文纠错；全局预算和当前结果以volume_context_correction为准。"
+    },
+    "portfolio_readiness_review": {
+      "report": "docs/research/equities_depth_acceptance_20261026/portfolio-readiness.json",
+      "registration": "docs/research/equities_depth_acceptance_20261026/portfolio-readiness-registration.json",
+      "run": "results/research/equity_portfolio_readiness_20261027_v001",
+      "stock_accounts_within_15pct_close_drawdown": 0,
+      "reviewed_preexisting_matched_crypto_accounts": 20,
+      "eligible_matched_crypto_variants": 0,
+      "matched_crypto_distinct_mechanisms": 1,
+      "current_20_crypto_overlap_dates": 0,
+      "legacy_2024_calendar_overlap_dates": 122,
+      "legacy_calendar_overlap_is_admissible_PnL": false,
+      "shared_capital_FX_verified": false,
+      "common_capital_account_executed": false,
+      "new_economic_accounts": 0,
+      "external_independent_attestation": null,
+      "stock_source_superseded_by": "results/research/equities_pit_stocks_context_20261027_v001"
+    },
+    "volume_context_correction": {
+      "plan": "docs/research/equities_pit_stocks_20261026/volume-context-correction-plan.json",
+      "report": "docs/research/equities_pit_stocks_20261026/README.md",
+      "run": "results/research/equities_pit_stocks_context_20261027_v001",
+      "comparison": "docs/research/equities_pit_stocks_20261026/volume-context-comparisons.json",
+      "contrast": "docs/research/equities_pit_stocks_20261026/volume-context-contrast.json",
+      "status": "eight_correction_accounts_complete_internal_only",
+      "completed_replays": 8,
+      "parent_run": "results/research/equities_pit_stocks_20261026_v002",
+      "old_numerical_results_retained": true,
+      "warmup_blocked_evaluation_sessions": 19,
+      "genuine_prior_context_sessions": 20,
+      "new_hypotheses": 0,
+      "fresh_process_JSON_recovery_accounts": 8,
+      "raw_inputs_or_frozen_engine_modified": false,
+      "independent_forward_OOS": false,
+      "external_attestation": null
+    },
+    "pit_stock_legacy_run": "results/research/equities_pit_stocks_20261026_v002",
+    "pit_stock_total_financial_replays": 16,
+    "pit_stock_legacy_run_status": "Superseded for current policy outcomes by the volume-context correction; immutable old files retained as implementation history.",
+    "signal_order_contract_audit": {
+      "report": "docs/research/equities_pit_stocks_20261026/README.md",
+      "run": "results/research/equity_signal_order_contract_20261027_v002",
+      "plan": "docs/research/equities_pit_stocks_20261026/signal-order-contract-plan.json",
+      "summary": "docs/research/equities_pit_stocks_20261026/signal-order-summary.json",
+      "monthly_decisions": 18,
+      "annual_availability_rows": 121,
+      "daily_weight_checks": 14920,
+      "integer_request_checks": 258,
+      "observed_fills_checked": 228,
+      "contract_mismatches": 0,
+      "monthly_signal_does_not_imply_monthly_only_execution": true,
+      "full_original_paper_replication": false,
+      "new_financial_accounts": 0,
+      "external_independent_attestation": null
+    },
+    "carry_exit_input_bridge": {
+      "source_inputs": "data/research/carry_exit_cases_20261026_v003",
+      "source_input_review": "results/research/carry_exit_case_input_review_20261026_v002",
+      "bridge_run": "results/research/equity_carry_input_bridge_20261027_v002",
+      "summary": "docs/research/equities_depth_acceptance_20261026/carry-input-bridge-summary.json",
+      "source_markets": [
+        "spot",
+        "perpetual",
+        "mark"
+      ],
+      "diagnostic_cases": [
+        "BNXUSDT",
+        "HIFIUSDT"
+      ],
+      "scope": "只核对两例原始输入时钟与组合证据边界；不计算案例收益、不准入机制、不构成独立核查。",
+      "six_case_market_windows_verified": true,
+      "common_dates_with_frozen_stock_account": [
+        0,
+        0
+      ],
+      "current_notice_body_and_publication_lag_assumption_retained": true,
+      "historical_notice_version_certified": false,
+      "customer_payable_cash_certified": false,
+      "admitted_crypto_modules_added": 0,
+      "new_financial_accounts": 0,
+      "external_attestation": null,
+      "profit_goal_met": false
+    }
+  },
+  "source_catalog": "docs/research/equities_pit_stocks_20261026/sources.json",
+  "execution_plan": "tradingagents/research/equities/stock_protocol.json",
+  "report": "docs/research/equities_depth_acceptance_20261026/README.md",
+  "production_eligible": false,
+  "broker_verified": false,
+  "independent_forward_oos": false,
+  "research_progress": {
+    "title": "研究已结题（有明确局限） · 收益挑战未达成",
+    "scope": "2022年已披露ARK前10大固定个股；非全市场股票池、非ARK基金实际收益。",
+    "disclosure_periods": 16,
+    "historical_cusips": 368,
+    "seed_members": 10,
+    "annual_versions_reconciled": 44,
+    "annual_values_reconciled": 97,
+    "filing_events": 777,
+    "earnings_filing_events": 313,
+    "window": [
+      "2023-01-01",
+      "2024-06-27"
+    ],
+    "completed_accounts": 8,
+    "full_window_available": false,
+    "gap": "EXAS的64个缺失交易日已取得供应商候选，原84行契约覆盖齐全；左端6月26日开盘价差0.025美元越过原0.01容差，20个固定重叠日成交量均有未解释差异，准入仍为0日。原回测保持诊断；实际并购现金可用时间及长窗口仍未认证。 执行字段进一步核查：16笔EXAS模拟成交不是竞价回执，现行官方资料也不能单独认证2024时段/修订口径。",
+    "combination_status": "纠正后的8个个股账户收盘回撤仍均超15%。48个非现金加密账户均负，另20个现货永续账户两变体均未准入且只属一个机制；旧2024训练122个共同日期仍无兼容净收益/FX/统一资本证据。未执行组合，24次金融评估预算已用完。",
+    "high_cost_accounts": [
+      {
+        "policy": "disclosed_equal",
+        "cagr": 0.17618170619146412,
+        "drawdown": 0.2755292648077242,
+        "close_drawdown": 0.26587978919369826,
+        "closed_cycles": 0
+      },
+      {
+        "policy": "french_mom_12_2",
+        "cagr": 0.06802185144115636,
+        "drawdown": 0.2898868183912998,
+        "close_drawdown": 0.2815181861099475,
+        "closed_cycles": 8
+      },
+      {
+        "policy": "gross_profitability",
+        "cagr": -0.07762480128233362,
+        "drawdown": 0.42818911619233113,
+        "close_drawdown": 0.4197747113861846,
+        "closed_cycles": 3
+      },
+      {
+        "policy": "stock_blend_equal",
+        "cagr": 0.00016370325503500816,
+        "drawdown": 0.3309826440384044,
+        "close_drawdown": 0.32010585636979316,
+        "closed_cycles": 9
+      }
+    ],
+    "complete_submission_versions_validated": 20,
+    "consumed_original_values_matched": 45,
+    "depth_new_accounts": 0,
+    "risk_scope": "80%为目标；动量最高收盘股票敞口84.54%，32日超80%。收盘回撤28.15%，低价包络28.99%，均超15%。",
+    "crypto_exposure_scope": "仅已封存372期股票净收益的BTC/USD风险归因；不是加密策略净收益、USD/USDT兑换或统一资本组合。动量与BTC存在正向共变，独立alpha未认证。",
+    "earnings_filing_events_definition": "313为Item2.02申报候选数；未逐份证实为完整财报或首次公开公告。COIN已核查七份中只有六份完整季度业绩。",
+    "event_clock_scope": "原股实验继续采用SEC可得时间。新IR datePublished不得仅凭Z后缀准入；六例隔离，四例与分发原站名义时间差5/6小时，首次公开证据仍有限。",
+    "total_stock_financial_replays": 16,
+    "research_closeout_status": "completed_with_limitations"
+  },
+  "acceptance_standard": "docs/research/equities_depth_acceptance_20261026/acceptance.json",
+  "acceptance_report": "docs/research/equities_depth_acceptance_20261026/README.md",
+  "objective_audit": "docs/research/equities_depth_acceptance_20261026/objective-audit.json",
+  "verification_policy": {
+    "own_backtest_sufficient": false,
+    "internal_decimal_audit_sufficient": false,
+    "own_tests_sufficient": false,
+    "second_ai_sufficient": false,
+    "source_hash_proves_truth": false,
+    "external_data_reconciliation_required": true,
+    "independent_implementation_required": true,
+    "unseen_forward_evidence_required": true,
+    "real_performance_requires_external_account_records": true,
+    "external_attestation_received": false,
+    "future_performance_guaranteed": false,
+    "scope": "策略准入、外部证据与真实收益认证；本轮研究结题另按research_closeout判断。"
+  },
+  "acceptance_gates": [
+    {
+      "id": "G1",
+      "name": "经济机制与可证伪假设",
+      "pass_when": "在事前域内优势超过预登记经济门槛；市场/行业暴露及少数赢家对结果的贡献已解释，机制在其预登记拒绝条件下未被反证。集中收益不自动否定趋势，孤立极值也不能单独证明可重复优势。反证和原完整结果同时保留。",
+      "status": "partial_internal",
+      "independent_evidence": null,
+      "current_evidence_note": "纠正启动前成交量上下文后，同池等权高成本诊断CAGR17.62%，动量仍6.80%，动量成交与净值逐项不变。固定配对均值由+1.88变为−3.69基点/日；原20日块/2000次/固定种子的区间改为约[−19.46,+9.75]基点，仍跨零。旧配对结果仅对应旧实现；非风险匹配对照，不证明可重复alpha或全市场动量失效。原COIN集中与BTC暴露结论保留原有边界。 冻结改编的18个月末排序与实际请求已用独立标量规则核对；原French定义是六个市值加权多空组合，本地十股等权现金改编不能继承其论文业绩或称完整原版复现。"
+    },
+    {
+      "id": "G2",
+      "name": "原始数据、历史身份与因果时间",
+      "pass_when": "影响交易/估值的缺口和身份歧义已解决，修订不回流；外部独立者能由原始记录重建相同输入。不同网站须核对是否共用底层源。",
+      "status": "partial_internal",
+      "independent_evidence": null,
+      "current_evidence_note": "20个实际消费年度原件及45项数值已有内部Arelle/原文核对，非外部认证。EXAS生命周期原件可追溯；后续取得64个缺口日候选，但6月26日开盘差0.025美元超既定容差，20个固定重叠日成交量差异未解释，候选0日准入，旧数值保留为待来源核实的诊断。不得改容差、选择性替换旧末日或将并购现金权利当可用资金。COIN六个IR元数据时钟继续隔离，四份原分发页只有分钟精度，首次公开仍未全面认证。外部独立重建尚缺。 两例加密退出诊断的原始现货/永续/标记价输入已完成并核对时钟与截止窗；公告当时可得仍依赖当前正文发布时间+5分钟假设，没有认证历史公告版本或客户实际到账，也未解决EXAS差异。"
+    },
+    {
+      "id": "G3",
+      "name": "选择偏差、功效与真正未见样本",
+      "pass_when": "多重选择与相关性已处理，达到事前精度/功效；资料不全则显著性未知。已看2023-2026历史不得重命名独立OOS，统计检验不能替代未来成绩。",
+      "status": "pending",
+      "independent_evidence": null,
+      "current_evidence_note": "本地股票研究此前180条完成记录，本次再增8条事后同协议纠错金融评估，观察范围共188条；当前预算从16增至24/24，不能把8次修复隐去，也不能当8次独立新策略试验。完整影响选择史与实际最小效应/功效仍未认证，DSR/PBO留空，原理想化规划不改验收期限。"
+    },
+    {
+      "id": "G4",
+      "name": "净收益机制与账户恒等式",
+      "pass_when": "每笔记录能由外部凭证或保守独立模型核对，所有全成本和退出准备纳入；优势未被已知风险暴露/孤立极值解释，内部与外部实现差异全部解决。",
+      "status": "partial_internal",
+      "independent_evidence": null,
+      "current_evidence_note": "发现账户输入截断导致原前19个评价日prior20成交量不可用，已有源文件实际提供启动前20日。已保留原16账户，纠正复算8个：只增加只读前史，不提前交易、不改变规则/成本/区间/原数据。8份Decimal账本最大差约3.05e−12美元，8份实际JSON状态由新解释器继续恢复逐项一致；仍是内部核对，不能替代外部证据。 标量年/月/Fraction/Decimal按18月末、121次年度可得输入、258条目标请求及228笔既有成交核对，0协议不一致；包含成交量、资金可用、次序与可负担数量。96笔并非月末后首个交易日成交，符合已冻结的逐日目标维护/资金延后模型，不表示真实成交认证。"
+    },
+    {
+      "id": "G5",
+      "name": "可成交性、容量、连续风险",
+      "pass_when": "目标本金且无新增杠杆/借贷假设下满足预登记成本和风险条件；实际超15%即记录目标失败；日线包络、日量比例、恢复测试不能单独认证盘中回撤或容量。",
+      "status": "not_passed",
+      "independent_evidence": null,
+      "current_evidence_note": "修复后的高成本等权/动量/质量/混合收盘回撤约26.59%/28.15%/41.98%/32.01%，均超15%；日低价包络仍不认证同步盘中风险。动量经济路径未变，80%仍是目标而非持续硬上限。真实竞价/报价、容量、成交时钟、来源版本及原EXAS冲突仍缺；不能以纠错或账本通过认证达标。"
+    },
+    {
+      "id": "G6",
+      "name": "组合增量与统一资本",
+      "pass_when": "相对同风险对照的组合改善在扣切换/兑换/冲击成本后成立且可执行；不拼接独立账户净值，不事后拼接各环境赢家。",
+      "status": "blocked",
+      "independent_evidence": null,
+      "current_evidence_note": "原8与纠错8股票路径均未通过15%风险线。已有双腿20账户内部部分为正，但两变体均无组合资格，且同属一个机制；2024旧训练只有122个共同日期，未形成兼容同期PnL。USD/USDT和共享现金/结算仍未验证，不拼接净值。原8个预留容量名额已登记转用于必要纠错，累计24/24，无自动追加余额。 新完成的BNX/HIFI两例只补生命周期输入；事后选择、2025年短窗与当前股票区间无共同日期，不能充当两条获准机制或统一账户成绩。2024训练的122共同日期事实不受此两例结论影响。"
+    },
+    {
+      "id": "G7",
+      "name": "外部独立重建与盲核对",
+      "pass_when": "第三方确认来源与时间、成交/资金/统计口径，并解决实质差异；同一引擎导入、另一AI赞同、单纯哈希或本地绿测不构成此项通过。",
+      "status": "pending_external",
+      "independent_evidence": null,
+      "current_evidence_note": "Arelle和statsmodels是第三方维护的本地工具；本地运行及内部矩阵复算均不构成独立审计人签署。尚无外部独立证据。"
+    },
+    {
+      "id": "G8",
+      "name": "锁定前向成绩与真实绩效",
+      "pass_when": "研究模拟只能验证前向模拟表现；真实总账户全本金净CAGR>=50%、最大回撤<=15%、净Sharpe>=1同时成立且外部独立核对。任何工程通过不代替该项；尚未授权或未取得真实证据则保持未验证。",
+      "status": "not_started",
+      "independent_evidence": null
+    }
+  ],
+  "focus_policy": {
+    "mode": "depth_before_breadth",
+    "new_families_frozen": true,
+    "universe_expansion_frozen": true,
+    "parameter_search_frozen": true,
+    "remaining_8_capacity_accounts_conditional": true,
+    "scope": "先深入已封存的个股动量机制及固定对照。选择这个审计对象发生在已看历史之后，只是研究聚焦，不能称为事前选中赢家或独立样本外。暂不扩候选家族、基金名单或股票数量。"
+  },
+  "research_closeout": {
+    "schema": "equity-research-closeout.v1",
+    "basis": "用户明确要求降低研究结题要求，并已选择：按此执行，先完成研究结题。",
+    "interpretation": "用户已确认先完成研究结题；外部审计、容量及长期真实前向要求后置到相应准入/收益认证。50%年化、15%最大回撤保留为未达成的挑战，不能将研究报告完成解释为策略成功。",
+    "status": "completed_with_limitations",
+    "near_term_objective": "用已封存的数据、纠正后的结果、原始来源、方法、失败与未解项完成可复核研究结论，不再以外部独立审计、完整容量认证或12个月真实前向为本轮研究结题前提。",
+    "required_for_research_closeout": [
+      "原始来源、固定范围、可得时间假设及已知缺口可查",
+      "既有全成本诊断结果及旧实现纠正/失败记录保留",
+      "股票、加密和总账户结论分开，负结果可结题",
+      "未证明的优势、数据和总账户成绩保持未知或未通过",
+      "交付研究结论与后续准入清单，停止追加实验和扩展范围"
+    ],
+    "not_required_for_research_closeout": [
+      "G7外部审计人签署",
+      "G8至少12个月真实前向",
+      "完整竞价/盘口级容量及盘中风险认证",
+      "关闭全部历史数据和事件源差异"
+    ],
+    "deferred_to_strategy_admission": [
+      "G1-G5经济/数据/样本/执行/风险证据",
+      "G7独立重建；完整容量和真实执行适用性"
+    ],
+    "deferred_to_profit_certification": [
+      "G6统一资本与组合增量",
+      "G8真实前向和外部账户记录",
+      "原50%净年化、15%最大回撤、净夏普1同时满足"
+    ],
+    "financial_targets_changed": false,
+    "profit_goal_met": false,
+    "strategy_admission_passed": false,
+    "external_attestation_received": false,
+    "new_financial_accounts_for_closeout": 0,
+    "future_performance_guaranteed": false,
+    "report": "docs/research/equities_depth_acceptance_20261026/README.md",
+    "user_confirmation": {
+      "date_shanghai": "2026-10-27",
+      "choice": "按此执行，先完成研究结题",
+      "research_closeout_relaxation_confirmed": true,
+      "challenge_cagr": 0.5,
+      "max_drawdown": 0.15,
+      "challenge_retained_as_unmet": true
+    }
+  }
+}

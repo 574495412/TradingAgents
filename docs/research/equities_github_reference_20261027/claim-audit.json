@@ -1,0 +1,40 @@
+{
+  "HK116": {
+    "output_cell": 21,
+    "saved_output": "\nPERFORMANCE STATISTICS FOR PORTFOLIO\nTrading days:247\nDaily annualized sharpe: 1.2700436580023897\nAverage annual returns: 116.40831551214876%\nTotal returns: 114.09862671230454%\nMax drawdown: -80.516082241705%\n",
+    "annualization_formula_found": true,
+    "aggregate_sum_found": true,
+    "full_series_OLS_found": true,
+    "account_CAGR": null,
+    "full_strategy_reproduced": false
+  },
+  "DCA": {
+    "external_flows_removed": false,
+    "corrected_TWR": null,
+    "corrected_IRR": null,
+    "source_lines": [
+      {
+        "line": 66,
+        "text": "self.Portfolio.CashBook[\"USD\"].AddAmount(self.monthly_contribution)"
+      },
+      {
+        "line": 95,
+        "text": "daily_return = (portfolio_value / self.last_portfolio_value) - 1"
+      },
+      {
+        "line": 126,
+        "text": "total_return = (self.equity_curve[-1] / self.initial_cash) - 1"
+      },
+      {
+        "line": 129,
+        "text": "cagr = (1 + total_return) ** (1 / years) - 1"
+      }
+    ]
+  },
+  "NivEyal": {
+    "README_CAGR": 0.526,
+    "aligned_committed_CAGR": 0.4724199309615684,
+    "full_audit_committed_CAGR": 0.4695957348881663,
+    "headline_parity": false
+  }
+}

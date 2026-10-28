@@ -1,0 +1,31 @@
+{
+  "inputs_sha256": {
+    "docs/research/equities_french_calibration_20261027/plan.json": "d136f620fa98f3203b7804f69c92f59e143365c500abe3c392845558f66fc27f",
+    "data/research/equity_french_calibration_20261027_v001/current/F-F_Momentum_Factor_CSV.csv": "613b628c5ffa8b957e03ad3a4ccd891d3aa6daafc1801dffb7db7376f2017bdc",
+    "data/research/equity_french_calibration_20261027_v001/current/F-F_Momentum_Factor_CSV.zip": "c06d1c2e9a5e4f6985879722f23c6bb585f46b34eaf3fcb681d4de887e353f3e",
+    "data/research/equity_french_calibration_20261027_v001/current/F-F_Momentum_Factor_CSV.zip.receipt.json": "7b7814c3cc85073d49de0a8c21ad94aeb5b166b77b6607312b822ebd4d2ba44f",
+    "data/research/equity_french_calibration_20261027_v001/current/6_Portfolios_ME_Prior_12_2_CSV.csv": "f6ee1b336292c5967f02a509a299e833f1046196eb4b19410c3e5090a90e86b0",
+    "data/research/equity_french_calibration_20261027_v001/current/6_Portfolios_ME_Prior_12_2_CSV.zip": "e5370a8d96ebb3be00f8e8a24daca8b4fd1048f15f0ddf87d161d245c5e44e1f",
+    "data/research/equity_french_calibration_20261027_v001/current/6_Portfolios_ME_Prior_12_2_CSV.zip.receipt.json": "98fa272fdd876628f7bb58e8949c39905cf708ffcf9a3f372b6e8239c6de2167",
+    "data/research/equity_french_calibration_20261027_v001/current/ME_Breakpoints_CSV.csv": "398957110c577f654327374ee7dcd87c5c836b3cac1a4e4e4eeafcd6a586a47c",
+    "data/research/equity_french_calibration_20261027_v001/current/ME_Breakpoints_CSV.zip": "bec083a0d5c4ee4f508e2dbd715d09c57d979961d0ad939e6a2202b33986f657",
+    "data/research/equity_french_calibration_20261027_v001/current/ME_Breakpoints_CSV.zip.receipt.json": "60141dfab0db4d1b7f72d8eafaffb2881104bf5b409e010f5170dd02301683b3",
+    "data/research/equity_french_calibration_20261027_v001/current/Prior_2-12_Breakpoints_CSV.csv": "0c1d8fd06cb022f21b4cacc35e021e853cce47ffae5e6d11ac9b4e04f8c93efd",
+    "data/research/equity_french_calibration_20261027_v001/current/Prior_2-12_Breakpoints_CSV.zip": "c553b3be9521ec8a81d9cb753845bebde49046fb823e4b09471ff6541cc27e2e",
+    "data/research/equity_french_calibration_20261027_v001/current/Prior_2-12_Breakpoints_CSV.zip.receipt.json": "2e53a377130dec8997bb46027079010af28c75ac105f808e025b2a3f2adb9b3e",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/F-F_Momentum_Factor_CSV.csv": "2f83217efe88c4bfa496b707216c184290e85ffe00b85c7903d30fa444e507c3",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/F-F_Momentum_Factor_CSV.zip": "ddf2d51164f44ab1950837ab8469885e03e186a1f86c96f5297623b8b3c5c604",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/F-F_Momentum_Factor_CSV.zip.receipt.json": "4b3b90ad64d1ede12f3e558c06c62c67e0f55dc9f036c4904b64ab8b09c27812",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/6_Portfolios_ME_Prior_12_2_CSV.csv": "0fb7905a2c8c5a342321e8b2dfee94ed3f689ee48d2eede53ebb85b3cee61881",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/6_Portfolios_ME_Prior_12_2_CSV.zip": "9f0f1dbbccc3d6ae70e27f0b1b2c07bc0b76c5bc49dbdd25485aa362714e3d47",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/6_Portfolios_ME_Prior_12_2_CSV.zip.receipt.json": "2f031a2c349822c935659cde1b1f6c394587d120b3fdbe2496c0ec0ede5794f8",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/ME_Breakpoints_CSV.csv": "e851d0081cff686801241d89b4773b0fbf929ffcdceb5ef23385f5cd43a39959",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/ME_Breakpoints_CSV.zip": "18ca0b66a0ef7ae1f42b816e213612edc386efbe05223f10b0122407d2893fa9",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/ME_Breakpoints_CSV.zip.receipt.json": "c66960652a6939704bec1e64df0298e2f17b76fe46ed49a30128cccad47bd624",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/Prior_2-12_Breakpoints_CSV.csv": "6c33cbaaab03c1bfa0e0dbd331faae106d739128b7fca00c61ad1b872982ffd4",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/Prior_2-12_Breakpoints_CSV.zip": "4353d3b4509055805a71c52e78f9d3242a63b3a7e9da648ade8b1c49b42e7867",
+    "data/research/equity_french_calibration_20261027_v001/legacy202412/Prior_2-12_Breakpoints_CSV.zip.receipt.json": "03d7ef53275b6359efb3de962e6884f88f3a2b336dfcbd0d91b3b68c5d7ffa7d"
+  },
+  "analysis_sha256": "35eca3114d401e07e415b7f568afacdc570afc943d7eb03381735e96d0373230",
+  "independent_external_attestation": false
+}

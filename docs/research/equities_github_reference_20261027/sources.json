@@ -1,0 +1,528 @@
+[
+  {
+    "repo": "AI4Finance-Foundation/FinRL-Trading",
+    "captured_at_utc": "2026-10-27T14:57:23.111566+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRL-Trading",
+        "bytes": 7585,
+        "sha256": "03f57ba9ae681c167df4c671ec47db864c87a8522649c7cd69fa6f5d8aa58c87"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRL-Trading/commits/master",
+        "bytes": 9975,
+        "sha256": "b40f5c6a0d945469d09957b351fae1597da74185a062c10d55e06e73944d01d9"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/AI4Finance-Foundation/FinRL-Trading/git/trees/4409abe925c904e570be78ebfb5e77ac3491dff8?recursive=1",
+        "bytes": 26175,
+        "sha256": "48c11ec3c9eb2974d0089f2eadd60b9108d46a1f86ca97d515ce1fdc6e3e1dc2"
+      },
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/LICENSE",
+        "bytes": 11352,
+        "sha256": "ef3d97b5113a0f224425680aceb7a9ed3baaa4fd9aa21e8ff445cb963fddcbf5"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/README.md",
+        "bytes": 16808,
+        "sha256": "87b6d384f7b9f98ab2d091cf52391c5a0246a342c61213bf5cf7eec1c366d6d2"
+      },
+      {
+        "path": "src/backtest/backtest_engine.py",
+        "url": "https://raw.githubusercontent.com/AI4Finance-Foundation/FinRL-Trading/4409abe925c904e570be78ebfb5e77ac3491dff8/src/backtest/backtest_engine.py",
+        "bytes": 31402,
+        "sha256": "0db265436ba9816d4b07b6834c080f467314abd18ab8c451c7e5cd39eaaa46a0"
+      }
+    ],
+    "failures": [],
+    "commit": "4409abe925c904e570be78ebfb5e77ac3491dff8",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "stars": 3868
+  },
+  {
+    "repo": "Asher-S-Wu/Vectaix-Finance",
+    "captured_at_utc": "2026-10-27T14:57:23.111180+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/Asher-S-Wu/Vectaix-Finance",
+        "bytes": 5396,
+        "sha256": "7d8896fceabd50f663c4ef736dd4d7aae55f3e6d9259917f46583ab01e84b854"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/Asher-S-Wu/Vectaix-Finance/commits/main",
+        "bytes": 12202,
+        "sha256": "1207505814befd1ec9185430046a28009a65cb9fdd3c17771a1d4cb8b58f9197"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/Asher-S-Wu/Vectaix-Finance/git/trees/a65dc5c3494d59a784567f71caf042640280fb15?recursive=1",
+        "bytes": 152504,
+        "sha256": "6b5cd51228a342048541d4765f3794ead4407c451cd3f05e0028de7819f2c928"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/Asher-S-Wu/Vectaix-Finance/a65dc5c3494d59a784567f71caf042640280fb15/README.md",
+        "bytes": 28072,
+        "sha256": "7e7594310cde85a6cf66af7305a2842a06d718bad9a0fbb180377e135e1f46c5"
+      },
+      {
+        "path": "docs/showcase/performance_curve.csv",
+        "url": "https://raw.githubusercontent.com/Asher-S-Wu/Vectaix-Finance/a65dc5c3494d59a784567f71caf042640280fb15/docs/showcase/performance_curve.csv",
+        "bytes": 53168,
+        "sha256": "2fea35f1a7c1232391ae301936de228b4d43cffc92d6a10294991c44df6ae706"
+      },
+      {
+        "path": "docs/showcase/model_comparison.csv",
+        "url": "https://raw.githubusercontent.com/Asher-S-Wu/Vectaix-Finance/a65dc5c3494d59a784567f71caf042640280fb15/docs/showcase/model_comparison.csv",
+        "bytes": 2077,
+        "sha256": "f803763e907aa365680d251d57e4856efdb3b082f5774641ece9a2571cbbcbab"
+      },
+      {
+        "path": "docs/showcase/first_cycle_trades.csv",
+        "url": "https://raw.githubusercontent.com/Asher-S-Wu/Vectaix-Finance/a65dc5c3494d59a784567f71caf042640280fb15/docs/showcase/first_cycle_trades.csv",
+        "bytes": 7809,
+        "sha256": "a2bb6ccfd269c27c1e366bf22f53e54312548ad14d1c6217eb11a428f8187dd4"
+      },
+      {
+        "path": "hk_quant/fixed_backtest.py",
+        "url": "https://raw.githubusercontent.com/Asher-S-Wu/Vectaix-Finance/a65dc5c3494d59a784567f71caf042640280fb15/hk_quant/fixed_backtest.py",
+        "bytes": 10167,
+        "sha256": "9b4644a5a3a8c58f502490c663dfc0852f7eb983bfb250605b6c50573b4ead22"
+      },
+      {
+        "path": "hk_quant/portfolio.py",
+        "url": "https://raw.githubusercontent.com/Asher-S-Wu/Vectaix-Finance/a65dc5c3494d59a784567f71caf042640280fb15/hk_quant/portfolio.py",
+        "bytes": 18941,
+        "sha256": "c96a5762d57fa4b3b96c9170c8f14c1cfc0fa876eeee6a1a15418860aeac1429"
+      }
+    ],
+    "failures": [],
+    "commit": "a65dc5c3494d59a784567f71caf042640280fb15",
+    "license": null,
+    "stars": 168
+  },
+  {
+    "repo": "CazSyd/IBS-Strategy",
+    "captured_at_utc": "2026-10-27T14:57:25.452956+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/CazSyd/IBS-Strategy",
+        "bytes": 5118,
+        "sha256": "0456e12efa9c5839f85d057922b6c993f9efe448e85225b81982e6c6f8189062"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/CazSyd/IBS-Strategy/commits/main",
+        "bytes": 4569,
+        "sha256": "253a33c77410854014b6a51c6b07280c178843b7d25332c9814cc5bb7a93ed66"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/CazSyd/IBS-Strategy/git/trees/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5?recursive=1",
+        "bytes": 11361,
+        "sha256": "e7a6a16212762278809ffa6beca2099749379d195838d5f1b159dc294f2e175c"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/CazSyd/IBS-Strategy/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5/README.md",
+        "bytes": 34863,
+        "sha256": "46cbdb567dfb0b9b3596f20e43afa153158b75f3f73f5cefad868b65b747cd40"
+      },
+      {
+        "path": "src/ibs_strategy/backtest.py",
+        "url": "https://raw.githubusercontent.com/CazSyd/IBS-Strategy/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5/src/ibs_strategy/backtest.py",
+        "bytes": 13418,
+        "sha256": "f574e36f2919de2e8c879521316e30707f3a4d1c5c3ec6678f06d429ec6bb3b3"
+      },
+      {
+        "path": "src/ibs_strategy/metrics.py",
+        "url": "https://raw.githubusercontent.com/CazSyd/IBS-Strategy/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5/src/ibs_strategy/metrics.py",
+        "bytes": 2439,
+        "sha256": "40a8d26ef2c576f8d31ad7c59ec36a678a7e7c33dbf47819b78ca877d5c26c86"
+      },
+      {
+        "path": "src/ibs_strategy/data.py",
+        "url": "https://raw.githubusercontent.com/CazSyd/IBS-Strategy/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5/src/ibs_strategy/data.py",
+        "bytes": 3073,
+        "sha256": "b85d24b7d9b8a69a7f2384acf6ecca4c336415c3bd6956cc424e9c730fecd1c8"
+      },
+      {
+        "path": "src/ibs_strategy/__init__.py",
+        "url": "https://raw.githubusercontent.com/CazSyd/IBS-Strategy/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5/src/ibs_strategy/__init__.py",
+        "bytes": 2333,
+        "sha256": "f432d6b84ba62fb8bcd201aae1994f648cb47f32f66210e7622d3f67783bfaa6"
+      },
+      {
+        "path": "scripts/build_readme_charts.py",
+        "url": "https://raw.githubusercontent.com/CazSyd/IBS-Strategy/c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5/scripts/build_readme_charts.py",
+        "bytes": 2255,
+        "sha256": "a635614cd3ebf298c83df497312ddc56d3c3e940bac82f59b3be5c5d7f14e3d2"
+      }
+    ],
+    "failures": [],
+    "commit": "c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5",
+    "license": null,
+    "stars": 3
+  },
+  {
+    "repo": "HaomingJue/lev_etf_long_term_strategy",
+    "captured_at_utc": "2026-10-27T14:57:25.461674+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/HaomingJue/lev_etf_long_term_strategy",
+        "bytes": 5878,
+        "sha256": "7dc4fac8e1c728474fc25aa6ed629f4c0d9181b85b4ba9916088f0c07e41b0a1"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/HaomingJue/lev_etf_long_term_strategy/commits/main",
+        "bytes": 39727,
+        "sha256": "ad6fc16707163e0009fe7bc04e13ebea7c492399df1c72e96adddea906345b15"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/HaomingJue/lev_etf_long_term_strategy/git/trees/745da36a9c4fbfd25236cde7968e281fa136f14f?recursive=1",
+        "bytes": 149656,
+        "sha256": "8b52b2a11727ca15884017f8b041cf9e088a6e078e8f971a9a08fae1d71ca7a9"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/HaomingJue/lev_etf_long_term_strategy/745da36a9c4fbfd25236cde7968e281fa136f14f/README.md",
+        "bytes": 61986,
+        "sha256": "aed6b01f998c58de9b552d4968a4df729d409970a480097ac6920023ab2047e4"
+      }
+    ],
+    "failures": [],
+    "commit": "745da36a9c4fbfd25236cde7968e281fa136f14f",
+    "license": null,
+    "stars": 1
+  },
+  {
+    "repo": "NivEyal/TQQQ-Strategy",
+    "captured_at_utc": "2026-10-27T14:57:23.110506+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/NivEyal/TQQQ-Strategy",
+        "bytes": 5249,
+        "sha256": "ffaf45f53817894f1a59e4fb43df4c03d1dcc296d4f20bcba75c0c5f52b05fd7"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/NivEyal/TQQQ-Strategy/commits/main",
+        "bytes": 160641,
+        "sha256": "4eab952ba1a818776e181dabf8185b8495a7d0a8ef1891b777687aa3b417ccd5"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/NivEyal/TQQQ-Strategy/git/trees/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1?recursive=1",
+        "bytes": 4941,
+        "sha256": "602308a290eafb8cce6a3acded11ac782699b762489b0fa7f7273ffd9a48071e"
+      },
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/LICENSE",
+        "bytes": 1056,
+        "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/README.md",
+        "bytes": 2272,
+        "sha256": "5dd9e214abc153cd3f23da5b0690d097f3c1b89ca40554862c1cc3d82ff6d7ea"
+      },
+      {
+        "path": "tqqq_spy_sma_frozen_audit.py",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/tqqq_spy_sma_frozen_audit.py",
+        "bytes": 13498,
+        "sha256": "975df409b7fee32b4c7bd8e92a827e0af0e822199d82995a73e993820a301380"
+      },
+      {
+        "path": "tqqq_exit_entry_grid_numba.py",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/tqqq_exit_entry_grid_numba.py",
+        "bytes": 18653,
+        "sha256": "29f01582b37ef71863d5b629976498ded26744f3e190eb9c45a0c1e215e7d6e5"
+      },
+      {
+        "path": "tqqq_spy_sma_strategy_robustness.py",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/tqqq_spy_sma_strategy_robustness.py",
+        "bytes": 14771,
+        "sha256": "939f5b95ae09da19bc9bc4dc504025a623287ad1137437f4a50f4af3e89c486e"
+      },
+      {
+        "path": "requirements.txt",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/requirements.txt",
+        "bytes": 43,
+        "sha256": "174bb2b62ee3bc547dfe10b74f581bc2ab7d16029f0d16cfc2a23ffd6d37a721"
+      },
+      {
+        "path": "ibkr_1p333_etf_results/tqqq_spy_sma_frozen_audit_summary.csv",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/ibkr_1p333_etf_results/tqqq_spy_sma_frozen_audit_summary.csv",
+        "bytes": 1484,
+        "sha256": "3be692f1889ae103eea5652544d9a726695381afd733450d6aab0f1d41d5d3c5"
+      },
+      {
+        "path": "ibkr_1p333_etf_results/tqqq_spy_sma_frozen_audit_validation.csv",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/ibkr_1p333_etf_results/tqqq_spy_sma_frozen_audit_validation.csv",
+        "bytes": 519,
+        "sha256": "50c3852d9e4c41fd398c0be271fe27f0b1dbafd0c7f3ee238eb742a5f1f4ad9d"
+      },
+      {
+        "path": "ibkr_1p333_etf_results/tqqq_spy_sma_frozen_period_audit_summary.csv",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/ibkr_1p333_etf_results/tqqq_spy_sma_frozen_period_audit_summary.csv",
+        "bytes": 3430,
+        "sha256": "701884037c6bd7be3ae5b4db45ec6697ea50d46c345f88f9c7369609f75839ae"
+      },
+      {
+        "path": "ibkr_1p333_etf_results/calmar_spy_sma175_plus4_minus2_to_qqq_transaction_log.csv",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/ibkr_1p333_etf_results/calmar_spy_sma175_plus4_minus2_to_qqq_transaction_log.csv",
+        "bytes": 5778,
+        "sha256": "13773b15ee9c8932569667f73667ac8252613e0f8d7eeded6de496e0fbe016b4"
+      },
+      {
+        "path": "tqqq_tradingview_strategies_compare.py",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/tqqq_tradingview_strategies_compare.py",
+        "bytes": 20449,
+        "sha256": "7c9098d9f2de3b62b2f088d042066df8a5f41cb4519360ca599d239c390b8cbf"
+      },
+      {
+        "path": "tqqq_annual_profit_skim_grid_numba.py",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/tqqq_annual_profit_skim_grid_numba.py",
+        "bytes": 26447,
+        "sha256": "8fd486506dff6732453da9192ec75e5f79a8d5b1987beaace426580f237d7758"
+      },
+      {
+        "path": "dual_momentum_vs_our_strategy.py",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/dual_momentum_vs_our_strategy.py",
+        "bytes": 9885,
+        "sha256": "cf98d30e6053c1fd437171b6bc74655a3296b8ed1d9b94c861d782a396443f1a"
+      },
+      {
+        "path": "ibkr_1p333_etf_results/dual_momentum_vs_our_strategy.csv",
+        "url": "https://raw.githubusercontent.com/NivEyal/TQQQ-Strategy/0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1/ibkr_1p333_etf_results/dual_momentum_vs_our_strategy.csv",
+        "bytes": 1107,
+        "sha256": "ace57f37a67dc7a9610af7ab5bdc31a63b1befdb7a27ba567357ed192d0e16bd"
+      }
+    ],
+    "failures": [],
+    "commit": "0957d78ab0ab75e6c0dbaccf63c327ae7355e0f1",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "stars": 0
+  },
+  {
+    "repo": "ZhongHong98/DCA-VS-Trend-Filtered-Strategy-Backtest-Python",
+    "captured_at_utc": "2026-10-27T14:57:23.111351+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/ZhongHong98/DCA-VS-Trend-Filtered-Strategy-Backtest-Python",
+        "bytes": 6842,
+        "sha256": "85c794b97efd3c029caecb5f3a78608727c6a8e12451f4e432e7f66778c102a3"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/ZhongHong98/DCA-VS-Trend-Filtered-Strategy-Backtest-Python/commits/main",
+        "bytes": 6039,
+        "sha256": "930baf4dbc5d1915946ae57e160dd0af780a442f47854bf8c13ae927769f8a6c"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/ZhongHong98/DCA-VS-Trend-Filtered-Strategy-Backtest-Python/git/trees/c8b44a29b3dfcf6e2785297afbd1df626a4a94c3?recursive=1",
+        "bytes": 1024,
+        "sha256": "faf7ca55cd9545e85a0d83e47c81c467c407aaab148ad71f50aab069c58fc60e"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/ZhongHong98/DCA-VS-Trend-Filtered-Strategy-Backtest-Python/c8b44a29b3dfcf6e2785297afbd1df626a4a94c3/README.md",
+        "bytes": 5993,
+        "sha256": "db4e74a7070c3be86c332e4d1ffe3b06fd2d184a90d200e27f15e0aa20a66d57"
+      },
+      {
+        "path": "Python/DCA_VS_Trend_Filtered_Backtest_Python.py",
+        "url": "https://raw.githubusercontent.com/ZhongHong98/DCA-VS-Trend-Filtered-Strategy-Backtest-Python/c8b44a29b3dfcf6e2785297afbd1df626a4a94c3/Python/DCA_VS_Trend_Filtered_Backtest_Python.py",
+        "bytes": 6359,
+        "sha256": "a153f42025a42a64bb66f90c0ac1bc897ae07fc370b0623cae5e2c00d19ab158"
+      }
+    ],
+    "failures": [],
+    "commit": "c8b44a29b3dfcf6e2785297afbd1df626a4a94c3",
+    "license": null,
+    "stars": 0
+  },
+  {
+    "repo": "amit943c/MultiFactorStockRS",
+    "captured_at_utc": "2026-10-27T14:57:25.927033+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/amit943c/MultiFactorStockRS",
+        "bytes": 5444,
+        "sha256": "be6591b0ba2f3d33eba60c63c79a51fe20b83530b4d5358c65e9405bb1371b0d"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/amit943c/MultiFactorStockRS/commits/main",
+        "bytes": 5293,
+        "sha256": "3016ff4cc739211659b0667c2d156ed702fe96074af9037b3ed9fab082b29458"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/amit943c/MultiFactorStockRS/git/trees/e3e491cdad93bb39b9916423eeaeeedac5749a09?recursive=1",
+        "bytes": 23582,
+        "sha256": "b65a0a194d6769f4a3a84fa28591a810b0c950e5d2084ed5f788af5fa6a02032"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/amit943c/MultiFactorStockRS/e3e491cdad93bb39b9916423eeaeeedac5749a09/README.md",
+        "bytes": 14483,
+        "sha256": "69d330c383f7b441e9976848f2223adf8790e8968347e87aba96c0450b0415cb"
+      }
+    ],
+    "failures": [],
+    "commit": "e3e491cdad93bb39b9916423eeaeeedac5749a09",
+    "license": null,
+    "stars": 4
+  },
+  {
+    "repo": "davidwang0116/Quant-QQQ-QLD-TQQQ-SMA200Timing-MixedPosition-Backtest",
+    "captured_at_utc": "2026-10-27T14:57:26.377708+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/davidwang0116/Quant-QQQ-QLD-TQQQ-SMA200Timing-MixedPosition-Backtest",
+        "bytes": 7734,
+        "sha256": "b5b5b709d67a253760797001ab9d67915385808c7df2ab07943f584a5b763840"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/davidwang0116/Quant-QQQ-QLD-TQQQ-SMA200Timing-MixedPosition-Backtest/commits/main",
+        "bytes": 266370,
+        "sha256": "6589fcac03ec09772feda455711118cf54876b486dfa455a1b7698d3e5725f84"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/davidwang0116/Quant-QQQ-QLD-TQQQ-SMA200Timing-MixedPosition-Backtest/git/trees/7b54b281f8997c7f95633646f8fc65c93eb684bf?recursive=1",
+        "bytes": 26700,
+        "sha256": "bbe561c9ec85b5ed71263ac9f818bcb0f0d461b9fa9c4939e57ce199b2843c3d"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/davidwang0116/Quant-QQQ-QLD-TQQQ-SMA200Timing-MixedPosition-Backtest/7b54b281f8997c7f95633646f8fc65c93eb684bf/README.md",
+        "bytes": 18100,
+        "sha256": "e2ee2114dff8e37dc2c0dfab618998850324fc6a00093747764e6e9ee61c1277"
+      }
+    ],
+    "failures": [],
+    "commit": "7b54b281f8997c7f95633646f8fc65c93eb684bf",
+    "license": null,
+    "stars": 4
+  },
+  {
+    "repo": "justin10moter-ux/tqqq-trend-following",
+    "captured_at_utc": "2026-10-27T14:57:26.028587+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/justin10moter-ux/tqqq-trend-following",
+        "bytes": 6169,
+        "sha256": "f2370cd16894101b5fe89fb4f0823607c38a07db97e5ba1c651e9629f2afd0d4"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/justin10moter-ux/tqqq-trend-following/commits/main",
+        "bytes": 13565,
+        "sha256": "495e2265e9282dc7650f50ac7de4341e542b8930a90aea0301e51ba0c8b3feb6"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/justin10moter-ux/tqqq-trend-following/git/trees/bf6c8afb9567a459eabfc5ff87fe4906bef96800?recursive=1",
+        "bytes": 8787,
+        "sha256": "dc245bf5e1409de1b8200f54b62b835ae1fdb8213a30403402695669441c6360"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/justin10moter-ux/tqqq-trend-following/bf6c8afb9567a459eabfc5ff87fe4906bef96800/README.md",
+        "bytes": 8883,
+        "sha256": "e760d094f11d7ea4032368c006816c46d3db9654c4b7eb4faa824acfd88bff5d"
+      }
+    ],
+    "failures": [],
+    "commit": "bf6c8afb9567a459eabfc5ff87fe4906bef96800",
+    "license": null,
+    "stars": 0
+  },
+  {
+    "repo": "swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process",
+    "captured_at_utc": "2026-10-27T14:57:23.111023+00:00",
+    "files": [
+      {
+        "path": "repository.json",
+        "url": "https://api.github.com/repos/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process",
+        "bytes": 6875,
+        "sha256": "def2cdea73969157a8a2cc80430556accf73f886dfbeb37b41844b61ef7d91ae"
+      },
+      {
+        "path": "commit.json",
+        "url": "https://api.github.com/repos/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process/commits/main",
+        "bytes": 7590,
+        "sha256": "456ae37f91aed55e0b7d163c529d25e1eed9ce6f010ae2d4d914d6e78031ffe4"
+      },
+      {
+        "path": "tree.json",
+        "url": "https://api.github.com/repos/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process/git/trees/955a799ef608e260266a9528020e039767035f33?recursive=1",
+        "bytes": 3263,
+        "sha256": "7f5b1af648b497b0f9e5aead274c00eafcc6f2502b10284e2ed82fbc99943bf8"
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process/955a799ef608e260266a9528020e039767035f33/README.md",
+        "bytes": 2946,
+        "sha256": "cf1ab664a1e5fb8d05a6d8d9bf5924227e28ea60ddd0ca2c8cc95971532b1eb4"
+      },
+      {
+        "path": "new_pairs_trading_DTW.ipynb",
+        "url": "https://raw.githubusercontent.com/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process/955a799ef608e260266a9528020e039767035f33/new_pairs_trading_DTW.ipynb",
+        "bytes": 406127,
+        "sha256": "eaba4aae7df9ce10e5c2ea54f0a3c0d51da2b8ab67bfc8d1c35ccedcc730a144"
+      },
+      {
+        "path": "Pairs_Identification_DTW_Clustering Algorithm_HKEX100_(Final).ipynb",
+        "url": "https://raw.githubusercontent.com/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process/955a799ef608e260266a9528020e039767035f33/Pairs_Identification_DTW_Clustering%20Algorithm_HKEX100_%28Final%29.ipynb",
+        "bytes": 1733494,
+        "sha256": "acb1c1650dca9959486867d54e24ad47938e811cd93e61862a02350dc3bcc551"
+      },
+      {
+        "path": "hkex_stocks_top100pv.csv",
+        "url": "https://raw.githubusercontent.com/swhy0913/Pairs-Trading-with-DTW-Clustering-and-OU-Process/955a799ef608e260266a9528020e039767035f33/hkex_stocks_top100pv.csv",
+        "bytes": 12932217,
+        "sha256": "1bdbc15e89aabd8f8f2d2a57fa0f52f20e6ee6d728c47bd478ce7d9c793a547c"
+      }
+    ],
+    "failures": [],
+    "commit": "955a799ef608e260266a9528020e039767035f33",
+    "license": null,
+    "stars": 1
+  }
+]

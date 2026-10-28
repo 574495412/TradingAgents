@@ -1,0 +1,27 @@
+{
+  "schema": "original-momentum-engine-compatibility.v1",
+  "source": "tradingagents/research/equities/continuous.py",
+  "source_sha256": "88e9c90f969e1b56b48af04045fcc660293ada3cf2376efe5d7bd33a22511ca7",
+  "original_six_group_weights": [
+    "-0.5",
+    "0",
+    "0.5",
+    "-0.5",
+    "0",
+    "0.5"
+  ],
+  "original_net": 0,
+  "original_gross": 2,
+  "legacy_negative_weights_rejected": true,
+  "legacy_long_cash_limit": 0.8,
+  "faithful_original_execution_supported": false,
+  "classification": "intentional long-cash design boundary, not evidence that the original strategy fails",
+  "required_before_tradeable_calibration": [
+    "stock-level holdings and returns",
+    "long/short collateral and financing ledger",
+    "historical borrow eligibility, fees and recalls",
+    "dated broker/account rules and order-level fees",
+    "funded account capital normalization and integer/fractional quantity policy"
+  ],
+  "new_financial_accounts": 0
+}

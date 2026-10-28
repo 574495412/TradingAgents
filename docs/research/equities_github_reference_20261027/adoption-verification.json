@@ -1,0 +1,27 @@
+{
+  "schema": "equity-native-adoption-result.v1",
+  "repo": "AI4Finance-Foundation/FinRL-Trading",
+  "commit": "4409abe925c904e570be78ebfb5e77ac3491dff8",
+  "strategy": "AdaptiveRotation v1.2.2",
+  "native_engine_executed": true,
+  "strategy_code_changed": false,
+  "strategy_configuration_changed": false,
+  "signal_date": "2026-10-23",
+  "data_symbols_loaded": 31,
+  "target_weights": {
+    "CVX": 0.16666666666666666,
+    "XOM": 0.16666666666666666,
+    "COP": 0.16666666666666666,
+    "NVDA": 0.16666666666666666,
+    "TSLA": 0.16666666666666666,
+    "AAPL": 0.16666666666666666
+  },
+  "cash_weight": 1.1102230246251565e-16,
+  "regime_state": "risk_on",
+  "headline_return_reproduced": false,
+  "historical_profit_evaluated": false,
+  "orders_enabled": false,
+  "live_deployed": false,
+  "method": "direct_original_engine_call_no_custom_strategy_or_position_cap",
+  "source_data_deviation": "Yahoo adjusted OHLC, volume unchanged; replaces upstream FMP input without altering strategy"
+}

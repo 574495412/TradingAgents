@@ -1,0 +1,95 @@
+{
+  "schema": "published-broker-frozen-fill-fee-calibration.v1",
+  "broker_reference": "IBKR Pro US stocks fixed, USD RegT margin research reference",
+  "published_formula": "min(max(0.005*shares,1),0.01*shares*price)",
+  "captured_rule_not_certified_for_historical_trade_dates": true,
+  "regulatory_fees_not_replaced_or_assumed_zero": true,
+  "billing_rounding_and_order_grouping_not_certified": true,
+  "formula_examples": [
+    {
+      "shares": 10,
+      "price_usd": ".20",
+      "commission_usd": "0.0200"
+    },
+    {
+      "shares": 100,
+      "price_usd": "100",
+      "commission_usd": "1"
+    },
+    {
+      "shares": 1000,
+      "price_usd": "10",
+      "commission_usd": "5.000"
+    },
+    {
+      "shares": 1000,
+      "price_usd": "100",
+      "commission_usd": "5.000"
+    }
+  ],
+  "accounts": [
+    {
+      "account": "US_disclosed_equal_10000_5bps",
+      "fills": 16,
+      "legacy_commission_usd": "16.0",
+      "published_unrounded_commission_usd": "16",
+      "difference_usd": "0.0"
+    },
+    {
+      "account": "US_disclosed_equal_10000_15bps",
+      "fills": 16,
+      "legacy_commission_usd": "16.0",
+      "published_unrounded_commission_usd": "16",
+      "difference_usd": "0.0"
+    },
+    {
+      "account": "US_french_mom_12_2_10000_5bps",
+      "fills": 39,
+      "legacy_commission_usd": "39.0",
+      "published_unrounded_commission_usd": "39",
+      "difference_usd": "0.0"
+    },
+    {
+      "account": "US_french_mom_12_2_10000_15bps",
+      "fills": 38,
+      "legacy_commission_usd": "38.0",
+      "published_unrounded_commission_usd": "38",
+      "difference_usd": "0.0"
+    },
+    {
+      "account": "US_gross_profitability_10000_5bps",
+      "fills": 23,
+      "legacy_commission_usd": "23.0",
+      "published_unrounded_commission_usd": "23.030",
+      "difference_usd": "0.030"
+    },
+    {
+      "account": "US_gross_profitability_10000_15bps",
+      "fills": 22,
+      "legacy_commission_usd": "22.0",
+      "published_unrounded_commission_usd": "22.030",
+      "difference_usd": "0.030"
+    },
+    {
+      "account": "US_stock_blend_equal_10000_5bps",
+      "fills": 37,
+      "legacy_commission_usd": "37.0",
+      "published_unrounded_commission_usd": "37",
+      "difference_usd": "0.0"
+    },
+    {
+      "account": "US_stock_blend_equal_10000_15bps",
+      "fills": 37,
+      "legacy_commission_usd": "37.0",
+      "published_unrounded_commission_usd": "37",
+      "difference_usd": "0.0"
+    }
+  ],
+  "fills_checked": 228,
+  "broker_authenticated": false,
+  "historical_short_borrow_data_available": false,
+  "real_execution_verified": false,
+  "new_financial_accounts": 0,
+  "counterfactual_nav_or_cagr_generated": false,
+  "profit_goal_met": false
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "equity-github-reference-plan.v1",
+  "date_shanghai": "2026-10-27",
+  "user_direction": "港美股先不要自研，优先对齐和github上策略一致的收益口径，然后寻找github上收益率最高的策略，复刻或直接使用后再优化",
+  "scope": "New user-authorized reference-reproduction scope. Prior24 account budget and closeout remain historical; no new proprietary alpha or parameter optimization.",
+  "source_search": {
+    "repositories": 10,
+    "coverage": "Bounded public GitHub search, not an exhaustive or globally certified highest-return ranking",
+    "selection": "Audit high advertised US/HK returns, prioritize transparent code/data and source-faithful reproduction. Compare headline claims only within compatible windows, leverage, cashflows and cost classes.",
+    "cutoff_shanghai": "2026-10-27"
+  },
+  "return_contract": [
+    "Freeze commit, exact file hashes, license and original results before execution",
+    "Author-original: same universe, data vintage, period, price adjustments, signal/fill clock, leverage/borrow, cash interest, costs, tax and capital flows",
+    "Preserve original metric definition even when wrong; separately diagnose CAGR vs arithmetic annualization, contributions and NAV drawdown",
+    "Author published artifacts -> local arithmetic reconstruction -> original strategy engine -> independent rule replica -> realistic local account -> optimization, in that order",
+    "No claim of headline reproduction when original inputs, exact window or settings are missing",
+    "No pooling USD/HKD, paper/live/backtest, synthetic/real, or gross/net returns"
+  ],
+  "work": [
+    "Capture10 commit-bound repositories and source artifacts",
+    "Reconstruct HK LightGBM author curve CAGR/drawdown; this is artifact arithmetic, not retraining/trade reconstruction",
+    "Audit HK116% and US DCA headline formulas without executing notebooks or embedded credentials",
+    "Replay highest US headline in captured set, IBS0.132/0.965, once with fresh frozen public bars and the reviewed original engine; independently reconstruct identical daily cash/shares/equity",
+    "Report exact parity and headline gaps separately; retain missing snapshot/window/settings as unresolved",
+    "Only after original-input headline parity, evaluate local costs/execution and consider optimization"
+  ],
+  "execution_budget": {
+    "strategy_variants": 1,
+    "source_engine_paths": 1,
+    "independent_replica_paths": 1,
+    "independent_strategy_trials": 1,
+    "author_curve_arithmetic_checks": 4,
+    "parameter_searches": 0,
+    "local_adapted_accounts": 0
+  },
+  "tolerances_registered_before_execution": {
+    "same_input_daily_equity_abs_USD": 0.000001,
+    "same_input_cash_abs_USD": 0.000001,
+    "same_input_shares": 0,
+    "HK_artifact_total_return_abs": 0.00000001,
+    "HK_artifact_CAGR_abs": 0.00001,
+    "HK_artifact_drawdown_abs": 0.00000001,
+    "headline_CAGR_abs": 0.001
+  },
+  "IBS_replication": {
+    "repo": "CazSyd/IBS-Strategy",
+    "commit": "c56cbdff2f18bc8ae7d7a2e2f2defe8243de1df5",
+    "ticker": "TQQQ",
+    "window": ["2010-02-09", "2026-08-01"],
+    "window_boundary": "README only identifies2010-02 through2026-07, exact original last session unavailable. Use full stated months, end exclusive; never scan dates to improve matching.",
+    "initial_cash": 10000,
+    "entry_threshold": 0.132,
+    "exit_threshold": 0.965,
+    "fills": "previous daily IBS, next daily open",
+    "sizing": "full whole adjusted-price units, cash remainder",
+    "cash_rate": 0,
+    "costs": 0,
+    "cash_rate_limit": "Original engine default0; headline exact cash-yield setting unknown. Do not search alternate settings.",
+    "data_vintage": "Fresh Yahoo OHLC adjusted by AdjClose/Close; original author raw snapshot not published",
+    "source_license": "No repository license detected; private local evaluation only, no vendoring/redistribution or live integration"
+  },
+  "optimization_enabled": false,
+  "orders_enabled": false,
+  "production_eligible": false
+}

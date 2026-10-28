@@ -1,0 +1,344 @@
+{
+  "schema": "french-publisher-component-calibration.v1",
+  "datasets": [
+    {
+      "dataset": "current",
+      "source_crsp_vintages": {
+        "factor": "202608",
+        "portfolios": "202609",
+        "size": "202608",
+        "prior": "202608"
+      },
+      "same_vintage": false,
+      "factor_range": [
+        "192701",
+        "202608"
+      ],
+      "portfolio_range": [
+        "192701",
+        "202609"
+      ],
+      "factor_months": 1196,
+      "portfolio_months": 1197,
+      "security_level_memberships_available": false,
+      "component_check_performed": false,
+      "component_match_passed": false,
+      "reason": "Different raw CRSP vintages; do not calculate a false replication residual."
+    },
+    {
+      "dataset": "legacy202412",
+      "source_crsp_vintages": {
+        "factor": "202412",
+        "portfolios": "202412",
+        "size": "202412",
+        "prior": "202412"
+      },
+      "same_vintage": true,
+      "factor_range": [
+        "192701",
+        "202412"
+      ],
+      "portfolio_range": [
+        "192701",
+        "202412"
+      ],
+      "factor_months": 1176,
+      "portfolio_months": 1176,
+      "security_level_memberships_available": false,
+      "component_check_performed": true,
+      "months_checked": 1176,
+      "skipped": [],
+      "mismatches": 0,
+      "max_absolute_residual_percent_points": "0.01",
+      "negative_control_mismatch_counts": {
+        "reversed_sign": 1174,
+        "one_month_shift": 1174,
+        "equal_weight": 1163
+      },
+      "negative_controls_rejected": true,
+      "component_match_passed": true,
+      "complete_month_contracts": [
+        {
+          "return_month": "202301",
+          "formation_month": "202212",
+          "nyse_median_me_million_usd": "3382.56",
+          "nyse_prior_return_p30_percent": "-26.55",
+          "nyse_prior_return_p70_percent": "4.88",
+          "published_six_portfolio_stock_counts": [
+            1466,
+            834,
+            520,
+            221,
+            419,
+            316
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202302",
+          "formation_month": "202301",
+          "nyse_median_me_million_usd": "3740.69",
+          "nyse_prior_return_p30_percent": "-24.50",
+          "nyse_prior_return_p70_percent": "5.33",
+          "published_six_portfolio_stock_counts": [
+            1451,
+            841,
+            541,
+            222,
+            417,
+            310
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202303",
+          "formation_month": "202302",
+          "nyse_median_me_million_usd": "3768.22",
+          "nyse_prior_return_p30_percent": "-13.85",
+          "nyse_prior_return_p70_percent": "10.73",
+          "published_six_portfolio_stock_counts": [
+            1463,
+            829,
+            545,
+            216,
+            429,
+            289
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202304",
+          "formation_month": "202303",
+          "nyse_median_me_million_usd": "3684.55",
+          "nyse_prior_return_p30_percent": "-16.33",
+          "nyse_prior_return_p70_percent": "8.30",
+          "published_six_portfolio_stock_counts": [
+            1465,
+            770,
+            602,
+            227,
+            427,
+            283
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202305",
+          "formation_month": "202304",
+          "nyse_median_me_million_usd": "3589.62",
+          "nyse_prior_return_p30_percent": "-14.66",
+          "nyse_prior_return_p70_percent": "13.00",
+          "published_six_portfolio_stock_counts": [
+            1444,
+            817,
+            574,
+            191,
+            420,
+            328
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202306",
+          "formation_month": "202305",
+          "nyse_median_me_million_usd": "3475.81",
+          "nyse_prior_return_p30_percent": "-16.71",
+          "nyse_prior_return_p70_percent": "10.19",
+          "published_six_portfolio_stock_counts": [
+            1434,
+            766,
+            618,
+            180,
+            436,
+            326
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202307",
+          "formation_month": "202306",
+          "nyse_median_me_million_usd": "3751.00",
+          "nyse_prior_return_p30_percent": "-11.04",
+          "nyse_prior_return_p70_percent": "17.59",
+          "published_six_portfolio_stock_counts": [
+            1499,
+            749,
+            616,
+            175,
+            424,
+            342
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202308",
+          "formation_month": "202307",
+          "nyse_median_me_million_usd": "3940.50",
+          "nyse_prior_return_p30_percent": "-11.62",
+          "nyse_prior_return_p70_percent": "17.61",
+          "published_six_portfolio_stock_counts": [
+            1506,
+            742,
+            586,
+            190,
+            432,
+            323
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202309",
+          "formation_month": "202308",
+          "nyse_median_me_million_usd": "3734.51",
+          "nyse_prior_return_p30_percent": "-3.35",
+          "nyse_prior_return_p70_percent": "26.87",
+          "published_six_portfolio_stock_counts": [
+            1581,
+            726,
+            531,
+            212,
+            416,
+            311
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202310",
+          "formation_month": "202309",
+          "nyse_median_me_million_usd": "3554.92",
+          "nyse_prior_return_p30_percent": "2.04",
+          "nyse_prior_return_p70_percent": "37.39",
+          "published_six_portfolio_stock_counts": [
+            1612,
+            710,
+            502,
+            213,
+            416,
+            307
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202311",
+          "formation_month": "202310",
+          "nyse_median_me_million_usd": "3352.82",
+          "nyse_prior_return_p30_percent": "-12.08",
+          "nyse_prior_return_p70_percent": "17.56",
+          "published_six_portfolio_stock_counts": [
+            1562,
+            711,
+            531,
+            188,
+            438,
+            306
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202312",
+          "formation_month": "202311",
+          "nyse_median_me_million_usd": "3622.12",
+          "nyse_prior_return_p30_percent": "-20.73",
+          "nyse_prior_return_p70_percent": "6.54",
+          "published_six_portfolio_stock_counts": [
+            1493,
+            684,
+            590,
+            191,
+            428,
+            318
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202401",
+          "formation_month": "202312",
+          "nyse_median_me_million_usd": "4032.03",
+          "nyse_prior_return_p30_percent": "-9.76",
+          "nyse_prior_return_p70_percent": "22.23",
+          "published_six_portfolio_stock_counts": [
+            1498,
+            712,
+            548,
+            182,
+            439,
+            319
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202402",
+          "formation_month": "202401",
+          "nyse_median_me_million_usd": "3943.63",
+          "nyse_prior_return_p30_percent": "-9.60",
+          "nyse_prior_return_p70_percent": "19.36",
+          "published_six_portfolio_stock_counts": [
+            1441,
+            765,
+            545,
+            178,
+            429,
+            324
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202403",
+          "formation_month": "202402",
+          "nyse_median_me_million_usd": "3997.56",
+          "nyse_prior_return_p30_percent": "-9.86",
+          "nyse_prior_return_p70_percent": "18.86",
+          "published_six_portfolio_stock_counts": [
+            1483,
+            723,
+            528,
+            142,
+            421,
+            360
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202404",
+          "formation_month": "202403",
+          "nyse_median_me_million_usd": "4187.50",
+          "nyse_prior_return_p30_percent": "-3.83",
+          "nyse_prior_return_p70_percent": "29.65",
+          "published_six_portfolio_stock_counts": [
+            1374,
+            751,
+            595,
+            184,
+            398,
+            335
+          ],
+          "identities_reconstructed": false
+        },
+        {
+          "return_month": "202405",
+          "formation_month": "202404",
+          "nyse_median_me_million_usd": "4028.73",
+          "nyse_prior_return_p30_percent": "1.81",
+          "nyse_prior_return_p70_percent": "39.49",
+          "published_six_portfolio_stock_counts": [
+            1384,
+            763,
+            561,
+            197,
+            394,
+            317
+          ],
+          "identities_reconstructed": false
+        }
+      ]
+    }
+  ],
+  "calibration_scope": "Publisher portfolio components to published factor only; not security-level formation or independent raw-market reconstruction.",
+  "original_stock_universe_replicated": false,
+  "existing_long_cash_engine_calibrated_for_original_long_short_strategy": false,
+  "user_has_crsp_access": false,
+  "broker_authenticated": false,
+  "real_execution_verified": false,
+  "new_financial_accounts": 0,
+  "profit_goal_met": false
+}

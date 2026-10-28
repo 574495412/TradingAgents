@@ -1,0 +1,63 @@
+{
+  "schema": "equity-original-momentum-calibration-plan.v1",
+  "registered_at": "2026-10-27T14:33:22.709875+00:00",
+  "user_direction": "先校准评估，按原策略股票池和规则复现公开基准，再核对真实交易条件；不扩策略。",
+  "benchmark": "Kenneth French US monthly Momentum (Mom), six size-by-prior2-12 value-weight portfolios",
+  "universe": "NYSE/AMEX/NASDAQ historical eligible stocks under original CRSP rules; no ARK-only, ETF or present-day survivor substitution",
+  "reference_vintages": [
+    "official current CIZ release",
+    "official December2024 FIZ archive"
+  ],
+  "primary_comparison_window": [
+    "2023-01",
+    "2024-05"
+  ],
+  "window_reason": "All complete calendar months in the existing stock evaluation; June2024 stops June26 and cannot be compared with the authors full June monthly return.",
+  "aggregate_check_window": "All same-vintage common complete monthly rows; preserve any exclusions with reasons.",
+  "aggregate_formula": "0.5*(SmallHigh+BigHigh)-0.5*(SmallLow+BigLow)",
+  "return_units": "Published percent; use Decimal strings. Factor PnL is not funded-account CAGR.",
+  "tolerance_percent_points_max": "0.015",
+  "tolerance_rule": "Per-row rounding bound: sum(abs(weight)*0.5*10**(-published_decimal_places)) plus factor rounding half-unit, capped at0.015pp. No post-result widening.",
+  "negative_controls": [
+    "reverse high/low sign",
+    "shift reference by one calendar month",
+    "substitute equal-weight portfolio section"
+  ],
+  "invalid_values": [
+    "-99.99",
+    "-999"
+  ],
+  "source_limits": {
+    "max_http_requests_total": 20,
+    "max_total_bytes": 16777216,
+    "zip_requests": 8,
+    "allow_paid_purchase": false,
+    "retry_on_access_rejection": false
+  },
+  "phase_acceptance": {
+    "A_public_component_reconstruction": "Same-vintage value-weight six-portfolio factor matches every common month within frozen rounding bound; negative controls rejected. This does not certify stock membership or security-level formation.",
+    "B_stock_level_replication": "Acquire legally usable same-vintage CRSP security-level history, identities, shares, exchange/security status, total-return and delisting treatment; construct official eligible universe, NYSE breakpoints, lagged value weights and compare monthly constituents/returns. Missing inputs remain blocked, never replaced by public portfolio output.",
+    "C_real_execution": "Use named actual broker/account rules, dated fees, buying power/settlement, short/borrow/collateral and fills; reconcile decision/order/cash/inventory. Standard T+1 alone is not an account receipt."
+  },
+  "additional_scope_budget": {
+    "new_strategy_families": 0,
+    "new_parameter_searches": 0,
+    "phase_A_financial_accounts": 0,
+    "stock_level_reconstruction_max": 1,
+    "broker_condition_replays_max": 2,
+    "calibration_financial_evaluations_max": 3,
+    "financial_budget_note": "User-authorized new calibration scope; preserve earlier24 evaluations and count any newly executed financial paths explicitly, not as zero-cost internal tests. No B/C financial evaluation until required input contracts pass."
+  },
+  "original_strategy_vs_engine": {
+    "long_exposure": 1.0,
+    "short_exposure": -1.0,
+    "net_exposure": 0.0,
+    "gross_exposure": 2.0,
+    "existing_engine_is_long_cash_only": true,
+    "existing_engine_limit": 0.8,
+    "faithful_original_not_representable_in_existing_engine": true
+  },
+  "full_stock_level_replication_passed": false,
+  "real_broker_conditions_verified": false,
+  "profit_goal_met": false
+}
